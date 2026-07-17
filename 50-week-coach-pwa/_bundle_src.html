@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>50-Week Coach PRO</title>
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./icon-180.png">
+<meta name="theme-color" content="#F7F9FB">
+<style>
+  :root{
+    --bg:#F7F9FB;--surface:#FFFFFF;--surface2:#F0F3F6;--line:#DDE4EA;
+    --text:#16212B;--muted:#5D6B78;--green:#059669;--cyan:#0284C7;
+    --amber:#D97706;--red:#DC2626;--violet:#7C3AED;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font-family:'Barlow Semi Condensed',-apple-system,system-ui,sans-serif;
+    max-width:520px;margin:0 auto;padding-bottom:92px}
+  .mono{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:12px;box-shadow:0 1px 2px rgba(22,33,43,.05)}
+  .label{font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);margin-bottom:4px;display:block}
+  input,select{background:var(--surface2);border:1px solid var(--line);color:var(--text);
+    border-radius:10px;padding:12px;font-size:16px;width:100%;
+    font-family:'IBM Plex Mono',ui-monospace,monospace;-webkit-appearance:none}
+  .btn{background:var(--green);color:#FFFFFF;border:none;border-radius:10px;padding:13px 16px;
+    font-size:15px;font-weight:700;width:100%;letter-spacing:.5px;cursor:pointer;font-family:inherit}
+  .chip{padding:7px 12px;border-radius:999px;font-size:13px;white-space:nowrap;
+    border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer;font-family:inherit}
+  .chip.on{border-color:var(--green);background:rgba(5,150,105,.10);color:var(--green)}
+  .row{display:flex;gap:8px}
+  .vital{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:8px 6px;text-align:center}
+  #nav{position:fixed;bottom:0;left:0;right:0;max-width:520px;margin:0 auto;display:flex;
+    background:var(--surface2);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
+  #nav button{flex:1;padding:12px 0 14px;background:none;border:none;color:var(--muted);
+    font-size:11px;letter-spacing:1.2px;text-transform:uppercase;font-weight:500;
+    border-top:2px solid transparent;cursor:pointer;font-family:inherit}
+  #nav button.on{color:var(--green);font-weight:700;border-top-color:var(--green)}
+  ul,ol{margin:6px 0 0;padding-left:18px;font-size:14px;line-height:1.55}
+  svg text{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:10px;fill:var(--muted)}
+  h3{font-size:15px;font-weight:600;margin:0 0 8px}
+  .del{background:none;border:1px solid var(--line);color:var(--muted);border-radius:8px;padding:6px 10px;cursor:pointer}
+  .scroll{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px}
+</style>
+</head>
+<body><template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#059669"/><text x="50" y="62" text-anchor="middle" font-family="monospace" font-size="30" font-weight="bold" fill="#fff">50</text></svg></template>
+<div id="header" style="padding:16px 16px 8px"></div>
+<div id="main" style="padding:8px 16px"></div>
+<div id="nav">
+  <button data-tab="plan">Plan</button>
+  <button data-tab="log">Log</button>
+  <button data-tab="charts">Charts</button>
+  <button data-tab="energy">Energy</button>
+  <button data-tab="random">Random</button>
+  <button data-tab="diet">Diet</button>
+</div>
+<script>
+"use strict";
+// ───────── data ─────────
+const C={green:"#059669",cyan:"#0284C7",amber:"#D97706",red:"#DC2626",violet:"#7C3AED",pink:"#DB2777",muted:"#5D6B78",line:"#DDE4EA"};
+const LIFTS=["Back Squat","Front Squat","Deadlift","Romanian Deadlift","Bench Press","Overhead Press","Push Press","Pendlay Row","Barbell Row","Hip Thrust","Walking Lunge","Thruster","Gauntlet Complex"];
+const BWK="Bodyweight";const WAIST="Waist";
+const LC={"Back Squat":C.green,"Front Squat":C.green,"Deadlift":C.red,"Romanian Deadlift":C.red,"Bench Press":C.cyan,"Overhead Press":C.cyan,"Push Press":C.cyan,"Pendlay Row":C.amber,"Barbell Row":C.amber,"Hip Thrust":C.violet,"Walking Lunge":C.violet,"Thruster":C.violet,"Gauntlet Complex":C.red};
+const GAUNT=s=>({d:"Sat",t:"THE GAUNTLET",c:C.red,items:s===1
+ ?["Reduced version this block:","40 burpees for time","Ladder ×3: 5 DL → 5 row → 5 hang clean → 5 front squat → 5 push press → 5 back squat (~40 kg)","Bodyweight ×3: 15 push-ups, 20 air squats, 10 V-ups, 15 jump lunges","No bike cash-out"]
+ :["60 burpees for time"+(s===4?" (burpee broad jumps)":""),"Ladder ×5: 5 DL → 5 row → 5 hang clean → 5 front squat → 5 push press → 5 back squat (start ~40 kg)","Bodyweight ×4 for time: 15 push-ups, 20 air squats, 10 V-ups, 15 jump lunges","Bike cash-out: 10 × 30 s all-out / 30 s easy"]});
+const pick=(wi,a)=>a[Math.min(wi,a.length)-1];
+const GPRO=(bb)=>({d:"Sat",t:"THE GAUNTLET — PRO",c:C.red,items:[
+ (bb?"70 burpee broad jumps for time":"70 burpees for time"),
+ "Ladder ×5: 5 DL → 5 row → 5 hang clean → 5 front squat → 5 push press → 5 back squat (start ~45 kg)",
+ "Add a ladder round every 2 weeks when all unbroken (cap 7)",
+ "Bodyweight ×5 for time: 15 push-ups, 25 air squats, 12 V-ups, 20 jump lunges",
+ "Run cash-out: 4 × 400 m hard, 60 s rest (bike 12×30/30 only if running is impossible)"]});
+const GWKS=[4,12,20,26,34,45];
+const HYSAT=(gw)=>gw%2===0
+ ?{d:"Sat",t:"FURNACE — Hyrox Saturday",c:C.red,items:["1 km tempo run buy-in","5 rounds: 400 m run → 20 thrusters → 15 burpee broad jumps → 20 heavy bent-over rows","800 m run cash-out","Biggest calorie session of the week — fuel it, then eat to the hard-day target"]}
+ :{d:"Sat",t:"SLEDGE — Hyrox Saturday",c:C.red,items:["4 rounds: 600 m run → 30 m back-rack walking lunge → 12 hang power cleans → 15 V-ups","12-min alternating EMOM: odd = 40 s hard bike grind (sled sub) · even = 12 push presses","400 m all-out cash-out","Biggest calorie session of the week — fuel it, then eat to the hard-day target"]};
+const SAT=(gw,bb)=>GWKS.indexOf(gw)>=0
+ ?Object.assign(GPRO(bb),{t:"THE GAUNTLET — 8-WEEK BENCHMARK",items:GPRO(bb).items.concat(["Benchmark day: log buy-in time, ladder load and bodyweight-round time — compare with the last Gauntlet"])})
+ :HYSAT(gw);
+const BLOCKS=[
+ {n:0,name:"On-Ramp",from:1,to:2,color:C.violet,hint:"Tendon prep · run-frequency build · baselines — cheap insurance before the heavy work",
+  focus:["Tendon prep + strength baselines — nothing heroic","Build run frequency + engine baseline"],
+  days(wi){
+   return [
+    {d:"Mon",t:"Tendon A + technique",c:C.cyan,items:["Heavy slow calf raise 4×8 (3 s down, straight leg)"+(wi===2?" — add 2.5–5 kg on last week":""),"Bent-knee calf raise 3×10 slow","Tibialis raises 3×15 (wall lean)","Back squat + deadlift technique 3×5 @60% — crisp","Isometric calf hold 3×30 s"]},
+    {d:"Tue",t:"Easy run + strides",c:C.green,items:[(wi===1?"30":"35")+" min Z2 run",(wi===1?"4":"6")+"×20 s relaxed strides, full recovery"]},
+    {d:"Wed",t:"Tendon B + upper technique",c:C.cyan,items:["Bench / OHP / row 3×5 @60% — crisp","Single-leg calf raise 3×8/side slow","Single-leg RDL (bar) 3×8/side","Plank + side plank 3×40 s"].concat(wi===2?["Pogo hop intro: 3×15 low-amplitude"]:[])},
+    wi===1?{d:"Thu",t:"Z2 spin",c:C.green,items:["45–60 min easy"]}
+     :{d:"Thu",t:"Easy run",c:C.green,items:["30 min Z2 run — third run of the week; any calf/achilles niggle = swap to a spin"]},
+    wi===1?{d:"Fri",t:"BASELINES — strength",c:C.red,items:["Work to a solid 3RM back squat","3RM bench press","3RM deadlift — stop at RPE 8–9, not a grinding max","Log all three: every % in this programme hangs off these numbers"]}
+     :{d:"Fri",t:"BASELINES — engine",c:C.red,items:["20-min max bike test (FTP ≈ 95% of average power) OR 5 km run time trial — pick your primary","Log it; retest around weeks 17 and 23"]},
+    wi===1?{d:"Sat",t:"Gauntlet familiarisation",c:C.red,items:["Full Gauntlet sequence at 60% effort — learn the movements","Ladder ×3 light rounds, bodyweight ×2, no cash-out"]}
+     :{d:"Sat",t:"Gauntlet familiarisation 2",c:C.red,items:["Full sequence at 75% — ladder ×4, bodyweight ×3","Run cash-out: 2×400 m"]},
+    {d:"Sun",t:"Long ride",c:C.green,items:[(wi===1?"2":"2.5")+" h Z2"]}];
+  }},
+ {n:1,name:"Max Strength",from:3,to:8,color:C.green,hint:"80–95% waves · back-off volume · upper volume maintained on double days",
+  focus:["Base week — groove 6×3 @80%, bar speed is law","6×3 @80–82% (+2.5 kg)","Wave 1 — 5×3 @85% + back-off 2×5 @75%","Wave 2 — 5×3 @85–87%, pause the first rep","PEAK — heavy single @92–95%, back-off 4×2 @85%","DELOAD — 70%, half volume"],
+  days(wi){
+   const dl=wi===6;
+   const main=dl?"3×3 @70%":wi<=2?"6×3 @80"+(wi===2?"–82% (+2.5 kg)":"%"):wi<=4?"5×3 @85"+(wi===4?"–87%, pause first rep of each set":"%")+" + back-off 2×5 @75%":"build to a heavy single @92–95%, then 4×2 @85%";
+   const dead=dl?"3×3 @70%":wi===5?"build to a heavy single @92–95%":"5×3 @"+(wi<3?"80%":"85%");
+   const hinge=wi%2?"Romanian deadlift 4×5":"Good morning 4×6 (crisp)";
+   const uni=wi%2?"Barbell split squat 3×8/side":"Barbell step-up 3×8/side";
+   const row=wi%2?"Pendlay row 5×4":"Bent-over row 5×6";
+   const tue=pick(wi,["AM run: 5×3 min hard, 2 min jog","AM bike: 4×4 min VO2, 4 min easy","AM run: tempo 20 min continuous","AM bike: over-unders 3×10 min (2 over / 2 under)","AM run: 10×400 m at 5k effort, 200 m jog","AM: 45 min easy run or spin (deload)"]);
+   return [
+    {d:"Mon",t:"Lower — heavy",c:C.cyan,items:["Back squat "+main,hinge,uni,"Ab rollout 4×10","PM: easy spin 40 min Z1–2"]},
+    {d:"Tue",t:"DOUBLE — intervals + upper volume",c:C.green,items:[tue,dl?"PM: off":"PM lift: bench 4×8 @70%, barbell row 4×8, OHP 3×8 — volume maintenance, RPE 7"]},
+    {d:"Wed",t:"Upper — heavy",c:C.cyan,items:["Bench press "+main,row,"Overhead press 4×5",wi%2?"Barbell curl 3×10":"Close-grip bench 3×8","PM optional: easy run 30–40 min Z2"]},
+    {d:"Thu",t:"Z2 run + spin",c:C.green,items:["45 min Z2 run, then 30–45 min easy spin — full ride only if legs need low impact",dl?"No hill sprints this week":"Finish the run with 6×8 s maximal hill sprints, walk-back recovery"]},
+    {d:"Fri",t:"Full body — heavy",c:C.cyan,items:["Deadlift "+dead,"Front squat 4×4","Push press 4×3","Barbell row 4×5"]},
+    dl?{d:"Sat",t:"Deload — easy day",c:C.green,items:["Rest or 40 min Z1 spin — no Gauntlet on deload weeks"]}:SAT(this.from+wi-1,false),
+    {d:"Sun",t:"Long ride",c:C.green,items:[dl?"2 h Z2 max this week":"3–5 h Z2 — fuel it properly with fruit"]}];
+  },
+  extras:[
+   {t:"OPTIONAL — Hyrox Primer PRO",c:C.red,items:["4 rounds: 600 m hard run → 20 thrusters → 12 burpee broad jumps → 60 m walking lunge","Aerobic control — HR back to Z2 before each round","Slot: replace Thu; never the day before Mon"]},
+   {t:"OPTIONAL — Killer Strength: Cluster Day PRO",c:C.amber,items:["Back squat clusters 6×2 @92% — 20 s between reps, 3 min between sets","Push press 5×2 heavy","Pendlay row 4×3 heavy","Greens-only session: sleep 8 h+, appetite strong","48 h clear of the Gauntlet"]}]},
+ {n:2,name:"Power / Plyo",from:9,to:11,color:C.pink,hint:"Convert the new strength into speed — contrast sets, jumps, hill sprints. Low volume, maximal intent, ~2–8% running-economy money",
+  focus:["Learn the contrasts — intent over load","Add a set everywhere — maximal intent","Sharpen — volume −30%, pure speed"],
+  days(wi){
+   return [
+    {d:"Mon",t:"Contrast lower",c:C.cyan,items:["Back squat "+(wi===3?"3":"4")+"×3 @80% — each set immediately followed by 5 broad jumps, 3 min rest","Jump squat "+(wi===2?"5":"4")+"×5 @30% 1RM — maximal intent every rep","Single-leg pogo hops 3×12/side","Rule: the moment bar speed or jump height drops, the exercise is over"]},
+    {d:"Tue",t:"Run intervals + strides",c:C.green,items:["6×2 min hard, 2 min jog","4×20 s relaxed strides after"]},
+    {d:"Wed",t:"Contrast upper",c:C.cyan,items:["Bench press "+(wi===3?"3":"4")+"×3 @80% — each set followed by 5 plyo push-ups","Push press 4×3 — as fast as possible","Pendlay row 4×5, explosive off the floor"]},
+    {d:"Thu",t:"Easy run + hill sprints",c:C.green,items:["35 min Z2 run","6×8–10 s maximal hill sprints, walk-back recovery — the highest-value 90 seconds in the programme"]},
+    {d:"Fri",t:"Plyo circuit",c:C.cyan,items:["Pogo hops 3×20","Box or broad jumps "+(wi===2?"5":"4")+"×5 — stick every landing","Depth drops 3×5 (step off ~40 cm)","Bounding 4×30 m","Hollow hold 3×30 s"]},
+    SAT(this.from+wi-1,false),
+    {d:"Sun",t:"Long ride",c:C.green,items:["3 h Z2"]}];
+  },
+  extras:[
+   {t:"OPTIONAL — Sprint Day",c:C.red,items:["Bike: 8×10 s max sprints from a slow roll, 3 min easy between","Or run: 6×60 m relaxed-fast accelerations","Full recovery between everything — quality only"]},
+   {t:"OPTIONAL — Killer Strength: Speed-Strength Ladder",c:C.amber,items:["Back squat 8×2 @70% on a 60 s clock — every rep at max velocity","Push press 6×2 @70%, same rule","The moment bar speed visibly drops, the session is over"]}]},
+ {n:3,name:"Hypertrophy",from:12,to:17,color:C.cyan,hint:"5 lifting days · drop sets & myo-reps · calorie cycling matters most here",
+  focus:["Volume base — 5×10 @67%","5×10 +load via double progression","Load up — 5×8 @75%","5×8 — top sets to RPE 9, drop set finishers","Heavy hypertrophy — 6×6 @80%","DELOAD — halve everything, eat at maintenance"],
+  days(wi){
+   const dl=wi===6;
+   const sch=dl?"2×8 moderate":wi<=2?"5×10 @67%":wi<=4?"5×8 @75%":"6×6 @80%";
+   const hip=wi%2?"Hip thrust 4×12":"Good morning 4×10";
+   const lunA=wi%2?"Walking barbell lunge 3×12/leg":"Bulgarian split squat 3×10/leg";
+   const lunB=wi%2?"Bulgarian split squat 3×10/leg":"Walking barbell lunge 3×12/leg";
+   const tue=pick(wi,["AM run: 5×1 km comfortably hard","AM tempo run: 25 min","AM bike: sweet-spot 3×15 min","AM run: hill reps 10×60 s","AM run: 4×4 min hard, 3 min jog","AM: 45 min Z2 (deload)"]);
+   return [
+    {d:"Mon",t:"Lower 1",c:C.cyan,items:["Prime: jump squats 3×3 @30% — keep the power you just built","Back squat "+sch,"Romanian deadlift 4×10",lunA,"Calf raise 4×15 — last set: drop 20% and AMRAP"]},
+    {d:"Tue",t:"DOUBLE — intervals + Upper 1",c:C.green,items:[tue,dl?"PM: off":"PM lift: bench press "+sch+", barbell row 5×10, OHP 4×10, curl+CGB superset 3×15 (last set drop set)"]},
+    {d:"Wed",t:"Upper 2 — pump",c:C.cyan,items:["Incline or floor press 4×12","Bent-over row 4×12","Push press 3×10","Skull crusher + curl 3×15 — finish with a myo-rep set","PM: easy run 30 min Z2"]},
+    {d:"Thu",t:"Z2 run",c:C.green,items:["60 min easy run — swap to a 90 min spin any week the legs are trashed; this block's total stress is the highest of the programme",dl?"No hill sprints this week":"Finish with 6×8 s hill sprints, walk-back recovery"]},
+    {d:"Fri",t:"Lower 2",c:C.cyan,items:["Front squat "+sch,"Deadlift 4×6",hip,lunB]},
+    dl?{d:"Sat",t:"Deload — easy day",c:C.green,items:["Rest or 40 min Z1 spin"]}:SAT(this.from+wi-1,false),
+    {d:"Sun",t:"Long ride",c:C.green,items:[dl?"2 h Z2 max":"3–5 h Z2"]}];
+  },
+  extras:[
+   {t:"OPTIONAL — Hyrox Engine Builder PRO",c:C.red,items:["5 rounds: 1 km run → 25 thrusters → 15 burpee broad jumps","Hold even splits — round 5 within 5% of round 1","Slot: replace Thu"]},
+   {t:"OPTIONAL — Killer Strength: Widowmaker PRO",c:C.amber,items:["Back squat 1×20 @65% — one set, no racking, breathe at the top","Then bench press AMRAP @70% ×2 sets","Row 4×12, RDL 3×12","Replaces Lower 2 that week — and you will not miss it"]}]},
+ {n:4,name:"Muscular Endurance",from:18,to:23,color:C.amber,hint:"20–30 reps · giant sets · 30–40 s rests · highest weekly calorie burn",
+  focus:["20s — settle into the discomfort","25s — extend it","25s + giant sets","30s — full range","DENSITY — same work, 30 s rests","DELOAD + RETEST — 3RM + heavy single vs baseline"],
+  days(wi){
+   const dl=wi===6;
+   const reps=pick(wi,[20,25,25,30,25]);
+   const rounds=pick(wi,[5,6,6,7,7]);
+   const rot=pick(wi,[6,6,7,7,8]);
+   const rest=wi===5?"30 s rests everywhere this week":"Rests 30–40 s";
+   const tue=pick(wi,["AM run: 6×1 km comfortably hard","AM run: tempo 25 min","AM bike: sweet-spot 3×15 min","AM run: 8×600 m at 5k effort","AM run: 30 min progression (finish hard)","AM: 45 min Z2 (deload)"]);
+   if(dl)return [
+    {d:"Mon",t:"Deload — light movement",c:C.cyan,items:["Back squat 2×10 light","RDL 2×10 light","Mobility 15 min"]},
+    {d:"Tue",t:"Z2 spin",c:C.green,items:["45 min easy"]},
+    {d:"Wed",t:"RETEST DAY",c:C.red,items:["Warm up fully → 3RM back squat, then build to a heavy single","Rest 10 min → 3RM bench or OHP + heavy single","Log everything — compare to the Week 1 baselines"]},
+    {d:"Thu",t:"Rest",c:C.green,items:["Full rest or 30 min walk"]},
+    {d:"Fri",t:"Optional easy circuit",c:C.cyan,items:["2 gentle EMOM rotations at 50% — or rest"]},
+    {d:"Sat",t:"Easy ride",c:C.green,items:["2 h Z2 max"]},
+    {d:"Sun",t:"Easy run",c:C.green,items:["45 min Z2"]}];
+   return [
+    {d:"Mon",t:"Day A — Lower endurance",c:C.cyan,items:["Prime: jump squats 3×3 @30% before the work","GIANT SET ×3: back squat "+reps+" @~50% → RDL "+reps+" → walking lunge 20/leg → calf raise 25 (no rest within, 2 min between)",rest]},
+    {d:"Tue",t:"Intervals",c:C.green,items:[tue,"PM optional: 30 min easy run"]},
+    {d:"Wed",t:"Day B — Complex + upper",c:C.cyan,items:["Barbell complex ×"+rounds+" rounds: 5 each DL → row → hang clean → front squat → push press (~45% push press 1RM), "+(wi===5?"90 s":"2 min")+" rest","Bench/floor press 3×"+reps,"Barbell row 3×"+reps]},
+    {d:"Thu",t:"Z2 run",c:C.green,items:["50 min easy run — or 90 min spin for low-impact recovery","Finish with 6×8 s hill sprints, walk-back recovery"]},
+    {d:"Fri",t:"Day C — EMOM circuit",c:C.cyan,items:[(rot*4)+" min, rotate each minute:","Min 1: front squat ×12 light","Min 2: push press ×12","Min 3: barbell row ×15","Min 4: 45 s hard shuttle run (bike only if no space)","Complete "+rot+" full rotations"]},
+    SAT(this.from+wi-1,false),
+    {d:"Sun",t:"Long ride / long run",c:C.green,items:["Alternate weeks: 3–4 h Z2 ride ↔ 90 min long run — Hyrox is won on legs that can run long"]}];
+  },
+  extras:[
+   {t:"OPTIONAL — Hyrox Station EMOM 25",c:C.red,items:["Min 1: 20 thrusters · Min 2: 15 burpee broad jumps · Min 3: 30 m lunge · Min 4: 20 heavy rows · Min 5: 300 m run hard","5 full rotations = 25 min","Slot: replace Thu or PM after Day A"]},
+   {t:"OPTIONAL — Killer Strength: Century-Fifty",c:C.amber,items:["150 back squats @40% in as few sets as possible","75 push presses light","75 barbell rows","Record total sets — beat it next time","Replaces Day A that week"]}]},
+ {n:5,name:"Hyrox Peak 1",from:24,to:29,color:C.red,hint:"Two bricks/week · full-length sims wks 25/27/28 · taper wk 29",
+  focus:["Build — two bricks per week begin","HALF RACE SIM Saturday","Volume peak — 8-round brick","NEAR-FULL SIM — maintenance calories from now","DRESS REHEARSAL — full sim at race intent","TAPER — volume −50%, stay sharp, race ready"],
+  days(wi){
+   const brick=pick(wi,[6,6,8,7,4,0]);
+   const runInt=pick(wi,["8×1 km at race pace, 75 s jog","9×1 km at race pace, 60 s jog","10×1 km at race pace, 60 s jog","8×1 km at race pace, 60 s jog","5×1 km at race pace, feeling easy","3×1 km at race pace — openers only"]);
+   if(wi===6)return [
+    {d:"Mon",t:"Taper strength",c:C.cyan,items:["Jump squats 3×3 @30% — stay springy","Back squat 2×8 @50%","Push press 2×8 light","Barbell row 2×10 fast"]},
+    {d:"Tue",t:"Race-pace openers",c:C.green,items:[runInt]},
+    {d:"Wed",t:"Station touch",c:C.red,items:["1 round: 20 thrusters + 20 m lunges + 15 burpee broad jumps","20 min easy spin after"]},
+    {d:"Thu",t:"Rest",c:C.green,items:["Full rest — sleep is training now"]},
+    {d:"Fri",t:"Openers",c:C.cyan,items:["20 min: fast light sets + 2×200 m strides"]},
+    {d:"Sat",t:"RACE 1 (or full rest)",c:C.red,items:["Trust the training — race 1 of 2. Slow out of every station for 200 m, then build."]},
+    {d:"Sun",t:"Off",c:C.green,items:["Recover. Eat. Celebrate."]}];
+   const sat=wi===2?{d:"Sat",t:"HALF RACE SIM",c:C.red,items:["5×(1 km + station), continuous","Controlled — learn pacing, bank the splits"]}
+    :wi===4?{d:"Sat",t:"NEAR-FULL RACE SIM",c:C.red,items:["8×(1 km + station) at 90–95% intent","Full substitution rotation","Practise exact fuelling","Maintenance calories from this week"]}
+    :wi===5?{d:"Sat",t:"DRESS REHEARSAL",c:C.red,items:["Full simulation at race intent","Exact fuelling and pacing splits","First 200 m off every station deliberately slow"]}
+    :SAT(this.from+wi-1,true);
+   return [
+    {d:"Mon",t:"DOUBLE — Hyrox Strength A + mini-brick",c:C.cyan,items:["AM prime: jump squats 3×3 @30%","AM: back squat 4×12 @~60%, back-rack lunge 4×24 steps, thruster 3×25, burpee broad jumps 3×20 m","PM mini-brick: 3×(500 m run + 1 station, easy-moderate)"].concat(wi>=3&&wi<=5?["If still flying: 5–10 kg weighted vest on the PM mini-brick — the last Hyrox-specific hardness lever"]:[])},
+    {d:"Tue",t:"Run intervals",c:C.green,items:[runInt]},
+    {d:"Wed",t:"BRICK — compromised running",c:C.red,items:[brick+" rounds: 1 km run at race pace → 1 station → straight back to running","Stations rotate: 25 thrusters / 25 m lunges / 15 m burpee broad jumps / 2 min bike grind / 25 heavy rows",(wi===1?"Controlled this week":"Race intent")]},
+    {d:"Thu",t:"Z2 run + heat",c:C.green,items:["45–55 min easy run — drop to a spin if calves/achilles grumble; running frequency is high this block"].concat(wi<=4?["Sauna 15–20 min post-session (3–4×/wk through wk 27) — plasma-volume expansion for race day"]:[])},
+    {d:"Fri",t:"Hyrox Strength B — Pull/carry/press",c:C.cyan,items:["Bent-over row 5×15","Romanian deadlift 4×12","Push press 4×15","Loaded carry 5×50 m","Double-overhand bar hold 4×45 s"]},
+    sat,
+    {d:"Sun",t:"Easy run + strides",c:C.green,items:["60 min Z2","4×20 s relaxed strides to finish"]}];
+  },
+  extras:[
+   {t:"OPTIONAL — Weakness Hunter PRO",c:C.red,items:["Your 2 worst sim stations","5 sets each at race intensity with 400 m run between every set","Not within 48 h of a sim; skip weeks 28–29"]},
+   {t:"OPTIONAL — Killer Strength: Grip & Carry Grinder PRO",c:C.amber,items:["6 rounds: 60 m double-barbell farmer carry → 12 heavy RDL → 40 s double-overhand hold","Push press 4×8 heavy","Replaces Fri Strength B"]}]},
+{n:6,name:"Transition",from:30,to:31,color:C.violet,hint:"Regenerate after race 1, then re-baseline — the second build runs off NEW numbers",
+  focus:["REGENERATE — easy movement only, eat at maintenance","RE-BASELINE — new 3RMs + engine test for the second build"],
+  days(wi){
+   if(wi===1)return [
+    {d:"Mon",t:"Walk + mobility",c:C.green,items:["30–40 min walk","15 min mobility — hips, ankles, thoracic"]},
+    {d:"Tue",t:"Easy spin",c:C.green,items:["40 min Z1 — coffee-ride pace"]},
+    {d:"Wed",t:"Light movement",c:C.cyan,items:["Full body 2×10 @50% — squat, press, row","Nothing within 5 reps of failure"]},
+    {d:"Thu",t:"Rest",c:C.green,items:["Full rest"]},
+    {d:"Fri",t:"Easy run",c:C.green,items:["25 min Z1–2, flat"]},
+    {d:"Sat",t:"Fun ride",c:C.green,items:["Social pace, no data staring — 1–2 h"]},
+    {d:"Sun",t:"Rest",c:C.green,items:["Full rest. Maintenance calories both weeks — recovery is the training."]}];
+   return [
+    {d:"Mon",t:"Technique + tendon care",c:C.cyan,items:["Squat / bench / deadlift 3×5 @60% — crisp","Heavy slow calf raise 3×8","Tibialis raises 3×15"]},
+    {d:"Tue",t:"Easy run + strides",c:C.green,items:["30 min Z2","4×20 s relaxed strides"]},
+    {d:"Wed",t:"RE-BASELINE — strength",c:C.red,items:["3RM back squat, then optional heavy single","3RM bench press","3RM deadlift — RPE 8–9 cap","These NEW numbers drive every % in weeks 32–50"]},
+    {d:"Thu",t:"Z2 spin",c:C.green,items:["45 min easy"]},
+    {d:"Fri",t:"RE-BASELINE — engine",c:C.red,items:["20-min max bike test OR 5 km run TT — same one you did in week 2","Compare across the year: wk 2 → wk 17 → wk 23 → now"]},
+    {d:"Sat",t:"Gauntlet — feel check",c:C.red,items:["Full sequence at 70% — reacquaint, don't smash"]},
+    {d:"Sun",t:"Long ride",c:C.green,items:["2 h Z2"]}];
+  }},
+ {n:7,name:"Max Strength 2",from:32,to:37,color:C.green,hint:"Same wave logic off NEW maxes · pauses, deficits and tempo work keep the stimulus novel",
+  focus:["Re-entry — 6×3 @80% of the NEW max","6×3 +2.5 kg — own it","Wave 1 — 5×3 @85% + back-offs","Wave 2 — 5×3 @87%, 3 s pause first reps","PEAK 2 — heavy single @93–96%","DELOAD — 70%, half volume"],
+  days(wi){
+   const dl=wi===6;
+   const main=dl?"3×3 @70%":wi<=2?"6×3 @80"+(wi===2?"–82% (+2.5 kg)":"% of NEW max"):wi<=4?"5×3 @"+(wi===4?"87%, 3 s pause on first reps":"85%")+" + back-off 2×5 @75%":"build to a heavy single @93–96%, then 4×2 @85%";
+   const dead=dl?"3×3 @70%":wi===5?"build to a heavy single @93–96%":(wi%2?"Deadlift":"Deficit deadlift (stand on a plate)")+" 5×3 @"+(wi<3?"80%":"85%");
+   const tue=pick(wi,["AM run: 5×3 min hard, 2 min jog","AM bike: 4×4 min VO2","AM run: tempo 22 min","AM bike: over-unders 3×10 min","AM run: 10×400 m at 5k effort","AM: 45 min easy (deload)"]);
+   return [
+    {d:"Mon",t:"Lower — heavy",c:C.cyan,items:["Prime: jump squats 3×3 @30%","Back squat "+main,wi%2?"Romanian deadlift 4×5":"Good morning 4×6","Barbell split squat 3×8/side","PM: easy spin 40 min"]},
+    {d:"Tue",t:"DOUBLE — intervals + upper volume",c:C.green,items:[tue,dl?"PM: off":"PM lift: bench 4×8 @70%, row 4×8, OHP 3×8 — RPE 7"]},
+    {d:"Wed",t:"Upper — heavy",c:C.cyan,items:["Bench press "+main+(wi===4?" (pauses apply here too)":""),wi%2?"Pendlay row 5×4":"Bent-over row 5×6","Overhead press 4×5","Close-grip bench 3×8"]},
+    {d:"Thu",t:"Z2 run + hills",c:C.green,items:["45 min Z2 run",dl?"No hill sprints this week":"6×8 s maximal hill sprints, walk-back recovery"]},
+    {d:"Fri",t:"Full body — heavy",c:C.cyan,items:[dead,"Tempo front squat 4×4 (3 s down)","Push press 4×3","Barbell row 4×5"]},
+    dl?{d:"Sat",t:"Deload — easy day",c:C.green,items:["Rest or 40 min Z1 spin — no Gauntlet"]}:SAT(this.from+wi-1,false),
+    {d:"Sun",t:"Long ride",c:C.green,items:[dl?"2 h Z2 max":"3–4 h Z2"]}];
+  },
+  extras:[
+   {t:"OPTIONAL — Hyrox Primer PRO",c:C.red,items:["4 rounds: 600 m hard run → 20 thrusters → 12 burpee broad jumps → 60 m lunge","Slot: replace Thu"]},
+   {t:"OPTIONAL — Killer Strength: Cluster Day PRO",c:C.amber,items:["Back squat clusters 6×2 @92% of NEW max","Push press 5×2 heavy","Greens-only session"]}]},
+ {n:8,name:"Power 2 — French Contrast",from:38,to:40,color:C.pink,hint:"The heaviest strength of the year converted to speed — four-exercise contrast chains",
+  focus:["Learn the chain — heavy → jump → loaded jump → sprint","Add a set — maximal intent","Sharpen — volume −30%, pure speed"],
+  days(wi){
+   const sets=wi===2?5:wi===3?3:4;
+   return [
+    {d:"Mon",t:"French contrast — lower",c:C.cyan,items:[sets+" chains, 4 min rest between: 3 back squats @85% → 5 broad jumps → 5 jump squats @30% → 20 m sprint (corridor or hill)","Single-leg pogo hops 3×12/side","The moment anything slows, the session is over"]},
+    {d:"Tue",t:"Run intervals + strides",c:C.green,items:["6×2 min hard, 2 min jog","4×20 s strides"]},
+    {d:"Wed",t:"French contrast — upper",c:C.cyan,items:[sets+" chains: 3 bench @85% → 5 plyo push-ups → 5 speed push presses @40% → 10 m bear-crawl sprint","Pendlay row 4×5 explosive"]},
+    {d:"Thu",t:"Easy run + hill sprints",c:C.green,items:["35 min Z2 run","6×10 s maximal hill sprints, walk-back recovery"]},
+    {d:"Fri",t:"Plyo — upgraded",c:C.cyan,items:["Depth JUMPS 4×5 (drop ~40 cm, explode straight up)","Bounding 4×30 m","Single-leg hops 3×10/side","Hollow hold 3×30 s"]},
+    SAT(this.from+wi-1,false),
+    {d:"Sun",t:"Long ride",c:C.green,items:["2.5–3 h Z2"]}];
+  },
+  extras:[
+   {t:"OPTIONAL — Sprint Day",c:C.red,items:["Bike: 8×10 s max sprints, 3 min easy between — or run 6×60 m accelerations","Full recovery, quality only"]},
+   {t:"OPTIONAL — Killer Strength: Speed-Strength Ladder",c:C.amber,items:["Back squat 8×2 @70% on a 60 s clock — max velocity every rep","Stops the moment bar speed drops"]}]},
+ {n:9,name:"Engine Block",from:41,to:44,color:C.cyan,hint:"Concentrated VO2 — 3 quality hits/week, lifting drops to 2 maintenance days. The Rønnestad block the schedule finally has room for",
+  focus:["3 VO2 hits — this block moves the needle most per week","Repeat the sessions — better numbers","Peak engine week — hold nothing back","ABSORB — deload + retest 20-min power / 5 km"],
+  days(wi){
+   const dl=wi===4;
+   if(dl)return [
+    {d:"Mon",t:"Easy spin + light lift",c:C.cyan,items:["40 min Z1","Squat/press/row 2×5 @70% — fast and easy"]},
+    {d:"Tue",t:"Z2 run",c:C.green,items:["40 min easy"]},
+    {d:"Wed",t:"Rest",c:C.green,items:["Full rest"]},
+    {d:"Thu",t:"Openers",c:C.green,items:["20 min easy + 3×1 min at test effort"]},
+    {d:"Fri",t:"RETEST — engine",c:C.red,items:["20-min max bike test OR 5 km TT","Compare with weeks 2 / 31 — this is where the block pays out"]},
+    {d:"Sat",t:"Easy ride",c:C.green,items:["90 min Z2"]},
+    {d:"Sun",t:"Easy run",c:C.green,items:["40 min Z2"]}];
+   return [
+    {d:"Mon",t:"VO2 #1 + maintenance lift",c:C.red,items:["AM bike: 5×5 min at ~90% max HR, 3 min easy","PM lift A: back squat 3×5 @75%, push press 3×5, row 3×6 — maintain, don't build"]},
+    {d:"Tue",t:"Z2 run",c:C.green,items:["50 min easy"]},
+    {d:"Wed",t:"VO2 #2 — run",c:C.red,items:["5×3 min hard, 2.5 min jog"+(wi===3?" — 6 reps this week":"")]},
+    {d:"Thu",t:"Z2 spin + strides",c:C.green,items:["60 min easy","4×20 s strides off the bike"]},
+    {d:"Fri",t:"VO2 #3 + maintenance lift",c:C.red,items:["Bike 30/15s: "+(wi===3?"3":"2")+"–3 sets of 13×(30 s hard / 15 s easy), 3 min between sets","PM lift B: deadlift 3×3 @75%, bench 3×5, calf raise 3×10"]},
+    {d:"Sat",t:"Long run / ride",c:C.green,items:["Alternate weeks: 80 min long run ↔ 2 h Z2 ride","Gauntlet pauses this block — three VO2 hits is the budget"]},
+    {d:"Sun",t:"Long ride",c:C.green,items:["2.5–3 h Z2"]}];
+  },
+  extras:[
+   {t:"OPTIONAL — extra Z2 volume only",c:C.green,items:["This block's extras are easy miles, nothing else","+30–45 min Z2 on Tue or Thu if recovery is green","No extra intensity — the 3 VO2 sessions ARE the block"]}]},
+ {n:10,name:"Hyrox Peak 2",from:45,to:50,color:C.red,hint:"Second peak off a bigger engine and stronger legs · sims wks 46/48/49 · race week 50",
+  focus:["Build 2 — bricks at PB pace","HALF SIM — beat your week 25 splits","Volume peak — 8-round brick","NEAR-FULL SIM — maintenance calories from now","DRESS REHEARSAL 2 — everything rehearsed","TAPER — race week 50"],
+  days(wi){
+   const brick=pick(wi,[6,6,8,7,4,0]);
+   const runInt=pick(wi,["8×1 km at NEW race pace, 75 s jog","9×1 km at race pace, 60 s jog","10×1 km at race pace, 60 s jog","8×1 km at race pace, 60 s jog","5×1 km at race pace, feeling easy","3×1 km at race pace — openers only"]);
+   if(wi===6)return [
+    {d:"Mon",t:"Taper strength",c:C.cyan,items:["Jump squats 3×3 @30% — stay springy","Back squat 2×8 @50%","Push press 2×8 light"]},
+    {d:"Tue",t:"Race-pace openers",c:C.green,items:[runInt]},
+    {d:"Wed",t:"Station touch",c:C.red,items:["1 round: 20 thrusters + 20 m lunges + 15 burpee broad jumps","20 min easy spin after"]},
+    {d:"Thu",t:"Rest",c:C.green,items:["Full rest — sleep is training now"]},
+    {d:"Fri",t:"Openers",c:C.cyan,items:["20 min: fast light sets + 2×200 m strides"]},
+    {d:"Sat",t:"RACE 2",c:C.red,items:["Trust the 50 weeks. You are a different athlete than week 1.","Slow out of every station for 200 m, then build."]},
+    {d:"Sun",t:"Off",c:C.green,items:["Recover. Eat. Plan the next year."]}];
+   const sat=wi===2?{d:"Sat",t:"HALF RACE SIM 2",c:C.red,items:["5×(1 km + station), continuous","Target: beat your week 25 splits"]}
+    :wi===4?{d:"Sat",t:"NEAR-FULL RACE SIM 2",c:C.red,items:["8×(1 km + station) at 90–95% intent","Practise exact fuelling","Maintenance calories from this week"]}
+    :wi===5?{d:"Sat",t:"DRESS REHEARSAL 2",c:C.red,items:["Full simulation at race intent","Nothing new after this — kit, fuel, pacing all locked"]}
+    :SAT(this.from+wi-1,true);
+   return [
+    {d:"Mon",t:"DOUBLE — Hyrox Strength A + mini-brick",c:C.cyan,items:["AM prime: jump squats 3×3 @30%","AM: back squat 4×12 @~60%, back-rack lunge 4×24 steps, thruster 3×25, burpee broad jumps 3×20 m","PM mini-brick: 3×(500 m run + 1 station, easy-moderate)"].concat(wi>=3&&wi<=5?["If still flying: 5–10 kg weighted vest on the PM mini-brick"]:[])},
+    {d:"Tue",t:"Run intervals",c:C.green,items:[runInt]},
+    {d:"Wed",t:"BRICK — compromised running",c:C.red,items:[brick+" rounds: 1 km run at race pace → 1 station → straight back to running","Stations rotate: 25 thrusters / 25 m lunges / 15 m burpee broad jumps / 2 min bike grind / 25 heavy rows",(wi===1?"Controlled this week":"Race intent")]},
+    {d:"Thu",t:"Z2 run + heat",c:C.green,items:["45–55 min easy run — spin if calves/achilles grumble"].concat(wi<=4?["Sauna 15–20 min post-session (3–4×/wk through wk 48)"]:[])},
+    {d:"Fri",t:"Hyrox Strength B — Pull/carry/press",c:C.cyan,items:["Bent-over row 5×15","Romanian deadlift 4×12","Push press 4×15","Loaded carry 5×50 m","Double-overhand bar hold 4×45 s"]},
+    sat,
+    {d:"Sun",t:"Easy run + strides",c:C.green,items:["60 min Z2","4×20 s relaxed strides to finish"]}];
+  },
+  extras:[
+   {t:"OPTIONAL — Weakness Hunter PRO",c:C.red,items:["Your 2 worst stations from ALL sims this year","5 sets each at race intensity with 400 m run between","Not within 48 h of a sim; skip weeks 49–50"]},
+   {t:"OPTIONAL — Killer Strength: Grip & Carry Grinder PRO",c:C.amber,items:["6 rounds: 60 m double-barbell farmer carry → 12 heavy RDL → 40 s hold","Replaces Fri Strength B"]}]}];
+const DELOAD=[8,17,23,29,37,44,50];
+const ROT=[["Mon","Greek yoghurt, berries, almonds","Chicken & avocado salad","Baked salmon, broccoli & asparagus"],
+ ["Tue","3-egg omelette, spinach + banana pre-intervals","Tuna & white bean salad","Sheet-pan harissa chicken & veg"],
+ ["Wed","Tofu scramble, spinach, mushrooms","Leftover harissa chicken + salad","Chickpea & spinach coconut curry"],
+ ["Thu","Greek yoghurt, apple, walnuts","Lentil & veg soup + boiled eggs","Ginger chicken stir-fry"],
+ ["Fri","Omelette + berries","Greek chicken salad bowl","White fish tray bake"],
+ ["Sat","Yoghurt + 2 fruit pre-Gauntlet","Crispy tofu stir-fry (large, post-session)","Red lentil dahl + salad"],
+ ["Sun","Eggs, avocado, tomatoes","Chicken & chickpea salad","Salmon or mackerel + greens"]];
+const FOODS=[["Eggs","Breakfast default — protein+fat blunts hunger for hours"],
+ ["Skyr / cottage cheese","Casein = long satiety tail; 30–40 g before bed feeds overnight muscle"],
+ ["Chicken & white fish","Highest protein per calorie; eat the protein portion first"],
+ ["Oily fish","Very filling; omega-3s aid recovery — 2–3 dinners/wk"],
+ ["Lentils, chickpeas, beans","Protein+fibre = strongest satiety pairing; deploy on hungriest days"],
+ ["Broth-based soups","Same calories, far more fullness — lunch starter on rest days"],
+ ["Apples, oranges, berries","Whole fruit only; apple = best rest-day hunger killer"],
+ ["Greens, broccoli, courgette","Near-zero-calorie volume — half of every plate, unlimited"],
+ ["Avocado","Fibre + fat, extends any meal"],["Edamame","Protein+fibre snack"],
+ ["Chia / flax","Gel fibre — 1 tbsp in yoghurt"],["Nuts","Counted 30 g handful only"],
+ ["Black coffee / green tea","Caffeine covers the mid-morning hunger window"]];
+const RECIPES=[
+ {n:"Sheet-Pan Harissa Chicken",c:"Chicken",t:"25 min",i:["4 boneless chicken thighs","1 tbsp harissa + 1 tbsp olive oil","Courgette, red pepper, red onion, cherry tomatoes"],s:["Everything on one tray, harissa+oil over chicken","220°C for 25 min","Finish with lemon"]},
+ {n:"Greek Chicken Salad Bowl",c:"Chicken",t:"15 min",i:["2 chicken breasts, oregano, lemon","Cucumber, tomatoes, red onion, olives","50 g feta, olive oil + red wine vinegar"],s:["Pan-fry sliced chicken 6–7 min","Chop everything else","Combine and dress"]},
+ {n:"Ginger Chicken Stir-Fry",c:"Chicken",t:"15 min",i:["2 chicken breasts, sliced thin","Broccoli, pepper, mangetout, spring onion","2 tbsp tamari, ginger, garlic, sesame oil"],s:["Hot pan: chicken 4 min","Veg 4 min","Sauce final 2 min; cashews on top"]},
+ {n:"Lemon Baked Salmon",c:"Fish",t:"18 min",i:["2 salmon fillets, 1 lemon, olive oil, dill","Broccoli + asparagus"],s:["All on one tray","200°C for 15–18 min","Done when it flakes"]},
+ {n:"Mediterranean Fish Tray Bake",c:"Fish",t:"20 min",i:["2 cod/haddock fillets","Cherry tomatoes, courgette, olives, capers"],s:["Veg 10 min at 200°C","Fish on top for 12 more min"]},
+ {n:"Tuna & White Bean Salad",c:"Fish + legume",t:"5 min",i:["1 tin tuna + 1 tin cannellini beans","Red onion, parsley, rocket","Olive oil, lemon, pepper"],s:["Rinse beans","Mix everything","Done — no cooking"]},
+ {n:"Crispy Tamari Tofu Stir-Fry",c:"Tofu",t:"20 min",i:["400 g extra-firm tofu, pressed, cubed","Broccoli, pak choi, pepper","Tamari, garlic, chilli, sesame"],s:["Fry tofu golden all sides (~8 min), remove","Stir-fry veg","Return tofu with sauce"]},
+ {n:"Tofu Scramble",c:"Tofu",t:"10 min",i:["300 g firm tofu, crumbled","½ tsp turmeric, smoked paprika, salt","Spinach, mushrooms, cherry tomatoes"],s:["Fry veg in olive oil","Add crumbled tofu + spices","6–8 min total"]},
+ {n:"Chickpea & Spinach Coconut Curry",c:"Legume",t:"20 min",i:["2 tins chickpeas, 1 tin coconut milk, 1 tin tomatoes","Onion, garlic, ginger, curry powder","200 g spinach"],s:["Soften onion, add spices","Tins in, simmer 12 min","Wilt spinach at the end"]},
+ {n:"Red Lentil Dahl",c:"Legume",t:"25 min",i:["250 g red lentils, 1 tin tomatoes","Onion, garlic, ginger","Turmeric, cumin, garam masala, 700 ml stock"],s:["Everything in one pot","Simmer 20–25 min","Lemon + coriander to finish"]}];
+const TENDON={
+ a:{t:"Session A — Achilles (after Mon lifting)",items:["Straight-leg heavy calf raise 3×8 — 3 s up / 3 s down, loaded (barbell or single-leg)","Bent-knee calf raise 3×8 slow — targets soleus","Single-leg isometric calf hold 3×45 s, heavy"]},
+ b:{t:"Session B — Patellar (after Fri lifting)",items:["Heels-elevated slow squat 3×8 — 3 s down (decline-squat substitute, plate under heels)","Spanish squat hold 3×45 s — rigid strap around a rack upright, sit back hard (or loaded 60° wall sit)","Split squat 2×8/side, 3 s lowering"]}};
+const ATWORK={
+ Mon:{f:"PUSH",s:["12 push-ups","10 pike push-ups","30 s wall sit","15 air squats"],a:"12-min AMRAP: 8 pike push-ups → 12 push-ups → 15 air squats → 20 s side plank each side"},
+ Tue:{f:"LEGS",s:["20 air squats","8 reverse lunges/leg","15 calf raises","30 s wall sit"],a:"12-min AMRAP: 12 reverse lunges/leg → 20 air squats → 15 single-leg calf raises/side → 30 s wall sit"},
+ Wed:{f:"CORE",s:["30 s plank","10 dead bugs/side","20 s side plank each side","15 glute bridges"],a:"12-min AMRAP: 10 V-ups → 12 dead bugs/side → 30 s hollow hold → 15 glute bridges"},
+ Thu:{f:"SINGLE-LEG",s:["8 single-leg RDLs/side","10 split squats/leg","12 single-leg calf raises/side","20 s single-leg balance, eyes closed"],a:"12-min AMRAP: 10 split squats/leg → 8 single-leg RDLs/side → 12 stair step-ups/leg → 20 s single-leg wall sit each"},
+ Fri:{f:"MIXED",s:["10 squat-to-stands","12 incline push-ups","10 walking lunges/leg","1 flight of stairs, briskly"],a:"12-min AMRAP: 12 push-ups → 15 air squats → 10 lunges/leg → 1 stair flight (or 20 mountain climbers)"},
+ Sat:{f:"REST"},Sun:{f:"REST"}};
+const GENW=()=>{
+ const P=a=>a[Math.floor(Math.random()*a.length)];
+ const take=(a,k)=>{const c=a.slice(),o=[];while(o.length<k&&c.length)o.push(c.splice(Math.floor(Math.random()*c.length),1)[0]);return o};
+ const R=(lo,hi)=>lo+Math.floor(Math.random()*(hi-lo+1));
+ const eq=Math.random()<0.5?"BARBELL":"DUMBBELL";
+ const bar=[["thrusters",15,20],["front squats",12,16],["deadlifts (moderate-heavy)",10,14],["hang power cleans",10,14],["push presses",12,16],["bent-over rows",14,18],["back-rack lunges",10,14,"per leg"],["ground-to-overhead",8,12]];
+ const db=[["devil presses",8,12],["alternating DB snatches",16,20],["DB thrusters",12,16],["goblet squats",16,22],["DB walking lunges",16,20,"steps"],["renegade rows",10,14],["DB push presses",12,16],["man makers",6,10],["heavy farmer carries",2,3,"× 50 m"]];
+ const pool=eq==="BARBELL"?bar:db;
+ const bw=[["burpees",12,18],["burpee broad jumps",10,14],["push-ups",15,25],["V-ups",15,20],["jump lunges",20,30],["air squats",25,40],["mountain climbers",30,50]];
+ const runs=["400 m hard","600 m hard","800 m @ 5k effort","1 km @ 5k effort"];
+ const openers=eq==="BARBELL"
+  ?["STRENGTH OPENER: back squat 5×3 @85%, 2 min rest","STRENGTH OPENER: push press 6×2 heavy and fast","POWER OPENER: 4×(3 deadlifts @80% → 5 broad jumps), 2 min rest","POWER OPENER: jump squats 5×5 @30% — maximal intent"]
+  :["STRENGTH OPENER: heavy single-arm DB row 4×6/side","STRENGTH OPENER: heavy DB push press 5×5","POWER OPENER: 4×(5 goblet squat jumps → 5 broad jumps)","POWER OPENER: DB snatch 5×3/side — heavy and fast"];
+ const fins=["FINISHER: 400 m all-out","FINISHER: 40 burpees for time","FINISHER: 2 min max "+(eq==="BARBELL"?"thrusters (empty bar)":"light DB thrusters"),"FINISHER: 6×15 s hill sprints, walk back","FINISHER: 100 mountain climbers, minimal breaks"];
+ const cores=["CORE: 3×15 V-ups + 3×40 s hollow hold","CORE: 3×12 shoulder taps/side in plank + 40 s side plank each"];
+ const line=m=>R(m[1],m[2])+" "+m[0]+(m[3]?" "+m[3]:"");
+ const name="The "+P(["Angry","Feral","Grim","Merciless","Savage","Unreasonable","Rabid","Biblical","Relentless"])+" "+P(["Locomotive","Anvil","Furnace","Verdict","Night Shift","Crucible","Sledgehammer","Audit","Registrar","Reckoning"]);
+ let fmt,main;
+ const f=R(0,5);
+ if(f===0){const d=P([20,22,25]);fmt="AMRAP "+d+" MIN";
+  main=["Each round: "+P(runs)].concat(take(pool,2).concat(take(bw,1)).map(line)).concat(["Score = rounds — round 1 pace is the contract"]);}
+ else if(f===1){const r=P([5,6]);fmt=r+" ROUNDS FOR TIME";
+  main=[P(["600 m hard","800 m @ 5k effort"])].concat(take(pool,2).map(line)).concat(["Record the time"]);}
+ else if(f===2){const mins=P([28,32,36]);fmt="EMOM "+mins+" MIN";
+  const p2=take(pool,2),w1=take(bw,1)[0];
+  main=["Min 1: "+line(p2[0]),"Min 2: "+line(w1),"Min 3: "+line(p2[1]),"Min 4: 300 m run (or 60 s hard shuttle)","Repeat ×"+(mins/4)+" — rest only what remains of each minute"];}
+ else if(f===3){fmt=P(["27-21-15-9","30-25-20-15-10"])+" LADDER";
+  main=take(pool,1).concat(take(bw,1)).map(m=>m[0]+(m[3]?" "+m[3]:"")).concat(["400 m run between rounds","For time — no set should be unbroken past the halfway round"]);}
+ else if(f===4){fmt="CHIPPER — once through, for time";
+  main=["1 km run buy-in"].concat(take(pool,3).concat(take(bw,2)).map(m=>(2*m[2])+" "+m[0]+(m[3]?" "+m[3]:""))).concat(["1 km run cash-out"]);}
+ else{const r=P([6,7,8]);fmt=r+"× RUN/"+(eq==="BARBELL"?"BARBELL":"DB")+" BRICK";
+  main=["600 m hard run","Straight into: "+line(take(pool,1)[0]),"60 s rest, repeat ×"+r,"Round "+r+" run within 5% of round 1 — that IS the workout"];}
+ let items=[P(openers),"— MAIN —"].concat(main);
+ if(Math.random()<0.5)items=items.concat([P(cores)]);
+ items=items.concat([P(fins)]);
+ return {name:name,fmt:eq+" · "+fmt,items:items,
+  note:"Max-effort day covering strength, power, engine and capacity in one hit. GREEN readiness only, fully fuelled — treat it like a race sim. REPLACES a quality session; never within 48 h of a sim, benchmark Gauntlet or FURNACE/SLEDGE Saturday. Barbell ~50–60% of max; DBs a pair you could press 15× fresh. Never fail a rep."};
+};
+const DAYN=["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
+
+// ───────── state ─────────
+let state={entries:[],startDate:"",energy:[],customLifts:[],hr:[],lastGen:null};
+try{const raw=localStorage.getItem("coach24pro");if(raw)state=Object.assign(state,JSON.parse(raw))}catch(e){}
+if(!state.energy)state.energy=[];
+if(!state.customLifts)state.customLifts=[];
+if(!state.hr)state.hr=[];
+function save(){try{localStorage.setItem("coach24pro",JSON.stringify(state))}catch(e){}}
+let ui={tab:"plan",viewWeek:null,chartEx:"Back Squat",metric:"top",dietSub:"plan",openRecipe:-1,fx:"Back Squat"};
+
+// ───────── helpers ─────────
+const todayISO=()=>new Date().toISOString().slice(0,10);
+const esc=s=>String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+function mondayOf(ds){const d=new Date(ds+"T12:00:00");d.setDate(d.getDate()-((d.getDay()+6)%7));return d.toISOString().slice(0,10)}
+function progWeek(ds){if(!state.startDate)return null;return Math.floor((new Date(ds+"T12:00:00")-new Date(state.startDate+"T12:00:00"))/(7*864e5))+1}
+const blockFor=w=>BLOCKS.find(b=>w>=b.from&&w<=b.to)||null;
+const e1rm=(w,r)=>r>1?w*(1+r/30):w;
+const todayName=DAYN[(new Date().getDay()+6)%7];
+function curWeek(){const w=progWeek(todayISO());return w?Math.min(Math.max(w,1),50):null}
+function weekBuckets(){const m={};state.entries.forEach(e=>{const k=mondayOf(e.date);(m[k]=m[k]||[]).push(e)});return Object.keys(m).sort().map(k=>({ws:k,items:m[k]}))}
+function wkLabel(ws){const p=progWeek(ws);return p&&p>=1&&p<=50?"W"+p:ws.slice(5)}
+
+// ───────── SVG charts (dependency-free) ─────────
+function lineChart(data,key,color,h){
+  if(!data.length)return "";
+  const W=460,H=h||200,P={l:38,r:10,t:12,b:22};
+  const vals=data.map(d=>d[key]);
+  let lo=Math.min(...vals),hi=Math.max(...vals);
+  if(lo===hi){lo-=1;hi+=1} const pad=(hi-lo)*.12;lo-=pad;hi+=pad;
+  const x=i=>data.length===1?W/2:P.l+i*(W-P.l-P.r)/(data.length-1);
+  const y=v=>P.t+(1-(v-lo)/(hi-lo))*(H-P.t-P.b);
+  let pts=data.map((d,i)=>x(i)+","+y(d[key])).join(" ");
+  let g="";for(let i=0;i<4;i++){const gy=P.t+i*(H-P.t-P.b)/3;const gv=hi-(hi-lo)*i/3;
+    g+='<line x1="'+P.l+'" y1="'+gy+'" x2="'+(W-P.r)+'" y2="'+gy+'" stroke="'+C.line+'" stroke-dasharray="2 6"/><text x="'+(P.l-4)+'" y="'+(gy+3)+'" text-anchor="end">'+Math.round(gv*10)/10+'</text>'}
+  let dots=data.map((d,i)=>'<circle cx="'+x(i)+'" cy="'+y(d[key])+'" r="3.5" fill="'+color+'"/>').join("");
+  let lbl=data.map((d,i)=>(data.length<=8||i%Math.ceil(data.length/8)===0)?'<text x="'+x(i)+'" y="'+(H-6)+'" text-anchor="middle">'+esc(d.week)+'</text>':"").join("");
+  return '<svg viewBox="0 0 '+W+' '+H+'" width="100%">'+g+'<polyline points="'+pts+'" fill="none" stroke="'+color+'" stroke-width="2.5"/>'+dots+lbl+'</svg>'}
+function barChart(data,key,color,h){
+  if(!data.length)return "";
+  const W=460,H=h||180,P={l:44,r:10,t:12,b:22};
+  const hi=Math.max(...data.map(d=>d[key]))*1.12||1;
+  const bw=Math.min(26,(W-P.l-P.r)/data.length*0.6);
+  let g="";for(let i=0;i<4;i++){const gy=P.t+i*(H-P.t-P.b)/3;const gv=hi-hi*i/3;
+    g+='<line x1="'+P.l+'" y1="'+gy+'" x2="'+(W-P.r)+'" y2="'+gy+'" stroke="'+C.line+'" stroke-dasharray="2 6"/><text x="'+(P.l-4)+'" y="'+(gy+3)+'" text-anchor="end">'+Math.round(gv)+'</text>'}
+  let bars=data.map((d,i)=>{const cx=P.l+(i+.5)*(W-P.l-P.r)/data.length;
+    const bh=(d[key]/hi)*(H-P.t-P.b);
+    return '<rect x="'+(cx-bw/2)+'" y="'+(H-P.b-bh)+'" width="'+bw+'" height="'+bh+'" rx="4" fill="'+color+'"/><text x="'+cx+'" y="'+(H-6)+'" text-anchor="middle">'+esc(d.week)+'</text>'}).join("");
+  return '<svg viewBox="0 0 '+W+' '+H+'" width="100%">'+g+bars+'</svg>'}
+
+// ───────── renders ─────────
+function renderHeader(){
+  const cw=curWeek();const cb=cw?blockFor(cw):null;
+  const V=[["SQ","Back Squat",C.green],["DL","Deadlift",C.red],["WA",WAIST,C.cyan],["BW",BWK,C.violet]].map(([a,ex,col])=>{
+    const its=state.entries.filter(e=>e.exercise===ex).sort((x,y)=>x.date<y.date?1:-1);
+    let val="—",sub=ex===BWK?"kg":"e1RM";
+    if(its.length){if(ex===BWK||ex===WAIST){val=its[0].weightKg;sub=ex===WAIST?"cm latest":"kg latest"}
+      else{val=Math.round(Math.max(...its.slice(0,6).map(i=>e1rm(i.weightKg,i.reps||1))));sub="e1RM kg"}}
+    return '<div class="vital"><div class="mono" style="font-size:10px;color:'+col+';letter-spacing:1.5px">'+a+'</div><div class="mono" style="font-size:22px;font-weight:700;color:'+col+'">'+val+'</div><div style="font-size:9px;color:var(--muted)">'+sub+'</div></div>'}).join("");
+  document.getElementById("header").innerHTML=
+    '<div style="font-size:20px;font-weight:700">50-WEEK COACH <span style="color:#DC2626">PRO</span></div>'+'<div class="mono" style="font-size:10px;color:var(--muted);letter-spacing:1px">PHASE 1 TARGET: −2 KG FAT · +2 KG MUSCLE · TWO RACE PEAKS · 50 WKS</div>'+
+    '<div class="mono" style="font-size:12px;margin-top:2px;color:'+(cb?cb.color:"var(--muted)")+'">'+
+    (cw?("WK "+cw+"/50 · "+cb.name.toUpperCase()+(DELOAD.includes(cw)?" · DELOAD":"")):"SET START DATE IN PLAN TAB")+'</div>'+
+    '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px">'+V+'</div>';
+}
+function hrInfo(){
+  const t=todayISO();const y=new Date(Date.now()-864e5).toISOString().slice(0,10);
+  const list=state.hr.slice().sort((a,b)=>a.date<b.date?1:-1);
+  const td=list.find(e=>e.date===t), yd=list.find(e=>e.date===y);
+  const older=list.filter(e=>e.date<y).slice(0,14);
+  if(older.length<3)return {msg:"Log your waking HR daily — after 3 mornings the readiness flag activates.",color:"var(--muted)"};
+  const base=Math.round(older.reduce((s,e)=>s+e.hr,0)/older.length);
+  if(!td)return {msg:"Baseline ~"+base+" bpm. Log this morning's HR for today's readiness.",color:"var(--muted)"};
+  const d=td.hr-base;
+  if(d>=5&&yd&&yd.hr-base>=5)return {msg:"BACK OFF — +"+d+" bpm over baseline two days running. Drop today one gear: no extras, no Gauntlet escalation.",color:"var(--red)"};
+  if(d>=5)return {msg:"+"+d+" bpm over baseline ("+base+"). Proceed, but extras are off — stop every set earlier.",color:"var(--amber)"};
+  return {msg:"READY — "+td.hr+" bpm vs baseline "+base+". Train as planned.",color:"var(--green)"};
+}
+function addHR(){
+  const v=parseInt(document.getElementById("rhr").value);
+  if(!v||v<25||v>120)return alert("Enter waking resting HR");
+  const t=todayISO();state.hr=state.hr.filter(e=>e.date!==t);
+  state.hr.unshift({id:Date.now(),date:t,hr:v});save();render();
+}
+function renderPlan(){
+  const cw=curWeek();const sw=ui.viewWeek||cw||1;const b=blockFor(sw);
+  const hi=hrInfo();
+  let h='<div class="card" style="border-left:3px solid '+hi.color+'"><span class="label">Morning readiness — waking resting HR</span>'+
+   '<div class="row" style="margin-top:6px"><input id="rhr" inputmode="numeric" placeholder="e.g. 48" style="flex:1"><button class="btn" style="width:auto;padding:12px 16px" onclick="addHR()">Save</button></div>'+
+   '<div class="mono" style="font-size:12px;margin-top:8px;color:'+hi.color+'">'+hi.msg+'</div></div>';
+  h+='<div class="row" style="align-items:center;margin-bottom:10px">'+
+    '<button class="chip" onclick="ui.viewWeek=Math.max(1,'+sw+'-1);render()">◀</button>'+
+    '<div style="flex:1;text-align:center"><div style="font-size:16px;font-weight:700">Week '+sw+'<span style="color:var(--muted);font-weight:400"> / 50</span></div>'+
+    (b?'<div class="mono" style="font-size:11px;color:'+b.color+'">'+b.name.toUpperCase()+'</div>':"")+'</div>'+
+    '<button class="chip" onclick="ui.viewWeek=Math.min(50,'+sw+'+1);render()">▶</button></div>';
+  if(ui.viewWeek&&cw&&ui.viewWeek!==cw)h+='<button class="chip on" style="width:100%;margin-bottom:10px" onclick="ui.viewWeek=null;render()">Back to current week ('+cw+')</button>';
+  if(DELOAD.includes(sw))h+='<div class="card" style="border-left:3px solid var(--amber)"><b style="color:var(--amber)">DELOAD WEEK</b><div style="font-size:13px;color:var(--muted);margin-top:3px">Drop a set from everything, loads ~70%, eat at maintenance, skip the Gauntlet.</div></div>';
+  if(b){const wi=sw-b.from+1;
+    h+='<div class="card" style="border-left:3px solid '+b.color+'"><div class="mono" style="font-size:11px;color:'+b.color+'">THIS WEEK: '+esc(b.focus[wi-1])+'</div><div style="font-size:13px;color:var(--muted);margin-top:5px">'+esc(b.hint)+'</div></div>';
+    b.days(wi).forEach(day=>{const isT=cw===sw&&day.d===todayName;
+      h+='<div class="card" style="'+(isT?"border-color:"+day.c:"background:var(--surface2)")+'">'+
+      '<div style="display:flex;justify-content:space-between"><div style="font-size:15px;font-weight:700;color:'+day.c+'">'+day.d+' — '+esc(day.t)+'</div>'+(isT?'<span class="mono" style="font-size:10px;color:'+day.c+'">● TODAY</span>':"")+'</div>'+
+      '<ul>'+day.items.map(i=>'<li'+(i.indexOf("PM")===0?' style="color:var(--muted)"':"")+'>'+esc(i)+'</li>').join("")+'</ul></div>'});
+    if(b.extras&&!DELOAD.includes(sw)){
+      h+='<span class="label" style="margin-top:4px">Optional extras — only if recovery is green</span>';
+      b.extras.forEach(x=>{h+='<div class="card" style="border-left:3px solid '+x.c+';background:var(--surface2)">'+
+       '<div style="font-size:14px;font-weight:700;color:'+x.c+'">'+esc(x.t)+'</div>'+
+       '<ul>'+x.items.map(i=>'<li>'+esc(i)+'</li>').join("")+'</ul></div>'});}}
+  const aw=ATWORK[todayName];
+  if(aw.f==="REST"){
+    h+='<div class="card" style="border-left:3px solid var(--violet)"><div style="font-weight:700;color:var(--violet);font-size:15px">AT WORK — weekend off</div>'+
+     '<div style="font-size:13px;color:var(--muted);margin-top:4px">The programmed weekend sessions cover it. The rotation resumes Monday: PUSH → LEGS → CORE → SINGLE-LEG → MIXED.</div></div>';
+  }else{
+    h+='<div class="card" style="border-left:3px solid var(--violet)"><div style="font-weight:700;color:var(--violet);font-size:15px">AT WORK — '+aw.f+' day (rotates daily)</div>'+
+     '<div style="font-size:13px;color:var(--muted);margin-top:4px">No kit, no sweat-pace, scrubs-compatible. Pick one mode:</div>'+
+     '<div style="font-size:14px;margin-top:8px"><b style="color:var(--violet)">Scatter</b> — every 2–3 h through the shift (~2 min each round):</div>'+
+     '<ul>'+aw.s.map(x=>'<li>'+x+'</li>').join("")+'<li>4–5 rounds across the day ≈ a full session</li></ul>'+
+     '<div style="font-size:14px;margin-top:8px"><b style="color:var(--violet)">One-hit</b> — '+aw.a+'</div>'+
+     '<div style="font-size:12px;color:var(--muted);margin-top:8px">Stop 3+ reps shy of failure — bonus volume, not a session. Skip on Gauntlet day and deload weeks.</div></div>';
+  }
+  h+='<div class="card" style="border-left:3px solid var(--cyan)"><div style="font-weight:700;color:var(--cyan);font-size:15px">TENDON CARE — 2×/week, every week</div>'+
+   '<div style="font-size:13px;color:var(--muted);margin-top:4px">Heavy-slow + isometric loading — the evidence-backed protocol for Achilles and patellar tendinopathy prevention at this run volume. ~10 min each.</div>'+
+   '<div style="font-size:14px;margin-top:8px"><b style="color:var(--cyan)">'+TENDON.a.t+'</b></div><ul>'+TENDON.a.items.map(x=>'<li>'+x+'</li>').join("")+'</ul>'+
+   '<div style="font-size:14px;margin-top:8px"><b style="color:var(--cyan)">'+TENDON.b.t+'</b></div><ul>'+TENDON.b.items.map(x=>'<li>'+x+'</li>').join("")+'</ul>'+
+   '<div style="font-size:12px;color:var(--muted);margin-top:8px">Up to 3/10 discomfort during is fine if settled by next morning. Add load weekly. During a flare: drop to daily 45 s isometrics only and halve run volume for a week — do not push through a worsening tendon.</div></div>';
+  h+='<div class="card"><label class="label">Program start date (Week 1 Monday)</label><input type="date" value="'+esc(state.startDate)+'" onchange="state.startDate=this.value;save();render()"></div>';
+  h+='<div class="card"><span class="label">Data backup</span>'+
+   '<div class="row" style="margin-top:6px"><button class="btn" style="flex:1" onclick="exportData()">Export</button>'+
+   '<label class="btn" style="flex:1;text-align:center;background:var(--surface2);color:var(--text);border:1px solid var(--line)">Import<input type="file" accept="application/json" style="display:none" onchange="importData(event)"></label></div>'+
+   '<div style="font-size:12px;color:var(--muted);margin-top:8px">All data lives on this device — export a backup every few weeks.</div></div>';
+  return h;
+}
+const allLifts=()=>LIFTS.concat(state.customLifts);
+function addCustom(){
+  const el=document.getElementById("cx");
+  let n=(el.value||"").trim().slice(0,24);
+  if(!n)return;
+  const all=allLifts().concat([BWK,WAIST]).map(x=>x.toLowerCase());
+  if(all.indexOf(n.toLowerCase())>=0)return alert("Already in the list");
+  state.customLifts.push(n);ui.fx=n;save();render();
+}
+function delCustom(i){
+  const n=state.customLifts[i];
+  state.customLifts.splice(i,1);
+  if(ui.fx===n)ui.fx="Back Squat";
+  if(ui.chartEx===n)ui.chartEx="Back Squat";
+  save();render();
+}
+function setChartEx(i){ui.chartEx=allLifts()[i];render()}
+function renderLog(){
+  const opts=allLifts().concat([BWK,WAIST]).map(x=>'<option'+(ui.fx===x?" selected":"")+'>'+esc(x)+'</option>').join("");
+  const isBW=ui.fx===BWK||ui.fx===WAIST;
+  let h='<div class="card"><label class="label">Exercise</label>'+
+   '<select id="fx" style="margin-bottom:10px" onchange="ui.fx=this.value;render()">'+opts+'</select>'+
+   '<div style="display:grid;grid-template-columns:'+(isBW?"1fr":"1fr 1fr 1fr")+';gap:8px;margin-bottom:10px">'+
+   '<div><label class="label">'+(ui.fx===WAIST?"Waist cm":isBW?"Bodyweight kg":"Weight kg")+'</label><input id="fw" inputmode="decimal" placeholder="0"></div>'+
+   (isBW?"":'<div><label class="label">Reps</label><input id="fr" inputmode="numeric" placeholder="5"></div><div><label class="label">Sets</label><input id="fs" inputmode="numeric" placeholder="3"></div>')+
+   '</div><label class="label">Date</label><input id="fd" type="date" value="'+todayISO()+'" style="margin-bottom:12px">'+
+   '<button class="btn" onclick="addEntry()">Log entry</button></div>';
+  h+='<div class="card"><span class="label">Custom exercises</span>'+
+   '<div class="row" style="margin-top:6px"><input id="cx" placeholder="e.g. Zercher Squat" maxlength="24" style="flex:1">'+
+   '<button class="btn" style="width:auto;padding:12px 16px" onclick="addCustom()">Add</button></div>'+
+   (state.customLifts.length?'<div style="margin-top:10px;display:flex;flex-wrap:wrap;gap:8px">'+state.customLifts.map((n,i)=>'<span class="chip on" style="display:inline-flex;align-items:center;gap:6px">'+esc(n)+'<span onclick="delCustom('+i+')" style="cursor:pointer;color:var(--muted)">✕</span></span>').join("")+'</div>':"")+
+   '</div>';
+  h+='<span class="label">Recent entries</span>';
+  if(!state.entries.length)h+='<div class="card" style="color:var(--muted);font-size:14px">Nothing logged yet — add your first top set above.</div>';
+  state.entries.slice(0,25).forEach(e=>{
+    h+='<div class="card" style="display:flex;justify-content:space-between;align-items:center;padding:10px 14px">'+
+    '<div><div style="font-size:15px;font-weight:600;color:'+(LC[e.exercise]||C.violet)+'">'+esc(e.exercise)+'</div>'+
+    '<div class="mono" style="font-size:12px;color:var(--muted)">'+e.date+' · '+e.weightKg+' kg'+(e.reps?" × "+e.reps+" × "+e.sets:"")+'</div></div>'+
+    '<button class="del" onclick="delEntry('+e.id+')">✕</button></div>'});
+  return h;
+}
+function addEntry(){
+  const w=parseFloat(document.getElementById("fw").value);
+  if(isNaN(w)||w<=0)return alert("Enter a weight");
+  const isBW=ui.fx===BWK||ui.fx===WAIST;
+  const fr=document.getElementById("fr"),fs=document.getElementById("fs");
+  state.entries.unshift({id:Date.now(),date:document.getElementById("fd").value||todayISO(),exercise:ui.fx,weightKg:w,
+    reps:isBW?null:Math.max(1,parseInt(fr&&fr.value)||1),sets:isBW?null:Math.max(1,parseInt(fs&&fs.value)||1)});
+  save();render();
+}
+function delEntry(id){state.entries=state.entries.filter(e=>e.id!==id);save();render()}
+function renderCharts(){
+  const wks=weekBuckets();
+  const lift=wks.map(w=>{const its=w.items.filter(i=>i.exercise===ui.chartEx);if(!its.length)return null;
+    return {week:wkLabel(w.ws),top:Math.max(...its.map(i=>i.weightKg)),e1rm:Math.round(Math.max(...its.map(i=>e1rm(i.weightKg,i.reps||1)))*10)/10}}).filter(Boolean);
+  const ton=wks.map(w=>{const kg=w.items.filter(i=>i.exercise!==BWK&&i.exercise!==WAIST).reduce((s,i)=>s+i.weightKg*(i.reps||1)*(i.sets||1),0);
+    return kg>0?{week:wkLabel(w.ws),tonnage:Math.round(kg)}:null}).filter(Boolean);
+  const bw=wks.map(w=>{const its=w.items.filter(i=>i.exercise===BWK);if(!its.length)return null;
+    return {week:wkLabel(w.ws),bw:Math.round(its.reduce((s,i)=>s+i.weightKg,0)/its.length*10)/10}}).filter(Boolean);
+  const wa=wks.map(w=>{const its=w.items.filter(i=>i.exercise===WAIST);if(!its.length)return null;
+    return {week:wkLabel(w.ws),wa:Math.round(its.reduce((s,i)=>s+i.weightKg,0)/its.length*10)/10}}).filter(Boolean);
+  let h='<div class="scroll">'+allLifts().map((x,i)=>'<button class="chip'+(ui.chartEx===x?" on":"")+'" onclick="setChartEx('+i+')">'+esc(x)+'</button>').join("")+'</div>';
+  h+='<div class="card"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px"><h3 style="margin:0">'+ui.chartEx+' — weekly</h3><div class="row">'+
+   '<button class="chip'+(ui.metric==="top"?" on":"")+'" onclick="ui.metric=\'top\';render()">Top set</button>'+
+   '<button class="chip'+(ui.metric==="e1rm"?" on":"")+'" onclick="ui.metric=\'e1rm\';render()">est 1RM</button></div></div>'+
+   (lift.length?lineChart(lift,ui.metric,ui.metric==="top"?(LC[ui.chartEx]||C.green):C.amber,200):'<div style="color:var(--muted);text-align:center;padding:24px 0;font-size:14px">No '+ui.chartEx+' entries yet.</div>')+'</div>';
+  h+='<div class="card"><h3>Weekly tonnage (kg lifted)</h3>'+(ton.length?barChart(ton,"tonnage",C.cyan,180):'<div style="color:var(--muted);text-align:center;padding:24px 0;font-size:14px">Log lifts to see weekly volume.</div>')+'</div>';
+  h+='<div class="card"><h3>Bodyweight — weekly average</h3>'+(bw.length?lineChart(bw,"bw",C.violet,180):'<div style="color:var(--muted);text-align:center;padding:24px 0;font-size:14px">Log bodyweight in the Log tab (3+ readings/week).</div>')+'</div>';
+  h+='<div class="card"><h3>Waist — weekly average (cm)</h3>'+(wa.length?lineChart(wa,"wa",C.cyan,180):'<div style="color:var(--muted);text-align:center;padding:24px 0;font-size:14px">Log waist weekly — in a recomp, waist down + lifts up beats the scale.</div>')+'</div>';
+  return h;
+}
+function renderDiet(){
+  let h='<div class="row" style="margin-bottom:12px">'+
+   '<button class="chip'+(ui.dietSub==="plan"?" on":"")+'" onclick="ui.dietSub=\'plan\';render()">Weekly plan</button>'+
+   '<button class="chip'+(ui.dietSub==="foods"?" on":"")+'" onclick="ui.dietSub=\'foods\';render()">Hunger killers</button>'+
+   '<button class="chip'+(ui.dietSub==="recipes"?" on":"")+'" onclick="ui.dietSub=\'recipes\';render()">Recipes</button></div>';
+  if(ui.dietSub==="plan"){
+    h+='<div class="card" style="font-size:13px;color:var(--muted);line-height:1.5">PRO RECOMP — the goal is −2 kg fat / +2 kg muscle, so calories CYCLE: lifting, Gauntlet and long-ride days at maintenance to +200 kcal; easy and rest days at −400 to −500 kcal. Protein 2.2–2.4 g/kg with 40 g casein (skyr/cottage cheese) nightly. No starch, no refined carbs, no pork. Expect the scale to barely move — judge by waist down, lifts up, bodyweight flat.</div>';
+    h+='<div class="card"><b style="color:var(--green)">Supplement stack</b>'+
+     '<ul><li><b>Creatine monohydrate 5 g daily</b>, any time, forever — the single best-evidenced aid for strength, power and lean mass. Expect ~1 kg water in week 1; the waist chart won\'t move.</li>'+
+     '<li><b>Caffeine 2–3 mg/kg</b>, 30–45 min before quality sessions — mind the cut-off around shifts and sleep.</li>'+
+     '<li><b>Beta-alanine 3.2–6.4 g/day</b> in split doses from wk 18 — buffers exactly the 1–4 min station efforts (tingling is harmless).</li>'+
+     '<li><b>Vitamin D 1000–2000 IU</b> through the UK winter.</li>'+
+     '<li>Whey post-lift + 40 g casein nightly, as already programmed.</li></ul></div>';
+    ROT.forEach(r=>{const isT=r[0]===todayName;
+      h+='<div class="card"'+(isT?' style="border-color:var(--green)"':"")+'><div style="display:flex;justify-content:space-between"><b>'+r[0]+'</b>'+(isT?'<span class="mono" style="font-size:10px;color:var(--green)">● TODAY</span>':"")+'</div>'+
+      '<div style="font-size:13px;margin-top:6px;line-height:1.6"><span style="color:var(--amber)">B</span> '+esc(r[1])+'<br><span style="color:var(--cyan)">L</span> '+esc(r[2])+'<br><span style="color:var(--violet)">D</span> '+esc(r[3])+'</div></div>'});
+    h+='<div class="card" style="font-size:13px;color:var(--muted)">Snacks 2/day (3 at maintenance): skyr, fruit, 30 g nuts, boiled eggs, edamame, cottage cheese, post-lift protein shake.</div>';
+  }else if(ui.dietSub==="foods"){
+    h+='<div class="card" style="font-size:13px;color:var(--muted)">Highest satiety per calorie. Protein first, veg second, everything else last. Water before meals.</div>';
+    FOODS.forEach(f=>{h+='<div class="card" style="padding:10px 14px"><div style="font-weight:700;font-size:14px;color:var(--green)">'+esc(f[0])+'</div><div style="font-size:13px;color:var(--muted);margin-top:2px">'+esc(f[1])+'</div></div>'});
+  }else{
+    RECIPES.forEach((r,i)=>{const open=ui.openRecipe===i;
+      h+='<div class="card"><div onclick="ui.openRecipe='+(open?-1:i)+';render()" style="cursor:pointer">'+
+      '<div style="display:flex;justify-content:space-between"><b style="font-size:15px">'+esc(r.n)+'</b><span class="mono" style="font-size:11px;color:var(--muted)">'+r.t+'</span></div>'+
+      '<div style="font-size:12px;color:var(--cyan);margin-top:2px">'+esc(r.c)+' · serves 2 '+(open?"▲":"▼")+'</div></div>'+
+      (open?'<div style="margin-top:10px;font-size:13px"><span class="label">Ingredients</span><ul style="margin-bottom:10px">'+r.i.map(x=>"<li>"+esc(x)+"</li>").join("")+'</ul><span class="label">Method</span><ol>'+r.s.map(x=>"<li>"+esc(x)+"</li>").join("")+'</ol></div>':"")+'</div>'});
+  }
+  return h;
+}
+function addEnergy(){
+  const a=parseFloat(document.getElementById("ea").value)||0;
+  const r=parseFloat(document.getElementById("er").value)||0;
+  const t=parseFloat(document.getElementById("et").value)||0;
+  const tdee=t>0?t:a+r;
+  if(tdee<=0)return alert("Enter active + resting, or a total burn");
+  const date=document.getElementById("ed").value||todayISO();
+  const type=document.getElementById("ety").value;
+  state.energy=state.energy.filter(e=>e.date!==date);
+  state.energy.unshift({id:Date.now(),date:date,active:a,resting:r,tdee:Math.round(tdee),type:type});
+  save();render();
+}
+function delEnergy(id){state.energy=state.energy.filter(e=>e.id!==id);save();render()}
+function renderEnergy(){
+  const es=state.energy.slice().sort((x,y)=>x.date<y.date?1:-1);
+  const today=es.find(e=>e.date===todayISO());
+  const defType=todayName==="Thu"?"easy":"hard";
+  let h="";
+  if(today){
+    const hard=today.type==="hard";
+    const lo=hard?today.tdee:today.tdee-500, hi=hard?today.tdee+200:today.tdee-400;
+    h+='<div class="card" style="border-left:3px solid '+(hard?C.green:C.amber)+'"><span class="label">Today</span>'+
+     '<div class="mono" style="font-size:26px;font-weight:700">'+today.tdee+' <span style="font-size:13px;color:var(--muted)">kcal burned</span></div>'+
+     '<div class="mono" style="font-size:14px;color:'+(hard?C.green:C.amber)+';margin-top:4px">EAT '+lo+'–'+hi+' kcal · '+(hard?'hard day: maintenance to +200':'easy day: −400 to −500')+'</div></div>';
+  }
+  h+='<div class="card"><span class="label">Log a day — numbers from your watch/ring</span>'+
+   '<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0 10px">'+
+   '<div><label class="label">Active kcal</label><input id="ea" inputmode="numeric" placeholder="Watch/Garmin"></div>'+
+   '<div><label class="label">Resting kcal</label><input id="er" inputmode="numeric" placeholder="Health app"></div></div>'+
+   '<label class="label">…or total burn (Oura / Garmin total)</label><input id="et" inputmode="numeric" placeholder="Overrides the two above" style="margin-bottom:10px">'+
+   '<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px">'+
+   '<div><label class="label">Day type</label><select id="ety"><option value="hard"'+(defType==="hard"?" selected":"")+'>Hard (lift/Gauntlet/long)</option><option value="easy"'+(defType==="easy"?" selected":"")+'>Easy / rest</option></select></div>'+
+   '<div><label class="label">Date</label><input id="ed" type="date" value="'+todayISO()+'"></div></div>'+
+   '<button class="btn" onclick="addEnergy()">Save day</button></div>';
+  h+='<div class="card" style="font-size:13px;color:var(--muted);line-height:1.6"><b style="color:var(--text)">Where these numbers live</b><br>'+
+   '<span style="color:'+C.green+'">Apple Watch:</span> Active = Move ring kcal (Fitness app) · Resting = Health app → Browse → Activity → Resting Energy<br>'+
+   '<span style="color:'+C.cyan+'">Garmin:</span> Connect → Calories — shows Active / Resting / Total<br>'+
+   '<span style="color:'+C.violet+'">Oura:</span> Total Burn — enter it in the total field alone<br>'+
+   'This app cannot auto-sync HealthKit/Garmin/Oura — it takes 15 s to type the two numbers each evening.</div>';
+  const asc=state.energy.slice().sort((a,b)=>a.date<b.date?-1:1);
+  const last14=asc.slice(-14).map(e=>({week:e.date.slice(5),tdee:e.tdee}));
+  const m={};asc.forEach(e=>{const k=mondayOf(e.date);(m[k]=m[k]||[]).push(e.tdee)});
+  const wk=Object.keys(m).sort().map(k=>({week:wkLabel(k),avg:Math.round(m[k].reduce((s,v)=>s+v,0)/m[k].length)}));
+  h+='<div class="card"><h3>Daily burn — last 14 logged</h3>'+(last14.length?barChart(last14,"tdee",C.amber,180):'<div style="color:var(--muted);text-align:center;padding:24px 0;font-size:14px">Log your first day above.</div>')+'</div>';
+  h+='<div class="card"><h3>Weekly average TDEE</h3>'+(wk.length?lineChart(wk,"avg",C.green,180):'<div style="color:var(--muted);text-align:center;padding:24px 0;font-size:14px">Weekly averages appear once days are logged.</div>')+'</div>';
+  es.slice(0,14).forEach(e=>{
+    h+='<div class="card" style="display:flex;justify-content:space-between;align-items:center;padding:10px 14px">'+
+    '<div><div class="mono" style="font-size:15px;font-weight:600;color:'+(e.type==="hard"?C.green:C.amber)+'">'+e.tdee+' kcal</div>'+
+    '<div class="mono" style="font-size:12px;color:var(--muted)">'+e.date+' · '+(e.type==="hard"?"hard":"easy")+(e.active?' · A '+e.active+' / R '+e.resting:'')+'</div></div>'+
+    '<button class="del" onclick="delEnergy('+e.id+')">✕</button></div>'});
+  return h;
+}
+function exportData(){
+  const blob=new Blob([JSON.stringify(state,null,1)],{type:"application/json"});
+  const a=document.createElement("a");a.href=URL.createObjectURL(blob);
+  a.download="coach24-backup-"+todayISO()+".json";a.click();
+}
+function importData(ev){
+  const f=ev.target.files[0];if(!f)return;
+  const r=new FileReader();
+  r.onload=()=>{try{const d=JSON.parse(r.result);if(!d||!Array.isArray(d.entries))throw 0;
+    state=Object.assign({entries:[],startDate:"",energy:[],customLifts:[]},d);save();render();alert("Backup imported");}
+    catch(e){alert("Invalid backup file")}};
+  r.readAsText(f);
+}
+function rollWorkout(){state.lastGen=GENW();save();render();}
+function renderRandom(){
+  let h='<div class="card" style="font-size:13px;color:var(--muted);line-height:1.5">One button, one hard run/barbell workout — different every time. Built from the same movement pools as the programme, so nothing here needs kit you don\'t have.</div>';
+  h+='<button class="btn" style="margin-bottom:12px" onclick="rollWorkout()">'+(state.lastGen?"Re-roll — give me another":"Generate a workout")+'</button>';
+  if(state.lastGen){const g=state.lastGen;
+    h+='<div class="card" style="border-left:3px solid var(--red)">'+
+     '<div style="font-size:19px;font-weight:700">'+g.name+'</div>'+
+     '<div class="mono" style="font-size:12px;color:var(--red);margin-top:2px">'+g.fmt+'</div>'+
+     '<ul style="margin-top:8px">'+g.items.map(x=>'<li>'+x+'</li>').join("")+'</ul>'+
+     '<div style="font-size:12px;color:var(--muted);margin-top:10px">'+g.note+'</div></div>';
+    h+='<div class="card" style="font-size:13px;color:var(--muted)">Done it? Log the barbell weight under the matching lift in the Log tab so it counts toward tonnage.</div>';
+  }
+  return h;
+}
+function render(){
+  renderHeader();
+  const m=document.getElementById("main");
+  m.innerHTML=ui.tab==="plan"?renderPlan():ui.tab==="log"?renderLog():ui.tab==="charts"?renderCharts():ui.tab==="energy"?renderEnergy():ui.tab==="random"?renderRandom():renderDiet();
+  document.querySelectorAll("#nav button").forEach(b=>b.classList.toggle("on",b.dataset.tab===ui.tab));
+}
+document.querySelectorAll("#nav button").forEach(b=>b.onclick=()=>{ui.tab=b.dataset.tab;render()});
+render();
+if("serviceWorker" in navigator&&location.protocol==="https:"){navigator.serviceWorker.register("./sw.js").catch(()=>{});}
+</script>
+</body>
+</html>
