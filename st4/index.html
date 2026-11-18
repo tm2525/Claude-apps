@@ -11956,7 +11956,7 @@ mark{background:var(--hit);color:inherit;border-radius:2px}
 </table></div>
 <p>This ties to the earlier sections in this tab: the 15 mm posterior leaflet height and the predictors of systolic anterior motion, and the repair techniques in detail.</p>
 </section>
-<section id="tab-c1b" data-slug="c1b" data-title="1b Tricuspid valve" hidden><h1 id="c1b--cardiac-1b-tricuspid-valve">Cardiac 1b: tricuspid valve</h1><details class="toc"><summary>Contents (10 sections)</summary><ol><li><a href="#c1b/c1b--overview">Overview</a></li><li><a href="#c1b/c1b--tricuspid-valve-anatomy-classification-of-disease-and-operat">Tricuspid valve: anatomy, classification of disease and operative techniques</a></li><li><a href="#c1b/c1b--esc-eacts-2025-guideline-tricuspid-valve-disease">ESC/EACTS 2025 guideline: tricuspid valve disease</a></li><li><a href="#c1b/c1b--resection-repair-or-replacement">Resection, repair or replacement</a></li><li><a href="#c1b/c1b--operative-techniques-overview">Operative techniques: overview</a></li><li><a href="#c1b/c1b--operative-technique-step-by-step">Operative technique step by step</a></li><li><a href="#c1b/c1b--tricuspid-valve-repair-technique-mccarthy-2011">Tricuspid valve repair technique (McCarthy 2011)</a></li><li><a href="#c1b/c1b--evidence-to-quote">Evidence to quote</a></li><li><a href="#c1b/c1b--gammie-trial-ctsn-nejm-2022">Gammie trial (CTSN, NEJM 2022)</a></li><li><a href="#c1b/c1b--sources-for-this-tab">Sources for this tab</a></li></ol></details>
+<section id="tab-c1b" data-slug="c1b" data-title="1b Tricuspid valve" hidden><h1 id="c1b--cardiac-1b-tricuspid-valve">Cardiac 1b: tricuspid valve</h1><details class="toc"><summary>Contents (11 sections)</summary><ol><li><a href="#c1b/c1b--overview">Overview</a></li><li><a href="#c1b/c1b--tri-score-calculator">TRI-SCORE calculator</a></li><li><a href="#c1b/c1b--tricuspid-valve-anatomy-classification-of-disease-and-operat">Tricuspid valve: anatomy, classification of disease and operative techniques</a></li><li><a href="#c1b/c1b--esc-eacts-2025-guideline-tricuspid-valve-disease">ESC/EACTS 2025 guideline: tricuspid valve disease</a></li><li><a href="#c1b/c1b--resection-repair-or-replacement">Resection, repair or replacement</a></li><li><a href="#c1b/c1b--operative-techniques-overview">Operative techniques: overview</a></li><li><a href="#c1b/c1b--operative-technique-step-by-step">Operative technique step by step</a></li><li><a href="#c1b/c1b--tricuspid-valve-repair-technique-mccarthy-2011">Tricuspid valve repair technique (McCarthy 2011)</a></li><li><a href="#c1b/c1b--evidence-to-quote">Evidence to quote</a></li><li><a href="#c1b/c1b--gammie-trial-ctsn-nejm-2022">Gammie trial (CTSN, NEJM 2022)</a></li><li><a href="#c1b/c1b--sources-for-this-tab">Sources for this tab</a></li></ol></details>
 <p>Anatomy, classification, grading, guidelines, trials and operative technique for the tricuspid valve. Split from the mitral tab on 18 November 2026. Rows are marked [checked] (confirmed against a source that day) or [memory].</p>
 <h2 id="c1b--overview">Overview</h2>
 <p>Repair severe TR at left-sided surgery, and moderate TR as well; for mild TR with a dilated annulus repair is now only a may-consider, at the cost of a higher pacemaker rate. Isolated surgery works when it is done before the right ventricle fails.</p>
@@ -12101,9 +12101,145 @@ mark{background:var(--hit);color:inherit;border-radius:2px}
 </tr>
 
 </table></div>
+<h2 id="c1b--tri-score-calculator">TRI-SCORE calculator</h2>
+<p>Added 18 November 2026 at your request. TRI-SCORE predicts in-hospital mortality after isolated tricuspid valve surgery (Dreyfus J et al, Eur Heart J 2022;43:654-662). The official calculator is at https://www.tri-score.com/. This one is for learning the score; use the official one for a clinical decision.</p>
+<div class="tricalc" style="border:1px solid var(--line);border-radius:10px;padding:14px;margin:1.2em 0;background:var(--card)"><strong>TRI-SCORE calculator</strong><div style="font-size:.9em;opacity:.75;margin:.2em 0 .6em">Tick each item that applies.</div><label style="display:flex;gap:.6em;align-items:center;padding:.45em 0;border-top:1px solid var(--line)"><input type="checkbox" data-p="1" onchange="triCalc(this)" style="width:1.3em;height:1.3em"><span style="flex:1">Age 70 years or more</span><span style="opacity:.6">+1</span></label><label style="display:flex;gap:.6em;align-items:center;padding:.45em 0;border-top:1px solid var(--line)"><input type="checkbox" data-p="1" onchange="triCalc(this)" style="width:1.3em;height:1.3em"><span style="flex:1">NYHA class III or IV</span><span style="opacity:.6">+1</span></label><label style="display:flex;gap:.6em;align-items:center;padding:.45em 0;border-top:1px solid var(--line)"><input type="checkbox" data-p="2" onchange="triCalc(this)" style="width:1.3em;height:1.3em"><span style="flex:1">Signs of right-sided heart failure</span><span style="opacity:.6">+2</span></label><label style="display:flex;gap:.6em;align-items:center;padding:.45em 0;border-top:1px solid var(--line)"><input type="checkbox" data-p="2" onchange="triCalc(this)" style="width:1.3em;height:1.3em"><span style="flex:1">Furosemide 125 mg a day or more</span><span style="opacity:.6">+2</span></label><label style="display:flex;gap:.6em;align-items:center;padding:.45em 0;border-top:1px solid var(--line)"><input type="checkbox" data-p="2" onchange="triCalc(this)" style="width:1.3em;height:1.3em"><span style="flex:1">GFR under 30 mL/min</span><span style="opacity:.6">+2</span></label><label style="display:flex;gap:.6em;align-items:center;padding:.45em 0;border-top:1px solid var(--line)"><input type="checkbox" data-p="2" onchange="triCalc(this)" style="width:1.3em;height:1.3em"><span style="flex:1">Total bilirubin above normal</span><span style="opacity:.6">+2</span></label><label style="display:flex;gap:.6em;align-items:center;padding:.45em 0;border-top:1px solid var(--line)"><input type="checkbox" data-p="1" onchange="triCalc(this)" style="width:1.3em;height:1.3em"><span style="flex:1">Left ventricular ejection fraction under 60%</span><span style="opacity:.6">+1</span></label><label style="display:flex;gap:.6em;align-items:center;padding:.45em 0;border-top:1px solid var(--line)"><input type="checkbox" data-p="1" onchange="triCalc(this)" style="width:1.3em;height:1.3em"><span style="flex:1">Moderate or severe right ventricular dysfunction</span><span style="opacity:.6">+1</span></label><div style="border-top:2px solid var(--line);margin-top:.4em;padding-top:.7em;font-size:1.15em">Score <strong class="tri-s">0</strong> of 12 &nbsp;&middot;&nbsp; predicted in-hospital mortality <strong class="tri-m">1%</strong> &nbsp;&middot;&nbsp; <strong class="tri-b" style="color:#2e8b57">Low risk</strong></div><div style="font-size:.85em;opacity:.75;margin-top:.5em">Low 0 to 3, intermediate 4 to 5, high 6 or more. Points and the 1% to 65% range are checked against Dreyfus et al, Eur Heart J 2022; mortality for scores 1 to 8 is from memory. Use tri-score.com for a clinical decision.</div></div><script>function triCalc(el){var box=el.closest(".tricalc"),s=0;box.querySelectorAll("input:checked").forEach(function(c){s+=+c.dataset.p});var m=[1,2,3,5,8,14,22,34,48,65][Math.min(s,9)];var b=s<=3?["Low risk","#2e8b57"]:(s<=5?["Intermediate risk","#c98a1b"]:["High risk","#c0392b"]);box.querySelector(".tri-s").textContent=s;box.querySelector(".tri-m").textContent=m+"%";var e=box.querySelector(".tri-b");e.textContent=b[0];e.style.color=b[1];}</script>
+<div class="tw"><table>
+
+
+<tr>
+<th>Item</th>
+<th>Points</th>
+<th>Basis</th>
+</tr>
+
+
+<tr>
+<td>Age 70 years or more</td>
+<td>1</td>
+<td>checked</td>
+</tr>
+<tr>
+<td>NYHA class III or IV</td>
+<td>1</td>
+<td>checked</td>
+</tr>
+<tr>
+<td>Signs of right-sided heart failure</td>
+<td>2</td>
+<td>checked</td>
+</tr>
+<tr>
+<td>Daily furosemide 125 mg or more</td>
+<td>2</td>
+<td>checked</td>
+</tr>
+<tr>
+<td>Glomerular filtration rate under 30 mL/min</td>
+<td>2</td>
+<td>checked</td>
+</tr>
+<tr>
+<td>Total bilirubin above the upper limit of normal</td>
+<td>2</td>
+<td>checked</td>
+</tr>
+<tr>
+<td>Left ventricular ejection fraction under 60%</td>
+<td>1</td>
+<td>checked</td>
+</tr>
+<tr>
+<td>Moderate or severe right ventricular dysfunction</td>
+<td>1</td>
+<td>checked</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>0 to 12</td>
+<td>checked</td>
+</tr>
+
+</table></div>
+<div class="tw"><table>
+
+
+<tr>
+<th>Score</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9 or more</th>
+</tr>
+
+
+<tr>
+<td>Predicted in-hospital mortality</td>
+<td>1%</td>
+<td>2%</td>
+<td>3%</td>
+<td>5%</td>
+<td>8%</td>
+<td>14%</td>
+<td>22%</td>
+<td>34%</td>
+<td>48%</td>
+<td>65%</td>
+</tr>
+
+</table></div>
+<p>The range (1% at 0 points to 65% at 9 or more) is checked against the paper's abstract; the values for scores 1 to 8 are from memory. Observed mortality in the derivation cohort ran from 0% to 60% across the same range [checked].</p>
+<div class="tw"><table>
+
+
+<tr>
+<th>How it is used</th>
+<th>Detail</th>
+<th>Basis</th>
+</tr>
+
+
+<tr>
+<td>Bands</td>
+<td>Low 0 to 3, intermediate 4 to 5, high 6 or more</td>
+<td>ESC/EACTS 2025 text uses up to 5 and over 6; band labels memory</td>
+</tr>
+<tr>
+<td>What the items mean</td>
+<td>Six of the twelve points come from the consequences of right heart failure (signs, diuretic dose, kidney, liver): the score measures how late the patient has been referred</td>
+<td>memory</td>
+</tr>
+<tr>
+<td>Does surgery help?</td>
+<td>Surgery improved mid-term survival with a low or intermediate score (up to 5); a high score (over 6) gained nothing over conservative treatment. At 10 years, isolated surgery improved survival with a score under 3, and with 4 to 5 only after successful repair</td>
+<td>checked (ESC/EACTS 2025)</td>
+</tr>
+<tr>
+<td>Mechanism</td>
+<td>Regurgitation mechanism was not an independent predictor</td>
+<td>checked</td>
+</tr>
+<tr>
+<td>Transcatheter patients</td>
+<td>Also predicts 30-day and one-year mortality after tricuspid edge-to-edge repair, better than EuroSCORE II or the STS score in one series of 180</td>
+<td>checked</td>
+</tr>
+<tr>
+<td>Alternative</td>
+<td>STS isolated tricuspid surgery calculator</td>
+<td>checked (ESC/EACTS 2025)</td>
+</tr>
+
+</table></div>
 <h2 id="c1b--tricuspid-valve-anatomy-classification-of-disease-and-operat">Tricuspid valve: anatomy, classification of disease and operative techniques</h2>
 <h3 id="c1b--anatomy">Anatomy</h3>
-<figure><img loading="lazy" src="img/c1b-3.webp" width="1344" height="616" alt="Tricuspid valve in the surgeon&#39;s view: leaflets, commissures, triangle of Koch, danger zone, right coronary artery and aortic root (my own schematic)"><figcaption>Tricuspid valve in the surgeon's view: leaflets, commissures, triangle of Koch, danger zone, right coronary artery and aortic root (my own schematic)</figcaption></figure>
+<figure><img loading="lazy" src="img/c1b-4.webp" width="1344" height="616" alt="Tricuspid valve in the surgeon&#39;s view: leaflets, commissures, triangle of Koch, danger zone, right coronary artery and aortic root (my own schematic)"><figcaption>Tricuspid valve in the surgeon's view: leaflets, commissures, triangle of Koch, danger zone, right coronary artery and aortic root (my own schematic)</figcaption></figure>
 <div class="tw"><table>
 
 
@@ -12157,7 +12293,7 @@ mark{background:var(--hit);color:inherit;border-radius:2px}
 
 </table></div>
 <h3 id="c1b--how-many-leaflets">How many leaflets?</h3>
-<figure><img loading="lazy" src="img/c1b-4.webp" width="1344" height="472" alt="Tricuspid leaflet morphology by the Hahn nomenclature in 579 patients (my own chart)"><figcaption>Tricuspid leaflet morphology by the Hahn nomenclature in 579 patients (my own chart)</figcaption></figure>
+<figure><img loading="lazy" src="img/c1b-5.webp" width="1344" height="472" alt="Tricuspid leaflet morphology by the Hahn nomenclature in 579 patients (my own chart)"><figcaption>Tricuspid leaflet morphology by the Hahn nomenclature in 579 patients (my own chart)</figcaption></figure>
 <div class="tw"><table>
 
 
@@ -12209,7 +12345,7 @@ mark{background:var(--hit);color:inherit;border-radius:2px}
 </table></div>
 <p>Hahn et al, 579 patients at four centres, transoesophageal echo (transgastric short axis or 3D). The point for surgery and for edge-to-edge devices: only about half of valves are truly three-leaflet.</p>
 <h3 id="c1b--tendon-of-todaro-and-the-triangle-of-koch">Tendon of Todaro and the triangle of Koch</h3>
-<figure><img loading="lazy" src="img/c1b-5.webp" width="1344" height="588" alt="Tendon of Todaro and the triangle of Koch on the right atrial septal surface (my own schematic)"><figcaption>Tendon of Todaro and the triangle of Koch on the right atrial septal surface (my own schematic)</figcaption></figure>
+<figure><img loading="lazy" src="img/c1b-6.webp" width="1344" height="588" alt="Tendon of Todaro and the triangle of Koch on the right atrial septal surface (my own schematic)"><figcaption>Tendon of Todaro and the triangle of Koch on the right atrial septal surface (my own schematic)</figcaption></figure>
 <div class="tw"><table>
 
 
@@ -12248,7 +12384,7 @@ mark{background:var(--hit);color:inherit;border-radius:2px}
 
 </table></div>
 <h3 id="c1b--classification-of-tricuspid-disease">Classification of tricuspid disease</h3>
-<figure><img loading="lazy" src="img/c1b-6.webp" width="1344" height="558" alt="Tricuspid regurgitation classified by cause and graded by severity on the five-grade scale (my own chart)"><figcaption>Tricuspid regurgitation classified by cause and graded by severity on the five-grade scale (my own chart)</figcaption></figure>
+<figure><img loading="lazy" src="img/c1b-7.webp" width="1344" height="558" alt="Tricuspid regurgitation classified by cause and graded by severity on the five-grade scale (my own chart)"><figcaption>Tricuspid regurgitation classified by cause and graded by severity on the five-grade scale (my own chart)</figcaption></figure>
 <div class="tw"><table>
 
 
@@ -12374,7 +12510,7 @@ mark{background:var(--hit);color:inherit;border-radius:2px}
 </table></div>
 <p>The two grades beyond severe (Hahn and Zamorano) were added because patients in transcatheter trials were up to two grades above the old severe thresholds. Grading is load-dependent: assess when the patient is off the ventilator and not volume-depleted [memory].</p>
 <h3 id="c1b--regurgitation-against-stenosis">Regurgitation against stenosis</h3>
-<figure><img loading="lazy" src="img/c1b-7.webp" width="1344" height="572" alt="Tricuspid regurgitation against tricuspid stenosis (my own chart)"><figcaption>Tricuspid regurgitation against tricuspid stenosis (my own chart)</figcaption></figure>
+<figure><img loading="lazy" src="img/c1b-8.webp" width="1344" height="572" alt="Tricuspid regurgitation against tricuspid stenosis (my own chart)"><figcaption>Tricuspid regurgitation against tricuspid stenosis (my own chart)</figcaption></figure>
 <div class="tw"><table>
 
 
@@ -12426,7 +12562,7 @@ mark{background:var(--hit);color:inherit;border-radius:2px}
 </table></div>
 <h2 id="c1b--esc-eacts-2025-guideline-tricuspid-valve-disease">ESC/EACTS 2025 guideline: tricuspid valve disease</h2>
 <p>From the PDF you supplied: Praz F, Borger MA, et al. 2025 ESC/EACTS Guidelines for the management of valvular heart disease. Eur J Cardiothorac Surg 2025;67(8):ezaf276, doi 10.1093/ejcts/ezaf276 (109 pages). I searched the text for the tricuspid recommendations and read those passages; I have not read the whole guideline. Everything in this section is from the guideline.</p>
-<figure><img loading="lazy" src="img/c1b-8.webp" width="1344" height="644" alt="ESC/EACTS 2025 indications for tricuspid surgery, with class and level (my own chart)"><figcaption>ESC/EACTS 2025 indications for tricuspid surgery, with class and level (my own chart)</figcaption></figure>
+<figure><img loading="lazy" src="img/c1b-9.webp" width="1344" height="644" alt="ESC/EACTS 2025 indications for tricuspid surgery, with class and level (my own chart)"><figcaption>ESC/EACTS 2025 indications for tricuspid surgery, with class and level (my own chart)</figcaption></figure>
 <h3 id="c1b--regurgitation-at-the-time-of-left-sided-valve-surgery">Regurgitation at the time of left-sided valve surgery</h3>
 <div class="tw"><table>
 
@@ -12572,7 +12708,7 @@ mark{background:var(--hit);color:inherit;border-radius:2px}
 </table></div>
 <h2 id="c1b--resection-repair-or-replacement">Resection, repair or replacement</h2>
 <p>Added 18 November 2026 in answer to your question. The three options side by side; each is expanded in the technique sections below.</p>
-<figure><img loading="lazy" src="img/c1b-9.webp" width="1344" height="544" alt="Resection, repair or replacement of the tricuspid valve: when, how, for and against (my own chart)"><figcaption>Resection, repair or replacement of the tricuspid valve: when, how, for and against (my own chart)</figcaption></figure>
+<figure><img loading="lazy" src="img/c1b-10.webp" width="1344" height="544" alt="Resection, repair or replacement of the tricuspid valve: when, how, for and against (my own chart)"><figcaption>Resection, repair or replacement of the tricuspid valve: when, how, for and against (my own chart)</figcaption></figure>
 <div class="tw"><table>
 
 
@@ -12638,7 +12774,7 @@ mark{background:var(--hit);color:inherit;border-radius:2px}
 </table></div>
 <p>Partial resection is a different thing: excising a vegetation or a small prolapsing or destroyed segment (triangular resection, under about one-tenth of the leaflet area) and closing or patching the defect is part of repair, and is finished with a ring or a bicuspidisation [checked, Belluschi 2018]. The valvectomy data are in Cardiac tab 2 (endocarditis in people who inject drugs).</p>
 <h2 id="c1b--operative-techniques-overview">Operative techniques: overview</h2>
-<figure><img loading="lazy" src="img/c1b-10.webp" width="1344" height="630" alt="Six tricuspid operations drawn in the same surgeon&#39;s view (my own schematics)"><figcaption>Six tricuspid operations drawn in the same surgeon's view (my own schematics)</figcaption></figure>
+<figure><img loading="lazy" src="img/c1b-11.webp" width="1344" height="630" alt="Six tricuspid operations drawn in the same surgeon&#39;s view (my own schematics)"><figcaption>Six tricuspid operations drawn in the same surgeon's view (my own schematics)</figcaption></figure>
 <div class="tw"><table>
 
 
@@ -12740,7 +12876,7 @@ mark{background:var(--hit);color:inherit;border-radius:2px}
 
 </table></div>
 <h3 id="c1b--ring-annuloplasty">Ring annuloplasty</h3>
-<figure><img loading="lazy" src="img/c1b-11.webp" width="1344" height="486" alt="Tricuspid ring annuloplasty in four steps: expose, size, place sutures, seat and test (my own schematics)"><figcaption>Tricuspid ring annuloplasty in four steps: expose, size, place sutures, seat and test (my own schematics)</figcaption></figure>
+<figure><img loading="lazy" src="img/c1b-12.webp" width="1344" height="486" alt="Tricuspid ring annuloplasty in four steps: expose, size, place sutures, seat and test (my own schematics)"><figcaption>Tricuspid ring annuloplasty in four steps: expose, size, place sutures, seat and test (my own schematics)</figcaption></figure>
 <div class="tw"><table>
 
 
@@ -12822,7 +12958,7 @@ mark{background:var(--hit);color:inherit;border-radius:2px}
 
 </table></div>
 <h3 id="c1b--replacement">Replacement</h3>
-<figure><img loading="lazy" src="img/c1b-12.webp" width="1344" height="486" alt="Tricuspid valve replacement in three steps: prepare, place sutures, seat the prosthesis (my own schematics)"><figcaption>Tricuspid valve replacement in three steps: prepare, place sutures, seat the prosthesis (my own schematics)</figcaption></figure>
+<figure><img loading="lazy" src="img/c1b-13.webp" width="1344" height="486" alt="Tricuspid valve replacement in three steps: prepare, place sutures, seat the prosthesis (my own schematics)"><figcaption>Tricuspid valve replacement in three steps: prepare, place sutures, seat the prosthesis (my own schematics)</figcaption></figure>
 <div class="tw"><table>
 
 
@@ -12874,7 +13010,7 @@ mark{background:var(--hit);color:inherit;border-radius:2px}
 </ul>
 <h2 id="c1b--tricuspid-valve-repair-technique-mccarthy-2011">Tricuspid valve repair technique (McCarthy 2011)</h2>
 <p>From the PDF you supplied: McCarthy PM. Tricuspid Valve Repair Technique. Oper Tech Thorac Cardiovasc Surg 2011;16:97-111, doi 10.1053/j.optechstcvs.2011.07.001 (Northwestern). A technique atlas for functional regurgitation; I read all of the text, and the figures are the author's illustrations, described and not copied. Everything in this section is from the paper. Disclosure in the paper: the author invented the MC3 ring and receives royalties.</p>
-<figure><img loading="lazy" src="img/c1b-13.webp" width="1344" height="588" alt="Tricuspid ring annuloplasty: order of suture placement and tying, after McCarthy 2011 (my own schematic)"><figcaption>Tricuspid ring annuloplasty: order of suture placement and tying, after McCarthy 2011 (my own schematic)</figcaption></figure>
+<figure><img loading="lazy" src="img/c1b-14.webp" width="1344" height="588" alt="Tricuspid ring annuloplasty: order of suture placement and tying, after McCarthy 2011 (my own schematic)"><figcaption>Tricuspid ring annuloplasty: order of suture placement and tying, after McCarthy 2011 (my own schematic)</figcaption></figure>
 <div class="tw"><table>
 
 
@@ -12994,7 +13130,7 @@ mark{background:var(--hit);color:inherit;border-radius:2px}
 </table></div>
 <h2 id="c1b--gammie-trial-ctsn-nejm-2022">Gammie trial (CTSN, NEJM 2022)</h2>
 <p>From the paper you supplied: Gammie JS, Chu MWA, Falk V, et al, for the Cardiothoracic Surgical Trials Network. Concomitant tricuspid repair in patients with degenerative mitral regurgitation. N Engl J Med 2022;386:327-39, doi 10.1056/NEJMoa2115961. I read the abstract, methods, primary results and discussion; the adverse-event table came out scrambled in extraction, so only the pacemaker figure is taken from it. Everything in this section is from the paper.</p>
-<figure><img loading="lazy" src="img/c1b-14.webp" width="1344" height="572" alt="Gammie 2022: two-year outcomes of mitral surgery with and without tricuspid annuloplasty (my own chart)"><figcaption>Gammie 2022: two-year outcomes of mitral surgery with and without tricuspid annuloplasty (my own chart)</figcaption></figure>
+<figure><img loading="lazy" src="img/c1b-15.webp" width="1344" height="572" alt="Gammie 2022: two-year outcomes of mitral surgery with and without tricuspid annuloplasty (my own chart)"><figcaption>Gammie 2022: two-year outcomes of mitral surgery with and without tricuspid annuloplasty (my own chart)</figcaption></figure>
 <div class="tw"><table>
 
 
