@@ -279,6 +279,14 @@ def main():
           "if(e.request.mode==='navigate'){e.respondWith(fetch(e.request).then(r=>{const c=r.clone();caches.open(CACHE).then(x=>x.put('index.html',c));return r}).catch(()=>caches.match('index.html')));return}"
           "e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request).then(n=>{const c=n.clone();caches.open(CACHE).then(x=>x.put(e.request,c));return n})))});\n")
     open(os.path.join(OUT, 'sw.js'), 'w').write(sw)
+    # second copy of the same build at a new address: /frcs/
+    import shutil
+    out2 = os.path.join(ROOT, 'frcs')
+    shutil.rmtree(out2, ignore_errors=True)
+    shutil.copytree(OUT, out2)
+    sw2 = open(os.path.join(out2, 'sw.js')).read().replace("x!==CACHE", "x.startsWith('frcs-')&&x!==CACHE")
+    sw2 = sw2.replace("const CACHE='", "const CACHE='frcs-", 1)
+    open(os.path.join(out2, 'sw.js'), 'w').write(sw2)
     print('pages', len(titles), 'sections', total_secs, 'figures', ng, 'trial tables', nt, 'viva lists', nv,
           'bytes', len(page), 'cache', h)
 
