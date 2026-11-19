@@ -42,7 +42,7 @@ Significant stenosis is 70% diameter narrowing, or 50% for the left main stem.
 |---|---|---|
 | Left internal mammary artery | Over 95% at 5 years, about 90% at 10 | Non-fenestrated internal elastic lamina, high nitric oxide and prostacyclin output, no constriction to noradrenaline; survival benefit |
 | Right internal mammary artery | Similar at 5 years | Bilateral pedicled harvest raises sternal wound risk |
-| Radial artery | 83 to 95% at 5 years | Fenestrated lamina, thicker wall, prone to spasm; needs a tight target stenosis (competitive flow); Allen test first; avoid after catheterisation through it, in diabetes with vascular disease |
+| Radial artery | 83 to 95% at 5 years | Fenestrated lamina, thicker wall, prone to spasm; patency depends on competitive flow; Allen test first; avoid after intervention through it, and in diabetes with vascular disease |
 | Long saphenous vein | About 50% at 10 years; up to 10% fail in 30 days | Early failure is technical or thrombotic; then intimal hyperplasia; then graft atheroma |
 
 ### Off-pump surgery
