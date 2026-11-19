@@ -34,6 +34,7 @@ SECTIONS = [
         ('t9', 'Operative technique', 'topic'), ('t11', 'Pleura', 'new'), ('t12', 'Airway', 'new'),
         ('t13', 'Chest wall and diaphragm', 'new'), ('t14', 'Emphysema and lung transplantation', 'new'),
         ('t15', 'Cardiothoracic trauma', 'new'), ('t16', 'Trials and staging update', 'new'),
+        ('t17', 'Lung function, resection complications, infection', 'new'),
         ('t10', 'TSRA Primer: thoracic', 'digest'), ('thoracic', 'Course day notes', 'course')]),
     ('cardiac', 'Cardiac', [
         ('c1', 'Mitral valve', 'topic'), ('c2', 'Tricuspid valve', 'topic'), ('c3', 'Pulmonary valve', 'topic'),
@@ -43,6 +44,8 @@ SECTIONS = [
         ('c14', 'Bypass and myocardial protection', 'new'),
         ('c15', 'Circulatory support and heart transplantation', 'new'),
         ('c16', 'Pericardium, tumours and pulmonary embolism', 'new'),
+        ('c17', 'Critical care after cardiac surgery', 'new'),
+        ('c18', 'Heart failure surgery and rhythm devices', 'new'),
         ('c12', 'TSRA Primer: adult cardiac', 'digest'), ('c13', 'TSRA Primer: critical care', 'digest'),
         ('cardiac', 'Course day notes', 'course')]),
     ('congenital', 'Congenital', [
@@ -55,8 +58,8 @@ SECTIONS = [
         ('viva', 'Viva points', 'ref'), ('figures', 'Figure gallery', 'ref'), ('flagged', 'Flagged sections', 'ref')]),
 ]
 CRITICAL = [('Aortic dissection', 'c6'), ('Stridor', 't12'), ('Tension pneumothorax', 't11'),
-            ('Cardiac tamponade', 'c16'), ('Acute haemothorax', 't15'), ('Low cardiac output', 'c10'),
-            ('Endocarditis', 'c8'), ('Respiratory failure after thoracic surgery', 't7'),
+            ('Cardiac tamponade', 'c16'), ('Acute haemothorax', 't15'), ('Low cardiac output', 'c17'),
+            ('Endocarditis', 'c8'), ('Respiratory failure after thoracic surgery', 't17'),
             ('Myocardial ischaemia', 'c5')]
 INDEX_PROC = [('Coronary bypass', 'c5'), ('Aortic valve replacement', 'c4'), ('Mitral valve replacement', 'c1'),
               ('Anatomical lung resection', 't9'), ('Empyema: decortication', 't11'),

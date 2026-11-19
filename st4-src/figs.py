@@ -352,5 +352,66 @@ def mi():
     return svg(202, b)
 
 
+
+# ---------------------------------------------------------------- second tranche
+
+def ppo():
+    b = box(230, 8, 260, 40, 'Predicted postoperative FEV1 and DLCO', 'b1', 'f-h')
+    b += arrow(290, 48, 130, 76) + arrow(360, 48, 360, 76) + arrow(430, 48, 590, 76)
+    b += box(20, 78, 220, 44, ['Both over 60%'], 'ok') + box(250, 78, 220, 44, ['Either 30 to 60%'], 'b0') + box(480, 78, 220, 44, ['Either under 30%'], 'warn')
+    b += arrow(130, 122, 130, 150) + arrow(360, 122, 360, 150) + arrow(590, 122, 590, 150)
+    b += box(20, 152, 220, 44, 'Low risk', 'ok', 'f-h') + box(250, 152, 220, 44, ['Stair climb or 6-minute walk'], 'b0') + box(480, 152, 220, 44, ['Measure VO2 max'], 'b0')
+    b += arrow(360, 196, 360, 224) + arrow(470, 186, 500, 196)
+    b += box(250, 226, 220, 40, ['Pass: intermediate risk'], 'b1')
+    b += T(432, 212, 'fail', 'f-s', 'start')
+    b += arrow(540, 196, 520, 224) + arrow(640, 196, 660, 224)
+    b += box(480, 226, 105, 52, ['10 to 15:', 'high risk'], 'warn', 'f-s') + box(595, 226, 105, 52, ['Under 10:', 'do not resect'], 'warn', 'f-s')
+    return svg(288, b)
+
+
+def haemsrc():
+    h, b = bars([('Bronchial arteries', 90, 'warn'), ('Pulmonary artery', 5, 'b1'), ('Non-bronchial systemic', 5, 'b1')],
+                '%', 100, 'Source of bleeding in life-threatening haemoptysis')
+    return svg(h, b)
+
+
+def bleed():
+    return tiles([('500 ml', ['in the first hour'], 'warn'), ('400 ml/h', ['for 2 hours'], 'warn'),
+                  ('300 ml/h', ['for 3 hours'], 'warn'), ('1 litre', ['in the first 4 hours'], 'warn')], 100)
+
+
+def berlin():
+    return tiles([('200 to 300', ['Mild', 'PaO2/FiO2, mmHg'], 'b1'), ('100 to 200', ['Moderate'], 'warn'),
+                  ('Under 100', ['Severe'], 'warn'), ('6 to 8 ml/kg', ['Tidal volume;', 'plateau under 30'], 'ok')], 108)
+
+
+def lcocauses():
+    spec = [('Preload down', ['Bleeding, tamponade,', 'tension pneumothorax,', 'right ventricular failure']),
+            ('Contractility down', ['Stunning, ischaemia,', 'graft failure, acidosis,', 'low calcium']),
+            ('Afterload up', ['Vasoconstriction,', 'systolic anterior motion,', 'outflow obstruction']),
+            ('Rate and rhythm', ['Atrial fibrillation,', 'heart block,', 'ventricular arrhythmia'])]
+    b = box(260, 6, 200, 36, 'Low cardiac output', 'b1', 'f-h')
+    for i, (a, ls) in enumerate(spec):
+        x = 10 + i * 177
+        b += arrow(360, 42, x + 84, 66)
+        b += f'<rect x="{x}" y="68" width="168" height="110" rx="10" class="f-b0"/><rect x="{x}" y="68" width="168" height="32" rx="10" class="f-warn"/>'
+        b += T(x + 84, 89, a, 'f-h') + T(x + 84, 122, ls, 'f-s')
+    return svg(188, b)
+
+
+
+def nbg():
+    spec = [('I', 'Chamber paced', 'O · A · V · D'), ('II', 'Chamber sensed', 'O · A · V · D'),
+            ('III', 'Response to sensing', 'O · T · I · D'), ('IV', 'Rate modulation', 'O · R')]
+    b = ''
+    for i, (n, a, l) in enumerate(spec):
+        x = 10 + i * 177
+        b += f'<rect x="{x}" y="10" width="168" height="96" rx="10" class="f-b0"/><rect x="{x}" y="10" width="168" height="32" rx="10" class="f-b1"/>'
+        b += T(x + 84, 31, 'Position ' + n, 'f-h') + T(x + 84, 64, a) + T(x + 84, 88, l, 'f-n')
+    b += box(10, 120, 345, 44, ['DDD: paces both, senses both,', 'inhibits and triggers'], 'ok', 'f-s')
+    b += box(365, 120, 345, 44, ['VVI: paces and senses the ventricle,', 'inhibited by a sensed beat'], 'ok', 'f-s')
+    return svg(174, b)
+
+
 FIGS = {k: v for k, v in globals().items() if callable(v) and k not in
         ('svg', 'T', 'box', 'arrow', 'line', 'bars', 'tiles', 'E')}
