@@ -28,7 +28,7 @@ The root runs from the aortoventricular junction to the sinotubular junction: an
 | Operation | What is done | When |
 |---|---|---|
 | Valve-sparing reimplantation (David) | Sinuses excised to an 8 mm rim, coronary buttons mobilised, the valve re-suspended inside a Dacron tube anchored below the annulus | Normal or repairable cusps; the most used; fewer reinterventions than remodelling |
-| Valve-sparing remodelling (Yacoub) | Scalloped graft recreates the sinuses; the annulus is not supported | Normal annulus |
+| Valve-sparing remodelling (Yacoub) | Graft recreates the sinuses; the annulus is not supported | Normal annulus |
 | Composite valve graft (button Bentall) | Valve and root replaced with a valved conduit, mechanical or biological; coronary buttons reimplanted | Diseased or calcified valve |
 | Ross, or stentless root | Autograft or porcine root | Selected patients |
 
@@ -74,8 +74,8 @@ Symptoms come from compression: hoarseness (left recurrent nerve), stridor, dysp
 | Cerebral protection | Detail |
 |---|---|
 | Deep hypothermic circulatory arrest | 18 to 22°C |
-| With selective antegrade cerebral perfusion | Through the axillary artery or arch vessels |
-| With retrograde cerebral perfusion | Through the superior vena cava |
+| With selective antegrade cerebral perfusion | Added to arrest |
+| With retrograde cerebral perfusion | Added to arrest |
 
 No strategy has been shown to be better than the others.
 
@@ -98,20 +98,20 @@ EACTS/ESVS 2018, as quoted: do not deploy a stent graft with a landing zone unde
 | I | Proximal descending | Above the renal arteries |
 | II | Proximal descending | Aortic bifurcation (most extensive) |
 | III | Distal descending (T6) | Bifurcation |
-| IV | Abdominal aorta only | |
+| IV | Abdominal aorta | Bifurcation |
 | V | Distal descending (T6) | Above the renal arteries |
 
 **Natural history.** Descending aneurysms grow about 0.19 cm a year and ascending ones 0.07. At 7 cm the yearly rates are rupture 3.6%, dissection 3.7% and death 10.8%. Nearly 80% of ruptures are in women.
 
 **Indications.** Over 6 cm; growth over 1 cm a year; 5.0 cm in connective tissue disease; any symptoms.
 
-| Spinal cord and organ protection | |
+| Spinal cord and organ protection | Detail |
 |---|---|
 | Cerebrospinal fluid drain | Before and after surgery |
 | Evoked potential monitoring | No muscle relaxant |
 | Left heart bypass | Left atrium to femoral artery, for distal perfusion |
 | Mild hypothermia | 32 to 34°C |
-| Sequential clamping; selective visceral and renal perfusion | |
+| Clamping and perfusion | Sequential clamping; selective visceral and renal perfusion |
 | Reattach segmental arteries | Between T8 and L1 |
 
 **Results.** Operative mortality 3 to 21%; permanent paraplegia 1.5 to 5%; five-year survival about 65%. Cardiac disease causes 49% of early deaths, so revascularise first where indicated. Position: right lateral with the hips rolled back for femoral access; divide the diaphragm.
