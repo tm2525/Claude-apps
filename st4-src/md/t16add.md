@@ -21,7 +21,7 @@ Median follow-up 7 years. The node check before randomisation is the point to st
 
 ### CheckMate 816: neoadjuvant nivolumab with chemotherapy
 
-Forde et al., N Engl J Med 2022;386:1973-85. Abstract read from the full paper.
+Forde et al., N Engl J Med 2022;386:1973-85. Whole paper read; further detail is in the section "CheckMate 816: detail from the full paper" below.
 
 | Item | Nivolumab plus chemotherapy | Chemotherapy alone |
 |---|---|---|
@@ -34,7 +34,7 @@ Stage IB to IIIA resectable disease. At the first interim analysis the hazard ra
 
 ### NETT: lung volume reduction surgery
 
-N Engl J Med 2003;348:2059-73. Abstract read from the full paper.
+N Engl J Med 2003;348:2059-73. Whole paper read; further detail is in the section "NETT: detail from the full paper" below.
 
 !fig nett | NETT: who gains and who is harmed (my chart, figures from the paper's abstract)
 
@@ -192,3 +192,62 @@ Brain metastases are found in about 4% of clinical stage 1 disease, which is why
 - Follow-up: specialist appointment within 6 weeks of finishing treatment, then regular review; nurse-led protocol follow-up is an option.
 
 NICE states that lobectomy gives better survival than SABR, and that more trials of SABR against surgery are needed.
+
+## CheckMate 816: detail from the full paper
+
+Added 19 November 2026 after reading the whole paper (Forde et al., N Engl J Med 2022;386:1973-85).
+
+| Design point | Detail |
+|---|---|
+| Patients | 358; stage IB (4 cm or more) to IIIA on the 7th edition; performance status 0 or 1; known EGFR mutation or ALK translocation excluded. 64% were stage IIIA |
+| Treatment | Nivolumab 360 mg with platinum doublet, or doublet alone, every 3 weeks for three cycles; surgery within 6 weeks; adjuvant chemotherapy or radiotherapy optional |
+| Primary end points | Event-free survival and pathological complete response (no viable tumour in lung and nodes), both by blinded review |
+| Follow-up | Minimum 21 months, median 29.5 months |
+
+| Outcome | Nivolumab plus chemotherapy | Chemotherapy alone |
+|---|---|---|
+| Event-free at 1 year and 2 years | 76.1% and 63.8% | 63.4% and 45.3% |
+| Major pathological response (10% or less viable tumour) | 36.9% | 8.9% |
+| Radiographic downstaging | 30.7% | 23.5% |
+| Completed neoadjuvant treatment | 93.8% | 84.7% |
+| Surgery cancelled | 15.6% (progression 6.7%) | 20.7% (progression 9.5%) |
+| R0 resection | 83.2% | 77.8% |
+| Surgical complications, any grade | 41.6% | 46.7% |
+| Grade 3 or 4 surgery-related events | 11.4% | 14.8% |
+| Adjuvant chemotherapy given | 11.9% | 22.2% |
+| Treatment-related deaths | 0 | 3 |
+
+- Operations were shorter, more often minimally invasive, and less often pneumonectomy in the nivolumab arm, most clearly in stage IIIA.
+- Benefit was larger in stage IIIA (hazard ratio 0.54) than IB to II (0.87), in PD-L1 of 1% or more (0.41) than under 1% (0.85), and in non-squamous (0.50) than squamous tumours (0.77). These subgroup analyses were exploratory.
+- Patients with a complete response had longer event-free survival in both arms.
+- Overall survival at this interim analysis: hazard ratio 0.57, P=0.008, short of the boundary of 0.0033.
+- Immune-mediated events were mostly grade 1 or 2; rash was the commonest (8.5%); pneumonitis in 1.1%.
+
+## NETT: detail from the full paper
+
+Added 19 November 2026 after reading the whole paper (N Engl J Med 2003;348:2059-73).
+
+| Design point | Detail |
+|---|---|
+| Patients | 3777 evaluated, 1218 randomised at 17 centres after 6 to 10 weeks of pulmonary rehabilitation. Mean FEV1 27% predicted, residual volume about 220%, transfer factor 28% |
+| Operation | Bilateral stapled wedge resection of 20 to 35% of each lung, targeting the worst areas; sternotomy in 70%, thoracoscopic in 30% |
+| Primary outcomes | Mortality and maximal exercise capacity at 2 years; mean follow-up 29.2 months |
+| Improvement defined as | More than 10 W on cycle ergometry; more than 8 points on the St George's questionnaire. Death or missing counted as no improvement |
+| Low exercise capacity | 25 W or less in women, 40 W or less in men, after rehabilitation |
+| High-risk group, excluded from May 2001 | FEV1 20% or less with either homogeneous emphysema or transfer factor 20% or less |
+
+| Group | 90-day mortality, surgery against medical | Risk ratio for death | Exercise improved at 24 months | Quality of life improved |
+|---|---|---|---|---|
+| All 1218 | 7.9% against 1.3% | 1.01 | 15% against 3% | 33% against 9% |
+| High risk (140) | 28.6% against 0% | 1.82 | 7% against 2% | 10% against 0% |
+| Not high risk (1078) | 5.2% against 1.5% | 0.89 | 16% against 3% | 37% against 10% |
+| Upper lobe, low exercise (290) | 2.9% against 3.3% | 0.47 | 30% against 0% | 48% against 10% |
+| Upper lobe, high exercise (419) | 2.9% against 0.9% | 0.98 | 15% against 3% | 41% against 11% |
+| Non-upper lobe, low exercise (149) | 8.3% against 0% | 0.81 | 12% against 7% | 37% against 7% |
+| Non-upper lobe, high exercise (220) | 10.1% against 0.9% | 2.06 | 3% against 3% | 15% against 12% |
+
+- 90-day mortality did not differ between thoracoscopic surgery (6.1%) and sternotomy (8.6%).
+- One month after randomisation, 28.1% of the surgical group were still in hospital or a care facility, against 2.2%; the gap had closed by eight months.
+- In survivors, function after surgery had returned to about baseline by two years, while the medical group had fallen below baseline.
+- The only baseline factors that changed the effect of surgery on mortality were the distribution of emphysema and exercise capacity.
+- The survival benefit in the upper-lobe, low-exercise group came mainly from the very high mortality of those patients on medical treatment.
