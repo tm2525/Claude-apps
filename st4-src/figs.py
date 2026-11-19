@@ -476,5 +476,61 @@ def crawford():
     return svg(322, b)
 
 
+def taad():
+    b = T(12, 20, 'Distal: how much arch', 'f-h', 'start')
+    b += box(10, 30, 226, 92, ['Hemiarch', 'No arch tear', 'Arch under 4 cm', 'No carotid or innominate malperfusion'], 'ok', 'f-s')
+    b += box(247, 30, 226, 92, ['Total arch', 'Tear in the arch, or', 'arch over 4 cm;', 'reimplant malperfused branches'], 'b1', 'f-s')
+    b += box(484, 30, 226, 92, ['Frozen elephant trunk', 'More false lumen closure', 'Paraplegia 5 to 10%', '(under 1% without)'], 'warn', 'f-s')
+    b += T(12, 150, 'Proximal: what to do with the root', 'f-h', 'start')
+    b += box(10, 160, 226, 92, ['Resuspend and repair', 'No root tear', 'No connective tissue disease', 'Root under 4.5 cm'], 'ok', 'f-s')
+    b += box(247, 160, 226, 92, ['Valve-sparing root', 'Root involved,', 'valve preservable;', 'reimplantation if Marfan'], 'b1', 'f-s')
+    b += box(484, 160, 226, 92, ['Composite valve graft', 'Valve cannot be kept', 'Coronary buttons', 'reimplanted'], 'warn', 'f-s')
+    return svg(262, b)
+
+
+def carpentier():
+    cols = [('I', 'Normal motion', ['Annulus dilated', 'or leaflet perforated'], 'b0'),
+            ('II', 'Excess motion', ['Prolapse or flail:', 'chord or papillary rupture'], 'warn'),
+            ('IIIa', 'Restricted, both phases', ['Rheumatic,', 'calcific'], 'b1'),
+            ('IIIb', 'Restricted in systole', ['Ischaemic tethering,', 'dilated ventricle'], 'b1')]
+    b = ''
+    w = 166
+    st = 'fill="none" style="stroke-width:3.5px;stroke-linecap:round"'
+    for i, (n, mot, cause, cls) in enumerate(cols):
+        x = 10 + i * (w + 12)
+        cx = x + w / 2
+        b += f'<rect x="{x}" y="10" width="{w}" height="226" rx="10" class="f-{cls}"/>'
+        b += T(cx, 34, 'Type ' + n, 'f-h') + T(cx, 52, mot, 'f-s')
+        ax1, ax2, ay = cx - 50, cx + 50, 104
+        if n == 'I':
+            ax1, ax2 = cx - 66, cx + 66
+            l, r = (cx - 12, ay + 22), (cx + 12, ay + 22)
+        elif n == 'II':
+            l, r = (cx + 2, ay + 22), (cx - 2, ay - 16)
+        elif n == 'IIIa':
+            l, r = (cx - 9, ay + 26), (cx + 9, ay + 26)
+        else:
+            l, r = (cx - 12, ay + 40), (cx + 14, ay + 42)
+        b += line(x + 10, ay, ax1, ay) + line(ax2, ay, x + w - 10, ay)
+        b += f'<path d="M{ax1} {ay} Q{(ax1 + l[0]) / 2 + 4} {ay + 2} {l[0]} {l[1]}" class="f-l" {st}/>'
+        rc = (cx + 26, ay - 2) if n == 'II' else ((ax2 + r[0]) / 2 - 4, ay + 2)
+        b += f'<path d="M{ax2} {ay} Q{rc[0]} {rc[1]} {r[0]} {r[1]}" class="f-l" {st}/>'
+        d = 'stroke-dasharray="3 3"'
+        b += f'<line x1="{l[0]}" y1="{l[1]}" x2="{cx - 6}" y2="160" class="f-l" {d}/>'
+        if n != 'II':
+            b += f'<line x1="{r[0]}" y1="{r[1]}" x2="{cx + 18}" y2="160" class="f-l" {d}/>'
+        else:
+            b += f'<line x1="{cx + 18}" y1="160" x2="{cx + 12}" y2="140" class="f-l" {d}/>'
+        b += T(x + 12, 84, 'Atrium', 'f-s', 'start') + T(x + 12, 178, 'Ventricle', 'f-s', 'start')
+        b += T(cx, 202, cause, 'f-s')
+    return svg(246, b)
+
+
+def ffr():
+    return tiles([('50%', ['Left main narrowing', 'on angiography'], 'b1'), ('70%', ['Other major artery', 'narrowing'], 'b1'),
+                  ('0.80 or less', ['Fractional flow reserve', '(adenosine)'], 'warn'),
+                  ('0.89 or less', ['Wave-free ratio', '(no drug)'], 'warn')], 100)
+
+
 FIGS = {k: v for k, v in globals().items() if callable(v) and k not in
         ('svg', 'T', 'box', 'arrow', 'line', 'bars', 'tiles', 'E')}

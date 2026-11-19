@@ -127,3 +127,88 @@ EACTS/ESVS 2018, as quoted: do not deploy a stent graft with a landing zone unde
 | Spinal cord ischaemia | 1 to 10%, in proportion to the length covered |
 
 Lower the cord risk with a spinal drain, a higher blood pressure target, a patent left subclavian artery, no anaemia, and staging of long coverage. Intravascular ultrasound confirms the wire is in the true lumen. Zone 0 is subdivided: 0A annulus to the coronaries, 0B to the right pulmonary artery, 0C to the innominate; 0A carries the highest mortality.
+
+## Type A dissection: textbook account
+
+Added 19 November 2026 from the TSRA Review 3rd ed., ch. 75 (Jabagi, Brescia, Yang), read in full. The guideline recommendations for type A dissection are earlier in this tab; this section adds natural history, imaging, operative strategy and the delayed-repair pathway for malperfusion.
+
+### Definitions and natural history
+
+Acute aortic syndromes are dissection, intramural haematoma and penetrating ulcer. Stanford A involves the ascending aorta; B does not. DeBakey I involves ascending, arch and descending aorta; II the ascending only; III the descending only (IIIa above the diaphragm, IIIb below).
+
+| Untreated type A | Mortality |
+|---|---|
+| Per hour, early | 1 to 3% |
+| 24 hours | Over 33% |
+| 48 hours | 50% |
+| 2 weeks | 75 to 90% |
+| With surgery | 30-day survival 80 to 90%; 10-year survival 30 to 60% |
+
+Mean age 63; 3:1 male; hypertension in over 75%. The tear usually starts on the right anterior wall of the proximal ascending aorta along the greater curve and spirals to the left posterior descending aorta. About half of patients die suddenly from rupture, coronary involvement or acute aortic regurgitation; 30% are first given another diagnosis. Stroke in 5%. Aortic regurgitation complicates up to 75%, from loss of commissural support.
+
+### Diagnosis
+
+| Test | Points |
+|---|---|
+| Chest film | Abnormal in 60 to 90%: wide mediastinum; calcium sign (intimal calcium over 10 mm inside the outer wall); can be normal |
+| ECG | Often normal; ST change follows the coronary involved |
+| D-dimer | Under 500 µg/L has a negative predictive value of 95% in the first 24 hours, in low-probability patients |
+| CT angiography | First choice; whole aorta, branch involvement, planning. No valve information |
+| TOE | Bedside; valve, coronaries, pericardium, ventricle. Blind spot of 2 to 5 cm at the distal ascending aorta and proximal arch |
+| MRI | Accurate but slow to obtain |
+| Coronary angiography | Avoid: delays surgery without benefit |
+
+All three imaging tests exceed 95% sensitivity and specificity.
+
+**Intramural haematoma.** Crescentic or circular wall thickening of 7 mm or more with no flap and no flow. Higher risk with ascending involvement, diameter over 5 cm, or thickness over 10 mm. **Penetrating ulcer.** Over 90% are in the descending aorta, in elderly hypertensive patients; mushroom-like outpouching. When either involves the ascending aorta, treat as a type A dissection.
+
+### Before theatre
+
+- Beta-blocker first (esmolol), then nitroprusside or nicardipine; systolic pressure under 110 mmHg.
+- Analgesia, crossmatch, urinary catheter.
+- Hypotension means rupture, tamponade or mesenteric malperfusion until proved otherwise. Use vasopressors only if organ perfusion fails. If pericardial drainage is used as a bridge, release slowly: a pressure surge can rupture the aorta.
+- Medical treatment alone carries 60 to 80% mortality.
+
+### Operative strategy
+
+!fig taad | Type A repair: how far to go distally and proximally (my drawing, criteria from TSRA Review ch. 75)
+
+| Distal extent | Criteria in the chapter |
+|---|---|
+| Ascending graft with hemiarch | No tear in the arch, arch under 4 cm, no malperfusion of the innominate or left carotid artery |
+| Total arch replacement | Tear in the arch, or arch over 4 cm; reimplant or graft malperfused branches individually |
+| Frozen elephant trunk | More false lumen obliteration and true lumen expansion; paraplegia rises from under 1% to 5 to 10% (up to 15%) |
+
+| Proximal extent | Criteria in the chapter |
+|---|---|
+| Root repair: resuspend the commissures with pledgeted sutures, rebuild the sinotubular junction | No tear in the root, no connective tissue disease, root under 4.5 cm |
+| Valve-sparing root replacement | Root involved, valve preservable; reimplantation preferred in connective tissue disease |
+| Composite valve graft | Valve not preservable |
+
+**Cannulation.**
+
+| Site | For | Against |
+|---|---|---|
+| Femoral artery | Fastest. Choose the non-dissected side on CT; without CT, the side with the weaker pulse | Retrograde flow: atheroembolism, false lumen perfusion |
+| Right axillary, with an 8 to 10 mm side graft | Antegrade flow and selective cerebral perfusion by clamping the innominate | Takes time; not with an aberrant right subclavian artery (under 2%), dissected or diseased artery, or morbid obesity |
+| Direct ascending aorta, Seldinger technique under TOE | Antegrade | Needs confirmation of the true lumen |
+
+**Sequence.** Sternotomy, right atrial cannulation (femoral vein if unstable), start cooling at once. Do proximal work while cooling. At target temperature, arrest the circulation, start antegrade cerebral perfusion, and complete the open distal anastomosis quickly. Re-perfuse the body, rewarm, finish the root.
+
+**Cerebral protection.** Traditional deep hypothermia at 18°C gives 30 to 40 minutes of safe arrest but lengthens bypass and adds coagulopathy and organ dysfunction. With antegrade perfusion, warmer arrest is increasingly used, with lower morbidity. Retrograde perfusion through the superior vena cava adds nothing to deep hypothermia alone in this chapter.
+
+### Late reoperation
+
+Risk factors: Marfan or Loeys-Dietz syndrome, isthmus over 4 cm, persistent hypertension, false lumen growth, residual arch tears. Reoperation carries more risk than the first operation. There is no prospective trial of extended against limited distal repair.
+
+### Malperfusion syndrome and delayed repair
+
+Malperfusion is reduced flow to an organ; malperfusion syndrome is the resulting necrosis and organ failure (abdominal pain and tenderness, rising lactate and liver or pancreatic enzymes, falling urine output, pulseless or weak limb, neurological deficit). Central repair in the presence of malperfusion carries 60 to 70% mortality.
+
+In specialist centres, a stable patient with severe malperfusion syndrome and no rupture or tamponade is treated in stages:
+
+1. Endovascular fenestration or stenting to reperfuse the gut, kidneys or limbs. This corrects both dynamic and static obstruction; central repair corrects only dynamic obstruction.
+2. Recovery of organ failure.
+3. Open type A repair.
+
+This also avoids a futile open operation in patients who will not recover.

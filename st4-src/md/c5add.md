@@ -87,3 +87,54 @@ All are class I indications for emergency surgery with grafting. Before theatre:
 Free wall rupture types: I, an abrupt tear without thinning; II, erosion covered by thrombus; III, perforation of a thinned aneurysm. A pseudoaneurysm is a contained rupture and is repaired; a true aneurysm rarely ruptures.
 
 Time spent in cardiogenic shock before repair is the strongest predictor of death after septal rupture. Percutaneous device closure is for the highest-risk patients, late presenters and residual defects.
+
+## Catheter laboratory: testing, pressure-wire assessment and PCI complications
+
+Added 19 November 2026 from the TSRA Review 3rd ed., ch. 52 (Dufendach, Kliner, Sultan). The syllabus asks for interpretation of coronary angiography including FFR.
+
+### Non-invasive tests
+
+| Test | Use |
+|---|---|
+| Resting ECG | All patients with chest pain and no obvious non-cardiac cause |
+| Exercise stress test (ECG, echo or nuclear) | Intermediate or high pre-test probability and able to exercise |
+| Pharmacological stress (echo, nuclear or MRI) | Unable to exercise |
+| CT coronary angiography | Intermediate or high risk when stress testing is contraindicated; some use it first |
+
+### Which lesion matters
+
+!fig ffr | Angiographic and pressure-wire thresholds for a significant coronary lesion (my chart, from TSRA Review ch. 52)
+
+| Measure | Significant |
+|---|---|
+| Angiographic narrowing | 50% left main; 70% other major arteries |
+| Fractional flow reserve, under adenosine hyperaemia | 0.80 or less |
+| Instantaneous wave-free ratio, no drug needed | 0.89 or less |
+
+The wave-free ratio can assess serial lesions and is more comfortable. Revascularisation guided by either reduces urgent revascularisation compared with angiography alone. COURAGE (2007): PCI added to medical therapy in stable disease did not reduce death or infarction over 4.6 years.
+
+### By presentation
+
+| Presentation | Pathway |
+|---|---|
+| ST elevation infarction | Immediate angiography; PCI is the primary treatment. Surgery if PCI cannot be done, if disease burden warrants it and theatre is immediate, or for a PCI complication |
+| Non-ST elevation infarction | Admit, serial troponin, heparin, angiography; immediately if pain or enzymes worsen |
+| Unstable angina | Angiography, timing by severity |
+| Stable disease | Decide by anatomy, SYNTAX score and pressure-wire result, in a heart team; especially for unprotected left main or complex multivessel disease involving the LAD |
+
+### PCI in outline
+
+Radial access with a 6 Fr sheath (less bleeding; outcomes similar to femoral). Heparin and a vasodilator. Angiography, then a 0.014 inch pressure wire across the lesion. Pre-dilate, deploy a drug-eluting stent, post-dilate with a non-compliant balloon. Intravascular ultrasound checks expansion and edge injury. Dual antiplatelet therapy for 12 months after an acute coronary syndrome and at least 6 months after stable disease.
+
+### Complications a surgeon is called for
+
+| Complication | Frequency | Action |
+|---|---|---|
+| Coronary perforation or dissection | | Theatre: graft beyond the injury and any other significant lesions |
+| Septal or free wall rupture after infarction | Days later | Emergency repair on bypass |
+| Major bleeding within 30 days | 2 to 3% | |
+| Periprocedural infarction | About 6% | Not a predictor of later death |
+| Spontaneous infarction after 24 hours | | Strong predictor of death |
+| Stroke within 30 days | Under 1% | |
+| Stent thrombosis | Early | Back to the catheter laboratory |
+| In-stent restenosis (50% or more within the stent or 5 mm of its edge) | 5 to 10% over 5 years | Repeat PCI or surgery |
