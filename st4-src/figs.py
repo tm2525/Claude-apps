@@ -413,5 +413,45 @@ def nbg():
     return svg(174, b)
 
 
+
+def medmass():
+    spec = [('Anterior', ['Thymoma', 'Teratoma, germ cell', 'Lymphoma', 'Thyroid'], 'b1'),
+            ('Middle (visceral)', ['Lymph nodes', 'Bronchogenic cyst', 'Pericardial cyst', 'Enteric cyst'], 'b0'),
+            ('Posterior (paravertebral)', ['Nerve sheath tumours', 'Ganglion cell tumours', 'Paraganglioma'], 'b0')]
+    b = T(20, 20, 'Sternum', 'f-s', 'start') + T(700, 20, 'Spine', 'f-s', 'end') + arrow(90, 16, 640, 16)
+    for i, (a, ls, c) in enumerate(spec):
+        x = 10 + i * 236
+        b += f'<rect x="{x}" y="30" width="226" height="130" rx="10" class="f-b0"/><rect x="{x}" y="30" width="226" height="32" rx="10" class="f-b1"/>'
+        b += T(x + 113, 51, a, 'f-h') + T(x + 113, 84, ls, 'f-s')
+    return svg(170, b)
+
+
+def oesperf():
+    spec = [('Cervical', ['Neck incision along', 'sternocleidomastoid;', 'drain, close if seen']),
+            ('Upper and middle thoracic', ['Right thoracotomy;', 'two-layer repair', 'with a flap']),
+            ('Lower thoracic', ['Left thoracotomy;', 'two-layer repair', 'with a flap'])]
+    b = ''
+    for i, (a, ls) in enumerate(spec):
+        x = 10 + i * 236
+        b += f'<rect x="{x}" y="10" width="226" height="112" rx="10" class="f-b0"/><rect x="{x}" y="10" width="226" height="32" rx="10" class="f-warn"/>'
+        b += T(x + 113, 31, a, 'f-h') + T(x + 113, 64, ls, 'f-s')
+    b += box(10, 134, 700, 40, 'Always: endoscopy to exclude distal obstruction · debride · drain widely · feeding access', 'ok', 'f-s')
+    return svg(184, b)
+
+
+def maze():
+    b = box(10, 10, 226, 96, ['Pulmonary vein isolation', 'Box around all four veins', '70 to 80% alone if paroxysmal;', '56% or less if persistent'], 'b1', 'f-s')
+    b += box(247, 10, 226, 96, ['Left atrial set', 'Box, mitral isthmus line,', 'coronary sinus,', 'appendage closed'], 'b0', 'f-s')
+    b += box(484, 10, 226, 96, ['Right atrial set', 'Cava to cava line,', 'line to the appendage;', 'can follow clamp removal'], 'b0', 'f-s')
+    b += arrow(236, 58, 246, 58) + arrow(473, 58, 483, 58)
+    b += box(10, 118, 700, 36, 'All three together make the Cox-Maze lesion set (IV: radiofrequency and cryoablation)', 'ok', 'f-s')
+    return svg(164, b)
+
+
+def asgrade():
+    return tiles([('1.0 cm² or less', ['Valve area'], 'warn'), ('40 mmHg or more', ['Mean gradient'], 'warn'),
+                  ('4 m/s or more', ['Peak velocity'], 'warn')], 96)
+
+
 FIGS = {k: v for k, v in globals().items() if callable(v) and k not in
         ('svg', 'T', 'box', 'arrow', 'line', 'bars', 'tiles', 'E')}
