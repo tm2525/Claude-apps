@@ -83,7 +83,7 @@ Added 19 November 2026 from the TSRA Review 3rd ed., ch. 12 (Bryan, Swanson), re
 | Sleeve lobectomy | Tumour at a lobar orifice, to avoid pneumonectomy |
 | Pneumonectomy | Only when a sleeve will not do |
 
-The chapter was written before the long-term results of JCOG0802 and CALGB 140503; those are in Thoracic 16. (CALGB 140503 result, from memory and not re-read today: sublobar resection was non-inferior for disease-free survival, NEJM 2023.)
+The chapter was written before the long-term results of JCOG0802 and CALGB 140503; those are in Thoracic 16. CALGB 140503 (Altorki, NEJM 2023, abstract read from the paper): sublobar resection was non-inferior for disease-free survival, hazard ratio 1.01, with similar overall survival.
 
 ### Right side
 

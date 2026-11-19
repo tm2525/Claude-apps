@@ -646,5 +646,17 @@ def nodereach():
     return svg(228, b)
 
 
+def calgb():
+    h, b = bars([('Disease-free: sublobar', 63.6, 'b1'), ('Disease-free: lobectomy', 64.1, 'b0'),
+                 ('Overall: sublobar', 80.3, 'b1'), ('Overall: lobectomy', 78.9, 'b0')], '%', 100,
+                'Five-year survival, tumours of 2 cm or less, node negative', 230)
+    return svg(h, b)
+
+
+def nett():
+    return tiles([('0.47', ['Risk ratio for death:', 'upper lobe, low exercise'], 'ok'), ('1.01', ['Risk ratio for death:', 'all patients'], 'b0'),
+                  ('2.06', ['Risk ratio for death:', 'non-upper lobe, high exercise'], 'warn')], 100)
+
+
 FIGS = {k: v for k, v in globals().items() if callable(v) and k not in
         ('svg', 'T', 'box', 'arrow', 'line', 'bars', 'tiles', 'E')}
