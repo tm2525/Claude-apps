@@ -453,5 +453,28 @@ def asgrade():
                   ('4 m/s or more', ['Peak velocity'], 'warn')], 96)
 
 
+
+def aothresh():
+    h, b = bars([('Loeys-Dietz', (4.0, 4.2), 'warn'), ('At other cardiac surgery', 4.5, 'b1'),
+                 ('Marfan, with risk features', 4.5, 'warn'), ('Marfan; bicuspid with a risk factor', 5.0, 'warn'),
+                 ('Degenerative; bicuspid without', 5.5, 'b1')], ' cm', 6.5,
+                'Elective replacement threshold (American guidelines as quoted)', 290)
+    return svg(h, b)
+
+
+def crawford():
+    ext = [('I', 40, 190), ('II', 40, 300), ('III', 120, 300), ('IV', 200, 300), ('V', 120, 190)]
+    b = ''
+    for y, lab in [(40, 'Left subclavian'), (120, 'T6'), (200, 'Diaphragm, coeliac'), (230, 'Renal arteries'), (300, 'Bifurcation')]:
+        b += line(150, y, 700, y, 'f-grid') + T(142, y + 4, lab, 'f-s', 'end')
+    for i, (n, y1, y2) in enumerate(ext):
+        x = 200 + i * 100
+        b += f'<rect x="{x}" y="30" width="30" height="280" rx="12" class="f-b0"/>'
+        y2 = 215 if y2 == 190 else y2
+        b += f'<rect x="{x - 8}" y="{y1}" width="46" height="{y2 - y1}" rx="18" class="f-warn"/>'
+        b += T(x + 15, 22, 'Extent ' + n, 'f-h')
+    return svg(322, b)
+
+
 FIGS = {k: v for k, v in globals().items() if callable(v) and k not in
         ('svg', 'T', 'box', 'arrow', 'line', 'bars', 'tiles', 'E')}
