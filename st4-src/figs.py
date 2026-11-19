@@ -532,5 +532,119 @@ def ffr():
                   ('0.89 or less', ['Wave-free ratio', '(no drug)'], 'warn')], 100)
 
 
+def skeleton():
+    b = T(360, 16, 'Anterior', 'f-s') + T(360, 340, 'Posterior', 'f-s') + T(700, 16, "Patient's right", 'f-s', 'end') + T(20, 16, "Patient's left", 'f-s', 'start')
+    b += '<circle cx="335" cy="64" r="34" class="f-b0"/>' + T(335, 68, 'Pulmonary', 'f-s')
+    b += '<circle cx="365" cy="150" r="42" class="f-warn"/>' + T(365, 154, 'Aortic', 'f-h')
+    b += '<ellipse cx="270" cy="238" rx="72" ry="52" class="f-b1"/>' + T(270, 242, 'Mitral', 'f-h')
+    b += '<ellipse cx="470" cy="238" rx="66" ry="54" class="f-b1"/>' + T(470, 242, 'Tricuspid', 'f-h')
+    b += '<circle cx="372" cy="208" r="6" class="f-ah"/><circle cx="312" cy="186" r="5" class="f-ah"/>'
+    b += T(14, 96, ['Pulmonary valve:', 'no fibrous annulus'], 'f-s', 'start') + line(140, 92, 300, 70)
+    b += T(14, 150, ['Aortomitral curtain', 'between the trigones'], 'f-s', 'start') + line(150, 152, 306, 184)
+    b += T(14, 222, ['Circumflex artery', 'along the lateral', 'annulus'], 'f-s', 'start') + line(128, 232, 198, 236)
+    b += T(14, 318, 'Coronary sinus behind the posterior annulus', 'f-s', 'start') + line(200, 306, 250, 292)
+    b += T(706, 150, ['Bundle of His pierces', 'the right trigone'], 'f-s', 'end') + line(560, 152, 380, 206)
+    b += T(706, 318, 'Node at the septal annulus (triangle of Koch)', 'f-s', 'end') + line(470, 306, 420, 278)
+    return svg(346, b)
+
+
+def koch():
+    b = T(12, 20, 'Right atrium opened, septum facing', 'f-h', 'start')
+    b += '<ellipse cx="150" cy="235" rx="52" ry="34" class="f-b0"/>' + T(150, 239, 'IVC', 'f-s')
+    b += '<ellipse cx="215" cy="110" rx="62" ry="44" class="f-b0"/>' + T(215, 114, 'Fossa ovalis', 'f-s')
+    b += '<polygon points="470,62 318,214 548,226" class="f-warn"/>'
+    b += '<circle cx="318" cy="214" r="24" class="f-b1"/>' + T(318, 256, 'Coronary sinus', 'f-s')
+    b += '<path d="M470 62 Q575 120 548 226 Q530 262 470 274" class="f-l" fill="none" style="stroke-width:3px"/>'
+    b += T(590, 150, ['Septal leaflet', 'annulus'], 'f-s', 'start')
+    b += T(330, 120, ['Tendon of', 'Todaro'], 'f-s', 'end') + line(336, 122, 392, 138)
+    b += '<circle cx="445" cy="170" r="9" class="f-ah"/>' + T(445, 200, 'Node', 'f-h')
+    b += arrow(450, 158, 466, 78) + T(480, 50, 'His bundle to the apex', 'f-s', 'start')
+    return svg(290, b)
+
+
+def pressures():
+    st = [('Venae cavae', '2 to 6', '70%', 'b1'), ('Right atrium', '2 to 6', '72%', 'b1'), ('Right ventricle', '25/3', '70%', 'b1'),
+          ('Pulmonary artery', '25/10', '70%', 'b1'), ('Left atrium', '6 to 12', '100%', 'warn'), ('Left ventricle', '120/5', '100%', 'warn'),
+          ('Aorta', '120/80', '100%', 'warn')]
+    b = ''
+    for i, (n, p, sat, cls) in enumerate(st):
+        x = 8 + i * 102
+        b += f'<rect x="{x}" y="10" width="92" height="96" rx="9" class="f-{cls}"/>'
+        nm = n.split(' ')
+        b += T(x + 46, 30, nm if len(nm) > 1 else [n, ''], 'f-s') + T(x + 46, 74, p, 'f-h') + T(x + 46, 94, 'sat ' + sat, 'f-s')
+        if i < 6:
+            b += arrow(x + 92, 58, x + 101, 58)
+    b += T(360, 126, 'Pressures in mmHg. From right ventricle to pulmonary artery only the diastolic changes.', 'f-s')
+    return svg(136, b)
+
+
+def cvpwave():
+    pts = [(30, 120), (70, 112), (120, 52), (165, 92), (195, 78), (240, 108), (300, 132), (360, 110), (420, 62), (470, 100), (520, 126), (570, 116), (620, 110), (665, 60), (700, 90)]
+    d = f'M{pts[0][0]} {pts[0][1]}'
+    for i in range(len(pts) - 1):
+        p0 = pts[max(i - 1, 0)]; p1 = pts[i]; p2 = pts[i + 1]; p3 = pts[min(i + 2, len(pts) - 1)]
+        c1 = (p1[0] + (p2[0] - p0[0]) / 6, p1[1] + (p2[1] - p0[1]) / 6)
+        c2 = (p2[0] - (p3[0] - p1[0]) / 6, p2[1] - (p3[1] - p1[1]) / 6)
+        d += f' C{c1[0]:.0f} {c1[1]:.0f} {c2[0]:.0f} {c2[1]:.0f} {p2[0]} {p2[1]}'
+    b = line(30, 150, 700, 150, 'f-grid')
+    b += f'<path d="{d}" class="f-l" fill="none" style="stroke-width:3px"/>'
+    for x, y, t in [(120, 38, 'a'), (197, 64, 'c'), (300, 148, 'x'), (420, 48, 'v'), (520, 142, 'y'), (665, 46, 'a')]:
+        b += T(x, y, t, 'f-h')
+    b += T(30, 176, ['a: atrial contraction', 'c: tricuspid closes and bulges'], 'f-s', 'start')
+    b += T(270, 176, ['x: atrium relaxes, annulus descends', 'v: venous filling against a closed valve'], 'f-s', 'start')
+    b += T(560, 176, ['y: valve opens,', 'atrium empties'], 'f-s', 'start')
+    return svg(206, b)
+
+
+def toeviews():
+    b = box(10, 10, 150, 44, 'Upper oesophageal', 'b0', 'f-h') + box(170, 10, 540, 44, 'Arch long and short axis, pulmonary artery: dissection, duct', 'b0', 'f-s')
+    b += box(10, 64, 150, 112, 'Mid-oesophageal', 'b1', 'f-h')
+    b += box(170, 64, 174, 50, ['Four and five chamber', 'valves, septa, walls'], 'b1', 'f-s')
+    b += box(353, 64, 174, 50, ['Mitral commissural', 'P3-P2-P1, A3-A2-A1'], 'b1', 'f-s')
+    b += box(536, 64, 174, 50, ['Long axis', 'outflow, root, ascending'], 'b1', 'f-s')
+    b += box(170, 126, 265, 50, ['Aortic valve short axis', 'cusps and coronary ostia'], 'b1', 'f-s')
+    b += box(445, 126, 265, 50, ['Bicaval', 'cannula and wire position, septum'], 'b1', 'f-s')
+    b += box(10, 186, 150, 50, 'Transgastric', 'warn', 'f-h')
+    b += box(170, 186, 265, 50, ['Short axis', 'regional wall motion, filling'], 'warn', 'f-s')
+    b += box(445, 186, 265, 50, ['Deep transgastric', 'prosthesis gradient, paravalvar leak'], 'warn', 'f-s')
+    return svg(246, b)
+
+
+def ivc():
+    return tiles([('3 to 5 mmHg', ['Under 2.1 cm,', 'collapses over 50% on sniff'], 'ok'), ('8 mmHg', ['Under 2.1 cm,', 'does not collapse'], 'b1'),
+                  ('15 mmHg', ['Over 2.1 cm,', 'does not collapse'], 'warn')], 100)
+
+
+def hiatus():
+    return tiles([('T8', ['Vena cava, right phrenic', '(central tendon)'], 'b1'), ('T10', ['Oesophagus, vagi', '(within the right crus)'], 'b0'),
+                  ('T12', ['Aorta, azygos vein,', 'thoracic duct'], 'warn')], 100)
+
+
+def ablate():
+    b = box(10, 10, 345, 34, 'Immediate: usable in an emergency', 'ok', 'f-h') + box(365, 10, 345, 34, 'Delayed: not in an emergency', 'warn', 'f-h')
+    for i, t in enumerate(['Laser', 'Electrocautery', 'Argon plasma', 'Stent']):
+        b += box(10 + (i % 2) * 177, 54 + (i // 2) * 44, 168, 36, t, 'b0', 'f-s')
+    for i, t in enumerate(['Cryotherapy', 'Photodynamic therapy', 'Brachytherapy']):
+        b += box(365, 54 + i * 44, 345, 36, t, 'b0', 'f-s')
+    b += box(10, 142, 345, 36, 'Balloon: immediate, rarely definitive', 'b0', 'f-s')
+    return svg(188, b)
+
+
+def nodereach():
+    cols = ['2', '4', '7', '5', '10', '11', '8']
+    rows = [('Cervical mediastinoscopy', '1110000'), ('Anterior mediastinotomy', '0001000'), ('EBUS', '1110110'), ('Oesophageal ultrasound', '0000001')]
+    b = T(250, 24, 'Station', 'f-s', 'end')
+    for j, c in enumerate(cols):
+        b += T(290 + j * 60, 24, c, 'f-h')
+    for i, (n, m) in enumerate(rows):
+        y = 36 + i * 40
+        b += T(250, y + 22, n, '', 'end')
+        for j, v in enumerate(m):
+            cls = 'ok' if v == '1' else 'track'
+            b += f'<rect x="{264 + j * 60}" y="{y}" width="52" height="32" rx="6" class="f-{cls}"/>'
+    b += T(12, 216, 'Paratracheal 2 and 4, subcarinal 7, aortopulmonary 5, hilar 10, interlobar 11, para-oesophageal 8.', 'f-s', 'start')
+    return svg(228, b)
+
+
 FIGS = {k: v for k, v in globals().items() if callable(v) and k not in
         ('svg', 'T', 'box', 'arrow', 'line', 'bars', 'tiles', 'E')}

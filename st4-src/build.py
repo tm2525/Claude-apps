@@ -46,6 +46,7 @@ SECTIONS = [
         ('c16', 'Pericardium, tumours and pulmonary embolism', 'new'),
         ('c17', 'Critical care after cardiac surgery', 'new'),
         ('c18', 'Heart failure surgery and rhythm devices', 'new'),
+        ('c19', 'Surgical anatomy, physiology and haemodynamics', 'new'),
         ('c12', 'TSRA Primer: adult cardiac', 'digest'), ('c13', 'TSRA Primer: critical care', 'digest'),
         ('cardiac', 'Course day notes', 'course')]),
     ('congenital', 'Congenital', [
