@@ -23,7 +23,7 @@ Added 19 November 2026 from the TSRA Review 3rd ed., ch. 3 (Hameed, Detterbeck),
 |---|---|
 | Nd:YAG laser | Most used; penetrates up to 10 mm. Keep inspired oxygen under 30% to prevent airway fire |
 | Electrocautery | Snare, forceps or knife; resects with haemostasis |
-| Argon plasma | Non-contact; good for bleeding surface; risk of gas embolism |
+| Argon plasma | Non-contact; coagulates vascular lesions; risk of gas embolism |
 | Microdebrider | Rigid scope only; no fire risk; not beyond the bronchus intermedius |
 | Balloon | Hold 30 seconds to 2 minutes; usually an adjunct |
 | Cryotherapy | No fire or perforation risk; needs repeated cycles over weeks |
