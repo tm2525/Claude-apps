@@ -658,5 +658,10 @@ def nett():
                   ('2.06', ['Risk ratio for death:', 'non-upper lobe, high exercise'], 'warn')], 100)
 
 
+def erasdrain():
+    return tiles([('1 drain', ['not 2, after anatomical', 'resection'], 'b1'), ('No suction', ['as routine;', 'digital system preferred'], 'b0'),
+                  ('450 ml', ['serous output in 24 h', 'still allows removal'], 'ok'), ('24 h', ['mobilise within', 'a day of surgery'], 'b1')], 100)
+
+
 FIGS = {k: v for k, v in globals().items() if callable(v) and k not in
         ('svg', 'T', 'box', 'arrow', 'line', 'bars', 'tiles', 'E')}

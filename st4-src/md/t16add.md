@@ -88,7 +88,7 @@ The NICE lobectomy recommendation is dated 2019, before CALGB 140503 and JCOG080
 
 ### ERAS Society and ESTS: enhanced recovery after lung surgery
 
-Batchelor et al., Eur J Cardiothorac Surg 2019;55:91-115. Summary table read, with the counselling, nutrition and smoking sections. Grades are omitted because the grade column was separated from the text in the PDF.
+Batchelor et al., Eur J Cardiothorac Surg 2019;55:91-115. Whole guideline read apart from the reference list; evidence levels, grades and the reasoning are in the section "ERAS/ESTS 2019: detail from the full guideline" below.
 
 | Phase | Recommendations |
 |---|---|
@@ -251,3 +251,78 @@ Added 19 November 2026 after reading the whole paper (N Engl J Med 2003;348:2059
 - In survivors, function after surgery had returned to about baseline by two years, while the medical group had fallen below baseline.
 - The only baseline factors that changed the effect of surgery on mortality were the distribution of emphysema and exercise capacity.
 - The survival benefit in the upper-lobe, low-exercise group came mainly from the very high mortality of those patients on medical treatment.
+
+## ERAS/ESTS 2019: detail from the full guideline
+
+Added 19 November 2026 after reading the whole guideline (Batchelor et al., Eur J Cardiothorac Surg 2019;55:91-115). 45 items; evidence graded by GRADE. A strong grade can rest on low evidence when benefit clearly outweighs harm.
+
+!fig erasdrain | Chest drain rules in the ERAS/ESTS guideline (my chart)
+
+### Recommendations with evidence level and grade
+
+| Item | Evidence | Grade |
+|---|---|---|
+| Preoperative counselling | Low | Strong |
+| Nutritional screening | High | Strong |
+| Oral supplements if malnourished | Moderate | Strong |
+| Immune-enhancing nutrition (postoperative only) | Low | Weak |
+| Stop smoking 4 weeks before | High | Strong |
+| Stop alcohol misuse 4 weeks before | Moderate | Strong |
+| Find and correct anaemia | High | Strong |
+| Prehabilitation for borderline function | Low | Strong |
+| Clear fluids to 2 h, solids to 6 h | High | Strong |
+| Carbohydrate loading | Low | Strong |
+| No routine sedative premedication | Moderate | Strong |
+| Mechanical and drug thromboprophylaxis | Moderate | Strong |
+| Extended heparin to 4 weeks if high risk | Low | Weak |
+| Antibiotic within 60 min before incision; clipping; chlorhexidine-alcohol | High | Strong |
+| Active warming and continuous core temperature | High | Strong |
+| Lung-protective one-lung ventilation | Moderate | Strong |
+| Non-intubated surgery | Low | Not recommended |
+| Combined regional and general anaesthesia | Low | Strong |
+| Nausea: non-drug measures for all | High | Strong |
+| Nausea: multimodal drugs if moderate or high risk | Moderate | Strong |
+| Regional anaesthesia to spare opioid | High | Strong |
+| Regular paracetamol with NSAID | High | Strong |
+| Ketamine for those on long-term opioids | Moderate | Strong |
+| Dexamethasone | Low | Strong |
+| Euvolaemia | Moderate | Strong |
+| Balanced crystalloid | High | Strong |
+| Continue beta-blockers | High | Strong |
+| Magnesium if depleted | Low | Weak |
+| Diltiazem or amiodarone if high risk | Moderate | Weak |
+| Muscle-sparing thoracotomy, intercostal muscle flap, nerve-sparing closure | Moderate | Strong |
+| VATS for early lung cancer | High | Strong |
+| No routine suction | Low | Strong |
+| Digital drain | Low | Strong |
+| Remove drain at up to 450 ml in 24 h | Moderate | Strong |
+| Single drain | Moderate | Strong |
+| No catheter just to measure urine | Moderate | Strong |
+| Catheter with thoracic epidural | Low | Strong |
+| Mobilise within 24 h | Low | Strong |
+| Prophylactic minitracheostomy in high-risk patients | Low | Weak |
+
+### Figures worth knowing
+
+| Topic | Figure from the guideline |
+|---|---|
+| Nutrition | Delay surgery for feeding if weight loss exceeds 10 to 15% in 6 months, BMI is under 18.5, or albumin is under 30 g/l; 5 to 7 days of supplements if at risk. About 70% of lung cancer patients have COPD |
+| Anaemia | Iron first; avoid transfusion and erythropoietin, both linked to worse cancer outcomes |
+| Prehabilitation | Median programme 4 weeks, 5 sessions a week; reduces stay and pulmonary complications, mainly in those with poor lung function |
+| Thromboembolism | Cancer at least doubles the risk; postoperative thromboembolism raises 30-day mortality from 1.2% to 8.0%; a third of events occur after discharge; peak at 6 to 7 days after pneumonectomy. No epidural catheter insertion or removal within 12 h of heparin |
+| Infection | 7 to 14% after lung resection; a single pre-incision dose equals 48 h of cover; repeat in long cases or blood loss over 1500 ml; raise the dose if BMI is over 35. Cephalosporin standard. Chlorhexidine-alcohol cuts wound infection by 40% against povidone-iodine |
+| Temperature | Hypothermia (under 36°C) in 35 to 50% of thoracic cases; measure at the nasopharynx; forced-air warming before and during surgery |
+| One-lung ventilation | Tidal volume 4 to 6 ml/kg with PEEP 5 to 10 cmH2O; recruitment at the start; 100% oxygen just before collapse speeds collapse |
+| Nausea | Risk by the Apfel score; dexamethasone 8 mg before surgery; two drug classes if moderate or high risk |
+| Analgesia | Paravertebral block: equal pain relief to epidural after the first hours, fewer respiratory complications, less hypotension, retention, itch and nausea. Paracetamol cuts morphine use by 20%. Gabapentin not recommended. Cryoanalgesia not recommended (chronic pain) |
+| Fluids | Maintenance 1 to 2 ml/kg/h was traditional, with balance under 1500 ml; 2 to 3 ml/kg/h does not cause kidney injury; treat hypotension with vasopressor before fluid. Goal-directed therapy not shown to help |
+| Atrial fibrillation | About 12% after lung resection; more after pneumonectomy; digoxin does not prevent it |
+| Thoracotomy | Intercostal muscle flap kept out of the retractor protects the nerve; intracostal sutures through drilled holes in the lower rib avoid nerve compression |
+| VATS | 206-patient trial against anterolateral thoracotomy: less pain to 52 weeks, shorter stay, same complications. ESTS database of 28,771: fewer complications. Uniportal no better than multiport in one trial. Robotic: no data to support routine use |
+| Drains | Removing a drain lowers pain scores by about 40% and raises lung function by 13%. Threshold of 450 ml a day gave 0.55% readmission for effusion; 500 ml after VATS gave 2.8% needing drainage. Digital drains cut drain time by 1.1 days and stay by 1 day in one multicentre trial; later trials showed no difference |
+| Urinary retention | 26% with thoracic epidural; 11.6% without |
+| Adjuncts | Incentive spirometry and non-invasive ventilation: no proven benefit |
+
+### Where the guideline makes no recommendation
+
+Volatile against intravenous anaesthesia; type of VATS approach; robotic surgery; timing of catheter removal with an epidural.
