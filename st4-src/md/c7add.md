@@ -10,7 +10,7 @@ Atrial fibrillation carries a stroke risk of about 5% a year, five times baselin
 |---|---|---|
 | Paroxysmal | Self-terminating, recurrent | Triggers in the pulmonary veins; little remodelling |
 | Persistent | Over 7 days; can be cardioverted | Substrate beyond the veins |
-| Permanent | At least 6 months despite cardioversion | |
+| Permanent | At least 6 months despite cardioversion | Established substrate |
 
 ### Lesion sets
 
@@ -19,7 +19,7 @@ Atrial fibrillation carries a stroke risk of about 5% a year, five times baselin
 | Set | Lesions | Notes |
 |---|---|---|
 | Pulmonary vein isolation | Box around all four veins | 70 to 80% effective alone in intermittent fibrillation; 56% or less in persistent; 10 to 15% develop peri-mitral flutter |
-| Left atrial set | Box plus lines to the mitral isthmus, coronary sinus (endocardial and epicardial) and the appendage orifice; appendage clipped or excised | |
+| Left atrial set | Box plus lines to the mitral isthmus, coronary sinus (endocardial and epicardial) and the appendage orifice; appendage clipped or ligated | Completes the left side |
 | Right atrial set | Superior to inferior vena cava line, with a line to the right atrial appendage | Can be done after the clamp is off |
 
 Cox-Maze III is cut-and-sew. Cox-Maze IV reproduces the lines with bipolar radiofrequency and cryoablation, adding little or no clamp time.
@@ -37,7 +37,7 @@ Cox-Maze III is cut-and-sew. Cox-Maze IV reproduces the lines with bipolar radio
 | With aortic valve replacement, coronary surgery or both | I, B |
 | Stand-alone, for symptomatic fibrillation refractory to drugs or catheter ablation | IIa, B |
 | Stand-alone Cox-Maze III or IV for persistent or long-standing persistent fibrillation | IIa, B |
-| Left atrial appendage excision or exclusion, with or without ablation | IIa, C |
+| Left atrial appendage treatment, with or without ablation | IIa, C |
 | Pulmonary vein isolation alone with a left atrium over 4.5 cm or more than moderate mitral regurgitation | III, C: not recommended |
 
 ### Aftercare

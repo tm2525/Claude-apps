@@ -65,7 +65,7 @@ Commonest anterior mass in adults; third to fifth decade; equal sex ratio. Paran
 | Seminoma | Beta-hCG slightly raised in 10%; AFP normal | Chemotherapy, with or without radiotherapy; resect a residual mass rarely |
 | Non-seminomatous | AFP, beta-hCG and LDH raised. Any AFP rise with beta-hCG over 100 mIU/ml in a young man is diagnostic | Platinum chemotherapy; resect residual mass once markers normalise; salvage chemotherapy if they do not |
 | Lymphoma | Core or excision biopsy needed for flow cytometry | Chemotherapy and radiotherapy |
-| Retrosternal goitre | | 95% come out through a collar incision |
+| Retrosternal goitre | Technetium scan | 95% come out through a collar incision |
 
 ### Cysts and neurogenic tumours
 
@@ -75,5 +75,5 @@ Commonest anterior mass in adults; third to fifth decade; equal sex ratio. Paran
 | Pericardial cyst | Right cardiophrenic angle; thin wall, water density | Resect only if symptomatic |
 | Oesophageal duplication cyst | Attached to the oesophagus, two muscle layers | Resect |
 | Nerve sheath tumours | 40 to 70% of neurogenic tumours; costovertebral sulcus; benign | Excise with the capsule intact |
-| Ganglion cell tumours | Ganglioneuroma benign; neuroblastoma malignant, in children | Excise; spinal MRI for dumbbell extension |
-| Paraganglioma | May secrete catecholamines | Block, then excise |
+| Ganglion cell tumours | Ganglioneuroma benign; neuroblastoma malignant, in children | Excise; spinal MRI for posterior masses |
+| Paraganglioma | May secrete catecholamines | Excise |
