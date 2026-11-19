@@ -4,7 +4,7 @@ Added 19 November 2026 from the PDFs inside the attached "FRCS Atlas" compilatio
 
 ### CALGB 140503: lobar against sublobar resection
 
-Altorki et al., N Engl J Med 2023;388:489-98. Abstract read from the full paper.
+Altorki et al., N Engl J Med 2023;388:489-98. Whole paper read; further detail is in the section "CALGB 140503: detail from the full paper" below.
 
 !fig calgb | CALGB 140503 five-year outcomes (my chart, figures from the paper's abstract)
 
@@ -65,7 +65,7 @@ Detterbeck et al., J Thorac Oncol 2024;19:1052-72. Abstract and definitions sect
 
 ### NICE NG122: staging, fitness and surgery
 
-Recommendations 1.2.19 to 1.2.29 and 1.3 to 1.5.12 read from the supplied copy. Other sections not read.
+Whole guideline read (version last updated 8 March 2024, with minor changes to November 2026); the rest is in the section "NICE NG122: remaining recommendations" below.
 
 | Step | Recommendation |
 |---|---|
@@ -103,3 +103,92 @@ Batchelor et al., Eur J Cardiothorac Surg 2019;55:91-115. Summary table read, wi
 | After | No routine urinary catheter (reasonable with an epidural); mobilise within 24 hours |
 
 NICE says not to delay surgery for smoking cessation; ERAS says ideally stop 4 weeks before. Know both.
+
+## CALGB 140503: detail from the full paper
+
+Added 19 November 2026 after reading the whole paper (Altorki et al., N Engl J Med 2023;388:489-98).
+
+| Design point | Detail |
+|---|---|
+| Eligibility | Peripheral nodule, solid component 2 cm or less, centre in the outer third of the lung, suitable for either operation; performance status 0 to 2. Pure ground-glass lesions excluded |
+| Node check before randomisation | Frozen section: stations 4, 7 and 10 on the right; 5 or 6, 7 and 10 on the left |
+| Registered against randomised | 1080 registered, 697 randomised. Reasons for not randomising: benign disease in half, higher stage found at operation in 22.6%, other malignancy in 7.7% |
+| Occult nodal disease | 6.4% of clinically node-negative patients had positive hilar or mediastinal nodes |
+| Type of sublobar resection | Wedge in 59.1%, segmentectomy in 37.9%; surgeon's choice |
+| Approach | 80% minimally invasive in both arms |
+| Non-inferiority margin | Hazard ratio 1.306; one-sided P=0.02 |
+
+| Outcome | Sublobar | Lobectomy |
+|---|---|---|
+| Any recurrence | 30.4% | 29.3% |
+| Locoregional recurrence | 13.4% | 10.0% |
+| Regional (mediastinal) only | 1.8% | 2.6% |
+| Distant recurrence | 15.2% | 16.8% |
+| New primary lung cancer | 17.9% | 14.8% |
+| Five-year recurrence-free survival | 70.2% | 71.2% |
+| 30-day and 90-day mortality (earlier report) | 0.6% and 1.2% | 1.1% and 1.7% |
+| Fall in FEV1 at 6 months, percentage points of predicted | 4.0 | 6.0 |
+
+**Against JCOG0802, as the authors put it.** JCOG0802 allowed only segmentectomy; over 90% were adenocarcinoma and 45% had a ground-glass component; five-year survival exceeded 90% and distant recurrence was under 5%. In CALGB 140503 wedge resection was allowed and distant recurrence was 16%. The two trials agree despite this.
+
+**Limits the authors state.** The result applies only to peripheral tumours of 2 cm or less with nodes proved negative. The lung function difference of 2 points is of doubtful clinical meaning in patients with normal baseline function.
+
+## NICE NG122: remaining recommendations
+
+Added 19 November 2026 after reading the whole guideline. NICE developed it on the 7th edition staging system.
+
+### Diagnosis and staging
+
+| Topic | Recommendation |
+|---|---|
+| First imaging | Contrast CT of chest, liver, adrenals and lower neck, before any biopsy |
+| PET-CT | For everyone who could have curative treatment |
+| MRI | Not routinely for T stage; use for superior sulcus tumours |
+| Choice of test | Prefer the test that gives diagnosis and stage together; biopsy an enlarged node (10 mm or more) or other lesion in preference to the primary if nodal stage affects treatment |
+| Peripheral lesion | Image-guided biopsy |
+| Central lesion | Flexible bronchoscopy if nodal staging does not affect treatment |
+| Chest wall or mediastinal invasion | CT alone may be unreliable; consider ultrasound; surgical assessment may be needed |
+| Bone | X-ray first for localised symptoms; no bone scan if PET-CT is clear |
+| Not recommended for nodal staging | Transthoracic needle biopsy, plain bronchoscopy, blind needle aspiration |
+
+Brain metastases are found in about 4% of clinical stage 1 disease, which is why imaging is not advised there.
+
+### Stage 3a N2 and Pancoast tumours
+
+- Everyone suitable for multimodality treatment is assessed by a thoracic oncologist and a thoracic surgeon.
+- Operable stage 3a N2, fit patient: consider chemoradiotherapy with surgery. It improves progression-free survival and may improve overall survival.
+- Operate 3 to 5 weeks after chemoradiotherapy ends.
+- Pancoast tumours: treat as other lung cancer, multimodality by resectability, stage and performance status.
+- Resection centres validate their data for the National Lung Cancer Audit.
+
+### Drugs around surgery
+
+| Setting | Recommendation (technology appraisal) |
+|---|---|
+| Neoadjuvant, tumour 4 cm or more or node positive | Nivolumab with chemotherapy (TA876, 2023) |
+| Neoadjuvant then adjuvant, no EGFR or ALK alteration | Nivolumab (TA1127, 2026), durvalumab (TA1030, 2025), pembrolizumab (TA1017, 2024) |
+| Adjuvant chemotherapy | Offer for N1 to N2 with performance status 0 or 1; consider for node-negative tumours over 4 cm; platinum combination |
+| Adjuvant, EGFR exon 19 deletion or L858R, stage 1b to 3a | Osimertinib for up to 3 years (TA1043, 2025) |
+| Adjuvant, ALK positive, stage 1b (4 cm or more) to 3a | Alectinib (TA1014, 2024) |
+| Adjuvant after chemotherapy, high risk | Atezolizumab if PD-L1 is 50% or more (TA1071, 2025); pembrolizumab (TA1037, 2025) |
+| Unresectable stage 3 after chemoradiotherapy | Durvalumab if PD-L1 is 1% or more (TA798, 2022); osimertinib if EGFR mutated (TA1156, 2026) |
+
+### Small-cell lung cancer
+
+| Stage | Recommendation |
+|---|---|
+| T1 to 2a N0 M0 | Consider surgery |
+| Limited stage | 4 to 6 cycles of cisplatin combination; twice-daily radiotherapy concurrently if performance status 0 or 1; prophylactic cranial irradiation, 25 Gy in 10 fractions, if no progression; durvalumab afterwards (TA1099, 2025) |
+| Extensive stage | Platinum combination, up to 6 cycles, with immunotherapy options; consider thoracic radiotherapy and cranial irradiation after a response |
+
+### Palliation and follow-up
+
+- Impending airway obstruction: external beam radiotherapy, debulking or stenting; each cancer alliance needs rapid access to an interventional team.
+- Effusion: aspirate or drain; talc pleurodesis for lasting benefit.
+- Superior vena cava obstruction: chemotherapy and radiotherapy by stage; stent for immediate relief of severe symptoms.
+- Hoarseness from recurrent laryngeal nerve palsy: refer to ENT.
+- Symptomatic brain metastases: dexamethasone at the lowest effective dose.
+- Painful bone metastasis: single-fraction radiotherapy.
+- Follow-up: specialist appointment within 6 weeks of finishing treatment, then regular review; nurse-led protocol follow-up is an option.
+
+NICE states that lobectomy gives better survival than SABR, and that more trials of SABR against surgery are needed.
