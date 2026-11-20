@@ -22,7 +22,7 @@ OUT = os.path.join(ROOT, 'st4')
 sys.path.insert(0, HERE)
 import figs  # noqa: E402
 
-BUILD_DATE = '19 November 2026'
+BUILD_DATE = '20 November 2026'
 
 # slug, title, kind   (kind: topic | course | digest | ref | new)
 SECTIONS = [
@@ -35,6 +35,7 @@ SECTIONS = [
         ('t13', 'Chest wall and diaphragm', 'new'), ('t14', 'Emphysema and lung transplantation', 'new'),
         ('t15', 'Cardiothoracic trauma', 'new'), ('t16', 'Trials and staging update', 'new'),
         ('t17', 'Lung function, resection complications, infection', 'new'),
+        ('t18', 'Oesophagus', 'new'), ('t19', 'Benign and other thoracic conditions', 'new'),
         ('t10', 'TSRA Primer: thoracic', 'digest'), ('thoracic', 'Course day notes', 'course')]),
     ('cardiac', 'Cardiac', [
         ('c1', 'Mitral valve', 'topic'), ('c2', 'Tricuspid valve', 'topic'), ('c3', 'Pulmonary valve', 'topic'),
@@ -47,12 +48,16 @@ SECTIONS = [
         ('c17', 'Critical care after cardiac surgery', 'new'),
         ('c18', 'Heart failure surgery and rhythm devices', 'new'),
         ('c19', 'Surgical anatomy, physiology and haemodynamics', 'new'),
+        ('c20', 'Transcatheter and minimally invasive surgery', 'new'),
         ('c12', 'TSRA Primer: adult cardiac', 'digest'), ('c13', 'TSRA Primer: critical care', 'digest'),
         ('cardiac', 'Course day notes', 'course')]),
     ('congenital', 'Congenital', [
         ('g1', 'Guidelines and trials', 'topic'), ('g2', 'Lesions and operations', 'topic'),
         ('g3', 'Adult congenital', 'topic'), ('g4', 'Perioperative and transition', 'topic'),
         ('g5', 'Core principles', 'topic'), ('g6', 'Anatomy and physiology', 'topic'),
+        ('g8', 'Embryology, physiology, palliation', 'new'), ('g9', 'Shunt lesions and septal defects', 'new'),
+        ('g10', 'Arch and left heart obstruction', 'new'), ('g11', 'Right heart and conotruncal lesions', 'new'),
+        ('g12', 'Venous, single ventricle and coronary anomalies', 'new'), ('g13', 'Paediatric support and intensive care', 'new'),
         ('congenital', 'Course day notes', 'course')]),
     ('ref', 'Reference', [
         ('frcs', 'FRCS syllabus map', 'ref'), ('trials', 'Trials index', 'ref'),
@@ -124,7 +129,7 @@ def load_pages():
         slug = f[:-3]
         text = open(os.path.join(mdir, f), encoding='utf-8').read()
         if slug.endswith('add'):
-            base = slug[:-3]
+            base = slug[:-4] if slug.endswith('zadd') else slug[:-3]
             _, intro, secs = md_to_sections(base, text)
             add = ''.join(sec_html(base, h, b) for h, b in secs)
             pages[base] = pages[base] + f'<div class="grp">Added {BUILD_DATE}</div>' + intro + add
