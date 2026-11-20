@@ -1095,3 +1095,22 @@ Added 20 November 2026 from "FRCS Atlas: single-PDF study compilation" (19 Novem
 - Relate cardioplegia delivery to valve competence, coronary anatomy, prior grafts and expected ischaemic burden.
 - Severe aortic regurgitation can divert root cardioplegia into the LV.
 - Retrograde delivery may not protect all regions equally; investigate new regional dysfunction after separation from bypass.
+
+## Bypass and myocardial protection: additions from the FRCS Atlas HTML builds
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (Master Updater 24, chapter 23, sections 1 to 3; index_2 "Adult cardiopulmonary bypass" and "Myocardial protection"; index_5 "Adult bypass, oxygen delivery and AKI"; Consolidated section 21) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+### Where the Atlas disagrees with the 2024 bypass guideline
+| Point | Source and status |
+|---|---|
+| Protamine dose: the Atlas gives 1 mg per 100 IU of heparin (1:1, as TSRA ch. 49 also says). The 2024 guideline recommends a protamine-to-heparin ratio **below 1.0** to avoid overdose (I B), as this tab already states | EACTS/EACTAIC/EBCP 2024 bypass guideline (ezae354), section 9.3.2, PDF p. 40 (the FRCS Atlas draft states 1 mg per 100 IU) |
+| Goal-directed perfusion: index_5 describes the meta-analysis as "three trials and 777 adults". The guideline describes it as 2 RCTs plus a propensity-matched study, any-stage AKI RR 0.52 (0.38 to 0.70), significant for stage 1 only | EACTS/EACTAIC/EBCP 2024 bypass guideline, section 9.7, PDF p. 45 (the FRCS Atlas draft states three trials) |
+
+### Points the course does not yet have
+| Point | Source and status |
+|---|---|
+| Heparin 300 to 400 IU/kg before cannulation, ACT 480 s or more, rechecked every 30 minutes. Heparin resistance often follows antithrombin depletion from a preoperative heparin infusion | FRCS Atlas draft; not checked against a primary source (the guideline's 300 and 450 IU/kg trial is already in this tab) |
+| del Nido cardioplegia: 1 part blood to 4 parts crystalloid, containing lidocaine, magnesium and mannitol; one dose arrests for 60 to 90 minutes | Composition: FRCS Atlas draft; not checked against a primary source (1:4 and up to 90 min are already in this tab from the guideline) |
+| HTK (Custodiol): one dose protects for up to 120 to 180 minutes | FRCS Atlas draft; not checked against a primary source |
+| Vasoplegia in figures: mean pressure under 60 to 65 mmHg, cardiac index over 2.2 L/min/m², SVR under 800 dyn·s·cm⁻⁵, not corrected by filling. Further risk factors: long bypass, low ejection fraction, LVAD implantation | FRCS Atlas draft; not checked against a primary source |
+| Methylene blue: avoid in G6PD deficiency (the SSRI interaction is already in the course, Cardiac 10) | FRCS Atlas draft; not checked against a primary source |
+| Retrograde cardioplegia may under-perfuse the posterior septum as well as the RV free wall | FRCS Atlas draft; not checked against a primary source |

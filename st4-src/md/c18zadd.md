@@ -61,3 +61,33 @@ Added 20 November 2026 from Vrints C, Andreotti F, Koskinas KC, Rossello X, et a
 - ICD in ischaemic cardiomyopathy with LVEF <35% or after recovered ventricular arrhythmia. Frequent symptomatic VA in ICD recipients: beta-blockers or amiodarone.
 - VF or polymorphic VT in CCS: assess for ischaemia without delay. Recurrent sustained monomorphic VT on amiodarone: catheter ablation rather than escalating antiarrhythmics.
 - Percutaneous treatment of secondary MR in advanced HF may be considered for symptoms. Tricuspid transcatheter edge-to-edge repair significantly reduced severe TR and improved QoL at 1 year.
+
+## HOCM, ventricular aneurysm and rhythm devices: additions from the FRCS Atlas HTML builds
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (Master Updater 31, chapter 26 section 3 and chapter 28 sections 2 and 3) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+### Hypertrophic obstructive cardiomyopathy and septal myectomy
+The adult tabs had no HOCM teaching beyond the echo points in Cardiac 9. The Atlas cites the 2023 ESC cardiomyopathy guideline, which is not among the sources and was not read.
+
+| Point | Source and status |
+|---|---|
+| Autosomal dominant sarcomeric disease (MYH7, MYBPC3). Unexplained LV wall thickness 15 mm or more; 13 mm or more in first-degree relatives | 15 mm checked: TSRA Review ch. 48, PDF p. 390. Genes and 13 mm: FRCS Atlas draft; not checked against a primary source |
+| About 70% develop dynamic LV outflow obstruction: a peak gradient of 30 mmHg or more at rest or on provocation defines obstruction; 50 mmHg or more is haemodynamically important. Mechanism: basal septal hypertrophy plus systolic anterior motion of an elongated anterior mitral leaflet, causing obstruction and posteriorly directed MR | FRCS Atlas draft; not checked against a primary source |
+| Drugs: non-vasodilating beta-blocker (or verapamil or diltiazem), then disopyramide or the cardiac myosin inhibitor mavacamten | FRCS Atlas draft; not checked against a primary source |
+| Septal reduction (Class I per the Atlas): NYHA III to IV symptoms or recurrent exertional syncope with a resting or provoked gradient of 50 mmHg or more despite maximal tolerated drugs | FRCS Atlas draft; not checked against a primary source |
+| Extended transaortic septal myectomy (modified Morrow): operative mortality under 1% in experienced centres, gradient abolished to under 10 mmHg, and in the same operation mitral and papillary abnormalities can be corrected (anomalous papillary muscle inserting into the anterior leaflet; anterior leaflet plication) and AF ablated | FRCS Atlas draft; not checked against a primary source |
+| Alcohol septal ablation: ethanol into the first septal perforator; for older or high-risk patients without another surgical indication and with suitable septal artery anatomy; complete heart block in about 10 to 15%; more residual gradient than myectomy | FRCS Atlas draft; not checked against a primary source |
+| Myectomy hazards: iatrogenic VSD (resection too deep), complete heart block (resection too far right, under the membranous septum), aortic cusp injury, and incomplete mid-ventricular resection leaving SAM. Rightward limit: stay to the left of the nadir of the right coronary cusp | FRCS Atlas draft; not checked against a primary source. Consistent with Cardiac 19: conduction tissue lies below the right and non-coronary commissure (TSRA ch. 45) |
+| Worked case: 48 years old, NYHA III on bisoprolol and mavacamten, septum 24 mm, resting gradient 78 mmHg, SAM with moderate to severe MR, anomalous papillary muscle inserting into the mid anterior leaflet. Myectomy, not alcohol ablation, which cannot deal with the papillary muscle. After bypass check on TOE for residual gradient and SAM, VSD and aortic regurgitation, and on ECG for heart block | FRCS Atlas draft; not checked against a primary source |
+
+### Left ventricular aneurysm
+| Point | Source and status |
+|---|---|
+| STICH hypothesis 2: adding surgical ventricular reconstruction to CABG reduced LV end-systolic volume index by 19% without reducing death or cardiac hospitalisation. The Atlas reserves reconstruction for large discrete anterior akinetic or dyskinetic scars with viable remote muscle and an end-systolic volume index of 60 mL/m² or more | 19% and 60 mL/m²: FRCS Atlas draft; not checked against a primary source. TSRA gives an index over 80 mL/m² among the indications (ch. 69, PDF p. 543, already here) |
+| Imaging a false aneurysm: narrow neck (neck to cavity diameter ratio under 0.5), abrupt break in the myocardium with a wall of pericardium and thrombus only, often posterior or inferior. A true aneurysm has a wide neck and is usually anterior or apical after LAD infarction | FRCS Atlas draft; not checked against a primary source |
+
+### Pacing and lead extraction
+| Point | Source and status |
+|---|---|
+| Pacing code, fifth position: multisite pacing (this tab gives positions I to IV) | FRCS Atlas draft; not checked against a primary source |
+| Complete or high-grade AV block after valve surgery is usually observed for 5 to 7 days before a permanent system, unless clearly irreversible earlier (for example after extensive root debridement) | FRCS Atlas draft; not checked against a primary source |
+| Lead extraction: leads in place over 1 to 2 years are fibrosed to the SVC, innominate vein and RV; laser or rotational mechanical sheaths are used; catastrophic SVC tear or tamponade occurs in 1 to 2%. Work in a hybrid theatre with a surgeon standing by, blood cross-matched and an endovascular SVC occlusion balloon (for example Bridge) ready | Surgeon and bypass standby checked: TSRA Review ch. 85, PDF p. 666 (already here). Tear rate and occlusion balloon: FRCS Atlas draft; not checked against a primary source |

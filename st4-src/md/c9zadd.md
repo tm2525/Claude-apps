@@ -619,3 +619,42 @@ Added 20 November 2026 from Vrints C, Andreotti F, Koskinas KC, Rossello X, et a
 
 - Sequential testing examples (Figure 8): pre-test 27% with positive CCTA gives 40%, then positive DSE gives 82%; pre-test 60% with negative DSE leaves 32%, which CCTA can reduce to <5%.
 - Microvascular angina 41% and vasospastic angina 40% prevalence in selected patients without obstructive CAD; both commoner in women.
+
+## Aortic measurement and trauma CT: additions from the FRCS Atlas HTML builds
+
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (FRCS-Atlas-Ascending-Aorta-and-Arch chapter 1; FRCS-Atlas-Master-Updater-14-Chapters, chapter "Blunt thoracic aortic injury (BTAI)") with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+**Worked cross-sectional area to height ratio**
+- Diameter 5.0 cm, treated as a circle: area = π × 2.5² ≈ 19.6 cm². Height 1.75 m: 19.6 ÷ 1.75 ≈ **11.2 cm²/m**, above the ACC/AHA trigger of 10 cm²/m already in this tab. Arithmetic checked here; the worked example is from the Atlas.
+- The circle is an approximation: an eccentric section or a different reporting convention changes the figure. The index is not evidence of growth and does not on its own make an indication.
+
+**Sizing a stent graft for blunt aortic injury from the admission CT**
+- ESC 2024 (§9.3.1.4.3, type B intervention, p. 3628): aortic diameter fluctuates with haemorrhagic shock and resuscitation; admission CT may be imprecise even with correct centreline measurement; IVUS improves accuracy, especially in hypovolaemia. **Checked.**
+- The Atlas puts a figure on it: hypovolaemic vasoconstriction in young trauma patients can make the aorta measure **10 to 20% smaller** than its true size, which risks undersizing (type Ia endoleak, graft collapse); re-measure after resuscitation. (FRCS Atlas draft; not checked against a primary source.)
+
+**Chest film**
+- The Atlas gives a threshold for a widened mediastinum on a supine film: **over 8 cm**. (FRCS Atlas draft; not checked against a primary source. TSRA Review ch. 115, already reflected in Thoracic 15, lists mediastinal widening without a number and says the film can be normal.)
+
+## Aortic imaging after TEVAR and in graft infection: additions from the FRCS Atlas HTML builds
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (FRCS-Atlas-Master-Updater-14-Chapters, endoleak and aortic infection chapters; FRCS-Atlas-Aortic-Dissection-Chapters, type B chapter) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+**Endoleak imaging**
+- If triphasic CTA cannot tell a type I or III leak from a type II, the next tests are time-resolved (dynamic) MRA, contrast-enhanced ultrasound (abdominal segments only) or diagnostic catheter angiography. (FRCS Atlas draft; not checked against a primary source. ESC 2024 p80, already in Cardiac 6, confirms that ultrasound cannot assess the thoracic aorta.)
+- Sac size thresholds: the guidelines use **10 mm**. Growth of ≥10 mm triggers treatment of a type II or V endoleak (EACTS/STS 2024 Table 29, p58; ESC 2024 Table 42, p80), and early shrinkage of more than 10 mm counts as low risk (ESC 2024 p81). The FRCS Atlas draft uses 5 mm for both growth and reassuring shrinkage.
+- MRA surveillance after TEVAR can be considered in younger patients with non-ferromagnetic grafts to reduce radiation, provided artefact does not hide the seal zones. (FRCS Atlas draft; not checked against a primary source.)
+- Bird-beak: incomplete apposition of the graft along the inner curve of the proximal seal zone, expected in type III arches with a small radius (EACTS/STS 2024 p51; checked). Measure the proximal seal zone along the inner curve. Report the bird-beak length; the Atlas worked case uses 12 mm next to a type Ia leak (FRCS Atlas draft).
+
+**Graft and native aortic infection on imaging** (FRCS Atlas draft; not checked against a primary source unless stated)
+- MAGIC radiological major criteria: perigraft fluid **≥3 months** or perigraft gas **≥7 weeks** after implantation, or increasing perigraft gas. Earlier fluid and gas can be normal after surgery, as this tab already notes.
+- Graft infection: loss of the fat plane between the aorta and the oesophagus or duodenum suggests a secondary fistula. Other signs are an anastomotic pseudoaneurysm and contrast leaking into bowel or airway.
+- Infected native aneurysm: a rapidly enlarging lobulated saccular aneurysm, periaortic stranding, fluid or gas, and erosion of the adjacent vertebral body.
+- FDG PET/CT: focal intense uptake suggests infection. Diffuse low-grade linear uptake is the chronic pattern around uninfected synthetic grafts. EACTS/STS 2024 (p60; already in this tab) confirms only that uptake pattern, SUVmax and tissue-to-background ratio help and that there are no agreed cut-offs.
+- Labelled white-cell scintigraphy is an alternative to FDG PET/CT when CTA is equivocal in a stable patient (ESVS 2026, as quoted by the Atlas).
+
+**Acute type B dissection: additions to the report checklist** (FRCS Atlas draft; reporting checklist)
+- The existing checklist covers entry tear, extent and which lumen supplies each branch. For type B, also report:
+  - the distance from the entry tear to the left subclavian;
+  - contained or free rupture;
+  - whether the organs (kidneys, bowel) enhance, not just whether the arteries fill;
+  - candidate landing zones.
+- A branch that enhances on one scan does not prove that the organ is perfused.

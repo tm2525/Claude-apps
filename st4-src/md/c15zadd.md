@@ -2366,3 +2366,31 @@ Added 20 November 2026 from "FRCS Atlas: single-PDF study compilation" (19 Novem
 - Pulmonary vascular load can jeopardise donor RV function; assess reversibility.
 - Separate early graft dysfunction from technical, haemorrhagic and pulmonary vascular causes.
 - Follow rejection, infection and cardiac allograft vasculopathy.
+
+## Circulatory support and heart transplantation: additions from the FRCS Atlas HTML builds
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (Master Updater 24, chapter 23 section 4 and chapter 24; Consolidated sections 22 to 24; Coverage-and-Study "Postcardiotomy deterioration and mechanical support"; index_4 "Postcardiotomy deterioration"; index_5 "Heart transplant evaluation") with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+### Postcardiotomy cardiogenic shock
+| Point | Source and status |
+|---|---|
+| Postcardiotomy cardiogenic shock follows 0.5 to 1.5% of adult cardiac operations: failure to separate from bypass, or refractory low output (index under 2.0 to 2.2 L/min/m², systolic under 90 mmHg, rising lactate, oliguria) despite optimised preload, rhythm, ventilation and high-dose inotropes | FRCS Atlas draft; not checked against a primary source |
+| First exclude a correctable technical cause with TOE and graft flow: graft occlusion, prosthetic dysfunction or SAM, residual shunt, tamponade, air | Checked in principle: the difficult-weaning algorithm of the 2024 EACTS bypass guideline, section 11.2, Figure 2 (in Cardiac 14), puts structural review before mechanical support. Atlas list of causes: not checked |
+| Escalate early, before multi-organ failure and severe hyperlactataemia, following the 2020 EACTS/ELSO/STS/AATS postcardiotomy ECLS consensus (cited by the Atlas; not read here). VA-ECMO gives full biventricular and respiratory support at 4 to 6 L/min; "ECPELLA" means VA-ECMO vented by an Impella; an IABP can serve as the LV vent | FRCS Atlas draft; not checked against a primary source |
+| Worked case: 4 hours after mitral replacement, index 1.6, CVP 19, mean pressure 58 mmHg on high-dose adrenaline; TOE shows a distended akinetic LV, a normal prosthesis and no tamponade. Answer: early VA-ECMO, with an LV venting plan if the aortic valve stops opening | FRCS Atlas draft; not checked against a primary source |
+| ECLS-SHOCK (infarct-related shock with planned early revascularisation): 30-day mortality 47.8% with routine early ECLS against 49.0% with usual care. Not a trial of postcardiotomy rescue | FRCS Atlas draft; not checked against a primary source (the trial paper is not among the sources) |
+
+### Durable LVAD
+| Point | Source and status |
+|---|---|
+| INTERMACS profiles: 1, critical cardiogenic shock ("crash and burn"), stabilise first with temporary support as a bridge to decision rather than implant a durable device directly; 2, progressive decline on inotropes; 3, stable but inotrope-dependent, the best elective window; 4 to 7, resting symptoms through to exertion-limited ("walking wounded") | Profiles 1 and 2 as severe cardiogenic shock checked: ISHLT 2023 MCS guideline, PDF p. 6. Other descriptions and the "best window": FRCS Atlas draft; not checked against a primary source |
+| MOMENTUM 3: 5-year survival with HeartMate 3 about 58% | FRCS Atlas draft; not checked against a primary source (not stated in the ISHLT 2023 guideline) |
+
+### Heart transplantation
+| Point | Source and status |
+|---|---|
+| Contradiction on pulmonary vascular resistance: the Atlas treats PVR over 3 to 5 Wood units, or transpulmonary gradient over 15 mmHg despite vasodilator challenge, as a relative or absolute contraindication to isolated transplant, with an LVAD as bridge to candidacy to lower it. TSRA gives PASP over 50 mmHg, TPG over 15 mmHg or PVR over 5 to 6 Wood units, as this tab does | TSRA Review ch. 74, PDF p. 578 (the FRCS Atlas draft states over 3 to 5 Wood units) |
+| Acute cellular rejection graded 0R to 3R on endomyocardial biopsy (ISHLT revised grading); 2R or worse is treated with high-dose IV methylprednisolone. TSRA uses grades 0 to 3 and gives methylprednisolone 1 g daily for 3 days for rejection with haemodynamic compromise | TSRA Review ch. 74, PDF p. 583 for grades 0 to 3 and treatment. "R" grading and the 2R threshold: FRCS Atlas draft; not checked against a primary source |
+| Antibody-mediated rejection: donor-specific antibodies with C4d deposition on biopsy; treated with plasmapheresis, IVIG, and rituximab or bortezomib | FRCS Atlas draft; not checked against a primary source |
+| Allograft vasculopathy: screen yearly by angiography, IVUS or CT coronary angiography; besides statins, proliferation signal inhibitors (everolimus, sirolimus) slow it | FRCS Atlas draft; not checked against a primary source |
+| Primary graft dysfunction within 24 hours, graded mild, moderate or severe (ISHLT); severe means support beyond an IABP is needed; start VA-ECMO early to rest the graft | FRCS Atlas draft; not checked against a primary source (TSRA, already in this tab: leading cause of early death; IABP or ECMO) |
+| DCD hearts are recovered either by normothermic regional perfusion or onto ex situ machine perfusion (Organ Care System); the Atlas states survival comparable to donation after brain death | Organ Care System for DCD hearts checked: TSRA Review ch. 73, PDF p. 575. Normothermic regional perfusion and the survival comparison: FRCS Atlas draft; not checked against a primary source |

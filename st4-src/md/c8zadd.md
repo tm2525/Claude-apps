@@ -1921,3 +1921,28 @@ Added 20 November 2026 from "FRCS Atlas: single-PDF study compilation" (19 Novem
 - Timing of surgery reflects heart failure, uncontrolled infection and, in selected patients, embolic risk.
 - Neurological findings need a mechanism-specific discussion.
 - Coordinate pathology, microbiology and ownership of antimicrobial therapy.
+
+## Infective endocarditis: additions from the FRCS Atlas HTML builds
+
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (Master Updater 24 Chapters, chapter 20; Consolidated chapter 19; index_5 "Infective endocarditis and surgical timing") with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+The Atlas endocarditis chapter adds no facts this tab lacks: microbiology, diagnostic imaging, the three surgical indications with ESC 2023 timing, neurological timing, Commando reconstruction, homograft against prosthesis, right-sided indications, and when antibiotic duration restarts are all here, checked against the 2023 ESC guideline. What it adds is three errors to correct if you revise from it, and one worked case.
+
+### Where the Atlas draft contradicts the 2023 ESC guideline
+
+| Topic | Atlas draft says | 2023 ESC guideline says (already in this tab) |
+|---|---|---|
+| PET-CT in prosthetic valve endocarditis | Major criterion "especially more than 3 months after implantation" | Abnormal periprosthetic uptake on FDG-PET/CT or WBC SPECT/CT is a major criterion **irrespective of the interval from surgery**. Postoperative inflammation can persist beyond 3 months but can be told apart from infection, so the old waiting period is "questionable" (p. 3974) |
+| Fungi or multiresistant organisms | Urgent surgery (3 to 5 days) | **Urgent or non-urgent**, according to the haemodynamic condition (I C) (Recommendation Table, p. 3991) |
+| Persistent bacteraemia | Urgent surgery (3 to 5 days), listed with Class I indications | Urgent surgery **should be considered (IIa B)** when blood cultures stay positive for more than 1 week despite appropriate antibiotics and control of septic foci (p. 3991) |
+
+### Worked case (from the Atlas, checked)
+
+Man aged 62, mechanical aortic valve for 4 years, fever, S. aureus bacteraemia. TOE and CT: 14-mm mobile vegetation, rocking dehiscence, 16-mm posterior root abscess, new first-degree AV block (PR 240 ms). MRI brain: small non-haemorrhagic left frontal infarct, mild right-hand weakness (NIHSS 3).
+
+- Indications and timing: locally uncontrolled infection (abscess, dehiscence, new AV block), so urgent surgery (I B; ESC 2023 p. 3991). He also has S. aureus PVE and a vegetation of 10 mm or more. Operate as an emergency if he becomes unstable.
+- Delay for the stroke? No. After a stroke or TIA, surgery for heart failure, uncontrolled infection, abscess or persistent high embolic risk should not be delayed if coma is absent and haemorrhage has been excluded (I B, ESC 2023 p. 3997). Waiting risks root rupture, complete heart block and further emboli.
+- Coronary assessment: CT coronary angiography, not a catheter across a large aortic vegetation.
+- Operation: radical debridement of the abscess, then root replacement (homograft or valved conduit). The tab covers the reconstruction choices.
+
+**SBA (Atlas): which finding warrants delaying indicated surgery for about 4 weeks?** Significant intracranial haemorrhage. ESC 2023: delay over 1 month with frequent reassessment should be considered (IIa C). If heart failure, uncontrolled infection or high embolic risk makes the patient unstable, urgent or emergency surgery should be considered (IIa C), weighing the likely neurological outcome (p. 3997). A minor ischaemic stroke, a splenic infarct, a root abscess with new AV block, and persistent bacteraemia do not justify delay.

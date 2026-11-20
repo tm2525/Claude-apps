@@ -1669,3 +1669,15 @@ If a drug is contraindicated, substitute a similar drug from the same or a simil
 - **Recommended**: continue BB, CCB and diuretics and give gastroprotection preoperatively; continue ASA perioperatively; bridge VKA with UFH or LMWH at high thrombotic risk; mupirocin for *S. aureus* carriers from 4 days before; antibiotic infusion 30 to 60 min before incision; restart DAPT after recent ACS or PCI; lifelong VKA with self-monitoring after mechanical valve; VKA 3 months after mitral or tricuspid bioprosthesis; OAC at least 4 weeks for POAF persisting at discharge then re-evaluate; RAAS inhibition in HF and/or hypertension; cardioselective BB and SGLT2 inhibitor in HF with reduced LVEF; GDMT adherence and quality programmes.
 - **Should be considered**: stop ticagrelor 3, clopidogrel 5, prasugrel 7 days before; idarucizumab for dabigatran in emergencies; continue statin; stop SGLT2 inhibitors at least 72 h before; glucose 6.7 to 10 mmol/L in diabetics (preoperative 24 h); continue SSRIs; cefazolin or cefuroxime for 24 h, not over 48 h; restart RAAS inhibitors when safe; ASA for 3 months after valve repair.
 - **Not recommended**: preoperative prophylactic steroids or newly started statins; andexanet alfa preoperatively on anti-Xa DOACs; DOACs with mechanical valves; OAC or DAPT after TAVI without an indication; thiazolidinediones in diabetes with HF; NSAIDs with SSRIs; SSRIs with QT prolongation or vasospastic angina.
+
+## Risk scores: additions from the FRCS Atlas HTML builds
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (Master Updater 31, chapter 25, section 3) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+| Point | Source and status |
+|---|---|
+| What EuroSCORE II and STS-PROM leave out, beyond the items this tab already lists from the 2025 valve guideline (porcelain aorta, mobile atheroma, mediastinal radiotherapy, RV dysfunction, kidney disease): biological frailty, liver cirrhosis graded by Child-Pugh or MELD, a hostile mediastinum, severe pulmonary hypertension, and poor distal coronary targets. Never quote a score alone; combine it with frailty, anatomy and the patient's goals in the Heart Team | FRCS Atlas draft; not checked against a primary source |
+
+## Mechanical support evidence: additions from the FRCS Atlas HTML builds
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (Consolidated trial notes, section 22 "Postcardiotomy deterioration and temporary support") with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+- **ECLS-SHOCK**: infarct-related cardiogenic shock with planned early revascularisation; routine early extracorporeal life support against usual care. 30-day mortality **47.8% against 49.0%**, no benefit (FRCS Atlas draft; not checked against a primary source). The course already notes that this is not a trial of rescue after cardiac surgery (Cardiac 15); do not quote it for or against postcardiotomy ECMO.

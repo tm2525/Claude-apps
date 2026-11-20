@@ -358,3 +358,35 @@ Added 20 November 2026 from "FRCS Atlas: single-PDF study compilation" (19 Novem
 - Distinguish primary mitral disease, ventricular tethering and atrial secondary MR; evaluate the RV and any pacing lead interaction.
 - An annular threshold for mild secondary TR is not a prerequisite for discussing moderate TR at left-sided surgery.
 - The degenerative MR trial (the compilation's evidence list names "CTSN tricuspid repair") showed less TR progression with concomitant tricuspid repair but more permanent pacing; no survival benefit was shown.
+
+## Mitral regurgitation and stenosis: additions from the FRCS Atlas HTML builds
+
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (Master Updater 24 Chapters, chapters 16 and 17; Consolidated chapter 17; Coverage-and-Study and index_4 "Mitral and tricuspid" modules; Master Updater 31 Chapters, chapter 30) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+The Atlas mitral chapters add almost nothing this tab does not already hold, checked against the 2025 ESC/EACTS guideline. Already here: Carpentier classes, fibroelastic deficiency against Barlow disease, severity criteria for primary and secondary MR, surgical triggers, the three-of-four rule, COAPT, MITRA-FR, RESHAPE-HF2, MATTERHORN, both CTSN ischaemic MR trials, SAM predictors and rescue, post-repair TOE criteria, Wilkins score, PMC contraindications and the MAC hazards. The remainder:
+
+### New point
+
+- Basal LV aneurysm or dyskinesia joins the existing predictors that restrictive annuloplasty will fail in ventricular secondary MR (the tab lists coaptation depth 10 mm or more, tenting area over 2.5 cm², posterior leaflet angle over 45°, LVEDD over 65 mm). With these features, chordal-sparing replacement is preferred. (FRCS Atlas draft; not checked against a primary source. The TSRA ischaemic MR chapter (ch. 59) does not list it.)
+
+### Where the Atlas draft contradicts the 2025 ESC/EACTS guideline
+
+| Topic | Atlas draft says | 2025 ESC/EACTS guideline says (already in this tab) |
+|---|---|---|
+| Early repair in asymptomatic severe primary MR with preserved LV | Early repair is "recommended" when any one extra marker is present: new AF, SPAP over 50 mmHg, or LAVI 60 mL/m² or more (LA diameter 55 mm or more) | Class I B only when at least **three** of four are present: AF, SPAP at rest over 50 mmHg, LA dilatation (LAVI 60 mL/m² or more, or diameter 55 mm or more), secondary TR at least moderate (Recommendation Table 6, p. 4675). AF or PH alone: surgery should be considered (IIa B). LA dilatation alone, at a Heart Valve Centre with a durable repair likely: repair should be considered (IIa B) (Table 4, p. 4646) |
+
+### Worked cases (from the Atlas, answers corrected where needed)
+
+**Case 1: asymptomatic P2 flail.** Man aged 58, isolated P2 flail, LVEF 64%, LVESD 37 mm, LAVI 66 mL/m², SPAP 38 mmHg, sinus rhythm, no TR stated, EuroSCORE II 0.8%.
+
+- Operate now or wait for LVESD to reach 40 mm? The Atlas calls early repair "indicated". By the 2025 guideline he has only one of the four markers (LA dilatation), so the Class I three-of-four recommendation does not apply. Early repair at a Heart Valve Centre **should be considered (IIa B)** on LA dilatation with a durable repair likely. In a viva, give the class correctly. Checked: 2025 ESC/EACTS pp. 4646 and 4675.
+- After bypass the TOE shows moderate MR, a peak LVOT gradient of 65 mmHg and the anterior leaflet in the outflow tract: SAM. Give volume, stop inotropes, add phenylephrine and a short-acting beta-blocker. If it persists, go back on bypass to lower the posterior leaflet height, upsize the ring or add an edge-to-edge stitch. The tab already has this.
+- Role of M-TEER? None: a low-risk surgical patient with a repairable valve. TEER for primary MR is IIa B and only at high surgical risk.
+
+**Case 2: secondary MR in dilated cardiomyopathy.** Man aged 68, non-ischaemic, LVEF 32%, LVESD 58 mm, normal coronaries, narrow QRS. NYHA III after 6 months of quadruple therapy. Severe central ventricular SMR (EROA 0.44 cm², regurgitant volume 64 mL), preserved RV.
+
+- Intervention? M-TEER, Class I A in the 2025 guideline for symptomatic ventricular SMR without CAD that persists despite optimised therapy (and CRT if indicated), when the Table 7 criteria are met (LVEF 20 to 50%, LVESD 70 mm or less, no severe RV failure or PH). Checked: this tab's guideline table and Table 7.
+- If instead he needed CABG for three-vessel disease and had severe ischaemic MR with 12-mm tenting? Chordal-sparing replacement with the grafts rather than restrictive annuloplasty: deep tenting predicts recurrence after a ring. The CTSN severe ischaemic MR trial (already in this tab) showed much less recurrence after replacement with no survival difference.
+- Main lethal hazard of replacement in heavy MAC? AV groove rupture and circumflex injury.
+
+**SBA (Atlas): contraindication to PMC.** Of Wilkins score 6, LA appendage thrombus on TOE, SPAP 52 mmHg, valve area 1.1 cm² and sinus rhythm, only the thrombus is a contraindication; the others are compatible with, or indications for, PMC.

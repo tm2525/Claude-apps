@@ -442,3 +442,35 @@ Added 20 November 2026 from "FRCS Atlas: single-PDF study compilation" (19 Novem
 - Lymphoma or a germ-cell tumour changes first treatment, so biopsy decisions are not uniform.
 - Assess bulbar or respiratory weakness in myasthenia.
 - Report pathology, completeness of resection and the named staging system.
+
+## Mediastinal masses, thymoma and myasthenia gravis: additions from the FRCS Atlas HTML builds
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (53-chapter merger ch. 41; 42-chapter merger ch. 30; Consolidated ch. 45; index_5 and Thoracic-and-Congenital mediastinal parts) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+This tab already holds TSRA ch. 42 and 43, the ESMO 2015 thymic guideline in full and a detailed myasthenia and MGTX section, so most of the Atlas text duplicates it. The remainder follows.
+
+### Where the Atlas drafts disagree with the primary source
+| Topic | Primary source (already in this tab) | What the FRCS Atlas draft states |
+|---|---|---|
+| Staging system | ESMO 2015: Masaoka-Koga remains the routine system pending AJCC/UICC adoption of TNM; IASLC/ITMIG TNM optional [V, C] | 42-chapter build: IASLC/ITMIG TNM 9th edition has replaced Masaoka-Koga. (The course's myasthenia section also stages by TNM 9th edition; quote both systems and name the one you use) |
+
+### Myasthenia gravis
+| Point | Detail | Provenance |
+|---|---|---|
+| Antibody frequencies | Anti-AChR in about 85%; anti-MuSK in about 5 to 8% (test MuSK if AChR negative) | FRCS Atlas draft; not checked |
+| Overlap from the myasthenia side | 10 to 15% of patients with myasthenia have a thymoma (30 to 50% of thymoma patients have myasthenia, already in this tab) | FRCS Atlas draft; not checked |
+| Postoperative respiratory failure | FVC under 15 mL/kg is the trigger for early intubation; hold pyridostigmine once ventilated; treat myasthenic crisis with IVIG or plasmapheresis | FVC threshold FRCS Atlas draft, not checked (course gives preoperative vital capacity under about 2 to 2.9 L as a risk factor) |
+
+### Thymectomy technique
+| Point | Detail | Provenance |
+|---|---|---|
+| Size for minimally invasive resection | VATS or RATS for encapsulated thymomas up to about 4 to 5 cm without vascular invasion; sternotomy or hemiclamshell for larger tumours or innominate vein, SVC, pericardial or lung invasion | FRCS Atlas draft; ESMO 2015 frames this by stage (minimally invasive for presumed stage I, possibly II; not for stage III) |
+| Unilateral phrenic sacrifice | If one phrenic nerve must be taken for R0 in a fit patient, consider plication of that hemidiaphragm at the same operation | FRCS Atlas draft; not checked |
+
+### Germ cell tumour
+| Point | Detail | Provenance |
+|---|---|---|
+| Regimen | First-line chemotherapy for mediastinal non-seminomatous germ cell tumour is BEP (bleomycin, etoposide, cisplatin); resect residual masses once markers normalise, salvage resection for chemo-refractory disease | Platinum chemotherapy then resection checked (TSRA ch. 43); BEP name FRCS Atlas draft, not checked |
+
+### Worked cases from the drafts
+- 26-year-old man, 9 to 10 cm prevascular mass, AFP 1,420 to 4,200 ng/mL, beta-hCG raised: non-seminomatous germ cell tumour; chemotherapy first, not sternotomy.
+- 44 to 52-year-old woman, well-circumscribed 4 to 4.5 cm prevascular mass, normal markers, AChR antibody positive: no CT-guided biopsy; optimise myasthenia, then extended R0 thymectomy.

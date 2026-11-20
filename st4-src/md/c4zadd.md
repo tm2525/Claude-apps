@@ -564,3 +564,43 @@ Added 20 November 2026 from "FRCS Atlas: single-PDF study compilation" (19 Novem
 - Acute severe AR may cause shock before the LV dilates.
 - Chronic AR: serial LV size and function, symptoms, mechanism and aortic dimensions.
 - Repairability depends on tissue quality and geometry; establish a postoperative baseline.
+
+## Aortic stenosis and aortic regurgitation: additions from the FRCS Atlas HTML builds
+
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (Master Updater 14 Chapters, chapter 14; Master Updater 24 Chapters, chapter 15 and references; Consolidated chapters 15 and 16; Valve Manuscript; Master Updater 31 Chapters, chapter 30) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+Almost everything in these Atlas chapters is already in this tab, mostly in more detail and checked against the 2025 ESC/EACTS guideline: the discordant-AS work-up and calcium thresholds, the 70-year rule, DEDICATE, NOTION-2, EARLY TAVR, EVOLVED, AVATAR, RECOVERY, PROGRESS, root enlargement, neo-skirt and lifetime planning, El Khoury classes, AR severity criteria and surgical triggers, and cardioplegia in AR. What follows is the small remainder.
+
+### New points
+
+| Point | Provenance |
+|---|---|
+| Exercise testing unmasks symptoms in apparently asymptomatic severe AS but is contraindicated once the patient is symptomatic. | FRCS Atlas draft; not checked against a primary source |
+| Red flags for coexisting transthyretin amyloid in AS: low-flow phenotype, hypertrophy out of proportion to the valve, a history of carpal tunnel syndrome, low ECG voltage. The tab already has the confirmatory tests and that these patients usually still benefit from valve intervention. | The 2025 ESC/EACTS guideline (p. 4653, section 4.2) says only that red flags for cardiomyopathy such as amyloid should prompt further tests; the specific list is FRCS Atlas draft, not checked |
+| Surgical explantation of a failed TAVI: 30-day mortality 11.9 to 13.6% in the EXPLANT-TAVR and EXPLANTORREDO-TAVR registries, against 1.5 to 6.2% when redo-TAVI (TAV-in-TAV) is anatomically feasible. The tab already gives 12 to 17% early mortality for explant from the guideline; the redo-TAVI comparison is the new part. | FRCS Atlas draft (cites a 2026 registry summary); not checked against a primary source |
+| Aortic valve repair targets: effective height at least 8 to 9 mm and coaptation height at least 4 mm. The tab gives 9 to 10 mm for effective height; the coaptation-height target is new. | FRCS Atlas draft; not checked against a primary source |
+
+### Where the Atlas draft contradicts the 2025 ESC/EACTS guideline
+
+If you revise from the Atlas, correct these:
+
+| Topic | Atlas draft says | 2025 ESC/EACTS guideline says (already in this tab) |
+|---|---|---|
+| Earlier surgery in low-risk asymptomatic severe AR | LVESDi above 20 to 22 mm/m² or LVEF 55% or less, "Class IIb/IIa" | IIb B: LVESDi above 22 mm/m², or LVESVi above 45 mL/m², or LVEF 55% or less, if surgical risk is low. LVESDi above 20 mm/m² (IIb C) was the 2021 threshold (Table 4, pp. 4645 to 4646) |
+| SAVR Class I B | "In patients under 70 at low surgical risk, or in operable patients unsuitable for transfemoral TAVI" | The clause about operable patients unsuitable for transfemoral TAVI was in the 2021 wording. 2025: SAVR under 70 years if surgical risk is low (I B); non-transfemoral TAVI should be considered when the patient is unsuitable for both surgery and transfemoral access (IIa B) (Table 4, pp. 4645 to 4646) |
+
+### Worked cases (from the Atlas, answers checked against the guideline)
+
+**Case 1: bicuspid AS at 67 with a small annulus.** Active woman, BSA 1.85 m², EuroSCORE II 1.4%, exertional breathlessness. Valve area 0.72 cm², mean gradient 52 mmHg, LVEF 62%. CT: Sievers type 1 with heavy asymmetric calcium running into the outflow tract, annulus 19 to 20 mm, left main height 9 mm, tubular ascending aorta 46 mm, normal coronaries.
+
+- Is TAVI the Class I option? No. The Class I TAVI recommendation is for patients 70 or older with a tricuspid valve and suitable anatomy. She is under 70 at low risk (SAVR I B), and the bicuspid valve, outflow calcium and low coronary height all argue against TAVI. Checked: 2025 ESC/EACTS, Table 4 and section 8.5.
+- What about the aorta? At 46 mm, replacing the ascending aorta at the same operation should be considered when AV surgery is indicated and risk is low (IIa C, 45 mm or more). Checked: this tab's guideline table.
+- How do you avoid mismatch in a 19-mm annulus? Root enlargement, to allow a larger prosthesis and a better platform for a later valve-in-valve. The tab already notes the Y-incision gives the largest gain. The Atlas's "2 to 3 sizes" figure is FRCS Atlas draft, not checked.
+- Why does a 9-mm left main height matter for lifetime planning? It raises the risk of coronary occlusion at TAVI and makes coronary access after a later TAV-in-TAV difficult (the tab gives under 10 mm, some use under 12 mm, as the risk threshold).
+
+**Case 2: asymptomatic AR in a small woman.** Aged 41, BSA 1.60 m², chronic severe AR from a tricuspid valve with pliable cusps and a central jet. LVEF 56%, LVESD 43 mm, annulus 28 mm, sinuses 38 mm, STJ 33 mm.
+
+- Does she meet a Class I indication with a normal LVEF and LVESD under 50 mm? Yes: LVESDi is 43/1.60 = 26.9 mm/m², above 25 mm/m² (I B). The guideline singles out patients with BSA under 1.68 m². Checked: 2025 ESC/EACTS AR recommendations.
+- Mechanism and operation? El Khoury type Ic (dilated ventriculo-aortic junction, normal cusps). Repair with annular stabilisation at an experienced centre avoids anticoagulation. The tab already notes that a basal ring above about 27 mm predicts recurrence without an annuloplasty.
+- Cardioplegia? Direct ostial and/or retrograde, with an LV vent, because root cardioplegia runs back into the ventricle.
+- SBA distractors from the Atlas worth knowing: LVESD 44 mm with BSA 2.1 m² (LVESDi 21) and LVESD 46 mm with BSA 2.0 m² (LVESDi 23) do not meet Class I. The second would meet the IIb low-risk threshold (above 22 mm/m²).

@@ -197,3 +197,38 @@ Added 20 November 2026 from "FRCS Atlas: single-PDF study compilation" (19 Novem
 - Compare Doppler with the original prosthesis and its haemodynamic baseline.
 - Pannus, thrombus, structural degeneration, infection, paravalvular leak and patient-prosthesis mismatch are different problems.
 - Assess redo access, bypass grafts, and the residual orifice and coronary obstruction risk of valve-in-valve.
+
+## Prosthetic valve dysfunction and redo valve surgery: additions from the FRCS Atlas HTML builds
+
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (Master Updater 24 Chapters, chapter 19; Consolidated chapter 18; Valve Manuscript, prosthetic section) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+The Atlas chapter mostly repeats what the course already holds. In this tab: re-entry planning and CT. Elsewhere: haemodynamic valve deterioration (Table 12), mismatch thresholds, HALT, the paravalvular leak recommendations and the Sá and Gallegos editorial (Perioperative and Aortic valve tabs); the 145 HU discriminator and virtual valve-to-coronary distance under 4 mm (TOE and CT tab). The remainder:
+
+### New points (not checked against a primary source)
+
+**Telling thrombus from pannus when a mechanical valve gradient rises** (FRCS Atlas draft). The TOE and CT tab already says the 145 HU cut-off supports the distinction but does not decide it.
+
+| Feature | Thrombus | Pannus |
+|---|---|---|
+| Onset | Acute or subacute, often with a subtherapeutic INR | Gradual rise, usually more than 1 to 2 years after implantation |
+| Site | Inflow (atrial or aortic) surface of the leaflets or occluder; may be mobile | Fibrous ring at the sewing ring, often subvalvular |
+| CT attenuation | Low (under about 145 HU) | High (about 145 HU or more) |
+| Response to anticoagulation | Shrinks or resolves | None; needs surgery |
+
+**Paravalvular leak: which route.** Transcatheter plug closure suits a focal, crescent-shaped leak covering less than about one-third of the circumference, with no rocking. Redo surgery for rocking dehiscence, large or circumferential leaks, or endocarditis. (FRCS Atlas draft. The guideline wording in the course is only "suitable" size and location, with surgery for leaks caused by endocarditis.)
+
+### Where the Atlas draft contradicts the 2025 ESC/EACTS guideline
+
+| Topic | Atlas draft says | 2025 ESC/EACTS guideline says (already in the Perioperative tab) |
+|---|---|---|
+| Obstructive mechanical valve thrombosis with acute heart failure | Emergency surgery for critically ill patients without high surgical risk; fibrinolysis reserved for high-risk or inoperable patients or right-sided valves | **Heart Team evaluation is recommended (I B)** to choose between redo replacement and low-dose, slow-infusion fibrinolysis. Surgery is favoured with a recurrent event, possible pannus, cardiogenic shock or a large thrombus. The Atlas wording is the 2021 recommendation (p. 4699) |
+
+### Worked case (from the Atlas, checked)
+
+Man aged 69, 21-mm stented aortic bioprosthesis 8 years ago, now NYHA III. Mean gradient 48 mmHg (14 mmHg on the baseline echo), calcified leaflets, moderate central regurgitation. Gated CT: true internal diameter 18.5 mm, virtual valve-to-coronary distance 2.8 mm to the left main. EuroSCORE II 3.2%.
+
+- Degeneration or mismatch? Degeneration. Mismatch is present from the first postoperative echo and stays stable; here the gradient has risen by 34 mmHg from baseline with calcified leaflets. That meets the guideline's severe haemodynamic deterioration criterion (rise of 20 mmHg or more to 30 mmHg or more, compared with the echo at 1 to 3 months; Table 12, p. 4697). The Atlas uses the VARC-3 term "stage 3 SVD".
+- Why not valve-in-valve? A virtual valve-to-coronary distance under 4 mm means a high risk of left main obstruction. A transcatheter valve inside an 18.5-mm internal diameter risks severe residual mismatch; the guideline warns that valve-in-valve in small valves creates mismatch (p. 4697). Redo SAVR with root enlargement is favoured in a fit 69-year-old.
+- Mandatory scan before re-entry: contrast CT of the chest and aorta (retrosternal structures, grafts, peripheral cannulation sites), as this tab already sets out.
+
+**SBA (Atlas): pannus or thrombus?** The feature that points to pannus is a high-attenuation (about 145 HU or more) chronic subvalvular ring years after implantation. Acute onset after a subtherapeutic INR, low-attenuation mobile masses and resolution on heparin all point to thrombus. D-dimer alone does not distinguish them.

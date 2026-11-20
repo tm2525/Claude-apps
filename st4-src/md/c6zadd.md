@@ -4075,3 +4075,243 @@ Added 20 November 2026 from "FRCS Atlas: single-PDF study compilation" (19 Novem
 | Chronic dissection and residual false lumen | Define growth, symptoms, patent re-entries and branch dependence. A proximal seal does not exclude distal false-lumen pressurisation. Decide whether reintervention targets rupture, malperfusion or staged completion; lifelong surveillance |
 | Heritable aortopathy and family screening | Genotype, segment, family events, pregnancy and measured growth shape counselling and repair. Absence of a syndromic appearance does not exclude inherited disease. Plan family evaluation and surveillance of unrepaired segments |
 | Endoleak, infected graft and aortic trauma | Seal-zone leak and component failure differ from retrograde branch filling. Infection needs a separate source-control plan even after technical exclusion. Timing of repair for blunt aortic injury depends on grade, stability and associated injuries, not the image alone |
+
+## Aortic root, ascending aneurysm and bicuspid aortopathy: additions from the FRCS Atlas HTML builds
+
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (FRCS-Atlas-Main-App-Update root chapter; FRCS-Atlas-Ascending-Aorta-and-Arch chapter 1; short root and ascending sections in FRCS-Atlas-Consolidated and index_5) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+**Trial name for the early surgery versus surveillance question**
+- ACC/AHA 2022 §6.5.1 (Circulation 2022;146, p. e385) confirms an ongoing prospective multicentre RCT of ascending aneurysms of 5.0 to 5.4 cm comparing early elective surgery with medical surveillance. **Checked.**
+- The Atlas names this trial **TITAN:SvS** and says: only the protocol and registry entry exist, with no outcome result; it does not apply to known or suspected genetic aortopathy; it is not a randomised comparison of composite root versus valve-sparing repair, of concomitant replacement at valve surgery, or of one graft extent against another. (FRCS Atlas draft; not checked against a primary source.)
+- Appraisal point from the Atlas: in retrospective series of combined valve and aortic repair, check whether the combined-repair patients were younger, fitter or had a different phenotype before crediting the graft with any survival difference.
+
+**Referral checklist for a root or ascending aneurysm (Atlas teaching framework, not a guideline)**
+1. Which segment is abnormal, and how was it measured (sinus, tubular, or an oblique cut through both)?
+2. Is growth verified on comparable images?
+3. What does the valve do, and why?
+4. What is the LV response?
+5. Does family history, genotype, body size or pregnancy planning change risk?
+6. Which concomitant cardiac operation, if any, is independently indicated?
+
+**Valve-sparing plan: agree the fallback before theatre** (FRCS Atlas draft; not checked against a primary source)
+- Keep three decisions separate: is prophylactic repair indicated, how much aorta is replaced, and can the valve be kept. Favourable valve-sparing anatomy does not justify operating on a small low-risk root.
+- Consent for the fallback (composite valved conduit, mechanical or tissue) and state in advance which finding converts the plan: cusp restriction, calcification or too little cusp tissue for a durable repair. Reassess repairable prolapse after the root geometry is restored.
+- After separation, judge the valve result under interpretable loading; an underfilled ventricle can flatter the result.
+
+**Worked case 1: root phenotype with a family history** (Atlas case; thresholds as already in this tab)
+
+| Finding | Teaching point |
+|---|---|
+| Age 46; sinuses 49 mm on gated CT; tubular ascending 39 mm; moderate AR, mobile cusps | This is a root phenotype, not "a 49-mm ascending aneurysm" |
+| Old non-gated report 46 mm | Growth is unproven until the old images are re-measured in the same plane and convention |
+| Father died at 50 during an emergency aortic operation | Obtain the family diagnosis; offer genetic assessment; discuss timing with the aortic team |
+| Viva: why not a tubular graft? | It leaves the diseased sinuses and the AR mechanism untreated |
+| Viva: new regional wall-motion abnormality after reimplantation with trivial AR | Think coronary button distortion or compromised inflow; a competent valve does not clear the coronary reconstruction |
+
+**Worked case 2: bicuspid stenosis with a 47-mm tubular aorta** (Atlas case; the recommendation it applies is ACC/AHA 2022 §6.1.3.2, already in this tab: concomitant root or ascending replacement reasonable at ≥4.5 cm during aortic valve surgery, 2a B-NR. **Checked.**)
+- Age 57, severe symptomatic bicuspid AS, independent indication for SAVR. Gated CT: tubular ascending 47 mm, sinuses 38 mm, no arch disease. Earlier non-gated CT reported 45 mm.
+- The question is whether to add ascending replacement to the valve operation, not whether a standalone threshold is met. A normal-sized root is not automatically replaced.
+- Viva: the apparent 2-mm growth is not proven (different technique). A supracoronary graft leaves the root and coronary origins, which still need follow-up. A family history of dissection at a small size sends you back to phenotype and genetics rather than the sporadic pathway.
+- SBA (Atlas): best statement? A 47 mm mandates root replacement; B 47 mm is irrelevant because it is below 55 mm; **C consider adding ascending replacement to the independently indicated valve operation**; D 2-mm growth alone mandates surgery; E AVR treats the tubular aneurysm. Answer C.
+
+## Arch replacement, cerebral protection and acute type A dissection: additions from the FRCS Atlas HTML builds
+
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (FRCS-Atlas-Ascending-Aorta-and-Arch chapter 2; FRCS-Atlas-Aortic-Dissection-Chapters chapter 1; short sections in FRCS-Atlas-Consolidated and index_5) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+**Cerebral oximetry falls during unilateral antegrade perfusion: what to check**
+EACTS/STS 2024 (organ protection, brain, p. 42) recommends bilateral NIRS "combined with an algorithmic approach to intervention for cortical Hb-desaturation" (I, C), already in this tab. **Checked**; the guideline does not list the steps. The Atlas's sequence (FRCS Atlas draft; not checked against a primary source):
+1. Say so out loud; do not ignore the trend or declare a stroke.
+2. Sensor position and signal quality.
+3. Perfusion line and cannula: kink, malposition, flow.
+4. Perfusion pressure and head position.
+5. Oxygen content (haemoglobin, oxygenation).
+6. Inadequate contralateral delivery: a falling left-sided reading during right-sided unilateral perfusion suggests poor cross-filling; add left carotid perfusion (bilateral).
+- A satisfactory frontal trace says nothing about spinal, visceral or posterior-circulation perfusion. Agree how long the lower body is without flow and when distal perfusion resumes.
+
+**Viva pitfalls (Atlas teaching)**
+- Retrograde arterial inflow (femoral cannulation) and retrograde cerebral perfusion (via the SVC) are different things; do not conflate them.
+- A dissected or heavily diseased axillary or innominate artery may not be a reliable route for antegrade delivery.
+- Hand over at discharge: zones replaced or covered, how each branch was reconstructed, left subclavian status, distal graft extent, residual disease, and whether a second stage is already indicated or depends on reassessment.
+
+**Frozen elephant trunk for acute type A: a 2026 observational series** (FRCS Atlas draft; not checked against a primary source)
+- Ma et al, 2026, multicentre series: operative mortality **8.4% (71/850)**; **16.9%** with malperfusion at presentation versus **6.7%** without.
+- Selected patients in experienced centres. The root-procedure subgroup comparison was not a randomisation of hemiarch versus total arch, so it cannot show that adding FET improves survival for all type A patients. Use it for feasibility and selection, not to override the tear-oriented approach.
+
+**Type A worked case and viva (Atlas)**
+- Age 58, abrupt chest pain and syncope; CTA: ascending tear, haemopericardium, dissection into the SMA, which enhances. Pressure falls and echo shows pericardial blood. The immediate threat is tamponade or rupture; send the images and go, rather than completing a mesenteric work-up. An enhancing dissected SMA is not proof of bowel injury.
+- Viva: cusps look intact but TOE shows severe eccentric AR. Inspect commissural support and root geometry; AR severity alone does not tell you whether a valve-sparing proximal strategy is feasible.
+- Viva: new ventricular dysfunction on separation is not automatically "poor protection". Look for coronary compromise, residual AR, loading and a technical cause.
+- Viva: the patient asks whether the dissection is "gone". Explain repair of the dangerous segment versus residual distal disease, which segments need imaging and who arranges it.
+- SBA: adequate proximal repair, then rising acidosis, new abdominal tenderness and a previously dissected SMA. Best next priority? A wait for the scheduled scan; B assume vasoplegia; **C urgent multidisciplinary assessment for residual visceral malperfusion and bowel injury**; D diagnose necrosis from lactate alone; E exclude ischaemia because the SMA enhanced before surgery. Answer C. Central repair can relieve dynamic obstruction but does not guarantee tissue perfusion.
+
+## Heritable thoracic aortic disease and pregnancy: additions from the FRCS Atlas HTML builds
+
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (FRCS-Atlas-Master-Updater-14-Chapters, chapter "Heritable thoracic aortic disease and pregnancy"; short section in FRCS-Atlas-Consolidated) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+**Contradictions with primary sources**
+- **Marfan high-risk features (EACTS/STS 2024, Recommendation Table 16 footnote, p. 37):** family history of aortic dissection; growth >0.3 cm/year; diffuse root and ascending dilatation; marked vertebral arterial tortuosity. **Checked.** (The FRCS Atlas draft attributes to EACTS/STS a list of family history of dissection at low diameter, growth ≥3 mm/year, severe aortic or mitral regurgitation and desire for pregnancy; severe regurgitation and pregnancy are not in the EACTS/STS footnote.)
+- **Pedigree:** ESC 2024 Recommendation Table 56 (p. 3638) asks for family history over at least three generations covering TAD, unexplained sudden deaths, and peripheral and intracranial aneurysms (I, B). **Checked.** The additional risk feature in ESC Figure 39, as recorded in this tab, is unexplained sudden death under 60. (The FRCS Atlas draft says sudden unexplained deaths under 50.)
+
+**New points** (FRCS Atlas draft; not checked against a primary source)
+- Beta-blocker in pregnancy: avoid atenolol where fetal growth restriction is a concern; labetalol or metoprolol are commonly preferred, per local cardio-obstetric guidance. (Labetalol as the suggested agent is already in this tab from ACC/AHA 2022.)
+- TEVAR in HTAD: reserve for life-threatening emergencies as a bridge to open surgery, or for repairs where both proximal and distal landing zones lie within previous surgical Dacron grafts. Chronic radial force on native HTAD wall is linked to retrograde type A dissection, stent-graft-induced new entry and late dilatation.
+
+**Worked case (Atlas)**
+- Woman of 28, FBN1 Marfan, wants pregnancy. Gated MRA: root 46 mm, tubular ascending 34 mm, pliable tricuspid cusps, trivial AR, normal descending aorta. On losartan 50 mg. Brother had type A dissection at 32.
+- Viva 1: not pregnancy with surveillance; prophylactic root replacement first (root ≥45 mm, I C, as already in this tab), and change losartan to a beta-blocker before conception.
+- Viva 2: why reimplantation rather than remodelling without annuloplasty, or a mechanical Bentall? Reimplantation stabilises the basal ring in Marfan tissue and keeps her own cusps, so she avoids warfarin in pregnancy.
+- Viva 3: root replacement does not remove pregnancy aortic risk; the native distal aorta can still dissect (type B), so cardio-obstetric surveillance continues.
+- SBA answer: pre-pregnancy prophylactic root replacement, valve-sparing reimplantation if the cusps are suitable, and ARB changed to beta-blocker. Distractors: continue losartan (teratogenic); supracoronary graft (leaves Marfan sinuses); wait for 55 mm (sporadic threshold); elective TEVAR before conception (avoided in native Marfan aorta).
+
+## Blunt thoracic aortic injury: additions from the FRCS Atlas HTML builds
+
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (FRCS-Atlas-Master-Updater-14-Chapters, chapter "Blunt thoracic aortic injury (BTAI)"; trauma chapters in the 42- and 53-chapter mergers; short section in FRCS-Atlas-Consolidated) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+**The 2026 SVS focused update, as the Atlas reports it** (DuBose et al; described as updating the 2011 SVS guideline with 13 recommendations). FRCS Atlas draft; not checked against a primary source: the SVS document is not among the sources available here.
+
+| Grade | SVS 2026 per the Atlas | Primary sources already in this tab (checked) |
+|---|---|---|
+| I (intimal tear) | Definitive non-operative management; **no routine follow-up imaging** | EACTS/STS 2024 Table 11 (p. 31): non-operative with close imaging follow-up (I, C). ACC/AHA 2022 §7.7.1.2: non-operative with follow-up imaging (1, C-LD) |
+| II (intramural haematoma) | Definitive non-operative management; **one follow-up CTA** | EACTS/STS: TEVAR if high-risk imaging features (IIa, C), otherwise non-operative with close imaging (IIb, C). ESC 2024: semi-elective repair within 24 to 72 h if the IMH progresses (IIa, C) |
+| III (pseudoaneurysm) | Stable: **delayed TEVAR after 24 h (grade 2C)**. Urgent (under 24 h) or emergent if unstable from the aortic injury or with high-risk features (large or enlarging pseudoaneurysm, progressive periaortic haematoma) | ESC 2024: semi-elective within 24 to 72 h, urgent in some. ACC/AHA: early (<24 h) repair associated with higher mortality in registry data |
+| IV (free rupture) | Emergent repair | Consistent with all three |
+
+The grade I and II rows conflict with EACTS/STS, ACC/AHA and ESC, which all keep imaging surveillance for grade I and allow repair of high-risk or progressing grade II. Quote the European and American recommendations in the exam; mention the SVS update only as reported.
+
+**Anti-impulse therapy with traumatic brain injury** (FRCS Atlas draft; not checked against a primary source)
+- Per the Atlas, SVS 2026 advises **against** anti-impulse therapy in grade I or II injury with concomitant TBI; blood pressure targets follow cerebral perfusion pressure, not the minimal aortic injury.
+- Grade III with TBI or solid-organ injury: timing, pressure targets and heparin dose (reduced-dose or heparin-free TEVAR with severe intracranial haemorrhage) are agreed jointly by trauma, neurosurgery and the aortic team.
+
+**TEVAR technique in young trauma patients** (FRCS Atlas draft; not checked against a primary source unless stated)
+- Steep narrow "gothic" arch: risk of proximal bird-beak and stent-graft collapse. Oversize about 10 to 20% over the resuscitated diameter; avoid excessive oversizing in a small healthy aorta.
+- Stent-graft collapse presents as upper-body hypertension with absent femoral pulses (pseudocoarctation).
+- Small iliofemoral arteries: check the sheath-to-vessel ratio to avoid iliac avulsion.
+- Spinal cord ischaemia is rare (under 1 to 2%) because coverage is short (10 to 15 cm); routine prophylactic CSF drainage is not indicated.
+- **Left subclavian:** TSRA Review ch. 115 (Thoracic trauma, Blunt aortic injury) says the left subclavian is covered in over half of cases and is usually tolerated. **Checked.** (The FRCS Atlas draft says coverage is needed in up to 30 to 40% of isthmus injuries.)
+- **Left subclavian revascularisation:** ESC 2024 §9.3.5.1 (p. 3633): in semi-elective repair needing left subclavian coverage, prior revascularisation is suggested to reduce paraplegia risk. **Checked.** (The FRCS Atlas draft says routine pre-emptive revascularisation is not needed in emergency BTAI unless there is a patent LIMA graft, a dominant left vertebral artery with an incomplete circle of Willis, or a left-arm dialysis fistula; it advises watching for arm ischaemia and posterior-circulation symptoms and revascularising selectively. The two refer to different urgencies.)
+- **Site:** ESC 2024 §9.3.5 (p. 3633): isthmus 90%, root 5%, diaphragmatic hiatus 5%, as already in this tab. **Checked.** (The FRCS Atlas draft says over 80% of injuries reaching hospital alive are at the isthmus.)
+
+**Worked case (Atlas)**
+- Motorcyclist of 26, GCS 11, small subdural haematoma (neurosurgery want SBP over 110 mmHg), grade III splenic laceration managed non-operatively, 14-mm isthmus pseudoaneurysm (grade III) with a small contained mediastinal haematoma. BP 118/70, HR 92 after resuscitation.
+- Viva 1: do not push SBP below 100 with esmolol and take him straight for fully heparinised TEVAR. Stable grade III with TBI and solid-organ injury: delayed TEVAR, with pressure and heparin agreed with neurosurgery and trauma.
+- Viva 2: the admission CTA may underestimate the aortic diameter because of hypovolaemic vasoconstriction; re-measure after resuscitation to avoid undersizing (type Ia endoleak, collapse). See Cardiac 9.
+- Viva 3: if it were a grade II IMH: non-operative management without anti-impulse hypotension because of the TBI (as the Atlas reports SVS 2026; contrast EACTS/STS above).
+
+## Acute type B dissection and malperfusion: additions from the FRCS Atlas HTML builds
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (FRCS-Atlas-Aortic-Dissection-Chapters, chapter 2 "Acute type B aortic dissection"; short versions in FRCS-Atlas-Consolidated_2 and index_5) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+**Trial numbers and trials in progress**
+
+| Trial | What the Atlas adds | Provenance |
+|---|---|---|
+| INSTEAD-XL | Five-year aorta-specific mortality 6.9% with TEVAR against 19.3% with medical therapy alone. Aorta-specific, not all-cause, mortality; patients were stable survivors randomised after the earliest acute phase | FRCS Atlas draft; not checked against a primary source. ACC/AHA 2022 (PDF p79), EACTS/STS 2024 (p27) and ESC 2024 (p91) confirm only "improved 5-year aorta-specific survival and delayed progression", without figures |
+| IMPROVE-AD | Rationale and design paper (2026): planned 1,100-patient pragmatic randomised trial; upfront TEVAR against medical therapy with selective TEVAR; primary endpoint at four years is all-cause mortality plus major aortic complications | FRCS Atlas draft; not checked against a primary source |
+| EARNEST | UK randomised trial: early TEVAR plus best medical therapy and surveillance against best medical therapy and surveillance; five-year composite endpoint (different from IMPROVE-AD) | FRCS Atlas draft; not checked against a primary source |
+| SUNDAY | A further randomised programme on uncomplicated type B, discussed by investigators at an ESVS roundtable (October 2026) | FRCS Atlas draft; not checked against a primary source |
+
+- None of IMPROVE-AD, EARNEST or SUNDAY has reported outcomes. For the viva: a rationale paper, registry entry or roundtable is not an outcome result. (FRCS Atlas draft; not checked against a primary source.)
+
+**Viva pitfalls on malperfusion** (FRCS Atlas draft; reasoning points, not checked against a primary source)
+- A branch arising from the false lumen can be normally perfused. A branch off the false lumen is not by itself malperfusion syndrome.
+- A branch that enhances on one scan does not exclude evolving ischaemia. Contrast in a renal or mesenteric artery does not prove the tissue is perfused.
+- A normal first lactate does not exclude evolving mesenteric ischaemia. A single lactate also does not diagnose bowel necrosis.
+- Reclassify on events, not labels. A patient with uncomplicated disease can become complicated within hours. Do not wait for the subacute window once pain, uncontrolled pressure or new organ dysfunction appear.
+
+**Worked case** (FRCS Atlas draft; teaching case)
+- A 63-year-old has acute type B dissection starting just beyond the left subclavian. At first the pain settles, the true lumen is narrowed, the branches enhance and examination is reassuring. Six hours later he has worsening abdominal pain and tenderness, a rising lactate, and the CT suggests SMA compromise.
+- He has moved from monitored medical treatment to suspected visceral malperfusion. Call the aortic and visceral teams now; do not wait for the subacute phase.
+- From the old and new CTA decide: is the obstruction dynamic, static or mixed; where are the entry and the candidate seal; is there tissue injury or rupture.
+- If TEVAR re-expands the true lumen but the pain continues, consider fixed SMA obstruction, bowel that is already ischaemic, or a second cause. A good deployment image does not show that the gut is viable.
+- SBA answer: after TEVAR the true lumen expands but the SMA stays occluded. The cause is static obstruction at or within the SMA, which persists after relief of dynamic aortic compression. False-lumen thrombosis is remodelling; it does not mean the bowel is perfused.
+- A stable patient with high-risk anatomy asks for a stent today. Discuss the anatomical concern, the short-term procedural risk (retrograde type A, stroke, spinal cord injury) and the possible long-term benefit. Explain why selective subacute TEVAR (IIa, C) is offered rather than an emergency stent: the recommendation is intermediate-grade and based on surrogate outcomes.
+
+## Descending thoracic aneurysm, TEVAR and thoracoabdominal aneurysm: additions from the FRCS Atlas HTML builds
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (FRCS-Atlas-Descending-and-Thoracoabdominal-Aorta, both chapters; short versions in FRCS-Atlas-Consolidated_2 and index_5) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+**Thresholds from the 2026 European vascular documents**
+- The Atlas cites the 2026 CIRSE standards of practice, which quote the 2026 ESVS descending and thoracoabdominal guideline as using **≥60 mm** as the diameter criterion for an intact descending thoracic aneurysm. Symptoms and rupture are considered alongside it. This differs from ≥55 mm in ACC/AHA 2022 (6.5.3.1, Class 1) and EACTS/STS 2024, both already in this tab. (FRCS Atlas draft; not checked against a primary source. The ESVS 2026 and CIRSE 2026 documents are not in the source folder.)
+- For the viva, a stable asymptomatic 57-mm degenerative descending aneurysm needs specialist review. Do not claim that every guideline requires immediate TEVAR at that size; name the guideline you are quoting. (FRCS Atlas draft.)
+
+**Fenestrated and branched repair (FB-EVAR): long-term outcomes**
+
+| Study | Population | Results | Provenance |
+|---|---|---|---|
+| Oderich et al., Circulation 2024 | 1,109 selected patients, elective repair of asymptomatic intact TAAA, 8 prospective non-randomised investigational device studies | Early mortality 2.7%; early major adverse events 20.4%. At 5 years: late aortic rupture 2.7%, all-cause mortality 45.7%, secondary intervention 40.3% | FRCS Atlas draft; not checked against a primary source |
+| 2026 observational cohort, long-term FB-EVAR outcomes | 916 analysed; elective and urgent cases | Technical success 93.6% | FRCS Atlas draft; not checked against a primary source |
+
+- For consent: 40.3% secondary intervention is not 40.3% rupture or failure at discharge. Exclusion protects against rupture but leaves a large competing mortality and a large follow-up burden. The Oderich series was not randomised against open repair, surveillance or another device, and does not apply to rupture. The two series used different populations and definitions, so do not compare them head to head. (FRCS Atlas draft.)
+- Technical success means every renal and visceral target is still perfused, not just that the main body was deployed. (FRCS Atlas draft.)
+
+**Planning pitfalls** (FRCS Atlas draft; not checked against a primary source)
+- Post-dissection TAAA: a target vessel may arise from the lumen that the endograft will exclude, such as a renal artery from the false lumen. A renal artery that enhances before the operation is still a target at risk. A narrow true lumen, dissection extending into a target, and distal re-entry can each make the planned repair unworkable.
+- Staging limits how much collateral supply is lost at one time, but the patient can rupture, or never complete treatment, between stages. Record what the first stage protects, what stays pressurised, the planned interval and what new symptoms would change the plan. Comparisons that leave out patients who ruptured or never completed treatment overstate the benefit of staging.
+- Separate three decisions before consent: whether to repair at all, how to seal while keeping critical subclavian inflow (for example a patent LITA graft), and whether the device can be delivered (for example small calcified iliac arteries). An example report: "58-mm fusiform descending aneurysm; short proximal neck unless the left subclavian is covered; distal seal above the coeliac; small calcified iliacs; patent LITA graft." Merging these into one decision risks consent for an operation that cannot be delivered safely.
+- New weakness after a CSF drain: include a neuraxial (spinal) haematoma in the differential alongside cord ischaemia, limb ischaemia and stroke. Do not open or insert a drain without checking safety and following the protocol.
+- Kidney injury after TAAA repair can come from haemodynamics, intrinsic injury or a compromised renal reconstruction. Do not blame contrast without checking the reconstruction.
+
+## Endoleak and late endovascular complications (RTAD, dSINE, open conversion): additions from the FRCS Atlas HTML builds
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (FRCS-Atlas-Master-Updater-14-Chapters, chapter "Endoleak and late endovascular complications"; short versions in FRCS-Atlas-Consolidated_2) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+**Where the Atlas differs from the guidelines**
+
+| Point | Primary source | Atlas version |
+|---|---|---|
+| Sac growth that triggers treatment of a type II (or type V) endoleak | **≥10 mm**: EACTS/STS 2024 Recommendation Table 29 (IIa, C; p58); ESC 2024 Recommendation Table 42 (IIa, C; p80). ESC also treats early shrinkage of more than 10 mm as low risk (p81) | The FRCS Atlas draft states that expansion of ≥5 mm justifies embolisation, that ≥5 mm always needs a cause found, and that shrinkage of more than 5 mm is reassuring |
+| Type Ic | Occurs only after fenestrated or branched repair: loss of the distal seal in a target artery, with risk of bridging stent pull-out (EACTS/STS p58) | The FRCS Atlas draft states that it is the seal at an iliac or branch occluder or bridging stent. Note that the imaging tab (Cardiac 9) also lists "Ic: iliac occluder" |
+| Retrograde type A dissection after TEVAR | 1.7%, commonest after TEVAR for acute type B. Risk rises 14% for each percentage point of oversizing above 9%; in dissection, oversize by no more than 10% (TSRA Review ch. 81) | The FRCS Atlas draft gives "typically 1–4%" and names "excessive oversizing >20%" as the risk factor |
+
+**Mechanism and risk points**
+- Bird-beak: the endograft does not sit flat along the inner curve of the proximal seal zone. It is expected in type III arches with a small radius, and may need debranching or a frozen elephant trunk to move the seal proximally (EACTS/STS 2024 p51; checked). The Atlas adds that the wedge-shaped gap predisposes to type Ia endoleak and to collapse of the stent graft. (FRCS Atlas draft; not checked against a primary source.)
+- More RTAD risk factors: proximal landing in zones 0 to 2, and balloon moulding of the seal in a dissected aorta. RTAD can present during the procedure, early, or months later with chest pain, tamponade or acute AR. (FRCS Atlas draft; not checked against a primary source.)
+- Late presentations: haemoptysis or haematemesis means aorto-bronchial or aorto-oesophageal fistula until proven otherwise; fever means graft infection; acute limb or visceral ischaemia suggests graft collapse, thrombosis or branch occlusion. (FRCS Atlas draft; not checked against a primary source.)
+- 2025 cohort of TEVAR for type B dissection: complications 30% with a zone 2 proximal landing against 6.5% with zone 3. In zone 2, endoleak was 15% and RTAD 5%. (FRCS Atlas draft; not checked against a primary source.)
+
+**Reintervention detail** (FRCS Atlas draft; not checked against a primary source)
+- Type Ia rescue options: proximal cuff extension, which often needs arch debranching, carotid–subclavian bypass or a scalloped, fenestrated or branched arch device; chimney or parallel grafts in urgent high-risk cases; EndoAnchors in selected necks; or open arch replacement with explantation when no durable endovascular seal exists.
+- Do not balloon a proximal seal hard in a dissected aorta: it can cause RTAD. Ballooning a bird-beak in a steep arch rarely gives a durable seal. (Contrast the general endoleak table in Cardiac 9, which lists "balloon the seal" for type I.)
+- Type V (endotension) with continued sac growth: look for low-grade graft infection before relining or open conversion. If the sac grows with no leak on arterial-phase CT, get a delayed phase or angiography to exclude an occult type I, II or III leak.
+- dSINE: in chronic dissection, extend distally with a tapered graft sized to the true lumen with minimal oversizing. Plan a staged thoracoabdominal repair if the distal aorta is aneurysmal.
+- RTAD repair: as for spontaneous type A. Replace the ascending aorta and arch, often with a frozen elephant trunk, or sew directly to the intact stent graft downstream where feasible.
+- Open conversion and explantation: barbs, bare springs and periaortic inflammation bind the device into the aortic wall. Plan proximal control by zone (hypothermic circulatory arrest or left heart bypass). In a non-infected case, consider partial explantation: leave a well-incorporated distal segment and sew the Dacron graft to it. An infected graft or a fistula needs complete explantation. Protect the brain, kidneys and spinal cord.
+- Any new endoleak, migration, progression of a bird-beak or sac growth resets the surveillance interval and calls for aortic MDT review.
+
+**Worked case** (FRCS Atlas draft; teaching case)
+- Four years after zone 2 TEVAR for a descending aneurysm, the sac has grown from 58 to 66 mm. Arterial-phase CT shows contrast pooling on the inner curve of the proximal seal next to a 12-mm bird-beak. The distal seal and overlap zones are intact.
+- This is a type Ia endoleak from bird-beak malapposition; the sac is at systemic pressure, so it needs prompt MDT treatment. The answer is proximal extension into healthy aorta (branched or fenestrated arch device, hybrid debranching, or open arch replacement with explantation), not balloon moulding.
+- SBA: the most urgent finding in an asymptomatic patient is a new type Ia endoleak with sac growth, not a stable sac with a small intercostal type II or a type IV blush seen under heparin.
+
+## Aortic infection and infected grafts: additions from the FRCS Atlas HTML builds
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (FRCS-Atlas-Master-Updater-14-Chapters, chapter "Aortic infection and infected vascular grafts", which cites the 2026 ESVS graft and endograft infection guideline; short versions in FRCS-Atlas-Consolidated_2) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+**Definitions and timing**
+- The Atlas uses the ESVS terms: infected native aortic aneurysm (INAA, formerly "mycotic") and vascular graft or endograft infection (VGEI). Keep the two apart, and report a secondary fistula (aorto-enteric, aorto-oesophageal or aorto-bronchial) separately because it carries a far worse prognosis. (FRCS Atlas draft; not checked against a primary source.)
+- Early and late graft infection: ACC/AHA 2022 defines early as **≤3 months** (PDF p101; checked). The FRCS Atlas draft puts the cut-off at 4 months.
+- Organisms by timing: early infection is often virulent (S. aureus, Gram-negative bacilli). Late infection includes coagulase-negative staphylococci, streptococci, enterococci, anaerobes and fungi. (FRCS Atlas draft; not checked against a primary source.)
+- INAA: Salmonella is notably aggressive, with rapid growth and rupture. Up to 20–30% of cases are culture-negative, especially if antibiotics started before sampling. (FRCS Atlas draft; not checked against a primary source. EACTS/STS 2024 p66 confirms only that S. aureus, streptococci and Salmonella are the commonest organisms, which is why empirical cover must include Gram-positive cocci and Gram-negative rods.)
+
+**MAGIC criteria in detail** (FRCS Atlas draft; not checked against a primary source. EACTS/STS 2024 p60 confirms only that MAGIC defines major and minor criteria.)
+- Three categories: clinical or surgical, radiological, and laboratory. Each has major and minor criteria.
+- **Diagnosed:** one major criterion plus any criterion from a different category. **Suspected:** one major criterion alone, or two minor criteria from different categories.
+- Examples of major criteria: pus or exposed graft at operation, or a fistula (clinical); perigraft fluid **≥3 months** or perigraft gas **≥7 weeks** after implantation, or increasing perigraft gas (radiological); organisms from an explanted graft or a percutaneous aspirate (laboratory).
+
+**ESVS 2026 graft infection guideline as quoted by the Atlas** (FRCS Atlas draft; not checked against a primary source. The ESVS 2026 document is not in the source folder.)
+- Refer every suspected or confirmed intracavitary graft infection to a tertiary centre with an MDT. Add GI or thoracic surgeons, or urologists, when there is a bowel, airway or urinary fistula.
+- Multiphase CTA is the first-line test. If CTA is equivocal in a stable patient, FDG PET/CT or labelled white-cell scintigraphy improves accuracy.
+- Sonication of explanted graft material may be considered, to break up biofilm and improve culture yield.
+- For fit patients, complete explantation followed by in situ reconstruction is the first-line curative strategy, based on meta-analyses showing lower mortality, complication and reinfection rates than extra-anatomic bypass.
+- Self-made bovine pericardial tubes are quick to make and suit thoracic, arch and thoracoabdominal infection. The autologous femoral vein system (NAIS, neo-aortoiliac system) gives the best resistance to reinfection in abdominal disease.
+
+**Practical points** (FRCS Atlas draft; not checked against a primary source unless stated)
+- Treat even a small self-limiting GI bleed or haemoptysis in a patient with an aortic graft or endograft as a fistula until proven otherwise; it may be a sentinel bleed.
+- Endoscopy can show graft erosion or another bleeding source, but a normal endoscopy does not exclude a fistula. ACC/AHA 2022 (p101; checked) says only that endoscopy may rule out other causes and may temporise bleeding.
+- Take at least two sets of blood cultures before antimicrobials whenever it is safe to do so.
+- Empirical intravenous cover: staphylococci (including MRSA where there is a risk), Gram-negative bacilli and anaerobes. Add antifungal cover in selected enteric or oesophageal fistulae. Narrow the cover when sensitivities are known.
+- Antimicrobial duration: the guidelines say at least 6 weeks after treatment (EACTS/STS p60, I C; ACC/AHA p101, Class 1), already in this tab. The FRCS Atlas draft states "at least 4–6 weeks intravenous, then oral step-down". Use the guideline figure.
+- Repeat CTA at 1 to 3 months after treatment, then periodically, to confirm the periaortic inflammation has resolved and the conduit is intact.
+- Endovascular bridging plus lifelong suppression in a frail patient is palliation, and must be consented as such.
+
+**Worked case** (FRCS Atlas draft; teaching case)
+- 18 months after TEVAR, a 67-year-old has a low-grade fever, CRP 145 mg/L and one 200-mL haematemesis; he is stable. CTA shows new perigraft gas, periaortic thickening and loss of the fat plane between the endograft and the oesophagus.
+- This meets MAGIC criteria (major radiological criterion: perigraft gas more than 7 weeks after implantation) and suggests a secondary aorto-oesophageal fistula. Escalate to the tertiary MDT (aortic, upper GI or thoracic surgery, microbiology). Cross-match, take blood cultures, start broad intravenous antimicrobials with antifungal cover, keep him nil by mouth and monitor closely.
+- If he has a massive bleed, emergency relining TEVAR controls the haemorrhage as a bridge.
+- The curative operation is complete explantation, debridement, in situ biological reconstruction, oesophageal resection or diversion with a vascularised flap, and prolonged targeted antimicrobials.

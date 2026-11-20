@@ -458,3 +458,56 @@ Added 20 November 2026 from "FRCS Atlas: single-PDF study compilation" (19 Novem
 - Clear fluid when fasting does not exclude chyle; consider fluid testing, ongoing losses and nutrition.
 - Separate retained clot after bleeding is controlled from ongoing haemorrhage; look for associated injuries.
 - A drain-output threshold alone does not replace assessment of deterioration.
+
+## Pleura: additions from the FRCS Atlas HTML builds
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (53-chapter merger ch. 37 and 38; 42-chapter merger ch. 27, 28 and 32; Consolidated ch. 35 to 38; Coverage-and-Study "Pleural infection and complex drainage"; index_5, index_2 and Thoracic-and-Congenital pleural parts) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+This tab already holds the BTS 2023 guideline in detail, so most of the Atlas pleural text duplicates it. What follows is the remainder, plus places where the drafts disagree with the primary sources (worth knowing so you do not quote the draft figure).
+
+### Where the Atlas drafts disagree with the primary sources
+| Topic | Primary source (already in this tab) | What the FRCS Atlas draft states |
+|---|---|---|
+| Recurrence after surgery for pneumothorax | BTS 2023 evidence review: 31 per 1000 after VATS against 15 per 1000 after thoracotomy (full guideline, PDF p. 11) | About 3 to 5% VATS against about 1% open pleurectomy (53-chapter build); 2 to 4% against under 1% (42-chapter build) |
+| Persistent air leak: when to seek a surgical opinion | BTS 2023 accepted indications: leak despite 5 to 7 days of drainage; BTS 2010 advised an opinion at 3 to 5 days (PDF p. 11) | "Typically more than 3 to 5 days" as the indication for surgery |
+| Mesothelioma histology shares | TSRA ch. 24: epithelioid 55%, biphasic 24%, sarcomatoid 22% | Epithelioid 60 to 70%, biphasic 20 to 30%, sarcomatoid 10 to 15% |
+| Mesothelioma latency | TSRA ch. 24: 15 to 50 years | 20 to 50 years |
+| Chylothorax: when to operate | TSRA ch. 25: leak of 1 litre a day or more for 3 to 5 days despite enteral rest | Over 1,000 mL a day or over 10 mL/kg a day, or failure of conservative treatment after 5 to 7 days (53-chapter build); over 1,000 mL a day or 10 mL/kg a day for more than 3 to 5 days (42-chapter build) |
+
+### Pneumothorax
+| Point | Detail | Provenance |
+|---|---|---|
+| Catamenial pneumothorax: operation | Inspect the central tendon of the right hemidiaphragm for fenestrations and endometrial deposits; resect or plicate the affected diaphragm, reinforce with mesh, add pleurectomy, and give postoperative hormonal suppression (GnRH analogue) | Diaphragm inspection and repair checked (TSRA ch. 23; BTS 2023 PDF p. 12: hormonal treatment or VATS); mesh and GnRH analogue specifics are FRCS Atlas draft, not checked |
+
+### Pleural infection
+| Point | Detail | Provenance |
+|---|---|---|
+| Blood culture bottles | The draft says inoculating blood culture bottles raises microbiological yield by about 20% | BTS 2023 (PDF p. 23) confirms improved yield but gives no percentage; the 20% is FRCS Atlas draft, not checked |
+| Bleeding with tPA/DNase | The draft gives a bleeding risk of about 4 to 5% | BTS 2023 (PDF p. 22) asks for consent because of bleeding risk but gives no figure; FRCS Atlas draft, not checked |
+| Chronic empyema in an unfit patient | Open-window thoracostomy (Eloesser flap) gives permanent drainage | FRCS Atlas draft; not checked (BTS 2023 lists non-intubated rib resection, already in this tab) |
+| Viva trap | Do not apply the BTS parapneumonic pH algorithm to blood or chyle in the pleural space | FRCS Atlas draft (Thoracic-and-Congenital); not checked |
+
+### Malignant effusion
+| Point | Detail | Provenance |
+|---|---|---|
+| TAPPS trial | Named in the draft as showing equivalent pleurodesis rates for thoracoscopic poudrage and talc slurry. BTS 2023 pools the poudrage-against-slurry trials: fewer re-interventions with poudrage (138 against 206 per 1000), pleurodesis failure possibly lower (low certainty) | Trial name and result: FRCS Atlas draft, not checked. BTS pooled figures already in this tab |
+| IPC-PLUS | The draft names the trial behind talc through an indwelling catheter in expandable lung as IPC-PLUS (BTS 2023 cites "one paper") | FRCS Atlas draft; not checked |
+
+### Mesothelioma
+| Point | Detail | Provenance |
+|---|---|---|
+| Staging before any surgery | CT chest, abdomen and pelvis and FDG-PET; cardiopulmonary testing; if imaging suggests resectable disease, invasive staging by mediastinoscopy and diagnostic laparoscopy; VATS biopsy if the diagnosis or subtype is not yet confirmed | Checked: TSRA ch. 24 (treatment section) |
+| Biopsy technique | Full-thickness pleural biopsy reaching the extrapleural fat, to prove stromal invasion | FRCS Atlas draft; not checked |
+| Immunohistochemistry | Positive: calretinin, WT-1, D2-40, CK5/6. Negative (positive in lung adenocarcinoma): TTF-1, CEA, Ber-EP4. Loss of BAP1 or MTAP (CDKN2A deletion) supports malignancy over reactive mesothelium | Calretinin and WT-1 already in the course; the rest FRCS Atlas draft, not checked |
+| Sarcomatoid histology | Not an operative candidate (worst prognosis, no benefit from radical surgery) | FRCS Atlas draft; not checked (TSRA ch. 24 says sarcomatoid responds least to multimodality treatment) |
+| MARS (MARS 1) | Extrapleural pneumonectomy had higher morbidity and mortality and worse survival than no EPP; EPP is now largely abandoned | FRCS Atlas draft; not checked |
+| MARS 2: extra figures | Hazard ratio for death 1.28 over the first 42 months with extended pleurectomy decortication | FRCS Atlas draft; not checked (median survival, restricted mean survival and serious adverse event ratio already in this tab from the abstract) |
+| First-line systemic therapy | CheckMate 743: nivolumab plus ipilimumab, with the larger gain in non-epithelioid disease; platinum-pemetrexed with or without bevacizumab or pembrolizumab remain options | FRCS Atlas draft; not checked (TSRA ch. 24 mentions nivolumab only as second line) |
+| ASCO 2025 guideline | Cytoreductive surgery considered only in highly selected, favourable patients with full staging and expert multimodality care | FRCS Atlas draft (Thoracic-and-Congenital); not checked |
+
+### Chylothorax
+| Point | Detail | Provenance |
+|---|---|---|
+| Low-output leak | Conservative trial (nil by mouth and TPN, or a medium-chain triglyceride diet, with octreotide) if output is under 500 mL a day | FRCS Atlas draft; not checked (TSRA ch. 25 calls somatostatin of unproven benefit) |
+
+### Worked case from the drafts
+Day 3 after Ivor Lewis oesophagectomy: milky right effusion, 1,400 mL a day, triglyceride 4.8 mmol/L, cholesterol 1.9 mmol/L. Answer: high-output chylothorax (triglyceride over 1.24 mmol/L, BTS 2023 Appendix 1 p. 4); start TPN, and proceed early to right-sided supradiaphragmatic duct ligation or lymphangiography with embolisation rather than a prolonged failing conservative trial.

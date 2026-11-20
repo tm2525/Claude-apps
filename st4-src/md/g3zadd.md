@@ -1659,3 +1659,19 @@ Figure 7: left coronary from right sinus → ischaemic symptoms or ischaemia on 
 - Obstruction thresholds for double-chambered RV and subaortic stenosis; re-coarctation reintervention criteria; aneurysm screening intervals in coarctation.
 - Heart vs heart–liver transplant in Fontan; refined Fontan transplant criteria; antiplatelet vs anticoagulation in Fontan.
 - Premature coronary disease after coronary manipulation (ASO, Ross).
+
+## Adult congenital heart disease: additions from the FRCS Atlas HTML builds
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (53-chapter merger ch. 46 to 53; 42-chapter merger ch. 36 to 42; Thoracic-and-Congenital; index_5 "Adult congenital reintervention and Fontan surveillance") with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+### Where the Atlas drafts misquote the 2025 ACC/AHA adult congenital guideline
+The tab already carries the correct guideline wording. These are the Atlas statements to distrust if you meet them in its SBAs or vivas. Checked against Gurvitz et al., Circulation 2026;153:e115–e251.
+
+| Topic | Guideline (primary source) | FRCS Atlas draft states |
+|---|---|---|
+| Perioperative expertise for noncardiac procedures (section 3.2, e134) | ACHD cardiologist in post-procedure care for AP classes IC–D, IIB–D, IIIA–D; anaesthesia by or with an anaesthetist with ACHD expertise for IC–D, IIC–D, IIIA–D (both Class 1) | IC–D, IIA–D and IIIA–D for both |
+| Asymptomatic repaired tetralogy, pulmonary valve replacement (e182) | At least 2 of: RVESVi above 80 mL/m², RVEDV at least twice LVEDV, RVEF 46% or less, LVEF 50% or less, falling exercise capacity (2a). No RVEDVi threshold | 42-chapter: "RVEDVi ≥160 or RVESVi ≥80" as the 2025/2026 thresholds (160 mL/m² is the ESC 2020 figure) |
+| Anomalous left coronary from the right sinus (e211 to e213) | Class 1 if symptomatic or ischaemia; asymptomatic with high-risk anatomy 2a; asymptomatic without ischaemia, observation or surgery 2b | 42-chapter: Class 1 for surgery "even if asymptomatic" |
+| Ebstein anomaly, EP study (e175) | Class 1 for symptomatic arrhythmia or asymptomatic pre-excitation; EP study and ablation before tricuspid surgery 2a | 53-chapter: Class 1 EP study before surgery |
+| ASD and VSD closure by PVR (ASD e148 to e152; VSD e153 to e158) | Close at PVR 2 WU or less (Class 1); more than 2 to under 5 WU reasonable (2a); 5 to 8 WU falling below 5 on PAH therapy: 2a for ASD, 2b (uncertain) for VSD | 53-chapter: close when PVR "under 3 to 5 WU" |
+| Coarctation, adults (e171 to e173) | Surgery or stent for significant coarctation; similar immediate relief, but stents carry more reintervention and less complete LV remodelling: individualise | 53-chapter: covered stent "first-line" when anatomy suits |
+| Eisenmenger syndrome and pregnancy (e209) | Maternal mortality 30 to 50% | 42-chapter: 20 to 50% |

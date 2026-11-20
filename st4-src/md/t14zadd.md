@@ -81,3 +81,47 @@ Added 20 November 2026 from "FRCS Atlas: single-PDF study compilation" (19 Novem
 - Assess disease trajectory, the benefit and risk of transplantation, donor suitability and preservation as separate questions.
 - Bridging support and intraoperative support are distinct.
 - Early hypoxaemia or later FEV1 decline has several causes; do not diagnose graft dysfunction without considering structural, cardiac, infective and rejection causes.
+
+## Emphysema, bullae and lung transplantation: additions from the FRCS Atlas HTML builds
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (53-chapter merger ch. 36; 42-chapter merger ch. 27 and 34; Consolidated ch. 25 and 43; index_5 and Thoracic-and-Congenital lung transplant and emphysema parts) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+The TSRA chapters in this tab (ch. 17, 20, 21) and the NETT paper do not cover most of the transplant detail below, so most rows could not be checked. Treat unchecked rows as draft teaching to verify before quoting.
+
+### Emphysema and bullae
+| Point | Detail | Provenance |
+|---|---|---|
+| Giant bulla | Defined as a bulla occupying more than one third of the hemithorax and compressing adjacent lung. Bullectomy (VATS, staple-line buttressing) improves FEV1 and breathlessness when the compressed lung is useful (the draft gives FEV1 over 40 to 50% and a normal DLCO as favourable) | FRCS Atlas draft; not checked against a primary source |
+| NETT high-risk group: 30-day figure | The draft quotes 30-day mortality of 16% for FEV1 20% or less with homogeneous emphysema or DLCO 20% or less. The 2003 NETT paper (NEJM 2003;348:2059, read in full for this course) gives **90-day** mortality of 28.6% against 0% in this group and does not print a 30-day figure for it; the 16% figure comes from the earlier high-risk report, which is not among the sources here | NETT 2003 checked for the 90-day figure; 30-day figure is FRCS Atlas draft, not checked |
+| CELEB trial (UK) | Randomised unilateral VATS LVRS against endobronchial valves in patients suitable for both. Change in iBODE score at 12 months was similar. The 42-chapter draft adds fewer pneumothoraces after LVRS (4.5%) than after valves (30.4%), with no excess mortality, and presents the two as complementary MDT options | FRCS Atlas draft; not checked against a primary source |
+
+### Lung transplantation: candidates
+| Point | Detail | Provenance |
+|---|---|---|
+| Leading indication | ILD/IPF is now the commonest indication worldwide | FRCS Atlas draft; not checked |
+| Cystic fibrosis | Referrals are falling because of CFTR modulators (elexacaftor/tezacaftor/ivacaftor) | FRCS Atlas draft; not checked |
+| Single against bilateral | Bilateral is mandatory for septic lung disease (CF, bronchiectasis) and for PAH; increasingly preferred for COPD and ILD for long-term survival; single lung kept for older, frailer ILD or COPD recipients to make better use of donors | FRCS Atlas draft; not checked (TSRA ch. 21 gives the survival figures already in this tab) |
+
+### Donor, preservation and operation
+| Point | Detail | Provenance |
+|---|---|---|
+| DCD donors | Controlled donation after circulatory death (Maastricht category III) gives outcomes similar to brain-dead donors in selected cases | FRCS Atlas draft; not checked |
+| Ex vivo lung perfusion | Normothermic perfusion of retrieved lungs for 4 to 6 hours to reassess function, clear oedema and recruit marginal or DCD lungs; the draft says it expands usable donors by 15 to 20% with similar survival | FRCS Atlas draft; not checked |
+| Viva trap | Static storage and ex vivo perfusion are preservation methods, not donor selection criteria | FRCS Atlas draft (Consolidated ch. 25); not checked |
+| Intraoperative support | Central VA-ECMO has largely replaced full bypass: lower heparin (ACT about 180 to 220 s), less bleeding, transfusion and primary graft dysfunction, and it can be continued after surgery if PGD is severe | FRCS Atlas draft; not checked |
+| Incision choice | Bilateral anterior thoracotomies are used where feasible because sparing the sternum reduces sternal wound complications | FRCS Atlas draft; not checked |
+| Order of anastomoses | Posterior to anterior: bronchus first (minimal peribronchial stripping to keep collateral flow), then pulmonary artery (avoid kinking), then left atrial cuff (everting suture line to prevent thrombosis) | FRCS Atlas draft; not checked |
+
+### Early and late complications
+| Point | Detail | Provenance |
+|---|---|---|
+| PGD grading | ISHLT grades 0 to 3 at 0, 24, 48 and 72 hours from PaO2/FiO2 and diffuse infiltrates on the film. Grade 3 = PaO2/FiO2 under 200, or ECMO for hypoxaemia. Grade 3 is the main cause of early death and a risk factor for CLAD | FRCS Atlas draft; not checked (TSRA ch. 21 gives only "about 30%, first 72 hours") |
+| PGD treatment | Lung-protective ventilation at 6 mL/kg of donor ideal body weight, conservative fluids, inhaled nitric oxide or epoprostenol, then early VV-ECMO (VA-ECMO if the RV is failing). Exclude cardiogenic oedema, pulmonary venous anastomotic obstruction (TOE), infection and hyperacute rejection first | FRCS Atlas draft; not checked |
+| Airway complications | 5 to 15% (53-chapter draft: 5 to 10%). Prevent by keeping the donor bronchus short (1 to 2 rings) and wrapping it with peribronchial tissue; treat with bronchoscopic debridement, balloon dilatation and temporary silicone or biodegradable stents | FRCS Atlas draft; not checked (TSRA ch. 20 cuts the bronchus about 2 rings from the upper lobe orifice, already in this tab) |
+| Acute cellular rejection | Graded A0 to A4 on transbronchial biopsy; A2 or higher treated with pulsed IV methylprednisolone | FRCS Atlas draft; not checked |
+| Antibody-mediated rejection | Donor-specific antibodies with C4d staining; plasmapheresis, IVIG, rituximab | FRCS Atlas draft; not checked |
+| CLAD definition | Persistent fall in FEV1 of 20% or more from the post-transplant baseline; about 50% by 5 years | FRCS Atlas draft; not checked |
+| CLAD phenotypes | **BOS** about 70%: obstructive, air trapping. **RAS** about 30%: restrictive (TLC fall of 10% or more), persistent pleuroparenchymal opacities on CT, worse prognosis | FRCS Atlas draft; not checked |
+| CLAD prevention and treatment | Azithromycin slows BOS progression; control reflux and infection; retransplantation only in highly selected patients | FRCS Atlas draft; not checked |
+
+### Worked case from the drafts
+36 hours after bilateral transplant for IPF: PaO2/FiO2 135 mmHg on PEEP 10 and inhaled nitric oxide, diffuse infiltrates, normal LV and unobstructed pulmonary veins on TOE. Answer: PGD grade 3; next step early VV-ECMO (VA if the RV fails) to rest the graft.

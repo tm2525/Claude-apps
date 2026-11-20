@@ -1190,3 +1190,40 @@ Added 20 November 2026 from "FRCS Atlas: single-PDF study compilation" (19 Novem
 - Distinguish papillary muscle rupture, septal rupture and free-wall rupture.
 - Acute MR can cause pulmonary oedema without prior left atrial enlargement.
 - Timing balances instability, tissue friability and whether a bridge is feasible; early versus late observational comparisons are biased by survival to treatment.
+
+## Coronary surgery: additions from the FRCS Atlas HTML builds
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (Master Updater 24, chapters 21 and 22; Master Updater 31, chapter 30; Consolidated sections 14 and 20; index_2 "Mechanical complications after infarction"; Coverage-and-Study "Coronary assessment and CABG"; index_4 "CABG") with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+### Correction: left main PCI at high SYNTAX
+The Atlas draft says the 2024 ESC chronic coronary syndromes guideline makes PCI for left main disease with SYNTAX ≥33 Class III. The guideline's "What is new" table (Vrints et al., Eur Heart J 2024;45:3415, PDF p. 18) shows that Class III B was the **2018** recommendation. In 2024 it was replaced by "in CCS patients at high surgical risk, PCI may be considered over medical therapy alone" (IIb B). This tab already gives the 2024 version; do not learn the Atlas wording.
+
+### Graft assessment and conduits
+| Point | Source and status |
+|---|---|
+| Transit-time flowmetry on each graft before leaving theatre. Satisfactory: mean flow over 15 to 20 mL/min, pulsatility index under 3 to 5, diastolic filling over 50 to 70% in left-sided grafts. Revise a graft with low flow and a high index at once | FRCS Atlas draft; not checked against a primary source |
+| Worked case: radial graft to OM1 with mean flow 6 mL/min and pulsatility index 8.2. Look for kink, twist, spasm or anastomotic stenosis; give papaverine or verapamil; revise the anastomosis. Coverage-and-Study adds: read the flow with the systemic pressure and the anatomy, because a low number alone does not give the mechanism | FRCS Atlas draft; not checked against a primary source |
+| Radial artery: give a calcium-channel blocker or other vasodilator against spasm; assess the ulnar collateral supply by modified Allen test or Doppler | FRCS Atlas draft; not checked against a primary source |
+| Bilateral internal mammary grafting: also avoid after previous chest radiotherapy (in addition to poorly controlled diabetes, morbid obesity and severe COPD) | FRCS Atlas draft; not checked against a primary source |
+| Saphenous vein: 10-year patency about 50 to 60%. "No-touch" harvest (vein taken with its surrounding fat) improves patency at the cost of slightly more leg wound morbidity | FRCS Atlas draft; not checked against a primary source. (The "no touch" in TSRA ch. 50 is a different point: not handling old vein grafts at redo) |
+| ROMA (multiple against single arterial grafting) enrolled about 4,300 patients | FRCS Atlas draft; not checked against a primary source |
+| Off-pump: the Atlas adds the CORONARY trial to ROOBY and GOPCABE (similar mid- to long-term mortality in experienced hands), and warns of more incomplete revascularisation and slightly lower patency in less experienced hands | FRCS Atlas draft; not checked against a primary source |
+| Porcelain ascending aorta: anaortic (no-touch aorta) off-pump CABG with in situ bilateral mammary arteries or composite Y-grafts, to avoid stroke | FRCS Atlas draft; not checked against a primary source |
+| Why CABG prevents more spontaneous infarcts than PCI: a graft to the mid-vessel protects the myocardium beyond any future proximal plaque rupture ("surgical collateralisation"); PCI treats the focal lesion only | FRCS Atlas draft; not checked against a primary source |
+
+### Mechanical complications of infarction
+| Point | Source and status |
+|---|---|
+| Inferior (posterior) septal rupture carries higher mortality after closure than anterior (73% against 30%) because RV function is often impaired and papillary muscle infarction adds MR. The Atlas adds complex serpiginous tracts | Reason checked: TSRA Review ch. 51, PDF p. 412. Serpiginous tracts: FRCS Atlas draft; not checked against a primary source |
+| Timing of septal rupture repair. TSRA: cardiogenic shock with a post-infarct VSD is an indication for operation; a patient already in multi-organ failure, unlikely to survive emergency surgery, can be bridged by mechanical support or catheter closure to a more stable state | Checked: TSRA Review ch. 51, PDF p. 413 |
+| The Atlas adds figures: repair in fresh necrotic muscle carries 45 to 60% mortality (sutures cut out, residual shunt); after a delay of over 7 to 14 days about 15 to 20%, with survivor bias. Stable, or stabilised on IABP or VA-ECMO without worsening organ function: the Heart Team may delay 7 to 14 days. Refractory shock or worsening organ function despite support: operate now | FRCS Atlas draft; not checked against a primary source |
+| VA-ECMO for post-infarct shock usually needs an LV vent (IABP, Impella or left atrial vent) | FRCS Atlas draft; not checked against a primary source |
+| Acute papillary muscle rupture: delay gives no healing benefit; emergency mitral replacement. The Atlas quotes over 75% mortality at 24 hours with medical treatment alone | FRCS Atlas draft; not checked against a primary source (TSRA, already in this tab: 70 to 80% hospital mortality without surgery) |
+| Free wall rupture: about 10 to 15% of post-infarct deaths. Avoid large fluid or blood pressure surges, which can dislodge the sealing clot; pericardiocentesis only as a bridge in arrest | FRCS Atlas draft; not checked against a primary source |
+| Named septal repairs: David infarct exclusion (bovine pericardial patch sewn to healthy endocardium around the whole infarct) and Daggett direct patch repair; ventriculotomy closed between two felt strips | FRCS Atlas draft; not checked against a primary source |
+| Timing: the Atlas describes two peaks, under 24 hours (elderly or unreperfused patients) and days 3 to 5 (necrotic softening) | FRCS Atlas draft; not checked against a primary source |
+| Contradiction: the Atlas says posteromedial papillary rupture is 6 to 12 times commoner than anterolateral. TSRA gives 75% against 25%, as this tab does | TSRA Review ch. 51, PDF p. 415 (the FRCS Atlas draft states 6 to 12 times) |
+
+### Carotid disease and CABG
+| Point | Source and status |
+|---|---|
+| The Atlas names the CABACS trial: routine prophylactic carotid endarterectomy before CABG for asymptomatic unilateral 70 to 99% stenosis did not reduce stroke. Proceed to CABG with epiaortic scanning and a mean pressure of 70 to 80 mmHg on bypass | FRCS Atlas draft; not checked against a primary source. The 2024 EACTS bypass guideline (Cardiac 14) recommends 50 to 80 mmHg on bypass (I A) and advises against vasopressors to exceed 80 (III B) |

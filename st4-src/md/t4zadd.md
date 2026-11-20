@@ -297,3 +297,16 @@ Added 20 November 2026 from "FRCS Atlas: single-PDF study compilation" (19 Novem
 - ADAURA showed an OS benefit in resected EGFR-mutated disease.
 - ALINA (ALK-positive) established a DFS result, not a proven mortality benefit.
 - Neither trial addresses a positive margin.
+
+## Perioperative systemic therapy for NSCLC: additions from the FRCS Atlas HTML builds
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (index_5 "Perioperative NSCLC systemic therapy and recurrence"; 53-chapter merger ch. 34, section 2 and worked case; 42-chapter merger ch. 26, section 3; Consolidated ch. 33) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+CheckMate 816 (complete response, event-free and 5-year survival with HR 0.72), KEYNOTE-671, AEGEAN, CheckMate 77T, ADAURA, ALINA and NeoCOAST-2 are already covered. Three points are not.
+
+| Point | Detail | Status |
+|---|---|---|
+| MDT-BRIDGE (phase II, Nature Medicine 2026) | 74.6% of the enrolled cohort, which included borderline resectable patients, went on to resection. The 96.2% R0 rate refers only to those who had surgery, not to all enrolled. Quote the denominator | FRCS Atlas draft; not checked against a primary source |
+| 2024 JAMA Network Open systematic review of perioperative chemo-immunotherapy | Supports response and event-free survival signals across the trials, but cannot replace the missing head-to-head trial of neoadjuvant-only against neoadjuvant plus adjuvant immunotherapy | FRCS Atlas draft; not checked against a primary source |
+| Why EGFR- or ALK-driven tumours skip neoadjuvant immunotherapy | The tab gives poor response. The Atlas adds a second reason: more toxicity, especially pneumonitis, when a tyrosine kinase inhibitor follows immunotherapy. Known EGFR and ALK alterations were excluded from CheckMate 816 | Exclusion checked: Forde et al., N Engl J Med 2022;386:1973-85, p. 1974. Toxicity reason: FRCS Atlas draft; not checked |
+
+Viva use: when a phase II platform reports a high pathological complete response, the Atlas answer is to ask for an adequately controlled comparison, patient-important outcomes, toxicity and UK approval before calling it a new standard.

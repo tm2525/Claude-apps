@@ -1034,3 +1034,41 @@ Points to note:
 - Repair of cardiac injuries tops out at level 3 on both pathways; aortic transection at level 2 (cardiac) and level 1 (thoracic); oesophageal repair at level 2 (thoracic) and level 1 (cardiac), although oesophageal injury and its repair are listed among the oesophageal requirements for certification (curriculum appendix 2a).
 - Thoracic trainees reach level 4 by the end of phase 3 for lung and bronchial repair, rib fixation and flail chest, and retained haemothorax and empyema; cardiac trainees reach 3, 2 and 3 respectively.
 - Critical conditions in curriculum appendix 3 that are named in this module's items: tension pneumothorax, cardiac tamponade and (massive) haemothorax.
+
+## Exam preparation, trial appraisal and sources: additions from the FRCS Atlas HTML builds
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (index.html app data, index_2, index_4, index_5, Coverage-and-Study, Consolidated, Thoracic-and-Congenital, Master Updaters 14, 24 and 31, Final Master Mergers 42 and 53, the aortic chapter builds, Main App Update and the 54-chapter packager) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+### Trial appraisal for the viva
+This tab lists "statistics and trial appraisal" as examined but not yet written. The Atlas app's evidence lessons give a usable checklist. The worked examples use trials already in the course.
+
+| Step | What to say | Worked example |
+|---|---|---|
+| 1. State the randomised comparison exactly | Population, intervention, comparator, primary endpoint | CALGB 140503 randomised sublobar resection against lobectomy. The sublobar operation was the surgeon's choice: wedge in 201 of 340 (59.1%), segmentectomy in 129 (37.9%). It did not randomise wedge against segmentectomy; JCOG0802 randomised segmentectomy against lobectomy only. Checked: Altorki, N Engl J Med 2023;388:489-98, p. 492 |
+| 2. Quote the confidence level as published | Do not relabel a 90% interval as 95% | CALGB 140503 primary disease-free survival HR 1.01 has a **90%** CI (0.83 to 1.24); overall survival HR 0.95 has a 95% CI (0.72 to 1.26). 90% intervals were used for disease-free survival to match the one-sided 5% significance level of the non-inferiority test. Checked: same paper, pp. 489 and 492 |
+| 3. Keep endpoints apart | Better survival does not mean better local control | JCOG0802: segmentectomy had better 5-year overall survival but local relapse 10.5% against 5.4% (figures already in Thoracic 6) |
+| 4. Keep the units | A rate per 100 patient-years is not a percentage | CTSN ablation at mitral surgery: permanent pacemaker **21.5 against 8.1 per 100 patient-years** (FRCS Atlas draft; not checked against a primary source). Cardiac 7 currently gives "21% against 8% (from memory)", which looks like the same figures with the wrong unit |
+| 5. Non-significant is not equivalent | A wide interval around 1 leaves benefit and harm possible | CTSN 1-year mortality HR 0.76 (95% CI 0.32 to 1.84) (FRCS Atlas draft; not checked). The STS 2023 AF guideline quotes the same trial as 6.8% against 8.7%, not significant (Ann Thorac Surg 2024;118:291, already in Cardiac 7) |
+| 6. Keep publication versions apart | Original report, later follow-up and conference data are separate results | JCOG0802 2022 report against the ten-year data (already in Thoracic 6) |
+| 7. Record what you read | Original or secondary analysis; abstract or full text; population limits; funding and conflicts; any correction or retraction | The Atlas's own review policy, not a society rule |
+
+CTSN ablation trial detail as the Atlas gives it (FRCS Atlas draft; not checked against a primary source): Gillinov et al., N Engl J Med 2015;372:1399-1409. 260 patients with persistent or long-standing persistent AF having mitral surgery; all had left atrial appendage closure. Primary endpoint: freedom from AF at **both** 6 and 12 months on 3-day Holter, 63.2% against 29.4%; this is not continuous monitoring over a year. The trial does not show that successful ablation allows anticoagulation to stop. The STS 2023 guideline confirms 63% against 29% at 12 months and a higher pacemaker risk (checked, Ann Thorac Surg 2024;118:291-311).
+
+### Examinations and curricula not yet in the course
+- European Board of Cardio-Thoracic Surgery (EBCTS) examination: the Atlas builds were "audited against" an EBCTS syllabus (September 2026), with two levels, MEBCTS (level 1) and FEBCTS (level 2), and adult cardiac domains numbered 2.1 to 2.10 (FRCS Atlas draft; not checked against a primary source). A European alternative or addition to the FRCS (C-Th), not part of UK certification.
+- Congenital sub-specialty: the Atlas maps congenital topics to a separate ISCP congenital sub-specialty syllabus (its pages 42 to 63 and beyond), which requires more depth than the general syllabus (FRCS Atlas draft; not checked). The general curriculum confirms only that sub-specialty training follows phase 2 by national selection after passing the ISB, indicative 2 years (checked, Cardiothoracic Surgery Curriculum Version 2, August 2026, section 2.3).
+- Documents to obtain, as linked by the Atlas (not checked): the JCIE cardiothoracic FRCS blueprint (jcie.org.uk, DocumentGenerator docID f8870ead-7857-48e0-a329-c11e1f68a1de; the Atlas also mentions JCIE sample questions); the JCIE specialty page (jcie.org.uk content ID 13); and the ISCP change-mapping proforma for the August 2026 update (iscp.ac.uk/media/1451).
+
+### Sources cited by the Atlas that the course does not yet use
+Titles and citations as the Atlas gives them; not checked, and the Atlas states no conclusions from most of them.
+
+| Area | Source |
+|---|---|
+| Coronary | 2023 ESC acute coronary syndromes guideline (Eur Heart J 2023;44:3720-3826): mechanical complications of infarction |
+| Cardiomyopathy | 2023 ESC cardiomyopathies guideline: HOCM and septal myectomy |
+| Pericardium | 2025 ESC myocarditis and pericarditis guideline (Eur Heart J 2025;46:3952-4041) |
+| Pulmonary embolism | ESC/ERS acute pulmonary embolism and pulmonary hypertension guidelines (CTEPH, endarterectomy, balloon angioplasty) |
+| Endocarditis | "Surgical implications of the 2023 ESC endocarditis guidelines", Eur J Cardiothorac Surg 2025;67:ezaf225 |
+| Aorta | ESVS 2026 descending thoracic and thoracoabdominal aortic disease guideline; ESVS 2026 vascular graft and endograft infection guideline (81 recommendations); SVS 2026 focused update on blunt thoracic aortic injury (DuBose et al.); CIRSE standards of practice on endoleaks; NHS South England supra-regional acute aortic dissection SOP (regional example) |
+| Thoracic | STS consensus on screen-detected nodules; CELEB trial, lung volume reduction surgery against endobronchial valves (Buttery et al., Eur Respir J 2023); WSES oesophageal perforation guidelines |
+| Transplant | ISHLT 2024 heart transplant candidate guideline |
+| Textbooks | Key Questions in Cardiac Surgery (Moorjani, Ohri, Wechsler); Bojar, Manual of Perioperative Care in Adult Cardiac Surgery |

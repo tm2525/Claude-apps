@@ -140,3 +140,34 @@ Added 20 November 2026 from "Role of Targeted Therapy and Immunotherapy in Lung 
 
 - The slide does not show M categories.
 - Points visible in the table: T1 N1 is IIA; T1 N2a is IIB; T2 N2a is IIIA; T1 N2b is IIIA.
+
+## TNM 9 and R status: worked viva from the FRCS Atlas HTML builds
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (53-chapter merger ch. 33, worked case and SBA; 42-chapter merger ch. 25, worked case and SBA) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+The TNM 9 descriptors and the R classification are already covered here from the IASLC papers. One integrated worked case pulls them together. Answers were checked as marked.
+
+**Case.** A 64-year-old woman has a 3.6 cm central left upper lobe adenocarcinoma (cT2a). PET-CT shows an FDG-avid station 10L node; mediastinal nodes are normal-sized and not avid.
+
+| Question | Answer | Check |
+|---|---|---|
+| Straight to lobectomy, since the mediastinum is PET-negative? | No. A central tumour with suspect N1 needs invasive mediastinal staging first, with EBUS-TBNA, with or without EUS | Revised ESTS 2014, PDF p. 9 (Level IIB). Occult N2 in PET-negative central tumours is about 21.6% (Thoracic 1) |
+| EBUS shows a single positive station, 4L. N category? | cN2a: a single ipsilateral mediastinal station | IASLC TNM 9 table, this tab |
+| After induction therapy, margins are clear but only 3 node stations were assessed. R status? | R0(un): limited node assessment, fewer than 6 stations | Detterbeck et al., J Thorac Oncol 2024;19:1052, Table 7, p. 1063 |
+| What counts as adequate node assessment for R0? | 6 stations, including station 7 and at least two other mediastinal stations. The eighth-edition wording quoted in the paper makes the rest three from the hilum or other N1 locations, with the highest station negative | Same paper, pp. 1053 to 1054 and Table 7 footnote |
+
+SBA distractors the Atlas uses, all false:
+- Tumours over 5 cm are now T4.
+- Pleural lavage cytology is M1a. It is R1(cy+), an uncertain resection.
+- STAS upstages T1 to T3. It is a histological descriptor, not part of T or R.
+
+## Trials from the Atlas evidence lists: additions from the FRCS Atlas HTML builds
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (index.html app data, index_5 evidence register, Consolidated trial notes, Final Master Merger 42 and 53 reference lists) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+| Trial | Design | Result | Status |
+|---|---|---|---|
+| JCOG0802/WJOG4607L, original 2022 report | Segmentectomy against lobectomy, 2 cm or less, consolidation ratio over 0.5 | Five-year relapse-free survival **88.0% against 87.9%** (adds the figures to "no different" above) | FRCS Atlas draft; not checked against a primary source |
+| ESOPEC (Hoeppner et al., N Engl J Med 2025) | Resectable oesophageal adenocarcinoma; perioperative FLOT against preoperative CROSS-type chemoradiotherapy | Three-year overall survival **57.4% against 50.7%**, favouring FLOT. Not a squamous-cell trial and not a trial of surgical technique | FRCS Atlas draft; not checked |
+| MDT-BRIDGE (phase II, Nature Medicine 2026) | Perioperative systemic therapy cohort in NSCLC, including borderline resectable disease; regimen not stated in the Atlas | Resection in **74.6%** of the phase II cohort; R0 **96.2%** of those operated on, not of all enrolled | FRCS Atlas draft; not checked |
+| 2024 JAMA Network Open systematic review | Neoadjuvant chemo-immunotherapy trials pooled | Supports response and event-free survival signals across trials; cannot replace a head-to-head randomisation of neoadjuvant-only against perioperative treatment | FRCS Atlas draft; not checked |
+
+Viva point from the Atlas: when quoting MDT-BRIDGE-type phase II data, give the denominator. A high R0 rate among operated patients says nothing about the patients who never reached surgery.

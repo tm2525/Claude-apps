@@ -1015,3 +1015,17 @@ Added 20 November 2026 from "FRCS Atlas: single-PDF study compilation" (19 Novem
 - Map airway involvement and nodal stations; separate flexible diagnostic bronchoscopy from rigid airway intervention.
 - A PET-avid station that was not sampled is not a negative station.
 - NICE and the 2026 ERS/ESGE/ESTS guideline differ on add-on surgical staging; confirm sampling adequacy and pathway first.
+
+## Nodules and mediastinal staging: additions from the FRCS Atlas HTML builds
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (53-chapter merger ch. 33, sections 1 and 3; 42-chapter merger ch. 25, sections 1 and 3; index_5 "Screen-detected nodules" and "Bronchoscopy and mediastinal nodal staging"; Consolidated ch. 26 to 27; Thoracic-and-Congenital "Bronchoscopy and mediastinal staging"; Coverage-and-Study "Lung cancer staging and resection"; index_4) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+### New points
+- **STS screen-detected nodule consensus.** It permits resection without a tissue diagnosis in carefully selected cases. It rejected pneumonectomy without a diagnosis. It was written for screening programmes and does not replace the UK (BTS) incidental nodule pathway. (FRCS Atlas draft; not checked against a primary source)
+- **Subsolid nodules, growth threshold.** Growth of the solid component by 2 mm or more is taken as a sign of invasive adenocarcinoma and a trigger to intervene. The tab gives "growth" or "a new solid component" without a number. (FRCS Atlas draft; not checked against a primary source)
+- **After benign resection.** Record a benign resection as an outcome, hand over surveillance responsibility explicitly, and state which growth, morphology or symptoms should bring the patient back to the MDT. (FRCS Atlas draft, index_5; not checked; a practice point, not a guideline statement)
+
+### Contradictions to avoid repeating in a viva
+| Point | FRCS Atlas draft | Primary source |
+|---|---|---|
+| Solid nodule 5 to 7.9 mm (42-chapter build) | CT at 3 and 12 months for the whole band | BTS 2015, as confirmed in this tab: 5 to under 6 mm, CT at 1 year; 6 mm or more (under 8 mm), CT at 3 months |
+| Primary tumour over 3 cm with a normal mediastinum (53-chapter build) | Invasive mediastinal staging is "mandatory" | Revised ESTS guidelines (De Leyn et al., Eur J Cardiothorac Surg 2014), advance-access PDF p. 9: negative predictive value is under 90%, and invasive staging "may be considered" (Level IIB). Central tumours and suspect N1 are the firm indications |

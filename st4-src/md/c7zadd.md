@@ -183,3 +183,14 @@ Added 20 November 2026 from Wyler von Ballmoos MC, Hui DS, Mehaffey JH, Malaisri
 - At least periodic **24-hour Holter** should be routine. Recurrence: consider catheter assessment and ablation.
 - Anticoagulation often started early because ablation damages endothelium. Some centres use single antiplatelet without anticoagulation after SA + LAA occlusion (stroke <1%). Decide on documented freedom from AF, completeness of LAA occlusion, bleeding risk and CHA2DS2-VASc. No firm data.
 - Follow by the surgeon of the heart team for at least **1 year**. Success = freedom from AF **and** from antiarrhythmics at 1 year. Surveillance up to **5 years** suggested for late recurrence and conduction disease.
+
+## AF surgery: additions from the FRCS Atlas HTML builds
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (Master Updater 31, chapter 26; the index.html app data lesson "AF ablation: reading the CTSN trial" and its questions) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+| Point | Source and status |
+|---|---|
+| CTSN mitral ablation trial (Gillinov): 260 patients with persistent or long-standing persistent AF needing mitral surgery, ablation or none; **every patient had left atrial appendage closure** | 260 patients and mitral population checked: STS 2023 AF guideline, PDF p. 6. Appendage closure in all: FRCS Atlas draft; not checked against a primary source |
+| Primary endpoint: freedom from AF at **both 6 and 12 months** on 3-day Holter, 63.2% against 29.4%. It is not continuous freedom from AF over a year | 63% against 29% checked: STS 2023 AF guideline, PDF p. 6. Decimals and Holter definition: FRCS Atlas draft; not checked against a primary source |
+| Pacemakers: 21.5 against 8.1 **per 100 patient-years**, incidence rates and not percentages. This tab's "21% against 8%" (from memory) should be read in these units | FRCS Atlas draft; not checked against a primary source (STS 2023 confirms only "more permanent pacemakers") |
+| One-year mortality hazard ratio 0.76 (95% CI 0.32 to 1.84), not significant: this neither shows equivalence nor permits stopping anticoagulation after successful ablation | FRCS Atlas draft; not checked against a primary source |
+| Appendage closure technique. The Atlas says internal suture closure leaves a stump or recanalises in 30 to 40% and that an epicardial clip gives over 95% complete exclusion. The STS 2023 guideline names **stapling alone** as the technique with poor results (residual stump, recanalisation) and lists endoatrial double-layer suture among the studied methods, as this tab does | STS 2023 AF guideline, PDF p. 11 (the FRCS Atlas draft states that internal suture closure fails in 30 to 40%) |

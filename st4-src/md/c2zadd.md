@@ -581,3 +581,33 @@ Added 20 November 2026 from McCarthy PM. Tricuspid valve repair technique. Opera
 ### Pitfalls
 - Few: keep in mind the conduction system (septal side, apex of Koch's triangle) and the adjacent aortic (noncoronary) sinus.
 - Good results expected for dilated annulus without extensive leaflet tethering or pacing leads crossing or through the leaflets.
+
+## Tricuspid regurgitation and right-sided valve surgery: additions from the FRCS Atlas HTML builds
+
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (Master Updater 24 Chapters, chapter 18; Consolidated chapter 17; Coverage-and-Study and index_4 "Mitral and tricuspid" modules) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+This tab already covers nearly all of the Atlas tricuspid chapter, checked against the 2025 ESC/EACTS guideline: mechanisms, the five-grade scale, annular thresholds, TRI-SCORE, right heart catheterisation, the concomitant-repair recommendations (including that the moderate-TR recommendation does not depend on a 40-mm annulus), the CTSN figures, TRILUMINATE, TRISCEND II, ring against suture annuloplasty, prosthesis choice, lead handling and conduction risk. The remainder:
+
+### New points
+
+| Point | Provenance |
+|---|---|
+| **Why right heart catheterisation matters physiologically.** With severe pre-capillary PH, the regurgitant tricuspid valve acts as a "pop-off" for the RV. Abolishing it can precipitate acute, sometimes fatal, RV failure. The tab already states the guideline rule (catheterise every intervention candidate to exclude masked severe pre-capillary PH); this is the reasoning to give in a viva. | Rule checked: 2025 ESC/EACTS p. 4683. "Pop-off" reasoning: FRCS Atlas draft; not checked |
+| **RV afterload mismatch after correcting severe TR.** Once the leak is abolished, the RV ejects only into the pulmonary circulation and meets its true afterload. Support it with cautious preload (avoid overdistension), an inodilator (milrinone), inhaled nitric oxide or epoprostenol if PVR is raised, sinus rhythm, and early, aggressive diuresis. Watch for complete heart block. | FRCS Atlas draft; not checked against a primary source. Not in the TSRA tricuspid chapter (ch. 65) |
+
+### Where the Atlas draft contradicts the primary source
+
+| Topic | Atlas draft says | Primary source says |
+|---|---|---|
+| TRISCEND II (EVOQUE replacement) safety | Higher bleeding and pacemaker rates "~15–17%" | Major bleeding 15%; new pacemaker in **about one quarter** of pacemaker-naive patients at 12 months (2025 ESC/EACTS p. 4687; already in this tab) |
+| Isolated TR case with TRI-SCORE 6 | Labelled "intermediate-high" risk, and transcatheter or surgical intervention offered | In a registry of 2,413 patients, early intervention improved mid-term survival only with TRI-SCORE up to 5; patients scoring **6 or more had no benefit** over conservative care. After isolated surgery, 10-year survival improved with scores of 3 or less, and at 4 to 5 only after successful repair (2025 ESC/EACTS p. 4683; the tab already marks 6 or more as high risk) |
+
+### Worked case (from the Atlas, answer corrected)
+
+Woman aged 74, chronic AF, symptomatic massive atrial secondary TR despite high-dose loop diuretic. LVEF 60%, mild RV dilatation, TAPSE 19 mm, annulus 44 mm. Catheter: PVR 1.6 WU, SPAP 38 mmHg. Mild frailty, TRI-SCORE 6.
+
+- Why catheterise? To exclude severe pre-capillary PH, in which removing the TR can precipitate RV failure (see above).
+- Options? Transcatheter tricuspid treatment (should be considered, IIa A, in high-risk symptomatic severe TR despite optimal medical therapy, without severe RV dysfunction or pre-capillary PH) or isolated surgery. However, a TRI-SCORE of 6 is the band in which intervention showed no survival benefit in the registry. The Heart Team should weigh futility explicitly and aim for symptom benefit, not quote "intermediate risk". Checked: 2025 ESC/EACTS pp. 4683 and 4687.
+- Why an incomplete ring? The gap sits at the anteroseptal commissure, over the AV node and His bundle in the triangle of Koch.
+
+**SBA (Atlas): strongest contraindication to isolated intervention for secondary TR.** Severe pre-capillary PH (PVR 7.5 WU) with advanced RV failure. AF with a 45-mm annulus, torrential TR in NYHA III on diuretics, a well-functioning mitral prosthesis, and moderate hepatic congestion with preserved synthetic function are not contraindications.

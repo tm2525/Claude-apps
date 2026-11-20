@@ -158,3 +158,18 @@ Added 20 November 2026 from "FRCS Atlas: single-PDF study compilation" (19 Novem
 - Plan bronchial stump viability.
 - A changing fluid level in the space with sepsis may suggest a fistula.
 - Drainage alone does not close the fistula or remove aspiration risk; follow the specialist postoperative pathway.
+
+## Superior sulcus tumours and chest wall invasion: additions from the FRCS Atlas HTML builds
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (53-chapter merger ch. 34, section 3 and worked case; 42-chapter merger ch. 26; Consolidated ch. 30 to 31; Thoracic-and-Congenital "Sleeve resection" and "Thoracic access, lung isolation and conversion"; index_2 "Sleeve lobectomy") with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+Sleeve, lobectomy, segmentectomy, conversion and post-induction hilar fibrosis are already covered here and in Thoracic 2. Nothing new was found on those.
+
+### Superior sulcus (Pancoast) tumours
+- Evidence for the standard sequence: the Atlas names SWOG 9416 / Intergroup 0160 as the trial behind induction chemoradiotherapy followed by en bloc R0 resection. (FRCS Atlas draft; not checked against a primary source. The sequence itself is confirmed in TSRA ch. 9, PDF p. 100, already in this tab.)
+- Third approach: the anterior transmanubrial approach (Grunenwald) is given as an alternative to Dartevelle's for tumours involving the subclavian vessels. Shaw-Paulson's posterior approach is for posterior, vertebral or T1-root disease. (FRCS Atlas draft; not checked against a primary source)
+
+### Chest wall invasion (T3)
+| Point | FRCS Atlas draft | Primary source |
+|---|---|---|
+| Margin | En bloc lobectomy with chest wall, at least 1 rib above and 1 below, margin 3 to 4 cm | TSRA ch. 9, PDF p. 101: adequate margins, ideally 2 cm (already in this tab). **Contradiction:** use the TSRA figure. The rib-above-and-below rule belongs to primary chest wall tumours (Thoracic 7, chest wall sarcoma section) |
+| Reconstruct when | Defect over 5 cm or 3 to 4 or more ribs, especially anterior or lateral, to prevent flail; posterior defects under the scapula excepted | TSRA ch. 9, p. 101: no skeletal reconstruction under 5 cm or posterior under the scapula (agrees). The "3 to 4 ribs" count is not checked |

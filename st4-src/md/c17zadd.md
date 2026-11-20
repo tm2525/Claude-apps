@@ -782,3 +782,13 @@ Added 20 November 2026 from "FRCS Atlas: single-PDF study compilation" (19 Novem
 - Separate bleeding or compression, pump failure, vasoplegia and residual technical problems.
 - Quiet drains and a limited echo do not exclude retained blood.
 - Escalate through the approved pathway and reassess perfusion and organ function.
+
+## Critical care after cardiac surgery: additions from the FRCS Atlas HTML builds
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (Master Updater 31, chapter 31; Master Updater 24, chapter 23 section 3) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+| Point | Source and status |
+|---|---|
+| Negative-pressure dressing after sternal debridement: lay a non-adherent protective layer (paraffin gauze or silicone mesh) over the exposed RV, aorta and grafts before the foam, to prevent RV rupture under suction | FRCS Atlas draft; not checked against a primary source |
+| Deep sternal wound infection: further risk factors are re-exploration for bleeding and prolonged ventilation. Closure options besides pectoral and omental flaps: rewiring, sternal plating, rectus abdominis flap | FRCS Atlas draft; not checked against a primary source |
+| Medical bleeding: besides rewarming and ionised calcium (already here), control hypertension to a systolic of 120 to 130 mmHg or less | FRCS Atlas draft; not checked against a primary source |
+| New focal neurological deficit after surgery: immediate stroke CT and CT angiography, so that mechanical thrombectomy can be considered | FRCS Atlas draft; not checked against a primary source |

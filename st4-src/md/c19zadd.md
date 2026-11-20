@@ -46,3 +46,14 @@ Added 20 November 2026 from a user-supplied image (attachment.txt, a base64 JPEG
 | Coronary sinus (CS) | Oval just below the base of the triangle |
 | Eustachian ridge | Orange line between the IVC and the CS, at the lower left corner of the triangle |
 | Inferior vena cava (IVC) | Large oval to the left, outside the triangle |
+
+## Anatomy and haemodynamics: additions from the FRCS Atlas HTML builds
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (Master Updater 31, chapter 25) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+| Point | Source and status |
+|---|---|
+| RV coronary perfusion runs in systole and diastole while RV pressure is low. When RV systolic pressure nears systemic (severe pulmonary hypertension), RV perfusion depends on systemic arterial pressure, and systemic hypotension can tip the RV into ischaemic failure | FRCS Atlas draft; not checked against a primary source |
+| Catheter pattern of RV infarction or failure: CVP over 15 mmHg, normal or low wedge, low index, CVP to wedge ratio over 0.8 | FRCS Atlas draft; not checked against a primary source |
+| Worked case: 6 hours after aortic and mitral replacement, BP 82/50, HR 118, CVP 21, PA 32/21, wedge 21, index 1.5, SVR 1,550, SvO2 49%, drains stopped 90 minutes ago. Tamponade: TOE only if it causes no delay, then back to theatre, or ICU re-sternotomy if peri-arrest | FRCS Atlas draft; not checked against a primary source |
+| Laplace: the Atlas writes wall stress = (P × r) ÷ 2h; TSRA writes tension = (P × r) ÷ wall thickness, as this tab does | TSRA Review ch. 46, PDF p. 356 (the FRCS Atlas draft states (P × r) ÷ 2h) |
+| AV node: the Atlas places it "at the anteroseptal commissure". TSRA puts the node at the centre of Koch's triangle, with the His bundle running toward the anteroseptal commissure, as this tab does | TSRA Review ch. 45, PDF p. 351 (the FRCS Atlas draft states the node lies at the commissure) |

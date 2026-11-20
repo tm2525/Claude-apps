@@ -194,3 +194,46 @@ Added 20 November 2026 from "FRCS Atlas: single-PDF study compilation" (19 Novem
 - Distinguish paresis, eventration, herniation and adjacent volume loss.
 - Plication changes mechanics, not nerve function; show symptoms and functional impact attributable to the diaphragm first.
 - A traumatic structural defect needs a different plan, with attention to associated injuries.
+
+## Chest wall, pectus and diaphragm: additions from the FRCS Atlas HTML builds
+Added 20 November 2026 after comparing the FRCS Atlas HTML builds (53-chapter merger ch. 39; 42-chapter merger ch. 33; Consolidated ch. 40 to 42; index_5 and Thoracic-and-Congenital chest wall and diaphragm parts) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
+
+Thoracic outlet syndrome from the same chapters is in Thoracic 19 beside the TSRA ch. 28 notes. Traumatic diaphragmatic rupture is in Thoracic 15.
+
+### Where the Atlas drafts disagree with the primary source
+| Topic | Primary source (already in this tab) | What the FRCS Atlas draft states |
+|---|---|---|
+| Chondrosarcoma and chemotherapy | TSRA ch. 27: "High grade chondrosarcoma should be treated with adjuvant chemotherapy" | Chondrosarcoma is chemo- and radio-resistant; wide R0 excision is the only curative treatment (both mergers and the worked case) |
+| Chondrosarcoma margin | TSRA ch. 27: 2 cm for low grade, 4 cm for high grade | 4 cm with one normal rib above and below (53-chapter build); 4 cm typically, 2 cm for low-grade or metastatic lesions (42-chapter build) |
+| How common | TSRA ch. 27: primary chest wall neoplasms are under 1% of all thoracic tumours | About 5% of thoracic neoplasms (42-chapter build) |
+| Chondrosarcoma site | TSRA ch. 27: 80% from the ribs, 20% from the sternum | "Anterior costochondral junction and sternum" |
+| Reconstruction threshold | TSRA ch. 27: defect over 5 cm, four or more ribs, or sternum | Over 5 cm or three to four or more ribs |
+| Bochdalek side | TSRA ch. 29 (this tab): over 90% left | 85% left |
+| Nuss bar duration | TSRA ch. 26: 2 years | 2 to 3 years |
+
+### Pectus
+| Point | Detail | Provenance |
+|---|---|---|
+| Share of deformities | Pectus excavatum is about 90% of congenital chest wall deformities | FRCS Atlas draft; not checked (TSRA ch. 26: "most common") |
+| Haller index technique | Measured on CT (or MRI) at the deepest point of the depression, end-expiration | FRCS Atlas draft; not checked |
+| Cardiac effects | RV outflow and tricuspid indentation; reduced stroke volume on exercise | FRCS Atlas draft; not checked (TSRA: RV compression, reduced filling) |
+| Nuss safety | Thoracoscopy from the right; sternal elevation (crane) in severe cases before tunnelling, to avoid cardiac or pericardial perforation. Watch for bar displacement | FRCS Atlas draft; not checked |
+| Nuss analgesia | Intercostal nerve cryoablation cuts opioid use and length of stay | FRCS Atlas draft; not checked |
+| Ravitch indications | Severe asymmetric deformity, older rigid adult chest, mixed excavatum-carinatum, failed Nuss | Mixed deformity and rotated sternum already in this tab; older rigid chest and failed Nuss are FRCS Atlas draft, not checked |
+| Carinatum bracing | Dynamic compressive bracing in flexible adolescents succeeds in over 80%; Ravitch or Abramson repair if rigid or brace-refractory | Bracing first checked (TSRA ch. 26); success rate and Abramson option FRCS Atlas draft, not checked |
+
+### Chest wall tumours
+| Point | Detail | Provenance |
+|---|---|---|
+| Imaging | Contrast CT plus MRI to show marrow, neurovascular and pleural invasion | FRCS Atlas draft; not checked |
+| Biopsy | Core or incisional biopsy placed along the future incision so the tract is excised en bloc; avoid excisional biopsy of lesions over 3 to 5 cm | Tract excision checked (TSRA ch. 27); size limit FRCS Atlas draft, not checked |
+| No reconstruction under the scapula | But beware scapular tip entrapment when ribs 5 to 6 are resected posteriorly | Scapula rule checked (TSRA ch. 27, which also lists "avoid scapular entrapment" as a reason to reconstruct); ribs 5 to 6 detail FRCS Atlas draft, not checked |
+| Materials | Rigid: titanium rib plates or bars, methylmethacrylate sandwich (anterior, lateral, sternal stability). Non-rigid: PTFE, polypropylene, Vicryl or biological mesh. Cover: latissimus dorsi, pectoralis major, VRAM or omentum, essential in irradiated or infected fields | Mesh, struts and flaps checked (TSRA ch. 27); named rigid systems and omentum FRCS Atlas draft, not checked |
+
+### Diaphragm
+| Point | Detail | Provenance |
+|---|---|---|
+| Plication after phrenic sacrifice | If one phrenic nerve must be resected for R0 thymoma resection in a fit patient, consider plication at the same operation | FRCS Atlas draft; not checked |
+
+### Worked case from the drafts
+54-year-old, 6 cm hard calcified mass on the anterior 4th to 6th costochondral junctions, core biopsy grade 2 chondrosarcoma, no metastases. The draft's answer: no neoadjuvant therapy; wide en bloc resection (ribs 3 to 7), then rigid reconstruction (titanium plates or bars plus mesh) and muscle flap cover for a 12 x 10 cm defect. Check the adjuvant chemotherapy point against TSRA ch. 27 above before quoting.
