@@ -36,7 +36,7 @@ SECTIONS = [
         ('t15', 'Cardiothoracic trauma', 'new'), ('t16', 'Trials and staging update', 'new'),
         ('t17', 'Lung function, resection complications, infection', 'new'),
         ('t18', 'Oesophagus', 'new'), ('t19', 'Benign and other thoracic conditions', 'new'),
-        ('t10', 'TSRA Primer: thoracic', 'digest'), ('thoracic', 'Course day notes', 'course')]),
+        ('t10', 'TSRA Primer: thoracic', 'digest'), ('archlung', 'Archive: lung cancer advanced', 'digest'), ('thoracic', 'Course day notes', 'course')]),
     ('cardiac', 'Cardiac', [
         ('c1', 'Mitral valve', 'topic'), ('c2', 'Tricuspid valve', 'topic'), ('c3', 'Pulmonary valve', 'topic'),
         ('c4', 'Aortic valve', 'topic'), ('c5', 'Coronary surgery', 'topic'), ('c6', 'Aorta', 'topic'),
@@ -49,7 +49,7 @@ SECTIONS = [
         ('c18', 'Heart failure surgery and rhythm devices', 'new'),
         ('c19', 'Surgical anatomy, physiology and haemodynamics', 'new'),
         ('c20', 'Transcatheter and minimally invasive surgery', 'new'),
-        ('c12', 'TSRA Primer: adult cardiac', 'digest'), ('c13', 'TSRA Primer: critical care', 'digest'),
+        ('c12', 'TSRA Primer: adult cardiac', 'digest'), ('archcardiac', 'Archive: cardiac advanced', 'digest'), ('archecho', 'Archive: echo and CT thresholds', 'digest'), ('c13', 'TSRA Primer: critical care', 'digest'),
         ('cardiac', 'Course day notes', 'course')]),
     ('congenital', 'Congenital', [
         ('g1', 'Guidelines and trials', 'topic'), ('g2', 'Lesions and operations', 'topic'),
@@ -58,9 +58,10 @@ SECTIONS = [
         ('g8', 'Embryology, physiology, palliation', 'new'), ('g9', 'Shunt lesions and septal defects', 'new'),
         ('g10', 'Arch and left heart obstruction', 'new'), ('g11', 'Right heart and conotruncal lesions', 'new'),
         ('g12', 'Venous, single ventricle and coronary anomalies', 'new'), ('g13', 'Paediatric support and intensive care', 'new'),
+        ('congfigs', 'Source figures (text)', 'digest'), ('archcong', 'Archive: congenital advanced', 'digest'),
         ('congenital', 'Course day notes', 'course')]),
     ('ref', 'Reference', [
-        ('frcs', 'FRCS syllabus map', 'ref'), ('trials', 'Trials index', 'ref'),
+        ('start', 'Start here', 'ref'), ('frcs', 'FRCS syllabus map', 'ref'), ('handbook', 'Society handbook', 'ref'), ('guidecheck', 'Guideline check', 'ref'), ('trials', 'Trials index', 'ref'),
         ('viva', 'Viva points', 'ref'), ('figures', 'Figure gallery', 'ref'), ('flagged', 'Flagged sections', 'ref')]),
 ]
 CRITICAL = [('Aortic dissection', 'c6'), ('Stridor', 't12'), ('Tension pneumothorax', 't11'),

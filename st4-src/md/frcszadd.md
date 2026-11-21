@@ -1099,3 +1099,230 @@ Added 21 November 2026. The 2026 curriculum (above) adds genomics, clinical info
 ### Sustainability
 - **Desflurane**: NHS England announced in January 2023 that it would stop using it; from **1 April 2024** use is restricted to exceptional cases. NHS Scotland stopped buying it in March 2023. Prefer intravenous anaesthesia or low-flow sevoflurane; reduce nitrous oxide use and leakage. Checked: NHS England guidance (March 2024), via search extract; the Scotland date from a secondary source.
 - The NHS net zero targets (*Delivering a Net Zero National Health Service*, 2020): **2040** for the emissions the NHS controls directly and **2045** for those it can influence. In theatre: reusable rather than single-use equipment where safe, rationalised custom packs, waste segregation, switching off equipment and ventilation when theatres are empty. The intercollegiate Green Theatre Checklist (2022) collects these measures. Checked: targets and checklist from the published documents as recalled; not re-read.
+
+# FRCS syllabus map: sections missing from the app
+
+## Unread list closed out (19 November 2026, later session)
+
+Every row of the unread list now has either a written section or a stated reason it is still open. The main new source is the TSRA Review of Cardiothoracic Surgery, 3rd edition (Brescia and Louis, 2021; 125 chapters), which Tobin supplied as a PDF. I read 21 chapters in full for the topics the list and the coverage chart showed as thinnest. Guidelines and trials that could not be fetched as PDFs were read as abstracts or summary pages, and each section says so.
+
+### Written in this session
+
+| New tab or section | Syllabus topic | TSRA Review chapters read | Other sources read |
+| --- | --- | --- | --- |
+| Thoracic 11 Pleura | 10 | 23, 24, 25 | BTS 2023 summary pages; MARS 2 abstract |
+| Thoracic 12 Airway | 16 | 40, 41 | None found |
+| Thoracic 13 Chest wall and diaphragm | 11, 12 | 26, 27, 29 | None |
+| Thoracic 14 Emphysema and lung transplantation | 13, 17 | 17, 21 | ISHLT 2021 abstract |
+| Thoracic 15 Cardiothoracic trauma | 20 | 114, 115 | None (EAST levels as quoted in the chapter) |
+| Thoracic 16 Trials and staging update | 9 | None | TNM 9 summaries; JCOG0802, VIOLET, KEYNOTE-671, CheckMate 77T abstracts or summaries |
+| Cardiac 14 Bypass and myocardial protection | 1, 2 | 49 | None |
+| Cardiac 15 Circulatory support and heart transplantation | 3, 17 | 71, 72, 74 | None |
+| Cardiac 16 Pericardium, tumours and pulmonary embolism | 7, 14 | 82, 83, 86 | None |
+| Cardiac 5, new section on indications, conduits, complications and post-infarction ruptures | 4 | 50, 51 | None |
+
+### Each row of the original list
+
+| Document | Position now |
+| --- | --- |
+| AATS 2021 type A; ACC/AHA 2022; ESC 2024 aortic; EACTS/STS 2024 | Written in Cardiac 6. Open: EACTS/STS Tables 22 to 29, ESC Marfan and Loeys-Dietz tables, ACC/AHA rows the extraction missed. The PDFs are not in this session |
+| STS 2017 resuscitation; CALS | Written in Cardiac 10 |
+| EACTS 2024 bypass, blood management, perioperative medication | Recommendation tables written in Cardiac 10; principles now in Cardiac 14 |
+| ESC/EACTS 2025 valve guideline | Tricuspid and prosthesis passages only. Open: remaining tables |
+| ESC 2024 chronic coronary syndromes | Revascularisation tables written in Cardiac 5 |
+| ESC/EACTS 2018 and ACC/AHA/SCAI 2021 revascularisation | Not read. The 2011 ACCF/AHA classes are given in Cardiac 5 from the TSRA chapter and labelled as such |
+| STS 2023 AF; ESC 2023 endocarditis | Written in Cardiac 7 and 8 |
+| ISHLT 2023 mechanical support; heart transplant listing | Sampled only. Topic now covered from TSRA chapters in Cardiac 15 |
+| AHA 2026 advisory on mismatch; JTCVS Open S2666-2736(24)00089-5 | Not found, not read |
+| JCIE regulations | Not opened. Section 1 format added above from secondary pages |
+| BTS pleural guideline 2023 | Pneumothorax in Thoracic 7; infection and malignant effusion headline recommendations in Thoracic 11. Open: full chapters and appendices |
+| Thoracic trauma: EAST, NICE NG39, ATLS | Thoracic 15 from the TSRA chapters. NICE NG39 and ATLS not read |
+| TNM 9th edition | Changes written in Thoracic 16 from summaries. Descriptor papers not read |
+| Fitness: BTS/SCTS 2010, ERS/ESTS 2009, ACCP 2013 | Not read. Check Thoracic 2 against them when the PDFs arrive |
+| ESTS mediastinal staging; NICE NG122; ERAS/ESTS 2019 | Staging statements written earlier. NG122 full text and ERAS not read |
+| Trials | JCOG0802, VIOLET, MARS 2, KEYNOTE-671, CheckMate 77T in Thoracic 16; CALGB 140503, CheckMate 816 earlier. ADAURA not read |
+| ESMO thymic; ITMIG; MGTX | Not read |
+| NICE NG115; NETT | NETT abstract earlier; selection criteria in Thoracic 14 from the TSRA chapter. NG115 not read |
+| Airway statements | None found. Thoracic 12 from the TSRA chapters |
+| Chest wall and diaphragm guidance | Thoracic 13 from the TSRA chapters |
+| ISHLT lung transplant 2021 | Abstract only; criteria in Thoracic 14 are the TSRA chapter's |
+
+### TSRA Review chapters not yet read (104 of 125)
+
+- **Thoracic:** 1 to 16, 18 to 20, 22, 28, 30 to 39, 42 to 44. Most useful next: 2 (physiology and lung function), 13 (post-pneumonectomy complications), 22 (infections and haemoptysis), 43 (mediastinal masses), 36 (oesophageal injury).
+- **Adult cardiac:** 45 to 48, 52 to 70, 73, 75 to 81, 84, 85. Most useful next: 69 (ventricular aneurysm), 70 (end-stage heart failure), 85 (pacemakers and defibrillators), 55 and 56 (aortic valve), 77 to 81 (aneurysms).
+- **Congenital:** 87 to 113, all.
+- **Trauma and critical care:** 116 to 125. Most useful next: 116 (low cardiac output), 117 (pulmonary failure), 118 (postoperative care).
+
+### Coverage estimates revised
+
+These replace the figures in the chart for the topics touched; they are estimates as before.
+
+| Topic | Before | Now |
+| --- | --- | --- |
+| 1 Cardiopulmonary bypass | 15% | 60% |
+| 2 Myocardial protection | 10% | 35% |
+| 3 Circulatory support | 15% | 70% |
+| 4 Ischaemic heart disease | 40% | 65% |
+| 7 Miscellaneous cardiac | 30% | 55% |
+| 10 Pleura | 35% | 75% |
+| 11 Chest wall | 10% | 65% |
+| 12 Diaphragm | 10% | 70% |
+| 13 Emphysema and bullae | 20% | 60% |
+| 14 Pericardium | 30% | 70% |
+| 16 Airway | 25% | 65% |
+| 17 Transplantation and heart failure surgery | 5% | 55% |
+| 20 Cardiothoracic trauma | 15% | 65% |
+
+Critical conditions: stridor now has a topic (Thoracic 12); haemothorax and tension pneumothorax are in Thoracic 11 and 15; tamponade and constriction in Cardiac 16; complications of coronary surgery in Cardiac 5.
+
+### The app
+
+Rebuilt on 19 November 2026 with a new layout, 24 drawings for the new tabs, a trials index, a viva page and a figure gallery: https://tm2525.github.io/Claude-apps/st4/
+
+## Reading status, 19 November 2026, 13:30
+
+**Second tranche of the TSRA Review read and written up (9 more chapters; 30 of 125 in total).**
+
+| New tab | Chapters read |
+| --- | --- |
+| Cardiac 17 Critical care after cardiac surgery | 116, 117, 118 |
+| Cardiac 18 Heart failure surgery and rhythm devices | 69, 70, 85 |
+| Thoracic 17 Lung function, resection complications, infection and haemoptysis | 2, 13, 22 |
+
+Revised estimates: critical care 40% to 70%; general thoracic management 45% to 65%; transplantation and heart failure surgery 55% to 70%; miscellaneous cardiac 55% to 65%. Respiratory failure after thoracic surgery and low cardiac output now each have a section written from a read source.
+
+**TSRA Review chapters still unread (95).**
+
+- **On the syllabus, next in line (25):** 1, 3, 12 (anatomy, bronchoscopy, resection technique); 42, 43 (mediastinum); 36 (oesophageal injury); 45 to 48 (cardiac anatomy, physiology, haemodynamics, echo); 52 (catheterisation); 55, 56 (aortic valve); 59 to 61 (mitral); 65 (tricuspid); 75 to 81 (dissection and aneurysms); 84 (arrhythmia surgery).
+- **Covered in depth already from guidelines, so lower yield (20):** 4 to 11, 14, 15 (lung cancer); 53, 54, 57, 58, 62 to 64, 66, 67, 68 (valve and coronary combinations, transcatheter valves, endocarditis, minimal access).
+- **Congenital (27):** 87 to 113.
+- **Not a stand-alone syllabus topic (16):** 16, 18, 19, 20 (congenital lung, benign tumours, interstitial disease, procurement); 28, 44 (thoracic outlet, sympathectomy); 30 to 35, 37 to 39 (oesophagus); 73 (cardiac procurement).
+- **Trauma and critical care remainder (7):** 119 to 125 (paediatric intensive care, ECMO management, resuscitation, ethics). ECMO and resuscitation are already written from other chapters.
+
+**Guidelines and papers still unread** are unchanged from the list above: they need the PDFs, which are not in this session.
+
+## Reading status, 19 November 2026, 14:00
+
+**Third tranche of the TSRA Review (6 more chapters; 36 of 125 in total).** Ch. 42 and 43 are a new section in Thoracic 5 (mediastinum); ch. 36 in Thoracic 15 (oesophageal perforation and corrosive injury); ch. 84 in Cardiac 7 (Cox-Maze); ch. 55 and 56 in Cardiac 4 (aortic stenosis and regurgitation, American 2020 classes).
+
+**Still unread on the syllabus (19 chapters):** 1, 3, 12; 45 to 48; 52; 59 to 61; 65; 75 to 81. The other groups listed above are unchanged: 20 lower-yield, 27 congenital, 16 off-syllabus and 7 trauma and critical care chapters, 89 in all.
+
+**PDFs.** The guideline PDFs were attached to other chats. Attachments do not carry across chats, and this Project holds no files, so none could be read in this session.
+
+## Reading status, 19 November 2026, 14:20
+
+**Fourth tranche of the TSRA Review (6 more chapters; 42 of 125 in total).** Ch. 76 to 81 are a new section at the end of Cardiac 6: type B dissection, the root and its operations, American size thresholds, the arch, thoracoabdominal aneurysm and TEVAR. Ch. 75 (type A) was left unread because Cardiac 6 already covers type A from the 2021 to 2024 guidelines.
+
+**Still unread on the syllabus (13 chapters):** 1, 3, 12; 45 to 48; 52; 59 to 61; 65; 75. The other groups are unchanged (20 lower-yield, 27 congenital, 16 off-syllabus, 7 trauma and critical care): 83 in all.
+
+## Reading status, 19 November 2026 (later): all syllabus chapters read
+
+The 13 syllabus chapters that were outstanding have been read in full and written up, in the doc and the app.
+
+| Chapter | Written in |
+| --- | --- |
+| 75 Type A dissection (the half previously skipped) | Cardiac 6, section "Type A dissection: textbook account" |
+| 59, 60, 61 Ischaemic and degenerative mitral regurgitation, mitral stenosis | Cardiac 1 |
+| 65 Tricuspid regurgitation | Cardiac 2 |
+| 52 Catheterisation and intervention | Cardiac 5 |
+| 48 Echocardiography | Cardiac 9 |
+| 45, 46, 47 Cardiac anatomy, physiology, haemodynamics | New tab Cardiac 19 |
+| 1 Thoracic anatomy; 12 Resection technique | Thoracic 9 |
+| 3 Endoscopic evaluation | Thoracic 12 |
+
+**Count.** 55 of 125 TSRA Review chapters read. No syllabus chapter is left. 70 remain: 20 lower-yield adult (4 to 11, 14, 15, 53, 54, 57, 58, 62 to 64, 66 to 68), 27 congenital (87 to 113), 16 off-syllabus (16, 18 to 20, 28, 30 to 35, 37 to 39, 44, 73), 7 trauma and critical care (119 to 125).
+
+**Limits of this batch.**
+
+- Classes of recommendation in the mitral and tricuspid sections are the 2020 ACC/AHA guideline as quoted by the textbook, not the ESC/EACTS 2025 guideline. The European thresholds earlier in each tab take priority for the exam.
+- Tables in ch. 47 (haemodynamic formulas, drug effects) and ch. 48 (several grading tables) were scrambled in the PDF text. Rows that could not be read with confidence were left out, and the normal-values table carries a warning.
+- One statement is from memory and marked as such: the CALGB 140503 result in Thoracic 9.
+- The guideline PDFs sent in other chats are still unread; they are not available in this chat.
+
+## Atlas compilation received, 19 November 2026 (17:48): what is in it and what has been read
+
+The attached "FRCS Atlas" PDF has 1070 pages: 16 pages of short teaching notes, then the source PDFs. Page numbers are those of the compilation.
+
+| Source (pages) | Status |
+| --- | --- |
+| CALGB 140503 (934 to 943) | Abstract read; in Thoracic 16. The memory item in Thoracic 9 is now sourced |
+| CheckMate 816 (921 to 933) | Abstract read; in Thoracic 16 |
+| NETT (906 to 920) | Abstract read; in Thoracic 16 |
+| R classification for TNM 9, JTO 2024 (996 to 1016) | Abstract and definitions read; in Thoracic 16 |
+| NICE NG122 (844 to 894) | Staging, fitness and surgery recommendations read; in Thoracic 16. Rest unread |
+| ERAS/ESTS 2019 (669 to 693) | Summary table and three sections read; in Thoracic 16. Rest unread |
+| Atlas teaching notes (1 to 16) | First 4 pages read; not yet used |
+| ESTS revised preoperative node staging guideline (1031 to 1042) | Unread |
+| ESMO thymic tumours 2015 (980 to 995) | Unread |
+| BTS pleural guideline 2023, full text and appendices (212 to 225, 453 to 518, 944 to 979) | Unread in full; earlier doc entries used summaries |
+| Pulmonary contusion and flail chest (895 to 905) | Unread |
+| Pulmonary function tests, BJA Education 2019 (1017 to 1024) | Unread |
+| ESC endocarditis 2023 (519 to 613) | Unread in this chat |
+| EACTS perioperative medication 2024 (614 to 668) | Unread in this chat |
+| ISHLT mechanical circulatory support 2023 (226 to 447) | Unread in this chat |
+| ACC/AHA adult congenital 2025 (694 to 830) | Unread in this chat |
+| London Deanery congenital teaching (120 to 211) | Unread in this chat |
+| Blalock-Taussig shunt review; neonatal cardiac emergencies; pulmonary artery banding (831 to 843, 1025 to 1030) | Unread in this chat |
+| Prosthesis-patient mismatch article 2026 (1043 to 1046); pulmonary vascular resistance debate (448 to 452) | Unread |
+| Lung nodule slide deck (1047 to 1069) and duct image (1070) | Unread; images, need viewing page by page |
+| ST4 course tab exports and the course programme (17 to 119) | Not needed: these are copies of this doc. The programme is excluded by request |
+
+Not in the compilation, so still unavailable: ESC/EACTS 2025 valve guideline, ACC/AHA 2022 and ESC 2024 aortic guidelines, EACTS/STS 2024 aortic guideline, revascularisation guidelines, ADAURA, MGTX.
+
+## Source archive received, 19 November 2026 (19:34): full-read log
+
+The zip "ST4-source-files" holds 76 files, about 3,400 PDF pages, and includes guidelines that were not in the atlas: ESC/EACTS 2025 valve (ezaf276), ACC/AHA 2022 aortic, EACTS/STS 2024 aortic (ezad426), ESC 2024 guidelines (ehae177, ehae179), ehaf194, EACTS 2024 guidelines (ezae352, ezae354, ezae355), the 2026 curriculum and syllabus, the resuscitation after cardiac surgery consensus, and two slide decks.
+
+From this point each source is read from first page to last before it is written up, and logged here.
+
+| Source | Read in full |
+| --- | --- |
+| CALGB 140503 (NEJMoa2212083) | Yes, 19 Nov |
+| NICE NG122 | Yes, 19 Nov |
+| CheckMate 816 and NETT: read in full 19 Nov (21:30). R classification, ERAS/ESTS | No: abstract or summary table only so far |
+| Every other file in the zip and atlas | Not yet |
+
+A single reply can take in roughly 150 to 200 pages of dense text, so the archive needs about 20 further passes of this size.
+
+**Full-read log, 19 November 2026, 21:30.** Read first page to last and written up in Thoracic 16: CALGB 140503, NICE NG122, CheckMate 816, NETT. Next in order: ERAS/ESTS 2019, R classification paper, ESTS node staging guideline, ESMO thymic, BTS pleural 2023 full guideline, flail chest, pulmonary function tests; then ESC/EACTS 2025 valve, the aortic guidelines, and the rest. The app is also published at a second address, https://tm2525.github.io/Claude-apps/frcs/, built from the same source as the st4 address.
+
+## Reading status, 20 November 2026: everything read in full
+
+All 125 TSRA Review chapters and every source in the zip and atlas have now been read first page to last; reference lists were not read. Each section in the doc names its source and pages. Reading was done by reader agents (one per source or page range), each checking numbers, classes and levels against the source before writing.
+
+| Source | Where it went |
+| --- | --- |
+| TSRA ch. 4 to 11, 14, 15 (lung cancer) | Thoracic 1, 3, 5, 6, 9 |
+| TSRA ch. 16, 18 to 20, 28, 30 to 35, 37 to 39, 44 | Thoracic 18 Oesophagus, 19 Benign and other, 14 |
+| TSRA ch. 53, 54, 57, 58, 62 to 64, 66 to 68, 73 | Cardiac 2, 4, 5, 8, 11, 15, 20 |
+| TSRA ch. 87 to 113 (congenital) | Congenital 3, 8 to 13 |
+| TSRA ch. 119 to 125 | Congenital 13, Cardiac 10, 15, 17 |
+| ESC/EACTS 2025 valvular heart disease | Cardiac 1, 2, 4, 8, 9, 10, 20 |
+| EACTS/STS 2024 aortic; ACC/AHA 2022 aortic; ESC 2024 peripheral and aortic; AATS 2021 type A consensus | Cardiac 6, 9, 5, 10 |
+| ESC 2024 chronic coronary syndromes | Cardiac 5, 9, 18 |
+| ESC 2023 endocarditis; AHA 2026 and 2022 statements; endocarditis papers | Cardiac 8, 2, 11 |
+| ISHLT 2023 mechanical circulatory support | Cardiac 15, 17 |
+| ACC/AHA 2025 adult congenital | Congenital 3 |
+| EACTS 2024 bypass, blood management, perioperative medication | Cardiac 14, 10, 17, 7, 15 |
+| STS 2023 AF surgery; resuscitation after cardiac surgery consensus; CALS paper | Cardiac 7, 17 |
+| BTS 2023 pleural guideline, summaries, appendices, pneumothorax appendix | Thoracic 11 |
+| R classification (TNM 9), ESTS node staging, ESMO thymic, pulmonary function tests, ERAS/ESTS, CALGB 140503, CheckMate 816, NETT, NICE NG122 and pathways, EAST flail chest, UK sarcoma | Thoracic 1, 2, 4, 5, 13, 15, 16, 17 |
+| Valve technique papers, tricuspid trial, PPM, PVR | Cardiac 1, 2, 4, 11, 19 |
+| Congenital teaching set, technique and arch papers, neonatal emergencies | Congenital 8 to 13 |
+| 2026 curriculum and syllabus | This tab, "Curriculum structure" and "Syllabus map" parts |
+| Slide decks, course notes, atlas teaching notes | Thoracic 1, 4, 16 and short notes across tabs |
+
+**Not read, by choice:** the three ST4 course packs, master reference, programme and the society handbook docx (copies of this doc), and the second copy of the 2025 valve guideline.
+
+**How to use the new material.** American guidance (ACC/AHA, AHA, STS, AATS) is labelled in each heading; for the UK exam the ESC/EACTS guidance takes priority. Where a source contradicts itself or prints an obvious error, the notes say so and give the printed text rather than a correction. Some recommendations appear twice where two readers covered overlapping pages.
+
+## FRCS Atlas HTML builds compared, 20 November 2026
+
+The 28 HTML files in the "HTML" zip (18 distinct; the rest identical copies) were compared with this doc, topic by topic, by nine checker agents. Four builds mostly embed the text of 33 source PDFs, all already read in full, so the comparison covered the teaching text: the 53- and 42-chapter mergers, the 14-, 24- and 31-chapter updaters, the aortic chapters, the valve manuscript and the smaller builds.
+
+Only points not already in the course were added, each under a heading "\<topic>: additions from the FRCS Atlas HTML builds" at the end of its tab, saying whether it was checked against a primary source. The Atlas describes itself as unreviewed teaching drafts, so many additions are marked "FRCS Atlas draft; not checked against a primary source".
+
+**Where the drafts conflict with primary sources** the primary version is given and the Atlas claim shown beside it. Examples: endoleak sac growth 5 mm in the Atlas against 10 mm in EACTS/STS and ESC; left main PCI at SYNTAX 33 or more called Class III (2018) where ESC 2024 gives IIb B; 2021 rather than 2025 ESC/EACTS valve thresholds for asymptomatic aortic regurgitation and early mitral repair; several misquotes of the 2025 adult congenital guideline (tabled in Congenital 3); pneumothorax recurrence and persistent air leak timing against BTS 2023; post-pneumonectomy oedema mortality and onset against TSRA.
+
+**Corrections made to existing content:** endoleak type Ic definition in Cardiac 9 brought into line with EACTS/STS; the mitral repair antithrombotic row in Cardiac 10 now gives both the EACTS 2024 (aspirin) and ESC/EACTS 2025 (anticoagulation, IIa B) positions; the CTSN pacemaker figure in Cardiac 7 that had been marked "from memory" replaced. The AAST heart injury scale (TSRA ch. 114) was added to Thoracic 15.
