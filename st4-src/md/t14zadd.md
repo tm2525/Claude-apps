@@ -105,7 +105,7 @@ The TSRA chapters in this tab (ch. 17, 20, 21) and the NETT paper do not cover m
 | Point | Detail | Provenance |
 |---|---|---|
 | DCD donors | Controlled donation after circulatory death (Maastricht category III) gives outcomes similar to brain-dead donors in selected cases | FRCS Atlas draft; not checked |
-| Ex vivo lung perfusion | Normothermic perfusion of retrieved lungs for 4 to 6 hours to reassess function, clear oedema and recruit marginal or DCD lungs; the draft says it expands usable donors by 15 to 20% with similar survival | FRCS Atlas draft; not checked |
+| Ex vivo lung perfusion | Normothermic perfusion of retrieved lungs for 4 to 6 hours to reassess function, clear oedema and recruit marginal or DCD lungs; the draft says it expands usable donors by 15 to 20% with similar survival (21 November 2026: for the conversion rates actually reported in the trials, see the ex vivo lung perfusion section added today: DEVELOP-UK, NOVEL and INSPIRE) | FRCS Atlas draft; not checked |
 | Viva trap | Static storage and ex vivo perfusion are preservation methods, not donor selection criteria | FRCS Atlas draft (Consolidated ch. 25); not checked |
 | Intraoperative support | Central VA-ECMO has largely replaced full bypass: lower heparin (ACT about 180 to 220 s), less bleeding, transfusion and primary graft dysfunction, and it can be continued after surgery if PGD is severe | FRCS Atlas draft; not checked |
 | Incision choice | Bilateral anterior thoracotomies are used where feasible because sparing the sternum reduces sternal wound complications | FRCS Atlas draft; not checked |

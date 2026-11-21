@@ -501,7 +501,7 @@ This tab already holds the BTS 2023 guideline in detail, so most of the Atlas pl
 | Sarcomatoid histology | Not an operative candidate (worst prognosis, no benefit from radical surgery) | FRCS Atlas draft; not checked (TSRA ch. 24 says sarcomatoid responds least to multimodality treatment) |
 | MARS (MARS 1) | Extrapleural pneumonectomy had higher morbidity and mortality and worse survival than no EPP; EPP is now largely abandoned | FRCS Atlas draft; not checked |
 | MARS 2: extra figures | Hazard ratio for death 1.28 over the first 42 months with extended pleurectomy decortication | FRCS Atlas draft; not checked (median survival, restricted mean survival and serious adverse event ratio already in this tab from the abstract) |
-| First-line systemic therapy | CheckMate 743: nivolumab plus ipilimumab, with the larger gain in non-epithelioid disease; platinum-pemetrexed with or without bevacizumab or pembrolizumab remain options | FRCS Atlas draft; not checked (TSRA ch. 24 mentions nivolumab only as second line) |
+| First-line systemic therapy | CheckMate 743: nivolumab plus ipilimumab, with the larger gain in non-epithelioid disease (corrected 21 November 2026: NICE TA818 funds nivolumab plus ipilimumab for all histologies, ECOG 0 to 1 — see the mesothelioma first-line systemic trials section added today); platinum-pemetrexed with or without bevacizumab or pembrolizumab remain options | FRCS Atlas draft; not checked (TSRA ch. 24 mentions nivolumab only as second line) |
 | ASCO 2025 guideline | Cytoreductive surgery considered only in highly selected, favourable patients with full staging and expert multimodality care | FRCS Atlas draft (Thoracic-and-Congenital); not checked |
 
 ### Chylothorax

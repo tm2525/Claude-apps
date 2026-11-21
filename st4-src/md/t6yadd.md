@@ -117,3 +117,20 @@ Remon J, Soria J-C, Peters S, on behalf of the ESMO Guidelines Committee. eUpdat
 ### To do
 
 Read the 2025 full text (Annals of Oncology, open access) and add its surgical recommendations with levels and grades. These cover extent of resection and segmentectomy, nodal dissection, minimally invasive approaches, perioperative chemo-immunotherapy, PORT, superior sulcus tumours, SABR for operable patients, and follow-up imaging. Then mark where it differs from NICE NG122.
+
+## Guideline register update: mesothelioma documents and the ESMO 2025 NSCLC guideline
+
+Added 21 November 2026. This updates two lines of the guideline table above: the ERS/ESTS/EACTS/ESTRO 2020 mesothelioma statement, marked "from memory", and the ESMO 2025 early NSCLC status note. Sources are cited in full where they are written up (Thoracic 11, mesothelioma sections added 21 November 2026).
+
+### Mesothelioma: what is current
+| Document | Status on 21 November 2026 | Where in the notes |
+|---|---|---|
+| BTS guideline for the investigation and management of malignant pleural mesothelioma (Woolhouse, Thorax 2018;73 Suppl 1) | Current UK guideline; the BTS 2023 pleural guideline excludes mesothelioma and points to it. No EPP (B); no EPD outside a trial (D); talc or IPC (A) | Thoracic 11 |
+| ESMO Clinical Practice Guideline (Popat, Ann Oncol 2022;33:129-142, online 2021) | Current ESMO guideline; no eUpdate listed on esmo.org. Allows macroscopic complete resection in selected patients [III, C]; nivolumab plus ipilimumab first line [I, A] | Thoracic 11 |
+| NICE TA818 nivolumab plus ipilimumab (August 2022) | Recommended, ECOG 0 to 1, any histology, up to 2 years | Thoracic 11 |
+| NICE TA1125 pembrolizumab plus chemotherapy | Terminated appraisal; no recommendation | Thoracic 11 |
+| MARS 2 (Lancet Respir Med 2024) | Postdates both guidelines; supports BTS against the ESMO statement on selected resection | Thoracic 11 |
+| ERS/ESTS/EACTS/ESTRO 2020 statement | Not re-read today; its line above remains "from memory" | |
+
+### ESMO 2025 early and locally advanced NSCLC (Zer et al., Ann Oncol 2025;36(11):1245-1262)
+A second attempt on 21 November 2026 found no openable full text: no PMC or Europe PMC record surfaced, the Annals of Oncology and DOI links were refused, the SKKU repository has only the abstract, and the esmo.org eUpdate page (September 2021) does not link the 2025 document. The status note above stands: its recommendations, levels and grades are not in these notes.

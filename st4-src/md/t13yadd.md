@@ -179,3 +179,104 @@ Added 21 November 2026 from: Schumer EM, Blackmon SH. Chest wall tumors. TSRA Re
 
 ### Not yet sourced (left out rather than written from memory)
 Sternal resection technique and its sequelae, repeat chest wall surgery, titanium systems and methyl methacrylate sandwich, the named rigid versus non-rigid comparison series, and flap choice by defect site (anterior, lateral, posterior, sternal) were not confirmed against a primary source in this session, because the shared web search allowance ran out before chest wall sources were found. The FRCS Atlas rows in the Atlas section above remain unchecked.
+
+## Chest wall reconstruction: materials, rigid against non-rigid evidence, and flap choice by site
+
+Added 21 November 2026 from: Sanna S, Brandolini J, Pardolesi A, et al. Materials and techniques in chest wall reconstruction: a review. J Vis Surg 2017;3:95, doi:10.21037/jovs.2017.06.10 (read from the online full text); Colella S, Brandimarte A, Marra R, et al. Chest wall reconstruction in benign and malignant tumors with non-rigid materials: an overview. Front Surg 2022;9:976463, doi:10.3389/fsurg.2022.976463 (systematic review; read from the online full text); Girotti PNC, Bianchi F. Chest wall reconstruction, prosthesis and allografts: a narrative review. J Thorac Dis 2023;15(12):7077–7087, doi:10.21037/jtd-23-650 (read from the online full text); Weyant MJ, Bains MS, Venkatraman E, et al. Results of chest wall resection and reconstruction with and without rigid prosthesis. Ann Thorac Surg 2006;81:279–285, doi:10.1016/j.athoracsur.2005.07.001 (abstract only); Arnold PG, Pairolero PC. Chest-wall reconstruction: an account of 500 consecutive patients. Plast Reconstr Surg 1996;98:804 (abstract only). This settles several "FRCS Atlas draft; not checked" rows in the Atlas section above (named titanium systems, omentum, methyl methacrylate).
+
+### When to rebuild the skeleton
+| Defect | Usual practice | Source |
+|---|---|---|
+| Under about 5 cm | Soft tissue only | Sanna; Colella; TSRA ch. 27 |
+| Over about 5 cm, or more than 4 ribs, especially anterolateral and full thickness | Skeletal reconstruction (risk of lung herniation and paradoxical movement) | Sanna |
+| Anterior or lateral over 4 to 5 cm | Rigid prosthesis "usually considered mandatory"; lateral defects of 5 to 6 cm or less can be managed with a muscle flap or soft mesh | Girotti 2023 |
+| Apicoposterior, under the scapula, up to about 10 cm | Often no skeletal repair: scapula and shoulder girdle support it | Sanna; Colella |
+| Posterior below the 4th rib | Reconstruct: the scapular tip can catch in the defect | Sanna |
+| Partial sternal resection (under a third of the sternum) | Rigid repair may not be needed | Girotti 2023 |
+
+None of these is an agreed guideline; all three reviews say there are no firm criteria. Goals (Sanna): obliterate dead space, restore rigidity, preserve breathing mechanics, protect the viscera, give soft tissue cover, limit deformity, allow adjuvant radiotherapy.
+
+### Materials
+| Material | How it is used | Problems and numbers |
+|---|---|---|
+| Polypropylene, polyester mesh | Often doubled, sutured under tension to ribs and fascia | Infection 10 to 25%, sometimes needing removal (Sanna; Girotti, removal about 10%) |
+| PTFE (Gore-Tex, usually 2 mm) | Watertight, flexible, little foreign-body reaction; stretched over the defect and tied to drilled ribs with heavy permanent suture | Absolutely contraindicated in an infected field. If infected but the patient is not septic, removal can wait until scar has formed, about 6 to 8 weeks (Seder and Rocco, quoted by Sanna) |
+| Vicryl (absorbable) | Option when infection is present | Gives no lasting support |
+| Biological (bovine pericardium, porcine or human dermal matrix) | Can lie directly on lung and viscera; better resistance to infection | Stability but not true rigidity; cost. Porcine dermis series (D'Amico, 11 patients): morbidity 45%, wound infection 27% |
+| Methyl methacrylate (MMA) sandwich | MMA between two mesh layers, shaped on the back table (exothermic set) or in situ; for large anterior and lateral defects | Not permeable (seroma, infection), too rigid (pain), can fracture with sharp edges. Wound complications 10 to 20% at 90 days, removal about 5%. Considered "somewhat outdated" for the sternum (Aranda 2024). Girotti's rib-like modification keeps intercostal spaces open and cut wound complications from about 30% to 10% |
+| Titanium bars and plates | STRATOS (rib clips), MatrixRIB and MDF Medica (bars with screw holes); Borrelly steel staple-splint in the 1990s; bicortical screws, at least three each side | Bar fracture 0 to 11%; dislocation from screw-length mismatch or stripped holes; pain. Inert and MRI-compatible. Combined with mesh and a muscle flap in cancer surgery. Billè series (18 patients): morbidity 16.6%, wound infection 11.1%, no deaths |
+| Custom 3D-printed titanium | Oncological and trauma cases | Weight, cost, cannot be adjusted in theatre; little clinical data |
+| Allograft (cryopreserved sternum or ribs) | Fixed with titanium plates, covered with pectoralis | Revascularises and resists infection; Marulli multicentre (18 patients, 36 months): no graft-related complications |
+
+### Rigid against non-rigid: the evidence
+| Series | Patients | Finding |
+|---|---|---|
+| Weyant 2006 (single centre, 1995–2003) | 262; median defect 80 cm², median 3 ribs; rigid 42.7%, non-rigid 37%, none in 53 | Mortality 3.8% (4 of 10 deaths after pneumonectomy with chest wall resection); respiratory failure 3.1%. Defect size was the strongest predictor of complications. Authors linked their low respiratory failure rate to rigid repair for defects likely to flail; pneumonectomy plus chest wall resection only in highly selected patients (abstract) |
+| MD Anderson, over 1,000 resections (TSRA ch. 27) | | No difference in pulmonary complications; odds rose with each extra rib |
+| Spicer 2016 (in Colella) | 427: 82 rigid, 345 non-rigid | No difference in complications or mortality; complications tracked extent of resection (ribs, lobectomy, pneumonectomy), not technique |
+| Kilic 2006 (in Colella) | 59 anterior defects over 5 cm: 21 PTFE, 38 MMA sandwich | No mortality difference; paradoxical movement more frequent with PTFE |
+| Colella 2022, pooled non-rigid | 16 studies, 1,089 patients | 30-day mortality 0 to 5.4%; infection 2 to 17.3% per study; no gold standard |
+
+Viva line: no material has been shown better than another; reconstruct according to size and site, and the extent of resection (ribs, lung) drives pulmonary complications more than the choice of prosthesis. Average complication rates across series are 24 to 46%, about a quarter respiratory (Girotti).
+
+### Flaps
+| Flap | Supply | Best for | Points |
+|---|---|---|---|
+| Pectoralis major | Thoracoacromial (dominant); 6th intercostal perforators from the internal mammary | Sternal and anterosuperior defects | Medial two-thirds or full island; reaches the xiphoid; can fill apical dead space; keep the other side for a future resection |
+| Latissimus dorsi | Thoracodorsal (from subscapular) | Whole ipsilateral wall: anterolateral, lateral, posterior; intrathoracic space through a 2nd or 3rd rib window; free flap | "Workhorse"; up to 105 cm² (women) and 195 cm² (men); seroma up to 79%; reduced abduction and strength usually recover within a year |
+| Rectus abdominis: VRAM | Superior or inferior epigastric (both rectus flaps) | Long vertical defects, total sternectomy | Robust skin island |
+| Rectus abdominis: TRAM | Epigastric system | Anterolateral defects up to about 40 cm | Abdominal hernia about 13% |
+| Omentum | (not stated in the sources) | Anterior defects when pedicled or free flaps fail or are unsuitable | Laparotomy or laparoscopy; skin graft on top; seroma, partial secondary healing, intra-abdominal morbidity: a fallback |
+| Free flaps (latissimus, parascapular, tensor fasciae latae, TRAM) | Internal mammary recipients anteriorly, thoracodorsal laterally; cephalic-thoracoacromial AV loop | Local muscles resected, injured or irradiated | Low donor morbidity when closed primarily |
+
+!fig f26_flap_sites | Chest wall defect site and the first-choice skeletal and flap cover, with fallbacks. Drawn for these notes from Sanna et al., J Vis Surg 2017, and Colella et al., Front Surg 2022 (schematic, not to scale)
+
+### Large series: what the flaps are actually used for
+Arnold and Pairolero (500 consecutive reconstructions over 18 years, abstract): 275 tumours, 142 infected sternotomies, 119 radiation necrosis. 611 muscle flaps in 407 patients: **pectoralis major 355, latissimus 141**, others 115 (serratus, rectus, external oblique); omentum in 51. Skeletal: PTFE 116, polypropylene 55, autogenous rib 13. On average **2.3 operations** and 21 days in hospital; 15 perioperative deaths, 23 tracheostomies. Of 485 alive at 30 days, 83.1% had a healed, symptom-free chest wall at last follow-up.
+
+## Sternal resection and reconstruction, and reoperation on the chest wall
+
+Added 21 November 2026 from: Aranda JL, Gomez MT, Fuentes M, et al. Sternal resection and reconstruction: a review. J Thorac Dis 2024;16(1):708–721, doi:10.21037/jtd-23-450 (read from the journal PDF; the review gives only brief operative detail); with points from Sanna 2017, Girotti 2023 and Arnold and Pairolero 1996 (citations in the section above).
+
+### Indications
+- **Primary malignant tumours**: chondrosarcoma and osteosarcoma most often. Chondrosarcoma is insensitive to radiotherapy and chemotherapy, so complete resection is the only cure; osteosarcoma may have neoadjuvant chemotherapy.
+- **Metastases**: about 15% of sternal tumours; breast is the commonest source (also plasmacytoma, renal, melanoma, thyroid, colorectal, hepatocellular). Trend to limited palliative resection within multimodal treatment.
+- **Radiation necrosis**: once cancer is excluded, debride and close with well-vascularised flaps; avoid mesh.
+- **Sternoclavicular joint infection** failing conservative treatment (IV drug use, trauma, diabetes, dialysis, steroids).
+- Infected sternotomy: see Cardiac 17 (deep sternal wound infection and flap closure).
+
+### Work-up
+Multidisciplinary (thoracic, plastic surgery, anaesthesia, physiotherapy). Record frailty, sarcopenia, nutrition and oxygen-dependent lung disease; a frailty score of 4 or more, or severe cardiopulmonary impairment, is high risk and may need prehabilitation. Biopsy for type and grade (cultures for benign or infective lesions). CT is the most sensitive imaging but unreliable for depth of invasion; PET-CT is limited by blooming artefact.
+
+### Extent and margin
+- Partial sternectomy for localised disease; subtotal or total when more than one part of the sternum is involved.
+- Aim for R0 with a margin of at least about 3 cm. Do not spare the posterior cortex (risks an incomplete resection). R1 can be accepted next to vital structures when reconstruction is not feasible, with radiotherapy after.
+- Tumour: vertical elliptical incision taking the tumour, biopsy track and skin widely; extend to pericardium, thymus, great vessels or other organs as needed.
+- Sternoclavicular infection: inverted L incision; debride (negative-pressure dressing sometimes); if destruction is extensive resect half the manubrium with the costal cartilage and medial first rib (and second or third if involved); ipsilateral pectoralis flap.
+
+### Reconstruction by extent
+| Defect | Option |
+|---|---|
+| Partial, under a third; or distal sternum or part of the manubrium with the sternoclavicular joint kept | Rigid material may not be essential: pectoralis major advancement without detaching its insertion is preferred |
+| Subtotal or total | Rigid reconstruction in most (85% in one cited series): titanium systems now commonest (Stratos, Sternalock, MatrixRIB); MMA sandwich (Dahan technique: Kirschner wires in the cut ribs, silicone mould, injected MMA); Ley titanium "stepladder" plate; allograft sternum |
+| Synthetic mesh used | Needs muscle cover to avoid paradoxical breathing |
+| Pectoralis unavailable | Free flap; omentum protects the mediastinum, but harvest is uncertain after abdominal surgery |
+
+### Sequelae and outcomes
+| Problem | Numbers |
+|---|---|
+| Respiratory complications (main morbidity: flail, retention, atelectasis, pneumonia, failure) | 1.1 to 24.4%. In one series paradoxical breathing problems occurred in 100% of unreconstructed defects against 5.7% after reconstruction |
+| Lung function | MMA moved with the chest wall in about 92% at 6 months, with no major change in lung function |
+| Wound problems | MMA 10 to 20% at 90 days, removal about 5%; synthetic mesh infection 10 to 25%; Girotti rib-like sternectomy series (52 patients): infection 17.3%, reintervention 7.7%, no deaths (Colella) |
+| Shoulder | Sternoclavicular disruption can destabilise the shoulder; one author reported full mobility at 3 months without clavicle reconstruction |
+| Device | Migration, fracture, erosion, displacement |
+| Mortality | 0 to 7% in most series; cadaveric allograft multicentre series (58 patients): 30-day mortality 5%, morbidity 31%. Iliac graft series: complications up to 66%, mostly cardiopulmonary |
+| Survival, primary tumours | Marulli (89 patients): overall 67% at 5 and 58% at 10 years; disease-free 70% and 52%; R0 is the main prognostic factor |
+| Survival, metastases | Breast: 20 to 50% at 5 years with R0. Others: under 40% at 36 months and none at 5 years, so a conservative approach may be better |
+
+### Reoperation on the chest wall
+No primary source dedicated to repeat chest wall resection was found in this session. What the sources above do say:
+- Reoperation is common: in Arnold and Pairolero's 500 patients the average was 2.3 operations each.
+- Infected prosthesis: PTFE is removed; in a patient who is not septic removal can be delayed about 6 to 8 weeks until scar has formed (Sanna, quoting Seder and Rocco). Biological mesh or Vicryl and well-vascularised muscle are the options in a contaminated field.
+- Girotti 2023 does not address redo surgery or recurrence.
+- The earlier Atlas line that prosthesis removal does not usually cause flail once the scar has set was not confirmed by these sources.

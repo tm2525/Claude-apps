@@ -384,7 +384,7 @@ The trial papers could not be opened for these notes, so no trial figures are gi
 | IABP-SHOCK II | No survival benefit from a balloon pump in infarct-related shock, so routine IABP is no longer recommended. Guidelines differ: some give IIb, others III |
 | ECLS-SHOCK | Did not show VA-ECLS to be better than usual care in infarct-related shock. 77.7% had arrested before enrolment, 26% of deaths were from brain injury, and few patients had active LV unloading |
 | DanGer Shock | mAFP improved survival in STEMI with cardiogenic shock (benefit seen up to an age cut-off of 77 years), at the cost of more bleeding, limb ischaemia, haemolysis, device failure and kidney injury |
-| Prague OHCA | ECPR improved 30-day survival but not 6-month survival; post hoc, benefit in those without return of circulation on arrival |
+| Prague OHCA | As the guideline summarises it: "improved 30-day survival but not 6-month survival". Correction from the trial paper (JAMA 2022): the primary end point (6-month survival with good neurological outcome) was not significantly different; 30-day neurological recovery was a secondary end point (30.6% against 18.2%); post hoc, benefit in those without return of circulation on arrival |
 | Meta-analysis of 4 RCTs | ECPR improved survival after out-of-hospital arrest, most with shockable rhythms |
 | ARREST, INCEPTION | Not named in the parts of the guideline read |
 
@@ -559,3 +559,291 @@ Numbers given in the text: LVOT velocity-time integral 12 cm or more; aortic val
 | Hospitals without a tMCS programme contact an experienced centre early | I | B |
 | Cardiogenic Shock Team: critical care, heart failure and transplant cardiology, interventional cardiology, tMCS and cardiac surgery, nutrition, physiotherapy and occupational therapy, palliative care, ethics | I | B |
 | Activate the team through a single 24/7 "shock line" | I | C |
+
+## Cardiogenic shock and ECPR trials: DanGer Shock, ECLS-SHOCK, ARREST, Prague OHCA, INCEPTION
+
+Added 21 November 2026 from the five trial papers: (1) Møller JE, Engstrøm T, Jensen LO, et al. Microaxial flow pump or standard care in infarct-related cardiogenic shock (DanGer Shock). N Engl J Med 2024;390(15):1382-93; doi:10.1056/NEJMoa2312572. Read from the full text main paper (supplementary appendix not available) and the abstract. (2) Thiele H, Zeymer U, Akin I, et al. Extracorporeal life support in infarct-related cardiogenic shock (ECLS-SHOCK). N Engl J Med 2023 (online 26 August 2023); doi:10.1056/NEJMoa2307227. Read from the full text (University of Michigan copy). (3) Yannopoulos D, Bartos J, Raveendran G, et al. ARREST. Lancet 2020;396(10265):1807-16; doi:10.1016/S0140-6736(20)32338-2. Read from the full text on PubMed Central. (4) Belohlavek J, Smalcova J, Rob D, et al. Effect of intra-arrest transport, extracorporeal CPR and immediate invasive assessment and treatment on functional neurologic outcome in refractory out-of-hospital cardiac arrest (Prague OHCA). JAMA 2022;327(8):737-47; doi:10.1001/jama.2022.1025. Read from the full text on PubMed Central. (5) Suverein MM, Delnoij TSR, Lorusso R, et al. Early extracorporeal CPR for refractory out-of-hospital cardiac arrest (INCEPTION). N Engl J Med 2023;388(4):299-309; doi:10.1056/NEJMoa2204511. Read from the full text (Leiden University repository; supplement not available). Guideline rows from Byrne RA, Rossello X, Coughlan JJ, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J 2023;44:3720-826; doi:10.1093/eurheartj/ehad191, read from the full text (sections 1 to 16). All texts came through an extraction tool; numbers were taken as reported.
+
+This confirms the trial lines in the 2025 tMCS guideline section above, which were taken from the guideline's own text. ECLS-SHOCK 30-day mortality 47.8% against 49.0%, quoted earlier in this tab and in Cardiac 10 from the FRCS Atlas draft, is now checked against the paper. One correction: the guideline section above says Prague OHCA improved 30-day survival. The paper's 30-day signal was neurological recovery (a secondary end point), not survival.
+
+### Infarct-related cardiogenic shock: device trials
+!fig f22_shock_trials | Primary end points of DanGer Shock and ECLS-SHOCK (drawn for these notes from the two NEJM papers)
+
+| | DanGer Shock (NEJM 2024) | ECLS-SHOCK (NEJM 2023) |
+|---|---|---|
+| Device | Microaxial flow pump (Impella CP) plus standard care | VA-ECLS (VA-ECMO) plus usual care |
+| Design | Open-label RCT; 14 centres: Denmark 4 (215 patients), Germany 9 (135), UK 1 (10); January 2013 to July 2023 | Open-label RCT; 44 centres in Germany and Slovenia; 1:1, stratified by site |
+| Inclusion | STEMI with shock: SBP under 100 mmHg or on vasopressor, arterial lactate 2.5 mmol/L or more, LVEF under 45% | Age 18 to 80; acute MI with shock (SCAI C, D or E) and planned early PCI or CABG: SBP under 90 mmHg for over 30 minutes or catecholamines, lactate over 3 mmol/L, signs of organ hypoperfusion |
+| Key exclusions | Comatose on arrival in the cath lab after out-of-hospital arrest (GCS under 8); overt RV failure | CPR over 45 minutes before randomisation; mechanical cause of shock; peripheral arterial disease too severe for cannulae |
+| Numbers | 360 randomised; 355 analysed (179 pump, 176 control). Median age 67; 79.2% men | 420 randomised; 417 analysed (209 ECLS, 208 control) |
+| Primary end point | Death from any cause at 180 days | Death from any cause at 30 days |
+| Result | 45.8% against 58.5%; HR 0.74 (95% CI 0.55 to 0.99), P = 0.04. Number needed to treat 8 | 47.8% against 49.0%; RR 0.98 (0.80 to 1.19), P = 0.81 |
+| Harms | Composite safety (severe bleeding, limb ischaemia, haemolysis, device failure, worsening AR) 24.0% against 6.2%, RR 4.74 (2.36 to 9.55), number needed to harm 6. Renal replacement 41.9% against 26.7%, RR 1.98. Moderate or severe bleeding RR 2.06; limb ischaemia RR 5.15 | BARC 3 to 5 bleeding 23.4% against 9.6%, RR 2.44 (1.50 to 3.95). Peripheral ischaemic complications needing surgery or intervention 11.0% against 3.8%, RR 2.86. Stroke or systemic embolism 3.8% against 2.9% (not significant) |
+| Other points | Pump placed straight after randomisation (before or after revascularisation, or up to 12 hours after leaving the lab) and run at the highest performance for at least 48 hours; placed in 170 of 179 (95.0%). Benefit possibly greater with lower blood pressure at entry (subgroups not adjusted for multiplicity). Funded by the Danish Heart Foundation and Abiomed | 77.7% had been resuscitated before randomisation. Crossover: ECLS not started in 17 (8.1%) of the ECLS arm; 26 (12.5%) of controls got ECLS. Active LV unloading in only 11 of 191 (5.8%) on ECLS. Renal replacement 8.1% against 13.9% (RR 0.58, 0.33 to 1.03). Median ventilation 7 against 5 days |
+
+How to reconcile them in a viva:
+- Different patients. DanGer Shock took STEMI only, with LVEF under 45%, and excluded comatose arrest survivors and RV failure. ECLS-SHOCK took all infarct-related shock, three quarters after cardiac arrest.
+- Different devices. A microaxial pump unloads the LV. Peripheral VA-ECLS supports both circulations but raises LV afterload, and few ECLS-SHOCK patients were vented.
+- Both raised bleeding and limb ischaemia. DanGer Shock: one death prevented for every 8 treated, one composite complication for every 6.
+
+### Refractory out-of-hospital arrest: ECPR trials
+!fig f22_ecpr_trials | Primary end points of ARREST, Prague OHCA and INCEPTION (drawn for these notes from the three papers)
+
+| | ARREST (Lancet 2020) | Prague OHCA (JAMA 2022) | INCEPTION (NEJM 2023) |
+|---|---|---|---|
+| Design | Phase 2, single centre (University of Minnesota), open-label, adaptive Bayesian RCT; randomised on arrival at hospital | Single centre (Prague); March 2013 to October 2020; web randomisation stratified by sex and age | Pragmatic multicentre RCT; 10 cardiac surgical centres, 12 ambulance services, Netherlands; May 2017 to February 2021 |
+| Inclusion | Age 18 to 75; VF or pulseless VT; no ROSC after 3 shocks; fits the LUCAS compression device; transfer under 30 minutes | Age 18 to 65; witnessed arrest of presumed cardiac cause; no ROSC after at least 5 minutes of ALS; ECPR team available | Age 18 to 70; bystander CPR; initial ventricular arrhythmia; no ROSC within 15 minutes of CPR |
+| Intervention | Straight to the cath lab. Stop if 2 of 3: end-tidal CO2 under 10 mmHg, PaO2 under 50 mmHg or saturation under 85%, lactate over 18 mmol/L. Otherwise peripheral VA-ECMO, then angiography and PCI | Mechanical compression, intra-arrest transport to the cath lab, intranasal cooling if feasible; ECPR if no ROSC on arrival; then invasive assessment and treatment | ECPR at the receiving centre (no set protocol for ambulance teams) |
+| Control | Standard ACLS in the emergency department for at least 15 minutes after arrival or 60 minutes after the emergency call | Standard ACLS on scene | Conventional CPR |
+| Numbers | 30 randomised (15 each); 29 analysed (one ECMO patient withdrew consent) | 264 randomised; 256 analysed (124 invasive, 132 standard). Planned 285 | 160 randomised; 26 excluded after admission as ineligible; 134 analysed (70 ECPR, 64 conventional) |
+| Primary end point | Survival to hospital discharge | Survival at 180 days with good neurological outcome (CPC 1 to 2) | Survival at 30 days with good neurological outcome (CPC 1 to 2) |
+| Result | 43% (6/14) against 7% (1/15); risk difference 36% (95% credible interval 3.7 to 59.2); posterior probability of superiority 0.9861 | 31.5% against 22.0%; difference 9.5% (-1.3 to 20.1); OR 1.63 (0.93 to 2.85); P = 0.09 | 20% (14/70) against 16% (10/62); OR 1.4 (0.5 to 3.5); P = 0.52 |
+| Secondary | 6-month survival 43% against 0%; ECMO survivors at 6 months: mean mRS 1.3, CPC 1.16 | 30-day neurological recovery 30.6% against 18.2% (P = 0.02); 30-day cardiac recovery 43.5% against 34.1% (P = 0.12) | 6 months, CPC 1 to 2: 20% against 16%, OR 1.3 (0.5 to 3.3). Survival to discharge 20% in both arms |
+| Stopping and safety | Stopped at the first interim analysis: posterior probability crossed the 0.986 boundary; NHLBI ended it in June 2020 | DSMB stopped it at the futility boundary at 256; authors say possibly underpowered (control survival higher than expected). Any bleeding 31% against 15%. 20 crossovers | 52 of 70 got ECPR; flow established in 46. Median arrest to ECMO flow 74 minutes (IQR 63 to 87). Serious adverse events per patient 1.4 against 1.0 |
+
+Points that come up:
+- Only the small, single-centre, highly selected trial (VF, short transfer, metabolic stop rules) was positive.
+- Prague OHCA missed its primary end point; its signal was secondary and short term.
+- INCEPTION shows what happens when ECPR is spread across ordinary systems: arrest-to-flow was 74 minutes and a quarter of the ECPR arm never got it. Set this against the 60-minute window in the 2025 tMCS guideline (section above).
+
+### Guideline position: ESC 2023 acute coronary syndromes (Recommendation Table 9, cardiogenic shock)
+Written before DanGer Shock was published (2024); the 2025 tMCS guideline above is newer.
+
+| Recommendation | Class | Level |
+|---|---|---|
+| Immediate angiography and PCI of the infarct-related artery (if indicated) in shock complicating ACS | I | B |
+| Emergency CABG for ACS-related shock if PCI of the infarct-related artery is not feasible or fails | I | B |
+| Haemodynamic instability: emergency surgical or catheter repair of mechanical complications, after Heart Team discussion | I | C |
+| STEMI with shock: fibrinolysis if primary PCI is not available within 120 minutes and mechanical complications are excluded | IIa | C |
+| Severe or refractory shock: short-term mechanical circulatory support may be considered | IIb | C |
+| Routine IABP in shock without mechanical complications | III | B |
+
+Supporting text (section 7.2): shock affects about 4 to 11% of ACS. IABP-SHOCK II showed no fall in 30-day, 1-year or 6-year mortality with routine IABP. A 122-patient VA-ECMO trial (about 40% crossover) found no benefit from immediate VA-ECMO. Registry data linked microaxial pumps with more bleeding and higher mortality than IABP, so the 2023 guideline advised caution until further trials.
+
+Cardiac arrest rows (Recommendation Table 8): primary PCI after resuscitated arrest with persistent ST elevation (I B); routine immediate angiography after resuscitated arrest in stable patients without ST elevation not recommended (III A); temperature control with fever prevention in adults unresponsive after ROSC (I B); neurological prognosis no earlier than 72 hours after admission (I C); transport to a cardiac arrest centre should be considered (IIa C).
+
+## SCAI cardiogenic shock stages A to E: 2019 classification and 2022 update
+
+Added 21 November 2026 from (1) Baran DA, Grines CL, Bailey S, et al. SCAI clinical expert consensus statement on the classification of cardiogenic shock. Catheter Cardiovasc Interv 2019;94(1):29-37 (endorsed by ACC, AHA, SCCM and STS). Full text not accessible: read from the abstract (Henry Ford Health repository) and the ACC "Ten points to remember" summary. (2) Naidu SS, Baran DA, Jentzer JC, et al. SCAI SHOCK stage classification expert consensus update: a review and incorporation of validation studies. J Soc Cardiovasc Angiogr Interv 2022;1(1):100008, published at the same time in J Am Coll Cardiol (endorsed by ACC, ACEP, AHA, ESC Association for Acute CardioVascular Care, SCCM, ISHLT and STS). Full text not accessible (PubMed Central and the journal blocked the fetch). The stage criteria below come from the Guideline Central summary of this document; the changes from 2019 come from the SCAI document page, the AHA press release and the accompanying editorial (Nathan S, O'Neill WW. The changing landscape of cardiogenic shock. JSCAI 2022;1(1):100012, read in full on PubMed Central). (3) Jentzer JC, van Diepen S, Barsness GW, et al. Cardiogenic shock classification to predict mortality in the cardiac intensive care unit. J Am Coll Cardiol 2019 (29 October); abstract only.
+
+The 2025 tMCS guideline earlier in this tab endorses SCAI as the common language but does not define the stages. ECLS-SHOCK (above) enrolled SCAI stages C to E.
+
+### The five stages
+!fig f22_scai_ladder | SCAI shock stages A to E with the 2022 criteria and the cardiac arrest modifier (drawn for these notes from Baran 2019 and the 2022 update as summarised by Guideline Central)
+
+| Stage | Meaning | Bedside | Biochemistry | Haemodynamics |
+|---|---|---|---|---|
+| A At risk | No shock, but at risk: large or previous infarct, acute or acute-on-chronic heart failure | Normal JVP; warm, well perfused; strong pulses; normal mentation | Normal lactate and renal function | SBP 100 mmHg or more (or baseline). If measured: CI 2.5 L/min/m² or more, CVP 10 mmHg or less, PCWP 15 mmHg or less, PA saturation 65% or more |
+| B Beginning | Relative hypotension or tachycardia without hypoperfusion | Raised JVP; still warm and perfused; may have crackles | Normal lactate; minimal renal impairment; BNP may be raised | SBP under 90 mmHg, MAP under 60 mmHg or a fall of over 30 mmHg from baseline; HR 100 or more |
+| C Classic | Hypoperfusion needing one intervention (drug or device) beyond fluid | Unwell, confused, cold and clammy or mottled, slow capillary refill, urine under 30 mL/h | Lactate 2 mmol/L or more; creatinine up 1.5 times (or by 0.3 mg/dL) or GFR down over 50%; raised liver enzymes and BNP | Invasive measurement strongly recommended: CI under 2.2 L/min/m², PCWP over 15 mmHg |
+| D Deteriorating | As C but worse despite initial therapy | Hypoperfusion persisting or worsening | Lactate rising and persistently over 2 mmol/L; worsening renal and liver tests | Escalating vasopressor doses, more agents, or MCS added to keep perfusion |
+| E Extremis | Actual or impending circulatory collapse | Usually unconscious; near pulseless; repeated defibrillation | Lactate 8 mmol/L or more; pH under 7.2; base deficit over 10 mEq/L | Profound hypotension despite maximal support; bolus vasopressors needed |
+
+- The B to C step is hypoperfusion: B is hypotensive or tachycardic but perfusing; C is "cold and wet".
+- 2019 wording for D: initial interventions have not restored perfusion after at least 30 minutes, so more or stronger drugs or MCS are needed. For E: often refractory arrest with ongoing CPR, sometimes ECMO-facilitated CPR.
+
+### What the 2022 update changed
+| Area | 2019 | 2022 |
+|---|---|---|
+| Cardiac arrest modifier | "A" added to any arrest needing compressions or DC shock, whatever its length (a stage B patient with VF who is defibrillated and stabilises is "BA") | Only arrest with coma (cannot respond to voice, usually GCS under 9), meaning concern for anoxic brain injury |
+| Criteria | Fuller tables of variables | Simplified; less useful variables dropped; the commonest findings for each stage highlighted, with numerical cut-offs |
+| Prognosis | Stage alone | Three-axis model: shock stage, aetiology and phenotype, and risk modifiers that cannot be changed such as age and frailty |
+| Time course | Not set out in the sources read | Patients are restaged as they deteriorate or recover; the update sets out pathways in both directions and links support (drugs, MCS) to each stage |
+| Validation | Not yet validated | Built on more than 25,000 patients in 9 mostly retrospective studies, in which stage reliably tracked mortality |
+
+### Other practical points (2019 statement, ACC summary)
+- Arterial lactate is preferred to venous; the 2.0 mmol/L cut-off is best established for arterial samples.
+- Low serum bicarbonate predicted 30-day mortality better than peak lactate.
+- Troponin T independently predicts outcome; a high troponin may mean late presentation.
+- A low BNP argues against cardiogenic shock in a hypotensive patient; a high BNP does not confirm it.
+- A pulmonary artery catheter is recommended for diagnosis and management. Patients needing a higher level of care should go quickly to an experienced shock centre.
+- Mixed shock (added systemic inflammation, with or without infection) lowers coronary perfusion pressure: another reason for invasive monitoring.
+
+### Mortality by stage: first validation
+!fig f22_scai_mortality | Unadjusted in-hospital mortality by SCAI stage in 10,004 Mayo Clinic cardiac ICU patients (drawn for these notes from the Jentzer 2019 JACC abstract)
+
+Jentzer and colleagues staged 10,004 Mayo Clinic cardiac ICU admissions (2007 to 2015; 43.1% ACS, 46.1% heart failure, 12.1% cardiac arrest) at admission. In-hospital mortality: A 3.0%, B 7.1%, C 12.4%, D 40.4%, E 67.0% (all P < 0.001). Adjusted odds ratios against stage A ranged from 1.53 to 6.80. Cardiac arrest added risk independently (adjusted OR 3.99, 95% CI 3.27 to 4.86). The pattern held in both ACS and heart failure.
+
+## Endomyocardial biopsy after heart transplantation: technique, complications and rejection grading
+
+Added 21 November 2026 from: StatPearls, Endomyocardial Biopsy (NCBI Bookshelf; PMID 32491529), read from the StatPearls site through a text-extraction tool (indications, contraindications, access, preparation, complications); Strecker T, Rösch J, Weyand M, Agaimy A. Endomyocardial biopsy for monitoring heart transplant patients: 11-years-experience at a German heart center. Int J Clin Exp Pathol 2012;6(1):55-65 (PMC3515982), read from the PMC full text through the same tool; Bruneval P, Angelini A, Miller D, et al. The XIIIth Banff Conference on Allograft Pathology: the Banff 2015 Heart Meeting Report. Am J Transplant 2017;17(1):42-53, doi:10.1111/ajt.14112, read from the eScholarship full text (it restates the ISHLT 2013 pAMR grades); PathologyOutlines.com, Heart transplant: general (R. Amita, last updated 2023) for the 2004 and 1990 cellular grades; TSRA Review 3rd ed., ch. 74 (grades and treatment) and ch. 65 (tricuspid injury), re-read. The original ISHLT papers (Stewart et al. 2005 cellular revision; Berry et al. 2013 pAMR working formulation) and the ISHLT 2022 recipient guideline could not be opened, so the class and level of surveillance recommendations are not given. This confirms the "R" grades and the 2R treatment line, which were flagged earlier in this tab as coming only from the FRCS Atlas draft.
+
+!fig f23_biopsy_route | Transvenous right ventricular endomyocardial biopsy: jugular and femoral routes, sampling site on the septum, and the complication rate in one large series. Drawn for these notes from StatPearls (Endomyocardial Biopsy) and Strecker et al. 2012
+
+### Why and when
+- Right ventricular endomyocardial biopsy is the **gold standard for acute rejection**, done **every 7 to 10 days early after transplant** (TSRA ch. 74); routine surveillance biopsies run through the first year (StatPearls).
+- Other indications (StatPearls): heart failure of unknown cause (fulminant, giant cell and eosinophilic myocarditis), infiltrative disease (amyloid, sarcoid, haemochromatosis), non-myxoma tumours, anthracycline toxicity, and ARVC only when non-invasive tests leave doubt. Yield is limited by patchy disease: sensitivity about 25% for lymphocytic myocarditis and 35% for sarcoid.
+
+### Contraindications (StatPearls)
+| Type | Examples |
+|---|---|
+| Absolute | Vegetations or stenosis on the valve to be crossed; vascular pathology on the route (aneurysm, thrombosis). Atrial myxoma is not biopsied (embolism) |
+| Relative | Coagulopathy, dual antiplatelet therapy, therapeutic anticoagulation |
+
+### Technique
+| Step | Detail | Source |
+|---|---|---|
+| Preparation | Stop anticoagulation 16 h before and restart 12 h after; INR under 1.5. Sedation, ECG, blood pressure and saturation monitoring | StatPearls |
+| Access | **Right internal jugular vein** is the usual route; femoral vein the alternative (used in 4.6% of one series because of jugular stenosis). Left ventricular biopsy is by femoral or right radial artery | StatPearls; Strecker |
+| Sheath | Seldinger technique, local anaesthetic, **7 F sheath** | Strecker |
+| Guidance | Fluoroscopy (usual) or echocardiography, with similar complication rates and times | StatPearls |
+| Route | Bioptome down the SVC, through the right atrium and across the tricuspid valve into the right ventricle | StatPearls |
+| Site | **Right ventricular side of the interventricular septum**, towards the apex | StatPearls; Strecker |
+| Samples | Several pieces to limit sampling error: **2 to 6, usually 4**. Same-day rapid processing gave a preliminary result in 4 to 6 h; six levels stained with H&E; C4d staining when antibody-mediated rejection is suspected | Strecker |
+
+Newer bioptomes are finer and more flexible than early designs (StatPearls); the sources read do not compare named bioptome types.
+
+### Complications
+| Complication | Detail |
+|---|---|
+| Overall | Severe events under 1%, minor up to 6% (StatPearls). In 1,896 transplant surveillance biopsies, serious events or sequelae **1.0% (19)** with no deaths (Strecker) |
+| Tricuspid regurgitation | Chordal or leaflet damage from repeated passes (TSRA ch. 65). Moderate or severe TR in **12** patients, **6** needing tricuspid replacement (Strecker) |
+| Perforation and tamponade | **6** in Strecker, all recovered after same-day pericardiocentesis |
+| Arrhythmia and heart block | One supraventricular tachycardia in Strecker |
+| Access | Arterial puncture, pneumothorax, haematoma, arteriovenous fistula, nerve injury, DVT (StatPearls) |
+| Embolic | Pulmonary embolism listed (StatPearls); none in Strecker |
+
+### Acute cellular rejection: ISHLT revised grading
+The revision was agreed by ISHLT in 2004 and published in 2005; it replaced the 1990 grades (0, 1A, 1B, 2, 3A, 3B, 4), which were based mainly on the amount of infiltrate and myocyte damage. A grade-by-grade mapping from 1990 to 2004 was not found in the sources read.
+
+| Grade | Histology | Action in the sources |
+|---|---|---|
+| **0R** | No rejection | None |
+| **1R** mild | Interstitial and/or perivascular infiltrate with **up to one focus** of myocyte damage | No treatment; repeat biopsy (TSRA) |
+| **2R** moderate | **Two or more foci** of infiltrate with myocyte damage | Treated with steroid (8.5% of biopsies in Strecker were 2R or 3R needing a corticosteroid course) |
+| **3R** severe | **Diffuse** infiltrate, multifocal myocyte damage, with or without oedema, haemorrhage or vasculitis | Treated; anti-thymocyte globulin kept for severe episodes (TSRA) |
+
+- With haemodynamic compromise, whatever the grade: **methylprednisolone 1 g IV daily for 3 days**, inotropes with a PA catheter if needed, then repeat biopsy **7 to 10 days after treatment ends** (TSRA ch. 74).
+- Case mix in 1,896 biopsies (Strecker): 0R 40.3%, 1R 45.1%, 2R 7.2%, 3R 1.3%. Repeated 2R or 3R led to a change of immunosuppression in 44 of 151 patients (29%).
+
+### Antibody-mediated rejection: ISHLT 2013 pathological grading (pAMR)
+Developed at consensus meetings from 2009 to 2012 and restated in the Banff 2015 heart report.
+
+| Grade | Meaning |
+|---|---|
+| **pAMR 0** | Histology and immunostaining both negative |
+| **pAMR 1 (H+)** | Histological features present, immunostaining negative |
+| **pAMR 1 (I+)** | Histology negative, immunostaining positive (C4d and/or CD68) |
+| **pAMR 2** | Both histological and immunopathological findings |
+| **pAMR 3** | Severe: immunopathological findings with myocyte necrosis, microvascular thrombosis, interstitial haemorrhage and/or mixed (polymorphic) inflammation |
+
+- **Histology**: microvascular injury with intravascular activated mononuclear cells (mostly macrophages), endothelial swelling, interstitial oedema.
+- **Immunostaining positive**: C4d multifocal or diffuse in **more than 50% of capillaries**; CD68-positive intravascular macrophages in **10% or more** of capillaries.
+- The scheme is diagnostic, not prognostic. Only **pAMR 3** is clearly linked to marked graft dysfunction; thresholds for treating the lower grades are not established. AMR is associated with donor-specific antibody (DSA), and DSA with vasculopathy and graft loss, so quantitative DSA is part of surveillance (Banff 2015).
+
+!fig f23_rejection_grading | ISHLT 2004 cellular grades (0R to 3R) with the action in the sources, and the ISHLT 2013 pAMR grades with the immunostaining thresholds. Drawn for these notes from PathologyOutlines and TSRA ch. 74 (cellular) and Bruneval et al., Banff 2015 heart report (pAMR)
+
+### Mimics on biopsy (PathologyOutlines)
+- **Quilty lesion**: endocardial collection of mostly T lymphocytes; Quilty A stays in the endocardium, Quilty B extends into myocardium (StatPearls). Not rejection.
+- **Ischaemic injury** early after transplant: necrosis out of proportion to inflammation, with neutrophils and macrophages rather than lymphocytes.
+- **Previous biopsy site**: thrombus and granulation tissue when recent, fibrosis with disordered myocytes when old.
+
+### Viva points
+- Route: right internal jugular, across the tricuspid valve, right ventricular septum; four pieces.
+- The complication that matters with repeated biopsies is tricuspid regurgitation; acutely, perforation and tamponade.
+- 2R or worse is treated; any grade with haemodynamic compromise gets pulse methylprednisolone.
+- pAMR combines histology (H) and immunostaining (I); pAMR 3 is the one tied to graft dysfunction.
+
+## Sensitisation, HLA antibodies, crossmatching and induction in heart transplantation
+
+Added 21 November 2026 from: Kobashigawa J, Colvin M, Potena L, et al. The management of antibodies in heart transplantation: an ISHLT consensus document. J Heart Lung Transplant 2018;37(5):537-547, **abstract only; full text not accessible**; American College of Cardiology, Management of the Highly Sensitized Patient Awaiting Heart Transplant (Expert Analysis, 22 December 2014; authors not shown on the page), read in full through a text-extraction tool (it describes one US centre's practice); Bruneval et al., Banff 2015 heart report (above), Table 2 for DSA monitoring; Khush KK, Cherikh WS, Chambers DC, et al. ISHLT Registry: thirty-sixth adult heart transplantation report, 2019. J Heart Lung Transplant 2019;38(10):1056-1066, doi:10.1016/j.healun.2019.08.004, read from the PMC full text. The ISHLT 2022 guideline for the care of heart transplant recipients (Velleca A, et al. J Heart Lung Transplant 2023;42(5):e1-e141) could not be opened, so its classes and levels for crossmatching, desensitisation and induction are not given. NHSBT's own antibody terms were not checked.
+
+### Sensitisation
+- A sensitised patient has **pre-formed anti-HLA antibodies**. Causes: **pregnancy, transfusion, ventricular assist devices, previous transplant** (ACC). The number of sensitised candidates is rising, probably because of mechanical circulatory support (Kobashigawa 2018).
+- Effects: longer wait for a compatible heart; hyperacute rejection; more rejection later; allograft vasculopathy (ACC; Kobashigawa). Non-sensitised recipients can also make de novo DSA after transplant, with worse outcomes (Kobashigawa).
+
+### Testing
+| Test | What it shows |
+|---|---|
+| Single-antigen bead (solid-phase) assay | Patient serum on beads each carrying one HLA antigen, read by flow cytometry: identifies and semi-quantifies each antibody as mean fluorescence intensity (MFI). **MFI above about 5,000** is treated as potentially cytotoxic |
+| C1q assay | Antibodies that bind complement (C1q) are more likely to be harmful; strong binding after 1:8 dilution is a substitute |
+| Calculated PRA (cPRA) | Percentage of the donor population carrying an HLA antigen the candidate is listed as unacceptable for; rises as more antibodies are called unacceptable. That centre considers antibody-lowering treatment when **cPRA exceeds 50%** |
+| Virtual crossmatch | Unacceptable antigens are listed so that donors carrying them are never offered. Most centres now use it **instead of a prospective crossmatch**; choosing what to avoid is a clinical judgement |
+| Prospective (cell) crossmatch | Recipient serum against donor lymphocytes for complement-dependent cytotoxicity before transplant; ties the recipient to donors close to where the serum is held |
+
+(ACC, 2014.) The existing notes give PRA over 50% as the definition of a highly sensitised recipient (TSRA ch. 74).
+
+### Desensitisation (one US centre's sequence, ACC 2014)
+| Agent | Action |
+|---|---|
+| IVIG | Neutralises antibody, damps inflammation |
+| Plasmapheresis | Removes antibody |
+| Rituximab | Anti-CD20: depletes B cells; with IVIG lowers HLA antibodies (kidney data) |
+| Bortezomib | Proteasome inhibitor against plasma cells: used if IVIG plus rituximab fails to bring **cPRA under 50%**, or for urgent patients; given with plasmapheresis on days 0, 1, 3, 4, 7, 8, 10 and 11 |
+
+The ISHLT 2018 consensus abstract says it is still unclear which antibodies matter, who needs treatment and which treatments work; prospective trials are lacking.
+
+### DSA monitoring after transplant (Banff 2015, Table 2)
+- High and intermediate immunological risk: with each early biopsy, then at 3, 6, 9 and 12 months, then yearly.
+- Low risk: at 3, 6 and 12 months, then yearly.
+
+### Induction (ISHLT registry 2019)
+- **Just over half** of adult heart recipients (2010 to June 2018) received induction. The registry found **no survival difference by use or type of induction**.
+- Agents (TSRA ch. 74, already in this tab): IL-2 receptor antibody (basiliximab) or anti-thymocyte globulin.
+- Treated rejection between discharge and 1 year: **12.6%** (transplants 2010 to 2016).
+
+### Viva points
+- Sensitising events: pregnancy, transfusion, VAD, previous graft.
+- Virtual crossmatch = listing unacceptable antigens from the single-antigen bead result; it lets a heart travel without waiting for a cell crossmatch.
+- Desensitisation ladder: IVIG and plasmapheresis, rituximab, then bortezomib.
+
+## DCD heart transplantation trial (Schroder 2023) and PROCEED II: the numbers
+
+Added 21 November 2026 from: Schroder JN, Patel CB, DeVore AD, et al. Transplantation outcomes with donor hearts after circulatory death. N Engl J Med 2023;388(23):2121-2131, doi:10.1056/NEJMoa2212438 (NCT03831048), read from a full-text copy hosted by Massachusetts General Hospital through a text-extraction tool, with the abstract (Duke Scholars) and the ACC journal scan as checks; Ardehali A, Esmailian F, Deng M, et al. Ex-vivo perfusion of donor hearts (PROCEED II), a prospective, open-label, multicentre, randomised non-inferiority trial. Lancet 2015;385(9987), doi:10.1016/S0140-6736(15)60261-6, **abstract only** (Weill Cornell record), with extra detail from NICE interventional procedure overview IP 1289 (May 2015), read in full. These fill the outcome numbers that the earlier DCD section in this tab left out.
+
+### DCD heart trial (Schroder et al., NEJM 2023)
+| Item | Detail |
+|---|---|
+| Design | Randomised, unblinded, non-inferiority; **15 US centres**; adult candidates assigned **3:1** to a DCD heart (or whichever came first) or a DBD heart on cold storage. Excluded: multi-organ listing, previous transplant, dialysis |
+| Donors | Controlled DCD (Maastricht III), age **18 to 49** |
+| Warm ischaemia | Functional warm ischaemic time from systolic pressure under 50 mmHg or SpO2 under 70% to cross-clamp and cardioplegia: **30 min or less** |
+| Recovery | Direct procurement, cold del Nido cardioplegia flush, then the Organ Care System (TransMedics); no thoracoabdominal NRP |
+| Acceptance on the device | Lactate stable or falling with stable perfusion, and acceptance by the implanting team (no numeric lactate cut-off in the paper) |
+| Numbers | **297 randomised** (226 DCD, 71 DBD); **180 transplanted** (90 each, as treated); primary as-treated analysis 80 DCD, 86 DBD after protocol violations |
+| **Primary end point** | Risk-adjusted 6-month survival **94% DCD v 90% DBD**; difference -3 points (90% CI -10 to 3); **non-inferior** (margin 20 points), P<0.001 |
+| 1-year survival | 93% v 85% (overall population, Kaplan-Meier) |
+| Safety end point | Graft-related serious adverse events at 30 days: mean 0.2 v 0.1 per patient; no material difference |
+| **Primary graft dysfunction** (ISHLT) | Moderate or severe **22% (18/80) v 10% (8/84)**; severe 15% v 5% |
+| Retransplant | 0 v 2 |
+| Utilisation | 101 DCD hearts on the device, **90 transplanted (89%)**; 11 declined for rising lactate and/or poor contractility |
+| Waiting | Consent to transplant 24 v 31 days |
+
+The ACC summary notes the higher PGD probably reflects warm ischaemia and did not seem to affect survival; DCD with ex situ perfusion against thoracoabdominal NRP remains untested.
+
+### PROCEED II (Ardehali et al., Lancet 2015)
+| Item | Detail |
+|---|---|
+| Design | Prospective, open-label, randomised non-inferiority trial; **10 centres** in the USA and Europe; brain-dead donors only |
+| Numbers | **130 randomised** (67 Organ Care System, 63 cold storage) |
+| Primary end point | 30-day patient and graft survival; margin 10% |
+| Result | **94% OCS v 97% cold storage**; difference 2.8%, one-sided 95% upper bound 8.8%; **non-inferior** |
+| Cardiac serious adverse events | 13% v 14% |
+| Out-of-body time | 324 ± 79 v 195 ± 65 min (P<0.001) (NICE overview) |
+| Hearts not used | 5 OCS hearts declined: 4 for persistent myocardial ischaemia on the device, 1 for aortic friability; each recipient got another heart (NICE overview) |
+| Other (NICE overview) | Severe rejection 18% v 14%; RV dysfunction 3% v 9%; none significant |
+
+The authors said the metabolic (lactate) assessment needed more study; that question was taken up by EXPAND and the DCD trial. A single-centre follow-up (Chen et al., Clin Transplant 2022) gives 20 centres for PROCEED II; the abstract and NICE overview both give 10.
+
+!fig f23_dcd_heart | DCD heart trial 2023 and PROCEED II: survival and primary graft dysfunction by arm. Drawn for these notes from Schroder et al., NEJM 2023 and Ardehali et al., Lancet 2015 (abstract)
+
+### Viva points
+- DCD heart trial: 6-month survival 94% v 90%, non-inferior; moderate or severe PGD doubled (22% v 10%); 89% of perfused DCD hearts used.
+- PROCEED II: OCS for DBD hearts non-inferior on 30-day survival (94% v 97%) with about 2 hours more out-of-body time.
+- A margin of 20 points (DCD trial) is wide; say so if asked to criticise it.
+
+## Heart transplant outcomes in the ISHLT registry (2019 report)
+
+Added 21 November 2026 from Khush KK, Cherikh WS, Chambers DC, et al. The International Thoracic Organ Transplant Registry of the ISHLT: thirty-sixth adult heart transplantation report, 2019. J Heart Lung Transplant 2019;38(10):1056-1066, doi:10.1016/j.healun.2019.08.004, read from the PMC full text (survival percentages by era are given only in figures and are left out). This corrects two figures earlier in this tab: conditional median survival is 14.8 years (the tab says "over 15"), and cumulative vasculopathy is 29% at 5 years (TSRA's 50% at 5 years is higher).
+
+| Measure | Value |
+|---|---|
+| Median survival, transplants 2002 to 2009 | **12.5 years** (women 12.2, men 11.4) |
+| Median survival if alive at 1 year | **14.8 years** |
+| Allograft vasculopathy (cumulative, survivors) | **7.7% at 1 year, 29.0% at 5, 46.8% at 10** |
+| Malignancy | 28% at 10 years, mostly skin; lymphoproliferative disorder 1 to 2% by 5 to 10 years |
+| Severe renal dysfunction | 6.7% at 1 year, 15.7% at 5, 22.3% at 10 |
+| Diabetes | 20.0% at 1 year, 33.8% at 5 |
+| Treated rejection, discharge to 1 year | 12.6% |
+| Induction | Just over 50%; no survival difference by use or type |
+
+**Causes of death by time**: acute graft failure peaks in the first 30 days; infection peaks in the first year; malignancy, vasculopathy, renal failure and late rejection rise with time. Most late "chronic graft failure" is probably vasculopathy.

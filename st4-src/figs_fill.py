@@ -2376,3 +2376,1638 @@ def f20_chestwall():
     b += box(247, 236, 226, 64, ['Cannot be weaned from', 'the ventilator'], 'b1', 'f-s')
     b += box(484, 236, 226, 64, ['Chest already open (VATS', 'or thoracotomy) for', 'another reason'], 'b1', 'f-s')
     return svg(310, b)
+
+
+# ---- figs_F21.py
+
+
+
+def f21_pe_risk():
+    b = box(110, 10, 500, 54, ['Acute PE: haemodynamically unstable?',
+                               'cardiac arrest · obstructive shock · persistent hypotension'], 'b1')
+    b += box(200, 100, 510, 46, 'PESI class III to V, or sPESI 1 or more?', 'b1')
+    b += box(200, 184, 340, 52, ['RV dysfunction on echo or CT', 'and a raised troponin?'], 'b1')
+    # Q1 yes -> high; no -> Q2
+    b += arrow(150, 64, 93, 270) + T(104, 120, 'Yes', 'f-h', 'end')
+    b += arrow(455, 64, 455, 98) + T(466, 86, 'No', 'f-h', 'start')
+    # Q2 yes -> Q3 ; no -> low
+    b += arrow(370, 146, 370, 182) + T(380, 170, 'Yes', 'f-h', 'start')
+    b += arrow(640, 146, 630, 270) + T(646, 214, 'No', 'f-h', 'start')
+    # Q3 -> int-high / int-low
+    b += arrow(290, 236, 273, 270) + T(232, 258, 'Both', 'f-h', 'middle')
+    b += arrow(450, 236, 453, 270) + T(462, 258, 'One or none', 'f-s', 'start')
+    cols = [(10, 'High', 'warn'), (190, 'Intermediate-high', 'warn'), (370, 'Intermediate-low', 'b1'), (550, 'Low', 'ok')]
+    for x, lab, c in cols:
+        b += box(x, 272, 166 if x < 550 else 160, 40, lab, c, 'f-h')
+    tx = [['UFH bolus now (I, C)', 'Systemic lysis (I, B)', 'Lysis barred or failed:', 'surgery (I, C) or', 'catheter (IIa, C)', 'ECMO with either (IIb, C)'],
+          ['Anticoagulate, admit', 'and monitor', 'Deteriorates: rescue', 'lysis (I, B), or surgery', 'or catheter (IIa, C)'],
+          ['Anticoagulate, admit', 'No routine primary', 'lysis (III, B)'],
+          ['Anticoagulate', 'Consider early', 'discharge (IIa, A)']]
+    for (x, lab, c), lines in zip(cols, tx):
+        b += box(x, 324, 166 if x < 550 else 160, 120, lines, 'b0', 'f-s')
+    b += T(360, 466, 'PE team for high-risk and selected intermediate-risk PE (IIa, C). Routine IVC filter: not recommended (III, A).', 'f-s')
+    return svg(480, b)
+
+
+def f21_cteph_pathway():
+    b = box(110, 10, 500, 46, ['CTEPH confirmed: V/Q mismatch, CTPA or DSA,', 'right heart catheter (mPAP over 20, PVR over 2 WU)'], 'b1')
+    b += arrow(360, 56, 360, 76)
+    b += box(110, 78, 500, 46, ['Lifelong therapeutic anticoagulation (I, C)', 'Test for antiphospholipid syndrome; VKA if present (I, C)'], 'b0')
+    b += arrow(360, 124, 360, 144)
+    b += box(110, 146, 500, 46, ['CTEPH team with a PEA surgeon decides', 'operability and treatment (I, C)'], 'b0')
+    b += arrow(250, 192, 170, 222) + arrow(470, 192, 550, 222)
+    b += T(160, 210, 'Operable', 'f-h', 'end') + T(566, 210, 'Inoperable', 'f-h', 'start')
+    b += box(10, 224, 320, 64, ['Pulmonary endarterectomy (I, B)', 'under deep hypothermic arrest'], 'ok', 'f-h')
+    b += box(390, 224, 320, 64, ['Riociguat (I, B) and / or', 'balloon angioplasty (I, B)'], 'ok', 'f-h')
+    b += arrow(170, 288, 170, 312)
+    b += box(10, 314, 320, 54, ['Persistent or recurrent PH', 'after endarterectomy'], 'warn')
+    b += arrow(330, 341, 388, 270)
+    b += box(390, 300, 320, 68, ['PVR over 4 WU: drugs before BPA (IIa, B)', 'Multimodal treatment (IIa, C)',
+                                 'Mostly distal disease: BPA (IIb, C)'], 'b1', 'f-s')
+    b += box(10, 392, 700, 46, ['Long-term follow-up at the CTEPH centre (I, C): right heart catheter 3 to 6 months',
+                                'after intervention, then yearly echo and exercise testing'], 'b1')
+    b += arrow(360, 368, 360, 390)
+    return svg(448, b)
+
+
+def f21_cteph_lesions():
+    # tapering vessel from proximal (left) to distal (right)
+    b = T(12, 22, 'Proximal', 'f-s', 'start') + T(708, 22, 'Distal', 'f-s', 'end')
+    b += '<path d="M20 40 L20 120 L700 84 L700 76 Z" class="f-b0"/>'
+    b += '<path d="M40 50 L40 110 L150 100 L150 60 Z" class="f-b1"/>'
+    for x in (300, 430, 560):
+        b += f'<line x1="{x}" y1="{64 + (x - 20) * 0.0}" x2="{x}" y2="{102 - (x - 20) * 0.03}" class="f-l"/>'
+    b += T(95, 85, 'organised clot', 'f-s')
+    b += T(430, 140, 'webs and bands narrow the lumen', 'f-s')
+    spec = [('Proximal fibrotic obstruction', '10 to 40 mm', 20, 210, 'ok', 'PEA'),
+            ('Segmental and subsegmental', '2 to 10 mm', 190, 360, 'b1', 'PEA or BPA'),
+            ('Subsegmental webs', '0.5 to 5 mm', 340, 510, 'b1', 'BPA'),
+            ('Webs under 0.5 mm', '± microvasculopathy', 490, 620, 'b1', 'BPA'),
+            ('Microvasculopathy', 'under 0.05 mm', 600, 700, 'warn', 'Drugs')]
+    y = 162
+    for lab, size, x1, x2, c, tx in spec:
+        b += f'<rect x="{x1}" y="{y}" width="{x2 - x1}" height="26" rx="6" class="f-{c}"/>'
+        b += T((x1 + x2) / 2, y + 18, tx, 'f-h')
+        anchor = 'start' if x1 < 400 else 'end'
+        tx_x = x2 + 8 if anchor == 'start' else x1 - 8
+        b += T(tx_x, y + 18, f'{lab}, {size}', 'f-s', anchor)
+        y += 34
+    b += T(360, y + 14, 'Treatment by lesion level and vessel size; ranges overlap, so mixed disease may need PEA plus BPA.', 'f-s')
+    return svg(y + 28, b)
+
+
+def f21_cath_trials():
+    h1, b1 = bars([('Catheter lysis + anticoagulation', 4.0, 'ok'), ('Anticoagulation alone', 10.3, 'warn'),
+                   ('Major bleeding: catheter', 4.1, 'b1'), ('Major bleeding: anticoagulation', 3.0, 'b1')],
+                  '%', 15, 'HI-PEITHO (n=544): 7-day PE death, collapse or recurrence fell', lab_w=270)
+    h2, b2 = bars([('Deterioration or bailout: LBMT', 1.8, 'ok'), ('Deterioration or bailout: CDT', 5.4, 'warn'),
+                   ('ICU admission: LBMT', 41.6, 'ok'), ('ICU admission: CDT', 98.6, 'warn')],
+                  '%', 100, 'PEERLESS (n=550): thrombectomy needed less ICU care than CDT', lab_w=270)
+    b = b1 + f'<g transform="translate(0 {h1})">{b2}</g>'
+    b += T(12, h1 + h2 + 4, 'HI-PEITHO RR 0.39 (0.20 to 0.77); bleeding RR 1.4 (0.6 to 3.4), no ICH. PEERLESS: no difference in death or bleeding.', 'f-s', 'start')
+    return svg(h1 + h2 + 18, b)
+
+
+def f21_embolectomy_mortality():
+    h, b = bars([('Meta-analysis 1965 to 2015 (Kalra)', 26.3, 'b1'),
+                 ('Meta-analysis to 2024 (Rahouma)', 22.0, 'b1'),
+                 ('NY State: thrombolysis, 30-day', 15, 'b0'),
+                 ('NY State: surgery, 30-day', 13, 'b0'),
+                 ('STS database: all', 12, 'ok'),
+                 ('STS database: arrest before surgery', 32, 'warn')],
+                '%', 40, 'Surgical embolectomy: early death 12 to 26% across series, 32% after arrest', lab_w=290)
+    b += T(12, h + 4, 'In-hospital mortality unless stated. NY State and STS figures as quoted in the ESC 2019 guideline; non-randomised.', 'f-s', 'start')
+    return svg(h + 16, b)
+
+
+def f21_papworth():
+    h, b = bars([('Cohort 1 (1997 onwards)', 12.3, 'warn'), ('Cohort 2', 4.0, 'b1'),
+                 ('Cohort 3', 3.4, 'b1'), ('Cohort 4 (to 2019)', 1.9, 'ok')],
+                '%', 15, 'Royal Papworth, 2,116 endarterectomies: 30-day mortality fell to 1.9%', lab_w=230)
+    b += T(12, h + 4, 'Four consecutive cohorts of 529. The first took 12 years, the last under 3. PVR fell by about 60% in every cohort.', 'f-s', 'start')
+    return svg(h + 16, b)
+
+
+# ---- figs_F22.py
+
+
+
+def _f22_pairs(groups, vmax, title, lab_w=230, note=None):
+    """Grouped horizontal bars. groups: (group heading, [(label, value, cls, text)])."""
+    y = 18
+    out = T(12, y + 4, title, 'f-h', 'start')
+    y += 22
+    span = W - lab_w - 110
+    for head, rows in groups:
+        out += T(12, y + 16, head, 'f-s', 'start')
+        y += 24
+        for lab, v, cls, txt in rows:
+            out += T(lab_w - 10, y + 19, lab, '', 'end')
+            out += f'<rect x="{lab_w}" y="{y + 4}" width="{max(2, span * v / vmax):.1f}" height="22" rx="4" class="f-{cls}"/>'
+            out += T(lab_w + span * v / vmax + 8, y + 20, txt, 'f-n', 'start')
+            y += 30
+        y += 6
+    if note:
+        for i, s in enumerate(note):
+            out += T(12, y + 10 + i * 17, s, 'f-s', 'start')
+        y += 17 * len(note) + 4
+    return svg(y + 8, out)
+
+
+def f22_shock_trials():
+    """Primary end point (all-cause death) in DanGer Shock and ECLS-SHOCK, from the papers."""
+    return _f22_pairs([
+        ('DanGer Shock (NEJM 2024): death at 180 days, n = 355. HR 0.74 (0.55 to 0.99), P = 0.04', [
+            ('Microaxial pump + standard care', 45.8, 'ok', '45.8% (82/179)'),
+            ('Standard care', 58.5, 'b1', '58.5% (103/176)')]),
+        ('ECLS-SHOCK (NEJM 2023): death at 30 days, n = 417. RR 0.98 (0.80 to 1.19), P = 0.81', [
+            ('VA-ECLS + usual care', 47.8, 'b0', '47.8% (100/209)'),
+            ('Usual care', 49.0, 'b1', '49.0% (102/208)')]),
+    ], 70, 'Infarct-related shock: the pump lowered death, VA-ECLS did not',
+        note=['Both raised complications: DanGer composite safety end point 24.0% v 6.2%;',
+              'ECLS-SHOCK moderate or severe bleeding 23.4% v 9.6%, limb ischaemia needing intervention 11.0% v 3.8%.'])
+
+
+def f22_ecpr_trials():
+    """Primary end points of the three ECPR trials, from the papers."""
+    return _f22_pairs([
+        ('ARREST (Lancet 2020), 1 centre, refractory VF: survival to discharge', [
+            ('ECMO-facilitated resuscitation', 43, 'ok', '43% (6/14)'),
+            ('Standard ACLS', 7, 'b1', '7% (1/15)')]),
+        ('Prague OHCA (JAMA 2022), 1 centre: 180-day survival, CPC 1 to 2. P = 0.09', [
+            ('Invasive strategy (ECPR)', 31.5, 'b0', '31.5% (39/124)'),
+            ('Standard ACLS', 22.0, 'b1', '22.0% (29/132)')]),
+        ('INCEPTION (NEJM 2023), 10 centres: 30-day survival, CPC 1 to 2. P = 0.52', [
+            ('ECPR', 20, 'b0', '20% (14/70)'),
+            ('Conventional CPR', 16, 'b1', '16% (10/62)')]),
+    ], 60, 'ECPR: only the small single-centre trial was positive',
+        note=['ARREST stopped at its first interim analysis (posterior probability of benefit 0.986).',
+              'Prague OHCA stopped for futility at 256 of 285. INCEPTION: median 74 minutes from arrest to ECMO flow.'])
+
+
+def f22_scai_ladder():
+    """SCAI shock stages A to E, 2019 definition with the 2022 update criteria."""
+    rows = [
+        ('A', 'At risk', 'No shock yet: large or prior infarct, acute heart failure', 'Warm, perfused; normal lactate; SBP 100+', 'ok'),
+        ('B', 'Beginning', 'Hypotension or tachycardia, NO hypoperfusion', 'SBP under 90, MAP under 60 or fall over 30; HR 100+', 'b1'),
+        ('C', 'Classic', 'Hypoperfusion needing one drug or device beyond fluid', 'Lactate 2+; cold, clammy; urine under 30 mL/h; CI under 2.2', 'b0'),
+        ('D', 'Deteriorating', 'Worse despite initial therapy: more drugs or MCS added', 'Lactate rising and over 2; organ function worsening', 'warn'),
+        ('E', 'Extremis', 'Circulatory collapse, often CPR or ECMO-CPR', 'Lactate 8+; pH under 7.2; bolus pressors', 'warn'),
+    ]
+    b = T(12, 22, 'SCAI shock stages: the step from B to C is hypoperfusion', 'f-h', 'start')
+    y = 36
+    for i, (s, name, desc, crit, cls) in enumerate(rows):
+        x = 10 + i * 22
+        w = 700 - i * 22
+        b += f'<rect x="{x}" y="{y}" width="{w}" height="50" rx="9" class="f-{cls}"/>'
+        b += T(x + 22, y + 32, s, 'f-big')
+        b += T(x + 48, y + 21, name, 'f-h', 'start')
+        b += T(x + 48, y + 39, desc, 'f-s', 'start')
+        b += T(706, y + 21, crit, 'f-s', 'end')
+        y += 56
+    b += box(10, y + 6, 700, 58, ['Modifier: 2019 "A" = any cardiac arrest (e.g. stage "BA").',
+                                  '2022 update: arrest modifier only with coma (GCS under 9), i.e. concern for anoxic brain injury.',
+                                  'Reassess the stage over time; 2022 adds aetiology, phenotype, age and frailty as other risk axes.'], 'b1', 'f-s')
+    return svg(y + 74, b)
+
+
+def f22_scai_mortality():
+    """Jentzer 2019, Mayo cardiac ICU, unadjusted in-hospital mortality by SCAI stage (abstract)."""
+    h, b = bars([('A at risk (46.0% of patients)', 3.0, 'ok'),
+                 ('B beginning (30.0%)', 7.1, 'b1'),
+                 ('C classic (15.7%)', 12.4, 'b0'),
+                 ('D deteriorating (7.3%)', 40.4, 'warn'),
+                 ('E extremis (1.0%)', 67.0, 'warn')], '%', 80,
+                'In-hospital death jumps from stage C to D (10,004 cardiac ICU patients)', 250)
+    b += T(12, h + 4, 'Jentzer et al, JACC 2019, Mayo Clinic 2007 to 2015, unadjusted. Cardiac arrest added risk: adjusted OR 3.99.', 'f-s', 'start')
+    return svg(h + 16, b)
+
+
+def f22_mech_pathway():
+    """ESC 2023 ACS guideline: mechanical complication pathway, with class and level."""
+    b = box(150, 8, 420, 52, ['Warning signs after infarct: sudden hypotension, recurrent pain,',
+                              'new murmur (acute MR or VSD), congestion, raised JVP'], 'b1', 'f-s')
+    b += arrow(360, 60, 360, 80)
+    b += box(170, 82, 380, 40, 'Emergency transthoracic echo (I C)', 'b0', 'f-h')
+    b += arrow(360, 122, 360, 142)
+    b += box(150, 144, 420, 40, 'Mechanical complication confirmed: Heart Team now', 'b1', 'f-h')
+    b += arrow(250, 184, 130, 210) + arrow(360, 184, 360, 210) + arrow(470, 184, 590, 210)
+    b += box(10, 212, 230, 86, ['Unstable or in shock:', 'IABP while awaiting', 'surgery (IIa C)'], 'warn', 'f-s')
+    b += box(250, 212, 220, 86, ['Emergency surgical or', 'catheter repair if', 'haemodynamically', 'unstable (I C)'], 'ok', 'f-s')
+    b += box(480, 212, 230, 86, ['Coronary disease:', 'CABG at the time', 'of repair (text,', 'no class given)'], 'b0', 'f-s')
+    b += box(10, 310, 700, 40, ['Surgery is the treatment of choice; catheter repair for prohibitive risk. Pre-emptive temporary MCS:',
+                                'a new trend, benefit unproven. Involve palliative care where appropriate.'], 'b1', 'f-s')
+    return svg(360, b)
+
+
+# ---- figs_F23.py
+
+
+
+def _f23_card(x, y, w, h, head, lines, hcls='b1', bcls='b0', top=58):
+    out = f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="10" class="f-{bcls}"/>'
+    out += f'<rect x="{x}" y="{y}" width="{w}" height="34" rx="10" class="f-{hcls}"/>'
+    out += T(x + w / 2, y + 22, head, 'f-h')
+    out += T(x + w / 2, y + top, lines, 'f-s')
+    return out
+
+
+def f23_biopsy_route():
+    """Transvenous right ventricular endomyocardial biopsy: route and sampling site."""
+    b = ''
+    # heart outline
+    b += '<path d="M200 160 C200 120 250 110 290 118 L320 126 C370 116 440 130 470 180 C505 240 480 330 410 360 C350 382 300 362 262 326 C226 292 200 232 200 160 Z" class="f-b0"/>'
+    # veins: right IJ and SVC into RA, IVC from below
+    b += '<path d="M180 14 L182 90 C184 120 200 140 224 160" class="f-vessel"/>'
+    b += '<path d="M232 280 L232 404" class="f-vessel"/>'
+    # right atrium
+    b += '<ellipse cx="250" cy="214" rx="42" ry="58" class="f-b1"/>'
+    b += T(244, 206, 'RA', 'f-h')
+    # tricuspid valve
+    b += line(292, 222, 304, 262, 'f-cut') + line(304, 262, 300, 232, 'f-grid')
+    b += T(286, 286, 'TV', 'f-s', 'end')
+    # septum
+    b += '<path d="M410 176 C440 230 444 300 412 350" class="f-l" style="stroke-width:6"/>'
+    b += T(360, 210, 'RV', 'f-h')
+    b += T(450, 150, 'LV', 'f-h')
+    # sheath
+    b += '<rect x="170" y="50" width="24" height="12" rx="3" class="f-b1"/>'
+    # bioptome path (jugular)
+    b += '<path d="M182 56 C184 120 200 146 228 172 C262 204 290 236 330 270 C360 296 384 312 410 316" class="f-l" style="stroke-width:2.6" marker-end="url(#ah)"/>'
+    # femoral path
+    b += '<path d="M240 404 C240 340 262 300 312 284" class="f-dash" marker-end="url(#ah)"/>'
+    b += '<circle cx="412" cy="316" r="9" class="f-warn"/>'
+    # labels on left
+    b += T(160, 26, ['Right internal jugular', 'vein: usual route'], 'f-s', 'end')
+    b += T(160, 72, '7 F sheath', 'f-s', 'end')
+    b += T(220, 424, 'Femoral vein and IVC: alternative route', 'f-s', 'start')
+    # labels on right
+    b += T(500, 236, ['Bioptome passed down', 'the SVC, through the RA', 'and tricuspid valve'], 'f-s', 'start')
+    b += line(496, 246, 336, 272, 'f-grid')
+    b += T(500, 316, ['Sample the RV side of the', 'septum towards the apex;', '2 to 6 pieces, usually 4'], 'f-s', 'start')
+    b += line(496, 320, 424, 318, 'f-grid')
+    b += T(500, 172, ['Interventricular', 'septum'], 'f-s', 'start')
+    b += line(496, 184, 432, 214, 'f-grid')
+    # boxes
+    b += box(10, 440, 345, 86, ['Serious events 1.0% of 1,896 biopsies:', 'severe TR in 12 (6 valve replacements),',
+                                'tamponade in 6 (pericardiocentesis)', '(Strecker 2012, single centre)'], 'warn', 'f-s')
+    b += box(365, 440, 345, 86, ['Before: INR under 1.5;', 'anticoagulant stopped 16 h before,',
+                                 'restarted 12 h after', '(StatPearls)'], 'ok', 'f-s')
+    return svg(536, b)
+
+
+def f23_rejection_grading():
+    """ISHLT 2004 cellular grades and 2013 pAMR grades on endomyocardial biopsy."""
+    b = T(12, 22, 'Acute cellular rejection: ISHLT 2004 revised grades', 'f-h', 'start')
+    cel = [('0R', 'None', ['No infiltrate'], 'Nothing', 'ok'),
+           ('1R', 'Mild', ['Interstitial or', 'perivascular infiltrate;', 'up to 1 focus of', 'myocyte damage'], 'No treatment; repeat biopsy', 'b0'),
+           ('2R', 'Moderate', ['2 or more foci of', 'infiltrate with', 'myocyte damage'], 'Treat (high-dose steroid)', 'b1'),
+           ('3R', 'Severe', ['Diffuse infiltrate,', 'multifocal myocyte', 'damage, with or without', 'oedema, haemorrhage,', 'vasculitis'], 'Treat; ATG if severe', 'warn')]
+    for i, (g, s, ls, act, c) in enumerate(cel):
+        x = 10 + i * 177
+        b += f'<rect x="{x}" y="36" width="168" height="168" rx="10" class="f-{c}"/>'
+        b += T(x + 84, 62, g, 'f-big') + T(x + 84, 84, s, 'f-h')
+        b += T(x + 84, 108, ls, 'f-s')
+        b += f'<rect x="{x + 6}" y="212" width="156" height="40" rx="8" class="f-track"/>'
+        b += T(x + 84, 236, act, 'f-s')
+    b += T(360, 274, 'Any grade with haemodynamic compromise: methylprednisolone 1 g IV daily for 3 days (TSRA ch. 74)', 'f-s')
+    y0 = 300
+    b += T(12, y0, 'Antibody-mediated rejection: ISHLT 2013 pathological (pAMR) grades', 'f-h', 'start')
+    amr = [('pAMR 0', ['Histology and', 'immunostaining', 'both negative'], 'ok'),
+           ('pAMR 1 (H+)', ['Histology', 'positive,', 'immuno negative'], 'b0'),
+           ('pAMR 1 (I+)', ['Histology', 'negative, C4d', 'or CD68 positive'], 'b0'),
+           ('pAMR 2', ['Histology and', 'immunostaining', 'both positive'], 'b1'),
+           ('pAMR 3', ['Severe: plus', 'myocyte necrosis,', 'thrombi, bleeding,', 'mixed infiltrate'], 'warn')]
+    for i, (g, ls, c) in enumerate(amr):
+        x = 10 + i * 141.6
+        b += _f23_card(x, y0 + 14, 133, 118, g, ls, c, 'b0', top=60)
+    b += box(10, y0 + 144, 345, 56, ['Histology: microvascular injury,', 'intravascular activated mononuclear cells'], 'b1', 'f-s')
+    b += box(365, y0 + 144, 345, 56, ['Immuno positive: C4d in over 50% of', 'capillaries; CD68 in 10% or more'], 'b1', 'f-s')
+    return svg(y0 + 210, b)
+
+
+def f23_bslt():
+    """Bilateral sequential lung transplant: sequence and anastomosis order."""
+    b = ''
+    # chest outline and clamshell incision
+    b += '<path d="M60 70 C60 40 120 26 180 26 L540 26 C600 26 660 40 660 70 L660 300 C660 330 600 340 540 340 L180 340 C120 340 60 330 60 300 Z" class="f-track"/>'
+    # heart
+    b += '<ellipse cx="360" cy="150" rx="58" ry="66" class="f-b1"/>'
+    b += T(360, 146, 'Heart', 'f-h') + T(360, 166, 'LA behind', 'f-s')
+    # lungs
+    b += '<path d="M290 70 C220 50 130 80 112 160 C100 220 150 300 240 300 C280 300 300 260 300 220 L300 110 Z" class="f-b0"/>'
+    b += '<path d="M430 70 C500 50 590 80 608 160 C620 220 570 300 480 300 C440 300 420 260 420 220 L420 110 Z" class="f-b0"/>'
+    b += T(360, 48, "Viewed from the front (patient's right on the left); numbers give the order, not the position", 'f-s')
+    b += T(190, 120, ['Right lung', 'implant FIRST'], 'f-h') + T(530, 120, ['Left lung', 'implant SECOND'], 'f-h')
+    b += T(190, 160, ['(worse side on V/Q;', 'right if no difference)'], 'f-s')
+    b += T(530, 160, ['after the right lung is', 'reperfused and working'], 'f-s')
+    # hilum numbered anastomoses right
+    for cx, side in ((292, 'r'), (428, 'l')):
+        b += f'<circle cx="{cx}" cy="110" r="13" class="f-warn"/>' + T(cx, 115, '1', 'f-h')
+        b += f'<circle cx="{cx}" cy="150" r="13" class="f-ok"/>' + T(cx, 155, '2', 'f-h')
+        b += f'<circle cx="{cx}" cy="190" r="13" class="f-b1"/>' + T(cx, 195, '3', 'f-h')
+    b += '<path d="M90 236 C160 270 260 256 360 238 C460 256 560 270 630 236" class="f-cut" style="stroke-width:3"/>'
+    b += T(360, 326, 'Incision (red): clamshell, 4th space, or bilateral anterior thoracotomies', 'f-s')
+    # legend boxes
+    yl = 356
+    b += box(10, yl, 226, 78, ['1 Bronchus (deepest)', '4-0 running: membranous', 'wall, then cartilage'], 'warn', 'f-s')
+    b += box(247, yl, 226, 78, ['2 Pulmonary artery', '5-0 Prolene running;', 'trim to avoid kinking'], 'ok', 'f-s')
+    b += box(484, yl, 226, 78, ['3 Left atrial cuff', '4-0 Prolene, everting;', 'last stitches loose to de-air'], 'b1', 'f-s')
+    b += box(10, yl + 90, 700, 58, ['Reperfuse: flush, release PA clamp gradually over about 10 min, tie LA suture; protective',
+                                    'ventilation; confirm gases and haemodynamics before the second pneumonectomy'], 'b0', 'f-s')
+    b += box(10, yl + 158, 700, 42, 'Support (CPB or ECMO) if: CI under 1.5, mean PAP over 40 to 50, SaO2 under 90%, RV failure', 'warn', 'f-s')
+    return svg(yl + 210, b)
+
+
+def f23_dcd_heart():
+    """DCD heart trial (Schroder 2023) and PROCEED II results."""
+    items = [('DCD on OCS, 6-month survival', 94, 'ok'),
+             ('DBD cold storage, 6-month survival', 90, 'b0'),
+             ('DCD, moderate or severe PGD', 22, 'warn'),
+             ('DBD, moderate or severe PGD', 10, 'b1')]
+    h, b = bars(items, '%', 100, 'DCD heart trial 2023: survival non-inferior, PGD twice as common', lab_w=290)
+    items2 = [('OCS, 30-day survival', 94, 'ok'), ('Cold storage, 30-day survival', 97, 'b0')]
+    h2, b2 = bars(items2, '%', 100, 'PROCEED II 2015 (DBD hearts): 30-day survival non-inferior', lab_w=290)
+    return svg(h + h2, b + f'<g transform="translate(0,{h})">{b2}</g>')
+
+
+def f23_evlp_trials():
+    """Donor lung perfusion trials: conversion and PGD grade 3."""
+    items = [('DEVELOP-UK (UK, EVLP)', 34, 'b1'), ('NOVEL (US, EVLP)', 50.9, 'ok')]
+    h, b = bars(items, '%', 100, 'Rejected donor lungs used after EVLP: one-third to one-half', lab_w=290)
+    items2 = [('INSPIRE: OCS Lung', 17.7, 'ok'), ('INSPIRE: cold storage', 29.7, 'b0'),
+              ('NOVEL: EVLP lungs', 8.9, 'ok'), ('NOVEL: standard lungs', 9.5, 'b0')]
+    h2, b2 = bars(items2, '%', 40, 'PGD grade 3 within 72 h: less with OCS Lung, same after EVLP', lab_w=290)
+    items3 = [('DEVELOP-UK: EVLP recipients', 38.8, 'warn'), ('DEVELOP-UK: standard', 3.2, 'b0')]
+    h3, b3 = bars(items3, '%', 40, 'DEVELOP-UK: ECMO after transplant much more frequent', lab_w=290)
+    return svg(h + h2 + h3, b + f'<g transform="translate(0,{h})">{b2}</g>' + f'<g transform="translate(0,{h + h2})">{b3}</g>')
+
+
+# ---- figs_F24.py
+
+
+
+def f24_meso_pathway():
+    """UK mesothelioma pathway from BTS 2018, ESMO 2021, NICE TA818/TA1125 and MARS 2."""
+    b = T(12, 22, 'Pleural mesothelioma: the pathway as the 2026 evidence stands', 'f-h', 'start')
+    b += box(170, 36, 380, 50, ['Unilateral pleural thickening or effusion,', 'asbestos history taken'], 'b1')
+    b += arrow(360, 86, 360, 104)
+    b += box(110, 106, 500, 66, ['Tissue: biopsy, thoracoscopy preferred (ESMO III, B);',
+                                 'IHC with 2 mesothelial and 2 carcinoma markers;',
+                                 'report subtype. Cytology alone only if biopsy not possible'], 'b0')
+    b += arrow(360, 172, 360, 190)
+    b += box(110, 192, 500, 50, ['Contrast CT thorax and upper abdomen; PET-CT only if', 'excluding spread would change management (BTS D)'], 'b0')
+    b += arrow(250, 242, 110, 268) + arrow(360, 242, 360, 268) + arrow(470, 242, 610, 268)
+    # three columns
+    b += box(10, 270, 220, 120, ['Effusion', 'Talc (slurry or poudrage)', 'or IPC by choice (BTS A)', 'Talc over VATS partial', 'pleurectomy (BTS A)'], 'ok', 'f-s')
+    b += box(250, 270, 220, 120, ['Radical surgery', 'No EPP (BTS B)', 'No EPD outside a trial', '(BTS D); MARS 2: worse', 'survival with EPD'], 'warn', 'f-s')
+    b += box(490, 270, 220, 120, ['Systemic, ECOG 0 to 1', 'Nivolumab + ipilimumab', '(NICE TA818, 2 years)', 'or platinum-pemetrexed', '(BTS A, ESMO I, A)'], 'b0', 'f-s')
+    b += box(10, 404, 340, 66, ['Radiotherapy: no prophylactic tract RT (BTS A);', 'no pre- or postoperative RT (BTS A);', 'palliative RT for localised pain (BTS D)'], 'b1', 'f-s')
+    b += box(370, 404, 340, 66, ['Pembrolizumab + chemotherapy (IND.227):', 'NICE TA1125 terminated, no recommendation;', 'trials preferred at first and second line'], 'b1', 'f-s')
+    b += T(360, 492, 'All patients: regional mesothelioma MDT, named nurse specialist, compensation advice (BTS D, GPP)', 'f-s')
+    return svg(504, b)
+
+
+def f24_meso_trials():
+    """Median overall survival in the three randomised trials, from the trial abstracts."""
+    items = [
+        ('CheckMate 743: nivo + ipi', 18.1, 'b1'),
+        ('CheckMate 743: chemotherapy', 14.1, 'track'),
+        ('IND.227: pembro + chemo', 17.3, 'b1'),
+        ('IND.227: chemotherapy', 16.1, 'track'),
+        ('MARS 2: EPD + chemo', 19.3, 'warn'),
+        ('MARS 2: chemotherapy alone', 24.8, 'ok'),
+    ]
+    h, b = bars(items, ' mo', 30, 'Immunotherapy added months; radical surgery cost them (median OS)', lab_w=260)
+    b += T(12, h + 4, ['HR for death: CheckMate 743 0.74; IND.227 0.79. MARS 2: restricted mean survival',
+                       'at 2 years 1.9 months lower with surgery. Different populations: MARS 2 took',
+                       'resectable disease after two cycles of chemotherapy; the others, unresectable disease.'], 'f-s', 'start')
+    return svg(h + 52, b)
+
+
+def f24_cm743_histology():
+    """CheckMate 743 median OS by histology, as reported in NICE TA818 (2-year data)."""
+    items = [
+        ('Non-epithelioid: nivo + ipi', 18.1, 'b1'),
+        ('Non-epithelioid: chemotherapy', 8.8, 'track'),
+        ('Epithelioid: nivo + ipi', 18.7, 'b1'),
+        ('Epithelioid: chemotherapy', 16.5, 'track'),
+    ]
+    h, b = bars(items, ' mo', 25, 'CheckMate 743: the gain is concentrated in non-epithelioid disease', lab_w=260)
+    b += T(12, h + 4, ['HR 0.46 (0.31 to 0.68) non-epithelioid; 0.86 (0.69 to 1.08) epithelioid (2-year data).',
+                       'Subgroups were not powered; NICE TA818 did not restrict by histology.'], 'f-s', 'start')
+    return svg(h + 34, b)
+
+
+def f24_iaslc_criteria():
+    """IASLC 2016 criteria for two lung tumours (Detterbeck, JTO 2016, Tables 2 and 3), redrawn as a comparison."""
+    b = T(12, 22, 'Two lung tumours: separate primaries or one cancer? (IASLC 2016)', 'f-h', 'start')
+    b += box(10, 36, 340, 36, 'Separate primary lung cancers', 'ok', 'f-h')
+    b += box(370, 36, 340, 36, 'Single source (metastasis)', 'warn', 'f-h')
+    b += T(360, 96, 'Decisive', 'f-h')
+    b += box(10, 106, 340, 76, ['Clearly different histological types', 'Clearly different on comprehensive', 'histology (resected); squamous from CIS'], 'ok', 'f-s')
+    b += box(370, 106, 340, 76, ['Exactly matching breakpoints on', 'comparative genomic hybridisation'], 'warn', 'f-s')
+    b += T(360, 206, 'Relative (weigh together)', 'f-h')
+    b += box(10, 216, 340, 110, ['Different appearance or PET uptake', 'Different driver mutation pattern', 'Different growth rates', 'No nodal or systemic metastases'], 'b0', 'f-s')
+    b += box(370, 216, 340, 110, ['Same radiological appearance', 'Similar growth pattern', 'Significant nodal or systemic metastases', 'Same biomarker pattern and histotype'], 'b1', 'f-s')
+    b += box(10, 340, 700, 50, ['Multiple ground-glass or lepidic lesions are neither: classify as multifocal lung cancer.',
+                               'Final call by preponderance of evidence at an MDT. Martini-Melamed (1975) is to be replaced.'], 'b1', 'f-s')
+    return svg(400, b)
+
+
+def f24_mplc_decision():
+    """Decision diagram for a second lung lesion, from ACCP 2013 and IASLC 2016."""
+    b = box(200, 10, 320, 44, ['Proven or suspected NSCLC with', 'a second lung lesion'], 'b1', 'f-h')
+    b += arrow(360, 54, 360, 72)
+    b += box(110, 74, 500, 50, ['MDT judgement on clinical, radiological and histological', 'features (ACCP 2C; IASLC criteria)'], 'b0')
+    b += arrow(360, 124, 360, 142)
+    b += box(110, 144, 500, 50, ['Before resecting two primaries: invasive mediastinal', 'staging and extrathoracic imaging (ACCP 1B)'], 'b0')
+    b += arrow(360, 194, 360, 212)
+    b += box(230, 214, 260, 38, 'N2 or distant disease?', 'b1', 'f-h')
+    b += arrow(490, 233, 548, 233) + T(518, 226, 'Yes', 'f-s')
+    b += box(550, 210, 160, 46, ['Favours one cancer:', 'MDT, treat by stage'], 'warn', 'f-s')
+    b += arrow(360, 252, 360, 270) + T(372, 266, 'No', 'f-s', 'start')
+    # four outcome boxes
+    xs = [10, 188, 366, 544]
+    spec = [
+        (['Same lobe', 'Lobectomy (1B);', 'no separate work-up', 'of the nodule (1B)'], 'ok'),
+        (['Other ipsilateral', 'lobe: exclude benign', 'or primary (1C);', 'resect each (1B)'], 'ok'),
+        (['Contralateral:', 'consider resecting', 'each if reserve', 'allows (2C)'], 'b0'),
+        (['Multifocal ground-', 'glass: curative intent,', 'sublobar resection', 'of all if feasible (2C)'], 'b0'),
+    ]
+    b += line(98, 272, 632, 272)
+    for x, (ls, c) in zip(xs, spec):
+        b += arrow(x + 88, 272, x + 88, 288)
+        b += box(x, 290, 176, 88, ls, c, 'f-s')
+    b += box(10, 392, 700, 46, ['Unexpected second cancer in another lobe at operation: resect each lesion if reserve is adequate and N2 is', 'negative (1C). Lung-sparing resection keeps options open for the next primary.'], 'b1', 'f-s')
+    return svg(448, b)
+
+
+# ---- figs_F25.py
+
+
+
+def f25_metabolic():
+    b = box(250, 8, 220, 40, 'Surgical or traumatic injury', 'b1', 'f-h')
+    b += arrow(300, 48, 170, 78) + arrow(420, 48, 550, 78)
+    b += box(20, 80, 300, 54, ['Afferent nerve signals', 'hypothalamus, pituitary, sympathetic'], 'b0')
+    b += box(400, 80, 300, 54, ['Tissue damage: cytokines', 'IL-6 peaks at 12 to 24 hours'], 'b0')
+    b += arrow(110, 134, 110, 162) + arrow(250, 134, 250, 162)
+    b += box(10, 164, 200, 112, ['Rise', 'ACTH, cortisol, GH,', 'vasopressin, prolactin,', 'catecholamines, glucagon,', 'renin, aldosterone'], 'warn', 'f-s')
+    b += box(220, 164, 140, 112, ['Fall', 'insulin, testosterone,', 'oestrogen, T3', '', 'No change: TSH,', 'LH, FSH'], 'b1', 'f-s')
+    b += arrow(550, 134, 550, 162)
+    b += box(380, 164, 330, 112, ['Acute phase response (liver)', 'Up: CRP, fibrinogen, complement', 'Down: albumin, transferrin', 'Fever, neutrophilia, iron and zinc', 'sequestered, muscle proteolysis'], 'b0', 'f-s')
+    b += arrow(180, 276, 180, 302) + arrow(545, 276, 545, 302)
+    b += box(10, 304, 700, 96, ['Metabolic result: catabolism', 'Carbohydrate: more glucose made, less used; hyperglycaemia (insulin deficiency, then resistance)',
+                               'Protein: muscle breakdown for gluconeogenesis and acute phase proteins (up to about 0.5 kg lean mass a day)',
+                               'Fat: lipolysis and ketones · Salt and water: retained for 3 to 5 days (vasopressin, aldosterone); potassium lost'], 'b1', 'f-s')
+    b += T(12, 422, 'Peak after surgery:  cortisol 0 to 4 h  ·  IL-6 12 to 24 h  ·  white cells 24 to 48 h  ·  CRP 24 to 72 h', 'f-s', 'start')
+    b += T(12, 442, 'Cortisol cuts cytokine output (negative feedback); normal feedback on ACTH is lost', 'f-s', 'start')
+    return svg(454, b)
+
+
+def f25_vq():
+    h, b = bars([('Right upper lobe', 35, 'warn'), ('Right middle lobe', 92, 'warn'), ('Right lower lobe', 63, 'warn'),
+                 ('Left upper lobe', 4, 'ok'), ('Left lower lobe', 7, 'ok')],
+                '%', 100, 'Planar zones misjudge the right lobes: patients whose lobar share differed by over 10% from SPECT/CT', 200)
+    b += T(12, h + 4, 'Planar thirds cannot follow the fissures; the right middle lobe cannot be separated (n=75, Arnon-Sheleg, J Nucl Med 2020)', 'f-s', 'start')
+    return svg(h + 16, b)
+
+
+def f25_jet():
+    b = T(12, 20, 'Manual jet (Sanders) ventilation through a rigid bronchoscope', 'f-h', 'start')
+    b += box(10, 44, 130, 52, ['Oxygen', 'wall supply'], 'b1', 'f-s')
+    b += arrow(140, 70, 172, 70)
+    b += box(174, 44, 150, 52, ['Reducing valve', 'about 1.5 bar (20 psi)'], 'b0', 'f-s')
+    b += arrow(324, 70, 356, 70)
+    b += box(358, 44, 130, 52, ['Hand trigger', 'short bursts'], 'b0', 'f-s')
+    b += '<path d="M488 70 C540 70 560 92 560 128" class="f-l"/>'
+    # rigid scope, horizontal
+    b += '<rect x="120" y="150" width="520" height="34" rx="6" class="f-track"/>'
+    b += '<rect x="120" y="150" width="520" height="34" rx="6" class="f-b1" style="fill-opacity:0.25"/>'
+    b += T(380, 172, 'Rigid bronchoscope barrel (open at the proximal end)', 'f-s')
+    b += '<path d="M560 128 L560 150" class="f-l" marker-end="url(#ah)"/>'
+    b += T(548, 140, 'Injector needle at side port', 'f-s', 'end')
+    b += arrow(80, 160, 118, 160) + arrow(80, 176, 118, 176)
+    b += T(74, 158, ['Room air', 'entrained'], 'f-s', 'end')
+    b += arrow(640, 167, 700, 167)
+    b += T(700, 202, ['Into the trachea:', 'jet plus entrained air'], 'f-s', 'end')
+    b += '<path d="M118 196 C90 210 70 214 50 214" class="f-dash" marker-end="url(#ah)"/>'
+    b += T(40, 236, 'Passive expiration out of the open barrel: keep this path clear', 'f-s', 'start')
+    b += box(10, 254, 345, 108, ['Settings (de Lima 2018)', 'Driving pressure about 1.5 bar (20 psi)', 'Inspiration 30 to 40% of the cycle',
+                                 'Low frequency 10 to 30/min; high 120 to 600/min', 'PEEP held at 10 cmH2O or less'], 'b0', 'f-s')
+    b += box(365, 254, 345, 108, ['Dangers', 'Barotrauma: pneumothorax, surgical emphysema', 'Air trapping if expiration is blocked',
+                                  'Hypercapnia: check end-tidal CO2 in pauses', 'Entrained air lowers and varies the FiO2'], 'warn', 'f-s')
+    return svg(372, b)
+
+
+def f25_pleural():
+    b = T(360, 18, 'Pleural fluid turnover (rabbit figures, mL/kg/h, Zocchi 2002)', 'f-h')
+    b += '<rect x="10" y="34" width="700" height="60" rx="8" class="f-b1"/>'
+    b += T(360, 58, 'Chest wall: parietal pleura over systemic capillaries (intercostal arteries)', 'f-s')
+    b += T(360, 76, 'Capillary pressure about 18 cmH2O (dog)', 'f-s')
+    b += '<rect x="10" y="98" width="700" height="160" rx="4" class="f-track"/>'
+    b += arrow(60, 80, 60, 142) + T(76, 124, 'Filtration 0.15 to 0.20 (net about +4 cmH2O)', 'f-n', 'start')
+    b += arrow(680, 142, 680, 80) + T(664, 124, 'Stomata to lymph 0.07', 'f-n', 'end')
+    b += T(360, 166, 'Pleural space: about 0.26 mL/kg in man, 5 to 24 micrometres thick', 'f-s')
+    b += T(360, 184, 'Liquid pressure about -6 to -9 cmH2O; protein 0.9 to 2.5 g/dL; pH about 7.6', 'f-s')
+    b += T(360, 202, 'Cells about 1,700 per mm3, mostly macrophages', 'f-s')
+    b += T(76, 242, 'Starling absorption 0.10', 'f-n', 'start')
+    b += T(436, 242, 'Cellular: ion-coupled 0.07, vesicles 0.02', 'f-s', 'start')
+    b += '<rect x="10" y="262" width="700" height="60" rx="8" class="f-b0"/>'
+    b += T(360, 290, 'Lung: visceral pleura (bronchial supply); pulmonary capillary pressure about 10 cmH2O', 'f-s')
+    b += T(360, 308, 'Absorbs by Starling forces (net about 4 cmH2O)', 'f-s')
+    b += arrow(60, 214, 60, 276) + arrow(420, 214, 420, 276)
+    b += box(10, 334, 345, 94, ['Lymphatic stomata', 'Parietal pleura only: diaphragm, lower', 'intercostal spaces, caudal mediastinum',
+                                '1 to 6 micrometres; open wider on inspiration'], 'ok', 'f-s')
+    b += box(365, 334, 345, 94, ['Reserve and failure', 'Lymph flow rises steeply with volume:', 'about 20-fold in sheep; human estimate',
+                                 'about 34 rising to about 700 mL/day'], 'warn', 'f-s')
+    return svg(438, b)
+
+
+def f25_goitre():
+    b = T(12, 20, 'Retrosternal goitre: lowest extent on CT sets the approach', 'f-h', 'start')
+    levels = [(58, 'Neck'), (110, 'Thoracic inlet'), (190, 'Aortic arch'), (262, 'Pericardium'), (330, 'Right atrium')]
+    for y, lab in levels:
+        b += line(20, y, 300, y, 'f-grid') + T(24, y - 6, lab, 'f-s', 'start')
+    # goitre shapes
+    b += '<path d="M220 50 C258 50 266 100 254 140 C246 168 196 168 188 140 C176 100 184 50 220 50 Z" class="f-ok"/>'
+    b += T(221, 128, '1', 'f-big')
+    b += '<path d="M282 54 C306 56 310 120 306 190 C304 238 272 244 268 200 C262 140 260 56 282 54 Z" class="f-b0"/>'
+    b += T(287, 200, '2', 'f-big')
+    b += '<path d="M160 60 C184 60 190 140 186 220 C184 300 176 336 160 336 C142 336 136 290 138 220 C140 140 138 60 160 60 Z" class="f-warn"/>'
+    b += T(162, 290, '3', 'f-big')
+    b += box(320, 36, 390, 56, ['Grade 1: above the aortic arch', 'Cervical collar incision (about 95%)'], 'ok', 'f-s')
+    b += box(320, 100, 390, 56, ['Grade 2: arch to pericardium', 'Manubriotomy or partial sternotomy'], 'b0', 'f-s')
+    b += box(320, 164, 390, 56, ['Grade 3: down to the right atrium', 'Full sternotomy'], 'warn', 'f-s')
+    b += box(320, 228, 390, 56, ['Posterior mediastinal, to the posterior pleura', 'Neck plus right posterolateral thoracotomy'], 'warn', 'f-s')
+    b += box(320, 292, 390, 70, ['CT signs that favour a sternal approach', 'Below the arch or carina · posterior extension', 'Conical, wider than the inlet · ectopic or recurrent'], 'b1', 'f-s')
+    b += T(12, 384, 'Grades from Huins et al., Int J Surg 2008 (as given in StatPearls); approaches from Simo, Nixon, Ofo (Open Atlas)', 'f-s', 'start')
+    return svg(396, b)
+
+
+def f25_blocks():
+    b = T(12, 20, 'Paravertebral and erector spinae plane targets (transverse section, one side)', 'f-h', 'start')
+    # skin line
+    b += line(20, 50, 700, 50, 'f-grid') + T(24, 44, 'Skin (posterior)', 'f-s', 'start')
+    # erector spinae muscle
+    b += '<path d="M80 62 C160 56 300 58 380 70 C390 100 380 128 360 136 L100 136 C80 120 76 90 80 62 Z" class="f-b1"/>'
+    b += T(230, 100, 'Erector spinae muscle', 'f-s')
+    # vertebral body and spinous process
+    b += '<rect x="30" y="150" width="40" height="80" rx="8" class="f-b1"/>' + T(50, 248, 'Lamina', 'f-s')
+    b += '<path d="M70 156 L330 148 L332 166 L70 176 Z" class="f-b0"/>'
+    b += T(200, 186, 'Transverse process', 'f-s')
+    # ESP injection layer
+    b += '<path d="M100 142 L360 140" class="f-duct"/>'
+    # SCTL
+    b += line(330, 170, 430, 232, 'f-dash')
+    b += T(440, 240, ['Superior costo-', 'transverse ligament'], 'f-s', 'start')
+    # paravertebral space wedge
+    b += '<path d="M70 236 L340 180 L430 236 L360 280 L70 280 Z" class="f-ok" style="fill-opacity:0.55"/>'
+    b += T(200, 262, 'Paravertebral space', 'f-h')
+    # pleura
+    b += '<path d="M60 296 C200 296 420 290 700 250" class="f-l"/>'
+    b += T(600, 300, 'Parietal pleura', 'f-s', 'start')
+    b += '<path d="M100 290 L120 270" class="f-nerve"/>'
+    b += T(24, 316, 'Spinal nerve, sympathetic chain and intercostal vessels lie in the space', 'f-s', 'start')
+    # needles
+    b += '<path d="M470 54 L362 140" class="f-cut"/>' + T(478, 70, ['ESP: needle onto the tip of', 'the transverse process, deep', 'to the muscle; fluid lifts it'], 'f-s', 'start')
+    b += '<path d="M560 110 L370 232" class="f-cut"/>' + T(568, 140, ['PVB: through the', 'ligament; pleura', 'pushed down'], 'f-s', 'start')
+    b += box(10, 330, 345, 92, ['Paravertebral (Nair 2020)', 'T4 to T5 for thoracic surgery', '20 to 25 ml covers 4 to 5 dermatomes',
+                                'Pneumothorax, puncture, hypotension each under 1%'], 'b0', 'f-s')
+    b += box(365, 330, 345, 92, ['Erector spinae (Chin 2021)', 'Over 10 ml; 20 to 30 ml usual', 'Spread 3 to 6 levels, mostly in the plane',
+                                 'Dorsal rami always; ventral rami variable'], 'b0', 'f-s')
+    return svg(432, b)
+
+
+# ---- figs_F26.py
+
+
+
+def _f26_torso(cx, top=50, bot=330, half=72):
+    """Simple torso outline (no arms), centred on cx."""
+    return (f'<path d="M{cx - 30} {top} L{cx - half + 4} {top + 16} L{cx - half} {top + 80} '
+            f'L{cx - half + 10} {bot - 60} L{cx - half + 16} {bot} L{cx + half - 16} {bot} '
+            f'L{cx + half - 10} {bot - 60} L{cx + half} {top + 80} L{cx + half - 4} {top + 16} '
+            f'L{cx + 30} {top} Z" class="f-b0"/>')
+
+
+def _f26_num(x, y, n, cls='b1'):
+    return (f'<circle cx="{x}" cy="{y}" r="11" class="f-{cls}"/>'
+            f'<text x="{x}" y="{y + 4.5}" text-anchor="middle" class="f-t f-n">{n}</text>')
+
+
+def f26_flap_sites():
+    """Flap and skeletal choice by chest wall defect site (front and back schematic)."""
+    b = T(12, 22, 'Chest wall defect site and first-choice cover', 'f-h', 'start')
+    # front torso
+    fx = 100
+    b += _f26_torso(fx)
+    b += f'<rect x="{fx - 8}" y="66" width="16" height="130" rx="5" class="f-track"/>'
+    for i in range(6):
+        y = 92 + i * 30
+        b += f'<path d="M{fx - 12} {y} C{fx - 40} {y + 6} {fx - 56} {y + 12} {fx - 62} {y + 22}" class="f-grid" fill="none"/>'
+        b += f'<path d="M{fx + 12} {y} C{fx + 40} {y + 6} {fx + 56} {y + 12} {fx + 62} {y + 22}" class="f-grid" fill="none"/>'
+    b += f'<rect x="{fx - 26}" y="60" width="52" height="62" rx="8" class="f-dash"/>'
+    b += _f26_num(fx, 91, 1, 'warn')
+    b += f'<rect x="{fx - 16}" y="128" width="32" height="76" rx="8" class="f-dash"/>'
+    b += _f26_num(fx, 166, 2, 'warn')
+    b += f'<ellipse cx="{fx + 44}" cy="176" rx="18" ry="34" class="f-dash"/>'
+    b += _f26_num(fx + 44, 176, 3)
+    b += f'<ellipse cx="{fx - 54}" cy="170" rx="13" ry="34" class="f-dash"/>'
+    b += _f26_num(fx - 54, 170, 4)
+    b += T(fx, 352, 'Front', 'f-h')
+    # back torso
+    bx = 268
+    b += _f26_torso(bx)
+    b += f'<line x1="{bx}" y1="58" x2="{bx}" y2="322" class="f-grid"/>'
+    for s in (-1, 1):
+        b += (f'<path d="M{bx + s * 12} 78 L{bx + s * 52} 72 L{bx + s * 30} 148 Z" class="f-track"/>'
+              f'<path d="M{bx + s * 12} 78 L{bx + s * 52} 72 L{bx + s * 30} 148 Z" class="f-l"/>')
+    b += f'<line x1="{bx - 70}" y1="150" x2="{bx + 70}" y2="150" class="f-dash"/>'
+    b += T(bx, 168, 'scapular tip, about 4th rib', 'f-s')
+    b += _f26_num(bx + 34, 108, 5, 'ok')
+    b += f'<ellipse cx="{bx + 34}" cy="222" rx="24" ry="30" class="f-dash"/>'
+    b += _f26_num(bx + 34, 222, 6)
+    b += T(bx, 352, 'Back', 'f-h')
+    # legend
+    rows = [
+        (1, 'warn', 'Sternum and upper anterior wall',
+         ['Pectoralis major: thoracoacromial (dominant)', 'plus IMA perforators; advancement preferred']),
+        (2, 'warn', 'Total sternectomy, long vertical defect',
+         ['VRAM: robust skin island; rectus', 'flaps carry hernia risk about 13%']),
+        (3, 'b1', 'Anterolateral',
+         ['Latissimus dorsi; or TRAM, which', 'covers defects up to about 40 cm']),
+        (4, 'b1', 'Lateral',
+         ['Latissimus dorsi (thoracodorsal): the', 'workhorse; seroma in up to 79%']),
+        (5, 'ok', 'Upper posterior, under the scapula',
+         ['Skeletal repair usually not needed up', 'to about 10 cm; muscle cover alone']),
+        (6, 'b1', 'Posterior, below the 4th rib',
+         ['Reconstruct: scapular tip can catch', 'in the defect; latissimus cover']),
+    ]
+    for i, (n, cls, head, sub) in enumerate(rows):
+        y = 44 + i * 52
+        b += _f26_num(366, y + 10, n, cls)
+        b += T(386, y + 15, head, 'f-h', 'start')
+        b += T(386, y + 32, sub, 'f-s', 'start')
+    b += box(10, 368, 700, 62, ['Fallbacks: omentum for anterior defects when pedicled flaps fail or are unsuitable (needs a skin graft;',
+                                'abdominal morbidity). Free flap when local muscles are resected, injured or irradiated:',
+                                'internal mammary vessels for anterior, thoracodorsal for lateral recipients'], 'b1', 'f-s')
+    return svg(440, b)
+
+
+def f26_subxiphoid_window():
+    """Subxiphoid pericardial window: surface marking, sagittal view and numbered sequence."""
+    b = T(12, 22, 'Subxiphoid pericardial window, step by step', 'f-h', 'start')
+    # Panel A: surface view
+    cx = 110
+    b += T(cx, 46, 'A  Surface', 'f-h')
+    b += f'<rect x="{cx - 9}" y="60" width="18" height="110" rx="4" class="f-track"/>'
+    b += f'<rect x="{cx - 9}" y="60" width="18" height="110" rx="4" class="f-dash"/>'
+    b += T(cx - 16, 96, 'Sternum', 'f-s', 'end')
+    b += f'<path d="M{cx - 7} 170 L{cx} 194 L{cx + 7} 170" class="f-l"/>'
+    b += T(cx + 12, 188, 'Xiphoid', 'f-s', 'start')
+    b += f'<path d="M{cx - 10} 168 C{cx - 40} 190 {cx - 70} 214 {cx - 90} 252" class="f-l"/>'
+    b += f'<path d="M{cx + 10} 168 C{cx + 40} 190 {cx + 70} 214 {cx + 90} 252" class="f-l"/>'
+    b += T(22, 272, 'Costal margin', 'f-s', 'start')
+    b += f'<line x1="{cx}" y1="180" x2="{cx}" y2="236" class="f-cut" style="stroke-width:4"/>'
+    b += T(cx, 254, '3 to 5 cm midline incision', 'f-s')
+    b += (f'<line x1="{cx + 28}" y1="272" x2="{cx + 38}" y2="282" class="f-cut"/>'
+          f'<line x1="{cx + 38}" y1="272" x2="{cx + 28}" y2="282" class="f-cut"/>')
+    b += T(cx + 46, 276, ['Drain via', 'stab wound'], 'f-s', 'start')
+    # Panel B: sagittal
+    sx = 250
+    b += T(sx + 120, 46, 'B  Side view', 'f-h')
+    b += f'<path d="M{sx + 14} 60 L{sx + 34} 178" class="f-l" style="stroke-width:8;stroke-linecap:round"/>'
+    b += f'<path d="M{sx + 34} 178 L{sx + 46} 202" class="f-dash" style="stroke-width:3"/>'
+    b += T(sx + 28, 214, 'Xiphoid excised', 'f-s', 'end')
+    b += f'<ellipse cx="{sx + 130}" cy="140" rx="74" ry="58" class="f-track"/>'
+    b += f'<ellipse cx="{sx + 130}" cy="140" rx="74" ry="58" class="f-l"/>'
+    b += f'<ellipse cx="{sx + 136}" cy="136" rx="48" ry="36" class="f-b1"/>'
+    b += T(sx + 136, 141, 'Heart', 'f-h')
+    b += T(sx + 196, 80, 'Effusion', 'f-s', 'start')
+    b += f'<path d="M{sx + 98} 192 Q{sx + 116} 202 {sx + 138} 199" class="f-cut" style="stroke-width:5"/>'
+    b += T(sx + 146, 224, '2 to 3 cm window', 'f-s', 'start')
+    b += f'<path d="M{sx + 6} 262 C{sx + 80} 226 {sx + 160} 226 {sx + 236} 262" class="f-l"/>'
+    b += T(sx + 176, 284, 'Diaphragm', 'f-s', 'start')
+    b += f'<path d="M{sx + 70} 268 C{sx + 100} 254 {sx + 140} 256 {sx + 170} 268 L{sx + 170} 306 L{sx + 70} 306 Z" class="f-b0"/>'
+    b += T(sx + 120, 294, 'Liver', 'f-s')
+    b += f'<path d="M{sx + 22} 290 C{sx + 44} 262 {sx + 76} 226 {sx + 108} 196" class="f-duct" style="stroke-width:3"/>'
+    b += T(sx + 16, 308, 'Drain', 'f-s', 'start')
+    # Panel C: steps
+    steps = [
+        '1 Supine; GA (local possible)',
+        '2 Incise over xiphoid into midline',
+        '3 Open linea alba; excise xiphoid',
+        '4 Finger dissection behind sternum;',
+        '   lift it; expose lower pericardium',
+        '5 Grasp, open, suck out fluid;',
+        '   send fluid and excised patch',
+        '6 Finger sweep: loculi, adhesions,',
+        '   nodules; inspect epicardium',
+        '7 28 to 32 F drain into pericardium',
+        '   via stab wound; layered closure',
+    ]
+    b += '<rect x="500" y="36" width="210" height="258" rx="9" class="f-b0"/>'
+    b += T(605, 56, 'C  Sequence', 'f-h')
+    for i, st in enumerate(steps):
+        b += T(508, 80 + i * 19, st, 'f-s', 'start')
+    b += box(10, 324, 700, 46, ['Drain out at under 100 ml in 24 h (usually 48 to 72 h). Advantages: supine, quick, local anaesthesia',
+                                'possible, no one-lung ventilation. Weakness: more recurrence than thoracotomy (9.4% against 0%, Langdon 2016)'], 'warn', 'f-s')
+    return svg(380, b)
+
+
+def f26_window_outcomes():
+    """Langdon 2016: subxiphoid against left anterior mini-thoracotomy window."""
+    h1, b1 = bars([('Subxiphoid (n=127)', 9.4, 'warn'), ('Anterior thoracotomy (n=52)', 0, 'b0')],
+                  '%', 12, 'Recurrent moderate or large effusion: subxiphoid more (P=0.02)')
+    h2, b2 = bars([('Subxiphoid', 32.4, 'b0'), ('Anterior thoracotomy', 78.3, 'warn')],
+                  ' mg', 100, 'IV morphine equivalent in first 48 h: thoracotomy more (P=0.0001)')
+    h3, b3 = bars([('Subxiphoid', 7.1, 'b1'), ('Anterior thoracotomy', 7.7, 'b1')],
+                  '%', 12, '30-day mortality: no difference (P=1.00)')
+    b = b1 + f'<g transform="translate(0,{h1})">{b2}</g>' + f'<g transform="translate(0,{h1 + h2})">{b3}</g>'
+    b += T(12, h1 + h2 + h3 + 8, 'Langdon, Seery, Kulik, J Cardiothorac Surg 2016; retrospective, 179 windows, 2002 to 2015', 'f-s', 'start')
+    return svg(h1 + h2 + h3 + 20, b)
+
+
+def f26_incision_map():
+    """Thoracic incisions and their complications, with sourced numbers."""
+    b = T(12, 22, 'Incisions and what goes wrong with them', 'f-h', 'start')
+    # front torso
+    fx = 150
+    b += (f'<path d="M{fx - 40} 44 L{fx - 104} 64 L{fx - 112} 150 L{fx - 98} 280 L{fx - 90} 320 '
+          f'L{fx + 90} 320 L{fx + 98} 280 L{fx + 112} 150 L{fx + 104} 64 L{fx + 40} 44 Z" class="f-b0"/>')
+    b += T(fx, 340, 'Front', 'f-h')
+    b += T(fx - 70, 40, "patient's right", 'f-s', 'middle')
+    # nipples
+    b += f'<circle cx="{fx - 58}" cy="140" r="4" class="f-b1"/><circle cx="{fx + 58}" cy="140" r="4" class="f-b1"/>'
+    # sternotomy
+    b += f'<line x1="{fx}" y1="58" x2="{fx}" y2="200" class="f-cut" style="stroke-width:4"/>'
+    b += _f26_num(fx + 16, 80, 1, 'warn')
+    # clamshell: inframammary curve across sternum
+    b += f'<path d="M{fx - 100} 150 C{fx - 70} 176 {fx - 30} 172 {fx} 164 C{fx + 30} 172 {fx + 70} 176 {fx + 100} 150" class="f-cut" style="stroke-width:3"/>'
+    b += _f26_num(fx + 74, 188, 2, 'warn')
+    # right anterior mini-thoracotomy (viewer's left)
+    b += f'<path d="M{fx - 82} 196 C{fx - 70} 204 {fx - 52} 206 {fx - 38} 202" class="f-cut" style="stroke-width:4"/>'
+    b += _f26_num(fx - 60, 222, 3, 'warn')
+    # subxiphoid
+    b += f'<line x1="{fx}" y1="214" x2="{fx}" y2="250" class="f-cut" style="stroke-width:4"/>'
+    b += _f26_num(fx + 16, 238, 4, 'warn')
+    # side view (patient's left side up, back to the right)
+    sx = 420
+    b += f'<rect x="{sx - 110}" y="50" width="220" height="270" rx="60" class="f-b0"/>'
+    b += T(sx, 340, 'Left side (back to the right)', 'f-h')
+    b += f'<path d="M{sx + 40} 70 L{sx + 92} 74 L{sx + 70} 160 Z" class="f-track"/>'
+    b += f'<path d="M{sx + 40} 70 L{sx + 92} 74 L{sx + 70} 160 Z" class="f-l"/>'
+    b += T(sx + 74, 66, 'Scapula', 'f-s', 'middle')
+    for i in range(5):
+        y = 120 + i * 32
+        b += f'<path d="M{sx - 96} {y + 24} C{sx - 30} {y + 6} {sx + 40} {y} {sx + 100} {y - 8}" class="f-grid" fill="none"/>'
+    # posterolateral thoracotomy around scapular tip
+    b += f'<path d="M{sx - 70} 196 C{sx - 20} 196 {sx + 40} 186 {sx + 70} 172 C{sx + 84} 160 {sx + 92} 130 {sx + 96} 104" class="f-cut" style="stroke-width:4"/>'
+    b += _f26_num(sx - 80, 216, 5, 'warn')
+    # VATS ports
+    for (px, py) in [(sx - 60, 252), (sx - 10, 236), (sx + 30, 274)]:
+        b += f'<circle cx="{px}" cy="{py}" r="6" class="f-b1"/>'
+    b += _f26_num(sx + 56, 254, 6)
+    # legend
+    leg = [
+        (1, 'Sternotomy: deep wound infection,', 'dehiscence (Cardiac 17 tab)'),
+        (2, 'Clamshell: sternal problem needing', 'surgery 11.4% (Kim 2025); IMAs tied'),
+        (3, 'Mini-thoracotomy: lung hernia, 20', 'in 1,381 MICS (Cetinkaya 2020)'),
+        (4, 'Subxiphoid: less pain than anterior', 'thoracotomy (Langdon 2016)'),
+        (5, 'Thoracotomy: chronic pain 57% at 3 mo,', '47% at 6 mo (Bayman 2014)'),
+        (6, 'VATS: chronic pain 35% pooled; three', 'ports OR 4.3 (Chen 2023)'),
+    ]
+    for i, (n, l1, l2) in enumerate(leg):
+        col, row = i % 2, i // 2
+        x, y = 10 + col * 355, 362 + row * 46
+        b += _f26_num(x + 12, y + 14, n, 'warn' if n < 6 else 'b1')
+        b += T(x + 30, y + 12, l1, 'f-s', 'start')
+        b += T(x + 30, y + 29, l2, 'f-s', 'start')
+    b += box(560, 50, 150, 120, ['Intercostal nerve', 'injury: retractor,', 'rib fracture,', 'pericostal sutures,', 'drains, rigid ports'], 'b1', 'f-s')
+    b += box(560, 186, 150, 120, ['Lower risk: no rib', 'spreader, fewer', 'ports, early drain', 'removal, intracostal', 'closure'], 'ok', 'f-s')
+    return svg(506, b)
+
+
+def f26_chronic_pain():
+    """Chronic pain after thoracotomy and VATS, from two meta-analyses and one cohort."""
+    h, b = bars([
+        ('Thoracotomy, 3 months (meta-analysis)', 57, 'warn'),
+        ('Thoracotomy, 6 months (meta-analysis)', 47, 'warn'),
+        ('VATS, pooled (meta-analysis)', 35.3, 'b0'),
+        ('Thoracotomy, 6 months (Iowa cohort)', 33, 'warn'),
+        ('VATS, 6 months (Iowa cohort)', 25, 'b0'),
+    ], '%', 70, 'Chronic pain: about half after thoracotomy; VATS lowers it but does not abolish it', lab_w=300)
+    b += T(12, h + 4, 'Bayman and Brennan 2014 (thoracotomy, 17 and 15 studies); Chen 2023 (VATS, 17 studies); Bayman 2017 (99 patients)', 'f-s', 'start')
+    return svg(h + 16, b)
+
+
+# ---- figs_F27.py
+"""F27 figures: AKI (KDIGO, trials), GI complications, mesenteric ischaemia pathway,
+internal jugular ultrasound view, thoracic and cardiac VTE prophylaxis chart."""
+
+
+
+def _f27_card(x, y, w, h, head, lines, cls='b0', hcls='b1'):
+    out = f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="10" class="f-{cls}"/>'
+    out += f'<rect x="{x}" y="{y}" width="{w}" height="32" rx="10" class="f-{hcls}"/>'
+    out += T(x + w / 2, y + 21, head, 'f-h')
+    out += T(x + w / 2, y + 54, lines, 'f-s')
+    return out
+
+
+def f27_kdigo():
+    b = T(12, 20, 'KDIGO 2012 staging of acute kidney injury: the higher stage by either criterion counts', 'f-h', 'start')
+    spec = [('Stage 1', 'ok', ['1.5 to 1.9 x baseline', 'or a rise of 26.5 µmol/L', '(0.3 mg/dL) or more in 48 h'],
+             ['under 0.5 ml/kg/h', 'for 6 to 12 hours']),
+            ('Stage 2', 'warn', ['2.0 to 2.9 x baseline', '', ''],
+             ['under 0.5 ml/kg/h', 'for 12 hours or more']),
+            ('Stage 3', 'warn', ['3 x baseline or more,', 'or 354 µmol/L (4.0 mg/dL)', 'or more, or RRT started'],
+             ['under 0.3 ml/kg/h for 24 h', 'or anuria for 12 hours'])]
+    for i, (st, hc, cr, uo) in enumerate(spec):
+        x = 10 + i * 238
+        b += f'<rect x="{x}" y="34" width="226" height="214" rx="10" class="f-b0"/>'
+        b += f'<rect x="{x}" y="34" width="226" height="34" rx="10" class="f-{hc}"/>'
+        b += T(x + 113, 57, st, 'f-h')
+        b += T(x + 113, 90, 'Serum creatinine', 'f-h')
+        b += T(x + 113, 110, cr, 'f-s')
+        b += line(x + 16, 168, x + 210, 168, 'f-grid')
+        b += T(x + 113, 190, 'Urine output', 'f-h')
+        b += T(x + 113, 210, uo, 'f-s')
+    b += box(10, 260, 700, 44, ['After bypass, haemodilution can leave creatinine below the preoperative value,',
+                               'so creatinine alone misses or delays AKI: use urine output as well (ADQI 20)'], 'b1', 'f-s')
+    return svg(314, b)
+
+
+def f27_aki_trials():
+    h1, b1 = bars([('Accelerated: 90-day death', 43.9, 'b1'), ('Standard: 90-day death', 43.7, 'b1'),
+                   ('Accelerated: RRT-dependent', 10.4, 'warn'), ('Standard: RRT-dependent', 6.0, 'ok'),
+                   ('Accelerated: adverse events', 23.0, 'warn'), ('Standard: adverse events', 16.5, 'ok')],
+                  '%', 60, 'STARRT-AKI (n=2,927): earlier RRT did not save lives and left more on dialysis', 260)
+    h2, b2 = bars([('KDIGO bundle: any AKI', 55.1, 'ok'), ('Standard care: any AKI', 71.7, 'warn'),
+                   ('KDIGO bundle: stage 2 or 3', 29.7, 'ok'), ('Standard care: stage 2 or 3', 44.9, 'warn')],
+                  '%', 100, 'PrevAKI (n=276, biomarker-positive): the KDIGO bundle cut AKI within 72 h', 260)
+    return svg(h1 + h2, b1 + f'<g transform="translate(0 {h1})">{b2}</g>')
+
+
+def f27_gi_mortality():
+    h, b = bars([('Mesenteric ischaemia (n=104)', 45, 'warn'), ('Liver, pancreas, biliary (n=139)', 27, 'warn'),
+                 ('GI bleeding (n=259)', 17, 'b1'), ('Any serious GI complication', 14, 'b1'),
+                 ('No GI complication', 1.6, 'ok')], '%', 60,
+                'In-hospital mortality by GI complication: mesenteric ischaemia kills almost half', 280)
+    return svg(h, b)
+
+
+def f27_mesenteric():
+    b = box(150, 6, 420, 58, ['Suspect: lactate not clearing despite resuscitation, high or rising',
+                              'vasopressors, distension, feed intolerance, bloody stool, new sepsis'], 'b1', 'f-s')
+    b += arrow(360, 64, 360, 82)
+    b += box(150, 84, 420, 44, ['Optimise output and volume; cut vasoconstrictors if possible;',
+                               'measure bladder pressure; no single lactate or D-dimer decides'], 'b0', 'f-s')
+    b += arrow(360, 128, 360, 146)
+    b += box(150, 148, 420, 40, 'Urgent CT angiography, arterial and venous phases, any renal function', 'b0', 'f-s')
+    b += arrow(250, 188, 120, 216) + arrow(360, 188, 360, 216) + arrow(470, 188, 600, 216)
+    b += _f27_card(10, 218, 220, 116, 'Embolus or thrombus', ['SMA occluded:', 'revascularise first', '(endovascular often),', 'then resect dead bowel'], 'b0', 'warn')
+    b += _f27_card(250, 218, 220, 116, 'NOMI pattern', ['Poor enhancement, wall', 'thickening, pneumatosis,', 'portal gas; SMA patent'], 'b0', 'warn')
+    b += _f27_card(490, 218, 220, 116, 'Peritonitis or necrosis', ['Laparotomy without', 'delaying for imaging;', 'resect, leave in', 'discontinuity'], 'b0', 'warn')
+    b += arrow(300, 334, 250, 360) + arrow(420, 334, 470, 360)
+    b += box(90, 362, 260, 56, ['Abdominal compartment syndrome:', 'decompression laparotomy (I C)'], 'warn', 'f-s')
+    b += box(370, 362, 260, 56, ['Consider papaverine into the SMA: 80 mg,', 'then 30 to 60 mg/h for 24 to 72 h (IIb C)'], 'ok', 'f-s')
+    b += box(10, 432, 700, 40, 'Resection after revascularisation: no primary anastomosis, planned second look (IIa C); antibiotics for all (I C)', 'b1', 'f-s')
+    return svg(482, b)
+
+
+def f27_ij_ultrasound():
+    b = T(180, 20, 'Transverse (short-axis) view, right neck', 'f-h')
+    # skin line and probe
+    b += '<rect x="80" y="34" width="200" height="22" rx="6" class="f-b1"/>' + T(180, 50, 'Probe, marker to patient right', 'f-s')
+    b += line(40, 60, 320, 60, 'f-l')
+    b += T(36, 64, 'Skin', 'f-s', 'end')
+    # sternocleidomastoid
+    b += '<path d="M70 72 C120 66 240 66 290 78 L280 104 C220 96 130 96 80 100 Z" class="f-b0"/>'
+    b += T(180, 90, 'Sternocleidomastoid', 'f-s')
+    # IJV (lateral, larger, compressible) and carotid (medial, round)
+    b += '<ellipse cx="140" cy="140" rx="44" ry="28" class="f-lumen"/>' + T(140, 145, 'IJV', 'f-h')
+    b += '<circle cx="232" cy="150" r="20" class="f-lumen"/>' + T(232, 155, 'CCA', 'f-h')
+    b += T(140, 186, ['Lateral, larger,', 'compresses, fills', 'with head down'], 'f-s')
+    b += T(250, 196, ['Medial, round,', 'pulsatile'], 'f-s')
+    b += T(60, 240, 'Lateral', 'f-s') + T(300, 240, 'Medial', 'f-s')
+    # needle out-of-plane target
+    b += '<circle cx="140" cy="122" r="4" class="f-cut"/>'
+    b += arrow(80, 120, 132, 122)
+    b += T(76, 116, 'Tip', 'f-s', 'end')
+    # right panel: long axis in-plane
+    b += line(360, 10, 360, 260, 'f-dash')
+    b += T(540, 20, 'Long-axis (in-plane) view', 'f-h')
+    b += '<rect x="440" y="34" width="200" height="22" rx="6" class="f-b1"/>'
+    b += line(390, 60, 700, 60, 'f-l')
+    b += '<path d="M400 120 L700 120 L700 160 L400 160 Z" class="f-lumen"/>' + T(620, 145, 'IJV', 'f-h')
+    b += T(540, 50, 'Probe', 'f-s')
+    b += '<line x1="430" y1="60" x2="520" y2="130" class="f-cut"/>'
+    b += T(500, 84, ['Whole shaft and', 'tip in view'], 'f-s', 'start')
+    b += '<path d="M520 134 C560 140 620 140 690 138" class="f-dash"/>'
+    b += T(600, 184, ['Wire seen in the vein in both planes', 'before dilating; dilate gently'], 'f-s')
+    b += box(380, 214, 330, 40, 'Tip in the SVC; chest film after IJ or subclavian', 'ok', 'f-s')
+    return svg(266, b)
+
+
+def f27_vte():
+    cols = ['Parenteral drug vs none', 'LMWH over UFH', 'Add IPC or stockings', 'Extend to 28 to 35 days', 'Routine screening']
+    rows = [('Lobectomy or segmentectomy', ['Suggest (low)', 'Suggest (mod)', 'Suggest (v low)', 'If mod/high risk (low)', 'Against (v low)'],
+             ['ok', 'ok', 'b1', 'b1', 'warn']),
+            ('Pneumonectomy, extended', ['Suggest (low)', 'Suggest (mod)', 'Suggest (v low)', 'Suggest (low)', 'Suggest (v low)'],
+             ['ok', 'ok', 'b1', 'ok', 'b1']),
+            ('Oesophagectomy', ['Suggest (low)', 'Suggest (mod)', 'Suggest (v low)', 'Suggest (low)', 'Suggest (v low)'],
+             ['ok', 'ok', 'b1', 'ok', 'b1'])]
+    b = T(12, 20, 'Thoracic cancer surgery (ESTS/AATS 2022, adopted 2024): all conditional, certainty in brackets', 'f-h', 'start')
+    x0, cw = 170, 106
+    for j, c in enumerate(cols):
+        words = c.split(' ')
+        half = (len(words) + 1) // 2
+        b += T(x0 + j * cw + cw / 2, 44, [' '.join(words[:half]), ' '.join(words[half:])], 'f-s')
+    for i, (lab, cells, cls) in enumerate(rows):
+        y = 70 + i * 50
+        labs = {'Lobectomy or segmentectomy': ['Lobectomy or', 'segmentectomy'],
+                'Pneumonectomy, extended': ['Pneumonectomy or', 'extended resection'],
+                'Oesophagectomy': ['Oesophagectomy']}[lab]
+        b += T(162, y + 28 - (len(labs) - 1) * 8, labs, '', 'end')
+        for j, (t, c) in enumerate(zip(cells, cls)):
+            x = x0 + j * cw
+            b += f'<rect x="{x + 3}" y="{y + 4}" width="{cw - 6}" height="40" rx="7" class="f-{c}"/>'
+            parts = t.split(' (')
+            b += T(x + cw / 2, y + 21, parts[0], 'f-s') + T(x + cw / 2, y + 37, '(' + parts[1], 'f-s')
+    b += T(12, 248, 'DOACs only within trials. Timing (before or after operation): no recommendation.', 'f-s', 'start')
+    b += T(12, 284, 'Cardiovascular surgery (European 2024 update, chapter 1)', 'f-h', 'start')
+    b += box(10, 296, 226, 58, ['Cardiac: drug prophylaxis', 'from 6 to 24 h, if no', 'major bleeding (1C)'], 'ok', 'f-s')
+    b += box(247, 296, 226, 58, ['Vascular, higher risk', '(open TAAA, AAA, TEVAR):', 'start under 24 h (2C)'], 'b1', 'f-s')
+    b += box(484, 296, 226, 58, ['LMWH first line over UFH', 'in cardiac and vascular', 'surgery: less HIT (2B)'], 'b1', 'f-s')
+    return svg(366, b)
+
+
+# ---- figs_F28.py
+
+
+
+def f28_blast():
+    """Mechanisms of blast injury (CDC Primer and Essential Facts; StatPearls; MSD Manual table)."""
+    b = T(12, 22, 'Blast injury: five mechanisms', 'f-h', 'start')
+    cx, cy = 140, 200
+    # pressure wave rings
+    for r in (48, 82, 116):
+        b += f'<circle cx="{cx}" cy="{cy}" r="{r}" class="f-dash"/>'
+    # starburst
+    import math
+    pts = []
+    for i in range(16):
+        rr = 26 if i % 2 == 0 else 12
+        a = math.pi * 2 * i / 16
+        pts.append(f'{cx + rr * math.cos(a):.1f},{cy + rr * math.sin(a):.1f}')
+    b += f'<polygon points="{" ".join(pts)}" class="f-warn"/>'
+    # fragments
+    for ang in (200, 235, 270, 160):
+        a = math.radians(ang)
+        b += arrow(cx + 34 * math.cos(a), cy + 34 * math.sin(a), cx + 74 * math.cos(a), cy + 74 * math.sin(a))
+    # person struck by the wave
+    px, py = 262, 176
+    b += f'<circle cx="{px}" cy="{py - 34}" r="9" class="f-b1"/>'
+    b += line(px, py - 25, px, py + 10) + line(px - 14, py - 12, px + 14, py - 12)
+    b += line(px, py + 10, px - 10, py + 34) + line(px, py + 10, px + 10, py + 34)
+    b += arrow(px + 8, py + 46, px + 36, py + 46, dash=True)
+    b += T(px + 2, py + 66, 'thrown', 'f-s')
+    b += T(cx, 340, ['Rings: overpressure wave', '(high-order explosives only)'], 'f-s')
+    b += T(cx - 96, 82, 'fragments', 'f-s')
+    spec = [
+        ('Primary: blast wave (overpressure)', 'Gas-filled organs: ear drum, lung, bowel, eye.',
+         'TM rupture commonest; blast lung commonest fatal one', 'b1'),
+        ('Secondary: fragments and debris', 'Penetrating and blunt wounds, occult eye',
+         'penetration; small wounds can hide deep injury', 'b0'),
+        ('Tertiary: body thrown by blast wind', 'Fractures, traumatic amputation, open or',
+         'closed brain injury (as in a high fall or crash)', 'b0'),
+        ('Quaternary: everything else', 'Burns, crush, smoke, dust and toxic inhalation',
+         '(CO, cyanide), worsening of chronic disease', 'b0'),
+        ('Quinary: absorbed material', 'Radiological or biological contamination;',
+         'hyperinflammatory state out of keeping with wounds', 'track'),
+    ]
+    for i, (h, l1, l2, cls) in enumerate(spec):
+        y = 36 + i * 70
+        b += f'<rect x="318" y="{y}" width="392" height="62" rx="9" class="f-{cls}"/>'
+        b += T(330, y + 19, h, 'f-h', 'start') + T(330, y + 37, l1, 'f-s', 'start') + T(330, y + 53, l2, 'f-s', 'start')
+    b += T(12, 396, 'Confined space (bus, building, mine) and structural collapse raise injury and death rates.', 'f-s', 'start')
+    return svg(408, b)
+
+
+def f28_ssrf():
+    """Rib fixation: guideline position and randomised evidence, flail versus non-flail."""
+    b = T(12, 22, 'Rib fixation: what the guideline and trials show', 'f-h', 'start')
+    b += box(10, 34, 345, 40, 'Flail chest (or severe deformity)', 'b1', 'f-h')
+    b += box(365, 34, 345, 40, 'Non-flail: 3 or more displaced fractures', 'b1', 'f-h')
+    b += box(10, 84, 345, 66, ['EAST 2017: conditional FOR fixation', '(very low quality; 986 flail patients;',
+                              'lower mortality, pneumonia, ventilation)'], 'ok', 'f-s')
+    b += box(365, 84, 345, 66, ['EAST 2017: no recommendation', '(no studies of non-flail patients alone)'], 'track', 'f-s')
+    b += box(10, 160, 345, 84, ['Dehghan 2022 RCT, 207 patients', 'Ventilator-free days 22.7 vs 20.6 (p = 0.09)',
+                               'Deaths 0% vs 6% (p = 0.01); gain only in', 'those ventilated at randomisation'], 'b0', 'f-s')
+    b += box(365, 160, 345, 66, ['Pieracci 2020 (CWIS), 110, mostly observational', 'Pain at 2 weeks 2.9 vs 4.5 (p < 0.01);',
+                                'pleural complications 0% vs 10%'], 'ok', 'f-s')
+    b += box(365, 236, 345, 66, ['Marasco 2022 RCT, 124 not ventilated', 'No difference in pain (McGill) or quality',
+                                'of life at 3 and 6 months'], 'warn', 'f-s')
+    b += box(365, 312, 345, 66, ['Meyer 2023 RCT, 84 severe non-clinical flail', 'Longer hospital stay (RR 1.48);',
+                                'no quality-of-life gain to 6 months'], 'warn', 'f-s')
+    b += box(10, 254, 345, 124, ['Reading of the trials', 'Clearest benefit: flail chest in a', 'ventilated patient.',
+                                'Non-flail fractures in a patient who', 'is not ventilated: trials conflict'], 'b1', 'f-s')
+    b += T(12, 400, 'Green: favours fixation · amber: no benefit or harm · grey: no recommendation, or primary end point missed', 'f-s', 'start')
+    return svg(412, b)
+
+
+def _f28_seg(x0, extra=''):
+    """A longitudinal aortic segment: wall (tint) with lumen."""
+    return ('<g transform="translate(0 20)">'
+            f'<rect x="{x0 + 14}" y="84" width="142" height="64" rx="6" class="f-b1"/>'
+            f'<rect x="{x0 + 14}" y="96" width="142" height="40" class="f-lumen" style="stroke:none"/>'
+            + line(x0 + 14, 96, x0 + 156, 96) + line(x0 + 14, 136, x0 + 156, 136) + extra + '</g>')
+
+
+def f28_btai():
+    """BTAI grades I to IV (SVS) with ESVS 2026 grade and SVS 2026 / ESVS 2026 management."""
+    b = T(12, 22, 'Blunt thoracic aortic injury: grade, appearance and management', 'f-h', 'start')
+    names = [('Grade I', 'Intimal tear'), ('Grade II', 'Intramural haematoma'),
+             ('Grade III', 'Pseudoaneurysm'), ('Grade IV', 'Rupture')]
+    for i, (g, n) in enumerate(names):
+        x0 = 10 + i * 178
+        b += T(x0 + 85, 46, g + ' (SVS)', 'f-h') + T(x0 + 85, 64, n, 'f-s')
+        if i == 0:
+            b += _f28_seg(x0, f'<path d="M{x0 + 80} 96 L{x0 + 92} 112 L{x0 + 96} 96" class="f-l"/>')
+        elif i == 1:
+            b += _f28_seg(x0, f'<path d="M{x0 + 50} 96 Q{x0 + 85} 118 {x0 + 120} 96 Z" class="f-warn"/>')
+        elif i == 2:
+            b += (f'<path d="M{x0 + 60} 106 C{x0 + 56} 72 {x0 + 116} 72 {x0 + 110} 106" class="f-b1"/>'
+                  + _f28_seg(x0, f'<rect x="{x0 + 66}" y="84" width="38" height="13" class="f-lumen" style="stroke:none"/>'
+                             f'<path d="M{x0 + 66} 96 C{x0 + 64} 66 {x0 + 106} 66 {x0 + 104} 96" class="f-lumen"/>'))
+        else:
+            b += _f28_seg(x0, f'<rect x="{x0 + 74}" y="84" width="22" height="13" class="f-lumen" style="stroke:none"/>')
+            for dx, dy in ((-18, -26), (0, -34), (18, -26)):
+                b += line(x0 + 85, 104, x0 + 85 + dx * 0.8, 104 + dy * 0.6, 'f-cut')
+            b += T(x0 + 130, 86, 'free blood', 'f-s')
+    rows = [(222, 'ESVS 2026 grade', ['1', '1', '2', '3'], 'f-h'),
+            (252, 'SVS 2026', ['Non-operative; no', 'Non-operative; one', 'Stable: TEVAR', 'Emergent'], 'f-s'),
+            (268, '', ['routine imaging', 'CTA at 1 to 3 months', 'after 24 hours', 'repair'], 'f-s'),
+            (298, 'ESVS 2026', ['Non-operative', 'Non-operative', 'High risk: < 24 h;', 'Immediate'], 'f-s'),
+            (314, '', ['(class I)', '(class I)', 'otherwise > 24 h', 'TEVAR (class I)'], 'f-s')]
+    for y, lab, cells, cls in rows:
+        if lab:
+            b += line(10, y - 16, 710, y - 16, 'f-grid')
+        for i, c in enumerate(cells):
+            b += T(10 + i * 178 + 85, y, c, cls)
+    b += T(12, 194, 'Rows: ESVS 2026 grade · SVS 2026 management · ESVS 2026 management', 'f-s', 'start')
+    b += box(10, 330, 700, 44, ['Medical (anti-impulse) therapy, ESVS 2026: systolic 90 to 110 mmHg, heart rate under 100;',
+                               'with brain injury, cerebral perfusion comes first (both societies)'], 'b0', 'f-s')
+    return svg(384, b)
+
+
+def f28_btai_mort():
+    """Aortic-related mortality by grade (systematic review and VQI, as cited in ESVS 2026)."""
+    h, b = bars([('SVS grades I-II (review, 2,897)', 1, 'ok'), ('SVS grades III-IV (review)', 18, 'warn'),
+                 ('Grade I, non-operative (VQI)', 2.4, 'b0'), ('Grade II, non-operative (VQI)', 0.9, 'b0')],
+                '%', 20, 'Minimal aortic injury rarely kills: aortic-related deaths by grade', 270)
+    return svg(h, b)
+
+
+def f28_ptx2024():
+    """ERS/EACTS/ESTS 2024 spontaneous pneumothorax: recommendations with strength and certainty (full text)."""
+    b = T(12, 22, 'ERS/EACTS/ESTS 2024: recommendation, strength, certainty', 'f-h', 'start')
+    b += box(10, 34, 345, 36, 'Primary spontaneous (PSP)', 'b1', 'f-h')
+    b += box(365, 34, 345, 36, 'Secondary spontaneous (SSP)', 'b1', 'f-h')
+    left = [(['Minimal symptoms, clinically and radiologically', 'stable, any size: conservative care',
+              'Conditional · very low'], 'b0', 66),
+            (['Needs intervention: needle aspiration', 'rather than a chest drain', 'Strong · low'], 'ok', 66),
+            (['Ambulatory care where expertise and an', 'outpatient pathway exist', 'Conditional · low'], 'b0', 66),
+            (['First episode, recurrence prevention', 'is the priority: consider early surgery', 'Conditional · low'], 'b0', 66)]
+    right = [(['Conservative care, aspiration,', 'early surgery: no recommendation'], 'track', 50),
+             (['Against an 8 Fr ambulatory device', 'for initial treatment', 'Conditional against · very low'], 'warn', 66),
+             (['Persistent air leak, unfit for surgery:', 'autologous blood patch 1-2 mL/kg', 'Conditional · very low'], 'b0', 66),
+             (['Surgical fitness and timing: age, comorbidity,', 'lung disease, PS, ASA, emphysema on CT',
+               'Narrative question'], 'b1', 66)]
+    for col, x in ((left, 10), (right, 365)):
+        y = 80
+        for ls, cls, h in col:
+            b += box(x, y, 345, h, ls, cls, 'f-s')
+            y += h + 8
+    b += box(10, 378, 700, 44, ['No recommendation (very low certainty): bronchial valves · suction · VATS with or without',
+                               'pleurodesis · pleurectomy versus chemical pleurodesis'], 'track', 'f-s')
+    b += box(10, 430, 700, 44, ['All: stop smoking · no flying with an untreated pneumothorax, then wait 7 days after',
+                               'radiological resolution · diving discouraged for life unless pleurectomy'], 'b1', 'f-s')
+    return svg(484, b)
+
+
+# ---- figs_F29.py
+
+import math
+import random
+
+
+def f29_notss():
+    """NOTSS v1.2: four categories, twelve elements, rating scale."""
+    cats = [
+        ('Situation awareness', ['Gathering information', 'Understanding', 'information',
+                                 'Projecting and', 'anticipating future state'], 'b1'),
+        ('Decision making', ['Considering options', 'Selecting and', 'communicating option',
+                             'Implementing and', 'reviewing decisions'], 'b1'),
+        ('Communication and teamwork', ['Exchanging information', 'Establishing a shared',
+                                        'understanding', 'Co-ordinating team', 'activities'], 'b1'),
+        ('Leadership', ['Setting and maintaining', 'standards', 'Supporting others',
+                        'Coping with pressure'], 'b1'),
+    ]
+    b = box(220, 8, 280, 40, 'NOTSS: 4 categories, 12 elements', 'b0', 'f-h')
+    w, gap = 166, 12
+    for i, (name, els, cls) in enumerate(cats):
+        x = 10 + i * (w + gap)
+        b += arrow(360, 48, x + w / 2, 70)
+        b += box(x, 72, w, 46, name if len(name) < 20 else name.replace(' and ', ' and|').split('|'), cls, 'f-h')
+        b += f'<rect x="{x}" y="128" width="{w}" height="124" rx="9" class="f-b0"/>'
+        b += T(x + 10, 150, els, 'f-s', 'start')
+    b += T(10, 280, 'Rating after each case (under five minutes, as a debrief):', 'f-h', 'start')
+    scale = [('4 Good', 'ok'), ('3 Acceptable', 'ok'), ('2 Marginal', 'warn'), ('1 Poor', 'warn'), ('N/A not required', 'b0')]
+    for i, (lab, cls) in enumerate(scale):
+        b += box(10 + i * 142, 292, 132, 34, lab, cls, 'f-s')
+    b += T(360, 352, 'Formative use (training, debrief, self-reflection); not recommended for summative assessment.', 'f-s')
+    return svg(364, b)
+
+
+def f29_natssips():
+    """NatSSIPs 2 (CPOC 2023): the eight sequential standards in order."""
+    steps = [('1', ['Consent and', 'verification,', 'site marking']), ('2', ['Team brief', '(start of', 'session)']),
+             ('3', ['Sign In', '(before', 'anaesthesia)']), ('4', ['Time Out', '(just before', 'skin prep)']),
+             ('5', ['Implant use', 'and', 'verification']), ('6', ['Reconciling', 'items', '(counts)']),
+             ('7', ['Sign Out', '(before', 'leaving)']), ('8', ['Handover', 'and', 'debrief'])]
+    b = T(10, 20, 'NatSSIPs 2: the eight sequential standards', 'f-h', 'start')
+    w, gap = 80, 9
+    for i, (n, lab) in enumerate(steps):
+        x = 10 + i * (w + gap)
+        cls = 'warn' if n in ('4', '6') else 'b1'
+        b += f'<rect x="{x}" y="34" width="{w}" height="96" rx="9" class="f-{cls}"/>'
+        b += T(x + w / 2, 56, n, 'f-n')
+        b += T(x + w / 2, 80, lab, 'f-s')
+        if i < 7:
+            b += arrow(x + w, 82, x + w + gap, 82)
+    b += box(10, 146, 345, 78, ['Organisational standards: people (patients,', 'named board lead, staffing, training),',
+                                'processes, performance (data, observation)'], 'b0', 'f-s')
+    b += box(365, 146, 345, 78, ['Proportionate: full count for major procedures', 'and any cavity; proportionate count for minor',
+                                 'and needle procedures. No mandatory LocSSIP'], 'b0', 'f-s')
+    b += T(360, 246, 'Amber: Time Out (the most critical check) and counts (stop, recount, search, X-ray before the patient leaves).', 'f-s')
+    return svg(258, b)
+
+
+def _f29_km(times):
+    """times: list of (t, event 1/0). Returns step list [(t, S)], censor list [(t, S)]."""
+    times = sorted(times)
+    n = len(times)
+    s = 1.0
+    steps, cens = [(0, 1.0)], []
+    i = 0
+    while i < len(times):
+        t = times[i][0]
+        d = sum(1 for tt, e in times if tt == t and e == 1)
+        c = sum(1 for tt, e in times if tt == t and e == 0)
+        if d:
+            s *= (1 - d / n)
+            steps.append((t, s))
+        if c:
+            cens.extend([(t, s)] * c)
+        n -= d + c
+        i += d + c
+    return steps, cens
+
+
+def _f29_at_risk(times, t):
+    return sum(1 for tt, e in times if tt >= t)
+
+
+def f29_km_guide():
+    """Kaplan-Meier reading guide with invented data for two arms of 20."""
+    A = [(2, 1), (3, 1), (4, 1), (5, 0), (6, 1), (7, 1), (8, 1), (9, 0), (10, 1), (11, 1), (13, 1), (14, 0),
+         (16, 1), (18, 1), (21, 0), (24, 1), (27, 0), (30, 0), (33, 0), (36, 0)]
+    B = [(4, 1), (7, 1), (9, 0), (12, 1), (15, 1), (17, 0), (19, 1), (22, 0), (25, 1), (28, 0), (30, 0), (31, 0),
+         (32, 1), (33, 0), (34, 0), (35, 0), (36, 0), (36, 0), (36, 0), (36, 0)]
+    gx0, gx1, gy0, gy1, tmax = 96, 520, 40, 280, 36
+
+    def X(t):
+        return gx0 + t / tmax * (gx1 - gx0)
+
+    def Y(s):
+        return gy1 - s * (gy1 - gy0)
+    b = T(12, 20, 'Reading a Kaplan-Meier plot (invented data, 20 patients per arm)', 'f-h', 'start')
+    for s in (0, 0.25, 0.5, 0.75, 1.0):
+        b += line(gx0, Y(s), gx1, Y(s), 'f-grid') + T(gx0 - 8, Y(s) + 4, f'{s:.2f}', 'f-s', 'end')
+    for t in range(0, 37, 6):
+        b += T(X(t), gy1 + 16, str(t), 'f-s')
+    b += T((gx0 + gx1) / 2, gy1 + 34, 'Months from randomisation', 'f-s')
+    b += T(30, (gy0 + gy1) / 2 + 4, 'S(t)', 'f-s')
+    b += line(gx0, gy0, gx0, gy1) + line(gx0, gy1, gx1, gy1)
+    for data, cls, lab in ((A, 'f-cut', 'Control'), (B, 'f-l', 'Treatment')):
+        steps, cens = _f29_km(data)
+        d = f'M{X(0):.1f} {Y(1):.1f}'
+        prev = 1.0
+        for t, s in steps[1:]:
+            d += f' H{X(t):.1f} V{Y(s):.1f}'
+            prev = s
+        d += f' H{X(tmax):.1f}'
+        b += f'<path d="{d}" class="{cls}" style="stroke-width:2.2"/>'
+        for t, s in cens:
+            b += line(X(t), Y(s) - 6, X(t), Y(s) + 6, cls)
+    # median line
+    med = next(t for t, s in _f29_km(A)[0] if s <= 0.5)
+    b += line(gx0, Y(0.5), X(med), Y(0.5), 'f-dash')
+    b += line(X(med), Y(0.5), X(med), gy1, 'f-dash')
+    b += T(X(med) + 4, gy1 - 6, f'control median {med} months', 'f-s', 'start')
+    b += T(X(36), Y(0.5) - 8 - 0, '', 'f-s')
+    # labels on curves
+    b += T(X(28), Y(0.68) - 4, 'Treatment', 'f-h', 'start') + T(X(26), Y(0.22) + 16, 'Control', 'f-h', 'start')
+    # annotations right
+    ax = 534
+    b += box(ax, 40, 176, 54, ['Each drop = an event;', 'height = 1/number at risk'], 'b0', 'f-s')
+    b += box(ax, 102, 176, 54, ['Tick = censored patient', '(no drop; leaves risk set)'], 'b0', 'f-s')
+    b += box(ax, 164, 176, 54, ['Median: where S(t)', 'crosses 0.5'], 'b0', 'f-s')
+    b += box(ax, 226, 176, 54, ['Tail: few at risk, so', 'wide CI; do not over-read'], 'warn', 'f-s')
+    b += arrow(ax, 254, X(33) + 6, Y(0.5))
+    # numbers at risk
+    ry = gy1 + 58
+    b += T(12, ry, 'Number at risk', 'f-h', 'start')
+    for k, (data, lab) in enumerate(((B, 'Treatment'), (A, 'Control'))):
+        y = ry + 20 + k * 18
+        b += T(12, y, lab, 'f-s', 'start')
+        for t in range(0, 37, 6):
+            b += T(X(t), y, str(_f29_at_risk(data, t)), 'f-s')
+    by = ry + 66
+    b += box(10, by, 345, 62, ['Log-rank test: compares whole curves', '(observed v expected events at each death);',
+                               'gives a P value, not an effect size'], 'b1', 'f-s')
+    b += box(365, by, 345, 62, ['Hazard ratio (Cox): one number for the whole', 'follow-up; valid only if hazards are',
+                                'proportional (curves should not cross)'], 'b1', 'f-s')
+    return svg(by + 72, b)
+
+
+def f29_grade_ladder():
+    """GRADE certainty ladder: start level, five down, three up."""
+    lv = [('High', 'Very confident the true effect is close', 'ok'),
+          ('Moderate', 'Likely close; could be substantially different', 'b1'),
+          ('Low', 'May be substantially different', 'b1'),
+          ('Very low', 'Likely to be substantially different', 'warn')]
+    b = T(360, 20, 'GRADE certainty of evidence (GRADE Handbook, 2013)', 'f-h')
+    for i, (name, desc, cls) in enumerate(lv):
+        y = 36 + i * 58
+        b += f'<rect x="196" y="{y}" width="290" height="50" rx="9" class="f-{cls}"/>'
+        b += T(341, y + 20, name, 'f-h') + T(341, y + 39, desc, 'f-s')
+    b += box(10, 39, 150, 44, ['Randomised trials', 'start here'], 'b0', 'f-s') + arrow(160, 61, 194, 61)
+    b += box(10, 155, 150, 44, ['Observational', 'studies start here'], 'b0', 'f-s') + arrow(160, 177, 194, 177)
+    b += T(10, 228, ['Case series usually', 'very low; expert', 'opinion is not', 'evidence'], 'f-s', 'start')
+    b += box(520, 36, 190, 120, ['Rate DOWN (1 or 2 each)', 'Risk of bias', 'Inconsistency', 'Indirectness',
+                                 'Imprecision', 'Publication bias'], 'warn', 'f-s')
+    b += box(520, 166, 190, 104, ['Rate UP', 'Large effect (RR >2 or', '<0.5; two levels if >5', 'or <0.2); dose-response;',
+                                  'confounding would shrink it'], 'ok', 'f-s')
+    b += '<path d="M500 50 L500 262" class="f-l" marker-end="url(#ah)"/>'
+    b += '<path d="M180 262 L180 50" class="f-l" marker-end="url(#ah)"/>'
+    b += box(10, 284, 700, 44, ['Recommendation strength (strong or weak/conditional) also weighs benefits against harms,',
+                               'values and preferences, and resources: a strong recommendation can rest on low certainty.'], 'b0', 'f-s')
+    return svg(336, b)
+
+
+def _f29_cusum_data():
+    rnd = random.Random(117)
+    pts = []
+    for i in range(240):
+        p = min(0.6, max(0.01, rnd.lognormvariate(math.log(0.04), 0.8)))
+        if i >= 150:  # odds of death doubled from patient 151 (invented)
+            o = 2 * p / (1 - p)
+            ptrue = o / (1 + o)
+        else:
+            ptrue = p
+        y = 1 if rnd.random() < ptrue else 0
+        pts.append((p, y))
+    return pts
+
+
+def f29_ra_cusum():
+    """Risk-adjusted CUSUM (Steiner 2000 weights, R0=1, RA=2, h=4.5) on invented data."""
+    pts = _f29_cusum_data()
+    R0, RA, h = 1.0, 2.0, 4.5
+    xs, x = [0.0], 0.0
+    signal = None
+    for i, (p, y) in enumerate(pts):
+        if y:
+            w = math.log(((1 - p + R0 * p) * RA) / ((1 - p + RA * p) * R0))
+        else:
+            w = math.log((1 - p + R0 * p) / (1 - p + RA * p))
+        x = max(0.0, x + w)
+        if signal is None and x >= h:
+            signal = i + 1
+            sigval = x
+            xs.append(x)
+            x = 0.0  # reset after the signal and review
+            continue
+        xs.append(x)
+    n = len(pts)
+    gx0, gx1, gy0, gy1, ymax = 60, 700, 40, 250, 6.0
+
+    def X(i):
+        return gx0 + i / n * (gx1 - gx0)
+
+    def Y(v):
+        return gy1 - min(v, ymax) / ymax * (gy1 - gy0)
+    deaths = sum(y for p, y in pts)
+    exp = sum(p for p, y in pts)
+    b = T(12, 20, f'Risk-adjusted CUSUM, invented series of {n} operations: signal at patient {signal}', 'f-h', 'start')
+    for v in range(0, 7):
+        b += line(gx0, Y(v), gx1, Y(v), 'f-grid') + T(gx0 - 8, Y(v) + 4, str(v), 'f-s', 'end')
+    for i in range(0, n + 1, 40):
+        b += T(X(i), gy1 + 16, str(i), 'f-s')
+    b += T((gx0 + gx1) / 2, gy1 + 34, 'Consecutive operations', 'f-s')
+    b += line(gx0, gy0, gx0, gy1) + line(gx0, gy1, gx1, gy1)
+    b += line(gx0, Y(h), gx1, Y(h), 'f-cut') + T(gx0 + 6, Y(h) - 6, 'Control limit h = 4.5', 'f-s', 'start')
+    b += line(X(150), gy0, X(150), gy1, 'f-dash') + T(X(150) - 4, Y(2.6), ['odds of death', 'doubled from here'], 'f-s', 'end')
+    d = 'M' + ' L'.join(f'{X(i):.1f} {Y(v):.1f}' for i, v in enumerate(xs))
+    b += f'<path d="{d}" class="f-l"/>'
+    if signal:
+        b += f'<circle cx="{X(signal):.1f}" cy="{Y(sigval):.1f}" r="6" class="f-warn"/>'
+        b += T(X(signal) - 12, Y(h) - 24, ['signal: review the deaths,', 'then reset to 0'], 'f-s', 'end')
+    by = gy1 + 50
+    b += box(10, by, 228, 70, ['Death: add log[2 / (1 + p)]', 'p = 2.5%: +0.67', 'p = 54%: +0.26'], 'warn', 'f-s')
+    b += box(246, by, 228, 70, ['Survival: add log[1 / (1 + p)]', 'p = 2.5%: −0.02', 'p = 54%: −0.43'], 'ok', 'f-s')
+    b += box(482, by, 228, 70, ['Floor at zero; signal at h.', f'Series: {deaths} deaths v', f'{exp:.1f} predicted'], 'b0', 'f-s')
+    return svg(by + 80, b)
+
+
+# ---- figs_F30.py
+
+
+
+def f30_radial_landmarks():
+    """Left forearm, volar view, elbow to the left: open radial harvest landmarks (Blitz 2013)."""
+    b = ''
+    # forearm outline
+    b += '<path d="M70 70 C200 52 480 92 640 112 L640 238 C480 250 200 270 70 262 Z" class="f-b1"/>'
+    b += T(360, 30, 'Radial (thumb) side', 'f-s') + T(360, 292, 'Ulnar side', 'f-s')
+    b += T(66, 50, 'Elbow', 'f-h', 'start') + T(654, 100, 'Wrist', 'f-h', 'end')
+    # creases
+    b += line(110, 64, 110, 266, 'f-dash') + T(112, 282, 'Elbow crease', 'f-s', 'start')
+    b += line(612, 108, 612, 242, 'f-dash') + T(610, 258, 'Wrist crease', 'f-s', 'end')
+    # brachioradialis belly along radial side
+    b += '<path d="M90 76 C180 66 300 76 380 96 C330 112 220 112 96 104 Z" class="f-b0"/>'
+    b += T(230, 104, 'Brachioradialis', 'f-s')
+    b += '<path d="M380 96 C470 108 560 116 628 122" class="f-l" style="stroke-width:5;opacity:.45"/>'
+    b += T(470, 96, 'BR tendon to radial styloid', 'f-s')
+    # FCR tendon
+    b += '<path d="M330 196 C430 190 540 184 628 182" class="f-l" style="stroke-width:5;opacity:.45"/>' + T(520, 202, 'FCR tendon', 'f-s')
+    # biceps tendon inverted V
+    b += '<path d="M60 150 L118 162 L60 182" class="f-l" style="stroke-width:3"/>'
+    b += T(56, 214, ['Biceps tendon', 'and aponeurosis'], 'f-s', 'start')
+    # radial artery
+    b += '<path d="M118 162 C220 150 330 138 430 140 C520 142 580 146 628 150" class="f-vessel" style="stroke-width:10"/>'
+    # ulnar artery
+    b += '<path d="M118 166 C220 200 360 222 628 216" class="f-vessel" style="stroke-width:7;opacity:.35"/>'
+    b += T(300, 232, 'Ulnar artery', 'f-s')
+    # recurrent radial artery
+    b += '<path d="M138 158 C130 140 112 126 94 120" class="f-vessel" style="stroke-width:5"/>'
+    b += arrow(180, 50, 108, 120) + T(186, 52, 'Recurrent radial a.', 'f-s', 'start')
+    # superficial palmar branch
+    b += '<path d="M600 149 C616 160 624 172 634 186" class="f-vessel" style="stroke-width:5"/>'
+    # incision
+    b += '<path d="M126 150 C230 132 330 122 430 126 C510 130 560 136 600 140" class="f-cut" stroke-dasharray="8 5"/>'
+    # nerves
+    b += '<path d="M100 82 C170 76 230 78 300 84" class="f-nerve" stroke-dasharray="2 4"/>'
+    b += '<path d="M300 116 C380 124 460 130 600 132" class="f-nerve"/>'
+    # callouts
+    b += arrow(250, 320, 200, 80) + T(250, 336, ['Lateral antebrachial cutaneous n.:', 'superficial fascia over BR'], 'f-s')
+    b += arrow(470, 320, 450, 131) + T(480, 336, ['Superficial radial n.:', 'lateral to the artery'], 'f-s')
+    b += arrow(690, 160, 638, 178) + T(700, 140, ['Superficial', 'palmar a.'], 'f-s', 'end')
+    # bottom boxes
+    b += box(10, 378, 228, 70, ['Incision: edge of BR, from', '1 cm below elbow crease', 'to 1 cm above wrist crease'], 'warn', 'f-s')
+    b += box(246, 378, 228, 70, ['Proximal limit: just below', 'recurrent radial origin.', 'Distal: above palmar branch'], 'b0', 'f-s')
+    b += box(482, 378, 228, 70, ['Clamp distally: confirm', 'back-bleeding before', 'division; leave deep fascia open'], 'ok', 'f-s')
+    return svg(458, b)
+
+
+def f30_radial_trials():
+    """RAPCO 10-year patency and RADIAL 10-year composite."""
+    h1, b1 = bars([('Radial, under 70', 89, 'ok'), ('Free right ITA, under 70', 80, 'b1'),
+                   ('Radial, 70 or over', 85, 'ok'), ('Saphenous vein, 70 or over', 71, 'b1')],
+                  '%', 100, 'RAPCO: radial grafts had the highest estimated 10-year patency', 260)
+    h2, b2 = bars([('Radial artery (534)', 31.0, 'ok'), ('Saphenous vein (502)', 41.6, 'warn')],
+                  '%', 100, 'RADIAL pooled: fewer deaths, MI or repeat revascularisation (HR 0.73)', 260)
+    return svg(h1 + h2, b1 + f'<g transform="translate(0 {h1})">{b2}</g>')
+
+
+def f30_uk_tavi():
+    """UK TAVI 1-year outcomes (Toff, JAMA 2022)."""
+    h, b = bars([('Death, TAVI', 4.6, 'b0'), ('Death, surgery', 6.6, 'b1'),
+                 ('Major bleeding, TAVI', 7.2, 'ok'), ('Major bleeding, surgery', 20.2, 'warn'),
+                 ('Vascular complication, TAVI', 10.3, 'warn'), ('Vascular complication, surgery', 2.4, 'ok'),
+                 ('Pacemaker, TAVI', 14.2, 'warn'), ('Pacemaker, surgery', 7.3, 'ok'),
+                 ('Stroke, TAVI', 5.2, 'b0'), ('Stroke, surgery', 2.6, 'b1')],
+                '%', 25, 'UK TAVI (913, age 70+): TAVI non-inferior for 1-year death', 260)
+    return svg(h, b)
+
+
+def f30_smart_protect():
+    """SMART (Herrmann, NEJM 2024) and BHF PROTECT-TAVI (Kharbanda, NEJM 2025)."""
+    h1, b1 = bars([('Self-expanding (Evolut)', 9.4, 'ok'), ('Balloon-expandable (SAPIEN 3)', 41.6, 'warn')],
+                  '%', 50, 'SMART: valve dysfunction at 12 months, annulus 430 mm² or less', 270)
+    h2, b2 = bars([('Self-expanding', 9.4, 'b0'), ('Balloon-expandable', 10.6, 'b1')],
+                  '%', 50, 'SMART: death, disabling stroke or HF admission (non-inferior)', 270)
+    h3, b3 = bars([('Sentinel protection (3,795)', 2.1, 'b0'), ('No protection (3,799)', 2.2, 'b1')],
+                  '%', 50, 'BHF PROTECT-TAVI: stroke by 72 h did not differ (P = 0.94)', 270)
+    return svg(h1 + h2 + h3, b1 + f'<g transform="translate(0 {h1})">{b2}</g>'
+               + f'<g transform="translate(0 {h1 + h2})">{b3}</g>')
+
+
+def f30_extraction_indications():
+    """HRS 2017 lead extraction indications by class of recommendation."""
+    rows = [
+        ('Definite CIED infection (pocket, lead, device): complete removal', 'I B-NR', 'ok'),
+        ('Valve endocarditis, even without proven lead involvement', 'I B-NR', 'ok'),
+        ('Persistent or recurrent bacteraemia or fungaemia, no other source', 'I B-NR', 'ok'),
+        ('Purulence around intrathoracic epicardial leads or patches', 'I C-EO', 'ok'),
+        ('Thromboembolism from lead thrombus not treatable otherwise', 'I C-EO', 'ok'),
+        ('SVC stenosis or occlusion blocking a needed lead or stent', 'I C-EO', 'ok'),
+        ('Life-threatening arrhythmia from a retained lead', 'I C-EO', 'ok'),
+        ('Severe chronic pain at device or lead, not otherwise manageable', 'IIa C-EO', 'b1'),
+        ('Ipsilateral venous occlusion, access needed for a new lead', 'IIa C-LD', 'b1'),
+        ('More than 4 leads on one side or more than 5 through the SVC', 'IIa C-LD', 'b1'),
+        ('Lead interferes with cancer treatment; abandoned lead interferes', 'IIa C-EO', 'b1'),
+        ('Recalled lead; to allow MRI; working non-recalled lead', 'IIb C', 'warn'),
+    ]
+    b = T(10, 22, 'HRS 2017: when to extract (class and level of evidence)', 'f-h', 'start')
+    y = 32
+    for txt, cl, c in rows:
+        b += f'<rect x="10" y="{y}" width="700" height="28" rx="7" class="f-{c}"/>'
+        b += T(22, y + 19, txt, '', 'start') + T(698, y + 19, cl, 'f-n', 'end')
+        y += 33
+    b += box(10, y + 6, 700, 40, ['Superficial incisional infection alone is not an indication; erosion of any part means removing the whole system'], 'b0', 'f-s')
+    return svg(y + 56, b)
+
+
+def f30_epicardial_lv():
+    """Left lateral minithoracotomy for an epicardial LV lead (Fang 2015, Kim 2022)."""
+    b = ''
+    # chest wall, left lateral view
+    b += T(360, 22, 'Patient right side down, left chest raised 30 to 40 degrees; right lung ventilated', 'f-h')
+    b += '<path d="M60 70 C140 50 300 46 420 60 L420 330 C300 340 140 340 60 320 Z" class="f-b1"/>'
+    for i, y in enumerate([96, 136, 176, 216, 256]):
+        b += f'<path d="M66 {y} C160 {y - 14} 300 {y - 14} 414 {y}" class="f-grid" style="fill:none"/>'
+    b += T(56, 166, '4th ICS', 'f-s', 'end')
+    b += '<path d="M170 168 C210 160 260 160 300 166" class="f-cut" style="stroke-width:4"/>'
+    b += T(236, 154, 'Incision, 4th ICS', 'f-s')
+    # heart through window
+    b += '<ellipse cx="240" cy="250" rx="80" ry="54" class="f-b0"/>'
+    b += '<path d="M176 222 C210 240 250 248 300 236" class="f-nerve"/>' + T(170, 218, 'Phrenic n.', 'f-s', 'end')
+    b += '<path d="M190 268 C220 288 260 292 296 280" class="f-vessel" style="stroke-width:5"/>'
+    b += '<circle cx="246" cy="262" r="7" class="f-warn"/>'
+    b += T(240, 356, 'LV lateral wall (pericardium opened in front of the phrenic nerve)', 'f-s')
+    # tunnelling to pocket
+    b += '<rect x="340" y="76" width="56" height="34" rx="8" class="f-b0"/>' + T(368, 98, 'Pocket', 'f-s')
+    b += '<path d="M246 262 C300 220 330 160 350 110" class="f-dash"/>'
+    # right panel notes
+    b += box(450, 50, 260, 70, ['Target: between circumflex', 'and obtuse marginal, below', 'the left atrial appendage'], 'warn', 'f-s')
+    b += box(450, 130, 260, 70, ['Accept: threshold under 2 V', 'at 0.4 ms, R wave over 5 mV,', 'impedance 200 to 2000 ohm'], 'ok', 'f-s')
+    b += box(450, 210, 260, 52, ['Test at 10 V: no phrenic', 'capture'], 'b0', 'f-s')
+    b += box(450, 272, 260, 66, ['Tunnel via 3rd ICS to pocket;', 'partial pericardial closure;', 'small pleural drain'], 'b0', 'f-s')
+    return svg(370, b)
+
+
+# ---- figs_F31.py
+
+import math
+
+
+def _f31_sector(cx, cy, r, a0, a1, cls):
+    """Pie sector from angle a0 to a1 (degrees, 0 = east, clockwise positive as in SVG)."""
+    x0, y0 = cx + r * math.cos(math.radians(a0)), cy + r * math.sin(math.radians(a0))
+    x1, y1 = cx + r * math.cos(math.radians(a1)), cy + r * math.sin(math.radians(a1))
+    return (f'<path d="M{cx} {cy} L{x0:.1f} {y0:.1f} A{r} {r} 0 0 1 {x1:.1f} {y1:.1f} Z" class="f-{cls}"/>')
+
+
+def f31_sova_rupture():
+    cx, cy, r = 230, 210, 62
+    b = T(230, 20, 'Aortic root in short axis (schematic)', 'f-h')
+    # chambers around the root
+    b += box(250, 40, 170, 46, ['RV outflow tract', 'below pulmonary valve'], 'b1', 'f-s')
+    b += box(40, 40, 170, 46, ['RV at the crista', 'supraventricularis'], 'b1', 'f-s')
+    b += box(10, 168, 92, 84, ['Right', 'atrium'], 'b1', 'f-s')
+    b += box(70, 300, 130, 40, 'Right ventricle (inlet)', 'b1', 'f-s')
+    b += box(250, 312, 150, 40, 'Left atrium', 'b1', 'f-s')
+    b += box(350, 178, 90, 64, ['LV outflow', '(rare)'], 'b1', 'f-s')
+    # the three sinuses
+    b += _f31_sector(cx, cy, r, 210, 330, 'warn')
+    b += _f31_sector(cx, cy, r, 330, 450, 'b0')
+    b += _f31_sector(cx, cy, r, 90, 210, 'b0')
+    b += T(cx, cy - 26, 'R', 'f-h') + T(cx + 28, cy + 26, 'L', 'f-h') + T(cx - 28, cy + 26, 'N', 'f-h')
+    # Sakakibara types
+    b += arrow(250, 160, 300, 90) + T(286, 128, 'I', 'f-h', 'start')
+    b += arrow(212, 158, 150, 90) + T(166, 128, 'II', 'f-h', 'end')
+    b += arrow(176, 190, 106, 196) + T(144, 184, 'IIIa', 'f-s')
+    b += arrow(186, 238, 140, 296) + T(170, 290, 'IIIv', 'f-s', 'start')
+    b += arrow(196, 246, 106, 238) + T(150, 234, 'IV', 'f-h')
+    b += arrow(262, 250, 300, 308, True) + arrow(288, 214, 346, 210, True)
+    b += T(cx, 372, 'Solid arrows: Sakakibara types · dashed: left sinus, rare', 'f-s')
+    # right panel
+    x = 470
+    b += T(x + 120, 20, 'Sakakibara and Konno (1962)', 'f-h')
+    rows = [('I', ['Right sinus to RV outflow', 'below the pulmonary valve'], 'warn'),
+            ('II', ['Right sinus to RV', 'at the crista'], 'warn'),
+            ('IIIa', ['Right sinus to', 'right atrium'], 'warn'),
+            ('IIIv', ['Posterior right sinus', 'to RV (inlet)'], 'warn'),
+            ('IV', ['Non-coronary sinus', 'to right atrium'], 'b0')]
+    for i, (t, d, c) in enumerate(rows):
+        y = 34 + i * 46
+        b += f'<rect x="{x}" y="{y}" width="52" height="38" rx="8" class="f-{c}"/>' + T(x + 26, y + 24, t, 'f-h')
+        b += T(x + 60, y + 16, d, 'f-s', 'start')
+    b += box(x, 270, 240, 96, ['Rupture: into RV about 60%,', 'RA about 30% (Arcario 2021)',
+                               'Sinus: right 65 to 85%,', 'non-coronary 10 to 30%'], 'b1', 'f-s')
+    return svg(384, b)
+
+
+def f31_paivs_pathway():
+    b = box(160, 8, 400, 44, ['Newborn with PA-IVS: prostaglandin, echo', '(RV parts, tricuspid size, sinusoids, atrial septum)'], 'b1', 'f-s')
+    b += arrow(360, 52, 360, 70)
+    b += box(160, 72, 400, 44, ['Coronary angiography: is coronary flow', 'dependent on RV pressure (RVDCC)?'], 'b0', 'f-s')
+    b += arrow(250, 116, 140, 146) + arrow(470, 116, 580, 146)
+    b += T(170, 134, 'No', 'f-h', 'end') + T(550, 134, 'Yes', 'f-h', 'start')
+    b += box(10, 148, 300, 60, ['Membranous atresia, bipartite or', 'tripartite RV: decompress (catheter', 'perforation and balloon, or surgical valvotomy)'], 'ok', 'f-s')
+    b += box(410, 148, 300, 60, ['Do NOT decompress the RV', '(risk of coronary ischaemia)', 'Shunt or ductal stent'], 'warn', 'f-s')
+    b += arrow(160, 208, 160, 228)
+    b += box(10, 230, 300, 44, ['Cannot wean prostaglandin: add', 'ductal stent or shunt'], 'b1', 'f-s')
+    b += arrow(80, 274, 70, 296) + arrow(160, 274, 160, 296) + arrow(250, 274, 260, 296)
+    b += box(10, 298, 100, 58, ['Biventricular', 'repair'], 'ok', 'f-s')
+    b += box(115, 298, 92, 58, ['One-and-', 'a-half', '(+ Glenn)'], 'b1', 'f-s')
+    b += box(212, 298, 98, 58, ['Single', 'ventricle'], 'warn', 'f-s')
+    b += arrow(500, 208, 500, 296) + arrow(640, 208, 640, 296)
+    b += box(410, 298, 180, 58, ['Single ventricle', '(Glenn, then Fontan)'], 'warn', 'f-s')
+    b += box(600, 298, 110, 58, ['Transplant', '(MCS bridge)'], 'warn', 'f-s')
+    b += T(10, 380, 'RV growth decides between the three left-hand outcomes. AATS 2025 RVDCC criterion (first of the', 'f-s', 'start')
+    b += T(10, 397, 'published criteria): RV-coronary fistulae plus severe stenosis of 2 of 3 major coronaries, or aortocoronary atresia of 1', 'f-s', 'start')
+    return svg(410, b)
+
+
+def f31_paivs_uk():
+    h1, b1 = bars([('First procedure RV decompression', 7.7, 'ok'),
+                   ('First procedure shunt or ductal stent', 37.2, 'warn')],
+                  '%', 50, 'One-year mortality is five times higher after stage 1 palliation', 290)
+    h2, b2 = bars([('Biventricular repair', 55.3, 'ok'), ('Single ventricle (incl. 23 one-and-a-half)', 27.9, 'warn'),
+                   ('Not yet committed', 16.8, 'b1')],
+                  '%', 70, 'Final pathway of 488 children', 290)
+    foot = T(12, h1 + h2 + 2, 'PA-IVS, England and Wales 2000 to 2022 (NCHDA linked to ONS; Dorobantu and colleagues, Circ Cardiovasc Interv 2026)', 'f-s', 'start')
+    return svg(h1 + h2 + 14, b1 + f'<g transform="translate(0 {h1})">{b2}</g>' + foot)
+
+
+def f31_ivc_azygos():
+    b = T(180, 20, 'Normal', 'f-h') + T(540, 20, 'Interrupted IVC, azygos continuation', 'f-h')
+    b += line(360, 10, 360, 400, 'f-dash')
+    for ox, interrupted in [(0, False), (360, True)]:
+        ra_x = ox + 150
+        b += f'<rect x="{ra_x}" y="120" width="80" height="70" rx="16" class="f-b1"/>' + T(ra_x + 40, 160, 'RA', 'f-h')
+        b += f'<path d="M{ra_x + 40} 56 L{ra_x + 40} 120" class="f-vessel" style="stroke-width:10"/>' + T(ra_x + 40, 42, 'SVC', 'f-s')
+        b += f'<rect x="{ra_x + 6}" y="236" width="68" height="46" rx="12" class="f-b0"/>' + T(ra_x + 40, 264, 'Liver', 'f-s')
+        b += f'<path d="M{ra_x + 40} 190 L{ra_x + 40} 236" class="f-vessel" style="stroke-width:10"/>'
+        b += f'<path d="M{ra_x + 40} 380 L{ra_x + 40} 340" class="f-vessel" style="stroke-width:10"/>'
+        b += T(ra_x + 40, 396, 'Infrarenal IVC', 'f-s')
+        b += f'<path d="M{ra_x + 4} 330 L{ra_x + 76} 330" class="f-vessel" style="stroke-width:10"/>' + T(ra_x + 4, 352, 'Renal veins', 'f-s', 'end')
+        az_x = ra_x + 110
+        if not interrupted:
+            b += f'<path d="M{ra_x + 40} 330 L{ra_x + 40} 282" class="f-vessel" style="stroke-width:10"/>'
+            b += f'<path d="M{az_x} 330 L{az_x} 80 C{az_x} 64 {ra_x + 60} 64 {ra_x + 44} 70" class="f-dash"/>'
+            b += T(az_x + 8, 200, ['Azygos', '(small)'], 'f-s', 'start')
+            b += T(ra_x - 10, 214, ['Hepatic', 'IVC'], 'f-s', 'end')
+        else:
+            b += f'<path d="M{ra_x + 40} 330 C{ra_x + 40} 316 {az_x} 316 {az_x} 300 L{az_x} 80 C{az_x} 60 {ra_x + 60} 60 {ra_x + 44} 70" class="f-vessel" style="stroke-width:10"/>'
+            b += line(ra_x + 26, 300, ra_x + 54, 300, 'f-cut') + line(ra_x + 26, 306, ra_x + 54, 306, 'f-cut')
+            b += T(ra_x - 6, 282, ['Suprarenal', 'segment', 'absent'], 'f-s', 'end')
+            b += T(az_x + 8, 160, ['Dilated', 'azygos', '(behind', 'the crus)'], 'f-s', 'start')
+            b += T(ra_x - 10, 206, ['Hepatic veins', 'by short', 'post-hepatic', 'segment'], 'f-s', 'end')
+    return svg(410, b)
+
+
+def f31_ivc_cannulation():
+    b = box(10, 10, 340, 112, ['Bypass with azygos continuation', '(Ghandour 2016)', 'Large cannula high in the SVC: carries',
+                               'nearly all lower-body return', 'Small cannula in the post-hepatic IVC'], 'b0', 'f-s')
+    b += box(370, 10, 340, 112, ['Do not ligate the azygos', 'It is the only route for lower-body', 'return: inadvertent ligation',
+                                 'may be fatal (Ghandour 2016)'], 'warn', 'f-s')
+    b += box(10, 136, 340, 74, ['Associations: heterotaxy, polysplenia,', 'AVSD, PAPVC, pulmonary atresia',
+                                '(prevalence about 0.6%)'], 'b1', 'f-s')
+    b += box(370, 136, 340, 74, ['Imaging trap: a dilated azygos can look', 'like a right paratracheal mass or',
+                                 'retrocrural nodes'], 'b1', 'f-s')
+    return svg(220, b)
+
+
+def f31_paeds_arrest():
+    b = box(160, 8, 400, 40, 'Arrest in the cardiac ICU after paediatric heart surgery', 'b1', 'f-h')
+    b += arrow(360, 48, 360, 64)
+    b += box(10, 66, 340, 74, ['Monitored, witnessed VF or pulseless VT:', 'up to 3 stacked shocks, 4 J/kg', '(max 120 to 200 J), then CPR 2 min'], 'b0', 'f-s')
+    b += box(370, 66, 340, 74, ['Non-shockable: CPR 15:2, 100 to 120/min,', 'adrenaline 10 mcg/kg (max 1 mg)', 'every 3 to 5 min'], 'b0', 'f-s')
+    b += arrow(180, 140, 180, 158) + arrow(540, 140, 540, 158)
+    b += box(10, 160, 700, 66, ['Surgical causes first: tamponade, bleeding, shunt or ductal stent obstruction, pacing wire',
+                                'failure, tension pneumothorax, pulmonary hypertensive crisis'], 'warn', 'f-s')
+    b += arrow(130, 226, 130, 244) + arrow(360, 226, 360, 244) + arrow(590, 226, 590, 244)
+    b += box(10, 246, 230, 92, ['Shunt obstruction:', '100% oxygen, heparin', '50 to 100 units/kg, keep', 'systemic BP; reopen'], 'b1', 'f-s')
+    b += box(250, 246, 220, 92, ['Not resolving:', 'resternotomy (ERC and', 'STS adult timing: within', '5 min for non-VF/VT)'], 'b1', 'f-s')
+    b += box(480, 246, 230, 92, ['Refractory: early ECPR', 'where a programme exists', '(AHA 2025: class 2b,', 'level C-LD)'], 'b1', 'f-s')
+    b += T(10, 360, 'Drawn from RCUK 2025 Paediatric Life Support, AHA 2025 PALS sections 10 and 21, and Shah 2024 (guideline timing).', 'f-s', 'start')
+    b += T(10, 377, 'The paediatric AHA statement gives no fixed time to reopen; the 5-minute rule comes from adult guidance.', 'f-s', 'start')
+    return svg(388, b)

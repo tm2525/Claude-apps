@@ -703,3 +703,143 @@ News reports add: foundational therapy for reduced EF is a beta-blocker, ACE inh
 
 ### For the viva
 The surgical points to check against the full text when it can be read: the class for durable LVAD (upgraded) and its patient criteria; TEER for secondary MR (upgraded) and where surgery sits; CABG in ischaemic cardiomyopathy; CRT and ICD criteria now that "reduced EF" means under 50%; transplant referral; and short-term MCS in decompensated heart failure with shock.
+
+## Transvenous lead extraction: HRS 2017 indications, EHRA 2018 definitions, ELECTRa outcomes and surgical back-up
+
+Added 21 November 2026 from (1) Kusumoto FM, Schoenfeld MH, Wilkoff BL, et al. 2017 HRS expert consensus statement on cardiovascular implantable electronic device lead management and extraction. Heart Rhythm 2017;14(12):e503–e551; doi:10.1016/j.hrthm.2017.09.001. Read from the full-text PDF (LAHRS copy) by targeted extraction in three parts: sections 7.4, 8.1 to 8.2, 9, 10, 11 and 12 and Tables 3 to 5 (the extraction paraphrased the recommendation wording; classes and levels were asked for explicitly). Section 8.3 on reimplantation was not reached. (2) Bongiorni MG, Burri H, Deharo JC, et al. 2018 EHRA expert consensus statement on lead extraction: recommendations on definitions, endpoints, research trial design, and data collection requirements for clinical scientific studies and registries. Europace 2018;20:1217; doi:10.1093/europace/euy050. Read from the full-text PDF (University of Modena repository copy) by targeted extraction. (3) Auricchio A, Regoli F, Conte G, Caputo ML. Key lessons from the ELECTRa registry in the modern era of transvenous lead extraction. Arrhythm Electrophysiol Rev 2017;6(3):111–113; doi:10.15420/aer.2017.25.1. Read from the online full text (PMC). The ELECTRa paper itself (Bongiorni MG, et al. Eur Heart J 2017;38(40):2995) was not opened; its figures are as this review and the EHRA document quote them.
+
+This replaces the gap noted in the device section above ("EHRA 2018 and HRS 2017 could not be read"). Note what each document is: **HRS 2017 holds the graded indications**; **EHRA 2018 grades nothing**: it sets definitions, end points and registry data standards. Device infection and endocarditis management are also in the endocarditis tab (ESC 2023).
+
+### Definitions (EHRA 2018, matching HRS 2017)
+| Term | Meaning |
+|---|---|
+| Lead removal | Removal of any pacing or defibrillator lead by any technique (includes S-ICD leads) |
+| Lead explant | Removal by simple traction only (no locking stylets, telescoping sheaths or femoral tools), all leads implanted under 1 year |
+| Lead extraction | Removal of at least one lead implanted over 1 year, or any lead needing specialised tools, or removal by a route other than the implant vein |
+| Complete procedural success | All targeted lead material removed, with no permanently disabling complication or procedure-related death |
+| Clinical success | A small retained fragment (generally under 4 cm) that does not defeat the aim of the procedure, with no permanently disabling complication or death |
+| Failure | Neither of the above, or a permanently disabling complication or procedure-related death |
+| Major complication | Life-threatening or fatal, or causing persistent disability, admission or significant surgery |
+
+### Indications (HRS 2017; class and level of evidence)
+!fig f30_extraction_indications | HRS 2017 indications for lead extraction grouped by class of recommendation. Drawn for these notes from Kusumoto et al., Heart Rhythm 2017, sections 8.2.2 and 9
+
+**Infection (section 8.2.2)**
+| Recommendation | Class | Level |
+|---|---|---|
+| Complete removal of device and all leads for definite CIED system infection (extraction within 3 days of diagnosis is linked to lower in-hospital mortality) | I | B-NR |
+| Complete removal for valve endocarditis even without definite lead or device involvement | I | B-NR |
+| Complete removal for persistent or recurrent bacteraemia or fungaemia despite appropriate antibiotics, with no other source | I | B-NR |
+| Remove epicardial leads and patches if pus surrounds their intrathoracic part | I | C-EO |
+| Take other implanted hardware into account; in an LVAD patient with CIED infection, remove the CIED (suppressive antibiotics may be needed) | I | C-EO |
+| Full culture-guided antibiotic course after removal for definite infection | I | B-NR |
+
+- Erosion of any part of the system means the whole system comes out. Superficial incisional infection alone is not an indication.
+- Antibiotic duration after extraction: about 2 weeks for pocket infection, about 10 days for erosion, at least 2 weeks for bacteraemia without valve involvement, 4 to 6 weeks for endocarditis or complicated infection (counted from extraction or first negative culture, whichever is later).
+- Long-term suppression only for patients at excessive risk from removal (palliative).
+- Before removal: two sets of blood cultures before antibiotics (I, C-LD); culture pocket tissue and leads at removal (I, C-LD); TOE for suspected systemic infection (I, B-NR); review by a physician expert in CIED infection and extraction for documented infection (I, C-EO). PET-CT or scintigraphy may be considered when the diagnosis is unconfirmed (IIb, C-LD).
+
+**Non-infective (section 9)**
+| Indication | Class | Level |
+|---|---|---|
+| Clinically significant thromboembolism from lead thrombus not treatable otherwise | I | C-EO |
+| SVC stenosis or occlusion that blocks a needed lead, or to allow stenting, or for symptomatic stenosis | I | C-EO |
+| Life-threatening arrhythmia caused by a retained lead | I | C-EO |
+| Severe chronic pain at device or lead site, not manageable otherwise | IIa | C-EO |
+| Ipsilateral venous occlusion when access is needed for an extra lead | IIa | C-LD |
+| More than 4 leads on one side or more than 5 through the SVC | IIa | C-LD |
+| Lead interferes with treatment of a malignancy | IIa | C-EO |
+| Abandoned lead interferes with the working system | IIa | C-EO |
+| Recalled or potentially harmful lead (open the pocket only with another indication if it still works) | IIb | C-LD |
+| To allow MRI (shared decision) | IIb | C-EO |
+| Normally functioning, non-recalled lead (shared decision) | IIb | C-EO |
+
+- An abandoned lead should be left so it can be extracted later and cannot retract into the vessel (I, C-EO). Abandoning or removing an unnecessary or non-functional lead are both reasonable (IIa, B-NR).
+- Perforation and severe lead-related TR are discussed without graded advice: removal is generally reasonable when symptomatic, and open surgery with annuloplasty may be needed.
+- Radiotherapy: dose to the device alone is not a reason to relocate; neutron-producing beams over 10 MV are the concern. Relocate the device if it sits in the planned beam.
+
+### Risk factors for complications and death (HRS 2017 Table 4)
+| Factor | Association |
+|---|---|
+| Female sex | 4.5-fold major complications |
+| Low BMI (under 25) | 1.8-fold 30-day mortality |
+| Previous stroke; severe LV dysfunction | 2-fold major complications each |
+| Advanced heart failure | 1.3- to 8.5-fold 30-day mortality |
+| End-stage renal disease | 4.8-fold 30-day mortality |
+| Low platelets; raised INR | 1.7-fold and 2.7-fold major complications |
+| Anaemia | 3.3-fold 30-day mortality |
+| Number of leads extracted | 3.5-fold any complication |
+| Dual-coil ICD lead | 2.7-fold 30-day mortality |
+| Extraction for infection | 2.7- to 30-fold 30-day mortality; 5- to 9.7-fold 1-year mortality |
+| Operator inexperience | 2.6-fold procedure-related complications |
+| Also | Age, diabetes, raised CRP, previous open-heart surgery |
+
+ELECTRa adds: lead dwell over 10 years (OR 3.54) and female sex (OR 2.11) predicted procedure-related major complications, as did powered sheaths used alone and the femoral approach (Auricchio 2017). EHRA 2018 asks registries to record previous cardiac surgery, LVEF, NYHA class, AF, renal function, diabetes, stroke, lead type and dwell time, and previous extraction attempts.
+
+### Outcomes
+| Measure | Figure | Source |
+|---|---|---|
+| Major complications | 0.19% to 1.80% | HRS 2017 Table 5 |
+| Procedure-related death | 0.19% to 1.20% | HRS 2017 Table 5 |
+| Minor complications | 0.60% to 6.20% | HRS 2017 |
+| Cumulative mortality after extraction | 2.1% to 3.3% at 30 days; 8.4% to 10% at 1 year; 33% to 46.8% at 10 years (higher with infection) | HRS 2017 |
+| Cure of pocket infection or endocarditis with extraction plus antibiotics | 97% or more | HRS 2017 |
+| Not removing an infected CIED | 7-fold higher 30-day mortality | HRS 2017 |
+| ELECTRa (73 centres, 19 countries, 3,510 patients) | Infection 52.8% of indications, lead dysfunction 38.1%; complete clinical success about 97%; procedure-related major complications 1.7%; procedure-related death 0.5% | Auricchio 2017; EHRA 2018 |
+| ELECTRa 1-year mortality | 15.1% systemic infection, 6.9% local infection, 3.0% no infection | Auricchio 2017 |
+| ELECTRa by centre volume (cut-off 30 a year) | In-hospital major complications 4.1% low vs 2.4% high volume; low-volume centres had about twice the clinical failure and in-hospital death | Auricchio 2017 |
+
+**A correction to the notes.** TSRA ch. 85 (quoted in the device section above) gives "up to 15.3% major complications and 1.1% mortality at 6 months" for extraction. The 2021 ESC pacing guideline attributes 15.3% to generator replacement with lead addition (REPLACE), and the extraction-specific figures from HRS 2017 and ELECTRa are much lower: major complications under 2% and procedure-related death 0.5% to 1.2%.
+
+### Setting, surgical back-up and procedure (HRS 2017 sections 10 to 12; EHRA 2018)
+- **Surgical back-up:** a cardiac surgeon and team immediately available, able to perform emergency sternotomy or thoracotomy within **5 to 10 minutes**. If the operator is not a surgeon, a cardiothoracic surgeon and familiar surgical staff are critical.
+- **Room:** what matters is the capability to manage complications, not the room. In a 2010 comparison, EP lab and operating room had similar success (93.1% vs 91.4%) and major complications (1.0% vs 2.1%). In ELECTRa 52% of procedures were in an operating room, 38.5% in a catheter lab and 9.5% in a hybrid room. One single-centre series quoted by EHRA: mortality after emergency surgical or endovascular rescue 63.6% in the EP lab vs 14.3% in an operating room.
+- **Preparation:** blood cross-matched (2 to 4 units in the room for higher risk); pads on; skin prepped for sternotomy; arterial line; femoral venous access; general anaesthesia in most centres (allows TOE and resuscitation without urgent intubation); temporary femoral pacing when a superior approach is planned.
+- **Femoral sheath and stiff wire** from the femoral vein to the right internal jugular or subclavian vein at the start, so an occlusion balloon can be deployed at once for an SVC tear. About two-thirds of life-threatening tears are in the SVC, split evenly above and below the pericardial reflection: below it causes tamponade, above it haemothorax.
+- **Imaging:** TOE or intracardiac echo strongly recommended; TOE found findings that prompted surgery in 6% to 40%. Before the procedure: chest film or fluoroscopy, venography (stenosis after implant in up to 61%), echo for vegetations, TR and effusion; gated CT is better than plain films for perforation. After: chest film and TTE within 24 hours.
+- **Tools, in escalation:** simple traction with a standard or locking stylet; telescoping sheaths and femoral snares (fail with dense calcified adhesions); laser sheaths (good for fibrous, poorer for calcified lesions); mechanical rotational cutters (better for dense calcification). Adding femoral snaring raised clinical success from 84.8% to 93.5% in one series. In the 3,510-patient registry, complications were higher with femoral-primary (9.09%) or femoral-secondary (3.46%) approaches than others (1.43%).
+- **Open surgical extraction** is favoured for failed percutaneous extraction, another reason for cardiac surgery, or a lead mass (vegetation or thrombus) **over 2.5 cm**. AngioVac debulking and thrombolysis have been used for large vegetations. EHRA 2018 also lists hybrid approaches (percutaneous with minimally invasive or thoracoscopic surgery).
+- **Training and volume:** HRS: at least 40 extractions as primary operator under supervision, then at least 20 leads a year. EHRA: 40 leads in at least 30 procedures for training, then 15 procedures (20 leads) a year. Programme and operator volume, success and complication data should be discussed with the patient before any lead removal (I, C-EO).
+
+### Viva points
+- Extraction = a lead over a year old, or tools needed, or a non-implant route. Clinical success allows under 4 cm left behind.
+- Class I: definite infection (whole system), valve endocarditis, persistent bacteraemia, thromboembolism, SVC obstruction blocking a needed lead, arrhythmia from a lead.
+- Surgeon able to open the chest in 5 to 10 minutes; femoral wire for an SVC balloon; blood in the room.
+- Open extraction for vegetations over 2.5 cm or failed percutaneous attempts.
+- ELECTRa: 3,510 patients, success about 97%, major complications 1.7%, death 0.5%; women and leads over 10 years at higher risk.
+
+## Surgical epicardial LV lead for CRT: technique
+
+Added 21 November 2026 from (1) Fang D, Huang W, Li H. Four years follow-up of epicardial left ventricular pacing by mini-thoracotomy for cardiac resynchronisation therapy in congestive heart failure (four cases). Kardiol Pol 2015;73(3):188–193; doi:10.5603/KP.a2014.0187. Read from the online full text by targeted extraction. (2) Kim HR, Lim K, Park SJ, et al. Thoracoscopic implantation of epicardial left ventricular lead for cardiac resynchronization therapy. J Cardiovasc Dev Dis 2022;9(5):160; doi:10.3390/jcdd9050160. Read from the online full text by targeted extraction. (3) TSRA Review ch. 85, re-read on disk, for routes. Both clinical papers are small series (4 and 13 patients); they describe one unit's technique, not a consensus. The indications for an epicardial LV lead (ESC 2021) are in the section above and are not repeated.
+
+### Two approaches
+| Step | Lateral minithoracotomy (Fang 2015) | Thoracoscopic (Kim 2022) |
+|---|---|---|
+| Timing | Same session, after a failed transvenous LV lead; RA and RV leads already in | Second stage after RA and RV leads in the EP lab; pocket reopened first |
+| Airway | Double-lumen tube, right-lung ventilation | Double-lumen tube, one-lung ventilation |
+| Position | Supine, left chest raised 30 to 40° | Right lateral decubitus, left chest raised 30 to 40° |
+| Access | About 8 cm mid-axillary incision, 4th intercostal space | 15 mm camera port, 6th space posterior axillary line; two 5 mm ports in the 4th space (anterior and mid-axillary). 3 to 4 cm 4th-space minithoracotomy if adhesions (5 of 13) |
+| Pericardium | Opened in front of the phrenic nerve, exposing the AV groove and posterolateral LV | 2 cm opening in front of the phrenic nerve |
+| Target | Between the circumflex and the obtuse marginal, below the left atrial appendage | Lateral LV wall around an obtuse marginal |
+| Lead | Unipolar steroid-eluting suture-on lead (CapSure Epi 4965) | Unipolar screw-in lead (Medtronic 5071) through the 15 mm port |
+| Acceptance | Impedance 200 to 2,000 ohm; R wave over 5 mV; threshold under 2.0 V at 0.4 ms; no phrenic capture at 10 V | Thresholds measured (no targets stated) |
+| Lead route | Out through the 3rd intercostal space, tunnelled subcutaneously to the left pectoral pocket | Tunnelled to the subclavian pocket |
+| Closure | Partial pericardial closure; small pleural drain | Chest drain through the mid-axillary port |
+
+!fig f30_epicardial_lv | Left lateral minithoracotomy for an epicardial LV lead: incision, pericardiotomy in front of the phrenic nerve, target and tunnel, with the acceptance values. Drawn for these notes from Fang et al., Kardiol Pol 2015 and Kim et al., J Cardiovasc Dev Dis 2022; not to scale
+
+### Results in these series
+- **Fang (4 patients, about 45 months):** all leads placed laterally; no perioperative complications; skin-to-skin 51 minutes; thresholds stable (0.9 to 1.0 V); LVEF 28% to 45%. Median stay 15 days.
+- **Kim (13 thoracoscopic vs 243 transvenous):** all 13 placed; procedure about 1 hour; no phrenic stimulation, haemothorax or dislodgement. Acute threshold 1.5 V vs 1.3 V (no difference); epicardial threshold stable over 34 months while the transvenous threshold rose; no epicardial dislodgement vs 2.9% late dislodgement transvenously. LVEF and survival free of death or heart failure admission were similar. Chest drain out at about 3 days; discharge at about 9 days.
+- Indications named by Kim: no suitable lateral vein, tortuous coronary sinus or branches, high threshold or phrenic stimulation, recurrent dislodgement; possibly first-line where venous anatomy is poor. Fang notes coronary venous anomalies prevent optimal transvenous placement in over 15% of CRT candidates (as quoted from an earlier report).
+
+### Points from the guideline and TSRA already in the notes
+- Epicardial routes: thoracotomy or subxiphoid (TSRA ch. 85). For screw-in electrodes wait 15 minutes before testing thresholds (TSRA ch. 85).
+- Epicardial LV leads now perform comparably with transvenous leads (ESC 2021).
+- Removal can cause bleeding and tamponade; abandoned epicardial leads are a reason not to scan a non-MR-conditional system (ESC 2021).
+- With purulence around intrathoracic epicardial leads, remove them (HRS 2017, I, C-EO; above).
+
+### Viva points
+- Left minithoracotomy in the 4th space (or VATS), one-lung ventilation, pericardium opened anterior to the phrenic nerve.
+- Lateral or posterolateral LV between circumflex and obtuse marginal; check thresholds and phrenic capture at high output.
+- Tunnel to the pectoral pocket; leave a small pleural drain.

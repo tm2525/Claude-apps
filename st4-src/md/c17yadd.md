@@ -285,3 +285,356 @@ Added 21 November 2026 from Allen KB, Icke KJ, Thourani VH, et al. Sternotomy cl
 - Raman 2012 was the only other RCT, also showing better healing with plates; both trials used one manufacturer's system, so no class effect can be assumed.
 - Emergency re-entry: plates that span the sternotomy can be cut with standard wire cutters.
 - An STS consensus is cited as giving enhanced sternal stabilisation a class IIb recommendation for high-risk patients (that consensus was not read). Cardiac 10 already notes rigid plating for obesity, chest radiation, severe lung disease or steroids, and TSRA ch. 118 lists plating or a Robicsek weave in high-risk patients.
+
+## Acute kidney injury after cardiac surgery: definition, risk and prevention
+
+Added 21 November 2026 from Nadim MK, Forni LG, Bihorac A, et al. Cardiac and vascular surgery-associated acute kidney injury: the 20th International Consensus Conference of the ADQI (Acute Disease Quality Initiative) Group. J Am Heart Assoc 2018;7:e008834; doi:10.1161/JAHA.118.008834 (read from the online full text, about the first 70% of the article including all consensus statements and Table 1; Table 1 grades were checked twice). KDIGO staging thresholds from the KDIGO 2012 table as reproduced in the MSD Manual Professional Edition (Kidney Int Suppl 2012;2:1-138; the KDIGO guideline itself was not read). Meersch M, Schmidt C, Hoffmeier A, et al. Prevention of cardiac surgery-associated AKI by implementing the KDIGO guidelines in high risk patients identified by biomarkers: the PrevAKI randomized controlled trial. Intensive Care Med 2017;43:1551-61 (read through a detailed ESICM summary of the paper, not the paper itself). Zarbock A, Küllmar M, Ostermann M, et al. PrevAKI-Multicenter randomized controlled trial. Anesth Analg 2021, pp. 292-302 (volume not captured); doi:10.1213/ANE.0000000000005458 (abstract only). TSRA Review ch. 118 re-read. Intraoperative kidney protection from the EACTS/EACTAIC/EBCP 2024 bypass guideline (MAP targets, amino acids, N-acetylcysteine) is already in Cardiac 14 and is not repeated.
+
+### Definition and staging
+!fig f27_kdigo | KDIGO 2012 creatinine and urine output criteria for AKI stages 1 to 3 (drawn for these notes from the KDIGO 2012 table as reproduced in the MSD Manual, with the haemodilution caveat from ADQI 20)
+
+| Stage | Serum creatinine | Urine output |
+|---|---|---|
+| 1 | 1.5 to 1.9 times baseline, or a rise of 26.5 µmol/L (0.3 mg/dL) or more within 48 h | Under 0.5 ml/kg/h for 6 to 12 h |
+| 2 | 2.0 to 2.9 times baseline | Under 0.5 ml/kg/h for 12 h or more |
+| 3 | 3 times baseline or more, or 354 µmol/L (4.0 mg/dL) or more, or renal replacement therapy (RRT) started | Under 0.3 ml/kg/h for 24 h or more, or anuria for 12 h or more |
+
+- ADQI 20 says define AKI by KDIGO using **both** creatinine and urine output (not graded). Creatinine alone misses about 30% of cases.
+- Haemodilution on bypass often leaves postoperative creatinine **below the preoperative baseline**, which delays the creatinine-based diagnosis. Measure creatinine immediately before surgery in everyone.
+- Timing: AKI is within 7 days of the insult; renal changes persisting beyond 7 days are acute kidney disease. ADQI notes that AKI in the first week and AKI between days 7 and 30 may have different causes.
+- TSRA ch. 118 uses the RIFLE criteria; ADQI 20 and the trials below use KDIGO. The STS database uses the stage 3 definition (creatinine three times baseline or RRT).
+
+### Frequency and consequences (ADQI 20)
+| Measure | Figure |
+|---|---|
+| AKI after cardiac and vascular surgery | 20 to 70%, depending on definition (KDIGO stage 1 alone 20 to 70%) |
+| AKI needing RRT | 1 to 2% of surgical patients |
+| Mortality on RRT after cardiovascular surgery | 40 to 70% |
+| End-stage kidney disease after RRT for AKI | More than 3 times as likely |
+
+- Other sources in these notes give different figures: up to 30% (TSRA ch. 118) and 5 to 40% (EACTS 2024 bypass guideline, Cardiac 14). The spread reflects definitions, not disease.
+
+### Risk factors (ADQI 20)
+| Group | Factors |
+|---|---|
+| Patient | Chronic kidney disease (the strongest), age, frailty, sarcopenia and malnutrition (creatinine then overestimates function), anaemia, proteinuria; diabetes, hypertension, heart failure, female sex and peripheral vascular disease added by TSRA ch. 118 |
+| Presentation | Urgency, cardiogenic shock, recent iodinated contrast, ACE inhibitor or ARB, NSAIDs |
+| Operation | Bypass and its duration, cross-clamping, haemodilution (haematocrit under 24%), hyperthermic perfusion, transfusion, high-dose vasopressors, cholesterol emboli, intra-aortic balloon pump |
+| After the operation | Venous congestion and high central venous pressure, low output, nephrotoxins |
+
+- Consensus: use a validated risk model including eGFR, cystatin C or albuminuria before surgery in intermediate or high-risk patients, and reassess AKI risk within 12 hours of surgery (not graded).
+- Biomarkers (urinary TIMP-2 x IGFBP7, or NGAL) are suggested in high-risk patients (grade 2A), mainly to select who gets the KDIGO bundle.
+
+### Prevention: ADQI 20 Table 1
+| Strategy | Direction | Grade |
+|---|---|---|
+| Limit transfusion | Recommended | 1A |
+| Balanced crystalloid over saline | Recommended | 1B |
+| Avoid glucose swings | Recommended | 1B |
+| KDIGO bundle in biomarker-positive high-risk patients | Recommended | 1B |
+| Stop ACE inhibitor or ARB before surgery | Recommended | 1C |
+| Low tidal volume ventilation | Recommended | 1C |
+| Remote ischaemic preconditioning, high-risk cardiac patients | Recommended | 2B |
+| Delay surgery 24 to 72 h after contrast | Recommended | 2C |
+| Volatile anaesthetic over propofol | Recommended | 2C |
+| Avoid haemodilution; avoid hyperthermia | Recommended | 2C |
+| Dexmedetomidine | Recommended | 2C |
+| Albumin for hypoalbuminaemia (off-pump) | Recommended | 2C |
+| Preoperative balloon pump in high-risk patients | Recommended | 2C |
+| Pulsatile bypass in high-risk patients | Recommended | 2D |
+| Hydroxyethyl starch | Avoid | 1A |
+| Statins, N-acetylcysteine, sodium bicarbonate, levosimendan, dopamine | Not recommended | 1A |
+| Off-pump surgery to protect the kidney | Not recommended | 1A |
+| Loop diuretics | Not recommended | 1B |
+| MAP above 75 mmHg, vasopressin over noradrenaline, mannitol, fenoldopam, natriuretic peptides, erythropoietin, intraoperative ultrafiltration | More research needed | |
+
+- Volatile anaesthesia reduced AKI in a meta-analysis (RR 0.65, 0.43 to 0.97). Glucose 7 to 10 mmol/L (127 to 179 mg/dL) was preferred over tight control.
+- Fenoldopam: a 667-patient RCT stopped for futility, with more hypotension.
+- Difference from Cardiac 14: the EACTS 2024 bypass guideline gives N-acetylcysteine in chronic kidney disease IIb B; ADQI 20 (2018) said not recommended, 1A. The EACTS position is the newer one.
+
+### The KDIGO bundle and PrevAKI
+Bundle as used in PrevAKI: avoid nephrotoxins; hold ACE inhibitors and ARBs for the first 48 hours; monitor creatinine and urine output closely; avoid hyperglycaemia for 72 hours; consider alternatives to radiocontrast; haemodynamic optimisation with a PiCCO catheter to a set algorithm.
+
+!fig f27_aki_trials | STARRT-AKI 90-day death, RRT dependence and adverse events, and PrevAKI AKI rates (charts drawn for these notes from the STARRT-AKI abstract, NEJM 2020, and the ESICM summary of Meersch 2017)
+
+| Trial | Design | Result |
+|---|---|---|
+| PrevAKI (Meersch 2017) | Single centre (Münster), 276 patients with TIMP-2 x IGFBP7 above 0.3 four hours after bypass; bundle vs standard care (MAP over 65, CVP 8 to 10) | AKI within 72 h 55.1% vs 71.7% (p=0.004; OR 0.48); moderate or severe AKI 29.7% vs 44.9% (p=0.009). No difference in RRT, stay, or major adverse kidney events at 30, 60 and 90 days |
+| PrevAKI multicentre (Zarbock 2021) | Feasibility RCT, 278 analysed | Full bundle delivered 65.4% vs 4.2%. Any AKI 46.3% vs 41.5% (not significant); moderate or severe AKI 14.0% vs 23.9% (p=0.034) |
+
+- In PrevAKI the bundle group got more dobutamine, with higher MAP and CVP; total fluid did not differ.
+- Viva line: the bundle reduces milder AKI in biomarker-selected patients; no trial yet shows fewer dialysis episodes or deaths.
+
+## Acute kidney injury after cardiac surgery: management and timing of renal replacement therapy
+
+Added 21 November 2026 from Nadim MK et al., ADQI 20, J Am Heart Assoc 2018;7:e008834 (as above, read from the online full text, management statements and the RRT section). STARRT-AKI Investigators. Timing of initiation of renal-replacement therapy in acute kidney injury. N Engl J Med 2020;383:240-51; doi:10.1056/NEJMoa2000741 (abstract only, read through two institutional repository records). The ELAIN and AKIKI trials were not read; their details below are as reported in ADQI 20. NICE NG148 was not read.
+
+### Management principles (ADQI 20)
+- Goals: stop progression, promote recovery, prevent recurrence, treat the acute and chronic consequences (not graded).
+- Choose tests and monitoring by the degree of kidney and cardiorespiratory dysfunction; a kidney-specific stepwise approach helps when the heart or lungs are also failing (not graded).
+- Do not use natriuretic peptides, fenoldopam, diuretics, dopamine or mannitol to **treat** AKI (1C).
+- Bedside approach from TSRA ch. 118: early oliguria is usually low volume or low output. Pre-renal oliguria responds to fluid; poor perfusion responds to inotropes; persistent oliguria or anuria suggests acute tubular necrosis. Stop nephrotoxins.
+
+### When to start RRT
+- ADQI 20: individualise; do not start on creatinine or stage alone. Once decided, start promptly (not graded).
+- Conventional indications (TSRA ch. 118): worsening function with fluid overload, hyperkalaemia, metabolic acidosis or uraemia.
+
+| Trial | Patients | Early arm | Delayed arm | Result |
+|---|---|---|---|---|
+| ELAIN | 231, single centre; KDIGO stage 2 plus NGAL over 150 ng/mL; about 47% after cardiac surgery | Within 8 h of stage 2 | Within 12 h of stage 3 | Lower mortality with early RRT (reported in ADQI as about 25% lower). Only 10% of the delayed arm avoided RRT |
+| AKIKI | 620; stage 3 | Within 6 h of stage 3 | Only when an absolute indication arose | Mortality about 50% in both, no difference. About half the delayed arm never needed RRT |
+| STARRT-AKI | 3,019 randomised, 2,927 analysed; multinational, severe AKI | Within 12 h of eligibility | Only for conventional indications or AKI lasting over 72 h | 90-day death 43.9% vs 43.7% (RR 1.00, 0.93 to 1.09; p=0.92). RRT given to 96.8% vs 61.8% |
+
+| STARRT-AKI secondary outcome | Accelerated | Standard | |
+|---|---|---|---|
+| Still on RRT at 90 days (survivors) | 10.4% (85/814) | 6.0% (49/815) | RR 1.74 (1.24 to 2.43) |
+| Adverse events | 23.0% | 16.5% | p<0.001 |
+
+- Reading the trials: ELAIN was single-centre, nearly half cardiac surgical, with a short gap between arms; AKIKI and STARRT-AKI had a true watch-and-wait arm, and in them a third to a half of the delayed group never needed RRT. In STARRT-AKI early RRT also brought more adverse events and more dialysis dependence.
+- Viva line: no survival gain from starting RRT pre-emptively; start for a clinical indication, or when AKI persists, and then without delay.
+
+### Modality
+- Continuous therapy when haemodynamically unstable or when fluid shifts are poorly tolerated (ADQI 1B). Overall, trials have not shown one modality to be better; observational data link intermittent haemodialysis to less renal recovery.
+- TSRA ch. 118: continuous RRT avoids the rapid fluid shifts of intermittent haemodialysis; intermittent dialysis suits stable patients.
+
+### After AKI
+- Patients who needed RRT are more than three times as likely to reach end-stage kidney disease (ADQI), so the kidney problem does not end at discharge.
+
+## Gastrointestinal complications after cardiac surgery, including mesenteric ischaemia
+
+Added 21 November 2026 from Elgharably H, Gamaleldin M, Ayyat KS, et al. Serious gastrointestinal complications after cardiac surgery and associated mortality. Ann Thorac Surg 2021;112:1266-74; doi:10.1016/j.athoracsur.2020.09.034 (abstract only); Marsoner K, Voetsch A, Lierzer C, et al. Gastrointestinal complications following on-pump cardiac surgery: a propensity matched analysis. PLoS One 2019;14:e0217874; doi:10.1371/journal.pone.0217874 (read from the online full text); Lim JY, Kim JB, Jung SH, et al. Risk factor analysis for nonocclusive mesenteric ischemia following cardiac surgery: a case-control study. Medicine (Baltimore) 2017;96:e8029; doi:10.1097/MD.0000000000008029 (read from the online full text); a single-centre case-control study of NOMI after cardiovascular surgery, J Cardiothorac Surg 2018; doi:10.1186/s13019-018-0807-5 (online text read; authors not captured); Koelemay MJ et al. ESVS 2025 Clinical Practice Guidelines on the Management of Diseases of the Mesenteric and Renal Arteries and Veins. Eur J Vasc Endovasc Surg 2025;70:153-218; doi:10.1016/j.ejvs.2025.06.010 (read from the online full text, chapters on acute mesenteric ischaemia and NOMI; recommendation wording paraphrased). Stress ulcer prophylaxis (EACTS 2024, PPI preferred, I B) is in Cardiac 10, as is the ESC 2024 section on acute mesenteric ischaemia; they are not repeated.
+
+### Frequency and mortality
+!fig f27_gi_mortality | In-hospital mortality by type of serious GI complication after cardiac surgery, 29,909 operations (chart drawn for these notes from the Elgharably 2021 abstract)
+
+| Measure | Elgharably 2021 (29,909 operations) | Marsoner 2019 (4,883 on-pump operations) |
+|---|---|---|
+| Any serious GI complication | 3.5% | 2.9%, median day 8 |
+| Mortality with vs without | 14% vs 1.6% (in hospital) | 23% vs 5.4% overall (30-day) |
+
+| Complication (Marsoner) | Incidence | Mortality | Treatment in that series |
+|---|---|---|---|
+| Mesenteric ischaemia | 0.33% | 75% | 13 of 16 had emergency laparotomy |
+| Pancreatitis | 0.84% | 0 | Diet, enzymes; somatostatin if severe |
+| Acalculous cholecystitis | 0.37% | 17% | Cholecystectomy mostly; percutaneous drainage as a bridge |
+| Ileus | 0.39% | 26% | Neostigmine, erythromycin, decompression; surgery if mechanical |
+| GI bleeding | 0.18% | 22% | Endoscopy; upper bleeds mostly peptic ulcer |
+| Perforation | 0.08% | 0 | Surgery in all |
+
+- Management overall (Marsoner): 51% conservative, 19% endoscopic or radiological, 30% operation.
+- Risk (Marsoner, matched): longer bypass (121 vs 109 min) and operation times; after surgery multiorgan failure, AKI and pneumonia. Type of surgery and new AF were not significant.
+- Predictors of death (Elgharably): with mesenteric ischaemia, coronary disease (OR 4.6), CABG (OR 6.5), re-exploration for bleeding or tamponade (OR 12.1) and vasopressin (OR 11.3); with GI bleeding, liver-pancreas-biliary disease (OR 11.0) and bivalirudin (OR 12.8).
+
+### Non-occlusive mesenteric ischaemia (NOMI): the cardiac surgical form
+- Definition (ESVS 2025): severe intestinal hypoperfusion with patent mesenteric arteries, from mesenteric vasoconstriction (low output, vasoconstrictors, hypovolaemia) or raised intra-abdominal pressure. About 15% of all acute mesenteric ischaemia.
+- After cardiac surgery: 0.4% of 9,445 operations (Lim); 1.7% of 686 (JCTS 2018); in a cohort of 10,409, 0.3% died of NOMI (cited in ESVS).
+- Mortality: 70% (Lim, 1-year survival 27.5%); 75% (JCTS 2018); pooled 58% and 73% in hospital in the AMESI study (ESVS).
+- Onset: mean day 8 (Lim); median day 14, half between days 15 and 20 (JCTS 2018). Often sedated and ventilated at onset (8 of 12), so pain is masked.
+
+| Risk factor | Study and effect |
+|---|---|
+| Age | Lim OR 1.16 per year |
+| Vasoactive-inotropic score on day 0 | Lim OR 1.3 per 100 points; cut-off 400 (sensitivity 53%, specificity 88%) |
+| Peak lactate in first 24 h | Lim OR 1.23; cut-off 5 mmol/L (sensitivity 75%, specificity 86%) |
+| Noradrenaline over 0.1 µg/kg/min | JCTS 2018 OR 130 |
+| Prolonged ventilation | JCTS 2018 OR 18 |
+| Also (univariate or ESVS list) | Emergency or aortic surgery, ECMO, balloon pump, re-exploration, dialysis, peripheral arterial disease, loss of sinus rhythm, intra-abdominal pressure over 12 mmHg, recent MI |
+
+- Lactate: in controls it fell by about 0.3 mmol/L per day; in NOMI it stayed high. A lactate that will not clear despite adequate resuscitation is the trigger to look (Lim). But a single lactate or D-dimer neither confirms nor excludes it (ESVS IIIb C).
+
+### Diagnosis and treatment
+!fig f27_mesenteric | Suspected mesenteric ischaemia after cardiac surgery: from suspicion to CT angiography and treatment by pattern (drawn for these notes from ESVS 2025 recommendations 31 to 45, Lim 2017 and the JCTS 2018 series)
+
+| ESVS 2025 recommendation (paraphrased) | Class | Level |
+|---|---|---|
+| Urgent CT angiography, arterial and venous phases, slices 1 mm or less, whatever the renal function | I | B |
+| State the suspicion of mesenteric ischaemia on the CT request | I | C |
+| Do not rely on a single lactate or D-dimer | IIIb | C |
+| Treat in a centre with 24/7 open and endovascular cover | I | C |
+| Occlusive disease: revascularise before resecting bowel | IIa | C |
+| Endovascular first for embolic or thrombotic SMA occlusion | IIa | B |
+| Resection after revascularisation: no primary anastomosis, planned second look | IIa | C |
+| Antibiotics | I | C |
+| Suspect NOMI in shock when CT shows poor bowel enhancement, wall thickening, pneumatosis or portal venous gas without significant SMA stenosis | IIa | C |
+| NOMI with abdominal compartment syndrome: urgent decompression laparotomy | I | C |
+| Intra-arterial vasodilator (papaverine or prostaglandin) into the SMA under heparin | IIb | C |
+
+- Papaverine regimen quoted by ESVS: 80 mg bolus into the SMA, then 30 to 60 mg/h for 24 to 72 h. Pooled mortality on local vasodilators 40%; after decompression laparotomy still about 50%.
+- Mesenteric angiography was the historical reference standard but is rarely practical in an unstable patient. CT is less sensitive; at operation, about half of CT-suspected NOMI cases were confirmed in one series.
+- Surgery: with peritonism or high suspicion, do not delay laparotomy for imaging; resection of non-viable bowel is the mainstay (Lim, median 10 h from diagnosis to laparotomy). Indocyanine green fluorescence may help judge viability (ESVS IIb C).
+- What the risk factors imply (not a guideline statement): keep output adequate, use the least vasoconstrictor that works, watch intra-abdominal pressure, and re-image early when a patient on high support does not progress.
+
+### Other GI complications: what the sources add
+- Pancreatitis (Marsoner): defined by lipase over 300 U/L with inflammatory signs; commonest GI complication there but none died. In Elgharably, liver, pancreatic and biliary dysfunction together carried 27% mortality.
+- Acalculous cholecystitis: typical clinical, ultrasound and laboratory signs. Percutaneous or ultrasound-guided cholecystostomy is the bridge when too unwell for cholecystectomy.
+- GI bleeding: mostly peptic ulcer (upper) or haemorrhoids and diverticula (lower); CT angiography and embolisation for diverticular bleeding. Bivalirudin and liver-pancreas-biliary disease predicted death (Elgharably).
+
+## Nutrition and feeding in the cardiac ICU: ESPEN 2023
+
+Added 21 November 2026 from Singer P, Reintam Blaser A, Berger MM, et al. ESPEN practical and partially revised guideline: clinical nutrition in the intensive care unit. Clin Nutr 2023;42:1671-89; doi:10.1016/j.clnu.2023.07.011 (read from the online full text, the recommendations and commentary to about 90% of the document; the main grades were checked twice). The guideline has no cardiac surgery section; it applies to all critically ill adults. Grades as printed: A, B, 0 and GPP (good practice point). This tab already notes early post-gastric feeding when extubation is delayed after LVAD implant, and glucose management; ESPEN adds the general rules.
+
+### Who and when
+| Recommendation | Grade |
+|---|---|
+| Every ICU patient staying over 48 h is at risk of malnutrition (statement) | |
+| Oral diet first if the patient can eat safely | GPP |
+| If oral intake is not possible, start enteral nutrition (EN) within 48 h rather than delay it | B |
+| Early EN rather than early parenteral nutrition (PN) | A |
+| No early full EN or PN; reach full target over 3 to 7 days | A |
+| Early EN also on ECMO, in prone position, with diarrhoea, after brain injury | B |
+| If oral and EN are contraindicated, start PN within 3 to 7 days | B (89% consensus) |
+| Do not start PN until EN tolerance measures have been tried | GPP |
+
+### When to hold or reduce feeding
+| Situation | Advice | Grade |
+|---|---|---|
+| Uncontrolled shock with perfusion targets not met; unstable hypoxaemia or acidosis; active upper GI bleeding; bowel ischaemia; gastric aspirate over 500 ml in 6 h | Delay EN | B |
+| Shock controlled with fluids and vasopressors or inotropes | Low-dose EN can start; watch for bowel ischaemia | B |
+| Hypothermia; intra-abdominal hypertension (with caution); acute liver failure | Low-dose EN | B |
+
+- No vasopressor dose threshold is given. For the cardiac ICU this links directly to NOMI (previous section): feed intolerance, distension and rising lactate in a patient on high support should prompt stopping feed and looking for bowel ischaemia.
+
+### Route
+| Recommendation | Grade |
+|---|---|
+| Gastric tube as the standard start | GPP |
+| Continuous rather than bolus EN | B |
+| IV erythromycin first-line prokinetic for gastric intolerance (commentary: usually 100 to 250 mg three times daily, stop after 3 days) | B |
+| IV metoclopramide alone or with erythromycin as an alternative | 0 |
+| Post-pyloric feeding if intolerance persists despite prokinetics | B |
+| Post-pyloric (mainly jejunal) feeding when aspiration risk is high | GPP |
+| Dysphagia (for example after prolonged intubation): texture-modified food; EN if swallowing unsafe | GPP |
+
+### How much
+| Recommendation | Grade |
+|---|---|
+| Indirect calorimetry to measure energy expenditure in ventilated patients | B |
+| Without calorimetry, VO2 or VCO2-based estimates beat predictive equations (statement) | |
+| Early phase: hypocaloric feeding, no more than 70% of expenditure | B |
+| After day 3: increase to 80 to 100% of measured expenditure | 0 |
+| Protein: up to 1.3 g/kg/day, built up progressively | 0 |
+| Glucose or carbohydrate no more than 5 mg/kg/min; IV lipid no more than 1.5 g/kg/day | GPP |
+| Obese patients: energy by calorimetry; protein 1.3 g/kg adjusted body weight if nitrogen loss unknown | GPP |
+
+### Monitoring and other nutrients
+| Recommendation | Grade |
+|---|---|
+| Insulin when glucose exceeds 10 mmol/L | A |
+| Glucose on admission or feeding start, then at least 4-hourly for 2 days | GPP |
+| Potassium, magnesium and phosphate at least daily in week 1 | GPP |
+| Refeeding hypophosphataemia: electrolytes 2 to 3 times daily; restrict energy for 48 h then increase gradually | B |
+| No routine extra enteral glutamine (outside burns and trauma) | B |
+| No parenteral glutamine in unstable patients or with liver or renal failure | A |
+| No high-dose antioxidants without proven deficiency | A |
+| Daily trace elements and vitamins with PN | B |
+
+- Viva summary: feed the gut within 48 h once perfusion is restored, start low and build to target over 3 to 7 days (not over 70% early), give protein up to 1.3 g/kg/day, gastric first then prokinetic then post-pyloric, PN only after 3 to 7 days if the gut cannot be used, and treat refeeding by slowing down.
+
+## Arterial and central venous cannulation: technique, ultrasound guidance and complications
+
+Added 21 November 2026 from NICE. Guidance on the use of ultrasound locating devices for placing central venous catheters. Technology appraisal guidance TA49, issued October 2002 (read in full from the NICE PDF); StatPearls. Central venous catheter (Kolikof J, Peterson K, Baker AM), NCBI Bookshelf NBK557798 (read from the online text); StatPearls. Arterial lines (continuing education page; authors and date not shown) (read from the online text); OpenAnesthesia (American Society of Anesthesiologists). Arterial line complications, keyword summary citing Theodore (UpToDate 2025), Card 2023, Wu 2022, Singh 2017 and others (read from the online page; the primary papers were not read). Arterial line waveform interpretation and damping were not in these sources and are not covered here.
+
+### NICE TA49 (October 2002)
+| Recommendation | |
+|---|---|
+| 1.1 | 2D imaging ultrasound guidance is the preferred method for inserting central venous catheters into the internal jugular vein in adults and children in elective situations |
+| 1.2 | 2D ultrasound guidance should be considered in most clinical circumstances, elective or emergency |
+| 1.3 | Everyone using 2D guidance should be trained to competence |
+| 1.4 | Audio-guided Doppler is not recommended |
+
+| Evidence behind TA49: 2D ultrasound vs landmarks, adult internal jugular (7 RCTs) | Relative risk reduction |
+|---|---|
+| Failed placement | 86% (67 to 94%) |
+| Complications | 57% (13 to 78%) |
+| Failure at first attempt | 41% (12 to 61%) |
+| Number of attempts | 1.5 fewer |
+
+- Infants (internal jugular, 3 trials): failure down 85%, complications down 73%. Subclavian (1 RCT, inexperienced operators): failure down 86%, complications down 90%. Femoral (1 study): 2.7 fewer attempts.
+- Landmark failure rates of up to 35% were quoted. Modelled effect: about 90 fewer arterial punctures per 1,000 patients and cost saving if the machine is used often enough. NCEPOD recorded one death from pneumothorax in over 3,000 NHS insertions.
+- NICE kept the landmark technique in training for when equipment is not available.
+
+### Central venous catheter: indications and sites (StatPearls)
+- Indications: vasopressors, inotropes, PN, irritant drugs; no peripheral access; RRT, plasmapheresis; CVP monitoring; transvenous pacing and venous interventions.
+- Contraindications: infection at the site, hardware or anatomy distortion, vascular injury proximal or distal to the site. Relative: coagulopathy (severe means INR over 3 or platelets under 20 x 10⁹/L), uncooperative patient, obesity. Bleeding in coagulopathic patients is about 0.8%.
+
+| Site | For | Against |
+|---|---|---|
+| Internal jugular (right preferred: direct, wide, superficial) | Ultrasound-friendly, compressible, low complication rate | Collar, planned neck surgery |
+| Subclavian | Lower infection and thrombosis rates | Pneumothorax, non-compressible, hard to image; avoid if coagulopathic |
+| Femoral | Compressible, no pneumothorax | More thrombosis; infection data conflicting; CVP inaccurate |
+
+- Anatomy: the internal jugular lies anterolateral to the common carotid in the triangle between the two heads of sternocleidomastoid and the clavicle. The subclavian vein lies behind the clavicle, anterior and superior to the artery with lung below and medially; phrenic nerve and brachial plexus nearby. At the groin the vein is medial to the artery (NAVEL, lateral to medial).
+
+### Ultrasound-guided Seldinger technique (StatPearls)
+!fig f27_ij_ultrasound | Right internal jugular vein on ultrasound: short-axis view with the vein lateral to the carotid, and long-axis in-plane view of the needle and wire (drawn for these notes from StatPearls, Central venous catheter)
+
+1. Consent, time-out, full sterile barrier, sterile probe cover. Scan first: vein compressible, carotid not; Doppler if unsure.
+2. Head-down for neck and subclavian lines; supine for femoral.
+3. Local anaesthetic. Needle at 45 to 90 degrees under real-time view, aspirating until dark venous blood.
+4. Wire in; resistance means the needle has left the vessel or the wire is looping. Ectopy means the wire is in the right atrium: withdraw until it stops. Advance to about 15 cm and never let go of the wire.
+5. Confirm the wire in the vein in short and long axis before dilating. Manometry helps but is unreliable in shock.
+6. Skin nick, gentle dilation, catheter over the wire, wire out. Aspirate and flush every lumen, suture, biopatch and occlusive dressing.
+7. Confirm position: chest film for all internal jugular and subclavian lines; tip in the superior vena cava (inferior vena cava for femoral).
+
+| Complication | Notes |
+|---|---|
+| Arterial puncture or cannulation | Confirm venous wire before dilating (management of a dilated artery was not in the sources read) |
+| Pneumothorax | Mainly subclavian |
+| Arrhythmia | Wire in the atrium |
+| Air embolism | Procedural complication listed by StatPearls |
+| Haematoma | Can compress the airway after neck lines |
+| Lost guidewire | May migrate; retrieval needs an interventional procedure |
+| Late | Catheter-related bloodstream infection, thrombosis, central vein stenosis |
+
+### Arterial cannulation
+- Indications: beat-to-beat pressure on vasoactive drugs or in major surgery, frequent arterial gases, pulse pressure variation (StatPearls).
+- Contraindications: infection at the site, absent pulse or poor collateral flow. Relative: coagulopathy, burns, upper limb vascular graft, Raynaud disease, thromboangiitis obliterans.
+- Allen test: occlude radial and ulnar, open the pale hand, release the ulnar; colour back in 5 seconds or less is reassuring. Its predictive value for hand ischaemia is poor and observers disagree; colour Doppler is more reliable (OpenAnesthesia, citing Theodore). This matters for radial artery harvest as well (Cardiac 5).
+- Radial technique: palpate 1 to 2 cm above the wrist crease, needle at 30 to 45 degrees towards the pulse until flashback, drop to about 10 degrees, thread the wire, then the cannula; ultrasound raises first-pass success.
+
+| Arterial line complication | Figure (OpenAnesthesia summary) |
+|---|---|
+| Temporary occlusion or spasm | About 57%; more in women, diabetics, large cannula for vessel size |
+| Catheter-related bloodstream infection | About 1.7 per 1,000 catheter days (central lines 2.7) |
+| Dissection; pseudoaneurysm (radial, after angiography) | About 1%; under 0.1% |
+| Nerve injury, axillary line | 3.2% (small series) |
+| Vascular complications, brachial line after cardiac surgery | About 0.15% |
+| Catheter failure in ICU | 26% in one RCT; reduced by ultrasound |
+
+- Prevention: chlorhexidine skin preparation and dressings; maximal barrier precautions for femoral and axillary lines; dynamic ultrasound needle-tip positioning reduces haematoma, spasm and back-wall puncture. Routine 7-day replacement gives no benefit. Flush small volumes slowly: embolism risk rises with flush volume and speed, and with right arm and axillary sites.
+
+## Venous thromboembolism prophylaxis after cardiac surgery: European 2024 update
+
+Added 21 November 2026 from Samama CM, Afshari A, Grønlykke L, et al. European guidelines on peri-operative venous thromboembolism prophylaxis: first update. Executive summary. Eur J Anaesthesiol 2024;41:561-9; doi:10.1097/EJA.0000000000002025 (read from the online PDF; recommendations in chapters 1, 4 and 5 quoted and checked twice). The full chapter 1 (Ahmed A, Koster A, Lance M, Milojevic M. Eur J Anaesthesiol 2024;41:570-2; doi:10.1097/EJA.0000000000002026) was not read, so no incidence data from it are given. This tab already has the EACTS/EACTAIC/EBCP 2024 patient blood management recommendation (LMWH as soon as safe after surgery, IIa B). Thoracic recommendations are in Thoracic 7.
+
+### Chapter 1: cardiovascular surgery
+| Recommendation | Grade | Agreement |
+|---|---|---|
+| Cardiac surgery without significant bleeding risk: start pharmacological prophylaxis early, between 6 and 24 h after surgery | 1C | 91% |
+| Vascular surgery at higher procedural risk (open thoracoabdominal or abdominal aortic aneurysm repair, TEVAR) or with VTE risk factors: consider starting within 24 h | 2C | 91% |
+| LMWH first line over UFH, because HIT is commoner in cardiac and vascular surgery | 2B | 100% |
+
+- Grade 1 recommendations are worded "we recommend" and grade 2 "we suggest"; the letter is evidence quality (the definitions are not printed in the summary).
+- Compared with EACTS 2024: both favour LMWH as soon as safe; the European update sets a 6 to 24 h window and gives it a strong (1C) grade.
+
+### Chapter 4 (ICU) points relevant to the cardiac ICU
+| Recommendation | Grade |
+|---|---|
+| Mechanical prophylaxis over none in surgical critically ill patients | 1C |
+| Pharmacological over mechanical prophylaxis in ICU patients (rest of the wording truncated in the extraction) | 1C |
+| LMWH over UFH | 1B |
+| Intermittent pneumatic compression (IPC) over stockings when mechanical prophylaxis is used | 2B |
+| Combined mechanical and pharmacological prophylaxis in selected patients | 2B |
+| Intermediate rather than low-dose LMWH in ICU patients (qualifying wording truncated in the extraction) | 2B |
+| No routine anti-Xa monitoring; monitor in selected cases and use an anti-Xa dose protocol in renal impairment | 2C |
+
+### Chapter 5: mechanical prophylaxis and risk assessment
+| Recommendation | Grade |
+|---|---|
+| Institution-wide VTE protocol including early ambulation | 1B |
+| Assess each patient's VTE risk before surgery | 1B |
+| High thrombosis risk with high bleeding risk (which describes most patients on the first postoperative night): IPC over no prophylaxis | 1C |
+| Very high thrombosis risk: IPC plus pharmacological prophylaxis | 1C |
+| High thrombosis risk with low bleeding risk: pharmacological, mechanical optional | 2B |
+
+- One way to apply these together (a synthesis, not a single recommendation): IPC from arrival in ICU while bleeding settles, then LMWH from 6 to 24 h once drains are quiet, continued to full mobilisation (EACTS), with platelet counts watched for HIT (HIT is covered earlier in this tab).

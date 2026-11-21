@@ -307,3 +307,326 @@ Fudulu et al. (2024) compared off-pump with on-pump CABG in severe renal impairm
 - The authors acknowledge that **residual confounding** can remain. Matching balances only the measured variables, and unmatched patients are dropped, so the result applies to the matched population.
 
 Viva wording: "Propensity matching pairs treated and untreated patients with similar measured characteristics, so it balances measured confounders only. I would check the covariates, the caliper, standardised differences under 0.1 after matching, and how many patients were lost to matching."
+
+## Professional practice: non-technical skills (NOTSS) and the NatSSIPs 2 safety standards
+
+Added 21 November 2026 from: Royal College of Surgeons of Edinburgh and University of Aberdeen, *The Non-Technical Skills for Surgeons (NOTSS) System Handbook*, v1.2 (June 2012), https://rcsed.ac.uk/media/2qwoo5ke/notss-handbook.pdf, read through a summarising extract for the categories, elements and behaviour examples; and the same handbook, v2.0 (RCSEd, 2019), https://www.rcsed.ac.uk/media/ypmnkyhn/notss-handbook.pdf, read through a summarising extract for its history, rating scale and intended uses (its taxonomy table did not come through, so the element list below is from v1.2). Centre for Perioperative Care, *National Safety Standards for Invasive Procedures (NatSSIPs) 2* (January 2023; "information correct as at December 2022"), https://cpoc.org.uk/media/3116, read in two passes through summarising extracts covering the whole document. The course already has the WHO checklist trial (Haynes 2009), Never Events and PSIRF under "Professional practice: outcomes, audit, patient safety"; this section adds the behavioural framework and the national standards.
+
+### NOTSS: what it is
+- A behavioural rating system for the **non-technical skills of an operating surgeon**, developed by RCSEd with the University of Aberdeen School of Psychology (surgeons, psychologists and anaesthetists), funded by RCSEd and NHS Education for Scotland. Content came from **cognitive task analysis** of consultant surgeons, supported by adverse event reports, theatre observation and the literature; a prototype was then tested experimentally and in practice.
+- **v2.0 (2019)** updated v1.2 to fit the pre-list **team brief**, the **surgical safety checklist** and the post-list **debrief**.
+- **Use**: a structured debrief tool for a consultant training a registrar, rated straight after the case (under five minutes), in theatre or a simulator. It supports **formative** assessment, training-needs analysis and self-reflection. It is **not recommended for summative assessment**. Teaching pauses if the clinical situation needs it.
+
+!fig f29_notss | NOTSS: four categories, twelve elements and the four-point rating scale. Drawn for these notes from the NOTSS handbook v1.2 (2012) element list and the v2.0 (2019) rating scale and intended uses
+
+### The four categories and twelve elements, with handbook behaviour examples
+
+| Category | Element | Good behaviour (handbook example) | Poor behaviour (handbook example) |
+|---|---|---|---|
+| Situation awareness | Gathering information | Pre-operative check of notes, investigations and consent | Does not ask for results until the last minute, or at all |
+| | Understanding information | Looks at the CT and points out the relevant area | Discards results that do not fit the picture |
+| | Projecting and anticipating future state | Says what equipment may be needed later | Waits for a predicted problem to happen before responding |
+| Decision making | Considering options | Starts a balanced discussion of options with the team | No discussion of options |
+| | Selecting and communicating option | Reaches a decision and states it clearly | Does not tell the team the surgical plan |
+| | Implementing and reviewing decisions | Sees that plan A is failing and moves to plan B | Does not review the effect of actions |
+| Communication and teamwork | Exchanging information | Talks about the progress of the operation | Does not voice concerns |
+| | Establishing a shared understanding | Makes sure the team knows the plan before starting | Does not articulate the plan |
+| | Co-ordinating team activities | Checks the team is ready before starting | Proceeds without checking equipment is ready |
+| Leadership | Setting and maintaining standards | Follows theatre protocol | Breaks theatre protocol |
+| | Supporting others | Gives constructive criticism | Hostile or sarcastic to team members |
+| | Coping with pressure | Stays calm under pressure | Freezes; cannot decide under pressure |
+
+**Rating scale**: 4 good, 3 acceptable, 2 marginal, 1 poor (the skill should have been shown but was lacking, or poor behaviour was seen), N/A (not required in this case).
+
+**Viva use (application, not from the source)**: frame a crisis answer (massive haemorrhage on bypass, airway fire, intraoperative PA injury) in NOTSS terms: gather and interpret, say the plan aloud, allocate roles, review, and stay calm. Examiners hear this as leadership.
+
+### NatSSIPs 2 (CPOC, January 2023): structure
+- Replaces **NatSSIPs 2015**. Applies to every provider of invasive procedures in NHS care in all four UK nations; private providers are expected to adopt it. Organising idea: **people, processes, performance**; aim to standardise, harmonise and educate.
+- **Invasive procedure**: a hole or incision is made, or access gained through a natural orifice, usually with documented consent. Apply the spirit rather than argue about scope.
+- **Language**: "must" = integral safety standard; "should" = justified deviation allowed; "could/may consider" = suggestion.
+- **LocSSIPs**: organisations **no longer have to write a LocSSIP for every procedure**; they may use SOPs or LocSSIPs based on NatSSIPs 2, standardised locally.
+
+**Organisational standards**
+
+| Domain | Standard | Content |
+|---|---|---|
+| People | Patients | Partners in safety: plain information, involvement in checks, a route to raise concerns |
+| | Roles | Named **board member**, named senior practising clinical lead, multidisciplinary NatSSIPs steering group; specialty and site leads in large trusts |
+| | Staffing and resources | Skilled, rested staff, skill mix, planned breaks, culture in which concerns can be raised |
+| | Training | In-person multidisciplinary training including human factors and scenario rehearsal |
+| Processes | Documentation | Checklists adapted from the WHO checklist, harmonised, no duplication |
+| | Scheduling | Enough preparation time, complete list information, **laterality written in full**, process to remove outdated lists |
+| | Induction | NatSSIPs induction for staff, students and agency workers before working in invasive areas |
+| | Governance | Learning from incidents, complaints and national reports; just culture; proportionate investigation; risk assessment of procedural harms (swabs, fire) |
+| Performance | Data | Measures of quantity and quality; **peer review and direct observation preferred** over documentation audit alone |
+| | External bodies | CQC, HIW, HIS, HSSIB and the Royal Colleges encouraged to use NatSSIPs in inspection |
+
+!fig f29_natssips | The eight NatSSIPs 2 sequential standards in order, with the organisational standards and the proportionate approach. Drawn for these notes from CPOC, NatSSIPs 2 (January 2023)
+
+### The eight sequential standards
+1. **Consent and procedural verification, including site marking**: confirm procedure and side against records and consent, with the patient. Marking by the operator or a deputy who knows the case, shortly before, with the patient awake and agreeing; an **arrow, never an X**; never mark the non-operative side; laterality wristbands not recommended.
+2. **Team brief**: at the start of every session, whole active team present, each patient discussed (roles, risks, blood management, equipment), recorded.
+3. **Sign In**: before anaesthesia or sedation, at least **two people with the patient**, using open questions. Advanced items include "stop before you block" for regional anaesthesia. Priority checks for life-threatening emergencies (command, role allocation, blood plan).
+4. **Time Out**: called "the most critical check" of the WHO checklist. All patients under general, regional or local anaesthesia. As close to incision as possible, usually just before prep and draping, with the lead operator and lead anaesthetist present and other activity stopped. Basic items: names, identity, consent, imaging, site, allergies, key or unusual steps, equipment and implants present and sterile. Advanced items: blood loss plan, diabetes plan, risk score (ASA, SORT), fire plan, warming, antibiotics, VTE prophylaxis. A repeat (abbreviated) check if the patient is moved significantly; one Time Out per team or procedure. **If consent, procedure and records disagree in an anaesthetised patient: STOP**, seek senior advice from someone not involved, and if doubt remains wake the patient (duty of candour applies). Do not seek relatives' consent for an adult who consented for themselves. Proceeding with a workaround is reported as an incident.
+5. **Implant use and verification**: minimum checks for each implant are **type, side, size, expiry, sterility** (custom implants also name, date of birth and unique number against the wristband). For several implants the check is **compatibility**. Only a named regular staff member (not a company representative) fetches implants; an "implant Time Out" can be used. Record manufacturer, size, serial number and expiry auditably; report defects to the manufacturer and MHRA.
+6. **Reconciliation of items**: **full count** for major procedures, all maternity areas and any procedure entering a cavity; **proportionate count** (intact equipment, wire removal, two-person verbal check) for minor, needle and natural-orifice procedures. Two trained staff, at least one registered. Counts: baseline; before packing a cavity and at scrub changes; before closing a cavity, the first muscle layer or the wound; final count at skin closure. Swabs counted in fives; **radio-opaque swabs only in cavities**; never cut or tie packs. **Discrepancy**: tell the operator, stop closure if safe, recount, search, **do not move the patient** until resolved, X-ray in the procedure room under anaesthesia per local policy, document and tell the patient. Intentionally retained items (for example packs) must be known to the patient and staff and their removal confirmed.
+7. **Sign Out**: after the count, before the patient leaves the room. Minimum: operator, assistant, anaesthetist and the person handing over. Procedure, side, blood loss, specimen labels, count correct and items intact, retained items, implants, recovery plan, equipment problems, VTE plan. Sign Out waits until reconciliation is complete.
+8. **Handover and debrief**: structured handover (for example SBAR) with read-back. **Every elective major session ends with a debrief**; emergencies where feasible. Action log with owners and timescales; after-action review can be used.
+
+### What changed from NatSSIPs 2015
+- Stronger organisational standards and named leadership.
+- **Proportionality**: major and minor procedure categories and the proportionate count.
+- New steps: consent and procedural verification, implant verification, reconciliation of items.
+- The fixed **500 mL blood loss threshold removed** in favour of a context-specific blood management discussion.
+- More patient involvement and human factors, fewer redundant checks.
+
+## Professional practice: leadership, research governance and confidentiality
+
+Added 21 November 2026 from: NHS Leadership Academy, *Healthcare Leadership Model: the nine dimensions of leadership behaviour* (2013), https://www.leadershipacademy.nhs.uk/healthcare-leadership-model/explore-the-healthcare-leadership-model/, read from the online page through a summarising extract (publication year from the Elizabeth Casson Trust resource page; the rating levels of the model were not on the pages read); HRA, *UK Research Ethics Committee (REC) Policy Document* landing page (formerly GAfREC; v1.0, 28 April 2026; the PDF itself could not be opened); HRA, "Transforming the UK's clinical trial landscape" (clinical trial regulations reform page), read through a summarising extract; MHRA, "Clinical trials for medicines: compliance with ICH E6 good clinical practice in the United Kingdom" (gov.uk, first published 27 March 2026, updated 28 April 2026), read through a summarising extract; MRC Regulatory Support Centre, "Research involving health and social care" (UKRI), and a professional body research governance guide dated 30 June 2026 (rcot.co.uk) for when REC review is needed, both through summarising extracts; National Data Guardian, *The Eight Caldicott Principles* (December 2020), https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/942217/Eight_Caldicott_Principles_08.12.20.pdf, read in full through a summarising extract. The UK Policy Framework for Health and Social Care Research itself could not be opened. **UK GDPR (lawful bases, Article 9 conditions) was not read in a primary source this session and is not written up.** The FMLM *Leadership and Management Standards for Medical Professionals* were not read. Research in adults lacking capacity (MCA 2005 ss30 to 33) is already under "Mental Capacity Act 2005" above.
+
+### Healthcare Leadership Model (NHS Leadership Academy, 2013)
+Nine dimensions of leadership behaviour, for anyone in health and care with or without a formal role. Each dimension has a description, why it matters and "what it is not". Free self-assessment and 360-degree feedback tools sit alongside it.
+
+| Dimension | In one line (paraphrased from the Academy page) |
+|---|---|
+| Inspiring shared purpose | Curious about how to improve services and patient care |
+| Leading with care | Understanding the team's qualities and needs |
+| Evaluating information | Seeking varied information to generate new ideas |
+| Connecting our service | How health and care services fit together |
+| Sharing the vision | A compelling, credible vision of the future |
+| Engaging the team | Involving people and valuing their contributions |
+| Holding to account | Clear performance goals and quality indicators |
+| Developing capability | Building capability for future challenges |
+| Influencing for results | Persuading and building collaboration |
+
+### When research needs NHS REC review and HRA approval
+- Research involving the NHS needs a **sponsor**, ethical review by an **NHS REC**, and **HRA and HCRW Approval** (England and Wales; R&D permission in Scotland and Northern Ireland). Applications go through **IRAS**. Each NHS site confirms **capacity and capability** after receiving the local information pack from the sponsor.
+- **REC review is needed** for research identifying participants through their past or present use of NHS or social care services (including contracted private or voluntary providers), or as their relatives or carers, and for research using previously collected information in which the researchers are likely to identify individuals.
+- **REC review is not needed** for research recruiting staff **by virtue of their professional role** (unless another rule applies); it still needs organisational permission and independent review, often by a university committee. Market research under the MRS code is also outside REC review unless the law requires it.
+- The HRA "Do I need NHS REC approval?" decision tool sorts research from audit and service evaluation. (The audit/research definitions themselves were not read this session.)
+
+### Clinical trials law from 28 April 2026 (replaces the 2004 regulations as they stood)
+The **Medicines for Human Use (Clinical Trials) (Amendment) Regulations 2025** came fully into force on **28 April 2026**, amending the 2004 Regulations.
+
+| Change | Detail |
+|---|---|
+| Combined review | MHRA and REC review in one application, now in law; a notification scheme for some lower-risk applications and modifications |
+| Terms | "Amendment" becomes **modification** (substantial, important detail, minor); "subject" becomes **participant**; "trial site" becomes **trial location** |
+| Recruitment | First UK participant expected **within 2 years** of approval, or approval lapses unless extended |
+| Transparency (legal duty for the first time) | **Register** the trial publicly; **summary of results within 12 months** of the end of the trial; **offer participants a plain-language results summary** |
+| RECs | At least **5 members** with scientific, medical and ethical expertise, a chair and **a lay member** |
+| Consent | Simplified arrangements for seeking and recording consent in trials that meet set conditions (for example low-intervention trials) |
+| Investigators | Chief investigators and investigators must be health care professionals as defined |
+
+### ICH E6(R3) good clinical practice
+- ICH E6(R3) principles and **Annex 1** reached Step 4 on **6 January 2025**. Under regulation 28 of the amended UK regulations, compliance with the **GCP principles** (which include ICH GCP as amended) is a **legal requirement from 28 April 2026**. Regulation 37 keeps three UK principles: the **Declaration of Helsinki**, **insurance**, and regard to all relevant guidance (so the Annexes must be followed or departures justified).
+- What is new compared with E6(R2): a **risk-proportionate** approach to design, conduct and reporting (principle 7: processes proportionate to participant risk and the importance of the data); a risk-based quality management system; risk-based validation of computerised systems; flexibility, with the sponsor justifying its approach in a risk assessment.
+- **GCP training** should be proportionate to each person's delegated role and documented.
+
+### The eight Caldicott principles (National Data Guardian, December 2020)
+1. Justify the purpose for using confidential information.
+2. Use it only when necessary.
+3. Use the minimum necessary.
+4. Access on a strict need-to-know basis.
+5. Everyone with access understands their responsibilities.
+6. Comply with the law.
+7. **The duty to share information for individual care is as important as the duty to protect confidentiality.**
+8. **Inform patients and service users about how their information is used**: no surprises; at minimum, accessible information on how and why it is used and what choices they have. (The December 2020 revision is the one that introduced this eighth principle, according to the National Data Guardian's announcement title; the document read lists all eight.)
+
+**Application (not from a source)**: a registrar keeping a personal logbook or audit spreadsheet should hold the minimum identifiers needed, on trust systems, with access limited to those who need it (principles 2 to 4).
+
+## Smoking cessation before surgery: NICE NG209 (secondary care points)
+
+Added 21 November 2026 from NICE, *Tobacco: preventing uptake, promoting quitting and treating dependence* (NG209), published 30 November 2021, last updated 16 January 2023, https://nice.org.uk/guidance/ng209, read from the guideline PDF through a summarising extract of the first 100,000 of 226,000 characters (sections 1.12 to 1.17; the pregnancy and policy sections were not reached). The course says elsewhere (Thoracic 7) that NICE advises against postponing surgery for smoking cessation; that statement was not found in the parts read here.
+
+| Rec | Point |
+|---|---|
+| 1.14.1 | Before an appointment, procedure or stay, tell people that all buildings and grounds are smokefree, the benefits of stopping (including that **stopping before surgery has no ill effects**), and the support and medicines available |
+| 1.14.2 | Before a planned admission, put how smoking will be managed into the care plan |
+| 1.14.3 | **Encourage people referred for elective surgery to stop before surgery**, and refer them to local stop smoking support |
+| 1.14.5 | Offer behavioural support during the current outpatient visit or admission |
+| 1.14.11 | Offer exhaled **carbon monoxide** measurement at each contact, for motivation and feedback |
+| 1.14.13 | Inpatients: support immediately if needed, otherwise **within 24 hours of admission**; weekly sessions for **at least 4 weeks after discharge** |
+| 1.14.14 | Outpatients and **preoperative assessment**: immediate on-site support, then weekly for at least 4 weeks after the quit date |
+| 1.14.15 | If medication is accepted, provide it **immediately** |
+| 1.14.16 | Advise removing **nicotine patches 24 hours before microvascular reconstructive surgery** and surgery using vasopressin injections |
+| 1.14.17 | At discharge give at least **1 week** of medication, or enough until the next support contact |
+| 1.14.20 to 1.14.21 | People who must abstain temporarily in hospital: encourage licensed nicotine products, with behavioural support |
+| 1.14.25 to 1.14.26 | Hospital pharmacies stock the recommended products; access at all times |
+
+**Which treatments work best (1.12.7 and 1.12.8)**: with behavioural support, **varenicline**, **combination short- plus long-acting NRT** and **nicotine e-cigarettes** are more likely to succeed; **bupropion**, short-acting NRT alone and long-acting NRT alone are less likely. Offer behavioural support whatever the choice (1.12.5). Do not offer varenicline or bupropion under 18 (1.12.4). E-cigarettes: explain they are not licensed medicines, long-term harms are unknown, they are likely far less harmful than smoking, and the aim is to stop tobacco completely (1.12.14). Cytisinicline was not in the sections read.
+
+## Statistics 3: survival analysis (Kaplan-Meier, log-rank, Cox and the hazard ratio)
+
+Added 21 November 2026 from: Clark TG, Bradburn MJ, Love SB, Altman DG. Survival analysis part I: basic concepts and first analyses. Br J Cancer 2003;89:232-8, doi:10.1038/sj.bjc.6601118, read from the full text on nature.com through a summarising extract; and Bradburn MJ, Clark TG, Love SB, Altman DG. Survival analysis part II: multivariate data analysis, an introduction to concepts and methods. Br J Cancer 2003;89:431-6, read from the full-text PDF (White Rose repository) through a summarising extract. Neither paper covers checking the proportional hazards assumption in detail (the series defers it to later parts, not read). The course already defines the hazard ratio in one line under "Statistics for the viva"; this section adds the methods behind it.
+
+### Censoring
+- **Censored** = the event time is unknown: no event by the end of the study, lost to follow-up, or follow-up stopped by another event. **Right censoring** (the event would have happened after the last contact) is the usual type; left and interval censoring exist.
+- Standard methods assume **non-informative censoring**: a censored patient has the same later prognosis as those still followed. Withdrawal because of toxicity or deterioration breaks this assumption. A few losses to follow-up usually cause little bias.
+
+### Survivor function, hazard and cumulative hazard
+- **S(t)**: probability of surviving from the time origin beyond time t (the cumulative picture).
+- **Hazard h(t)**: the instantaneous event rate among those still event-free at t (the current risk). S(t) and h(t) determine each other.
+- **Cumulative hazard** H(t) = −log S(t); easier to estimate (Nelson-Aalen) and used to check models.
+
+### Kaplan-Meier (product-limit) estimate
+- At each event time: S(tj) = S(tj−1) × (1 − dj/nj), where **nj** = number at risk just before tj and **dj** = events at tj; S(0) = 1. Censored patients contribute until they leave the risk set.
+- A **step function** that drops only at event times; with no censoring it equals the proportion still event-free.
+- **Confidence intervals widen in the tail**, where few remain at risk, so plots are often cut short on the time axis. Do not truncate the y axis; 1 − S(t) (cumulative incidence) may be plotted instead.
+- Show **numbers at risk** under the plot.
+- **Median survival** = time at which S(t) = 0.5, read off the curve. The mean is rarely used because survival data are skewed.
+- **Median follow-up**: in the Edinburgh ovarian cohort, the simple median of all follow-up was 1.7 years, the median for censored patients 3.2 years, and the **reverse Kaplan-Meier** median 5.3 years (95% CI 4.7 to 6.0); so how follow-up is summarised matters.
+
+!fig f29_km_guide | How to read a Kaplan-Meier plot: steps at events, ticks for censoring, the median at S(t) = 0.5, numbers at risk, the unreliable tail, and what the log-rank test and hazard ratio add. Invented data for 20 patients per arm, calculated by the product-limit method; drawn for these notes from Clark et al. 2003 and Bradburn et al. 2003
+
+### Log-rank test
+- Compares the **whole survival curves** of two or more groups. At each event time the expected events in each group are calculated as if there were no difference; summed to **E**, compared with observed **O**; the statistic is referred to chi-squared with **groups − 1 degrees of freedom**. A trend version (1 df) for ordered groups is more powerful.
+- For two groups it tests whether the hazard ratio is 1. It gives a **P value but no effect size**; Cox regression is preferred for estimating the hazard ratio. Assumes non-informative censoring.
+- Comparing the confidence intervals of each group is not recommended.
+
+**Worked example (Lung Cancer Study Group 1988, from Clark et al.)**: 164 patients after resection of NSCLC, radiotherapy alone against radiotherapy plus platinum-based chemotherapy (CAP), outcome time to first relapse.
+
+| | Radiotherapy alone | Radiotherapy plus CAP |
+|---|---|---|
+| Relapses (O) | 70 of 86 | 54 of 78 |
+| Expected (E) | 53.4 | 70.6 |
+| O/E | 1.31 | 0.76 |
+| Median relapse-free time | 232 days | 402 days |
+
+Log-rank chi-squared **9.1 on 1 df**. Hazard ratio estimated as (54/70.6) ÷ (70/53.4) = **0.58**, a 42% lower relapse hazard with chemotherapy. (The extract gave the P value as below 0.002; 9.1 on 1 df corresponds to about 0.003.)
+
+### Cox proportional hazards regression
+- h(t) = h0(t) × exp(β1x1 + … + βpxp). The **baseline hazard h0(t) is left unspecified** (semi-parametric), so no survival distribution is assumed.
+- **exp(β) = hazard ratio** for a one-unit change in that covariate, adjusted for the others. **HR above 1** = higher hazard, shorter survival; **below 1** = lower hazard, longer survival.
+- **Assumption**: hazards in the groups are a **constant multiple** of each other over time (proportional hazards), so hazard curves should not cross.
+- **Ovarian cancer example (multivariable Cox)**: FIGO stage HR 2.08 per stage (95% CI 1.82 to 2.37); absence of ascites 0.67 (0.54 to 0.84); age 1.14 per 5 years (1.09 to 1.19); mucinous against serous histology 0.66 (0.50 to 0.85).
+
+### Alternatives
+- **Parametric proportional hazards models** (exponential, Weibull, Gompertz): same HR interpretation; easier predictions; more precise if the distribution is right.
+- **Accelerated failure time models**: covariates stretch or shrink time; exp(β) is a **time ratio** (above 1 = longer time to event). In the lung cancer trial, chemotherapy roughly doubled relapse-free time (multivariable time ratio 2.05, 95% CI 1.29 to 3.23).
+- **Stratified log-rank** (categorical covariates only, no effect size) and Aalen's additive model (effects that change over time).
+
+### Viva reading of a survival figure (application, not from the sources)
+State the end point and time origin; check numbers at risk and how much is censored; read medians and a landmark rate only where many remain at risk; give the HR with its CI and ask whether the curves cross (if they do, a single HR misleads).
+
+## Evidence: OCEBM levels, GRADE certainty, and the STROBE and PRISMA 2020 reporting guidelines
+
+Added 21 November 2026 from: GRADE Working Group, *GRADE Handbook* (updated October 2013; being replaced by the GRADE Book), https://gdt.gradepro.org/app/handbook/handbook.html, read through summarising extracts of the first 200,000 of 386,000 characters (chapters 5 and 6); OCEBM 2011 Levels of Evidence from a secondary summary (CASRAI, "Levels of evidence: OCEBM, GRADE, pyramid"), as the CEBM table itself could not be opened, so levels 3 and 4 are not given; Page MJ, McKenzie JE, Bossuyt PM, et al. The PRISMA 2020 statement: an updated guideline for reporting systematic reviews. PLoS Med 2021;18(3):e1003583, doi:10.1371/journal.pmed.1003583, read from the full-text PDF through a summarising extract; von Elm E, Altman DG, Egger M, Pocock SJ, Gøtzsche PC, Vandenbroucke JP. The STROBE statement: guidelines for reporting observational studies. BMJ 2007;335:806, doi:10.1136/bmj.39335.541782.AD, read from the online text without its checklist table. CONSORT 2025 is above (Statistics 2).
+
+### GRADE: certainty of evidence (per outcome, across studies)
+
+| Level | Meaning |
+|---|---|
+| High | Very confident the true effect lies close to the estimate |
+| Moderate | Moderately confident; the true effect is likely close but may be substantially different |
+| Low | Limited confidence; the true effect may be substantially different |
+| Very low | Very little confidence; the true effect is likely to be substantially different |
+
+- **Start**: randomised trials **high**; observational studies **low**. Case series usually end very low. **Expert opinion is not a category of evidence.**
+- **Rate down (1 or 2 levels each)**: **risk of bias** (concealment, blinding, missing data, selective reporting), **inconsistency** (unexplained heterogeneity), **indirectness** (population, intervention, comparator or surrogate outcome differ from the question), **imprecision**, **publication bias**.
+- **Rate up**: **large effect** (RR or HR **above 2 or below 0.5**, direct evidence, no plausible confounders: up one level; **above 5 or below 0.2**: up two); **dose-response gradient** (up one); **all plausible confounding would reduce the effect** (up one). Convert odds ratios to RR first.
+- **Imprecision in practice**: rate down if the CI crosses the decision threshold, or if the total sample is below the **optimal information size** (that of one adequately powered trial), unless events are rare and the sample very large (at least 2,000, perhaps 4,000). Default threshold for important benefit or harm in reviews: RRR or RR increase of 25%.
+- Rating is a judgement with footnotes, not arithmetic.
+
+!fig f29_grade_ladder | GRADE: randomised trials start high and observational studies low; five factors rate down and three rate up; recommendation strength weighs more than certainty. Drawn for these notes from the GRADE Handbook (2013), sections 5 and 6 and Table 5.9
+
+### GRADE: strength of recommendation
+Strong or weak (also called conditional, discretionary or qualified). Determined by the balance of benefits and harms, certainty, **values and preferences**, and **resource use** (also equity, acceptability, feasibility). A strong recommendation can rest on low certainty when benefit clearly outweighs harm; high certainty can still give a weak recommendation when values vary.
+
+| For | Strong | Weak |
+|---|---|---|
+| Patients | Most would want it; only a small proportion would not | Most would want it, but many would not |
+| Clinicians | Most should receive it; adherence can be a quality indicator | Help each patient decide in line with their values; decision aids |
+| Policy makers | Can usually be adopted as policy | Needs debate and stakeholder involvement |
+
+### OCEBM 2011 levels (secondary summary)
+- Seven questions: prevalence, diagnostic accuracy, prognosis, treatment benefit, common harms, rare harms, screening.
+- **Treatment benefit**: level 1 = systematic review of randomised trials (or n-of-1 trials); level 2 = a randomised trial or an observational study with a **dramatic effect**; level 5 = mechanism-based reasoning. Diagnosis level 1 = systematic review of cross-sectional studies with a consistently applied reference standard and blinding; prognosis level 1 = systematic review of **inception cohort** studies.
+- A level may be graded down for study quality, imprecision or indirectness, and up for a large effect, borrowing from GRADE. The OCEBM group describes the levels as a search shortcut, not a verdict on certainty.
+- Criticisms of the evidence pyramid: design alone does not set certainty (Murad 2016 proposed wavy tier lines and treating systematic reviews as a lens rather than the top tier).
+
+### STROBE (2007): observational studies
+- **22 items** for **cohort, case-control and cross-sectional** studies: item 1 title and abstract; 2 to 3 introduction; 4 to 12 methods; 13 to 17 results; 18 to 21 discussion; 22 funding. **18 items apply to all three designs; items 6, 12, 14 and 15 are design-specific.** Some items are reported separately for cases and controls, or exposed and unexposed groups.
+- **Not a quality assessment tool**; it is about clear reporting. Use with the explanation and elaboration paper. (The item-by-item wording was not available in the text read.)
+
+### PRISMA 2020: systematic reviews
+- **27 items in 7 sections** (title, abstract, introduction, methods, results, discussion, other information), plus a **12-item abstract checklist** and a flow diagram. Replaces PRISMA 2009.
+- Main methods items: eligibility criteria (5); all sources with last search date (6); **full search strategy for every source** (7); selection and data collection with number of reviewers and automation (8, 9); risk of bias (11); effect measures (12); synthesis methods 13a to 13f (including model, heterogeneity, subgroups, sensitivity); **risk of bias due to missing results** (14); **certainty of evidence** (15). Results mirror these (16 to 22), including excluded studies that seemed eligible (16b).
+- **Other information**: registration (24a), protocol (24b), changes from protocol (24c), funding, competing interests, and **availability of data, code and materials** (27).
+- **New since 2009**: abstract checklist; protocol and registration moved to "other information" with amendments; full search strategies for all sources; reviewer numbers and automation tools; synthesis split into sub-items; excluded studies; certainty of evidence; competing interests; data and code sharing.
+- Scope: mainly reviews of intervention effects, but usable for aetiology, prevalence and prognosis reviews, with or without meta-analysis, and for updated and living reviews. Extensions exist (network meta-analysis, individual participant data, harms, diagnostic accuracy, scoping reviews); **PRISMA-P** is for protocols.
+- PRISMA is a reporting guideline, **not a tool for judging a review's quality**: use **AMSTAR 2** or **ROBIS** for that.
+
+## Risk-adjusted CUSUM for monitoring surgical outcomes
+
+Added 21 November 2026 from Steiner SH, Cook RJ, Farewell VT, Treasure T. Monitoring surgical performance using risk-adjusted cumulative sum charts. Biostatistics 2000;1(4):441-52, read from the full-text PDF (University of Waterloo repository) through a summarising extract. This builds on "Risk models and outcome monitoring: calibration, discrimination, funnel plots and VLAD" above, which said formal risk-adjusted CUSUM had not been read.
+
+### Why risk-adjust
+An unadjusted CUSUM treats every death alike, so case mix moves the chart. In the paper's UK cardiac centre data, trainees (mortality 2.5%, mostly low-risk cases) produced a false "improvement" signal and an experienced surgeon a false "deterioration" signal on unadjusted charts; **both signals disappeared after risk adjustment**.
+
+### Method
+- Each patient's pre-operative predicted risk **p** comes from a risk model. Hypotheses are written as odds ratios: **R0 = 1** (performing as predicted) against **RA = 2** (odds of death doubled). For detecting improvement, RA = 0.5 on a separate lower chart.
+- Each patient adds a log-likelihood ratio score **W**. With R0 = 1:
+  - death: W = log[RA / (1 − p + RA·p)]; with RA = 2, log[2 / (1 + p)]
+  - survival: W = log[1 / (1 − p + RA·p)]; with RA = 2, log[1 / (1 + p)]
+- **Xt = max(0, Xt−1 + Wt)**, starting at 0. The chart **signals when Xt reaches the control limit h**.
+- A low-risk death costs more than a high-risk death, and a high-risk survival earns more credit than a low-risk one:
+
+| Patient | Predicted risk p | Score if dies | Score if survives |
+|---|---|---|---|
+| Parsonnet 0 | 2.5% | +0.67 | −0.02 |
+| Parsonnet 50 | about 54% | +0.26 | −0.43 |
+
+- **Choosing h**: set by the **average run length (ARL)** when performance is acceptable (the false-alarm rate), computed by a Markov chain approximation. In the paper, **h = 4.5** (upper) and −4 (lower) gave an in-control ARL of about **9,600 patients**, about one false alarm every nine years at that centre. At a true odds ratio of 2, the ARL was about 215 operations, against about 485 for an observed-minus-expected chart designed to the same false-alarm rate.
+
+!fig f29_ra_cusum | Risk-adjusted CUSUM with Steiner's weights (R0 = 1, RA = 2, h = 4.5). Invented data: 240 operations with predicted risks drawn at random; the odds of death were doubled from patient 151 (8 deaths against 9.3 predicted before, 15 against 4.4 after), and the chart signals at patient 214 and is reset. Drawn for these notes; the method and the worked scores are from Steiner et al. 2000
+
+### The paper's data
+6,994 operations at one UK cardiac centre, 1992 to 1998; 30-day mortality 461 (6.6%). The risk model was built on 1992 to 1993 (2,218 operations, 143 deaths) and kept only the **Parsonnet score**: logit(p) = −3.68 + 0.077 × Parsonnet (predicted risk about 2.5% at score 0 and 86% at score 71; the coefficient per point is checked here by arithmetic against those two stated risks, as the extract printed it as 0.77). Monitoring started in 1994.
+
+### After a signal
+- An independent, clinically informed review of the deaths before the alarm. Causes include risk factors missing from the model, problems elsewhere in the pathway (anaesthesia, intensive care) or a real change in surgical performance. **The CUSUM shows that something changed, not why.**
+- After a change in practice, **reset to zero** to see whether it worked.
+- Limitations: depends on the risk model's accuracy and calibration; attribution is confounded when consultants take over trainees' cases.
+
+### How it relates to VLAD and funnel plots (application, linking to the section above)
+VLAD (expected minus observed deaths) is easy to explain; Steiner et al. point out that observed-minus-expected schemes with repeated testing (Poloniecki) give no formal false-alarm rate, whereas the risk-adjusted CUSUM's limit is set from its ARL. Funnel plots compare units over a fixed period. A unit can use VLAD for display and a CUSUM for alarms.
+
+## Coverage check after the 21 November 2026 gap fill
+
+Added 21 November 2026. This replaces the coverage figures in the self-audit tables higher up this page (built 18 November), which said transplantation was 5% covered and pneumothorax surgery was missing. Those tables are kept for the record but are out of date.
+
+### How the check was done
+An audit agent rated all 620 syllabus lines (syllabus map parts 1 to 6, critical conditions, appendix 2a oesophageal items, basic sciences and professional topics) against the whole app: 520 Good, 85 Thin, 15 Missing before the fill. Thirty-one agents then filled the Thin and Missing lines from current guidelines, trials and open-access reviews, each section stating how its source was read (full text, part, or abstract only). 173 original drawings and charts were added and are in both the app and this doc.
+
+### Audit gaps and where they are now covered
+| Gap found by the audit | Status | Where |
+|---|---|---|
+| Respiratory failure and complicated recovery after lung resection (critical condition 8); AF after thoracic surgery | Filled | Thoracic 17, Thoracic 7 |
+| Brain stem death, donor management, endomyocardial biopsy, heart listing, UK allocation | Filled (ISHLT 2024 and 2022 classes not read) | Cardiac 15 |
+| Lung transplant selection, UK allocation, implantation, PGD, CLAD, EVLP | Filled | Thoracic 14 |
+| Temporary circulatory support 2025, shock and ECPR trials, SCAI stages | Filled | Cardiac 15 |
+| ESC 2026 heart failure guideline | Headline changes only (full text not accessible) | Cardiac 18 |
+| Montgomery, capacity, safeguarding, candour, GMP 2024, NOTSS, NatSSIPs 2, research governance, Caldicott, statistics | Filled (UK GDPR, FMLM not found) | This page |
+| HOCM and myectomy (ESC 2023, AHA/ACC 2024) | Filled | Cardiac 18, Cardiac 4 |
+| Pericardium (ESC 2025), pericardiocentesis, window, substitutes, congenital absence | Filled | Cardiac 16, Congenital 2 |
+| Diaphragm pacing, tumours, resection, replacement; chest wall reconstruction | Filled (repeat chest wall surgery thin) | Thoracic 13 |
+| Perioperative MI (EACTS 2024, Fifth Universal Definition 2026) | Filled | Cardiac 17 |
+| Acute PE (ESC 2019, AHA/ACC 2026 summary), CTEPH (ESC/ERS 2022) | Filled | Cardiac 16 |
+| Pacing (ESC 2021), ventricular arrhythmia (ESC 2022), anti-arrhythmics, lead extraction (HRS 2017) | Filled | Cardiac 18 |
+| Bypass physiology (protection without cardioplegia, SIRS, pharmacokinetics, hypothermia, oxygen transport, haemostasis) | Filled | Cardiac 14, Cardiac 19 |
+| Conduits (2024 consensus), antithrombotics after CABG (2025), radial harvest, RADIAL/RAPCO, rehabilitation | Filled | Cardiac 5 |
+| Oesophagus (NICE NG83, ESOPEC, CheckMate 577, SANO, RAMIE) | Filled (AATS 2025 consensus abstract only) | Thoracic 18 |
+| Mesothelioma (BTS 2018, ESMO 2021, CheckMate 743, KEYNOTE-483, NICE TA818) | Filled | Thoracic 11 |
+| Lung cancer currency (NICE NG122 2026 check, palliative care, multiple primaries) | Filled (ESMO 2025 recommendations not accessible) | Thoracic 1, Thoracic 6 |
+| Trauma (blast, NICE NG39/NG40, rib fixation, blunt aortic injury 2026), pneumothorax 2024 guideline | Filled | Thoracic 15, Thoracic 11 |
+| Critical care (sternal infection, mediastinitis, AKI, GI complications, feeding, lines, VTE) | Filled | Cardiac 17, Thoracic 7 |
+| Thoracic basics (metabolic response, wound healing, local anaesthetics, SSI, V/Q, rigid bronchoscopy, pleural physiology, retrosternal goitre, blocks) | Filled | Thoracic 17, 12, 11, 19 |
+| Ross, aortic valve repair and valve-sparing root (EACTS 2026), iatrogenic dissection, pregnancy | Filled | Cardiac 4, Cardiac 6 |
+| TAVI trials (UK TAVI, SMART, PROTECT-TAVI) | Filled | Cardiac 20 |
+| Congenital (risk adjustment, NCHDA, PA-IVS, venous anomalies, sinus of Valsalva aneurysm, transplant, paediatric arrest) | Filled (AATS 2025 PA-IVS classes not read) | Congenital 1, 2, 5, 11, 12, 13 |
+
+### Still open
+- Full texts not accessible, so their graded recommendations are missing: ESMO 2025 early NSCLC, ESC 2026 heart failure, AATS 2025 oesophageal and PA-IVS consensus documents, ISHLT 2022 recipient and 2024 candidate guidelines, EACTS 2025 protected cardiac surgery statement. Attaching the PDFs would let these be read in full.
+- Not found in a primary source: UK GDPR, FMLM standards, OCEBM levels 3 and 4, repeat chest wall surgery, step-by-step epicardial lead technique beyond two small series, myectomy landmarks, BACPR phase definitions.
+- ROMA (multiple against single arterial grafting) has not reported.

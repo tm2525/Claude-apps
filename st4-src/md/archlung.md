@@ -757,7 +757,7 @@ Short answers to points raised during the teaching on 17 November 2026. From sta
 
 - Separate primaries are favoured by different histological type or pattern, an in situ component in each, different driver mutations, no nodal or distant disease, and different growth rates.
 - Stage the mediastinum invasively before treating two lesions as two primaries.
-- Synchronous primaries: treat each with curative intent, lung-sparing where possible. Multifocal ground-glass disease: resect the dominant lesion and observe the rest.
+- Synchronous primaries: treat each with curative intent, lung-sparing where possible. Multifocal ground-glass disease: resect the dominant lesion and observe the rest (corrected 21 November 2026: ACCP 2013 suggests sublobar resection of each lesion suspected to be malignant where feasible, grade 2C; see Thoracic 1).
 - The usual error is calling a second primary metastatic and denying surgery.
 
 ### KCO

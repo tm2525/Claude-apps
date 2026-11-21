@@ -138,3 +138,27 @@ Caveats: not individually randomised, 2-year follow-up only (authors call for lo
 Viva point: RAMIE compares two minimally invasive operations in SCC at high-volume centres; it does not test robot against open surgery, and generalising to Western adenocarcinoma is uncertain. NICE NG83 accepts open or minimally invasive oesophagectomy without naming a platform.
 
 !fig f14_trial_results | CheckMate 577 disease-free and overall survival, and RAMIE 5-year overall survival. Chart drawn for these notes from Kelly et al. NEJM 2021, the ASCO 2025 final OS abstract and the RAMIE 2026 abstract
+
+## 2025 AATS expert consensus on surgery for oesophageal and GOJ cancer: what could be confirmed
+
+Added 21 November 2026 from Molena D, Sewell M, Maron SB, Hofstetter W, Worrell S, Chen KN, Enzinger PC, Gerdes H, Kleinberg L, Murthy S, Palta M, Pouw RE, Reddy RM, Sanford DE, Schumacher L, Sihag S, Berry MF. The 2025 American Association for Thoracic Surgery (AATS) expert consensus document: surgical management of esophageal and gastroesophageal junction cancer. J Thorac Cardiovasc Surg 2025;170(3):884-901.e3, doi:10.1016/j.jtcvs.2025.04.009 (PubMed 40328426). **Abstract only.** The full text (journal and a repository PDF) could not be opened on 21 November 2026, so none of the 23 recommendations, classes or levels are given here. Topic list from the AATS webinar page (recorded 15 October 2025).
+
+### What is confirmed
+- Written by an international panel convened by the AATS Clinical Practice Standards Committee: gastroenterologists, medical and radiation oncologists, surgical oncologists and thoracic surgeons.
+- Method: focused literature review with a librarian, then a modified Delphi process. Each statement carries an ACC/AHA-style class of recommendation and level of evidence.
+- 23 consensus recommendations in three areas:
+  - **Early-stage adenocarcinoma**: surgery, endoscopic therapy and surveillance.
+  - **Locally advanced adenocarcinoma**: how surgery fits with multimodality therapy.
+  - **Squamous cell carcinoma**: when surgery is appropriate.
+- The four questions the authors chose to present at the AATS webinar: endoscopic management against oesophagectomy for pT1bN0 adenocarcinoma; perioperative chemotherapy against induction chemoradiotherapy for locally advanced adenocarcinoma; observation against oesophagectomy after chemoradiotherapy for locally advanced squamous cell carcinoma; and preoperative biomarker testing.
+
+### Where the evidence for those questions sits in these notes
+| Question | Already in this tab |
+|---|---|
+| Perioperative chemotherapy or chemoradiotherapy for adenocarcinoma | ESOPEC (confirmed above). NICE June 2025 surveillance kept both as options |
+| Observation after chemoradiotherapy | SANO (confirmed above) |
+| Endoscopic resection for early cancer | NICE NG83: EMR for staging of suspected T1N0 disease |
+| Biomarkers | NICE NG83: HER2 testing in advanced adenocarcinoma; adjuvant nivolumab (CheckMate 577, TA746) |
+
+### To do
+Read the full text and add the 23 statements with class and level. Then compare with NICE NG83, especially on pT1b endoscopic treatment, FLOT against CROSS after ESOPEC, and active surveillance.

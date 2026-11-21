@@ -65,7 +65,7 @@ Commonest anterior mass in adults; third to fifth decade; equal sex ratio. Paran
 | Seminoma | Beta-hCG slightly raised in 10%; AFP normal | Chemotherapy, with or without radiotherapy; resect a residual mass rarely |
 | Non-seminomatous | AFP, beta-hCG and LDH raised. Any AFP rise with beta-hCG over 100 mIU/ml in a young man is diagnostic | Platinum chemotherapy; resect residual mass once markers normalise; salvage chemotherapy if they do not |
 | Lymphoma | Core or excision biopsy needed for flow cytometry | Chemotherapy and radiotherapy |
-| Retrosternal goitre | Technetium scan | 95% come out through a collar incision |
+| Retrosternal goitre | Technetium scan | 95% come out through a collar incision (detail in Thoracic 19, added 21 November 2026) |
 
 ### Cysts and neurogenic tumours
 

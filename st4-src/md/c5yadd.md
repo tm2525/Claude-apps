@@ -78,7 +78,7 @@ The consensus states there is not yet convincing evidence that no-touch harvest 
 | Storage | A solution without blood; heparinised blood may increase spasm | Consensus |
 | After surgery | Calcium-channel blocker for 1 year. RADIAL database post hoc (732 radial grafts): fewer major cardiac events (HR 0.52, 0.31 to 0.89) and fewer radial occlusions (HR 0.20, 0.08 to 0.49). One year beat shorter courses; no proven gain beyond a year (few patients). Amlodipine (HR 0.30) and diltiazem (HR 0.20) similar. A 100-patient RCT of 1 year of diltiazem showed no difference. Radial remodelling is complete by about 1 year | Consensus |
 
-Harvest landmarks, the step-by-step forearm dissection and harvest complications (nerve injury, hand ischaemia) were not found in a primary source I could reach, so they are left out here. The RADIAL individual-patient meta-analysis (radial against vein) and RAPCO could not be confirmed from their papers in this session, so the "from memory" rows earlier in this tab still stand unconfirmed.
+Harvest landmarks, the step-by-step forearm dissection and harvest complications (nerve injury, hand ischaemia) were not found in a primary source I could reach, so they are left out here. The RADIAL individual-patient meta-analysis (radial against vein) and RAPCO could not be confirmed from their papers in this session, so the "from memory" rows earlier in this tab still stood unconfirmed at this point; they were confirmed later the same day (see the radial harvest, RAPCO and RADIAL section below).
 
 ### Research gaps the consensus lists
 Randomised skeletonised against pedicled mammary harvest; endoscopic radial harvest and patient-reported outcomes; cost-effectiveness of storage solutions; oestrogen and sex-specific conduit care (women do worse, especially younger women); randomised data on oral antispasm therapy for radial grafts; whether colchicine reduces graft failure.
@@ -262,3 +262,184 @@ The guideline's scenario table (Table 5, partly garbled in extraction) rates sep
 
 ### Catheter closure (TSRA)
 Amplatzer muscular VSD occluder: for the extreme-risk patient as an interim before surgery, late presenters, and residual or recurrent defects after repair. Limited by friable tissue, defect size, and nearness to the mitral valve or papillary muscles.
+
+## ESC 2023 acute coronary syndromes guideline: CABG and mechanical complications
+
+Added 21 November 2026 from Byrne RA, Rossello X, Coughlan JJ, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J 2023;44:3720-826; doi:10.1093/eurheartj/ehad191. Read from the full text (institutional repository PDF), sections 1 to 16 (the rest of the file is references). The text came through an extraction tool that paraphrased long wordings; Recommendation Table 9 and the Table 14 balloon pump row were asked for twice and matched. Supplementary Table S14, which holds the lesion-by-lesion detail on mechanical complications, was not available and is not used.
+
+### What the guideline does and does not give
+- It does **not** set out free wall rupture, septal rupture and papillary muscle rupture one by one in the main text. Its section 12.2.2 treats "mechanical complications" as one group and sends readers to Supplementary Table S14. For each lesion (incidence, timing, technique) the course's table earlier in this tab (TSRA ch. 51) and the post-infarct VSD section (2025 tMCS guideline) remain the sources.
+- It gives **no time window in days or hours** for CABG after infarction, and no P2Y12 stopping intervals before CABG, in the sections read. Timing is framed by urgency and by whether PCI is feasible (below). For drug stopping times use the antithrombotic sections already in this tab.
+
+### Mechanical complications (section 12.2.2)
+- Usually in the first few days after infarction, mostly STEMI. Much rarer in the primary PCI era.
+- In a study of almost 9 million ACS patients: prevalence 0.27% in STEMI and 0.06% in NSTEMI; in-hospital mortality 42.4% and 18% respectively.
+- Warning signs: sudden hypotension, recurrent chest pain, a new murmur of acute MR or VSD, pulmonary congestion, raised JVP. Any of these calls for immediate echo.
+- Surgery is the treatment of choice. Catheter options are for selected patients at prohibitive risk or unfit for surgery.
+- Temporary MCS before surgery (to improve haemodynamics, or prophylactically) is a new trend that still needs evidence of benefit. The 2025 tMCS guideline earlier in this tab now gives classes for this (VA-ECLS before VSD closure I B).
+- Multidisciplinary care at every stage, including palliative care where appropriate.
+- If coronary revascularisation is needed, CABG is recommended at the time of the surgical repair (section 5.2.1 text; no class attached).
+
+!fig f22_mech_pathway | Suspected mechanical complication after infarction: the ESC 2023 ACS pathway with class and level (drawn for these notes from Recommendation Tables 2, 9 and 14 and section 12.2.2)
+
+| Recommendation (table) | Class | Level |
+|---|---|---|
+| Emergency transthoracic echo in suspected ACS with cardiogenic shock or suspected mechanical complications (Table 2) | I | C |
+| NSTE-ACS with a very high-risk feature (which includes mechanical complications of MI): immediate invasive strategy (Table 4) | I | C |
+| Haemodynamic instability: emergency surgical or catheter-based repair of mechanical complications, after Heart Team discussion (Table 9) | I | C |
+| Haemodynamic instability or shock from ACS-related mechanical complications: IABP should be considered (Table 14) | IIa | C |
+| Routine IABP in shock **without** mechanical complications (Table 9) | III | B |
+
+Viva point: the balloon pump is still a IIa for mechanical complications, even though routine IABP in infarct shock is a class III after IABP-SHOCK II (no fall in 30-day, 1-year or 6-year mortality). This fits the TSRA aim in the septal rupture section above: lower systemic resistance and LV pressure to cut the shunt.
+
+### CABG in ACS: indication and timing (section 9.2.1)
+| Setting | What the guideline says |
+|---|---|
+| STEMI | CABG only when primary PCI is not feasible, particularly with ongoing ischaemia or a large area of jeopardised myocardium |
+| STEMI, infarct-related artery patent but unsuitable for PCI | Emergency CABG should be considered if a large area is at risk or there is cardiogenic shock (section 5.2.1 text) |
+| STEMI, after failed PCI or with an occlusion PCI cannot treat | Emergency CABG is rarely done: the delay makes salvage unlikely and surgical risk may be higher. Table 11: CABG should be considered for an occluded infarct-related artery when primary PCI is not feasible or fails and a large area of myocardium is at risk (IIa C) |
+| Cardiogenic shock | Emergency CABG if PCI of the infarct-related artery is not feasible or unsuccessful (I B, Table 9) |
+| Very high-risk NSTE-ACS needing immediate revascularisation | PCI is usually preferred because it is faster, unless mechanical complications favour surgery |
+| Other ACS | PCI or CABG chosen as for chronic coronary disease: number of diseased vessels, anatomical complexity, diabetes and other comorbidity, in patients at low predicted surgical risk |
+
+### Technique (section 9.2.2)
+- Urgency and the patient's state can change the conduct: on-pump, off-pump or on-pump beating-heart CABG, and conduit choice.
+- In an emergency there is little time for harvesting, so full arterial grafting is often not feasible. All-vein grafting, or a single LIMA plus veins, may be useful.
+
+### Antithrombotic therapy around CABG
+| Recommendation | Class | Level |
+|---|---|---|
+| ACS patients who stop DAPT for CABG: resume DAPT after surgery for at least 12 months (new in 2023) | I | C |
+
+- On oral anticoagulation (section 6.5.2): after CABG, restart anticoagulation plus a single antiplatelet as soon as possible and avoid triple therapy.
+- Routine P2Y12 pretreatment before the coronary anatomy is known is not recommended in NSTE-ACS when early angiography (within 24 hours) is planned (section 6.1.2).
+
+### Late presenters (Table 4): when the culprit is no longer opened
+| Recommendation | Class | Level |
+|---|---|---|
+| STEMI over 12 hours with ongoing ischaemic symptoms, haemodynamic instability or life-threatening arrhythmia: primary PCI | I | C |
+| STEMI 12 to 48 hours from onset: routine primary PCI should be considered | IIa | B |
+| STEMI over 48 hours, no persisting symptoms: routine PCI of an occluded infarct-related artery not recommended (OAT trial; manage as chronic total occlusion) | III | A |
+
+## Radial artery harvest: landmarks, operative steps, and the RAPCO, RADIAL and ROMA trials
+
+Added 21 November 2026 from (1) Blitz A, Osterday RM, Brodman RF. Harvesting the radial artery. Ann Cardiothorac Surg 2013;2(4):533–542; doi:10.3978/j.issn.2225-319X.2013.07.10. Read from the online full text (annalscts.com HTML) by targeted extraction. (2) Buxton BF, Hayward PA, Raman JS, et al. Long-term results of the RAPCO trials. Circulation 2020;142(14):1330–1338; doi:10.1161/CIRCULATIONAHA.119.045427. Abstract only (Austin Health repository record); full text not accessible. (3) Gaudino M, Benedetto U, Fremes S, et al.; RADIAL Investigators. Association of radial artery graft vs saphenous vein graft with long-term cardiovascular outcomes among patients undergoing coronary artery bypass grafting: a systematic review and meta-analysis. JAMA 2020;324(2):179–187; doi:10.1001/jama.2020.8228. Read from the full-text PDF (CORE repository copy) by targeted extraction. (4) Gaudino M, et al. The ROMA trial: 7 years of trial activities and the development of the ROMA trial network. Eur J Cardiothorac Surg 2024;65(5):ezae188; doi:10.1093/ejcts/ezae188. Abstract only (Erasmus University record), with the trial registry summary (NCT03217006) as listed by a trial directory.
+
+This section adds the harvest landmarks and steps that the conduit consensus section above could not source, and confirms the RADIAL and RAPCO rows that the trials table earlier in this tab marks "from memory". The conduit choice, antispasm agents, storage and calcium-channel blocker evidence are already above (2024 ESC/EACTS consensus) and are not repeated.
+
+### Before harvest
+| Point | Detail (Blitz 2013) |
+|---|---|
+| Allen test | Compress radial and ulnar arteries at the wrist while the patient clenches then opens the fist; release the ulnar. Colour returning to the thumb within 5 seconds means adequate ulnar collateral flow. Hyperextending the fingers gives a false positive |
+| Adjuncts | Duplex scanning and pulse oximetry |
+| Size | The authors avoid arteries under 2 mm in diameter (spasm) |
+| Which arm | With one radial, usually the non-dominant arm. With both a mammary and a radial, take the radial on the side opposite each mammary |
+| Contraindications | Not listed in this article. TSRA ch. 50 (already in this tab): incomplete palmar arch, previous intervention through the artery, diabetes with peripheral vascular disease |
+
+### Landmarks
+!fig f30_radial_landmarks | Left forearm, volar view, with the incision, the two nerves at risk and the proximal and distal limits of open radial harvest. Drawn for these notes from Blitz et al., Ann Cardiothorac Surg 2013; not to scale
+
+- **Incision:** curvilinear, along the medial edge of brachioradialis, from about 1 cm distal to the elbow crease to about 1 cm proximal to the wrist crease. Palpate the radial pulse at both ends to confirm the line.
+- **Proximal end:** just below the inverted "V" of the biceps tendon and bicipital aponeurosis, which marks the origin of the recurrent radial artery.
+- **Distal end:** between the flexor carpi radialis tendon and the radial styloid.
+
+### Steps of open harvest
+1. Arm prepped circumferentially and secured on an arm board at no more than 90° to the table.
+2. Superficial veins retracted, or clipped and divided.
+3. Open the fascia where the artery emerges from under the brachioradialis belly in mid-forearm. Proximally divide the fascia between brachioradialis and FCR with diathermy; distally use scissors, because the artery lies just under the fascia there.
+4. **Protect the nerves.** The lateral antebrachial cutaneous nerve lies in the superficial fascia over brachioradialis, often near the cephalic vein, and falls away once the fascia between brachioradialis and FCR is opened. The superficial radial nerve runs lateral to and close to the artery under brachioradialis. Retract only enough to see the artery; ideally neither nerve is seen.
+5. Harvest as a pedicle with the venae comitantes (the authors' preference; skeletonised and extrafascial harvest are alternatives). Proximal first, then distal.
+6. **Never grasp the artery.** Hold the venae comitantes, or roll the artery with papaverine-soaked gauze. Do not stretch it.
+7. **Branches:** most arise dorsally. About four proximally under brachioradialis; more than twice as many distally, shorter and more delicate. Clip on the artery side next to a vein, then divide with low-power diathermy (about 20 W) as far from the artery as possible.
+8. **Limits:** stop proximally just below the recurrent radial origin, which preserves the collateral network and keeps clear of the ulnar, brachial and median structures. Stop distally above the superficial palmar branch, preserving radial–ulnar flow to the hand. If a shorter graft will do, take the proximal segment: less muscular, less prone to spasm.
+9. **Test before division:** clamp the distal artery atraumatically and confirm retrograde pulsation from the ulnar collaterals. Ligate distally with heavy silk and divide, then proximally.
+10. Cannulate with a 2 mm olive-tip cannula, flush gently with vasodilator solution and store in it. Keep a papaverine-soaked sponge (3 mg/mL) on the unworked segment throughout. Once cardioplegia is running, flush it down the graft to find unclipped side branches.
+11. **Closure:** close only the superficial layers. Leave the deep fascia open to lower the risk of compartment syndrome and nerve injury.
+
+**Endoscopic harvest (as described in the same article):** 3 cm incision ending 1 cm above the wrist crease; Esmarch exsanguination and upper-arm tourniquet at 75 mmHg above systolic (not over 200 mmHg), kept under 60 minutes; CO2 at 3 to 5 L/min and 10 to 12 mmHg; blunt pedicle dissection with the scope biased toward a vein; branches divided with bipolar or cut-and-seal devices; 1 cm counter-incision at the proximal end to retrieve the pedicle. The 2024 consensus above still regards open harvest as standard.
+
+**Complications:** the article names hand ischaemia, nerve injury (lateral antebrachial cutaneous and superficial radial nerves) and compartment syndrome as the risks its technique is designed to avoid, but gives no rates. Complication rates were not found in a primary source read for these notes.
+
+### RAPCO (two randomised trials, Melbourne)
+| Arm | Patients | Comparison | 10-year patency | Graft failure HR (95% CI) | 10-year survival | Mortality HR (95% CI) |
+|---|---|---|---|---|---|---|
+| RAPCO-RITA | 394, under 70 (or under 60 with diabetes) | Radial vs free right ITA to the second most important target | 89% vs 80% | 0.45 (0.23 to 0.88) | 90.9% vs 83.7% | 0.53 (0.30 to 0.95) |
+| RAPCO-SV | 225, 70 or over (or 60 or over with diabetes) | Radial vs saphenous vein | 85% vs 71% | 0.40 (0.15 to 1.00) | 72.6% vs 65.2% | 0.76 (0.47 to 1.22) |
+
+Primary end point: 10-year graft failure (angiographic). Long-term mortality was a co-primary end point that the trial was not powered for. Conclusion: radial patency at 10 years was significantly higher than free RITA and better than vein.
+
+!fig f30_radial_trials | RAPCO estimated 10-year patency by arm, and RADIAL 10-year cumulative incidence of death, MI or repeat revascularisation. Drawn for these notes from Buxton et al., Circulation 2020 (abstract) and Gaudino et al., JAMA 2020
+
+### RADIAL: individual-patient pooled analysis at 10 years (JAMA 2020)
+- **Design:** patient-level data from 5 RCTs (RAPCO, RSVP, Petrovic, Nasso, Song), enrolled 1997 to 2009 in Australia, Italy, Serbia, South Korea and the UK. 1,036 isolated CABG patients: 534 radial, 502 vein. Median follow-up 10 years; 90.9% completed 10 years.
+- **Primary outcome (death, MI or repeat revascularisation):** 220 vs 237 events; HR **0.73** (0.61 to 0.88), P < 0.001. Cumulative incidence at 10 years 31.0% vs 41.6%.
+- **Death or MI:** HR 0.77 (0.63 to 0.94).
+- **Components:** death HR 0.73 (0.57 to 0.93; post hoc, hypothesis-generating); MI HR 0.74 (0.54 to 1.02); repeat revascularisation HR 0.62 (0.45 to 0.86).
+- Effect similar before and after 5 years (HR 0.71 and 0.75). In the two lowest-risk-of-bias trials only (RSVP, RAPCO): HR 0.79 (0.58 to 1.09).
+- **Subgroups (exploratory):** women HR 0.51 (0.36 to 0.72) vs men 0.84; no diabetes 0.66 vs diabetes 0.84 (0.61 to 1.15); previous MI 0.56.
+- No patency data in this paper (clinical outcomes only).
+
+### ROMA: has it reported?
+- ROMA (NCT03217006) randomises patients aged 18 to 70 having primary isolated non-emergent CABG to two or more arterial grafts or a single arterial graft. Primary outcome: death, any stroke, post-discharge MI or repeat revascularisation.
+- First patient January 2018; **last patient enrolled 14 April 2023** (patient number 4,375).
+- The 2024 EJCTS report states the primary analysis had not yet been performed and gives no outcome data. No published primary result was found in the searches made for these notes (November 2026). Treat ROMA as **not yet reported** unless a newer source shows otherwise.
+
+### Viva points
+- Landmarks: biceps aponeurosis "V" proximally, FCR and radial styloid distally, medial edge of brachioradialis between.
+- Nerves: lateral antebrachial cutaneous (superficial, over brachioradialis) and superficial radial (lateral to the artery, under brachioradialis).
+- Clamp and check back-bleeding before dividing; leave the deep fascia open.
+- RAPCO: radial beat free RITA and vein on 10-year patency. RADIAL: radial beat vein on hard events at 10 years (HR 0.73).
+- ROMA enrolled about 4,300 patients and had not reported when last checked.
+
+## Cardiac rehabilitation in the UK: BACPR standards, NHS England commissioning standards and sternal precautions
+
+Added 21 November 2026 from (1) British Association for Cardiovascular Prevention and Rehabilitation. The BACPR Standards and Core Components for Cardiovascular Disease Prevention and Rehabilitation 2017 (3rd edition). Read from a full-text copy (medbox.org) by targeted extraction. (2) Cowie A, Buckley J, Doherty P, et al. Standards and core components for cardiovascular disease prevention and rehabilitation. Heart 2019;105(7):510–515; doi:10.1136/heartjnl-2018-314206. Read from the online full text (PMC) by targeted extraction. (3) NHS England. Commissioning standards for cardiovascular rehabilitation (PRN01307), which cites the BACPR 2023 core components. Read from the online long-read page by targeted extraction. (4) El-Ansary D, Katijjahbe MA, Denehy L, et al. The Sternal Management Accelerated Recovery Trial (S.M.A.R.T.): study protocol. Trials 2017;18:290; doi:10.1186/s13063-017-1974-8. Read from the online full text by targeted extraction, with the trial registry record (ACTRN12615000968572). (5) Holloway C, Pathare N, Huta J, et al. The impact of a less restrictive poststernotomy activity protocol compared with standard sternal precautions in patients following cardiac surgery. Phys Ther 2020;100(7):1074–1083; doi:10.1093/ptj/pzaa067. Abstract only.
+
+The BACPR 2023 (4th edition) document itself could not be opened; its five core components are given as NHS England quotes them. This section adds the UK service standards to the ESC exercise prescription already in this tab.
+
+### Who should be offered rehabilitation
+| Group | BACPR 2017 / NHS England |
+|---|---|
+| Priority (offer regardless of age, sex, ethnicity or clinical condition) | Acute coronary syndrome; coronary revascularisation (percutaneous and surgical); heart failure |
+| Others who benefit | Stable angina; peripheral arterial disease; after stroke (BACPR); after ICD or CRT implantation; after valve repair or replacement; after heart transplantation or VAD; adult congenital heart disease |
+
+### BACPR six standards, with the timings (2017 edition)
+| Standard | What it requires |
+|---|---|
+| 1. Team | Qualified multidisciplinary team led by a clinical coordinator |
+| 2. Identification and referral | Referral during the admission or within 24 h of discharge (72 h for community or day-case patients); contact within 3 working days; a way to re-offer to those who decline. NHS England: contact within 5 working days of referral |
+| 3. Initial assessment | Within 10 working days of referral, with formal exercise risk stratification |
+| 4. Programme | Under way within 10 working days of referral; early rehabilitation within 2 weeks of discharge; personalised structured exercise at least 2 to 3 times a week; documented patient–team contact for at least 8 weeks; choice of venue and timing |
+| 5. Final assessment | At the end; results to GP, referrer and patient within 10 working days |
+| 6. Audit and certification | Annual data to the National Audit of Cardiac Rehabilitation (NACR); National Certification Programme (NCP_CR) |
+
+### Core components
+- **BACPR 2017 (six):** health behaviour change and education; lifestyle risk factor management (physical activity and exercise, healthy eating and body composition, tobacco cessation); psychosocial health; medical risk management; long-term strategies; audit and evaluation.
+- **BACPR 2023 (five, as listed by NHS England):** the same, without audit and evaluation as a component; audit sits in the standards and the seven NCP_CR key performance indicators instead.
+
+### Uptake
+- UK uptake was 51% in 2017 (Cowie 2019). Modelling: 65% uptake in England could cut emergency cardiac admissions by 30%.
+- NHS England: raising access to 85% of eligible patients would prevent 50,000 premature deaths and 140,000 admissions over 10 years.
+
+### Phases
+Neither BACPR document nor the NHS England standards number rehabilitation "phases I to IV". BACPR refers instead to the six-stage pathway of care in the Department of Health commissioning guide (its figure 2; the stage names were not in the text read). A definition of numbered phases was not found in a primary source read for these notes.
+
+### Sternal precautions after median sternotomy
+No UK guideline on sternal precautions or on when exercise may start after sternotomy was found. What the sources read say:
+
+| Point | Source |
+|---|---|
+| Typical "standard" precautions: no pushing or pulling through the arms, no one-arm activity, arm elevation no higher than 90°, no arms behind the back, avoid using the arms to stand or get out of bed, lift no more than 2 kg, splint with a cushion when coughing | S.M.A.R.T. protocol (control arm) |
+| Duration varies from 4 weeks to 3 months; at least 6 weeks is common worldwide | S.M.A.R.T. protocol |
+| Evidence base is mainly cadaver and bone-model work (220 to 325 N to open the sternum by 2 mm); ultrasound shows under 2 mm of sternal micromotion with arm and trunk tasks, including bilateral elevation | S.M.A.R.T. protocol |
+| Sternal complications 0.4% to 8%, little changed over two decades | S.M.A.R.T. protocol |
+| Modified precautions: let pain guide arm use; both arms close to the body to lift, stand or get out of bed; still no one-arm pushing or pulling and no stretching both arms back together; arm and trunk exercises three times daily | S.M.A.R.T. protocol (intervention arm) |
+| S.M.A.R.T. (72 patients, phase II RCT, primary outcome Short Physical Performance Battery at 4 weeks) completed recruitment in 2016; no results paper was found | Trial registry |
+| "Keep Your Move in the Tube" (less restrictive) vs standard precautions, 364 patients, before-and-after design: no difference in sternal instability, pain, mobility, length of stay or discharge destination at 2 to 3 weeks | Holloway 2020 (abstract) |
+| ERAS: walking and arm exercise within 24 hours in place of restrictive sternal precautions | Already in the critical care tab |
+
+### Viva points
+- BACPR priority groups include surgical revascularisation; valve surgery patients should also be offered a programme.
+- Numbers: refer before discharge or within 24 h; assess within 10 working days; start within 2 weeks of discharge; at least 8 weeks; exercise 2 to 3 times a week.
+- UK uptake about half of eligible patients; NHS England target 85%.
+- Sternal precautions are custom more than evidence; the move is toward pain-guided, both-arms-close-to-the-body activity.

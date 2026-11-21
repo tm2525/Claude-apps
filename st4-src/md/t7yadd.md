@@ -187,3 +187,81 @@ Added 21 November 2026 from Kamada K, Okamoto T, Osoegawa A, Sugio K. Narrative 
 | Other adverse predictors (Chen, 181 patients) | Age 55 or more, Endo IIB, septic shock, high CRP on admission |
 
 - Viva summary: think of it in any deep neck infection with chest pain or sepsis; CT neck and chest; drain the neck always and the mediastinum by extent (VATS increasingly, thoracotomy for IIB or when sick); look specifically for posterior lower disease; re-image and re-drain early.
+
+## Thoracic VTE prophylaxis: graded recommendations (ESTS/AATS 2022, adopted in the European 2024 update)
+
+Added 21 November 2026 from Shargall Y, Wiercioch W, Brunelli A, et al. Joint 2022 European Society of Thoracic Surgeons and The American Association for Thoracic Surgery guidelines for the prevention of cancer-associated venous thromboembolism in thoracic surgery. Eur J Cardiothorac Surg 2022;63(1):ezac488; doi:10.1093/ejcts/ezac488 (abstract only; full text not accessible). The individual recommendations with their strength and certainty were read from Samama CM, Afshari A, Grønlykke L, et al. European guidelines on peri-operative venous thromboembolism prophylaxis: first update. Executive summary. Eur J Anaesthesiol 2024;41:561-9; doi:10.1097/EJA.0000000000002025, chapter 2 (Oncological thoracic surgery, Shargall), which reproduces the ESTS/AATS recommendations (read from the online PDF; checked twice). The full chapter 2 (Shargall Y, Brunelli A. Eur J Anaesthesiol 2024;41:573-6; doi:10.1097/EJA.0000000000002008) was not read. Also Rubio T, Ibáñez M, Fernández-Arias C, et al. Antithrombotic prophylaxis use and incidence of venous thromboembolism in lung cancer surgery. Cir Esp 2025;103:195-200; doi:10.1016/j.cireng.2024.11.018 (read from the online text). This replaces the ungraded summary higher in this tab; the content is the same, now with grades. The Caprini thresholds that define low, moderate and high risk in the ESTS/AATS guideline were not accessible.
+
+### The guideline in brief
+- 24 recommendations by GRADE for lobectomy, segmentectomy, pneumonectomy, extended resection and oesophagectomy. Every one is **conditional** ("the panel suggests"); certainty is mostly low or very low, because direct thoracic evidence is scarce.
+- Thoracic cancer patients, especially after induction therapy, are among the highest-risk surgical groups for VTE (abstract).
+- Research gaps named: whether to start before surgery, and how to stratify risk for extended prophylaxis.
+
+!fig f27_vte | Thoracic cancer surgery VTE prophylaxis by operation with strength and certainty, and the 2024 European cardiovascular recommendations (drawn for these notes from the European 2024 executive summary, chapters 1 and 2)
+
+### Lobectomy or segmentectomy
+| Recommendation | Strength | Certainty |
+|---|---|---|
+| Parenteral anticoagulation (LMWH or UFH) over no prophylaxis | Conditional | Low |
+| LMWH rather than UFH | Conditional | Moderate |
+| Non-DOAC over DOAC; DOACs only within trials | Conditional | Low |
+| Combined pharmacological and mechanical prophylaxis over pharmacological alone | Conditional | Very low |
+| Mechanical prophylaxis (IPC or stockings) when no drug is given | Conditional | Very low |
+| Moderate or high thrombosis risk: extended prophylaxis for 28 to 35 days over in-hospital only | Conditional | Low |
+| Low thrombosis risk: in-hospital prophylaxis only | Conditional | Low |
+| Immediately before vs immediately after surgery | No recommendation | |
+| Against routine screening for postoperative VTE | Conditional | Very low |
+
+### Pneumonectomy or extended lung resection
+| Recommendation | Strength | Certainty |
+|---|---|---|
+| Parenteral anticoagulation over no prophylaxis | Conditional | Low |
+| LMWH rather than UFH | Conditional | Moderate |
+| DOACs only within trials | (not graded) | |
+| Combined over pharmacological alone; mechanical over none | Conditional | Very low |
+| Extended prophylaxis for 28 to 35 days over in-hospital only (all patients, not risk-selected) | Conditional | Low |
+| Timing | As for lobectomy (no recommendation) | |
+| **Routine postoperative VTE screening** over none | Conditional | Very low |
+
+### Oesophagectomy
+| Recommendation | Strength | Certainty |
+|---|---|---|
+| Parenteral anticoagulation over no prophylaxis | Conditional | Low |
+| LMWH rather than UFH | Conditional | Moderate |
+| Non-DOAC over DOAC | Conditional | Low |
+| Combined over pharmacological alone; mechanical over none | Conditional | Very low |
+| Extended prophylaxis for 28 to 35 days over in-hospital only | Conditional | Low |
+| **Routine postoperative VTE screening** over none | Conditional | Very low |
+
+### What differs by operation
+| Point | Lobectomy or segmentectomy | Pneumonectomy, extended resection, oesophagectomy |
+|---|---|---|
+| Extended 28 to 35 days | Only at moderate or high risk | Suggested for all |
+| Routine screening | Suggested against | Suggested |
+
+- One extraction of the executive summary gave "moderate" for parenteral anticoagulation over none after pneumonectomy; the word-for-word check showed low certainty for that and moderate for LMWH over UFH. The table follows the check.
+- Viva line: LMWH plus IPC for all; extend to four to five weeks after pneumonectomy, extended resection and oesophagectomy, and after lobectomy if risk is moderate or high (Caprini); screen after pneumonectomy and oesophagectomy only; no DOACs outside trials; every recommendation conditional.
+
+### General European 2024 recommendations that apply to thoracic patients
+| Recommendation (chapters 4 and 5) | Grade |
+|---|---|
+| Assess each patient's VTE risk before surgery | 1B |
+| Institution-wide VTE protocol including early ambulation | 1B |
+| High thrombosis risk with high bleeding risk: IPC over no prophylaxis | 1C |
+| Very high thrombosis risk: IPC plus pharmacological prophylaxis | 1C |
+| High thrombosis risk with low bleeding risk: pharmacological, mechanical optional | 2B |
+| ICU patients: pharmacological over mechanical; LMWH over UFH; IPC over stockings | 1C; 1B; 2B |
+
+- These chapters use numeric grades (1 worded "we recommend", 2 worded "we suggest", with A to C); the thoracic chapter keeps the GRADE wording (conditional, with certainty).
+- The cardiac chapter of the same update (start pharmacological prophylaxis 6 to 24 h after surgery, 1C) is in Cardiac 17.
+
+### How practice compares: one Spanish series (Rubio 2025)
+| Item | Finding |
+|---|---|
+| Patients | 405 lung cancer resections, 2000 to 2023, single centre, 90-day follow-up |
+| Caprini score | Median 8 (range 4 to 15); all but one high or very high risk |
+| Prophylaxis | LMWH in 97.3% (bemiparin 3,500 IU daily), median 6 days; only 1.2% had more than 3 weeks |
+| Symptomatic or detected VTE | 1.5% (3 DVT, 3 non-fatal PE, 2 of these incidental); median day 17.5 |
+| Associated factors | Epidural analgesia linked to less VTE; VTE patients stayed longer (25 vs 8 days) |
+
+- The point for a viva: by Caprini almost every lung cancer resection is high risk, so the guideline's extended-prophylaxis suggestion would apply to nearly all patients, yet in this unit prophylaxis stopped at a median of 6 days. The median time to VTE (17.5 days) was well beyond the median stay of patients without VTE (8 days). Bleeding was not recorded in this series.

@@ -377,3 +377,195 @@ An international Delphi panel (80% agreement needed) produced 21 consensus recom
 ### EACTS lung volume reduction guideline
 
 No EACTS guideline or consensus document on lung volume reduction was found as of 21 November 2026 (one web search plus the EACTS task force page; not an exhaustive check). The EACTS website lists an Emphysema Task Force chaired by David Waller, with members including Sara Buttery, Samuel Kemp, Claudio Caviezel and Laurens Ceulemans, but names no publication. Check again before the exam.
+
+## Lung implantation technique, part 1: incisions, single and bilateral sequential transplant
+
+Added 21 November 2026 from: Elgharably H, Javorski MJ, McCurry KR. Bilateral sequential lung transplantation: technical aspects. J Thorac Dis 2021;13(11):6564-6575, doi:10.21037/jtd-2021-22; Gust L, D'Journo XB, Brioude G, et al. Single-lung and double-lung transplantation: technique and tips. J Thorac Dis 2018;10(4):2508-2518, doi:10.21037/jtd.2018.03.187. Both open-access reviews were read from the online full text through a text-extraction tool. TSRA Review 3rd ed., ch. 21, re-read in full. These are centre reviews (Cleveland Clinic; Marseille), not guidelines, so where they differ both are given. They confirm the anastomosis order (bronchus, artery, atrium) that was flagged earlier in this tab as an unchecked FRCS Atlas point.
+
+### History in one line
+First single lung transplant 1983, first bilateral 1988; en bloc double lung through a sternotomy had many tracheal ischaemic complications, so **Pasque's bilateral sequential technique (1990)** became standard (Elgharably).
+
+### Choice of incision
+| Incision | Use | Points |
+|---|---|---|
+| **Clamshell** (bilateral anterior thoracosternotomy), usually 4th space | Best exposure and quick central cannulation. Cleveland prefers it for CF and suppurative disease, redo transplant, previous chest surgery, a shrunken fibrotic chest, and for trainees | Both internal mammary vessels ligated; oblique sternal division to stop overriding (Elgharably). Marseille avoids it where possible: sternal non-union and infection, worse chest mechanics, phrenic dysfunction (Gust) |
+| **Bilateral anterior thoracotomies** (sternum-sparing), 4th or 5th space | Marseille standard; Cleveland for favourable anatomy, COPD or fibrosis, previous cardiac surgery | Fewer sternal complications, better early lung function, shorter operation and ICU stay (Elgharably). Convert to clamshell for instability, adhesions or a hard hilum (Gust) |
+| **Median sternotomy** | Likely need for support (severe pulmonary hypertension), concomitant cardiac surgery, bronchial artery revascularisation; small pleural spaces with no adhesions | Usually needs bypass or ECMO for heart retraction. Not for suppurative disease: posterior and apical adhesions are out of reach |
+| **Posterolateral or anterolateral thoracotomy** | Single lung transplant (TSRA; Gust) | Lateral position; repositioning needed if both sides are done |
+
+Position for bilateral: supine, arms tucked or abducted, roll under the spine; prep neck, chest, abdomen and both groins for cannulation (Elgharably).
+
+### Anaesthesia
+Double-lumen tube (or bronchial blocker) for one-lung ventilation; PA catheter, TOE, arterial line, cell saver. Patients with pulmonary hypertension may go on peripheral VA ECMO before induction. Induction only when the donor lungs are accepted (Gust).
+
+### Which side first
+- The **worse-functioning side on V/Q scan** first (Elgharably); if neither dominates, the **right**, which is quicker and easier (Gust).
+
+### Recipient pneumonectomy
+1. Divide adhesions without tearing the native lung (an air leak can force unplanned support). Dissect the hilum **before the donor lungs arrive** to cut cold ischaemia.
+2. Divide the pulmonary ligament up to the inferior vein. On the right, open the pericardium and develop **Sondergaard's (interatrial) groove** for atrial length; the right PA is taken inside the pericardium.
+3. **PA clamp test** in pulmonary hypertension if no support: clamp for about 10 min watching saturation, PA pressure and the RV on TOE (Gust). RV strain or instability means support.
+4. Staple veins then artery (Gust), as peripherally as possible; check the PA catheter is withdrawn before firing.
+5. Divide the bronchus just proximal to the upper lobe origin; control bronchial arteries. Keep peribronchial tissue. Once the bronchus is open the field is contaminated: stop the cell saver until the airway anastomosis is closed.
+6. Protect the **phrenic nerve** (right) and **left recurrent laryngeal nerve** (left, near the ligamentum). Secure posterior mediastinal haemostasis now; it is hard to reach after implantation.
+
+### Donor lung on the back table
+- Donor bronchus cut **one ring above the lobar carina** (short, to limit the ischaemic segment; TSRA); PA trimmed to avoid kinking; atrial cuff kept regular. Culture the bronchial secretions. Keep spare donor vessel for patches.
+- Graft placed on cold pads in the posterior chest.
+
+### Anastomoses: order and technique (back to front)
+| Order | Structure | Technique |
+|---|---|---|
+| **1** | **Bronchus** (deepest) | Running absorbable suture, 4-0 (Cleveland) or 3-0 PDS (Marseille): membranous wall first, then cartilage. Alternatives: running membranous with interrupted cartilage; **telescoping** for size mismatch (higher complication rate, Gust). Cover with peribronchial tissue, pericardium or intercostal flap. No forceps on, or stripping of, the donor bronchus |
+| **2** | **Pulmonary artery** | Clamp the recipient PA proximally (behind the SVC on the right). **5-0 Prolene** running, posterior wall first; avoid excess length (kinking). Leave the clamp on until the flush |
+| **3** | **Left atrial cuff** | Satinsky clamp on the left atrium; join the two vein stumps into one orifice. **4-0 Prolene** running, **everted** (intima to intima); leave the last anterior stitches loose for de-airing |
+
+Some teams reverse the order (veins, artery, bronchus) (Gust).
+
+!fig f23_bslt | Bilateral sequential lung transplant: side order, the three anastomoses in order, reperfusion, and the Marseille criteria for starting support. Drawn for these notes from Elgharably et al. 2021 and Gust et al. 2018
+
+### De-airing and reperfusion
+1. Flush the atrium with saline; partly release the PA clamp to back-bleed and de-air through the loose atrial stitches; tie down.
+2. Release the PA clamp **gradually, over about 10 minutes**, for low-pressure reperfusion (Elgharably). Gust adds a retrograde flush from the atrium first.
+3. Start protective ventilation: **FiO2 about 0.4, 5 to 7 ml/kg of donor weight, PEEP 5** (Gust).
+4. Warm the lung, check haemostasis, wait **about 20 minutes** and check gases and haemodynamics before taking the second lung. Leave the first incision open until both sides are done.
+5. The **second PA clamp** is the critical moment: the new lung takes the whole cardiac output and all gas exchange (Gust).
+6. Bronchoscopy to inspect both anastomoses at the end.
+
+### Closure
+At least two drains per side. If the chest cannot be closed without compromise (oedema, oversized graft), options are wedge resection, right middle lobectomy or lingulectomy (Gust), or **delayed chest closure** with negative-pressure dressing (Elgharably: less severe PGD in one matched series; longer stay; infection risk reported variably).
+
+### Single lung transplant
+Same steps through one thoracotomy, with the native lung left. Bilateral is required for **septic lung disease (CF, bronchiectasis)** to remove the infection source (TSRA). Survival is better after bilateral transplant (TSRA: 82 v 78% at 1 year, 69 v 61% at 3, 59 v 48% at 5, 41 v 23% at 10).
+
+## Lung implantation technique, part 2: bypass or ECMO, disease-specific points, and heart-lung transplant
+
+Added 21 November 2026 from Elgharably et al., J Thorac Dis 2021 and Gust et al., J Thorac Dis 2018 (above), and Huddleston CB, Richey SR. Heart-lung transplantation. J Thorac Dis 2014;6(8):1150-1158, doi:10.3978/j.issn.2072-1439.2014.05.11, read from the online full text through a text-extraction tool; TSRA ch. 21. Neither 2018-2021 review gives comparative outcome data for ECMO against bypass, so the earlier FRCS Atlas statement in this tab that central VA ECMO has "largely replaced" bypass, with less bleeding and PGD, remains unchecked.
+
+### When to use support
+| Situation | Source |
+|---|---|
+| Pulmonary hypertension: peripheral VA ECMO before induction; usually planned support | Gust; Elgharably |
+| Cannot tolerate one-lung ventilation; RV failure or instability on PA clamping; reperfusion oedema in the first lung | Gust; Elgharably |
+| Fragile PA, or no safe clamp position | Elgharably |
+| Concomitant cardiac surgery; en bloc transplant with bronchial artery revascularisation | Elgharably |
+| Gust's thresholds: **cardiac index under 1.5**, **mean PA pressure over 40 to 50 mmHg** despite nitric oxide, **SaO2 under 90%** or severe respiratory acidosis on FiO2 1.0, **RV dysfunction on echo** | Gust |
+
+| Option | Points |
+|---|---|
+| **Full CPB** | Allows both lungs out and simultaneous reperfusion; open PA technique with a main PA vent. TSRA: CPB raises the PGD risk in pulmonary hypertension |
+| **VA ECMO** | Central (clamshell or sternotomy) or peripheral (femoral, axillary); one lung kept ventilated at low tidal volume. Can be continued after surgery while the RV recovers in pulmonary hypertension (TSRA) |
+| **VV ECMO** | Gas exchange only; needs lung isolation |
+| Cannulation by incision | Clamshell or right thoracotomy: central cannulation is easy; left thoracotomy usually needs the groin (TSRA); descending aorta through a left thoracotomy (Gust) |
+
+Plan support before surgery when likely; always have a crash cannulation plan (Elgharably).
+
+### Disease-specific points (Elgharably)
+| Disease | Points |
+|---|---|
+| Fibrotic ILD (now the commonest indication) | Small chest: clamshell, diaphragm retraction stitch; frequent PH and coronary disease, so support more often |
+| COPD and alpha-1 antitrypsin | Bilateral sequential preferred; few adhesions, so thoracotomies or sternotomy suit |
+| CF and bronchiectasis | Bilateral mandatory; clamshell common; not sternotomy; meticulous hilar haemostasis (big nodes and bronchial arteries); antibiotic irrigation; for *Burkholderia*, both lungs out on support with airway and pleural washout |
+| Pulmonary arterial hypertension | Bilateral sequential on support, clamshell or sternotomy. Severe irreversible RV failure (for example inotrope-dependent) may need **heart-lung transplant** |
+| Previous cardiac surgery | Bilateral thoracotomies preferred; peripheral cannulation |
+| Calcified airway | Gentle handling, consider telescoping, cover with soft tissue |
+
+### Heart-lung transplantation (Huddleston 2014)
+**Now rare**: fewer than 100 a year worldwide; volume peaked around 1990. Technical problems cause about **one-fifth of early deaths**.
+
+**Donor**: each organ must meet heart and lung criteria; PaO2 over 350 mmHg on oxygen challenge; size within about 10% of recipient weight. En bloc procurement through a sternotomy; prostaglandin into the PA; cardioplegia into the aorta and pneumoplegia into the PA; trachea stapled **at least 1 cm above the carina** with the lungs mildly inflated.
+
+**Recipient steps**
+1. Median sternotomy (preferred); divide adhesions before bypass; open both pleurae widely.
+2. Open the pericardium **posterior to each phrenic nerve** along nearly its whole length, creating **phrenic pedicles** through which the donor lungs will pass.
+3. Bicaval and aortic cannulation, cool to 28°C, snare cavae, cross-clamp.
+4. Cardiectomy: aorta above the valve, PA above the valve, atria opened leaving caval cuffs.
+5. Pneumonectomies; leave a small island of PA at the ligamentum to protect the **left recurrent laryngeal nerve**; staple the main bronchi; divide the trachea just above the carina.
+6. **Haemostasis of the posterior mediastinum now** (bronchial and collateral vessels, worst in cyanotic congenital disease and redo surgery).
+
+**Implantation order**: lungs passed **behind the phrenic pedicles** into each chest; then **trachea** (running 4-0 polypropylene, or running membranous and interrupted cartilage, wrapped in tissue); **aorta** (de-air, remove clamp); **IVC**; **SVC** last (interrupted in places to avoid purse-stringing). Cold infusion through the left atrial appendage de-airs the heart.
+
+**Specific complications**: bleeding from mediastinal collaterals; phrenic or left recurrent laryngeal nerve injury; graft failure; hyperexpansion oedema of an undersized graft.
+
+### Viva points
+- Order of anastomoses in lung transplant: bronchus, artery, atrium. In heart-lung: trachea, aorta, IVC, SVC.
+- First side: worse on V/Q; the second PA clamp is the moment the new lung must take everything.
+- Indications for support: pulmonary hypertension, failed clamp test, unable to oxygenate on one lung, fragile PA, cardiac surgery.
+- Short donor bronchus, no stripping, tissue cover: all to protect an anastomosis with no bronchial arterial supply.
+
+## Ex vivo lung perfusion and normothermic preservation: DEVELOP-UK, NOVEL and INSPIRE
+
+Added 21 November 2026 from: Fisher A, Andreasson A, Chrysos A, et al. An observational study of Donor Ex Vivo Lung Perfusion in UK lung transplantation: DEVELOP-UK. Health Technol Assess 2016;20(85):1-276, doi:10.3310/hta20850, read from the PMC scientific summary and the NCBI Bookshelf design chapter (results chapters not read); Sanchez PG, Cantu E, Hartwig M, et al. The NOVEL study: a multi-center clinical trial studying the safety of ex vivo lung perfusion. J Heart Lung Transplant 2020;39(4 Suppl):S110, doi:10.1016/j.healun.2020.01.977, **conference abstract only** (the full trial paper was not found); Gouchoe DA, Sanchez PG, et al. Ex vivo lung perfusion in donation after circulatory death: post hoc analysis of the NOVEL trial. J Thorac Cardiovasc Surg 2024;168(3):724-734.e7, doi:10.1016/j.jtcvs.2024.03.011, **abstract only**; Warnecke G, et al. Normothermic ex-vivo preservation with the portable Organ Care System Lung device (INSPIRE trial). Lancet Respir Med 2018;6(5):357-367, doi:10.1016/S2213-2600(18)30136-X, **abstract only**, read from two independent records that agreed. This replaces the unchecked FRCS Atlas figure in this tab ("expands usable donors by 15 to 20%") with trial conversion rates.
+
+### Two different ideas
+| | Ex vivo lung perfusion (EVLP) after cold transport | Portable normothermic perfusion from the donor (OCS Lung) |
+|---|---|---|
+| Aim | **Assess and recondition** lungs that would otherwise be declined | **Replace cold storage** for standard lungs, to cut cold ischaemia |
+| Trials | DEVELOP-UK, NOVEL (non-randomised) | INSPIRE (randomised) |
+
+### DEVELOP-UK (UK, 2012 to 2014)
+| Item | Detail |
+|---|---|
+| Design | Non-randomised, unblinded, adaptive non-inferiority study in the **five UK adult lung centres** (Newcastle, Harefield, Papworth, Manchester, Birmingham). Randomisation was judged unworkable because matching depends on size, blood group and HLA |
+| Primary end point | 12-month survival; non-inferiority meant EVLP not doubling the hazard of death |
+| Conversion | **53** declined donor lungs perfused; **18 (34%) transplanted** |
+| Survival at 12 months | **0.67 EVLP (95% CI 0.40 to 0.83) v 0.80 standard (0.74 to 0.85)**; HR 1.96 (0.83 to 4.67). Closed early, so non-inferiority was not tested |
+| Graft injury | More grade 3 PGD very early with EVLP; no difference after 72 h. **ECMO 7/18 (39%) v 6/184 (3%)**; longer ventilation and ICU stay |
+| Cost | About **£35,000 more** per EVLP transplant; exploratory incremental cost-effectiveness ratio **£73,000** for a service including EVLP |
+| Conclusion | About one-third of perfused lungs were usable; survival possibly lower but compatible with no difference; small numbers |
+
+### NOVEL (USA, 2011 to 2017; conference abstract)
+| Item | Detail |
+|---|---|
+| Design | Prospective, controlled, non-randomised; **17 US centres**; normothermic EVLP of initially unacceptable lungs |
+| Conversion | **216** donors perfused, **110 transplanted (50.9%)**; 116 standard-criteria controls |
+| PGD grade 3 at 72 h | **8.9% v 9.5%** |
+| 1-year survival | 93.2% v 96.5% (not significantly different) |
+| Other | ICU stay 9.9 v 9.8 days; ventilation 7.0 v 5.7 days; FEV1 at 12 months 65% v 70% |
+| DCD subgroup (2024 post hoc) | DCD lungs after EVLP had more severe PGD at 72 h, longer ventilation and stay; 3-year survival 76.5% control, 68.3% DBD-EVLP, 60.7% DCD-EVLP (P = 0.36) |
+
+### INSPIRE (OCS Lung v cold storage; abstract)
+| Item | Detail |
+|---|---|
+| Design | Randomised 1:1, open-label, non-inferiority (margin 4%), phase 3; standard-criteria bilateral recipients; donors under 65 with PaO2/FiO2 over 300 |
+| Numbers | 370 randomised; 320 transplanted; per-protocol 141 OCS, 165 cold storage |
+| Primary end point | Composite: alive at 30 days and no PGD3 within 72 h: **79.4% v 70.3%**; non-inferior (P = 0.0038); not superior (P = 0.068) |
+| **PGD3 within 72 h** | **17.7% v 29.7%** (P = 0.015) |
+| 30-day survival | 95.7% v 100% (P = 0.0090) |
+| 12-month survival | 89.4% v 88.1% |
+| Funding | TransMedics |
+
+!fig f23_evlp_trials | Donor lung perfusion trials: share of declined lungs used after EVLP, grade 3 PGD by arm, and ECMO after EVLP transplant in DEVELOP-UK. Drawn for these notes from DEVELOP-UK (HTA 2016), NOVEL (JHLT 2020 abstract) and INSPIRE (Lancet Respir Med 2018 abstract)
+
+### Viva points
+- EVLP is a way of assessing and reconditioning declined lungs; one-third (UK) to one-half (US) end up transplanted.
+- The UK experience (DEVELOP-UK) showed more early graft injury and ECMO, at higher cost, in a small closed-early study.
+- INSPIRE: portable perfusion of standard lungs reduced PGD3 but not short-term mortality (30-day survival was in fact lower).
+
+## Lung and heart-lung transplant outcomes in the ISHLT registry (2019 report)
+
+Added 21 November 2026 from Chambers DC, Cherikh WS, Harhay MO, et al. The International Thoracic Organ Transplant Registry of the ISHLT: thirty-sixth adult lung and heart-lung transplantation report, 2019; focus theme: donor and recipient size match. J Heart Lung Transplant 2019;38(10):1042-1055, doi:10.1016/j.healun.2019.08.001, read from the PMC full text (survival by diagnosis and by procedure is given only in figures, so not reproduced). The TSRA median of 6 years earlier in this tab is from an older era.
+
+| Measure | Value |
+|---|---|
+| Median survival, primary adult lung transplants 2010 to June 2017 (n = 29,872) | **6.7 years** |
+| Median if alive at 1 year | **8.9 years** |
+| Heart-lung: median survival (recent era) | **6.5 years**; **12.8 years** if alive at 1 year |
+| Heart-lung activity | 59 in 2017; 4,128 adult heart-lung transplants in total to June 2018 |
+| Bilateral share | **81%** of adult lung transplants in 2017 |
+| BOS | Prevalence 8.5% at 1 year; about 10% new cases a year, highest in the first 5 years |
+| Unadjusted survival | Better after bilateral than single, and in CF |
+
+### Leading known causes of death (share of known causes)
+| Period | First | Second | Third |
+|---|---|---|---|
+| 0 to 30 days | Graft failure 22% | Other 18% | Non-CMV infection 17% |
+| 31 days to 1 year | Non-CMV infection 33% | Graft failure 16% | Other 15% |
+| 1 to 3 years | BOS 26% | Infection 21% | Graft failure 19% |
+| 3 to 5 years | BOS 29% | Graft failure 18% | Infection 17% |
+| 5 to 10 years | BOS 24% | Infection 16% | Graft failure 16% |
+| Over 10 years | BOS 21% | Infection 16% | Graft failure 15% |
+
+### Viva points
+- Median survival about 6.7 years after lung transplant and about 9 years for 1-year survivors; heart transplant is about 12.5 years.
+- Graft failure kills early, infection in the first year, chronic rejection (BOS/CLAD) after that.

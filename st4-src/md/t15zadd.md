@@ -168,7 +168,7 @@ This tab and Thoracic 7 hold EAST 2012, which predates the fixation trials; the 
 | Timing | Early, ideally within 48 to 72 hours, before callus and sepsis |
 | Implant | Pre-contoured titanium locking plates |
 | Indication: flail | Clinical or radiographic flail chest; in ventilated flail patients, fewer ventilator days, less ICU time, pneumonia and tracheostomy, and lower mortality |
-| Indication: non-flail | Three or more bicortically displaced fractures with refractory pain, failing incentive spirometry, respiratory deterioration, deformity or impaling fragments, or failure to wean |
+| Indication: non-flail | Three or more bicortically displaced fractures with refractory pain, failing incentive spirometry, respiratory deterioration, deformity or impaling fragments, or failure to wean (corrected 21 November 2026: EAST 2017 makes no recommendation for non-flail fractures, and two RCTs in non-ventilated non-flail patients found no benefit — see the rib fixation section added today) |
 | On the way out | Fixation at a thoracotomy done for another reason |
 | Not indicated | Severe contusion without mechanical instability; severe unrecovered head injury that will prevent extubation; mild undisplaced fractures controlled with analgesia |
 | Ribs rarely plated | 1 to 2 and 11 to 12 |

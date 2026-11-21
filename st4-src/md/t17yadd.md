@@ -348,3 +348,281 @@ Why the two triple-therapy routes differ (rationale): moving from LABA plus ICS 
 - The consultant anaesthetist and surgeon make the final decision on fitness for surgery.
 - Lung function should not be the only criterion; composite tools such as ASA grading predict risk best.
 - If time allows, optimise medical treatment first, which may include pulmonary rehabilitation.
+
+## Metabolic and endocrine response to surgery and trauma
+
+Added 21 November 2026 from Burton D, Nicholson G, Hall G. Endocrine and metabolic response to surgery. Continuing Education in Anaesthesia, Critical Care & Pain 2004;4(5):144–147, doi:10.1093/bjaceaccp/mkh040 (online PDF read in full through a summarising tool), and Cusack B, Buggy DJ. Anaesthesia, analgesia, and the surgical stress response. BJA Education 2020;20(9):321–328, doi:10.1016/j.bjae.2020.04.006 (PMC full text read through a summarising tool). Neither paper describes Cuthbertson's ebb and flow phases, so they are not written up here.
+
+### What it is
+- A set of neuroendocrine, metabolic and inflammatory-immune changes after injury. Surgery is the best-studied case; trauma, burns, sepsis and hard exercise do the same. Its size follows the size, invasiveness and duration of the injury. Cardiac surgery on bypass, open aortic and abdominal surgery and joint replacement give the largest responses (Cusack 2020).
+- It probably evolved to mobilise fuel, limit damage, fight infection and start repair. When intensive care can correct physiology directly, an excessive response may do harm: hypermetabolism, muscle wasting, poor wound healing, impaired immunity, SIRS and organ failure.
+- Two limbs: (1) afferent nerve signals from the wound drive the hypothalamus, pituitary and sympathetic system; (2) cytokines from damaged tissue drive the acute phase response. Normal feedback is lost: high cortisol does not switch off ACTH.
+
+!fig f25_metabolic | The two limbs of the stress response, the hormones that rise and fall, and their metabolic result. Drawn for these notes from Burton et al., CEACCP 2004 (Table 2 and text) and Cusack and Buggy, BJA Education 2020 (marker timing)
+
+### Hormones (Burton 2004, Table 2)
+
+| Change | Hormones |
+|---|---|
+| Rise | Growth hormone, ACTH, beta-endorphin, prolactin, vasopressin (AVP), catecholamines, cortisol, glucagon, renin, aldosterone |
+| No change | TSH, LH, FSH |
+| Fall | Insulin, testosterone, oestrogen, T3 |
+
+| Hormone | Point for the viva |
+|---|---|
+| Cortisol | Baseline about 400 nmol/L; over 1,500 nmol/L within 4 to 6 hours of major surgery. Size and duration follow injury severity; giving steroid does not abolish the rise. Drives protein breakdown, lipolysis, insulin resistance, sodium and water retention, potassium loss; anti-inflammatory. ACTH returns to baseline within 24 hours, but cortisol stays raised for at least 7 days after major surgery (Cusack) |
+| Insulin | Secretion fails early (catecholamines inhibit beta cells); insulin resistance follows. Net effect: functional insulin deficiency |
+| Glucagon | Brief rise; adds little to the hyperglycaemia |
+| Vasopressin | Water retention, concentrated urine, vasoconstriction, helps haemostasis, stimulates ACTH; lasts 3 to 5 days |
+| Renin-angiotensin-aldosterone | Renal sympathetic drive and low renal perfusion; sodium and water retention and oliguria |
+| Growth hormone | Minor role; may limit muscle breakdown through IGF-1. No convincing benefit from giving GH or IGF |
+| Thyroid | T3 falls and recovers over several days (T3 is about five times more active than T4) |
+
+### Metabolic effects
+- **Carbohydrate:** more glucose made (glycogenolysis, gluconeogenesis from amino acids), less used: hyperglycaemia. Glucose infusions and blood products make it worse. Glucose over 12 mmol/L impairs healing, raises infection rates and worsens ischaemic nerve and myocardial injury (Burton).
+- **Protein:** catabolism; after major abdominal surgery lean body mass can fall by about 0.5 kg a day. Amino acids feed gluconeogenesis and acute phase protein synthesis; albumin synthesis falls. Urinary urea nitrogen estimates the loss. Feeding has not reliably prevented it.
+- **Fat:** lipolysis and ketone production (catecholamines, cortisol, glucagon, low insulin).
+- **Salt and water:** retained for 3 to 5 days; potassium lost. Cusack notes that permissive oliguria of about 0.3 mL/kg/h during laparoscopy is physiological and not linked to acute kidney injury.
+
+### Cytokines and the acute phase response
+- IL-6 is the main cytokine after surgery; its peak at 12 to 24 hours reflects the amount of tissue damage. IL-1 beta, TNF-alpha and IL-8 peak on day 1; IL-4, IL-10, TGF-beta and IL-1 receptor antagonist limit the response.
+- Acute phase response: liver makes CRP, fibrinogen, complement and alpha-2 macroglobulin; albumin and transferrin fall; fever, neutrophilia, muscle proteolysis, leaky vessels, iron and zinc sequestered.
+- Too much pro-inflammatory activity gives SIRS; too much anti-inflammatory activity gives immunosuppression and sepsis. Surgery shifts T helper cells from Th1 to Th2 and lowers NK cell activity (impaired cell-mediated immunity).
+
+| Marker | Peak after surgery (Cusack 2020) |
+|---|---|
+| Cortisol | 0 to 4 hours |
+| IL-6 | 12 to 24 hours |
+| White cell count | 24 to 48 hours |
+| CRP | 24 to 72 hours |
+
+Only IL-6 and CRP track the size of the surgical insult consistently; a CRP that keeps rising is an early pointer to infection.
+
+### Modifying the response
+
+| Intervention | Effect |
+|---|---|
+| Opioids | Suppress hypothalamus and pituitary. Fentanyl over about 50 micrograms/kg abolishes the response to abdominal and pelvic surgery but prolongs recovery and may need ventilation. Bypass overrides this in cardiac surgery |
+| Etomidate | 0.3 mg/kg blocks cortisol and aldosterone synthesis for up to 8 hours |
+| Propofol | Total intravenous anaesthesia at 4 to 8 micrograms/mL may block cortisol fully; lowest protein breakdown of the agents compared |
+| Volatile agents | Suppress ACTH, cortisol, catecholamines and GH more than propofol-remifentanil; no outcome difference in cardiac surgery |
+| Dexmedetomidine, clonidine | Lower sympathoadrenal output; dexmedetomidine lowered IL-6, IL-8, TNF, cortisol and glucose after abdominal surgery |
+| Neuraxial block | Lowers glucose, ACTH, cortisol, GH and adrenaline, but not cytokines. Full suppression needs somatic and autonomic block. Thoracic epidural suppresses the catecholamine response during bypass and for 24 hours |
+| Steroids | Methylprednisolone or dexamethasone before bypass lowered IL-6, IL-8, TNF and CRP; hyperglycaemia is the concern |
+| Minimally invasive surgery | Less IL-6 and CRP; with ERAS, shorter stay and fewer complications |
+| Nutrition | Shorter fasting and carbohydrate loading reduce insulin resistance and catabolism; early enteral feeding; immunonutrition (glutamine, arginine, omega-3) not firmly recommended |
+| Normothermia | Reduces the metabolic response |
+
+Central neural blockade and minimally invasive surgery give the greatest suppression. General anaesthesia barely changes cytokines because it cannot stop the tissue trauma. Whether suppressing the response improves long-term outcome is unproven (Burton).
+
+## Wound healing: phases and factors
+
+Added 21 November 2026 from StatPearls, Wound Healing (StatPearls Publishing; editor J-P Regan; authors not shown on the page; last updated 1 May 2023; statpearls.com point-of-care 31402). Read through a summarising tool; the NCBI Bookshelf copy was not reachable. Tertiary intention and tensile strength before 3 months are not described in this source and are left out.
+
+### Phases (overlapping)
+
+| Phase | Timing | Cells and events |
+|---|---|---|
+| Haemostasis and inflammation | From injury. Vasoconstriction 5 to 10 minutes, then vasodilatation and oedema | Platelets aggregate on exposed collagen and tissue factor; fibrin plug is a scaffold and store of growth factors. Neutrophils within 24 hours, stay 2 to 5 days (bacteria, debris, proteases). Macrophages from about day 3: phagocytosis and growth factors that start the next phase |
+| Proliferation | Starts day 3 to 10; lasts days to weeks | Fibroblasts and endothelial cells. Growth factors: TGF-beta, VEGF, PDGF, bFGF. Angiogenesis (hypoxia is the stimulus). Epithelialisation from wound edges and adnexa, stopped by contact inhibition. Granulation tissue: type III collagen, glycosaminoglycans, fibronectin |
+| Remodelling (maturation) | From about day 21; up to 1 year | Type III replaced by stronger type I collagen; collagen synthesis for at least 4 to 5 weeks. Hydroxylation needs oxygen and vitamin C. Myofibroblasts (TGF-beta 1, alpha-smooth muscle actin) contract the wound, then undergo apoptosis. Scar reaches about 80% of normal skin strength at 3 months and beyond, and is never as organised as skin; no hair follicles, sweat glands or rete pegs |
+
+### Types of healing
+- **Primary intention:** clean, apposed edges (surgical incision).
+- **Secondary intention:** when infection, dehiscence, hypoxia or immune failure disrupts primary healing; heals by granulation and epithelialisation; slower and more prone to infection.
+
+### Factors that impair healing
+
+| Local | Systemic |
+|---|---|
+| Infection | Age: less collagen and slower epidermal turnover (fetal wounds heal without scar until about 24 weeks) |
+| Hypoxia and poor perfusion: smoking, arterial disease, pressure, radiation | Immunosuppression: steroids, immunosuppressants, chemotherapy, early anti-inflammatories prolong inflammation; bevacizumab blocks angiogenesis |
+| Venous insufficiency (oedema, reperfusion injury) | Diabetes: poor perfusion, neuropathy, weak immunity, slow collagen synthesis and angiogenesis |
+| Dehiscence | Nutrition: protein deficiency; vitamin C, vitamin A, thiamine and zinc |
+
+The metabolic section above adds two points from Burton 2004: glucose over 12 mmol/L impairs healing and raises infection rates, and protein catabolism after major surgery competes with repair.
+
+### Abnormal healing
+- **Excess:** hypertrophic scar and keloid (persistent inflammation, excess collagen and matrix).
+- **Chronic wound:** not healed in 4 weeks (some definitions 3 months): venous, arterial, diabetic and pressure ulcers.
+
+## V/Q and perfusion scintigraphy: reading the scan and using it for predicted postoperative function
+
+Added 21 November 2026 from StatPearls, Lung Perfusion Scan (editor C Kyriakopoulos; authors not shown; last updated 22 May 2023; statpearls.com point-of-care 24507), read through a summarising tool, and Arnon-Sheleg E, Haberfeld O, Kremer R, Keidar Z, Weiler-Sagie M. Head-to-head prospective comparison of quantitative lung scintigraphy and segment counting in predicting pulmonary function in lung cancer patients undergoing video-assisted thoracoscopic lobectomy. J Nucl Med 2020;61(7):981–989, doi:10.2967/jnumed.119.234526 (journal page read; abstract and results through a summarising tool). The anatomical and perfusion ppo formulae (ERS/ESTS) are already in this tab and not repeated.
+
+### Technique
+- **Perfusion (Q):** technetium-99m macroaggregated albumin (MAA), particles 10 to 100 micrometres, 40 to 150 MBq intravenously with the patient supine; particles lodge in capillaries and map flow.
+- **Ventilation (V):** usually done first. Technetium-99m DTPA aerosol (most common), technetium-labelled graphite particles under 2 micrometres (not approved in the US), xenon-133 gas (single breath, wash-in and washout images, good for obstructive disease) or krypton-81m (half-life 13 seconds; ventilation images after perfusion without moving the patient).
+- **Imaging:** planar (anterior, posterior, laterals, obliques); SPECT (sensitivity 80 to 100%, specificity 93 to 100%, fewer indeterminate reports); SPECT/CT adds anatomy and alternative diagnoses.
+- A chest radiograph within about 24 hours is needed to read the scan.
+
+### Reading the patterns
+
+| Pattern | Meaning |
+|---|---|
+| Mismatch: perfusion defect, normal ventilation | Acute or chronic PE; also tumour obstruction and radiotherapy |
+| Matched defect | Ventilation and perfusion defects coincide; a single matched defect in the mid or upper zone is very low probability under modified PIOPED II |
+| Reverse mismatch: ventilation defect, perfusion preserved | Emphysema, cysts, pneumonia, tumour |
+| Triple match: V, Q and radiograph all abnormal | Dense consolidation; usually non-diagnostic |
+| Stripe sign: rim of perfusion at the edge of a defect | Argues against PE |
+| Artefacts | Hot spots from clotted blood in the syringe; poor mixing after injection through a central or pulmonary artery line; different patient position for the V and Q images |
+
+### Criteria for PE
+
+| Scheme | PE present | PE absent or very low probability | Performance |
+|---|---|---|---|
+| Modified PIOPED II (V/Q) | Two or more large mismatched segmental defects | Non-segmental defect; defect smaller than the radiograph lesion; 1 to 3 small segmental defects; single matched defect in the mid or upper zone; solitary large effusion; stripe sign. Normal = no perfusion defect | Sensitivity 85%, specificity 93%. All else is non-diagnostic |
+| PISAPED (perfusion only) | One or more large mismatched wedge-shaped defects | Normal or near-normal; non-wedge defect; contour defect from mediastinum, diaphragm or large heart | Sensitivity 80%, specificity 97%; with SPECT 97% and 91% |
+| CTPA, for comparison | | | Sensitivity 83%, specificity 96% |
+
+V/Q is preferred when CTPA is unsuitable (renal impairment, contrast allergy), in pregnancy, in the young, and in outpatients with low pretest probability. In suspected CTEPH, V/Q has sensitivity 96 to 97.4% and specificity 90 to 95%, showing multiple mismatched defects.
+
+### Uses in thoracic surgery (StatPearls)
+- Predicted postoperative function before pneumonectomy (split function between lungs).
+- Before lung transplant: the more damaged lung (the one to replace in single lung transplant). After transplant: VTE, bronchial stenosis, air trapping (possible early bronchiolitis obliterans).
+- Lung volume reduction: identifies the worst, unperfused target areas.
+- Radiotherapy planning to spare functioning lung.
+
+### Lobar quantification: planar against SPECT/CT (Arnon-Sheleg 2020)
+- **Planar method:** geometric mean of anterior and posterior counts; each lung split into thirds. Right: upper third = RUL, middle third = RML, lower third = RLL. Left: upper third = LUL, lower third = LLL, middle third shared.
+- **Problem:** fissures are oblique and invisible on planar images; the right middle lobe cannot be separated.
+- **Study:** prospective, 75 patients with NSCLC planned for lobectomy; planar perfusion, SPECT/CT and segment counting all done; 60 had VATS lobectomy with lung function within a month.
+- **Results:** planar and SPECT/CT disagreed by over 10% in RUL 35%, RML 92%, RLL 63%, but LUL 4% and LLL 7% of patients. Planar overestimated the RML by a mean of 18 percentage points. Yet against measured postoperative values, all three methods predicted similarly (R 0.6 to 0.76; segment counting best for ppoFEV1, R 0.76; SPECT/CT best for ppoDLCO, R 0.64). Actual postoperative FEV1 was 60.8% predicted.
+- **Authors' conclusion:** SPECT/CT adds little for selection in general; it may help before right lobectomy. Small study, only 3 RML resections.
+
+!fig f25_vq | Proportion of patients whose lobar perfusion share differed by more than 10% between planar thirds and SPECT/CT, by lobe. Drawn for these notes from Arnon-Sheleg et al., J Nucl Med 2020 (n=75)
+
+Viva line: for a lobectomy, counting segments is as good as planar scintigraphy; use perfusion scintigraphy for pneumonectomy, heterogeneous emphysema or an obstructed lobe, and prefer SPECT/CT lobar segmentation if a right-sided lobe is to be removed.
+
+## Paravertebral and erector spinae plane blocks: anatomy and technique
+
+Added 21 November 2026 from Nair S, Gallagher H, Conlon N. Paravertebral blocks and novel alternatives. BJA Education 2020;20(5):158–165, doi:10.1016/j.bjae.2020.01.006 (PMC full text read through a summarising tool, two passes), and Chin KJ, El-Boghdadly K. Mechanisms of action of the erector spinae plane (ESP) block: a narrative review. Can J Anesth 2021;68(3):387–408, doi:10.1007/s12630-020-01875-2 (publisher page read through a summarising tool). This completes the PROSPECT section above, which ranks the blocks but gave no anatomy.
+
+### The thoracic paravertebral space
+
+| Feature | Detail (Nair 2020) |
+|---|---|
+| Shape | Wedge beside the vertebral column |
+| Anterolateral wall | Parietal pleura |
+| Posterior wall | Superior costotransverse ligament (continuous laterally with the internal intercostal membrane) |
+| Medial wall | Vertebral body, disc and intervertebral foramen |
+| Above and below | Heads of the ribs |
+| Endothoracic fascia | Runs between pleura and ligament, dividing the space into anterior and posterior compartments |
+| Contents | Fat, spinal (intercostal) nerve, dorsal ramus, intercostal vessels, rami communicantes, sympathetic chain (anterior) |
+| Communications | Epidural space medially, intercostal space laterally. Lower limit at the origin of psoas; no defined upper limit |
+
+### Paravertebral technique
+- **Level:** T4 to T5 for thoracic surgery.
+- **Landmark:** needle 2.5 to 3 cm lateral to the spinous process, to the transverse process (about 4 cm deep), then walked off it and advanced 1 to 1.5 cm until loss of resistance or a pop through the ligament. Failure 1.98 to 5.6% (loss of resistance 5.2% against a fixed distance 2.3%). Nerve stimulation at about 0.4 mA is an alternative end point.
+- **Ultrasound, in plane:** (1) longitudinal oblique: probe about 5 cm from the midline; ribs round, transverse processes square and more superficial; needle caudal to cranial through the ligament. (2) Transverse: probe over the intercostal space, needle lateral to medial through the internal intercostal membrane. Correct injection pushes the pleura down. Ultrasound failure 0 to 2.3%.
+- **Surgical:** catheter placed under direct vision at operation.
+- **Dose:** single shot 20 to 25 mL covers 4 to 5 dermatomes, or 4 to 5 mL per level for multiple injections. Bupivacaine, levobupivacaine or ropivacaine 0.25% for analgesia. Infusion 0.1 to 0.2 mL/kg/h for 3 to 4 days; reduce in the old, frail or malnourished because the space is very vascular. A single shot lasts up to about 18 hours. Catheter: 3 to 5 mL through the needle, then threaded 2 to 3 cm beyond the tip.
+- **Contraindications:** absolute: refusal, local anaesthetic allergy. Relative: coagulopathy or anticoagulation, spinal deformity, previous thoracic surgery, empyema or sepsis, tumour in the space.
+- **Complications:** hypotension, vascular puncture, pneumothorax and nerve injury each under 1%; epidural spread 2.1%. In bilateral continuous blocks against epidural after thoracotomy, pleural puncture 3% against 0.4% and vascular puncture 9% against 5%.
+- **Against epidural after thoracotomy (Cochrane, cited by Nair):** similar pain relief with less hypotension, itch, urinary retention and nausea; no difference in 30-day mortality or stay.
+
+### The erector spinae plane block
+
+| Point | Detail |
+|---|---|
+| Target | The fascial plane between the tips of the transverse processes and the erector spinae muscle |
+| Ultrasound | Sagittal probe about 3 cm from the midline; transverse processes are flat, square shadows with only a faint pleural line beneath (unlike ribs) |
+| Needle | In plane, cranial to caudal or the reverse, onto the transverse process deep to the muscle. 1 to 2 mL test dose should spread in a line and lift the muscle off the bone. A catheter can follow |
+| Volume | Over 10 mL in adults; 20 to 30 mL usual; children 0.2 to 0.3 mL/kg (Chin 2021) |
+| Level | The transverse process matching the dermatomes needed: spread is greatest at the injection level and 1 to 2 levels either side |
+| Spread | About 3 to 6 vertebral levels craniocaudally, most of it staying in the erector spinae compartment |
+| Mechanism (Chin 2021) | Direct spread to nerves is most likely. Dorsal rami are blocked consistently. Some drug passes through gaps in the inter-transverse tissue (where dorsal rami and vessels perforate) into the paravertebral and epidural spaces, variably reaching ventral rami. Lateral cutaneous branches (rib angle to posterior axillary line) are usually not reached. Systemic absorption is a minor contributor; immunomodulation and fascial effects are speculative |
+| Thoracic cadaver studies | 12 of 16 showed some paravertebral dye, often in a minority of specimens |
+| Trade-off | Injecting deeper into the inter-transverse tissue may improve paravertebral spread but raises the risk of hypotension and motor block |
+| Safety | The needle end point is further from pleura and cord than with paravertebral or epidural; local anaesthetic toxicity has been reported, so respect maximum doses |
+
+!fig f25_blocks | Schematic transverse section showing the erector spinae plane on the transverse process and the paravertebral space beneath the superior costotransverse ligament, with needle targets and doses. Drawn for these notes from Nair et al., BJA Education 2020 and Chin and El-Boghdadly, Can J Anesth 2021
+
+Other paraspinal blocks described by Nair (retrolaminar onto the lamina; mid-point transverse process to pleura; intercostal paraspinal between rhomboid major and intercostal muscles) lack outcome data; the paper concludes more research is needed.
+
+## Chronic pain after thoracotomy and VATS, and intercostal nerve injury
+
+Added 21 November 2026 from: Bayman EO, Brennan TJ. Incidence and severity of chronic pain at 3 and 6 months after thoracotomy: meta-analysis. J Pain 2014;15(9):887–897, doi:10.1016/j.jpain.2014.06.005 (abstract only); Bayman EO, Parekh KR, Keech J, Selte A, Brennan TJ. A prospective study of chronic pain after thoracic surgery. Anesthesiology 2017;126(5):938–951, doi:10.1097/ALN.0000000000001576 (read from the full text); Chen W-c, et al. Prevalence and predictors of chronic postsurgical pain after video-assisted thoracoscopic surgery: a systematic review and meta-analysis. Pain Ther 2023;12(1):117–139, doi:10.1007/s40122-022-00439-0 (full text, first 100,000 of 115,000 characters); Miyazaki T, Doi R, Matsumoto K. Post-thoracotomy pain syndrome in the era of minimally invasive thoracic surgery. J Thorac Dis 2024;16(5):3422–3430, doi:10.21037/jtd-24-158 (full text); Brulotte V. Preventing chronic pain after thoracic surgery: a narrative review of analgesic strategies. Curr Chall Thorac Surg 2025;7:34, doi:10.21037/ccts-25-26 (full text); Cerfolio RJ, Price TN, Bryant AS, et al. Intracostal sutures decrease the pain of thoracotomy. Ann Thorac Surg 2003 (abstract only); Leandro JD, et al. Comparison between two thoracotomy closure techniques. J Bras Pneumol 2014;40(4):389–396, doi:10.1590/S1806-37132014000400006 (full text); Bendixen et al. Postoperative pain and quality of life after lobectomy via video-assisted thoracoscopic surgery or anterolateral thoracotomy for early stage lung cancer: a randomised controlled trial. Lancet Oncol 2016 (abstract only; NCT01278888). The incision table and pain-reducing manoeuvres are in Thoracic 9; regional blocks (PROSPECT) and local anaesthetic doses are in the sections above.
+
+### Definition
+Post-thoracotomy pain syndrome (IASP): pain that recurs or persists along the thoracotomy scar at least **2 months** after surgery. Chronic postsurgical pain generally is pain beyond 3 months; in thoracic practice the two are treated as nearly the same (Miyazaki).
+
+### How common
+| Source | Group | Chronic pain |
+|---|---|---|
+| Bayman and Brennan 2014, meta-analysis | Thoracotomy, 3 months (17 studies, 1,439 patients) | **57%** (95% CI 51 to 64) |
+| | Thoracotomy, 6 months (15 studies, 1,354 patients) | **47%** (39 to 56) |
+| | Severity (0 to 100) | Mean 30 at 3 months, 32 at 6 months; rates unchanged from the 1990s |
+| Chen 2023, meta-analysis | VATS (17 studies, 10,525 patients) | **35.3%** pooled (27.1 to 43.5); 41.0% with pain score over 1, **10.5% with score over 3** |
+| Bayman 2017, prospective (Iowa) | Thoracotomy (30) | 47% at 3 months, 33% at 6 months |
+| | VATS (69 to 72) | 29% at 3 months, 25% at 6 months; not significantly different from thoracotomy (P=0.09 and 0.37) |
+| | All | Mean severity 3.3 of 10 in those with pain; none severe; pain limited daily activity in 8.2% at 6 months |
+| Brulotte 2025 | After minimally invasive surgery | 26 to 63% at 3 months, severity no different from thoracotomy |
+
+!fig f26_chronic_pain | Chronic pain after thoracotomy and VATS: two meta-analyses and one prospective cohort. Chart drawn for these notes from Bayman and Brennan, J Pain 2014; Chen et al., Pain Ther 2023; and Bayman et al., Anesthesiology 2017
+
+Neuropathic features: about 30% of patients on day 5 after VATS (Miyazaki); 20 to 30% of chronic cases in studies quoted by Bayman 2017; up to 47% where the intercostal nerve is injured (Brulotte). Screening tools: S-LANSS, painDETECT.
+
+### Mechanism: the intercostal nerve
+The main cause is neuropathic pain from **intercostal nerve injury**: compression by the rib retractor, chest drains (drain sites too) and rigid port instruments (Miyazaki); nerve testing showed that VATS without a rib spreader caused less A-fibre damage and that drains added nerve impairment. Chen adds chemotherapy-related tissue oedema (a double-crush effect), central sensitisation and neural remodelling. Visceral afferents through the vagus and phrenic nerves may also contribute (Brulotte).
+
+### Risk factors
+| Factor | Effect |
+|---|---|
+| **Acute pain in the first days** | The most consistent predictor. Bayman 2017: each point of average NRS in the first 3 days raised the risk about 1.27-fold (99% CI 1.12 to 1.44); the only factor kept in the model. Brulotte: NRS 4 or more on days 3 to 7 |
+| Three-port VATS | OR 4.32 (Chen) |
+| Female sex | OR 1.58 (Chen) |
+| Longer drainage | OR 1.08 per unit (Chen); a drain still in on day 3 was linked in Bayman 2017 |
+| Postoperative chemotherapy | OR 1.58 (Chen) |
+| Postoperative analgesia given | OR 0.54, protective (Chen) |
+| Older age | OR 0.92, slightly protective (Chen) |
+| Psychological measures | Not predictive in Bayman 2017; linked in other studies quoted by Brulotte |
+
+### Surgical prevention
+- **Intracostal closure** (Cerfolio 2003; 280 consecutive thoracotomies, single surgeon, non-randomised, first 140 pericostal then 140 intracostal through drilled holes in the 6th rib, all with epidural, latissimus- and serratus-sparing incision and rib undercutting). Mean pain scores, pericostal against intracostal: **5.5 vs 3.3 at 2 weeks, 3.8 vs 1.7 at 1 month, 2.3 vs 1.1 at 2 months, 1.6 vs 0.6 at 3 months** (P 0.004 to <0.0001); pericostal pain was more often burning, shooting or stabbing.
+- Leandro 2014 (randomised, double-blind, about 30 patients): transcostal closure gave less pain to day 7 (VAS) and to day 10 (McGill), and FVC, FEV1 and PEF fell significantly only after pericostal closure. Small, no power calculation.
+- **VATS against anterolateral thoracotomy** (Bendixen 2016; 206 randomised, Denmark, blinded): moderate to severe pain (NRS 3 or more) in the first 24 h 38% against 63% (P=0.0012); fewer moderate to severe pain episodes over 52 weeks (P<0.0001); better EQ-5D (P=0.014); grade 3 to 4 adverse events similar.
+- Fewer ports, no metal retractor, fewer intercostal spaces, shorter operation, early removal of fewer, softer drains (Miyazaki; Brulotte). Uniportal and subxiphoid uniportal approaches are expected to spare the nerve most, but high-quality trials are few. RATS: less acute pain than open; no difference in chronic pain from VATS.
+- Muscle-sparing incisions, intercostal muscle flap kept out of the retractor and avoiding rib fracture are in Thoracic 9 and Thoracic 7 (not re-checked in this session's sources).
+
+### Analgesic prevention (Brulotte 2025)
+| Measure | Evidence |
+|---|---|
+| Regional analgesia | The most effective step; make it routine. Thoracotomy: epidural or paravertebral (single-shot paravertebral did worse than epidural at 3 and 6 months). VATS network meta-analysis: epidural, paravertebral and intercostal blocks reduce chronic pain; serratus plane block did not. ESP against paravertebral after VATS: 34% against 31% (not different) |
+| Pre-emptive epidural | No significant reduction against starting after surgery |
+| **Intercostal cryoanalgesia** | More neuropathic features up to 6 months than epidural after thoracotomy; no benefit after VATS. Thoracic 7 records the ESTS/ERAS advice against it |
+| Ketamine | Thoracotomy without a block: single 0.2 mg/kg dose, chronic pain 20.2% against 61.4% at 3 months (P<0.001); with an epidural, no difference. May help after VATS; more trials needed |
+| Gabapentinoids | Not for routine use; consider for moderate to severe pain with neuropathic features despite multimodal analgesia |
+| Perineural dexmedetomidine | Some positive small trials (for example, with paravertebral block after VATS 3% against 25%); bradycardia and hypotension |
+| Paracetamol and NSAID | Routine unless contraindicated |
+
+### Viva lines
+- Quote "about half after thoracotomy (57% at 3 months, 47% at 6), about a third after VATS, but severe in few".
+- The strongest modifiable predictor is poorly controlled acute pain.
+- Protect the nerve: no rib spreader if possible, intracostal closure, few ports, early drain removal, regional block.
+
+## Lung hernia, and sternotomy and clamshell wound complications
+
+Added 21 November 2026 from: Cetinkaya A, Zeriouh M, Liakopoulos OJ, et al. Pulmonary herniation after minimally invasive cardiac surgery: review and implications from a series of 20 cases. J Surg Case Rep 2020;2020(11):rjaa415, doi:10.1093/jscr/rjaa415 (read from the full text); Kim JT, Miyashita Y, Kaiho T, et al. Risk factors associated with sternal complication after lung transplantation with transverse sternotomy. J Thorac Dis 2025;17(9):6862–6872, doi:10.21037/jtd-2025-819 (read from the full text); Langdon et al. 2016 for the subxiphoid incision (citation in Cardiac 16). Sternotomy wound infection, dehiscence and plating are written up in full in Cardiac 17; they are not repeated here.
+
+!fig f26_incision_map | Thoracic and cardiac incisions with the complications and numbers from the sources read: sternotomy, clamshell, right anterior mini-thoracotomy, subxiphoid, posterolateral thoracotomy and VATS ports. Drawn for these notes from Kim 2025, Cetinkaya 2020, Langdon 2016, Bayman and Brennan 2014 and Chen 2023 (schematic, not to scale)
+
+### Lung hernia
+- **Classification**: by site (cervical, thoracic, diaphragmatic) and by cause (congenital or acquired; acquired is traumatic, spontaneous or pathological). Most acquired hernias follow trauma or thoracic surgery. Costal aplasia in Poland syndrome may need reconstruction to prevent herniation (TSRA ch. 26, in the pectus section).
+- **After minimally invasive cardiac surgery** (Cetinkaya): 20 hernias after 1,381 operations over seven years (about 1.4%, worked out here from those two numbers; not stated by the authors). 12 of the 20 were obese, 3 had COPD; most had mitral surgery. Causes they point to: an intercostal space chosen too low at the first operation; even a 3 to 4 cm incision can herniate.
+- **Presentation**: men, a bulge on the right chest on coughing, sometimes months later; women, often hidden by the breast, with vague pain on coughing. Any persistent pain or swelling after a mini-thoracotomy should be examined.
+- **Diagnosis**: palpate while the patient coughs; chest film; **CT** is the test of choice and plans the repair (can show a double hernia). Do not needle the bulge: iatrogenic pneumothorax.
+- **Repair** (symptomatic hernia), with autologous tissue: through the old scar (or a new incision above it if the hernia is higher), excise the sac leaving about 1.5 cm margin, drain two spaces below, place two or three rib-approximation sutures, close pleura, muscle, fat and skin in layers, and check for gaps with the lung inflated. Drain out on day 1, home, chest strap for 2 to 3 weeks; no recurrence in follow-up. The paper does not describe mesh or plate repair.
+
+### Clamshell (bilateral transverse thoracosternotomy)
+Kim 2025 (Northwestern, 2018 to 2024; 290 lung transplant recipients with a divided sternum; transverse sternum usually closed with two single wires):
+- Sternal complication needing surgery (dehiscence or infection): **11.4%** (33 of 290). Historical clamshell rates are quoted up to 30 to 40%, and 8 to 34% morbidity in transverse sternotomy recipients.
+- Timing: median about **3 months** (99 days to reoperation). Debridement for infection in 25 (median 99 days), wire removal in 5 (126 days), delayed omental or muscle flap closure in 3 (104 days).
+- Risk factors on multivariable analysis: **acute kidney injury** (OR 2.67, 95% CI 1.08 to 6.61; present in 75.8% of cases against 47.9% of controls) and male sex (female OR 0.39). Post-ECMO use and dialysis after discharge were significant only on univariable analysis; grade 3 primary graft dysfunction was not significant. Age, BMI, diabetes, smoking and COPD were not.
+- One-year survival 81.8% against 89.5% (P=0.24); no first-year death attributed to the sternum.
+- Management: aggressive, repeated debridement until healthy tissue; negative-pressure therapy for deep infection with necrosis; flap closure when clean.
+- Prevention suggested: careful closure, haemostasis, wound care, structured physiotherapy to limit sternal stress, close follow-up of patients with kidney injury, nutrition. No randomised or comparative study shows that any closure device (cross-wiring, plates, tape) reduces complications.
+- Both internal mammary arteries are divided in a clamshell (Thoracic 9 incision table).
+
+### Subxiphoid incision
+Used for the pericardial window: less opioid in the first 48 hours than a left anterior mini-thoracotomy (32.4 against 78.3 mg morphine equivalent, P=0.0001) and earlier extubation, but more recurrent effusion (9.4% against 0%) (Langdon 2016; details in Cardiac 16).
