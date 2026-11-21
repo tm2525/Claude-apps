@@ -53,3 +53,10 @@ Added 20 November 2026 after comparing the FRCS Atlas HTML builds (Master Update
 | Point | Source and status |
 |---|---|
 | Secondary cardiac tumours are 20 to 40 times commoner than primary tumours | FRCS Atlas draft; not checked against a primary source (TSRA ch. 83, PDF p. 649: the majority are metastases) |
+
+## CTEPH: the UCSD classifications by name: gap filled from the Atlas audit
+Added 21 November 2026 after auditing all 54 FRCS Atlas chapters against this site: only points the site lacked. Each line says what it was checked against.
+
+- **UCSD surgical classification (Jamieson and Thistlethwaite)**: Type I fresh or organised thrombus in the main or lobar arteries; Type II thickened intima and webs proximal to the segmental arteries; Type III disease confined to distal segmental and subsegmental arteries; Type IV intrinsic small-vessel arteriopathy (not operable). This is the Type I to IV scheme already in this tab.
+- **UCSD level classification (Madani, Jamieson and colleagues, 2012)**, which replaced it in surgical reporting: Level 0 no disease; Level I main pulmonary artery (**Level IC** complete occlusion of one main pulmonary artery); Level II lobar; Level III segmental; Level IV subsegmental. Levels I to III are suitable for endarterectomy at an expert centre; Level IV is technically demanding and often goes to balloon pulmonary angioplasty.
+- The Atlas chapter's levels ("II lobar/segmental, III distal segmental") do not match these published definitions; use the ones above. Checked: published definitions as recalled; not re-read against the original papers.

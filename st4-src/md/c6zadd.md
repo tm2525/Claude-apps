@@ -4315,3 +4315,14 @@ Added 20 November 2026 after comparing the FRCS Atlas HTML builds (FRCS-Atlas-Ma
 - This meets MAGIC criteria (major radiological criterion: perigraft gas more than 7 weeks after implantation) and suggests a secondary aorto-oesophageal fistula. Escalate to the tertiary MDT (aortic, upper GI or thoracic surgery, microbiology). Cross-match, take blood cultures, start broad intravenous antimicrobials with antifungal cover, keep him nil by mouth and monitor closely.
 - If he has a massive bleed, emergency relining TEVAR controls the haemorrhage as a bridge.
 - The curative operation is complete explantation, debridement, in situ biological reconstruction, oesophageal resection or diversion with a vascularised flap, and prolonged targeted antimicrobials.
+
+## Aortic syndrome imaging and open repair of blunt aortic injury: gaps filled from the Atlas audit
+Added 21 November 2026 after auditing all 54 FRCS Atlas chapters against this site: only points the site lacked. Each line says what it was checked against.
+
+### Echo does not exclude type A dissection
+- Transthoracic echo is the first bedside test: it can show a flap, aortic regurgitation, pericardial effusion or tamponade, and LV function. A normal or non-diagnostic TTE does **not** exclude an acute aortic syndrome; go to CT angiography (TOE if the patient is too unstable to move, often in theatre). Checked: principle as in the ESC aortic guidelines; the often-quoted TTE figures for proximal dissection (sensitivity about 77 to 80%, specificity 93 to 96%) are from the 2014 ESC guideline as recalled, not re-read.
+
+### Open repair of blunt thoracic aortic injury
+- Stent graft repair is preferred where the anatomy suits (already in this tab). Open repair is chosen when the injury reaches the ascending aorta or proximal arch, when there is no adequate seal zone or the arch is too tightly curved (young patients), when iliofemoral access is unusable, or when another injury needs a thoracotomy anyway.
+- Approach: left posterolateral thoracotomy through the 4th space; proximal control between the left carotid and left subclavian arteries, distal control below the injury; interposition graft (occasionally primary repair).
+- Distal aortic perfusion protects the cord: **left heart bypass** (left atrium or inferior pulmonary vein to femoral artery or distal aorta, centrifugal pump, low-dose heparin, useful with head or solid-organ injury) or full bypass. Clamp-and-sew is quicker but paraplegia rises with clamp time over about 30 minutes. The AAST multicentre study (Fabian et al., J Trauma 1997) reported paraplegia of about 16% with clamp-and-sew against about 5% with distal perfusion (figures as recalled; not checked against the paper).

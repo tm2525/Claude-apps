@@ -604,3 +604,9 @@ If you revise from the Atlas, correct these:
 - Mechanism and operation? El Khoury type Ic (dilated ventriculo-aortic junction, normal cusps). Repair with annular stabilisation at an experienced centre avoids anticoagulation. The tab already notes that a basal ring above about 27 mm predicts recurrence without an annuloplasty.
 - Cardioplegia? Direct ostial and/or retrograde, with an LV vent, because root cardioplegia runs back into the ventricle.
 - SBA distractors from the Atlas worth knowing: LVESD 44 mm with BSA 2.1 m² (LVESDi 21) and LVESD 46 mm with BSA 2.0 m² (LVESDi 23) do not meet Class I. The second would meet the IIb low-risk threshold (above 22 mm/m²).
+
+## When not to intervene in aortic stenosis: gap filled from the Atlas audit
+Added 21 November 2026 after auditing all 54 FRCS Atlas chapters against this site: only points the site lacked. Each line says what it was checked against.
+
+- The Class I recommendation to intervene in symptomatic severe AS assumes the intervention can improve quality of life or prolong survival. The ESC/EACTS guideline makes intervention **not recommended (Class III)** in patients with severe comorbidities when it is unlikely to improve quality of life or to prolong survival **beyond 1 year**; the American guideline likewise frames AVR around an expected survival of more than 1 year with acceptable quality of life. Checked: 2021 ESC/EACTS wording as recalled (Class III C); not re-read against the 2025 text.
+- In the Heart Team discussion: frailty, cognitive impairment, severe lung or liver disease and cancer with limited prognosis point to palliative care rather than TAVI or SAVR.

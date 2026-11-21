@@ -158,3 +158,10 @@ Primary source for checking: TSRA Review 3rd ed., ch. 22 (Gedeon, Swanson), alre
 | How well embolisation works | Bronchial artery embolisation controls over 80 to 90% of bleeding | FRCS Atlas draft; not checked. TSRA ch. 22 (PDF p. 191) says only that it is the most effective first treatment |
 | Imaging before embolisation | CT bronchial angiography after bronchoscopy, before embolisation | FRCS Atlas draft; not checked (TSRA ch. 22: CT without, then with, contrast, as in this tab) |
 | Pulmonary artery source | Emergency resection is reserved for bleeding that fails or recurs after embolisation, or for a pulmonary artery source such as a Rasmussen aneurysm | Partly checked: TSRA ch. 22 (PDF p. 191) gives a pulmonary artery source in 5% and lists pulmonary artery rupture as one of three reasons to operate during active bleeding. The term Rasmussen aneurysm is FRCS Atlas draft, not checked |
+
+## Why fistula is commoner after right pneumonectomy: gap filled from the Atlas audit
+Added 21 November 2026 after auditing all 54 FRCS Atlas chapters against this site: only points the site lacked. Each line says what it was checked against.
+
+- **Blood supply**: the right main bronchus usually has **one** bronchial artery and the left **two** (the anatomy is in Thoracic 17: "usually two left, one right"), so the right stump is less well perfused.
+- **Cover**: the left stump retracts under the aortic arch into the mediastinum and is covered by surrounding tissue; the right stump is longer and lies exposed in the empty pleural space.
+- Consequences: keep the right stump short and cover it with vascularised tissue (intercostal muscle, pericardial fat pad, pleura, serratus or latissimus, omentum), especially after induction chemoradiotherapy, in completion pneumonectomy, or with a positive bronchial margin. Checked: standard anatomy and operative teaching (TSRA pneumonectomy and BPF chapters already cited in this tab).

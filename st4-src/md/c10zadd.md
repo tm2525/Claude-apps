@@ -1380,6 +1380,7 @@ Added 20 November 2026 from Jeppsson A, Rocca B, Hansson EC et al. 2024 EACTS Gu
 ### DOACs, elective surgery
 - No bridging needed (reversible pharmacodynamics). Stopping time depends on drug, half-life, dose, indication, liver and renal function (CrCl, Cockcroft-Gault). Dabigatran is almost entirely renally cleared and contraindicated at CrCl under 30 ml/min.
 - Text: stop **36 to 48 h** before with CrCl over 80 ml/min; dabigatran **48 h** at CrCl 50 to 80; add **24 h** (about 2 half-lives) at CrCl 30 to 50. Urgent cases: ideally delay 48 h.
+- **Which number to quote** (checked 21 November 2026): the recommendation table (Table 7) says discontinue DOACs **between 48 and 96 h** before elective open-heart surgery, depending on the drug's half-life and renal function, with no routine bridging (**I B**). The 36 to 48 h figure is from the body text for normal renal function only. The 2024 patient blood management guideline (Cardiac 10, earlier) gives at least 48 h with eGFR over 80. In the exam, quote the recommendation: 48 to 96 h.
 - Normal PT suggests minimal anti-FXa effect; normal calibrated aPTT suggests minimal dabigatran. **Diluted thrombin time** is linear with dabigatran (safe under **21 s**). **Calibrated anti-FXa** under **30 ng/ml** is considered safe for major surgery; delay by **12 h** for 30 to 200 ng/ml and **24 h** for 200 to 400 ng/ml.
 
 **Table 5 (DOACs)**
