@@ -663,5 +663,10 @@ def erasdrain():
                   ('450 ml', ['serous output in 24 h', 'still allows removal'], 'ok'), ('24 h', ['mobilise within', 'a day of surgery'], 'b1')], 100)
 
 
+try:
+    from figs_fill import *  # noqa: F401,F403  gap-fill drawings, 21 November 2026
+except ImportError:
+    pass
+
 FIGS = {k: v for k, v in globals().items() if callable(v) and k not in
         ('svg', 'T', 'box', 'arrow', 'line', 'bars', 'tiles', 'E')}

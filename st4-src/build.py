@@ -22,7 +22,7 @@ OUT = os.path.join(ROOT, 'st4')
 sys.path.insert(0, HERE)
 import figs  # noqa: E402
 
-BUILD_DATE = '20 November 2026'
+BUILD_DATE = '21 November 2026'
 
 # slug, title, kind   (kind: topic | course | digest | ref | new)
 SECTIONS = [
@@ -130,7 +130,7 @@ def load_pages():
         slug = f[:-3]
         text = open(os.path.join(mdir, f), encoding='utf-8').read()
         if slug.endswith('add'):
-            base = slug[:-4] if slug.endswith('zadd') else slug[:-3]
+            base = slug[:-4] if slug.endswith(('zadd', 'yadd')) else slug[:-3]
             _, intro, secs = md_to_sections(base, text)
             add = ''.join(sec_html(base, h, b) for h, b in secs)
             pages[base] = pages[base] + f'<div class="grp">Added {BUILD_DATE}</div>' + intro + add
