@@ -142,6 +142,49 @@ def load_pages():
     return pages
 
 
+def place_figures(pages):
+    """Insert drawings listed in placements/*.json after the first block whose text contains the anchor."""
+    import json, glob
+    from bs4 import BeautifulSoup
+    pl = []
+    for f in sorted(glob.glob(os.path.join(HERE, 'placements', '*.json'))):
+        pl += json.load(open(f, encoding='utf-8'))
+    by = {}
+    for r in pl:
+        by.setdefault(r['slug'], []).append(r)
+    missed = []
+    for slug, rs in by.items():
+        if slug not in pages:
+            missed += [r['fig'] for r in rs]
+            continue
+        soup = BeautifulSoup(pages[slug], 'html.parser')
+        for r in rs:
+            anchor = ' '.join(r['anchor'].split())
+            hit = None
+            for el in soup.find_all(['p', 'li', 'h3', 'h2', 'td', 'th']):
+                if anchor in ' '.join(el.get_text(' ').split()):
+                    hit = el
+                    break
+            if hit is None:
+                missed.append(r['fig'])
+                continue
+            blk = hit
+            if blk.name in ('li',):
+                blk = blk.find_parent(['ul', 'ol']) or blk
+            if blk.name in ('td', 'th'):
+                blk = blk.find_parent('table') or blk
+            if blk.name == 'h2':
+                blk = blk.find_parent('summary') or blk
+                sec = blk.find_next_sibling('div')
+                if sec is not None:
+                    sec.insert(0, BeautifulSoup(fig_html(r['fig'], r['caption']), 'html.parser'))
+                    continue
+            blk.insert_after(BeautifulSoup(fig_html(r['fig'], r['caption']), 'html.parser'))
+        pages[slug] = str(soup)
+    if missed:
+        print('placement anchors not found:', ', '.join(missed))
+
+
 def harvest(pages, titles):
     """Build the trials index, viva page and figure gallery from every page."""
     trials, viva, gallery = [], [], []
@@ -205,6 +248,7 @@ def harvest(pages, titles):
 
 def main():
     pages = load_pages()
+    place_figures(pages)
     titles, group = {}, {}
     for g, gname, items in SECTIONS:
         for slug, title, kind in items:

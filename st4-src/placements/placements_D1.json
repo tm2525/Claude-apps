@@ -1,0 +1,92 @@
+[
+ {
+  "fig": "d1_dominance",
+  "slug": "c19",
+  "anchor": "at the crux gives the node branch, posterior descending and posterolateral arteries in right dominance",
+  "caption": "Coronary dominance at the crux: in right dominance the RCA gives the AV nodal branch, PDA and posterolateral artery; in left dominance the circumflex gives the PDA and AV nodal branch. Schematic drawn for these notes from the anatomy in this section (TSRA ch. 45)"
+ },
+ {
+  "fig": "d1_coronary_tree",
+  "slug": "c19",
+  "anchor": "Anterior interventricular groove; septal perforators (anterior two thirds of the septum) and diagonals",
+  "caption": "The coronary arteries from the front: left main between the pulmonary artery and appendage, LAD with septal perforators and diagonals, circumflex with obtuse marginals, RCA with conal, sinus node and acute marginal branches. Schematic drawn for these notes from this section (TSRA ch. 45); not to scale"
+ },
+ {
+  "fig": "d1_papillary_supply",
+  "slug": "c19",
+  "anchor": "Anterolateral papillary muscle: dual supply (LAD and circumflex)",
+  "caption": "Why the posteromedial papillary muscle ruptures: single supply against the anterolateral muscle's dual supply. Arrangement schematic drawn for these notes from this section and the mechanical complications table in Cardiac 5 (TSRA ch. 45 and 51)"
+ },
+ {
+  "fig": "d1_cardioplegia_routes",
+  "slug": "c14",
+  "anchor": "Slower arrest; protects the right ventricle less well; does not work with a persistent left superior vena cava",
+  "caption": "Antegrade root, direct ostial and retrograde coronary sinus cardioplegia: where each enters, delivery targets and limits. Arrangement schematic drawn for these notes from this section, TSRA ch. 45 and 49, and the 2024 EACTS/EACTAIC/EBCP bypass guideline (part 5 below)"
+ },
+ {
+  "fig": "d1_venting",
+  "slug": "c14",
+  "anchor": "A distended left ventricle is not perfused by cardioplegia and becomes ischaemic",
+  "caption": "Routes by which blood reaches the arrested left heart, and the vent sites. Schematic drawn for these notes from the venting paragraph (TSRA ch. 49)"
+ },
+ {
+  "fig": "d1_venous_cannulation",
+  "slug": "c14",
+  "anchor": "Bicaval (two single-stage cannulae); two- or three-stage right atrial cannula",
+  "caption": "Venous cannulation: bicaval, two- or three-stage right atrial, and femoral, with their complications. Arrangement schematic drawn for these notes from this table, TSRA ch. 49 and the 2024 EACTS/EACTAIC/EBCP bypass guideline (part 2 below); femoral tip position is schematic"
+ },
+ {
+  "fig": "d1_arterial_cannulation",
+  "slug": "c14",
+  "anchor": "Survival is about 85% if recognised in theatre and about 50% if found afterwards",
+  "caption": "Arterial cannulation sites, the ascending aortic technique (two purse-strings, bevel toward the arch) and iatrogenic dissection. Arrangement schematic drawn for these notes from this section, TSRA ch. 49 and the 2024 EACTS/EACTAIC/EBCP bypass guideline (part 2 below)"
+ },
+ {
+  "fig": "d1_plsvc",
+  "slug": "c14",
+  "anchor": "Small innominate vein with a large coronary sinus",
+  "caption": "Persistent left superior vena cava: anatomy and management on bypass. Schematic drawn for these notes from this row (TSRA ch. 49)"
+ },
+ {
+  "fig": "d1_proximal_strategies",
+  "slug": "c14",
+  "anchor": "Aortic handling and stroke (network meta-analysis cited by Bojalian 2021)",
+  "caption": "Three ways to handle the aorta for proximal anastomoses and the stroke reduction quoted for each. Arrangement schematic and chart drawn for these notes from the network meta-analysis as cited by Bojalian 2021"
+ },
+ {
+  "fig": "d1_ttfm",
+  "slug": "c5",
+  "anchor": "Transit-time flowmetry on each graft before leaving theatre",
+  "caption": "Transit-time flowmetry thresholds and the worked radial case. Drawn for these notes from the FRCS Atlas draft rows in this table; not checked against a primary source"
+ },
+ {
+  "fig": "d1_graft_configs",
+  "slug": "c5",
+  "anchor": "Porcelain ascending aorta: anaortic (no-touch aorta) off-pump CABG",
+  "caption": "In situ LIMA to LAD with vein grafts from the aorta, against the aorta-sparing options: in situ bilateral mammaries and a composite Y-graft. Arrangement schematic drawn for these notes from TSRA ch. 50 and the FRCS Atlas draft row in this table (not checked against a primary source); target vessels are illustrative"
+ },
+ {
+  "fig": "d1_offpump_exposure",
+  "slug": "c5",
+  "anchor": "Instability comes from right ventricular compression when the lateral wall is exposed",
+  "caption": "Off-pump exposure: why the heart destabilises and the counter-measures (apical suction, stabiliser, shunt, deep pericardial sutures, right pleurotomy). Arrangement schematic drawn for these notes from this paragraph (TSRA ch. 50) and the shunt risks in Cardiac 14"
+ },
+ {
+  "fig": "d1_redo_cabg",
+  "slug": "c5",
+  "anchor": "Work-up: angiography including the mammary arteries, the old operation note",
+  "caption": "Redo coronary surgery: clamp a patent old LIMA during cardioplegia, leave a stenosed old vein graft alone beside the new arterial graft, new distals on native vessels, proximals onto a vein graft hood. Arrangement schematic drawn for these notes from this paragraph (TSRA ch. 50)"
+ },
+ {
+  "fig": "d1_conduit_wall",
+  "slug": "c5",
+  "anchor": "Non-fenestrated internal elastic lamina, high nitric oxide and prostacyclin output",
+  "caption": "Why the conduits behave differently: internal mammary, radial artery and saphenous vein. Schematic cross-sections drawn for these notes from the conduit table (TSRA ch. 50); not to scale"
+ },
+ {
+  "fig": "d1_valve_cabg_sequence",
+  "slug": "c5",
+  "anchor": "8. Left atriotomy via interatrial groove. 9. Any AF procedure.",
+  "caption": "Order of steps for CABG with aortic, mitral, or aortic and mitral valve surgery: vein distals first, mammary and proximals last. Drawn for these notes from the operative sequences in this section (TSRA ch. 54); some steps are grouped"
+ }
+]

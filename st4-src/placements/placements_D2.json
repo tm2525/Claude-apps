@@ -1,0 +1,74 @@
+[
+ {
+  "fig": "d2_stanford_debakey",
+  "slug": "c6",
+  "anchor": "DeBakey I involves ascending, arch and descending aorta; II the ascending only",
+  "caption": "DeBakey types I, II, IIIa and IIIb drawn on the aorta, with the Stanford type each belongs to and the timing bands. Schematic drawn for these notes from the definitions in this section (TSRA ch. 75); not to scale"
+ },
+ {
+  "fig": "d2_malperfusion",
+  "slug": "c6",
+  "anchor": "This corrects both dynamic and static obstruction; central repair corrects only dynamic obstruction",
+  "caption": "Dynamic and static branch obstruction, what relieves each, and the staged pathway for stable malperfusion syndrome. Schematic drawn for these notes from TSRA ch. 75 and 76 and the EACTS/STS 2024 and ACC/AHA 2022 definitions in this tab; arrangement schematic"
+ },
+ {
+  "fig": "d2_bentall",
+  "slug": "c6",
+  "anchor": "Root aneurysm with structurally diseased valve: modified Bentall",
+  "caption": "Modified (button) Bentall in three steps: excise root, leaflets and coronary buttons; seat the valved conduit intra-annularly; reimplant the buttons and complete the distal anastomosis. Schematic drawn for these notes from the operative steps in TSRA ch. 77 and EACTS/STS 2024 Recommendation Table 22; not to scale"
+ },
+ {
+  "fig": "d2_root_options",
+  "slug": "c6",
+  "anchor": "Valve and root replaced with a valved conduit, mechanical or biological; coronary buttons reimplanted",
+  "caption": "Choosing a root operation: composite valve graft against valve-sparing reimplantation or remodelling, with the EACTS/STS 2024 classes. Drawn for these notes from TSRA ch. 77 and EACTS/STS 2024 Recommendation Table 22"
+ },
+ {
+  "fig": "d2_arch_repairs",
+  "slug": "c6",
+  "anchor": "Hemiarch technique: under circulatory arrest, bevelled transection",
+  "caption": "Hemiarch, partial arch and total arch replacement: extent of graft and suture lines. Schematic drawn for these notes from the EACTS/STS 2024 definitions and Recommendation Tables 21 and 23 in this tab and TSRA ch. 79; branch reconstruction is an arrangement schematic"
+ },
+ {
+  "fig": "d2_et_fet",
+  "slug": "c6",
+  "anchor": "FET is now the technique of choice for complex arch aneurysm with distal extension",
+  "caption": "Classic two-stage elephant trunk against the one-stage frozen elephant trunk, with the EACTS/STS 2024 zone recommendations and the paraplegia trade-off. Schematic drawn for these notes from TSRA ch. 75, 79 and 81 and EACTS/STS 2024 Recommendation Table 24; not to scale"
+ },
+ {
+  "fig": "d2_arch_zones",
+  "slug": "c6",
+  "anchor": "Ishimaru zones (Figure 3) and arch types (Figure 4)",
+  "caption": "Ishimaru aortic zones 0 to 4 on the arch, with the Roselli 0A to 0C split of zone 0 and zones 5 to 11 listed. Schematic drawn for these notes from the zone table in this tab (Czerny et al., EACTS/STS 2024) and TSRA ch. 81; boundaries placed schematically"
+ },
+ {
+  "fig": "d2_debranching",
+  "slug": "c6",
+  "anchor": "Hybrid arch (debranching then stent graft in zones 0\u20132) avoids clamping",
+  "caption": "Hybrid arch repair: zone 2, 1 and 0 TEVAR with the debranching each needs, and when the left subclavian must be revascularised. Schematic drawn for these notes from TSRA ch. 81, the SVS 2010 list quoted in the textbook section of this tab, and EACTS/STS 2024 Recommendation Table 24; bypass routes are an arrangement schematic"
+ },
+ {
+  "fig": "d2_cerebral_perfusion",
+  "slug": "c6",
+  "anchor": "Antegrade cerebral perfusion gives better long-term survival and neurological function",
+  "caption": "Routes for cerebral protection in arch surgery: right axillary side graft with innominate clamp (unilateral), added left carotid (bilateral) and left subclavian (trilateral) cannulae, and retrograde perfusion up the SVC, with the timing rules. Schematic drawn for these notes from TSRA ch. 75 and 79 and EACTS/STS 2024 Recommendation Table 21; arrangement schematic"
+ },
+ {
+  "fig": "d2_spinal_cord",
+  "slug": "c6",
+  "anchor": "Spinal cord perfusion pressure = MAP minus CSF pressure",
+  "caption": "Spinal cord protection in open thoraco-abdominal repair: left heart bypass, sequential clamping, segmental artery reattachment (T8 to L1) and lumbar CSF drainage, with the drain indications and the rescue bundle. Schematic drawn for these notes from TSRA ch. 80 and 81, ACC/AHA 2022 Table 20 and EACTS/STS 2024 Recommendation Table 21; not to scale"
+ },
+ {
+  "fig": "d2_kommerell",
+  "slug": "c9",
+  "anchor": "A: subclavian artery diameter at its orifice.",
+  "caption": "The three Kommerell measurements (orifice, diverticulum plus adjacent aorta, artery 1 cm beyond the ostium), the course of the aberrant artery and the EACTS/STS 2024 thresholds. Schematic drawn for these notes from EACTS/STS 2024 Recommendation Table 31 as summarised in this section and in Cardiac 6; arrangement schematic"
+ },
+ {
+  "fig": "d2_coarct_repairs",
+  "slug": "c6",
+  "anchor": "Open: end-to-end, patch aortoplasty, LSA-to-descending bypass",
+  "caption": "Coarctation repair options: extended end-to-end, interposition graft, subclavian flap, patch aortoplasty, covered stent and extra-anatomic bypass, with their place in adults. Drawn for these notes from EACTS/STS 2024 Recommendation Table 32, the ESC 2024 coarctation section in this tab and TSRA ch. 96 (Congenital 10); not to scale"
+ }
+]

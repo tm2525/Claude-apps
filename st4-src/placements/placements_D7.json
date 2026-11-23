@@ -1,0 +1,86 @@
+[
+ {
+  "fig": "d7_right_hilum",
+  "slug": "t9",
+  "anchor": "Right pulmonary artery: truncus anterior first; a posterior ascending branch",
+  "caption": "Right hilum from the front, layered from bronchus (back) to superior vein (front), with the order of division for an anterior-approach right upper lobectomy and the structures to keep. Arrangement schematic drawn for these notes from the hilar anatomy in this section (TSRA ch. 1) and the order of division in the lobectomy table (TSRA ch. 12)"
+ },
+ {
+  "fig": "d7_left_hilum",
+  "slug": "t9",
+  "anchor": "Left upper lobe: 2 to 7 arterial branches; the short anterior branches",
+  "caption": "Left hilum from the front: the artery arching over the bronchus and behind the upper lobe bronchus, the ligamentum and recurrent nerve, and the order of division for left upper lobectomy. Arrangement schematic drawn for these notes from this section (TSRA ch. 1) and the lobectomy table and pitfalls (TSRA ch. 12)"
+ },
+ {
+  "fig": "d7_fissure_arteries",
+  "slug": "t9",
+  "anchor": "Fissure-last (fissureless) technique divides the hilar structures first and staples the fissure at the end",
+  "caption": "The pulmonary artery in the oblique fissure on each side: middle lobe and superior segmental branches arising opposite each other on the right, the lingular branch on the left, and what each lower lobectomy divides and keeps. Arrangement schematic drawn for these notes from the lobectomy table above and TSRA ch. 12"
+ },
+ {
+  "fig": "d7_vats_access",
+  "slug": "t9",
+  "anchor": "Robotic lobectomy gives similar outcomes to VATS with longer operating time and higher cost",
+  "caption": "Multiport VATS lobectomy access: utility incision in the 5th space at the anterior axillary line, camera in the 8th space, and the conversion line, with the notes' points on uniportal and robotic access. Arrangement schematic drawn for these notes from the TSRA Primer port sites (Thoracic 10), the set-up in this section, the ERAS/ESTS 2019 table (Thoracic 16) and Chen 2023 (Thoracic 17); no robotic port layout is given in the sources"
+ },
+ {
+  "fig": "d7_sleeve_variants",
+  "slug": "t9",
+  "anchor": "Right upper lobe is the commonest; then left upper, left lower and the right-sided",
+  "caption": "The five lobar sleeve resections in order of frequency, showing the airway removed, the two lines of division and which bronchus is rejoined to which. Schematic drawn for these notes from the indications and steps in this section and TSRA ch. 12"
+ },
+ {
+  "fig": "d7_pneumonectomy_stump",
+  "slug": "t9",
+  "anchor": "Stump: little diathermy at the carina, divide flush, cover with pleura, pericardial fat or muscle.",
+  "caption": "Pneumonectomy: order of division, a long devascularised stump against flush division at the carina with tissue cover, and the pericardial rule. Schematic drawn for these notes from this section (TSRA ch. 12), the TSRA Primer pneumonectomy table (Thoracic 10) and the fistula risk factors in Thoracic 17"
+ },
+ {
+  "fig": "d7_segment_tree",
+  "slug": "t9",
+  "anchor": "Ten on the right, eight on the left. Bronchi are the most constant",
+  "caption": "Segmental bronchi by lobe using the segment names in the table above, with an inset of how bronchus, artery and veins sit within and between segments. Arrangement schematic drawn for these notes from this section (TSRA ch. 1) and the segmentectomy steps in this tab"
+ },
+ {
+  "fig": "d7_stump_sides",
+  "slug": "t17",
+  "anchor": "the left stump retracts under the aortic arch into the mediastinum",
+  "caption": "Why the right pneumonectomy stump fails more often: one bronchial artery against two, a longer stump exposed in the empty space against a short one covered under the arch, and the preventive steps. Arrangement schematic drawn for these notes from this section, the After pneumonectomy table and TSRA ch. 12 and 13"
+ },
+ {
+  "fig": "d7_cardiac_herniation",
+  "slug": "t17",
+  "anchor": "Left: the ventricle strangulates through the defect. Right: the heart twists",
+  "caption": "Cardiac herniation by side: ventricular strangulation through a left defect, rotation with caval obstruction through a right defect, and the emergency management. Arrangement schematic drawn for these notes from the After pneumonectomy table and the cardiac herniation points in this tab (TSRA ch. 12 and 13)"
+ },
+ {
+  "fig": "d7_ppn_syndrome",
+  "slug": "t17",
+  "anchor": "After right pneumonectomy the heart and airway rotate counter-clockwise, stretching the left main bronchus",
+  "caption": "Post-pneumonectomy syndrome: rotation of the heart and airway into the empty right space, compression of the left main bronchus between the pulmonary artery and the arch or spine, and the operation. Arrangement schematic drawn for these notes from this section (TSRA ch. 13) and the After pneumonectomy table"
+ },
+ {
+  "fig": "d7_space_film",
+  "slug": "t17",
+  "anchor": "Signs of a fistula on the film: a lower air-fluid level or mediastinal shift.",
+  "caption": "The right pneumonectomy space on serial films: early air, gradual filling with shift towards the space, and the falling air-fluid level of a fistula, with the worked case and first actions. Schematic drawn for these notes from this section (TSRA ch. 13 and the FRCS Atlas points marked unchecked) and the bronchopleural fistula drill above"
+ },
+ {
+  "fig": "d7_iaslc_map",
+  "slug": "t1",
+  "anchor": "Nodal zones group stations; supraclavicular (station 1) and subcarinal (station 7) zones",
+  "caption": "IASLC lymph node stations on a frontal schematic of the mediastinum, with the landmarks that set each boundary (innominate vein, azygos, aortic arch, ligamentum, left pulmonary artery) and the oncological midline at the left tracheal border. Arrangement schematic drawn for these notes from the boundary table in this section and TSRA ch. 5 Table 5-1; stations 3a, 3p and 12 to 14 are listed but not drawn"
+ },
+ {
+  "fig": "d7_vein_variants",
+  "slug": "t2",
+  "anchor": "What each variant does to the operation",
+  "caption": "The four venous patterns that change a lobectomy: the typical two veins each side, a left common trunk and where to divide it, the variable course of the middle lobe vein, and a vein behind the bronchus intermedius. Arrangement schematic drawn for these notes from the frequencies (Altinkaynak and Koktener 2019, abstract) and the variant table in this section"
+ },
+ {
+  "fig": "d7_six_station_rule",
+  "slug": "t16",
+  "anchor": "The 6-station rule is a staging requirement, not a quality metric.",
+  "caption": "Three illustrative right-sided station sets showing how the TNM 9 node-assessment rule decides R0 against R0(un): six stations including station 7 and two other mediastinal stations, too few stations, and a positive highest station. Schematic drawn for these notes from the IASLC R proposals as summarised in this section (Detterbeck 2024); the station sets are examples, not data"
+ }
+]

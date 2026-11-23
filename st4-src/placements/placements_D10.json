@@ -1,0 +1,74 @@
+[
+ {
+  "fig": "d10_nerve_courses",
+  "slug": "c19",
+  "anchor": "Behind the hilum. On the left it crosses in front of the arch",
+  "caption": "Phrenic, vagus and recurrent laryngeal nerves in the mediastinum, with the structures at risk at ITA harvest, bicaval cannulation, distal arch dissection and mediastinoscopy. Arrangement schematic drawn for these notes from this section and TSRA Review ch. 1 and 42"
+ },
+ {
+  "fig": "d10_pericardial_sinuses",
+  "slug": "c19",
+  "anchor": "Transverse sinus: behind the aorta and pulmonary artery",
+  "caption": "Back wall of the pericardial sac with the heart lifted out: the arterial and venous reflections, the transverse sinus between them and the oblique sinus behind the left atrium. Arrangement schematic drawn for these notes from this section and TSRA Review ch. 45; surgical uses from Congenital 5 and 8 and Cardiac 8"
+ },
+ {
+  "fig": "d10_cardiac_veins",
+  "slug": "c19",
+  "anchor": "Thebesian veins return about 15% of coronary flow directly to the chambers",
+  "caption": "Venous drainage of the heart seen from behind: anterior interventricular vein to great cardiac vein to coronary sinus, a persistent left SVC, and the retrograde cardioplegia cannula. Arrangement schematic drawn for these notes from this section and TSRA Review ch. 45 (only the veins the chapter names are shown)"
+ },
+ {
+  "fig": "d10_conduction",
+  "slug": "c19",
+  "anchor": "The moderator band carries the right bundle from the septum to the anterior papillary muscle",
+  "caption": "The conduction system from sinus node to bundle branches in a four-chamber section, with the surgical danger points. Arrangement schematic drawn for these notes from TSRA Review ch. 45 and this tab"
+ },
+ {
+  "fig": "d10_pv_normal",
+  "slug": "c19",
+  "anchor": "Output = stroke volume \u00d7 heart rate. Stroke volume depends on preload",
+  "caption": "The normal left ventricular pressure-volume loop, its four phases and valve events, and how more preload, more contractility and more afterload change it. Schematic drawn for these notes from TSRA Review ch. 46 and the pressures in this tab; corner valve events and loop shapes are arrangement schematic, volumes not to scale"
+ },
+ {
+  "fig": "d10_starling",
+  "slug": "c19",
+  "anchor": "Frank-Starling: more stretch gives more force, up to an optimum length",
+  "caption": "Frank-Starling curves: moving along a curve with filling and onto another curve with a change in contractility or afterload, with the fall beyond the optimum length. Schematic drawn for these notes from TSRA Review ch. 46 (no values on the axes)"
+ },
+ {
+  "fig": "d10_wiggers",
+  "slug": "c19",
+  "anchor": "Rate helps output until filling time is lost, at about 150 to 180",
+  "caption": "One cardiac cycle: aortic, LV and LA pressure, LV volume and ECG with the valve events, isovolumic phases and atrial kick, linked to balloon pump timing and CT gating windows. Arrangement schematic drawn for these notes from the pressures in this tab, TSRA Review ch. 46, the balloon pump timing in Cardiac 15 and the gating phases in Cardiac 9; the a and v labels on the LA trace follow the right atrial trace in this tab"
+ },
+ {
+  "fig": "d10_interdependence",
+  "slug": "c19",
+  "anchor": "RV coronary perfusion runs in systole and diastole while RV pressure is low",
+  "caption": "Ventricular interdependence: leftward septal shift with a dilated, pressure-loaded RV, respiratory discordance of RV and LV systolic pressures in constriction against concordance in restriction, and the RV ischaemia spiral. Schematic drawn for these notes from this section and Cardiac 15 and 16 (FRCS Atlas drafts, not checked against a primary source; pulmonary embolism from Cardiac 16)"
+ },
+ {
+  "fig": "d10_pv_valves",
+  "slug": "c9",
+  "anchor": "Each lesion has its own LV trigger: the ejection fraction that counts as abnormal rises",
+  "caption": "Pressure-volume loops against the normal loop in aortic stenosis, acute and chronic aortic regurgitation and acute mitral regurgitation, with each lesion's LV trigger from this section. Arrangement schematic drawn for these notes from TSRA Review ch. 55 and 56, Cardiac 1 (MR physiology; fuller MR and MS loops are there) and Cardiac 4 and 5; loop shapes not to scale"
+ },
+ {
+  "fig": "d10_arch_derivatives",
+  "slug": "g6",
+  "anchor": "The recurrent laryngeal nerves hook under the sixth arch: under the duct on the left",
+  "caption": "Fate of the paired aortic arches, the ductus arteriosus from the left sixth arch, and why the left recurrent nerve hooks the duct and the right hooks the subclavian. Schematic drawn for these notes from the arch table in this section and TSRA Review ch. 88 and 91"
+ },
+ {
+  "fig": "d10_lung_volumes",
+  "slug": "t17",
+  "anchor": "Left after maximal expiration; 25 to 35% of total lung capacity",
+  "caption": "Lung volumes and capacities on a spirometer trace: RV, ERV, TV and IRV, with FRC, VC and TLC. Schematic drawn for these notes from the definitions in this section and the BJA Education 2019 section below (not to scale apart from RV at about 30% of TLC)"
+ },
+ {
+  "fig": "d10_spirometry",
+  "slug": "t17",
+  "anchor": "Reversibility is a rise in FEV1 or FVC of 12% and 200 ml",
+  "caption": "Forced expiratory volume-time curves in obstruction and restriction, with the diagnostic and reversibility thresholds and COPD severity by FEV1 % predicted. Schematic drawn for these notes from this section and the BJA Education 2019 section below (curves not to scale)"
+ }
+]

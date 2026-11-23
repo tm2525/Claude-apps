@@ -1,0 +1,92 @@
+[
+ {
+  "fig": "d4_iabp_position",
+  "slug": "c15",
+  "anchor": "Too high: subclavian and vertebral occlusion. Too low: mesenteric and renal occlusion.",
+  "caption": "Where the balloon sits: tip 2 to 3 cm beyond the left subclavian origin, balloon above the mesenteric and renal arteries, and what goes wrong too high or too low. Schematic drawn for these notes from TSRA ch. 121 and ch. 71; not to scale"
+ },
+ {
+  "fig": "d4_impella_position",
+  "slug": "c15",
+  "anchor": "Inlet angled towards the apex, away from papillary muscles; outlet well above the valve.",
+  "caption": "Impella across the aortic valve: outlet in the root, inlet 3.5 to 4.0 cm below the valve, and what the motor current and placement signal show in each position, with the fix. Schematic drawn for these notes from TSRA ch. 121"
+ },
+ {
+  "fig": "d4_temp_lv_routes",
+  "slug": "c15",
+  "anchor": "Trans-septal left atrial drainage to femoral artery",
+  "caption": "Temporary left-sided devices drawn on a block diagram of the circulation: Impella (LV to aortic root), TandemHeart (femoral vein across the septum to LA, back to the femoral artery) and surgical CentriMag (LV to aorta). Arrangement schematic drawn for these notes from TSRA ch. 121 and this section"
+ },
+ {
+  "fig": "d4_va_peripheral",
+  "slug": "c15",
+  "anchor": "Femoral artery and vein, during ongoing CPR",
+  "caption": "Peripheral femoro-femoral VA ECMO: cannula sizes, distal perfusion cannula, retrograde aortic flow, the mixing point and the right radial line. Schematic drawn for these notes from TSRA ch. 120 and ch. 122; arrangement schematic, not to scale"
+ },
+ {
+  "fig": "d4_va_central",
+  "slug": "c15",
+  "anchor": "direct LV decompression (right superior pulmonary vein or LV apex), higher flows",
+  "caption": "Central VA ECMO after cardiotomy: right atrial drainage, ascending aortic return and the two vent sites, with advantages and risks. Arrangement schematic drawn for these notes from TSRA ch. 120 and ch. 122"
+ },
+ {
+  "fig": "d4_lv_unloading",
+  "slug": "c15",
+  "anchor": "surgical (atrial septostomy, or vent via right superior pulmonary vein, LA, PA or LV apex)",
+  "caption": "Why the LV distends on peripheral VA ECMO (three unhandled sources of filling plus raised afterload), when to unload and the ways to do it, marked on a block diagram of the circulation. Schematic drawn for these notes from TSRA ch. 122"
+ },
+ {
+  "fig": "d4_ecmo_reconfig",
+  "slug": "c15",
+  "anchor": "LV recovered, ongoing lung failure. If RV support still needed",
+  "caption": "Hybrid configurations: VVA adds a jugular drainage cannula on the drainage side; VAV adds a jugular return cannula on the return side; then VV once the LV recovers. Arrangement schematic drawn for these notes from TSRA ch. 122 and the 2025 tMCS guideline (VA-V ECLS)"
+ },
+ {
+  "fig": "d4_vv_configs",
+  "slug": "c15",
+  "anchor": "return blood drained straight back when cannulas are close, giving persistent hypoxia.",
+  "caption": "VV ECMO cannulation: femoral to jugular, femoro-femoral and single-site dual-lumen jugular, with tip positions, flows and recirculation. Schematic drawn for these notes from TSRA ch. 71, ch. 122 and ch. 123; the two chapters place the femoral drainage tip differently, and both are shown"
+ },
+ {
+  "fig": "d4_lvad_components",
+  "slug": "c15",
+  "anchor": "Correct aortic regurgitation (it creates a loop through the pump).",
+  "caption": "Durable LVAD: apical inflow cannula and sewing ring, intrapericardial pump, outflow graft to the right of the RA onto the ascending aorta, and driveline out to controller and batteries. Arrangement schematic drawn for these notes from the ISHLT 2023 implant section (Task Force 3) and TSRA ch. 72"
+ },
+ {
+  "fig": "d4_lvad_driveline",
+  "slug": "c15",
+  "anchor": "Double tunnel: within the rectus sheath toward the umbilicus, then subcutaneous",
+  "caption": "Driveline routes: standard tunnel and double tunnel seen from the front, and the abdominal wall layers with the velour kept inside the tunnel. Arrangement schematic drawn for these notes from the ISHLT 2023 guideline, Task Force 3"
+ },
+ {
+  "fig": "d4_lvad_speed",
+  "slug": "c15",
+  "anchor": "Speed set for intermittent aortic valve opening, no significant MR and no leftward septal shift",
+  "caption": "Echo picture of LVAD speed: poor unloading (shown with the pump-thrombosis echo signs from Task Force 4), the target, and too much speed with leftward septal shift. Arrangement schematic drawn for these notes from the ISHLT 2023 guideline, Task Forces 3 and 4"
+ },
+ {
+  "fig": "d4_lvad_thrombosis",
+  "slug": "c15",
+  "anchor": "rising power (acute or slow) suggests intrapump thrombus; falling power suggests inflow",
+  "caption": "Where along the flow path the problem lies (inflow, rotor or outflow graft) and how power and LDH change, with clues, work-up and treatment. Schematic drawn for these notes from the ISHLT 2023 guideline, Task Force 4"
+ },
+ {
+  "fig": "d4_temp_rvad",
+  "slug": "c15",
+  "anchor": "Recoverable RV in an LVAD patient: temporary percutaneous RVAD",
+  "caption": "Temporary right-sided support on a block diagram of the circulation: Impella RP, Protek Duo with TandemHeart, and surgical CentriMag, with indications after LVAD, contraindications and the durable-pump RVAD. Arrangement schematic drawn for these notes from the ISHLT 2023 guideline (Task Force 8), the 2025 tMCS guideline and TSRA ch. 121"
+ },
+ {
+  "fig": "d4_swan_float",
+  "slug": "c19",
+  "anchor": "Floating a pulmonary artery catheter: on passing from right ventricle to pulmonary artery",
+  "caption": "Pressure trace while floating a pulmonary artery catheter: right atrium, right ventricle, pulmonary artery and wedge, with the systolic unchanged and the diastolic rising from RV to PA. Waveform schematic drawn for these notes from the values and text in TSRA ch. 47; not a recorded trace"
+ },
+ {
+  "fig": "d4_shock_profiles",
+  "slug": "c17",
+  "anchor": "Thermodilution through a pulmonary artery catheter: a small area under the temperature curve",
+  "caption": "Haemodynamic profiles after cardiac surgery: pressure, CVP, output, wedge and SVR for each pattern, with treatment, plus tamponade and RV failure. Drawn for these notes from the TSRA ch. 116 table in this section; the RV failure numbers are from the FRCS Atlas draft and are unchecked"
+ }
+]

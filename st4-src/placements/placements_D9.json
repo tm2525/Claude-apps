@@ -1,0 +1,92 @@
+[
+ {
+  "fig": "d9_nuss",
+  "slug": "t13",
+  "anchor": "Thoracoscopic retrosternal tunnel; convex bar passed and rotated 180 degrees",
+  "caption": "Nuss repair in axial section: the convex bar is passed through a retrosternal tunnel, turned 180 degrees to lift the sternum and fixed laterally. Schematic drawn for these notes from the operative steps in TSRA Review ch. 26 (right-sided thoracoscopy from the FRCS Atlas note in this tab); the starting orientation of the bar is an arrangement schematic"
+ },
+ {
+  "fig": "d9_ravitch",
+  "slug": "t13",
+  "anchor": "Better for a rotated sternum and for mixed excavatum and carinatum",
+  "caption": "Modified Ravitch repair: subperichondrial resection of the deformed cartilages, sternal wedge osteotomy and a retrosternal bar, with the carinatum variant that omits the bar. Schematic drawn for these notes from TSRA Review ch. 26; the osteotomy site and number of cartilages are an arrangement schematic"
+ },
+ {
+  "fig": "d9_carinatum",
+  "slug": "t13",
+  "anchor": "10% of deformities; 4:1 male; lower sternum protrudes, often asymmetric",
+  "caption": "Pectus carinatum against excavatum in axial outline, and the treatment pathway: bracing first, then cartilage resection and osteotomy without a bar; type 2 (Currarino-Silverman) below. Schematic drawn for these notes from TSRA Review ch. 26"
+ },
+ {
+  "fig": "d9_achalasia_hrm",
+  "slug": "t18",
+  "anchor": "Very high LES pressure, spastic or premature contractions; hardest to treat",
+  "caption": "Achalasia subtypes I to III (Chicago classification) sketched as high-resolution manometry patterns: non-relaxing LES with aperistalsis, panoesophageal pressurisation, or spastic premature contractions. Arrangement schematic drawn for these notes from the subtype descriptions in TSRA Review ch. 35; POEM point from the FRCS Atlas additions in this tab"
+ },
+ {
+  "fig": "d9_heller_poem",
+  "slug": "t18",
+  "anchor": "Submucosal tunnel from 10 cm above GOJ (CO2), myotomy",
+  "caption": "Heller myotomy (5 to 6 cm on the oesophagus, 3 cm on the stomach, left vagus preserved) against POEM (tunnel from 10 cm above the junction, myotomy 2 cm onto the stomach). Schematic drawn for these notes from TSRA Review ch. 35, to an approximate centimetre scale"
+ },
+ {
+  "fig": "d9_fundoplication",
+  "slug": "t18",
+  "anchor": "Magnetic sphincter augmentation is a newer alternative. Left thoracotomy sometimes",
+  "caption": "Nissen (360 degrees, posterior), Toupet (270 degrees, posterior partial) and Dor (180 degrees, anterior) wraps in cross-section. Schematic drawn for these notes from TSRA Review ch. 34 and ch. 35 and the fundoplication notes in Thoracic 10"
+ },
+ {
+  "fig": "d9_hiatus_types",
+  "slug": "t18",
+  "anchor": "GOJ in normal position, fundus herniates; least common PEH",
+  "caption": "Hiatus hernia types I to IV: position of the gastro-oesophageal junction and of the herniated stomach or other organs. Schematic drawn for these notes from the classifications in TSRA Review ch. 34 and ch. 39"
+ },
+ {
+  "fig": "d9_peh_pathway",
+  "slug": "t18",
+  "anchor": "No ischaemia, unstable (low urine output, pressors, high lactate)",
+  "caption": "Paraoesophageal hernia: the five steps of elective repair, the bail-out, and emergency decisions after endoscopy by ischaemia and stability. Drawn for these notes from TSRA Review ch. 39"
+ },
+ {
+  "fig": "d9_boerhaave",
+  "slug": "t15",
+  "anchor": "Open the muscle to show the full mucosal tear",
+  "caption": "Boerhaave rupture: longitudinal tear of the left posterolateral wall 2 to 6 cm above the diaphragm, and primary repair (muscle opened to show the whole mucosal tear, two layers, vascularised flap). Schematic drawn for these notes from the operative steps in TSRA Review ch. 36"
+ },
+ {
+  "fig": "d9_perf_pathway",
+  "slug": "t15",
+  "anchor": "Contained leak draining back into the lumen, no sepsis",
+  "caption": "Oesophageal perforation pathway: imaging, antibiotics and endoscopy in theatre, then non-operative care, primary repair or alternatives, and how pre-existing disease changes the operation. Drawn for these notes from TSRA Review ch. 36"
+ },
+ {
+  "fig": "d9_decortication",
+  "slug": "t11",
+  "anchor": "If a complete decortication is impossible, the peel can be incised",
+  "caption": "Fibrothorax in axial sketch: peel trapping the lung, complete decortication, and incision of the peel when complete decortication is impossible, with the indications and contraindications. Schematic drawn for these notes from TSRA Review ch. 23"
+ },
+ {
+  "fig": "d9_duct_mass",
+  "slug": "t11",
+  "anchor": "If no leak is seen, mass-ligate the tissue between aorta, spine",
+  "caption": "Axial view just above the hiatus: the thoracic duct between aorta and azygos vein and the tissue taken in a mass ligation from the right chest. Arrangement schematic drawn for these notes from the operation described in this section (TSRA Review ch. 25)"
+ },
+ {
+  "fig": "d9_chylo_pathway",
+  "slug": "t11",
+  "anchor": "Operate when a post-operative leak stays at 1 litre a day",
+  "caption": "Chylothorax: triglyceride thresholds, then drainage, enteral rest, lymphangiography with embolisation, and surgery for a persisting high-output leak. Drawn for these notes from this section (TSRA Review ch. 25)"
+ },
+ {
+  "fig": "d9_tos_outlet",
+  "slug": "t19",
+  "anchor": "Scalene (interscalene) triangle between anterior and middle scalene and the first rib",
+  "caption": "Thoracic outlet from the front: scalene triangle, costoclavicular space and subcoracoid space, with the phrenic and long thoracic nerves. Arrangement schematic drawn for these notes from TSRA Review ch. 28 and the FRCS Atlas additions in this tab (the three sites and the nerves are Atlas draft, not checked); the subclavian vein is not drawn because the sources do not place it"
+ },
+ {
+  "fig": "d9_tos_types",
+  "slug": "t19",
+  "anchor": "Arterial TOS: arterial reconstruction plus first rib resection and anterior scalenectomy.",
+  "caption": "Thoracic outlet syndrome by type: share, features, treatment and success. Drawn for these notes from TSRA Review ch. 28"
+ }
+]

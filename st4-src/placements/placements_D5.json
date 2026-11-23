@@ -1,0 +1,92 @@
+[
+ {
+  "fig": "d5_tof_anatomy",
+  "slug": "g11",
+  "anchor": "All four features stem from anterior/leftward malalignment of the conal septum",
+  "caption": "Tetralogy of Fallot: the anterior and leftward malalignment of the conal septum gives the VSD, overriding aorta, multilevel RVOT obstruction and RV hypertrophy; the LAD from the RCA crosses the outflow. Schematic drawn for these notes from the anatomy in this section (TSRA ch. 98)."
+ },
+ {
+  "fig": "d5_tof_rvot",
+  "slug": "g11",
+  "anchor": "Valve-sparing: commissurotomy plus rigid or balloon dilatation",
+  "caption": "Transannular patch, monocusp, valve-sparing repair and RV-PA homograft compared, with the annulus Z-score rule. Schematic drawn for these notes from the table in this section (TSRA ch. 98) and the Atlas addition below it."
+ },
+ {
+  "fig": "d5_aso_steps",
+  "slug": "g11",
+  "anchor": "Steps: divide both great arteries above the STJ",
+  "caption": "Arterial switch in three steps: divide the great arteries, move the coronary buttons into the facing sinuses of the neo-aorta, then the Lecompte manoeuvre and reconnection; early and late problems. Schematic drawn for these notes from the operative steps in this section (TSRA ch. 104; Mussa 2024)."
+ },
+ {
+  "fig": "d5_tga_leiden",
+  "slug": "g11",
+  "anchor": "standing in the non-facing sinus looking at the PA, sinus 1 is on the right",
+  "caption": "The Leiden convention for coronary origins in D-TGA, with the frequency of each coronary pattern. Arrangement schematic drawn for these notes from the convention and table in this section (TSRA ch. 104)."
+ },
+ {
+  "fig": "d5_rastelli",
+  "slug": "g11",
+  "anchor": "intracardiac baffle LV through VSD to aorta; valved conduit RV to distal PA",
+  "caption": "Rastelli, REV and Nikaidoh operations for TGA with VSD and pulmonary stenosis. Schematic drawn for these notes from the descriptions in this section (TSRA ch. 104)."
+ },
+ {
+  "fig": "d5_truncus_types",
+  "slug": "g11",
+  "anchor": "Branch PAs from a main PA off the trunk",
+  "caption": "Collett-Edwards types I to IV with their Van Praagh equivalents, and the truncal valve leaflet counts. Schematic drawn for these notes from the classification tables in this section (TSRA ch. 109)."
+ },
+ {
+  "fig": "d5_truncus_repair",
+  "slug": "g11",
+  "anchor": "Excise PAs as a button; repair the truncal defect",
+  "caption": "Truncus repair without an arch abnormality: snare the PAs, excise them as a button, close the trunk, patch the VSD through a ventriculotomy, place an RV-PA conduit. Schematic drawn for these notes from the operative steps in this section (TSRA ch. 109)."
+ },
+ {
+  "fig": "d5_iaa",
+  "slug": "g10",
+  "anchor": "Distal to left subclavian, before ductal insertion",
+  "caption": "Interrupted aortic arch types A, B and C with their frequencies, the duct-dependent descending aorta, one-stage repair and outcomes. Schematic drawn for these notes from this section (TSRA ch. 95) and the Mussa 2024 table."
+ },
+ {
+  "fig": "d5_coarct_repair",
+  "slug": "g10",
+  "anchor": "Technique: left posterolateral thoracotomy; direct or extended end-to-end anastomosis",
+  "caption": "Neonatal coarctation: anatomy, resection of the narrow segment and ductal tissue, and end-to-end anastomosis; the structures at risk and follow-up. Schematic drawn for these notes from this section (TSRA ch. 96 and ch. 90 cross-reference; Mussa 2024; recurrent laryngeal nerve course from TSRA ch. 91)."
+ },
+ {
+  "fig": "d5_pda_rln",
+  "slug": "g9",
+  "anchor": "Patent ductus arteriosus (TSRA ch. 91)",
+  "caption": "Why the left recurrent laryngeal nerve hooks round the duct, and the hazards of surgical duct closure. Arrangement schematic drawn for these notes from TSRA ch. 91 (embryology and surgical closure); the phrenic nerve position is indicative only."
+ },
+ {
+  "fig": "d5_ring_daa",
+  "slug": "g10",
+  "anchor": "Divide the lesser arch at its junction with the descending aorta",
+  "caption": "Double aortic arch in axial view: the right arch passes behind the oesophagus, the left arch in front of the trachea; divide the lesser arch at the descending aorta and the ligamentum. Arrangement schematic drawn for these notes from this section (TSRA ch. 97) and the Priya 2018 section below."
+ },
+ {
+  "fig": "d5_ring_raa",
+  "slug": "g10",
+  "anchor": "Left ligamentum PA to proximal descending aorta",
+  "caption": "Right aortic arch: aberrant left subclavian with a Kommerell diverticulum and left ligamentum forms a ring; with mirror-image branching a ring forms only when the ligamentum runs to the descending aorta. Arrangement schematic drawn for these notes from the table in this section (TSRA ch. 97) and the Priya 2018 section below."
+ },
+ {
+  "fig": "d5_pa_sling",
+  "slug": "g10",
+  "anchor": "Sternotomy, bypass. Divide LPA from RPA, bring anterior to trachea, anastomose to main PA.",
+  "caption": "Pulmonary artery sling: the LPA from the RPA passes between trachea and oesophagus; repair moves it in front of the trachea onto the main PA. Arrangement schematic drawn for these notes from this section (TSRA ch. 97)."
+ },
+ {
+  "fig": "d5_bt_shunt",
+  "slug": "g8",
+  "anchor": "interposition graft (now PTFE) between subclavian and pulmonary artery",
+  "caption": "Classic and modified Blalock-Taussig shunts, with the pooled comparison from Table 1. Schematic drawn for these notes from this section (Yuan 2009) and the shunt table in the TSRA ch. 89 section above."
+ },
+ {
+  "fig": "d5_shunt_types",
+  "slug": "g8",
+  "anchor": "Aim: limited, balanced pulmonary flow. Ideal shunt is simple",
+  "caption": "Where each systemic-to-pulmonary shunt joins: classic and modified Blalock-Taussig, Waterston/Cooley, Potts, central (Mee) and Sano. Schematic drawn for these notes from the shunt table in this section (TSRA ch. 89)."
+ }
+]

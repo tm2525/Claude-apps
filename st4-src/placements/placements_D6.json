@@ -1,0 +1,92 @@
+[
+ {
+  "fig": "d6_asd_types",
+  "slug": "g9",
+  "anchor": "Absent septum primum, secundum and AV canal septum; heterotaxy (situs ambiguus)",
+  "caption": "ASD types seen from the opened right atrium: secundum in the fossa ovalis, primum against the AV valve, superior and inferior sinus venosus at the caval junctions, coronary sinus defect, with frequencies and the Eustachian valve trap. Arrangement schematic drawn for these notes from the type table and repair notes in this section (TSRA ch. 92)."
+ },
+ {
+  "fig": "d6_vsd_types",
+  "slug": "g9",
+  "anchor": "His bundle runs below the membranous septum: take care with perimembranous and inlet defects.",
+  "caption": "VSD types seen from the opened right ventricle (outlet, perimembranous, inlet, muscular) with the His bundle on the posteroinferior rim of a perimembranous defect. Arrangement schematic drawn for these notes from TSRA ch. 93, the Mussa 2024 slide notes and the FRCS Atlas addition on conduction (outlet point not checked against a primary source)."
+ },
+ {
+  "fig": "d6_avsd_forms",
+  "slug": "g9",
+  "anchor": "Primum ASD, unrestrictive inlet VSD, common AVV",
+  "caption": "Partial, transitional and complete AVSD as four-chamber schematics: primum ASD, cleft left AV valve, restrictive or unrestrictive inlet VSD, common valve. Schematic drawn for these notes from the anatomy table in this section (TSRA ch. 94)."
+ },
+ {
+  "fig": "d6_rastelli",
+  "slug": "g9",
+  "anchor": "Free-floating, usually no chords to crest; associated with TOF and DORV",
+  "caption": "Rastelli types A, B and C: chordal attachment of the superior bridging leaflet to the septal crest, straddling to the other ventricle, or free-floating. Arrangement schematic drawn for these notes from the Rastelli table in this section (TSRA ch. 94)."
+ },
+ {
+  "fig": "d6_avsd_patch",
+  "slug": "g9",
+  "anchor": "Possibly better outcomes; may accentuate gooseneck and LVOTO if VSD large",
+  "caption": "Complete AVSD repair compared in a coronal cut through the crest: two-patch, traditional one-patch and modified (Australian) one-patch, with sutures on the RV side of the crest away from the His bundle. Schematic drawn for these notes from the technique table in this section (TSRA ch. 94) and the single-patch steps (Crawford 2004)."
+ },
+ {
+  "fig": "d6_avsd_cs",
+  "slug": "g9",
+  "anchor": "Conduction: run the patch inferior to and around the coronary sinus",
+  "caption": "Primum defect from the right atrium: the patch suture line taken around the coronary sinus (sinus drains to the LA) or in front of it with very shallow bites near the inferiorly displaced AV node. Arrangement schematic drawn for these notes from this section (TSRA ch. 94) and Crawford 2004."
+ },
+ {
+  "fig": "d6_cor_triatriatum",
+  "slug": "g3",
+  "anchor": "Fenestrated fibromuscular membrane divides the LA into proximal (pulmonary veins) and distal chambers;",
+  "caption": "Cor triatriatum sinister: membrane dividing the LA into a pulmonary venous chamber and a distal chamber with the appendage and mitral valve, with presentation, adult points and repair. Arrangement schematic drawn for these notes from this section (2025 ACC/AHA ACHD guideline) and TSRA ch. 92 (Congenital 9)."
+ },
+ {
+  "fig": "d6_papvc_repairs",
+  "slug": "g12",
+  "anchor": "divide right SVC, systemic return via bridging vein to left SVC and coronary sinus",
+  "caption": "Right PAPVC repairs side by side (single patch, two-patch, Warden, modified Warden with ringed PTFE graft), with the Mayo selection algorithm and results. Arrangement schematic drawn for these notes from the technique table, algorithm and results in this section (Said 2012); no published figure copied."
+ },
+ {
+  "fig": "d6_tapvc_types",
+  "slug": "g12",
+  "anchor": "Important obstructed supracardiac subset: vertical vein passes between left PA and left main bronchus.",
+  "caption": "TAPVC types (supracardiac, cardiac, infracardiac, mixed) with frequencies, the usual obstruction sites and the repair for each. Arrangement schematic drawn for these notes from the classification and repair tables in this section (TSRA ch. 100)."
+ },
+ {
+  "fig": "d6_glenn_hemifontan",
+  "slug": "g12",
+  "anchor": "PTFE patch in RA near cavoatrial junction keeps SVC flow out of the atrium",
+  "caption": "Stage II: bidirectional Glenn (SVC divided, cephalic end to RPA, azygos tied) against hemi-Fontan (RA-SVC opened onto the PAs, PTFE dam, anterior PA patch), with timing and aftercare. Arrangement schematic drawn for these notes from this section (TSRA ch. 105 and 107) and the Mussa 2024 slide notes."
+ },
+ {
+  "fig": "d6_fontan_types",
+  "slug": "g12",
+  "anchor": "Reduces early pleural effusions and ascites; most close spontaneously.",
+  "caption": "Atriopulmonary (Fontan's first), lateral tunnel and extracardiac conduit Fontan with their fenestrations, timing, advantages and eligibility criteria. Arrangement schematic drawn for these notes from this section and the tricuspid atresia section (TSRA ch. 105 and 107), Mussa 2024 and Bianco 2026."
+ },
+ {
+  "fig": "d6_norwood",
+  "slug": "g8",
+  "anchor": "RV-PA modification: better survival, postoperative stability and less interstage mortality",
+  "caption": "Norwood stage I with a modified BT shunt against an RV-PA (Sano) conduit, with the pooled comparison and SVR trial result. Arrangement schematic drawn for these notes from Table 2 in this section (Yuan 2009), the shunt table (TSRA ch. 89), TSRA ch. 106 and the 2025 ACC/AHA description of the Norwood."
+ },
+ {
+  "fig": "d6_hybrid",
+  "slug": "g8",
+  "anchor": "Survival advantage only to 30 days; no difference at 1 year",
+  "caption": "Hybrid stage I for HLHS: bilateral branch PA bands, ductal stent and atrial septostomy or stent without bypass, with high-risk indications, next step and drawbacks. Arrangement schematic drawn for these notes from this section (TSRA ch. 90), TSRA ch. 106 and the reversed BT note (Congenital 8)."
+ },
+ {
+  "fig": "d6_ebstein_anatomy",
+  "slug": "g11",
+  "anchor": "AV node and conduction system are in their normal positions.",
+  "caption": "Ebstein anomaly: apically displaced septal leaflet, atrialised RV, sail-like anterior leaflet, dilated true annulus and ASD, with the five anatomical features. Arrangement schematic drawn for these notes from this section (TSRA ch. 101), with the pre-excitation figure from the Atlas audit section."
+ },
+ {
+  "fig": "d6_cone",
+  "slug": "g11",
+  "anchor": "fashion a cone with 360 degrees of leaflet tissue attached at the true annulus",
+  "caption": "Da Silva cone reconstruction in three steps seen from the atrium (delaminate, relieve RVOT obstruction, 360-degree cone at the true annulus), with other repair components and alternatives. Arrangement schematic drawn for these notes from this section (TSRA ch. 101)."
+ }
+]

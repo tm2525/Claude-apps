@@ -1,0 +1,92 @@
+[
+ {
+  "fig": "d3_avr_setup",
+  "slug": "c4",
+  "anchor": "Aortic cannula at the proximal arch; two-stage venous cannula",
+  "caption": "Aortic valve replacement by sternotomy: cannulation, vent, cardioplegia, cross-clamp and aortotomy, with the operative steps. Arrangement schematic drawn for these notes from the operative steps in this section (TSRA ch. 55)"
+ },
+ {
+  "fig": "d3_avr_danger",
+  "slug": "c4",
+  "anchor": "The anterior mitral leaflet lies below the left to non-coronary commissure",
+  "caption": "Seating an aortic prosthesis: the anterior mitral leaflet below the left to non-coronary commissure, conduction tissue below the non-coronary to right commissure, and a pledgeted mattress suture seating the valve supra-annular. Schematic drawn for these notes from this section (TSRA ch. 55)"
+ },
+ {
+  "fig": "d3_avr_sizing",
+  "slug": "c4",
+  "anchor": "Small annulus: surgical sizer 21 mm or less, or CT annulus area",
+  "caption": "Sizing the annulus, the indexed orifice area thresholds for mismatch, and the gain from each root enlargement. Drawn for these notes from the course table in this section and TSRA ch. 55"
+ },
+ {
+  "fig": "d3_root_unrolled",
+  "slug": "c4",
+  "anchor": "Contemporary series report no added mortality from posterior enlargement",
+  "caption": "Root enlargement with the root opened flat: how far each incision (Nicks, Manouguian, Y-incision, Konno-Rastan) goes into the curtain, mitral leaflet or septum. Arrangement schematic drawn for these notes from the table in this section and TSRA ch. 55; complements the view from above in the evidence notes"
+ },
+ {
+  "fig": "d3_tavi_access",
+  "slug": "c20",
+  "anchor": "Alternatives: transcarotid, transaxillary, transsubclavian. Transapical has fallen out of favour",
+  "caption": "TAVI access routes and the femoral checks on CT. Arrangement schematic drawn for these notes from this section (TSRA ch. 58), TSRA ch. 55 and the ESC/EACTS 2025 section below"
+ },
+ {
+  "fig": "d3_tavi_steps",
+  "slug": "c20",
+  "anchor": "After deployment: aortography and TEE for paravalvular leak and AR.",
+  "caption": "Transfemoral TAVI: the three groin lines and the sequence from heparin to post-deployment checks. Drawn for these notes from the procedure steps in this section (TSRA ch. 58) and TSRA ch. 55"
+ },
+ {
+  "fig": "d3_tavi_valves",
+  "slug": "c20",
+  "anchor": "Supra-annular: better gradients, less severe PPM. Intra-annular",
+  "caption": "Balloon-expandable intra-annular against self-expanding supra-annular valves: frame position, coronary height, sizing, trial differences and when to undersize. Arrangement schematic drawn for these notes from this section (TSRA ch. 58) and the SMART summary below"
+ },
+ {
+  "fig": "d3_tavi_complications",
+  "slug": "c20",
+  "anchor": "Keep wire across the injury for balloon control and angiography",
+  "caption": "TAVI complications by site, with their management. Arrangement schematic drawn for these notes from the complications table in this section (TSRA ch. 58)"
+ },
+ {
+  "fig": "d3_viv_hazards",
+  "slug": "c20",
+  "anchor": "Extra coronary occlusion risks: high supra-annular position of the old valve",
+  "caption": "Valve-in-valve: the old valve's inner diameter as the annulus, coronary obstruction by the displaced leaflet, and sinus sequestration at the sinotubular junction. Arrangement schematic drawn for these notes from this section (TSRA ch. 58), the ESC/EACTS 2025 lifetime management notes below and TSRA ch. 57"
+ },
+ {
+  "fig": "d3_teer",
+  "slug": "c20",
+  "anchor": "Cloth-covered cobalt-chromium clip joining anterior and posterior leaflets",
+  "caption": "Mitral TEER: transseptal route, the double orifice, ideal anatomy and contraindications. Arrangement schematic drawn for these notes from this section (TSRA ch. 63) and the ESC/EACTS 2025 Table 7 criteria below; the route is the one the text gives for PASCAL"
+ },
+ {
+  "fig": "d3_mics_avr",
+  "slug": "c20",
+  "anchor": "Thoracotomy: less postoperative AF and fewer wound infections",
+  "caption": "Minimally invasive AVR: upper hemi-sternotomy and right anterior thoracotomy, with cannulation, contraindications and outcomes. Arrangement schematic drawn for these notes from this section (TSRA ch. 68)"
+ },
+ {
+  "fig": "d3_tviv_or_redo",
+  "slug": "c11",
+  "anchor": "SAVR vs TViV: similar major morbidity and mortality",
+  "caption": "Failed aortic bioprosthesis: when to choose redo SAVR and when valve-in-valve. Drawn for these notes from this section (TSRA ch. 57) and the ESC/EACTS 2025 and TSRA ch. 58 notes in Cardiac 20"
+ },
+ {
+  "fig": "d3_redo_mitral_routes",
+  "slug": "c11",
+  "anchor": "When the right chest is unsuitable (radiation, pleurodesis)",
+  "caption": "Reoperative mitral surgery: redo sternotomy, right thoracotomy, mini-thoracotomy, left thoracotomy and transcatheter routes. Arrangement schematic drawn for these notes from this section (TSRA ch. 62); incision levels are not given in the source"
+ },
+ {
+  "fig": "d3_mv_sam_predictors",
+  "slug": "c1",
+  "anchor": "Bring posterior leaflet height under 15 mm (sliding or folding plasty",
+  "caption": "Where the predictors of systolic anterior motion after repair are measured on the pre-bypass TOE, with prevention and rescue. Arrangement schematic drawn for these notes from the predictor rows and tables in this tab"
+ },
+ {
+  "fig": "d3_mv_tethering",
+  "slug": "c1",
+  "anchor": "Isolated undersized annuloplasty: high recurrence in an RCT; limited reverse remodelling",
+  "caption": "Ventricular secondary MR: coaptation depth, tenting area, posterior leaflet angle and LV diameter that predict failure of a restrictive ring, and the CTSN result. Arrangement schematic drawn for these notes from the thresholds and trial tables in this tab"
+ }
+]

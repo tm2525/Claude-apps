@@ -1,0 +1,92 @@
+[
+ {
+  "fig": "d8_mediastinoscopy_path",
+  "slug": "t12",
+  "anchor": "Neck extended. 3 cm incision 2 cm above the notch",
+  "caption": "Cervical mediastinoscopy in side view: incision above the notch, the pretracheal tunnel behind the great vessels to the carina, and the stations reached. Schematic drawn for these notes from the operative steps in this section and TSRA ch. 5; arrangement schematic, not to scale"
+ },
+ {
+  "fig": "d8_mediastinoscopy_hazards",
+  "slug": "t5",
+  "anchor": "Sensitivity 81%, specificity 100%. Major bleeding in 0.1 to 0.6%",
+  "caption": "Where mediastinoscopy complications arise: azygos at 4R, right pulmonary and bronchial arteries and oesophagus at 7, left recurrent nerve at 4L. Schematic drawn for these notes from TSRA ch. 42 and ch. 5; arrangement schematic"
+ },
+ {
+  "fig": "d8_endosonography_reach",
+  "slug": "t1",
+  "anchor": "EUS complements EBUS and mediastinoscopy because 8 and 9 are not reachable by either",
+  "caption": "Stations reached by EBUS, by EUS, by both and by neither, on a front view of the airway with the oesophagus behind, with the 4R/10R and 4L/10L boundaries. Drawn for these notes from the ESTS 2014 guideline as summarised in this section; TSRA ch. 5 lists EUS as 2, 4, 7, 8, 9. Arrangement schematic"
+ },
+ {
+  "fig": "d8_station56_routes",
+  "slug": "t1",
+  "anchor": "NPV 0.89-0.97 in experienced centres, via the same incision",
+  "caption": "Three routes to stations 5 and 6: left anterior mediastinotomy, left VATS and extended cervical mediastinoscopy, with the internal mammary artery and phrenic nerve at risk. Drawn for these notes from ESTS 2014 and TSRA ch. 5 and 42; arrangement schematic (port sites and the extended mediastinoscopy track are not specified in the sources)"
+ },
+ {
+  "fig": "d8_compartments_axial",
+  "slug": "t5",
+  "anchor": "Heart, great vessels, trachea, oesophagus, vagus and phrenic nerves",
+  "caption": "The three-compartment model on a cross-section: anterior, middle (visceral) and posterior (paravertebral), with their boundaries and contents. Schematic drawn for these notes from TSRA ch. 42 and 43; arrangement schematic, not one CT level"
+ },
+ {
+  "fig": "d8_thymic_nodes",
+  "slug": "t5",
+  "anchor": "ITMIG nodal map: anterior region (N1) = prevascular, para-aortic",
+  "caption": "ITMIG nodal regions for thymic tumours: the anterior (perithymic, N1) and deep (N2) regions, with the ESMO nodal recommendations for thymoma and thymic carcinoma. Drawn for these notes from the ESMO 2015 guideline as summarised in this section; arrangement schematic"
+ },
+ {
+  "fig": "d8_thymectomy_extent",
+  "slug": "t5",
+  "anchor": "Aim: all thymic tissue and the anterior mediastinal fat from phrenic to phrenic",
+  "caption": "The extent of a complete thymectomy (phrenic to phrenic, thyroid to diaphragm, both upper poles) and the sites of ectopic thymus. Schematic drawn for these notes from the operation described in this section; arrangement schematic"
+ },
+ {
+  "fig": "d8_thymectomy_approaches",
+  "slug": "t5",
+  "anchor": "Minimally invasive options: transcervical, extended transcervical, VATS, robotic",
+  "caption": "Thymectomy approaches marked on the chest (transcervical, sternotomy, subxiphoid, VATS or robotic, hemi-clamshell) with the ESMO stage rule. Drawn for these notes from ESMO 2015 and TSRA ch. 42 as summarised in this tab; port positions are an arrangement schematic"
+ },
+ {
+  "fig": "d8_inlet_approaches",
+  "slug": "t5",
+  "anchor": "Anterior Pancoast tumours, large lateral thymomas",
+  "caption": "Incisions for the Dartevelle anterior cervicothoracic, Masaoka trans-sternal, hemi-clamshell and clamshell approaches, with their uses. Schematic drawn for these notes from the descriptions in TSRA ch. 42; arrangement schematic, drawn on the left for consistency"
+ },
+ {
+  "fig": "d8_pancoast_inlet",
+  "slug": "t1",
+  "anchor": "Brachial plexus involvement above T1, vertebral body over half involved",
+  "caption": "Thoracic inlet compartments and their contents, which superior sulcus approach suits which, what may be resected, and the T1 against C8 root rule. Drawn for these notes from TSRA ch. 9 and this section; arrangement schematic"
+ },
+ {
+  "fig": "d8_tracheal_releases",
+  "slug": "t12",
+  "anchor": "Right hilar release by opening the pericardium",
+  "caption": "The five release manoeuvres in order, placed on the airway, with the left main bronchus reimplantation beyond them. Schematic drawn for these notes from TSRA ch. 41; the U-shaped pericardial incision follows the FRCS Atlas draft in this tab (not checked). Arrangement schematic"
+ },
+ {
+  "fig": "d8_tracheal_resection_steps",
+  "slug": "t12",
+  "anchor": "Extubate in theatre with the neck flexed (chin-to-sternum stitch)",
+  "caption": "Tracheal resection in four steps: limited circumferential dissection, distal division with cross-field ventilation, resection off the oesophagus, and end-to-end anastomosis with strap muscle cover; plus when to delay and how to manage glottic oedema. Schematic drawn for these notes from the operative principles in TSRA ch. 40 and 41"
+ },
+ {
+  "fig": "d8_tracheostomy_injuries",
+  "slug": "t12",
+  "anchor": "Rising secretions; gastric distension on the ventilator",
+  "caption": "Where each post-tracheostomy injury arises along the tube: stomal stricture, malacia, cuff stenosis, tracheo-innominate and tracheo-oesophageal fistula. Schematic drawn for these notes from TSRA ch. 40; arrangement schematic"
+ },
+ {
+  "fig": "d8_fistula_management",
+  "slug": "t12",
+  "anchor": "Then a single-stage repair: tracheal resection, oesophageal closure and a muscle flap",
+  "caption": "Tracheo-innominate bleeding managed by cuff, finger, tube and theatre, with a sketch of digital compression; the staged plan for a benign tracheo-oesophageal fistula; and the malignant fistula rule. Drawn for these notes from TSRA ch. 40 and 41"
+ },
+ {
+  "fig": "d8_airway_stents",
+  "slug": "t12",
+  "anchor": "Indications: extrinsic compression, inoperable malignant obstruction, benign stricture",
+  "caption": "Silicone, self-expanding metal and hybrid airway stents with their advantages and drawbacks, and the sizing rules. Drawn for these notes from TSRA ch. 3 and Tandon 2020 as given in this tab"
+ }
+]
