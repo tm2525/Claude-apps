@@ -833,7 +833,7 @@ An audit agent rated all 620 syllabus lines (syllabus map parts 1 to 6, critical
 | Brain stem death, donor management, endomyocardial biopsy, heart listing, UK allocation | Filled (ISHLT 2024 and 2022 classes not read) | Cardiac 15 |
 | Lung transplant selection, UK allocation, implantation, PGD, CLAD, EVLP | Filled | Thoracic 14 |
 | Temporary circulatory support 2025, shock and ECPR trials, SCAI stages | Filled | Cardiac 15 |
-| ESC 2026 heart failure guideline | Headline changes only (full text not accessible) | Cardiac 18 |
+| ESC 2026 heart failure guideline | Headline changes only (full text not accessible) (corrected 24 November 2026: full text read; graded surgical recommendations in Cardiac 18, 15, 5, 7, 1 and 2) | Cardiac 18 |
 | Montgomery, capacity, safeguarding, candour, GMP 2024, NOTSS, NatSSIPs 2, research governance, Caldicott, statistics | Filled (UK GDPR, FMLM not found) | This page |
 | HOCM and myectomy (ESC 2023, AHA/ACC 2024) | Filled | Cardiac 18, Cardiac 4 |
 | Pericardium (ESC 2025), pericardiocentesis, window, substitutes, congenital absence | Filled | Cardiac 16, Congenital 2 |
@@ -845,7 +845,7 @@ An audit agent rated all 620 syllabus lines (syllabus map parts 1 to 6, critical
 | Conduits (2024 consensus), antithrombotics after CABG (2025), radial harvest, RADIAL/RAPCO, rehabilitation | Filled | Cardiac 5 |
 | Oesophagus (NICE NG83, ESOPEC, CheckMate 577, SANO, RAMIE) | Filled (AATS 2025 consensus abstract only) | Thoracic 18 |
 | Mesothelioma (BTS 2018, ESMO 2021, CheckMate 743, KEYNOTE-483, NICE TA818) | Filled | Thoracic 11 |
-| Lung cancer currency (NICE NG122 2026 check, palliative care, multiple primaries) | Filled (ESMO 2025 recommendations not accessible) | Thoracic 1, Thoracic 6 |
+| Lung cancer currency (NICE NG122 2026 check, palliative care, multiple primaries) | Filled (ESMO 2025 recommendations not accessible) (corrected 24 November 2026 from the full text: ESMO 2025 since read in full and added to Thoracic 1, 2, 3, 4, 6, 9 and 16) | Thoracic 1, Thoracic 6 |
 | Trauma (blast, NICE NG39/NG40, rib fixation, blunt aortic injury 2026), pneumothorax 2024 guideline | Filled | Thoracic 15, Thoracic 11 |
 | Critical care (sternal infection, mediastinitis, AKI, GI complications, feeding, lines, VTE) | Filled | Cardiac 17, Thoracic 7 |
 | Thoracic basics (metabolic response, wound healing, local anaesthetics, SSI, V/Q, rigid bronchoscopy, pleural physiology, retrosternal goitre, blocks) | Filled | Thoracic 17, 12, 11, 19 |
@@ -854,6 +854,6 @@ An audit agent rated all 620 syllabus lines (syllabus map parts 1 to 6, critical
 | Congenital (risk adjustment, NCHDA, PA-IVS, venous anomalies, sinus of Valsalva aneurysm, transplant, paediatric arrest) | Filled (AATS 2025 PA-IVS classes not read) | Congenital 1, 2, 5, 11, 12, 13 |
 
 ### Still open
-- Full texts not accessible, so their graded recommendations are missing: ESMO 2025 early NSCLC, ESC 2026 heart failure, AATS 2025 oesophageal and PA-IVS consensus documents, ISHLT 2022 recipient and 2024 candidate guidelines, EACTS 2025 protected cardiac surgery statement. Attaching the PDFs would let these be read in full.
+- Full texts not accessible, so their graded recommendations are missing: ESMO 2025 early NSCLC (corrected 24 November 2026: since read in full), ESC 2026 heart failure (corrected 24 November 2026: since read in full), AATS 2025 oesophageal and PA-IVS consensus documents, ISHLT 2022 recipient and 2024 candidate guidelines, EACTS 2025 protected cardiac surgery statement (corrected 24 November 2026: since read in full; it has no classes or levels, see Cardiac 15). Attaching the PDFs would let these be read in full.
 - Not found in a primary source: UK GDPR, FMLM standards, OCEBM levels 3 and 4, repeat chest wall surgery, step-by-step epicardial lead technique beyond two small series, myectomy landmarks, BACPR phase definitions.
 - ROMA (multiple against single arterial grafting) has not reported.

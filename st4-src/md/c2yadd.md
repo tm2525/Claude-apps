@@ -50,3 +50,18 @@ The benefit held whether or not patients had a recent heart failure admission, c
 Other details: crossover from medical therapy was allowed only after an adjudicated heart failure admission needing IV diuretics; centres had done a mean of 176 tricuspid repairs before the trial; devices were PASCAL 66% and TriClip 33%.
 
 Viva point: the trial supports intervening before TR becomes torrential. Refer earlier, both for transcatheter repair and for surgery, whose mortality is driven by late referral.
+
+## ESC 2026 heart failure guideline (full text): tricuspid regurgitation in heart failure
+
+Added 24 November 2026 from Køber L, Adamo M, et al. 2026 ESC Guidelines for the management of heart failure. Eur Heart J 2026;47:5346–5457; doi:10.1093/eurheartj/ehag100. Read in full from the published PDF (section 9.3.4, journal page 5409; Recommendation Table 17 and Table 19 checked on the PDF pages).
+
+### What the heart failure guideline says
+- **It makes no graded recommendation on TR.** Recommendation Table 17 covers aortic stenosis and secondary MR only; for TR indications it refers to the 2025 ESC/EACTS valve guideline (in this tab), which remains the source for surgery and transcatheter treatment.
+- Severe TR is present in 9% to 20% of patients with HFpEF and with HFrEF.
+- Classification used: primary TR, **CIED-related** TR and secondary TR; secondary is the commonest. Medical therapy aimed at TR is limited.
+- Transcatheter devices are an alternative to surgery in selected patients. Three RCTs of transcatheter treatment for severe symptomatic TR showed better quality of life than conservative treatment but **no reduction in death or HF admission at 1 year**. A possible reduction in HF admission was later reported with tricuspid TEER, but with a high crossover rate after 1 year. All were unblinded and none focused on HFpEF or HFrEF populations.
+- Severe tricuspid disease is an exclusion for mitral TEER in HFrEF (Table 19), as is severe RV dysfunction.
+- Gap named by the Task Force: further RCTs of transcatheter valve intervention in HF with TR.
+
+### For the viva
+"The 2026 ESC heart failure guideline does not grade TR treatment; it defers to the 2025 ESC/EACTS valve guideline. It notes that transcatheter trials improved quality of life but not death or HF admission at 1 year." The TRIC-I-HF result summarised at the top of this tab is not discussed in the guideline text.

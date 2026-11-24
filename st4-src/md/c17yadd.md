@@ -656,3 +656,129 @@ Added 24 November 2026 from three best evidence topics in Interactive CardioVasc
 - The 12-hour figure is the number to give for "when do you take a bleeding patient back?": return to theatre is itself associated with worse outcomes, and a delayed return with the worst. Pair it with the drain-loss thresholds already in this tab.
 - Emergency re-sternotomy: the infection risk is about 5%. Extra antibiotics and iodine washout are common practice but rest only on uncontrolled series; the BET's suggestion is full aseptic technique.
 - Sternal closure: the wire BET is about wire configuration; the rigid plate trial already in this tab is about wires versus plates. In the sheep model in the BET, peristernal wires resisted cutting through better than trans-sternal wires.
+
+## Decompensated heart failure and cardiogenic shock: ESC 2026, part 1 (definitions, diagnosis, phases)
+
+Added 24 November 2026 from Køber L, Adamo M, Ruwald A-C, Tomasoni D, et al. 2026 ESC Guidelines for the management of heart failure (endorsed by EACTS). Eur Heart J 2026;47:5346–5457, doi:10.1093/eurheartj/ehag100. Read in full from the published PDF, section 7 (pages 5387 to 5397), with Tables 12 and 13, Figures 11 to 15 and Recommendation Tables 8 to 10 checked against the page images. These are medical, not post-cardiotomy, recommendations; post-cardiotomy shock and temporary support are in Cardiac 15 (EACTS/STS/AATS 2025), where the ESC 2026 temporary MCS table is also given in full.
+
+### Terms
+- **Decompensated heart failure (DHF) replaces "acute heart failure".** It is acute or gradual onset of symptoms or signs severe enough to need urgent attention and new or more treatment: an unplanned admission, emergency visit or unplanned clinic visit. It may be de novo or a worsening of known heart failure. "Worsening heart failure" is the deterioration; DHF is defined by the need to change treatment.
+- Mortality: 3 to 10% in hospital, 20 to 30% at 1 year, over 50% at 5 years. Readmission 35 to 44% within a year. De novo DHF has higher in-hospital but lower later mortality than decompensated chronic failure.
+
+### Diagnosis
+- At first contact: look for congestion and hypoperfusion; blood pressure, respiratory rate, oximetry, temperature and ECG early; **lactate** promptly if unstable and hypoperfusion is suspected.
+- **Natriuretic peptide rule-out for DHF (not age-adjusted):** NT-proBNP under 300 pg/mL, BNP under 100 (the unit is printed as ng/mL, presumably meaning pg/mL), MR-proANP under 120 pg/mL. Age-related "likely" thresholds: NT-proBNP over 450 (under 50 years), over 900 (50 to 74), over 1800 (over 74). **NT-proBNP over 5000 pg/mL = very high risk; admit.**
+- Echo for high NT-proBNP or high suspicion. Lung ultrasound for pulmonary congestion and serial checks where skills exist.
+- If cardiogenic shock or acute pulmonary oedema is present, treat first (Figure 11).
+
+### Four presentations (overlap is common)
+| Presentation | Main features | Main treatment |
+|---|---|---|
+| Decompensated left-sided | Gradual accumulation of congestion; any LVEF; may progress to RV failure | Diuretics; outpatient or hospital |
+| Decompensated right-sided | High RV and RA pressures, systemic congestion, often TR; can reduce LV filling by interdependence; exclude PE and RV infarction; kidney and liver function track the course; can become refractory shock | Fluid optimisation, diuretics; inotropes, vasopressors, MCS when needed |
+| Acute pulmonary oedema | Respiratory distress (orthopnoea, hypoxaemia with or without hypercapnia, rate over 25/min) from massive pulmonary congestion developing quickly; mainly **redistribution** of fluid rather than overload | Ventilatory support, vasodilators if systolic over 110 mmHg; usually modest diuretic doses |
+| Cardiogenic shock | Critical end-organ hypoperfusion from primary cardiac dysfunction | Inotropes, vasopressors, MCS, diuretics if needed; **Shock Team** |
+
+Profiles (Table 12): left congestion (dyspnoea, orthopnoea, cough, tachypnoea, crackles, S3, effusion, raised peptides); right congestion (oedema, abdominal distension, hepatomegaly, raised JVP, hepatojugular reflux, raised creatinine, bilirubin, ALP and GGT); hypoperfusion (cold sweaty peripheries, pallor, dizziness, confusion, oliguria, narrow pulse pressure, raised lactate, creatinine and transaminases). **Hypoperfusion is not the same as hypotension.**
+
+### Cardiogenic shock: definition and staging
+- SHARC consensus: a cardiac disorder causing clinical and biochemical evidence of sustained tissue hypoperfusion. **No blood pressure cut-off** is set; normotensive shock (hypoperfusion with normal pressure) exists and has a better prognosis than hypotensive shock.
+- Biochemical hypoperfusion: **arterial lactate over 2 mmol/L**, supported by acute kidney or liver injury. Septic, hypovolaemic and mixed shock coexist and must be considered.
+- SCAI stages A to E are adopted (Table 13): A at risk; B beginning or pre-shock (relative hypotension or tachycardia, no hypoperfusion); C classic (hypoperfusion needing inotrope, vasopressor or MCS); D deteriorating despite initial interventions; E extremis (refractory shock or arrest needing several simultaneous interventions, including CPR). The detailed SCAI criteria and mortality by stage are in Cardiac 15.
+
+### Three phases of in-hospital care (Figure 12)
+| Phase | Goals |
+|---|---|
+| 1 Initial | Treat life-threatening conditions; find and treat the cause or trigger; start haemodynamic stabilisation and decongestion. Shock patients may stay here for days |
+| 2 Stabilisation | Consolidate haemodynamics; full decongestion and switch to oral diuretics; start or optimise FMT; identify aetiology and comorbidities |
+| 3 Pre-discharge and early after discharge | Exclude residual congestion; optimise FMT and AMT; consider devices and interventions (GDIT); iron if deficient (AFFIRM-AHF); rehabilitation, education, long-term plan |
+
+- **Acute causes to look for: "CHAMPIT"** (Figure 13): acute **C**oronary syndrome, **H**ypertensive emergency, **A**rrhythmia, **M**echanical cause, **P**ulmonary embolism, **I**nfection or inflammation, **T**amponade.
+- Suspected shock with a possible need for temporary MCS: consult the Shock Team early (I C).
+- Keep or quickly restart FMT; stop it only for clear hypoperfusion or a specific reason. In phase 2, starting MRA, SGLT2 inhibitor or ARNI is feasible and safe; starting the drug classes together is preferred to slow sequential addition (no RCT, so no class). Be more cautious with low eGFR, hypotension or past hyperkalaemia.
+- STRONG-HF showed rapid uptitration with close follow-up after admission is safe and effective (criticised for selection and a weak control arm), hence the recommendation below.
+
+Recommendation Table 8 (pre-discharge and early follow-up):
+
+| Recommendation | Class | Level |
+|---|---|---|
+| Before discharge, check carefully for persistent congestion (clinical, natriuretic peptide, kidney function and electrolytes, imaging) | I | C |
+| Intensive strategy of rapid FMT initiation and uptitration before discharge and at frequent visits in the first 6 weeks | I | B2 |
+
+## Decompensated heart failure and cardiogenic shock: ESC 2026, part 2 (treatment)
+
+Added 24 November 2026 from the 2026 ESC heart failure guideline (Køber, Adamo, et al. Eur Heart J 2026;47:5346–5457, doi:10.1093/eurheartj/ehag100). Read in full from the published PDF, sections 7.5.1 to 7.5.12, Figure 15 and Recommendation Table 9 (pages 5393 to 5397), checked against the page images.
+
+### Recommendation Table 9: immediate and intermediate treatment
+| Recommendation | Class | Level |
+|---|---|---|
+| Oxygen for SpO2 under 90% or PaO2 under 60 mmHg (not routinely: unnecessary oxygen may harm) | I | C |
+| Intubation for persistent, progressive respiratory failure despite oxygen or NIV | I | C |
+| Non-invasive positive pressure ventilation for respiratory distress (rate over 25/min, SpO2 under 90%), started early, to reduce distress and intubation | IIa | B2 |
+| IV loop diuretic for every patient admitted with fluid overload (level A by consensus) | I | A |
+| Short-term IV acetazolamide or oral hydrochlorothiazide added in fluid overload in patients already on loop diuretics. Replaces the 2021 loop-plus-thiazide IIa B for resistant oedema | IIa | B1 |
+| Urinary sodium-guided diuretic therapy in the first days (new) | IIb | B1 |
+| In-hospital SGLT2 inhibitor after initial stabilisation, for QoL, congestion and admissions (new) | I | B1 |
+| IV vasodilator as initial therapy when systolic pressure is over 110 mmHg | IIb | C |
+| Inotrope when systolic pressure is under 90 mmHg with hypoperfusion not responding to standard treatment including a fluid challenge | IIb | C |
+| Vasopressor, preferably noradrenaline, in cardiogenic shock to raise pressure and organ perfusion | IIb | C |
+| Routine opiates, unless severe or intractable pain or anxiety | III | C |
+
+Intubation criteria (footnote): cardiac or respiratory arrest; worsening conscious level; worsening respiratory failure (PaO2 under 60 mmHg, PaCO2 over 50 mmHg, pH under 7.35) despite or intolerant of NIV; persistent haemodynamic instability; need for airway protection. NIV raises intrathoracic pressure and lowers preload: caution in hypotension and right-sided failure.
+
+### Decongestion
+!fig f52_dhf_diuretic | Decongestion in decompensated heart failure: starting dose, response thresholds and escalation (drawn for these notes from ESC 2026 section 7.5.3 and Figure 15)
+
+- Starting dose: furosemide 40 mg IV (or equivalent) if diuretic-naive; twice the usual oral daily dose if already on a loop diuretic; more in CKD. Bolus and infusion are equivalent, and no loop diuretic is better than another (DOSE: high against low dose made no difference to global symptoms).
+- **Adequate response:** spot urinary sodium 70 mmol/L or more at 2 hours, or urine output 100 mL/h or more over the first 6 hours. If inadequate, double the dose or add a non-loop agent. Maximum IV loop dose about furosemide 600 mg a day (up to 1000 mg in severe kidney impairment). If under 3 L after 24 hours and still congested, escalate on day 2.
+- Non-loop options: **acetazolamide 500 mg IV once daily** (ADVOR: more successful decongestion by day 3; may suit more advanced CKD) or **hydrochlorothiazide by eGFR** (25 mg over 50, 50 mg at 20 to 50, 100 mg under 20 mL/min/1.73 m²; CLOROTIC: more weight loss at 72 hours but more kidney dysfunction and hypokalaemia, stopped early). Neither improved hard outcomes.
+- Small transient creatinine rises do not matter if decongestion is achieved. Fluid intake should be less than urine output; restrict fluid in hyponatraemia; sodium intake less than natriuresis.
+- PUSH-AHF and ENACT-HF: urinary sodium guidance increased natriuresis (ENACT-HF also shortened stay); no effect on death or readmission shown.
+- **Ultrafiltration**: may be considered when diuretic escalation fails; its role is uncertain.
+- Ambulatory worsening: 3 to 6 hour IV diuretic sessions in a day unit or at home; subcutaneous formulations; oral metolazone 2.5 to 5 mg for diuretic resistance or eGFR under 30, with close monitoring. Frequent attenders need assessment for advanced therapies.
+
+### Other drugs
+- SGLT2 inhibitor in hospital: EMPULSE (empagliflozin 10 mg, more clinical benefit at 90 days); SOLOIST-WHF (sotagliflozin, diabetes). Helps decongestion as well as prognosis.
+- **Vasodilators** (IV nitroglycerine or nitroprusside): most useful in pulmonary oedema with high pressure and little fluid gain; no hard-end-point benefit, but a meta-analysis showed fewer intubations. Watch for hypotension.
+- **Inotropes:** not routine (arrhythmia, ischaemia). No inotrope has a proven mortality benefit in shock (Cochrane); milrinone and dobutamine were equivalent in an RCT; no RCT of levosimendan in shock. Levosimendan or a PDE-III inhibitor may be preferred to dobutamine in patients on beta-blockers.
+- **Vasopressors:** noradrenaline first. Dopamine against noradrenaline in an RCT of unspecified shock: more arrhythmias with dopamine and lower mortality with noradrenaline in the cardiogenic subgroup (interaction not significant). Adrenaline against noradrenaline in infarct-related shock: similar cardiac index but more refractory shock with adrenaline (trial stopped early). Vasopressin is unstudied in cardiogenic shock; the target mean pressure is not defined.
+- **Thromboprophylaxis:** no RCT in DHF, so no recommendation; prophylaxis is generally indicated with immobilisation or other risk factors.
+
+### Temporary MCS in shock (summary; full table in Cardiac 15)
+Shock Team I C; microaxial flow pump in selected STEMI shock IIa B1; any temporary MCS in unselected infarct-related shock III B1; IABP in unselected shock III B1; post-MI mechanical complications as a bridge IIa C; heart-failure-related instability as a bridge IIa C.
+
+## Temporary support on the ICU after protected cardiac surgery: EACTS 2025 consensus (haemodynamics, anticoagulation, weaning)
+
+Added 24 November 2026 from Lorusso R, Salazar L, Nersesian G, Milojevic M, Schmack B, Engelman DT, et al. EACTS Expert Consensus Document on protected cardiac surgery: pre-emptive use of temporary mechanical circulatory support in adult cardiac surgery patients at high risk for perioperative low cardiac output syndrome. Eur J Cardiothorac Surg 2026;68(3):ezaf296 (online 9 October 2025); doi:10.1093/ejcts/ezaf296. Read in full from the published PDF (sections 8 and 9 for this part). The consensus gives no classes or levels; the statements, types, device tables and the list of triggers for moving to support are in Cardiac 15 (Circulatory support), "Protected cardiac surgery" parts 1 to 3.
+
+### Haemodynamic management around the operation (section 8)
+- Goals: enough flow, cardiac index, cardiac power and MAP, without fluid overload, venous congestion or prolonged high-dose drugs.
+- **Vasoplegia** (low SVR, high cardiac index): noradrenaline or vasopressin first line; for refractory cases, off-label angiotensin II, methylene blue or hydroxocobalamin. Avoid prolonged vasopressors (ischaemia).
+- **Low output**: vasoconstriction worsens ejection; prefer inodilators (dobutamine, milrinone). Levosimendan, milrinone or dobutamine plus diuretics are named for the decompensated patient with gas-exchange problems. A high vasoactive-inotropic score tracks morbidity and mortality.
+- **Fluids**: aim for euvolaemia before surgery. Start a negative balance 24 to 36 hours after bypass, once the inflammatory phase settles, using diuretics, colloids or ultrafiltration. Albumin is the preferred colloid; hydroxyethyl starch and gelatin raise coagulopathy and renal risk and are generally not recommended.
+- **Ventilation**: positive pressure lowers LV afterload (helps a weak LV) but raises RV afterload (harms a weak RV). Use inhaled pulmonary vasodilators for RV failure; correct asynchrony, acidosis and atelectasis; plan extubation.
+- **Bleeding**: transfuse by haemodynamics and blood loss; guide factor replacement with aPTT, INR, ACT, platelet count and viscoelastic tests (TEG, ROTEM); after starting extracorporeal support, keep platelets and haemoglobin adequate.
+
+### Running the device on the ICU (section 9)
+| Task | What the consensus says |
+|---|---|
+| Support | Enough output, cardiac power and normal arterial pressure; adjust pump flow, preload and afterload to organ function |
+| Unloading on VA-ECLS | Poor unloading raises LV pressure and congests lungs and abdominal organs. First low-dose inotrope and antihypertensive to restore ejection and aortic valve opening; if that fails, IABP, mAFP or a surgical LV vent. Echo for LV size, aortic valve opening and congestion |
+| RV or biventricular failure | Dual-lumen cannula or RV-mAFP, with inotropes and diuresis |
+| Start anticoagulation | Only once bleeding is controlled, volume is stable and transfusion has stopped |
+| VA-ECLS early target | Low-intensity: ACT 140 to 160 s or aPTT 40 to 50 s |
+| During weaning | Standard intensity: aPTT 50 to 70 s or anti-Xa 0.3 to 0.6 |
+| Alternative to heparin | A direct thrombin inhibitor, where the unit has experience |
+| Thrombus prevention | Keep enough flow and washout through the LV and atrium; change cannulation or add unloading if flow there is poor |
+| Cannulae | Regular imaging for position; secure anchoring (dislodgement can be catastrophic); site care; unit antibiotic prophylaxis; treat infection promptly |
+| Recovery | Enhanced-recovery principles: early extubation, analgesia, activity; mobilisation and "awake" management where safe |
+
+### Weaning and what next (section 9.5)
+- Reduce flow gradually while watching haemodynamics, organ function and echo.
+- Guides: cardiac output, MAP, filling pressures, native gas exchange and SvO2; respiratory, renal and liver function.
+- Echo goals: **LVEF 25 to 30% or more, LVOT VTI 12 cm or more, and no worsening of mitral, tricuspid or aortic regurgitation.**
+- Cannot wean: move promptly, by multidisciplinary decision, to durable MCS, transplant or palliative care.
+
+These are consistent with the graded 2025 EACTS/STS/AATS weaning recommendations in Cardiac 15 (which also give MAP 65 mmHg or more on VIS under 10, and PAPi over 0.9).
+
+Viva line: "Anticoagulate only when the bleeding has stopped: ACT 140 to 160 or aPTT 40 to 50 on VA-ECLS, then aPTT 50 to 70 or anti-Xa 0.3 to 0.6 while weaning. Wean when the EF is 25 to 30% and the VTI is 12 cm without new regurgitation."

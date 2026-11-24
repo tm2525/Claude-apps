@@ -45,3 +45,60 @@ Added 21 November 2026 from Praz F, Borger MA, et al. 2025 ESC/EACTS Guidelines 
 | Bypass surgery in pregnancy | High fetal loss; only for life-threatening maternal conditions | |
 
 The valve guideline's wider pregnancy content (stenotic lesions, anticoagulation of mechanical valves) is in the aortic valve tab.
+
+## ESC 2025 pregnancy guideline, as read through a 2026 commentary: what it adds for aortopathy
+
+Added 24 November 2026 from Arbustini E, Beneventi F, Bozzani A, et al. ESC guidelines 2025 on cardiovascular disease and pregnancy: considerations and future perspectives. Eur Heart J Suppl 2026;28(Suppl 5):v5–v13. doi:10.1093/eurheartjsupp/suag017. Read in full from the published PDF (pages v5 to v13); Table 1 and Figure 1 were checked on the rendered pages. **This is a commentary on the guideline, not the guideline itself** (De Backer J, Haugaa KH, et al. 2025 ESC Guidelines for the management of cardiovascular disease and pregnancy. Eur Heart J 2025;46:4462–4568, endorsed by the European Society of Gynecology; it replaces the 2018 edition). Classes and levels below are given only where the commentary states them. **The commentary does not give the guideline's diameter thresholds for prophylactic aortic surgery before pregnancy, or its delivery-mode thresholds**, so for Marfan, bicuspid, Loeys-Dietz and Turner thresholds keep using the ESC 2024, EACTS/STS 2024, ACC/AHA 2022 and ESC/EACTS 2025 valve tables already in this tab.
+
+### New or changed points for aortic disease
+
+| Point | ESC 2025 pregnancy guideline, as the commentary reports it | Compare with these notes |
+|---|---|---|
+| Vascular Ehlers-Danlos syndrome | The pregnancy recommendation was **upgraded from Class III C (2018) to Class I C** (guideline Table 5, section E). The commentary does not quote the new wording: check it before quoting it in a viva | ESC 2024 aortic guideline: shared decision by vascular status and variant. ACC/AHA 2022 data: maternal mortality 4 to 25%; pregnancy-related death 4.9% in 283 women |
+| Evidence behind the vEDS change | van den Bersselaar et al., BJOG 2025: 121 pregnancies in 43 women with vEDS, with no pregnancy-related deaths, arterial dissections or uterine ruptures | Older series in this tab are less reassuring; the new figure comes from a retrospective multicentre cohort |
+| Ergometrine | **Not recommended after delivery in women with aortopathy (III C)**: one of only nine class III recommendations in the guideline | Not previously in these notes |
+| Counselling | Aortopathies, congenital heart disease and pulmonary arterial hypertension need specialised pre-pregnancy or pregnancy counselling by a multidisciplinary team or Pregnancy Heart Team (I C) | Matches ESC 2024 Table 63 (pre-conception evaluation in a pregnancy heart and vessel team, I C) |
+| Imaging | Ultrasound and MRI preferred. Avoid ionising imaging where possible; keep it "as low as reasonably achievable", ideally foetal exposure **under 50 mGy (I C)**. In suspected aortic dissection, imaging **must not be withheld** | Adds the dose figure and class to the existing advice to prefer MRI without gadolinium |
+| Risk scoring | "High-risk aortopathy" is one of the four lesion-specific CARPREG II predictors; risk is now classed by mWHO 2.0 (see Congenital 3 for the classes) | |
+| How common | Aortopathies were 3.6% of pregnancies in the ESC ROPAC registry (commentary Figure 1) | |
+
+### How the aortopathy recommendations are graded
+
+Table 1 of the commentary counts the guideline's recommendations by class and level. For section 8, aortopathies:
+
+| Subsection | I C | IIa C | IIb B | IIb C | III C |
+|---|---|---|---|---|---|
+| Counselling | 1 | 3 | 1 | 1 | |
+| Imaging | 5 | | | | |
+| Medical treatment | 3 | | | | |
+| Intervention or surgery | 2 | | | | |
+| Specific conditions | 5 | 4 | | 3 | |
+| Delivery | 2 | 3 | | 1 | 1 |
+| Cardiac surgery during pregnancy | | 1 | | 1 | |
+
+- 37 aortopathy recommendations in all. None is level A, and only one (in counselling) is level B: almost all of this guidance is expert consensus.
+- The single III C sits in the delivery row; the commentary's list of class III recommendations names ergometrine after delivery for aortopathy, so that is very likely the one (inferred from the table layout, not stated row by row).
+- The two recommendations on cardiac surgery during pregnancy are IIa C and IIb C; their wording is not given.
+
+### Emergencies the guideline cannot cover
+
+The commentary lists rare, time-critical events for which evidence is too thin for any recommendation. Those relevant to aortic and thoracic surgeons:
+
+- uterine and arterial rupture in **undiagnosed** vascular Ehlers-Danlos syndrome;
+- failed spinal anaesthesia for caesarean section in women with unrecognised **dural ectasia** (Marfan, Loeys-Dietz);
+- pneumothorax during pregnancy or labour;
+- spontaneous coronary artery dissection in previously healthy women; amniotic fluid embolism; postpartum haemorrhage with obstetric coagulopathy; intracranial haemorrhage.
+
+When a woman with an undiagnosed genetic cardiovascular disease develops complications, the commentary advises: urgent Pregnancy Heart Team involvement (on site or remote), full risk assessment, monitoring (ECG, imaging, biomarkers), medication review, an individual plan including early delivery if needed, and transfer to a tertiary centre where feasible.
+
+### Genetics before pregnancy (commentary, section e)
+
+- Most heritable cardiovascular diseases, including the heritable thoracic aortic diseases, are autosomal dominant: counselling covers both maternal and foetal risk, and may include prophylactic intervention before pregnancy.
+- Options: chorionic villus sampling or amniocentesis (foetal loss 0.1 to 0.2%); non-invasive prenatal testing for trisomies 21, 18 and 13; pre-implantation genetic diagnosis during IVF. The guideline recommends single-embryo transfer for women with cardiovascular disease.
+- Pregnancy can unmask an unrecognised genetic aortopathy, even in a woman with earlier uneventful pregnancies.
+
+### Viva use
+
+- "What changed in 2025 for pregnancy in vascular Ehlers-Danlos?" The ESC moved it from III C to I C, on the strength of a 2025 cohort of 121 pregnancies with no maternal deaths, dissections or uterine ruptures. Quote the class change; do not invent the wording.
+- "Any drug to avoid at delivery in Marfan?" Ergometrine (III C, ESC 2025), as well as ARBs and ACE inhibitors during pregnancy (ESC 2024 III B; ESC 2025 III C for ACE inhibitors and ARBs among other drugs).
+- "Would you CT a pregnant woman with suspected dissection?" Yes: imaging must not be withheld; keep the dose as low as reasonably achievable.

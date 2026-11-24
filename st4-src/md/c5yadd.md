@@ -566,3 +566,72 @@ Viva use: age guides the second arterial conduit (BITA for the young, radial for
 ### ESC/EACTS 2026 consensus on free-wall rupture, pseudoaneurysm and papillary muscle rupture
 
 Published in Eur J Cardiothorac Surg 2026;68(5):ezag157 (Lorusso and 34 co-authors from ESC associations and EACTS). From the summary only: these complications now occur in under 1% of infarcts because of prompt reperfusion but remain lethal; transcatheter options now exist for high-risk patients; the document stresses the risk of recurrence, the unresolved role of concomitant revascularisation, the place of mechanical circulatory support, and Heart Team management including palliative care. The individual recommendations could not be read here; they should be added when the full text is opened.
+
+## ESC 2026 heart failure guideline (full text): coronary disease and revascularisation in heart failure
+
+Added 24 November 2026 from Køber L, Adamo M, et al. 2026 ESC Guidelines for the management of heart failure. Eur Heart J 2026;47:5346–5457; doi:10.1093/eurheartj/ehag100. Read in full from the published PDF (section 9.2, journal pages 5405 to 5407, with Recommendation Table 16 and Figure 19 checked on the PDF pages; 2021 classes from the guideline's Table 6, page 5360; one line from section 5.3.2). The STICH and REVIVED-BCIS2 trial table and the 2024 chronic coronary syndromes guideline are already in this tab; this section adds where the heart failure guideline sits and why it differs.
+
+### Recommendations (Recommendation Table 16)
+| Recommendation | Class | Level |
+|---|---|---|
+| Revascularisation for symptoms (HFrEF or HFpEF): obstructive CAD with angina persisting despite FMT and antianginal drugs | I | C |
+| Revascularisation for outcome (HFrEF): if revascularisation is planned after Heart Team assessment, **CABG should be considered as the preferred strategy** with LVEF 35% or less and multivessel CAD suitable for surgery, to improve long-term survival | IIa | B1 |
+
+What changed from 2021 (Table 6 of the guideline): revascularisation for persistent angina was IIa C in HFrEF with chronic coronary syndrome; it is now **I C and applies whatever the LVEF**. The CABG-for-survival recommendation is the one surgeons will be asked about.
+
+### Why IIa here when the 2024 chronic coronary syndromes guideline says I B
+The Task Force names the discrepancy itself. Its reasons:
+1. The populations differ: the CCS guideline mostly addresses patients with coronary disease who have a low LVEF; the HF guideline addresses patients with HFrEF who have coronary disease.
+2. Under the new ESC evidence grading, **STICHES was the only study** that could support the recommendation, and it has limits: mean age 60, few events at 10 years, little modern FMT. One adequately powered RCT gives B1, and the Task Force chose IIa.
+
+So the viva answer: both guidelines prefer CABG for survival in multivessel disease with LVEF 35% or less; the HF guideline grades it IIa B1, the CCS guideline I B.
+
+### The pathway (Figure 19)
+
+!fig f53_cad_hf | Coronary disease in heart failure: HFrEF with multivessel disease and LVEF 35% or less goes to the Heart Team for CABG (IIa); persistent angina despite drugs gets CABG or PCI (I) in either phenotype (drawn for these notes from the 2026 ESC heart failure guideline, Figure 19 and Recommendation Table 16)
+
+- Entry: obstructive CAD and HF in a possible candidate. Frailty, severe or multiple comorbidities and limited life expectancy (where risk outweighs benefit) are excluded first.
+- **FMT before revascularisation** is mandatory (class I), with priority for the beta-blocker in HFrEF.
+- HFrEF, multivessel disease, LVEF 35% or less → Heart Team → CABG (IIa). **PCI or continued medical therapy if the patient is not eligible for CABG** (Figure 19 footnote).
+- Otherwise, angina decides: no angina → Heart Team chooses CABG, PCI or continued medical therapy by surgical risk, comorbidity, anatomy and preference; angina persisting after antianginal uptitration → CABG or PCI (class I).
+- The Heart Team discussion should include an **HF specialist**.
+
+### Supporting text
+- STICH: CABG gave a survival benefit over medical therapy at long-term follow-up. REVIVED-BCIS2: PCI plus medical therapy was neutral. Its patients were about 10 years older, so the two cannot be compared directly.
+- Viability: section 5.3.2 states that evidence that viability testing selects patients for revascularisation "is lacking" (STICH, REVIVED). Surgical ventricular reconstruction and aneurysmectomy are not discussed in the main text.
+- Investigations (section 5): CT coronary angiography in low-to-moderate likelihood; invasive angiography in HFrEF with high likelihood and in angina whatever the LVEF; use both with care if eGFR is under 30.
+- Medical therapy: beta-blockers first line; ivabradine if sinus rate over 70 despite maximum beta-blocker; amlodipine, felodipine, nicorandil and ranolazine relieve symptoms without affecting death; trimetazidine may help LV function; **verapamil and diltiazem are not recommended in HFrEF**; antianginals must not displace FMT.
+- Coronary microvascular dysfunction affects up to 80% of patients with HFpEF.
+
+### Gap named by the Task Force
+RCTs of revascularisation, and of different revascularisation strategies, in HFrEF and HFpEF on current FMT.
+
+## Protected CABG and post-infarct mechanical complications: EACTS 2025 protected cardiac surgery consensus
+
+Added 24 November 2026 from Lorusso R, Salazar L, Nersesian G, Milojevic M, Schmack B, Engelman DT, et al. EACTS Expert Consensus Document on protected cardiac surgery: pre-emptive use of temporary mechanical circulatory support in adult cardiac surgery patients at high risk for perioperative low cardiac output syndrome. Eur J Cardiothorac Surg 2026;68(3):ezaf296 (online 9 October 2025); doi:10.1093/ejcts/ezaf296. Read in full from the published PDF (Consensus Statement Tables 2 to 4, sections 10 to 12). The statements carry no class or level; devices are listed in escalation order, and the team may choose. The full set is in Cardiac 15, "Protected cardiac surgery" parts 1 to 3.
+
+### Coronary surgery
+| Situation | Statement | Devices |
+|---|---|---|
+| Infarct-related cardiogenic shock, scheduled for CABG (before the operation) | Pre-emptive tMCS as a bridge to surgery should be considered | mAFP; VA-ECLS; VA-ECLS + mAFP |
+| CABG with LVEF under 30%, unstable or not weaning from bypass | Direct, timely transition to tMCS should be considered, to avoid LCOS and prolonged high-dose drugs | IABP; mAFP; VA-ECLS; VA-ECLS + mAFP |
+| CABG in infarct-related shock or arrest | (setting) | mAFP with or without VA-ECLS |
+| CABG with LVEF under 30% and expected incomplete revascularisation or diffuse disease | (setting) | IABP; mAFP; VA-ECLS + mAFP |
+| High-risk off-pump CABG with severely reduced LVEF | Reasonable to consider an mAFP for haemodynamic stability | mAFP |
+
+How to support the heart during CABG with a poor ventricle (section 12):
+- On-pump beating-heart CABG does better than off-pump in high-risk patients, but needs full heparin and gives no support afterwards.
+- CABG on VA-ECLS: raised afterload and impaired haemostasis may worsen outcome.
+- CABG on a microaxial pump: support and LV unloading continue after the operation, while the heart adapts and heart failure drugs are started. The IMPACT trial (Impella-Protected Cardiac Surgery) is testing this.
+
+### Mechanical complications of infarction (before surgery)
+| Lesion | Statement | Devices |
+|---|---|---|
+| Ventricular septal rupture in shock with end-organ dysfunction and RV volume overload | Pre-emptive tMCS as a bridge to surgery should be initiated; choose by shunt size and RV and LV function, unloading both ventricles | IABP; mAFP; VA-ECLS; VA-ECLS + IABP; VA-ECLS + mAFP |
+| Free-wall rupture with tamponade and arrest | (setting) | VA-ECLS |
+| Papillary muscle rupture | Active LV unloading should be considered | mAFP with or without VA-ECLS |
+
+- Outcome: in the Delmas European registry of post-infarct VSD supported with an mAFP, survival was 25% both in hospital and at 1 year: nearly all deaths are early.
+- With severe comorbidity or limited life expectancy, weigh tMCS critically and consider palliative care.
+
+These fit the ESC 2023 and EACTS/STS/AATS 2025 recommendations already in this tab and Cardiac 15, which grade tMCS as a bridge for mechanical complications. The consensus adds the device lists, and notes the evidence remains observational.

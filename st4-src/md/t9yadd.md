@@ -132,3 +132,66 @@ Question: in pulmonary metastasectomy, does a thoracotomy rather than a thoracos
 Bottom line: non-randomised retrospective data only. VATS gave shorter stay and drain time and fewer complications in two studies; margins were closer but survival and recurrence were not worse. No approach can be recommended on long-term survival grounds.
 
 Viva line: "The BET found no survival difference between approaches, only shorter stay and drain time with VATS and closer margins. The UK bone sarcoma guideline (Thoracic 7) likewise sees no clear advantage for thoracotomy. PulMiCC asks the separate question of whether metastasectomy helps at all."
+
+## ESMO 2025: surgical recommendations for resectable stage I to III NSCLC
+
+Added 24 November 2026 from Zer A, Ahn M-J, Barlesi F, et al., on behalf of the ESMO Guidelines Committee. Early and locally advanced non-small-cell lung cancer: ESMO Clinical Practice Guideline for diagnosis, treatment and follow-up. Ann Oncol 2025;36(11):1245-1262; doi:10.1016/j.annonc.2025.08.003. Read in full from the published PDF (surgery section and recommendations on pages 1248 to 1254, Figures 1 and 2 with footnotes). The guideline's superior sulcus section (Supplementary Section 4) is online only and was not read; only its graded recommendation, which is in the main text, is given here.
+
+!fig f51_stage1 | ESMO 2025 pathway for stage I NSCLC: inoperable patients to SBRT with salvage surgery for local failure; operable patients to surgery, then management by resection margin, size and EGFR status. Redrawn for these notes from ESMO 2025, Figure 1 and its footnotes.
+
+### Recommendations on the operation
+
+| Recommendation | Level, grade |
+|---|---|
+| Offer surgery to everyone with operable stage I or II NSCLC who accepts the procedural risk | III, A |
+| Anatomical resection is preferred over wedge resection | I, A |
+| Sublobar resection for a peripheral, resectable tumour of 2 cm or less with no nodal metastasis on both CT and PET | I, A |
+| Sublobar resection for pure ground-glass lesions | III, B |
+| Lobectomy as the standard for tumours over 2 cm that look solid on CT | II, B |
+| Dissect three mediastinal and three hilar node stations, to meet IASLC staging requirements | III, A |
+| VATS or RATS for stage I to II | I, A |
+| Minimally invasive surgery may be considered for resectable stage III, depending on the surgeon's experience | V, C |
+| Multifocal lung cancer: complete resection whenever possible | III, B |
+| Multifocal lung cancer: tumour board discussion for every patient | III, A |
+| N2 disease: an experienced MDT decides, for each patient, between surgery after neoadjuvant or perioperative systemic therapy and definitive concurrent CRT | V, A |
+| Salvage surgery after SBRT, if feasible, on the same indications as primary surgery, accepting that it is harder and riskier | IV, B |
+| Superior sulcus tumours (T3 to T4, N0 to N1): neoadjuvant CRT then surgery, after MDT discussion | III, B |
+| R1 or R2 resection: MDT to consider re-resection, adjuvant chemotherapy, PORT or definitive CRT | Ungraded (Figure 2, footnote d) |
+
+### Sublobar resection: what ESMO takes from the trials
+
+- CALGB 140503 and JCOG0802/WJOG4607L: sublobar resection (segmentectomy or wedge) was non-inferior to lobectomy for disease-free and overall survival in peripheral tumours of 2 cm or less (stage IA1 to IA2).
+- Locoregional recurrence was higher after sublobar resection in both: 13.4% against 10.0% in CALGB 140503, and 10.5% against 5.4% in JCOG0802.
+- Neither trial found a clinically relevant difference in lung function.
+- Confirm N0 during the operation. If N1 disease is found, abandon the sublobar plan and do a lobectomy.
+- Adenocarcinoma in situ and minimally invasive adenocarcinoma (pure or part-solid ground glass) behave indolently. Sublobar resection, preferably a wedge, may be enough, or observation where Fleischner criteria allow.
+- Note the mix of grades. Anatomical resection is preferred [I, A], yet the [I, A] sublobar recommendation rests on trials that ESMO describes as testing segmentectomy or wedge resection. The guideline does not reconcile the two. My reading, not ESMO's: in a viva, present segmentectomy as the anatomical sublobar option and keep wedge for ground glass or the unfit.
+
+### Lymph nodes and complete resection
+
+- R0 needs three things: clear margins, a negative highest node removed, and no extracapsular nodal extension. In its minimally invasive surgery paragraph ESMO also gives the full IASLC list: negative margins, systematic or lobe-specific nodal dissection, and a pathologically negative highest mediastinal node.
+- Remove at least six stations, three of them mediastinal including the subcarinal station. (The recommendation box puts it as three mediastinal and three hilar [III, A].)
+- ESMO calls the best strategy unknown: sampling against full lymphadenectomy, and lobe-specific against systematic dissection.
+- Nodal status is one of the most reliable prognostic factors and drives treatment.
+
+### Minimally invasive surgery
+
+- VATS gives the same oncological results as thoracotomy with less morbidity (VIOLET). Benefits: less incisional pain, better physical function at 5 weeks, shorter stay and fewer readmissions. Prolonged air leak and bleeding were more common after minimally invasive resection in one randomised trial, but not to a clinically relevant degree.
+- RATS and VATS give similar R0, nodal upstaging and complication rates in several meta-analyses.
+
+### Stage III resectability
+
+!fig f51_resectability | Stage III resectability as framed by the EORTC and STS consensus documents and summarised in ESMO 2025: who should be offered surgery, where there is no consensus, and N3. Drawn for these notes from the ESMO 2025 text (page 1251).
+
+- Resectable stage IIIA or selected IIIB may suit neoadjuvant chemo-immunotherapy then surgery; ESMO's examples are cT3 N1, cT3 N2a and cT1 N2b. Experienced thoracic surgeons decide resectability within the MDT.
+- The EORTC survey and the STS expert consensus offer surgery for IIIA cT3 N1, cT1-2 N2 single-station, and cT4 N0-1 for size or separate nodules. They also offer it for IIIB cT3 N2 and cT4 N2 for size or separate nodules.
+- N3 is unresectable. cT4 N0-1 by invasion may be resectable, depending on the structure. There was no consensus on multistation N2 or bulky N2 (over 2.5 to 3 cm).
+- These definitions are meant to harmonise trial entry, not to replace individual MDT assessment.
+- TNM9 splits N2 into N2a (single station) and N2b (multiple stations). The split was built from data gathered before immunotherapy. Single-station, non-bulky N2 may go to neoadjuvant chemo-immunotherapy then surgery.
+- Some multistation N2 patients may also do well: in CheckMate 77T, patients whose multistation N2 disease was resected did as well as those with single-station N2. For bulky or multistation N2, whether to choose CRT then durvalumab or chemo-immunotherapy then surgery "remains controversial".
+
+### What changed and where it disagrees with UK guidance
+
+- Replaces the 2017 guideline and its eUpdates. The 2021 eUpdate rows in Thoracic 6 hold no surgical recommendation, and the 2017 surgical recommendations were not read for these notes. Sublobar resection for small peripheral node-negative tumours is now [I, A].
+- NICE NG122 (1.5.1, 1.5.5; 2019, not amended in 2026) still names lobectomy as the standard. It allows sublobar resection or SABR only when lobectomy is declined or contraindicated (comparison table in Thoracic 6).
+- Superior sulcus: the [III, B] recommendation for induction CRT then surgery confirms the sequence already in this tab (TSRA ch. 9). The trial behind it, which the FRCS Atlas names as SWOG 9416 / Intergroup 0160, is not cited in the main ESMO text, so that attribution stays unchecked.

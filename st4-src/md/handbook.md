@@ -62,7 +62,7 @@ This doc also covers topics the handbook does not: TB and sarcoid, flow-volume l
 
 | Topic | Handbook | This doc | Action |
 | --- | --- | --- | --- |
-| Moderate TR at left-sided surgery | Consider repair without requiring an annulus of 40 mm; mild TR with annular dilatation is a separate, weaker pathway | Cardiac: advanced said moderate TR with annulus 40 mm or more, IIa | Cardiac: advanced corrected to the handbook wording, which matches my memory of the 2025 ESC/EACTS guideline. The same line in the Echo and CT thresholds tab still needs changing |
+| Moderate TR at left-sided surgery | Consider repair without requiring an annulus of 40 mm; mild TR with annular dilatation is a separate, weaker pathway | Cardiac: advanced said moderate TR with annulus 40 mm or more, IIa | Cardiac: advanced corrected to the handbook wording, which matches my memory of the 2025 ESC/EACTS guideline. The same line in the Echo and CT thresholds tab still needs changing (changed later: see the correction below) |
 | EACTS/ESTS ground-glass guideline | A 2023 publication; the slides' 2022 label is wrong | Guideline check said a 2022 guideline could not be found | Consistent: look for the 2023 document |
 | STS AF guideline | Guideline year 2023, published 2024 | Cited as STS 2023 | No conflict; both years are right |
 | Aortic valve repair numbers | Effective height and ring numbers are not re-certified by the October 2026 EACTS document | TOE table gives effective height about 9 mm and coaptation about 5 mm, from memory | Keep as approximate; check the 2026 document before quoting |

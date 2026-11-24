@@ -658,9 +658,9 @@ The trials that changed practice, with the journal and the figures confirmed tod
 | CheckMate 77T, 2024 | Perioperative nivolumab, 461 patients | Complete response 25.3% against 4.7%; event-free survival HR 0.58 (0.42–0.81); stage III HR 0.51, stage II HR 0.81 |
 | NADIM II, 2023 | Neoadjuvant nivolumab with chemotherapy, stage III, phase II | Complete response 37% against 7% |
 | CALGB 140503, 2023 | Sublobar against lobar resection, 697 patients, 2 cm or less, nodes negative on frozen section | Disease-free survival HR 1.01 (90% CI 0.83–1.24), non-inferior; five-year survival 80.3% against 78.9% |
-| ADAURA, 2020; survival 2023 | Adjuvant osimertinib, EGFR-mutant | Five-year survival 88% against 78%, HR 0.49 (slides; not re-checked) |
-| ALINA, 2024 | Adjuvant alectinib against chemotherapy, ALK-positive | Disease-free survival HR 0.24 (slides; not re-checked) |
-| LAURA, 2024 | Osimertinib after chemoradiotherapy, unresectable stage III EGFR-mutant | Large progression-free survival gain (from memory) |
+| ADAURA, 2020; survival 2023 | Adjuvant osimertinib, EGFR-mutant | Five-year survival 88% against 78%, HR 0.49 (slides; not re-checked) (corrected 24 November 2026: ESMO 2025 read in full: overall survival HR 0.49 (0.34 to 0.70) confirmed; 88% against 78% not in the guideline; see Thoracic 4 and Thoracic 6) |
+| ALINA, 2024 | Adjuvant alectinib against chemotherapy, ALK-positive | Disease-free survival HR 0.24 (slides; not re-checked) (corrected 24 November 2026: ESMO 2025 read in full: HR 0.24 (0.13 to 0.43) confirmed; see Thoracic 4 and Thoracic 6) |
+| LAURA, 2024 | Osimertinib after chemoradiotherapy, unresectable stage III EGFR-mutant | Large progression-free survival gain (from memory) (corrected 24 November 2026: ESMO 2025 read in full: median 39.1 against 5.6 months, HR 0.16 (0.10 to 0.24); see Thoracic 3) |
 
 ### Other journals
 
@@ -672,8 +672,8 @@ The trials that changed practice, with the journal and the figures confirmed tod
 | PEARLS, Lancet Oncology 2022 | Adjuvant pembrolizumab | Disease-free survival HR 0.76 overall; HR 0.82 and not significant at PD-L1 of 50% or more |
 | Neotorch, JAMA 2024 | Perioperative toripalimab | Complete response 24.8% against 1.0% |
 | MEDIASTrial, Journal of Clinical Oncology 2023 | Omit confirmatory mediastinoscopy after negative endosonography | Unforeseen N2 8.8% against 7.7%, non-inferior; no difference in two-year survival |
-| VIOLET, NEJM Evidence 2022 | VATS against open lobectomy | Better recovery, less pain, fewer complications (from memory) |
-| Lung ART, Lancet Oncology 2022 | Postoperative radiotherapy for N2 | No disease-free survival gain (from memory) |
+| VIOLET, NEJM Evidence 2022 | VATS against open lobectomy | Better recovery, less pain, fewer complications (from memory) (corrected 24 November 2026: ESMO 2025 read in full: less pain, better physical function at 5 weeks, shorter stay, fewer readmissions; complications not stated; see Thoracic 9) |
+| Lung ART, Lancet Oncology 2022 | Postoperative radiotherapy for N2 | No disease-free survival gain (from memory) (corrected 24 November 2026: ESMO 2025 read in full: 3-year disease-free survival 47% against 44%, HR 0.86 (0.68 to 1.08), P = 0.18; see Thoracic 3) |
 | Revised STARS, Lancet Oncology 2021 | SABR against matched VATS lobectomy | Three-year survival 91% in both (from memory) |
 
 ### What the last five years add up to
@@ -1296,10 +1296,10 @@ For stage III disease that cannot be resected in a patient fit for combined trea
 | Point | Detail | Checked |
 | --- | --- | --- |
 | Dose | 2 Gy per fraction, five days a week; 60 Gy takes 6 weeks and 66 Gy takes 6.5 | Arithmetic |
-| Why not more | RTOG 0617 compared 74 Gy with 60 Gy with concurrent chemotherapy: the higher dose gave worse survival, so 60 Gy stayed the standard | From memory |
-| Concurrent against sequential | Meta-analysis of individual patient data (Aupérin, 2010): concurrent treatment improved survival by about 4.5% at five years, at the cost of more severe oesophagitis (about 18% against 4%) | From memory |
-| Doublets | Cisplatin with etoposide or vinorelbine; carboplatin with paclitaxel weekly; cisplatin with pemetrexed for non-squamous disease | From memory |
-| If not fit for concurrent treatment | Sequential chemotherapy then radiotherapy, or radiotherapy alone; UK practice often uses 55 Gy in 20 fractions in that setting | From memory |
+| Why not more | RTOG 0617 compared 74 Gy with 60 Gy with concurrent chemotherapy: the higher dose gave worse survival, so 60 Gy stayed the standard | From memory (corrected 24 November 2026: ESMO 2025 read in full: no gain over 60 Gy in 30 fractions, higher doses may harm (RTOG 0617); see Thoracic 3) |
+| Concurrent against sequential | Meta-analysis of individual patient data (Aupérin, 2010): concurrent treatment improved survival by about 4.5% at five years, at the cost of more severe oesophagitis (about 18% against 4%) | From memory (corrected 24 November 2026: ESMO 2025 read in full: about 4% better 5-year survival, more reversible oesophagitis, about 8% grade 3 with modern techniques; see Thoracic 3) |
+| Doublets | Cisplatin with etoposide or vinorelbine; carboplatin with paclitaxel weekly; cisplatin with pemetrexed for non-squamous disease | From memory (corrected 24 November 2026: ESMO 2025 read in full: cisplatin-etoposide, carboplatin-paclitaxel or cisplatin-pemetrexed (non-squamous), 2 to 3 cycles, I, A; vinorelbine not named; see Thoracic 3) |
+| If not fit for concurrent treatment | Sequential chemotherapy then radiotherapy, or radiotherapy alone; UK practice often uses 55 Gy in 20 fractions in that setting | From memory (corrected 24 November 2026: ESMO 2025 read in full: sequential CRT or radiotherapy alone, I, A; 55 Gy in 20 fractions not in it; see Thoracic 3) |
 | Fitness | Performance status 0–1, adequate lung function, and a radiotherapy plan that meets lung, heart and oesophagus dose limits | From memory |
 
 ### After chemoradiotherapy
@@ -1330,7 +1330,7 @@ For stage III disease that cannot be resected in a patient fit for combined trea
 
 - The benefit was seen across the prespecified subgroups in this first report.
 - What the trial does not tell you: it enrolled only patients who had completed concurrent treatment without progression and with good performance status, so it describes the fittest part of the stage III population.
-- Points usually raised in a viva, from memory: benefit looked larger when durvalumab started within 14 days of radiotherapy; a post hoc analysis requested by the European regulator showed no survival benefit with PD-L1 under 1%, which is why European and UK funding carries a PD-L1 condition; pneumonitis of any grade was about a third with durvalumab and a quarter with placebo, grade 3 or 4 in about 3–4% of both.
+- Points usually raised in a viva, from memory (corrected 24 November 2026: ESMO 2025 read in full: it confirms the post hoc finding of no benefit below PD-L1 1%; the other points are not in it; see Thoracic 3): benefit looked larger when durvalumab started within 14 days of radiotherapy; a post hoc analysis requested by the European regulator showed no survival benefit with PD-L1 under 1%, which is why European and UK funding carries a PD-L1 condition; pneumonitis of any grade was about a third with durvalumab and a quarter with placebo, grade 3 or 4 in about 3–4% of both.
 
 ### Durvalumab after sequential chemoradiotherapy: PACIFIC-6
 

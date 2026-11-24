@@ -39,3 +39,67 @@ The notes already cover the first analyses of CheckMate 816, KEYNOTE-671, AEGEAN
 - Neoadjuvant-only against perioperative: there is still no randomised comparison. At the 2026 symposium Forde said the survival curves "look remarkably similar", and the trials cannot show whether the adjuvant phase adds benefit or whether the patients who received it were simply fitter. Viva answer: the benefit of the adjuvant phase is unproven.
 - Adjuvant-only immunotherapy now has two final analyses (PEARLS and IMpower010) with no overall survival benefit. This supports giving immunotherapy before surgery rather than after it.
 - ctDNA clearance and a pCR identify patients with an excellent prognosis. ctDNA that becomes positive after surgery predicts relapse. Neither result yet guides treatment outside trials.
+
+## ESMO 2025: neoadjuvant, perioperative and adjuvant systemic therapy for resectable NSCLC
+
+Added 24 November 2026 from Zer A, Ahn M-J, Barlesi F, et al., on behalf of the ESMO Guidelines Committee. Early and locally advanced non-small-cell lung cancer: ESMO Clinical Practice Guideline for diagnosis, treatment and follow-up. Ann Oncol 2025;36(11):1245-1262; doi:10.1016/j.annonc.2025.08.003. Read in full from the published PDF (systemic therapy on pages 1252 to 1254, Figures 1 and 2 with footnotes, methodology on page 1256). Trial figures below are as the guideline states them, written mid-2025. Later survival updates (AEGEAN, CheckMate 77T, PEARLS final and others) are in "Perioperative immunotherapy: survival updates" in this tab.
+
+ESMO-MCBS v2.0 is ESMO's Magnitude of Clinical Benefit Scale, scored only for indications approved by the EMA or FDA and validated by the ESMO-MCBS Working Group. The drugs below all score A; the consolidation drugs after chemoradiotherapy (Thoracic 3) score 4. The scale itself (Cherny, Ann Oncol 2025) and the meaning of the "(AT)" suffix are not explained in the guideline text and were not read. Approval status is as of mid-2025.
+
+!fig f51_resectable23 | ESMO 2025 pathway for resectable stage II to III NSCLC: chemo-immunotherapy then surgery for EGFR and ALK wild-type disease if eligible, otherwise surgery then adjuvant treatment by PD-L1; surgery first then targeted therapy for EGFR or ALK. Redrawn for these notes from ESMO 2025, Figure 2 and its footnotes.
+
+### Recommendations
+
+| Recommendation | Level, grade | ESMO-MCBS; approval |
+|---|---|---|
+| The MDT decides the order of systemic therapy (neoadjuvant, perioperative or adjuvant) before treatment starts, with EGFR, ALK and PD-L1 known at minimum | V, A | |
+| **EGFR and ALK wild type, stage II to III:** neoadjuvant or perioperative chemo-immunotherapy | I, A | |
+| Neoadjuvant nivolumab-chemotherapy (CheckMate 816) | I, A | A; FDA approved, EMA for PD-L1 1% or more |
+| Neoadjuvant pembrolizumab-chemotherapy then adjuvant pembrolizumab (KEYNOTE-671) | I, A | A |
+| Neoadjuvant durvalumab-chemotherapy then adjuvant durvalumab (AEGEAN) | I, A | A |
+| Neoadjuvant nivolumab-chemotherapy then adjuvant nivolumab (CheckMate 77T) | I, A | A; FDA approved, EMA for PD-L1 1% or more |
+| Neoadjuvant tislelizumab-chemotherapy then adjuvant tislelizumab (RATIONALE-315) | I, A | A; EMA approved, not FDA |
+| Not eligible for chemo-immunotherapy, complete resection, stage II to III: adjuvant cisplatin-based chemotherapy | I, A | |
+| Carboplatin-based chemotherapy if cisplatin is unsuitable (renal, neurological or other) | II, B | |
+| Adjuvant atezolizumab for 1 year after cisplatin chemotherapy: stage II to IIIA (T 5 cm or more), PD-L1 1% or more, no EGFR or ALK alteration | I, A | A; FDA for PD-L1 1% or more, EMA for 50% or more |
+| Adjuvant pembrolizumab for 1 year: stage II to IIIA (T 4 cm or more), no EGFR or ALK alteration, any PD-L1 | I, A | A; EMA and FDA approved after platinum chemotherapy |
+| **EGFR exon 19 deletion or L858R:** adjuvant osimertinib for 3 years (after chemotherapy where appropriate), complete resection, stage IB to IIIA | I, A; ESCAT I-A | A |
+| Adjuvant cisplatin chemotherapy before osimertinib for stage II to III if eligible; carboplatin if not cisplatin-eligible | I, A; II, B | |
+| **ALK fusion:** adjuvant alectinib for 2 years, complete resection, stage II to IIIA (T 4 cm or more) | I, A; ESCAT I-A | A |
+| Adjuvant chemotherapy before alectinib may be considered | II, C | |
+
+The pathway (Figure 2) points:
+- EGFR- or ALK-positive tumours go to surgery first, not neoadjuvant chemo-immunotherapy.
+- Stage I tumours of 3 to 4 cm with an EGFR mutation get osimertinib for 3 years after R0 resection (Figure 1). Stage I under 3 cm, or EGFR wild type, goes to surveillance.
+- Any R1 or R2 resection goes back to the MDT.
+
+### The trials as ESMO reports them
+
+| Trial | Setting | Result given in the guideline |
+|---|---|---|
+| LACE meta-analysis | Adjuvant cisplatin doublet | 5-year survival benefit (size not stated); possible harm in stage IA |
+| CALGB 9633 | Adjuvant carboplatin-paclitaxel, stage IB (TNM7) | Survival benefit only in tumours 4 cm or more |
+| IMpower010 | Atezolizumab 1 year after cisplatin, IB to IIIA (TNM7) | Stage II (T 5 cm or more) to IIIA, PD-L1 1% or more: 5-year DFS HR 0.70 (0.55 to 0.91); OS trend HR 0.77 (0.56 to 1.06); PD-L1 50% or more: OS HR 0.47 (0.28 to 0.77) |
+| PEARLS/KEYNOTE-091 | Pembrolizumab 1 year, IB to IIIA | DFS HR 0.76 (0.63 to 0.91) |
+| CCTG BR.31 | Adjuvant durvalumab, IB to IIIA (T 4 cm or more) | No DFS gain over placebo; differences in the patient population may explain the result |
+| ADAURA | Osimertinib up to 3 years, IB (T 3 cm or more) to IIIA | OS HR 0.49 (0.34 to 0.70); DFS HR 0.27 (0.21 to 0.34); CNS DFS HR 0.24 (0.14 to 0.42) in II to IIIA; OS HR 0.47 (0.25 to 0.83) without prior chemotherapy |
+| ALINA | Alectinib 2 years against 4 cycles of platinum chemotherapy, IB (4 cm or more) to IIIA | DFS HR 0.24 (0.13 to 0.43); CNS DFS HR 0.22 (0.08 to 0.58); OS not reported |
+| CheckMate 816 | 3 cycles of neoadjuvant chemotherapy with or without nivolumab | pCR 24% against 2.2%; EFS HR 0.63 (97% CI 0.43 to 0.91); OS HR 0.72 (0.52 to 0.99), 5-year 65.4% against 55.0%; 5-year OS 95.3% after pCR (exploratory) |
+| KEYNOTE-671 | Pembrolizumab with 4 cycles of cisplatin chemotherapy, then up to 13 cycles | EFS HR 0.58 (0.46 to 0.72); pCR 18.1% against 4%; OS HR 0.72 (0.56 to 0.93), 3-year 71% against 64% |
+| AEGEAN | Durvalumab with 4 cycles, then 12 four-weekly cycles; pneumonectomy candidates and T4 excluded | pCR 17.2% against 4.3%; EFS HR 0.68 (0.53 to 0.88) |
+| CheckMate 77T | Nivolumab with 4 cycles, then 1 year | EFS HR 0.59 (0.45 to 0.79); pCR 25.3% against 4.7% |
+| RATIONALE-315 | Tislelizumab with 4 cycles, then 1 year; stage II to IIIA | MPR 56% against 15%; EFS HR 0.56 (0.40 to 0.79) |
+
+Points ESMO draws from them:
+- Neoadjuvant chemotherapy alone gives about the same survival benefit as adjuvant chemotherapy (2014 individual-patient meta-analysis).
+- Adjuvant-only immunotherapy has not improved overall survival in any trial. One neoadjuvant trial (CheckMate 816) and one perioperative trial (KEYNOTE-671) have.
+- In ADAURA, adjuvant chemotherapy was given more often to patients aged 70 or under (66%) and in stage II to IIIA (76%) than in stage IB (26%).
+- No trial has compared neoadjuvant-only with perioperative chemo-immunotherapy. pCR and MPR track outcome. PD-L1 expression and ctDNA clearance go with higher pCR and MPR rates. Residual viable tumour or persistent ctDNA after neoadjuvant treatment carries poor EFS and OS.
+- Benefit from stage I adjuvant chemotherapy with high-risk features (visceral pleural invasion, lymphovascular invasion, high grade) is unknown.
+- Targeted adjuvant therapy for other driver alterations is unproven. Perioperative targeted trials are under way, with promising early data (neoadjuvant osimertinib).
+
+### Against the notes and NICE
+
+- The ESMO figures for CheckMate 816 (pCR, EFS, 5-year OS) and AEGEAN match those already in this tab and in Thoracic 6. Its EFS hazard ratios for KEYNOTE-671 (0.58, 0.46 to 0.72) and CheckMate 77T (0.59, 0.45 to 0.79) differ slightly from those quoted in Thoracic 6 (0.59 and 0.58, 0.42 to 0.81). ESMO cites both the primary papers and later updates, so these are probably different data cuts; quote the source with the figure.
+- NICE NG122 (February 2026) links nivolumab neoadjuvant (TA876), durvalumab perioperative (TA1030), pembrolizumab perioperative (TA1017), osimertinib (TA1043), alectinib (TA1014), and adjuvant atezolizumab (TA1071) and pembrolizumab (TA1037) after platinum. Tislelizumab is ESMO [I, A] but appears in neither the NG122 list nor the UK appraisals in these notes.
+- Staging editions differ: ESMO words its alectinib and atezolizumab recommendations in current staging terms (stage II to IIIA with a size floor) but describes ALINA, IMpower010, PEARLS and ADAURA by the TNM7 stages they enrolled. Check the edition before quoting an eligible stage.

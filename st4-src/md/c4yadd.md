@@ -524,3 +524,64 @@ No operative deaths in either arm. 85% of the conservative arm had AVR eventuall
 168 patients at intermediate or high surgical risk at eight centres, randomised to TAVR or SAVR. One-year death 2.4% against 1.2%, reported as consistent with the prespecified non-inferiority criterion; procedural success 98.8% against 100%; KCCQ 84.9 against 77.0 (p=0.018). The trial name, device and margin were not given in the summary I read.
 
 What these change: they are the first randomised data on TAVI for pure AR that I found. They support TAVI only in selected patients at high surgical risk with suitable anatomy, at the price of a one-in-five pacemaker rate. SEASON-AR excluded ascending aortas over 45 mm, so surgery remains the treatment for operable AR and for AR with a dilated aorta.
+
+## Aortic valve surgery and TAVI under temporary support: EACTS 2025 protected cardiac surgery consensus
+
+Added 24 November 2026 from Lorusso R, Salazar L, Nersesian G, Milojevic M, Schmack B, Engelman DT, et al. EACTS Expert Consensus Document on protected cardiac surgery: pre-emptive use of temporary mechanical circulatory support in adult cardiac surgery patients at high risk for perioperative low cardiac output syndrome. Eur J Cardiothorac Surg 2026;68(3):ezaf296 (online 9 October 2025); doi:10.1093/ejcts/ezaf296. Read in full from the published PDF (Consensus Statement Tables 2 to 4, sections 7, 9.2, 10 and 12). Statements carry no class or level. Mitral and tricuspid rows are in Cardiac 1; the whole document is in Cardiac 15.
+
+### Valve statements
+| Situation | Statement | Devices |
+|---|---|---|
+| Thrombosis or severe stenosis of an aortic and/or mitral prosthesis, severely depressed ventricular function, instability or shock (before surgery) | Pre-emptive tMCS as a bridge to surgery should be taken into consideration; replace the valve as an emergency once stable, because LV stasis and thrombus are likely | VA-ECLS |
+| Aortic and/or mitral surgery for severe regurgitation with CABG, LVEF under 30%, unstable at weaning | Direct transition to tMCS should be considered | IABP; mAFP; VA-ECLS; VA-ECLS + mAFP |
+| Acute aortic or mitral endocarditis with severe regurgitation, pulmonary oedema, ventricular dysfunction, unstable at weaning | Direct transition should be considered | IABP; mAFP; VA-ECLS; VA-ECLS + mAFP |
+| Redo surgery for prosthetic thrombosis or stenosis, severely depressed function, unstable at weaning | Direct transition should be considered | IABP; mAFP; VA-ECLS; VA-ECLS + mAFP |
+| TAVI with severely depressed function, unstable after the procedure | Pre-emptive VA-ECLS should be taken into consideration in a timely way | VA-ECLS |
+| Selected complex TAVI or other transcatheter valve procedures, usually with concomitant PCI and/or severely reduced LVEF or shock | Pre-emptive tMCS may be useful | not specified |
+| Any valve operation in a patient likely to need support | A biological prosthesis with adequate unloading is advised, to lessen stasis and valve thrombosis, especially if a durable VAD or an mAFP may follow | |
+
+### Prosthesis and device interactions
+- In aortic valve replacement for these patients, a **bioprosthesis is preferred**, to keep a later durable LVAD or microaxial pump possible. A microaxial pump can be passed across a bioprosthesis without damaging it (case reports and the authors' experience).
+- A **mechanical aortic valve**, severe aortic stenosis and LV thrombus contraindicate a left-sided microaxial pump.
+- **Aortic regurgitation**: moderate to severe AR contraindicates an IABP; severe AR contraindicates peripheral VA-ECLS (because of the raised LV afterload).
+- TAVI: prophylactic support has been linked with lower periprocedural mortality than rescue insertion (MUST registry). Severe aortic stenosis with unprotected left main disease and a severely reduced LVEF is singled out as especially high risk, possibly needing support continued after the procedure.
+
+## Valve disease and mechanical valves in the ESC 2025 pregnancy guideline, as read through a 2026 commentary
+
+Added 24 November 2026 from Arbustini E, Beneventi F, Bozzani A, et al. ESC guidelines 2025 on cardiovascular disease and pregnancy: considerations and future perspectives. Eur Heart J Suppl 2026;28(Suppl 5):v5–v13. doi:10.1093/eurheartjsupp/suag017. Read in full from the published PDF (pages v5 to v13); Table 1 checked on the rendered pages. **This is a commentary on the guideline, not the guideline itself** (De Backer J, Haugaa KH, et al. 2025 ESC Guidelines for the management of cardiovascular disease and pregnancy. Eur Heart J 2025;46:4462–4568). Classes and levels are given only where the commentary states them. It fills part of the gap left by the section above from the ESC/EACTS 2025 valve guideline, whose pregnancy recommendation table did not extract; it does **not** give the warfarin dose threshold or the trimester-by-trimester anticoagulation scheme, so that query in the section above stays open.
+
+### Recommendations the commentary states
+
+| Recommendation | Class, level |
+|---|---|
+| Women with mechanical valves: a structured anticoagulation plan before pregnancy, or immediately once pregnancy is recognised | I C (new) |
+| Native valve disease: surgery when maternal mortality risk is high and other treatments have failed | IIa C (new) |
+| Direct oral anticoagulants are not recommended in pregnancy | III C |
+| Low-molecular-weight heparin is not recommended where anti-factor Xa monitoring is not available | III C |
+| Routine induction of labour before 39 weeks is not recommended in women with stable cardiovascular disease | III C |
+| Caesarean section for vitamin K antagonist use shortly before or during labour (listed with the other caesarean indications in the cardiomyopathy recommendations: obstetric reasons, EF under 30% or NYHA III to IV, uncontrolled arrhythmia, LVOT gradient 50 mmHg or more in HCM) | I C |
+| Pre-pregnancy or pregnancy counselling by a multidisciplinary or Pregnancy Heart Team for congenital disease, aortopathy and PAH | I C |
+
+### How the valve recommendations are graded (commentary Table 1)
+
+| Guideline section | I B | I C | IIa C | IIb C | III C |
+|---|---|---|---|---|---|
+| 18. Native valve disease | | 7 | 3 | 1 | |
+| 19. Prosthetic valves: general | 1 | 1 | | | |
+| Women with mechanical heart valves | | 4 | 1 | 1 | 1 |
+| 3. Delivery in women on anticoagulants | | 7 | 2 | | |
+| 4. Direct oral anticoagulants | | | | | 1 |
+
+- The single level B recommendation for valves is in "prosthetic valves: general"; its wording is not given.
+- The mechanical-valve III C is most likely the low-molecular-weight heparin without anti-Xa monitoring recommendation (the table count and the class III list line up that way; the commentary does not pair them explicitly).
+- Nine recommendations cover delivery on anticoagulants, more than for any single valve lesion: plan the switch and the delivery before labour starts.
+
+### Context
+
+- Mechanical valve and "high-risk valve disease or LVOT obstruction" are both CARPREG II predictors (see the mWHO 2.0 figure in Congenital 3).
+- In the ESC ROPAC registry, valvular heart disease made up 29% of pregnancies in women with heart disease, second only to adult congenital heart disease (57%).
+
+### Viva use
+
+- "A woman with a mechanical mitral valve tells you she is 6 weeks pregnant." The ESC 2025 pregnancy guideline (I C) asks for a structured anticoagulation plan at once, ideally made before conception; DOACs are not an option (III C); LMWH only with anti-Xa monitoring (III C otherwise); delivery planned by the Pregnancy Heart Team, with caesarean if she is still on a vitamin K antagonist near labour (I C).
+- "When would you operate on a native valve in pregnancy?" Only when maternal mortality risk is high and other treatments (medical, percutaneous) have failed: IIa C.

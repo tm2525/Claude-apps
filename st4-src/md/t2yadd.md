@@ -21,3 +21,30 @@ In patients with limited lung function who are otherwise suitable for resection,
 Patients with limited lung function did better with VATS than with open surgery, and with VATS their perioperative outcomes were similar to those of patients with normal function.
 
 Viva line: "In a marginal patient, the approach is part of the risk calculation: the STS data show complications climbing with falling ppoFEV1 after thoracotomy much more than after VATS. All the evidence is retrospective, so selection bias is likely."
+
+## ESMO 2025: fitness for curative treatment and interstitial lung disease
+
+Added 24 November 2026 from Zer A, Ahn M-J, Barlesi F, et al., on behalf of the ESMO Guidelines Committee. Early and locally advanced non-small-cell lung cancer: ESMO Clinical Practice Guideline for diagnosis, treatment and follow-up. Ann Oncol 2025;36(11):1245-1262; doi:10.1016/j.annonc.2025.08.003. Read in full from the published PDF (risk assessment on pages 1247 to 1248, Table 1, Figures 1 and 2). The risk-assessment algorithm itself (Supplementary Section 2 and Figure S2) is online only and was not read, so the steps between the thresholds below are not given.
+
+### Recommendations
+
+| Recommendation | Level, grade |
+|---|---|
+| Stage the tumour in detail by IASLC/TNM and assess cardiopulmonary fitness before choosing treatment | III, A |
+| An MDT assesses functional tolerance for curative treatment | IV, A |
+| Surgical candidates: assess cardiac function, including the recalibrated thoracic revised cardiac risk index (ThRCRI), and pulmonary function, to estimate the risk of operative morbidity | IV, A |
+| ppoFEV1 and ppoDLCO both 60% or more and no other major comorbidity: operate without further tests | IV, A |
+| ppoFEV1 or ppoDLCO under 30%: measure VO2 max to gauge exercise capacity and predict complications | IV, A |
+| VO2 max under 10 mL/kg/min: discuss sublobar resection or non-surgical treatment | IV, A |
+| Suspected or confirmed ILD: involve multidisciplinary ILD experts in decisions where feasible, because diagnosis and treatment risks are complex | III, B |
+| SBRT for severe COPD and for elderly or frail patients | III, A |
+| SBRT for selected patients with interstitial pulmonary fibrosis, after multidisciplinary discussion and shared decision-making | III, B |
+
+### Reading it against the other fitness guidance in this tab
+
+- Only the two ends of the scale are graded in the main text: 60% or more (go ahead) and under 30% (CPET). Steps for values of 30 to 59% would be in the online algorithm (Figure S2), which was not read. Do not quote an ESMO step for that band.
+- The CPET cut-off: under 10 mL/kg/min means sublobar resection or non-surgical treatment. ESMO says "discuss"; it does not forbid lobectomy.
+- NICE NG122 (1.4.12) lets a patient with ppoFEV1 or ppoTLCO under 30% still have curative treatment if they accept the risk. NICE marks good function as a shuttle walk over 400 m or VO2 max over 15 mL/kg/min (1.4.13, 1.4.14). ESMO gives no upper VO2 max threshold in the main text.
+- ThRCRI is named but its weights are not given. The weights in this tab come from the FRCS Atlas draft and are still unchecked against a primary source; this guideline does not settle them.
+- ILD: the guideline gives no figure for the risk of acute exacerbation. It asks for ILD expert input [III, B] and allows SBRT for selected patients with pulmonary fibrosis [III, B].
+- After resection, with or without neoadjuvant chemo-immunotherapy, readmission is associated with resection type, age, neoadjuvant therapy and comorbidity, and readmission for a complication goes with a significant rise in 90-day mortality. Most respiratory, infective and cardiac complications fall in the first 30 days.

@@ -38,3 +38,21 @@ Both analyses point the same way. The survival advantage of segmentectomy in JCO
 | New guidelines 2025 to 2026 check | Thoracic 6 |
 
 Not found or not confirmed in this round: a CALGB 140503 update after 2023; NeoADAURA event-free survival; a KEYNOTE-671 survival analysis beyond the five-year report already in this tab; a published result of the randomised trial of 10 °C against 4 °C donor lung storage (NCT05898776).
+
+## Trials new to these notes, as cited in ESMO 2025 early NSCLC
+
+Added 24 November 2026 from Zer A, Ahn M-J, Barlesi F, et al., on behalf of the ESMO Guidelines Committee. Early and locally advanced non-small-cell lung cancer: ESMO Clinical Practice Guideline for diagnosis, treatment and follow-up. Ann Oncol 2025;36(11):1245-1262; doi:10.1016/j.annonc.2025.08.003. Read in full from the published PDF. None of these was in the notes before, except RATIONALE-315, whose later analysis is in Thoracic 4 (survival updates). The figures are as the guideline gives them; the trial papers themselves were not read. The fuller write-ups are in Thoracic 1, 3 and 4 (ESMO 2025 sections).
+
+| Trial (reference as ESMO cites it) | Question | Result as ESMO gives it | Where |
+|---|---|---|---|
+| TALENT (Chang, Lancet Respir Med 2024) | Low-dose CT screening of never-smokers with a risk factor, Taiwan; single arm | Lung cancer found in 2.6%; mortality effect, cost and generalisability unknown | Thoracic 1 |
+| PORT-C (Hui, JAMA Oncol 2021) | PORT after complete resection of pIIIA-N2 and adjuvant chemotherapy | "Similar results" to Lung ART (no figures given) | Thoracic 3 |
+| National Cancer Database, R1 (Wang, J Clin Oncol 2015) | PORT after lobectomy or pneumonectomy with a positive margin, stage II to III; 3,395 patients, retrospective | 5-year survival 32.4% against 23.7%, HR 0.80 (0.70 to 0.92) | Thoracic 3 |
+| CALGB 9633 (Strauss, J Clin Oncol 2008) | Adjuvant carboplatin-paclitaxel against observation, stage IB (TNM7) | Survival benefit only in tumours 4 cm or more | Thoracic 4 |
+| CCTG BR.31 (Goss, ESMO 2024 abstract) | Adjuvant durvalumab against placebo, IB to IIIA (T 4 cm or more, TNM7) | No disease-free survival gain | Thoracic 4 |
+| RATIONALE-315 (Yue, Lancet Respir Med 2025, interim) | Perioperative tislelizumab with chemotherapy, stage II to IIIA | MPR 56% against 15%; EFS HR 0.56 (0.40 to 0.79); EMA approved, not FDA | Thoracic 4 |
+| POLESTAR (Yu, WCLC 2024 abstract) | Aumolertinib after CRT, unresectable stage III EGFR-mutant, China | Results similar to LAURA (no figures given) | Thoracic 3 |
+| GEMSTONE-301 (Zhou, Lancet Oncol 2022) | Sugemalimab against placebo after concurrent or sequential CRT, China | Progression-free survival HR 0.64 (0.48 to 0.85); well tolerated | Thoracic 3 |
+| PACIFIC EGFR subgroup (Naidoo, J Thorac Oncol 2023) | Durvalumab after CRT in EGFR-mutant disease, post hoc | PFS HR 0.91 (0.39 to 2.13); OS HR 1.02 (0.39 to 2.63) | Thoracic 3 |
+
+Also cited, with only a qualitative result: CheckMate 77T by nodal status (resected multistation N2 did as well as single-station N2; ASCO 2024 abstract), PACIFIC-2 and CheckMate 73L (immunotherapy given during CRT: no gain, more toxicity), and neoadjuvant osimertinib (He, J Clin Oncol 2025: "promising preliminary data").

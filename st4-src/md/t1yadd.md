@@ -138,3 +138,100 @@ Added 24 November 2026 from: (1) UK Government press release "New lung cancer sc
 - More stage I disease means more small, often subsolid, nodules referred for sublobar resection. The JCOG0802 and CALGB 140503 selection rules (in Thoracic 16) apply directly.
 - A late-stage incidence fall at population level, rather than only a stage shift among screened patients, is the evidence that screening is not just detecting indolent disease. Overdiagnosis remains a fair viva challenge.
 - Many screen-detected patients have emphysema and cardiovascular disease, so fitness assessment (ERS/ESTS 2025) and parenchyma-sparing resection matter more.
+
+## ESMO 2025 early and locally advanced NSCLC: screening, diagnosis, staging and biomarkers
+
+Added 24 November 2026 from Zer A, Ahn M-J, Barlesi F, Bubendorf L, De Ruysscher D, Garrido P, Gautschi O, Hendriks LE, Jänne PA, Kerr KM, Mascaux C, Mitsudomi T, Peters S, Rolfo C, Sacher A, Senan S, Ugalde P, Leighl NB, on behalf of the ESMO Guidelines Committee. Early and locally advanced non-small-cell lung cancer: ESMO Clinical Practice Guideline for diagnosis, treatment and follow-up. Ann Oncol 2025;36(11):1245-1262; doi:10.1016/j.annonc.2025.08.003 (online 28 August 2025; replaces the 2017 guideline and its eUpdates). Read in full from the published PDF (pages 1245 to 1262: text, Table 1, Figures 1 to 3 with footnotes, and every graded recommendation). The online supplement (TNM9 table, staging and risk-assessment details, Figures S1 and S2, superior sulcus tumours, surveillance details and the grading key, Table S2) was not in the upload and is not used.
+
+How to read the brackets: [level of evidence, grade of recommendation], levels I to V and grades A to E. Ungraded statements are "justified standard clinical practice" in the authors' view. Where several options exist, ESMO lists them by level and grade, then by ESMO-MCBS score, then alphabetically. Treatment sections are in Thoracic 2, 3, 4 and 9; the comparison with NICE and the 2021 eUpdate is in Thoracic 6.
+
+### Screening and smoking
+
+| Recommendation | Level, grade |
+|---|---|
+| Low-dose CT screening through established programmes for current smokers (over 30 pack-years) or former smokers (under 15 years since stopping) aged 55 to 74 | I, A |
+| Smoking-cessation support for everyone with NSCLC: counselling, behavioural techniques and drugs, to improve treatment results and lower the risk of new cancers | I, A |
+
+The evidence as ESMO gives it:
+- NLST and NELSON: lung cancer mortality fell by 20% or more (relative) in current and former smokers aged 50 to 74 (15 pack-years or more in NELSON, 30 or more in NLST).
+- NLST: 2.7 times as many cancers diagnosed, and all-cause mortality down 6.7%. NELSON: fewer cancers found at stage IV; cancer found in 0.86% of participants.
+- US uptake is about 16% even with public funding.
+- TALENT (Taiwan, single arm): never-smokers with a risk factor such as family history or passive smoking. Cancer found in 2.6%. Effect on mortality, cost and generalisability not yet known.
+- Germline: about 15% of US lung cancer patients carried a pathogenic germline variant (BRCA2 most often, then CHEK2, ATM, TP53, BRCA1 and germline EGFR). There is no recommendation on screening healthy carriers or on routine germline testing.
+
+The UK targeted programme uses its own eligibility rules; see "The NHS Lung Cancer Screening Programme" in this tab.
+
+### Tissue diagnosis
+
+| Recommendation | Level, grade |
+|---|---|
+| Clinical stage I to III: pathological diagnosis before any treatment decision | IV, A |
+| The MDT chooses whether and how to sample (bronchoscopic or transbronchial biopsy, EBUS-guided sampling, transthoracic biopsy), by patient and tumour | IV, A |
+| Surgical diagnosis for small high-risk nodules that cannot be sampled less invasively, including PET-negative ones | IV, A |
+| Classify by the 2021 WHO classification | IV, A |
+
+- Surgical diagnosis is kept for small high-risk nodules. "High risk" follows the Fleischner Society criteria.
+- On small samples, subtype by morphology first. Use immunohistochemistry only when morphology fails, usually two markers (p40 and TTF-1), to save tissue for biomarkers. Small cell must be excluded. The full WHO range of categories applies only to resection specimens.
+
+### Work-up (ESMO Table 1)
+
+| Area | Mandatory | Optional |
+|---|---|---|
+| General | History, examination, comorbidities, weight loss, performance status | |
+| Imaging | FDG-PET and contrast CT; brain MRI for clinical stage II to III | Contrast brain CT if MRI is not possible |
+| Laboratory | Full blood count, biochemistry | |
+| Cardiopulmonary | FEV1, DLCO, CPET | |
+| Tissue | Bronchoscopy, EBUS or EUS, CT- or ultrasound-guided biopsy | Mediastinoscopy |
+| Pathology | TTF-1 and p40 immunohistochemistry; EGFR and ALK testing; PD-L1 | |
+
+Note that mediastinoscopy is listed as optional. CPET is in the mandatory column, but the graded fitness recommendations use it only when predicted postoperative values are low (Thoracic 2).
+
+### Staging recommendations
+
+Staging uses TNM9 (UICC 9th edition) and the IASLC Staging Manual, 3rd edition.
+
+| Recommendation | Level, grade |
+|---|---|
+| Non-metastatic NSCLC: detailed locoregional staging by IASLC/TNM, plus cardiopulmonary fitness, to choose treatment | III, A |
+| Part-solid tumours: clinical T from the size of the invasive (solid) component | III, A |
+| Lesions meeting the criteria for separate primaries: assess and treat each | III, A |
+| Several tumours of the same histological subtype: NGS to tell separate primaries from intrapulmonary metastasis | III, A |
+| Mediastinal and hilar nodes: contrast CT and PET [I, A], or PET with contrast CT [I, A] | I, A |
+| Abnormal mediastinal or hilar nodes on CT or PET-CT: invasive staging by endosonography | I, A |
+| EBUS or EUS needle aspiration of suspicious nodes | I, A |
+| Brain MRI in stage II to III being considered for curative treatment | III, A |
+| Pathological staging of resected specimens to IASLC/TNM criteria | IV, A |
+| Report spread through air spaces (STAS): negative prognostic factor and possible future TNM descriptor | III, B |
+
+ESMO uses the IASLC 2016 scheme for tumours at several sites. There are four patterns: synchronous multiple primaries; multifocal ground-glass or lepidic cancer; a primary with separate tumour nodules (intrapulmonary metastasis); and pneumonic-type cancer. Each has a different natural history. Treatment of multifocal disease is in Thoracic 9.
+
+### Biomarkers
+
+| Recommendation | Level, grade; ESCAT |
+|---|---|
+| EGFR testing in stage IB (over 3 cm or high risk) to IIIC, to select adjuvant or consolidation osimertinib | I, A; ESCAT I-A |
+| ALK testing in resectable stage II (4 cm or more) to IIIA, to select adjuvant alectinib | I, A; ESCAT I-A |
+| PD-L1 before deciding on neoadjuvant or perioperative chemo-immunotherapy in stage II to III | IV, A |
+| PD-L1 on every resected stage II to IIIA cancer not given preoperative chemo-immunotherapy, for adjuvant immunotherapy decisions | I, A |
+| Do biomarker tests as early as possible, as part of the preoperative work-up | IV, A |
+| Broad NGS where sequencing is needed and feasible | V, B |
+| Do not use ctDNA detection or clearance after curative treatment to escalate or de-escalate treatment outside trials | IV, E |
+
+- EGFR testing means the sensitising mutations, exon 19 deletion and L858R. It applies to resectable and unresectable disease. The reasons are the survival gain with adjuvant osimertinib and the progression-free survival gain with third-generation EGFR inhibitors after chemoradiotherapy.
+- EGFR and ALK must be known before neoadjuvant chemo-immunotherapy, because a positive result rules that route out.
+- Report PD-L1 as the tumour proportion score, in at least three bands: under 1%, 1 to 49%, 50% or more.
+- Routine broad NGS for stage II to III non-squamous disease "may be more pragmatic" than single-gene tests, because the list of targets is expected to grow.
+- ctDNA after curative treatment is strongly prognostic, but current assays miss many relapses (false negatives). They are prognostic, not predictive. Preoperative ctDNA is a poor sign, and clearance during neoadjuvant treatment goes with higher pCR and MPR. ESMO's reasons for not using it yet: assays vary, the best time to sample is unknown, and there is no evidence on how to treat a ctDNA-positive, scan-negative patient.
+- ESCAT is ESMO's scale for how actionable a molecular target is (Mateo, Ann Oncol 2018). Its tier definitions are not in this guideline and were not read.
+
+### Where ESMO 2025 and NICE NG122 differ on work-up
+
+| Point | ESMO 2025 | NICE NG122 (numbered section in this tab) |
+|---|---|---|
+| Brain imaging | MRI for stage II to III [III, A]; contrast CT only if MRI is not possible | Nothing for asymptomatic stage I; contrast CT for stage II (MRI if CT suggests metastases); contrast MRI for stage III (1.2.24 to 1.2.26) |
+| Molecular testing | EGFR and ALK at least; broad NGS if feasible [V, B] | NGS panels through the National Genomic Test Directory (1.2.12, amended 2026) |
+| Nodes | Endosonography for abnormal nodes [I, A]; mediastinoscopy optional | Endosonography first (1.2.20 to 1.2.21); consider surgical staging if a negative result leaves high suspicion (1.2.22) |
+| Part-solid tumours | T from the solid component [III, A] | Not in the NG122 recommendations held in these notes |
+| ctDNA | Not to guide treatment [IV, E] | Not in the NG122 recommendations held in these notes |
+
+The ESMO text does not say whether a central tumour, or one over 3 cm, needs invasive staging when CT and PET are negative. The ESTS 2014 section in this tab still covers that question.

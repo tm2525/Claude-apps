@@ -4,8 +4,8 @@ Added 21 November 2026 from: Peled Y, Ducharme A, Kittleson M, et al. Internatio
 
 ### The 2024 ISHLT candidate guideline
 - **Replaces** the 2006 ISHLT listing criteria and the 2016 ten-year update. It covers three areas: patient selection, care of particular patient groups, and durable MCS.
-- Each of its three task forces was co-chaired by a **paediatric** transplant physician, so paediatric candidates are covered alongside adults. It was harmonised with ISHLT documents published up to November 2023 and uses ACC/AHA knowledge-chunk format with flow diagrams.
-- The congenital-specific recommendations and their classes were not readable today and are not given here.
+- Each of its three task forces was co-chaired by a **paediatric** transplant physician (corrected 24 November 2026 from the full text: Task Forces I and II had adult and paediatric co-chairs; the contents list gives Task Force III a single chair), so paediatric candidates are covered alongside adults. It was harmonised with ISHLT documents published up to November 2023 and uses ACC/AHA knowledge-chunk format with flow diagrams.
+- The congenital-specific recommendations and their classes were not readable today and are not given here (updated 24 November 2026: now read from the full text; the congenital recommendations with class and level are in Cardiac 15, "ISHLT 2024 candidate guideline, Task Force I part 5").
 
 ### Why congenital recipients differ (Elizer and Mantell 2025)
 - **Survival:** at 3 years, 79% for congenital disease vs 88% for cardiomyopathy. **Single-ventricle** patients wait longest and have the highest early post-transplant mortality.

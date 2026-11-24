@@ -31,3 +31,42 @@ The tab compares biatrial and left-sided lesion sets from the STS 2023 guideline
 | Pacemaker | Freedom from permanent pacemaker was non-inferior with the biatrial set (rates not given) |
 
 What it changes: in rheumatic mitral disease with persistent AF, adding the right atrial lesions gains about ten points of rhythm success at one year without a clear pacemaker penalty. It supports doing the full biatrial Cox-Maze IV when the operation allows it.
+
+## ESC 2026 heart failure guideline (full text): atrial fibrillation in heart failure
+
+Added 24 November 2026 from Køber L, Adamo M, et al. 2026 ESC Guidelines for the management of heart failure. Eur Heart J 2026;47:5346–5457; doi:10.1093/eurheartj/ehag100. Read in full from the published PDF (section 9.1.1, journal pages 5403 to 5405; Recommendation Table 15 and Table 18 checked on the PDF pages; 2021 classes from the guideline's Table 6, pages 5359 to 5360). The heart failure guideline contains **no recommendation on surgical or hybrid AF ablation or surgical appendage closure**; for those use the ESC/EACTS 2024 and STS 2023 sections in this tab.
+
+### Recommendations (Recommendation Table 15)
+| Recommendation | Class | Level |
+|---|---|---|
+| Oral anticoagulation in clinical AF at raised thromboembolic risk by CHA2DS2-VA | I | A |
+| DOACs in preference to VKAs (except moderate or severe mitral stenosis and mechanical valves, where VKAs are recommended) | I | B1 |
+| Beta-blockers first line for short- and long-term rate control in stable HFrEF with AF (2021: IIa B) | I | C |
+| Digoxin when the rate stays high on beta-blockers or they cannot be used | IIa | C |
+| AV node ablation with CRT in severely symptomatic permanent AF, poor rate control despite drugs and at least 1 HF admission | IIa | B1 |
+| IV amiodarone or digoxin for acute rate control in haemodynamically unstable HFrEF with AF | IIb | C |
+| Urgent cardioversion in decompensated HF with rapid rates and haemodynamic instability | I | C |
+| **Catheter ablation** in selected patients with symptomatic AF and HFrEF, to improve quality of life and reduce HF admission or death | IIa | C |
+
+- Catheter ablation: **all three selection criteria** are required: high AF burden, continuous persistent AF of less than 1 year, and a clear cause–effect link between AF and HF. RCTs against drug rhythm control are not conclusive for death or HF admission, though ablation beats drugs for AF recurrence; data in HFpEF are limited.
+- What changed from 2021 (Table 6): catheter ablation was IIa **B** "in cases of a clear association" between AF and worsening HF; it stays IIa but the level is now **C** and the criteria are explicit. (Correction to the slide-set summary in Cardiac 18 part 1, which said it "stays IIa C".)
+
+### CHA2DS2-VA (Table 18)
+| Letter | Item | Points |
+|---|---|---|
+| C | Chronic HF stage B, C or D | 1 |
+| H | Hypertension | 1 |
+| A | Age 75 or over | 2 |
+| D | Diabetes | 1 |
+| S | Stroke, TIA or arterial thromboembolism | 2 |
+| V | Vascular disease (CAD and/or PAD) | 1 |
+| A | Age 65 to 74 | 1 |
+
+A score of 2 or more is recommended as the threshold for anticoagulation; a score of 1 should be considered one. Sex is no longer scored. **HCM and cardiac amyloid: anticoagulate AF whatever the score.** Left atrial appendage closure "can be an option" in selected patients, as in the 2024 ESC AF guideline.
+
+### Points from the text
+- AF occurs in over half of patients with HF, and HF in over a third with AF. HF caused by AF does better than HF that causes AF.
+- No strategy (rate or rhythm) is proven superior in HF; choose by the cause–effect relation, symptoms, stage, comorbidity and preference.
+- Lenient rate control (resting rate under 110) is the initial target, reassessed by symptoms (RACE II: lenient non-inferior to strict, few HF patients).
+- Pharmacological cardioversion in HFrEF: amiodarone. Avoid propafenone, flecainide and dronedarone in HFrEF.
+- Gaps named: adequately powered RCTs of AF strategy in HF, and which HFrEF and HFpEF patients benefit from ablation.

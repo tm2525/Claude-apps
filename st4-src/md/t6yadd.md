@@ -88,7 +88,7 @@ Added 21 November 2026 from NICE, Lung cancer: diagnosis and management (NG122),
 
 ## ESMO 2025 early and locally advanced NSCLC guideline: status in these notes
 
-Added 21 November 2026. The guideline: ESMO Guidelines Committee; Zer A, Ahn M-J, Barlesi F, Bubendorf L, De Ruysscher D, Garrido P, Gautschi O, Hendriks LE, Jänne PA, Kerr KM, Mascaux C, Mitsudomi T, Peters S, Rolfo C, Sacher A, Senan S, Ugalde P, Leighl NB. Early and locally advanced non-small-cell lung cancer: ESMO Clinical Practice Guideline for diagnosis, treatment and follow-up. Ann Oncol 2025;36(11):1245-1262; doi:10.1016/j.annonc.2025.08.003. **Bibliographic record and abstract only; the full text could not be opened on 21 November 2026 (publisher site refused the request), so none of its recommendations, levels or grades are given here.** The comparison rows are from the ESMO 2021 eUpdate, read in full on esmo.org.
+Added 21 November 2026. The guideline: ESMO Guidelines Committee; Zer A, Ahn M-J, Barlesi F, Bubendorf L, De Ruysscher D, Garrido P, Gautschi O, Hendriks LE, Jänne PA, Kerr KM, Mascaux C, Mitsudomi T, Peters S, Rolfo C, Sacher A, Senan S, Ugalde P, Leighl NB. Early and locally advanced non-small-cell lung cancer: ESMO Clinical Practice Guideline for diagnosis, treatment and follow-up. Ann Oncol 2025;36(11):1245-1262; doi:10.1016/j.annonc.2025.08.003. **Bibliographic record and abstract only; the full text could not be opened on 21 November 2026 (publisher site refused the request), so none of its recommendations, levels or grades are given here. (Corrected 24 November 2026 from the full text: the PDF has since been read in full; its recommendations, levels and grades are in "ESMO 2025 early and locally advanced NSCLC, read in full" in this tab and in Thoracic 1, 2, 3, 4 and 9.)** The comparison rows are from the ESMO 2021 eUpdate, read in full on esmo.org.
 
 ### What is confirmed about the 2025 guideline
 
@@ -116,7 +116,7 @@ Remon J, Soria J-C, Peters S, on behalf of the ESMO Guidelines Committee. eUpdat
 
 ### To do
 
-Read the 2025 full text (Annals of Oncology, open access) and add its surgical recommendations with levels and grades. These cover extent of resection and segmentectomy, nodal dissection, minimally invasive approaches, perioperative chemo-immunotherapy, PORT, superior sulcus tumours, SABR for operable patients, and follow-up imaging. Then mark where it differs from NICE NG122.
+Read the 2025 full text (Annals of Oncology, open access) and add its surgical recommendations with levels and grades. These cover extent of resection and segmentectomy, nodal dissection, minimally invasive approaches, perioperative chemo-immunotherapy, PORT, superior sulcus tumours, SABR for operable patients, and follow-up imaging. Then mark where it differs from NICE NG122. (Done 24 November 2026 from the full text: see the read-in-full section in this tab.)
 
 ## Guideline register update: mesothelioma documents and the ESMO 2025 NSCLC guideline
 
@@ -133,7 +133,7 @@ Added 21 November 2026. This updates two lines of the guideline table above: the
 | ERS/ESTS/EACTS/ESTRO 2020 statement | Not re-read today; its line above remains "from memory" | |
 
 ### ESMO 2025 early and locally advanced NSCLC (Zer et al., Ann Oncol 2025;36(11):1245-1262)
-A second attempt on 21 November 2026 found no openable full text: no PMC or Europe PMC record surfaced, the Annals of Oncology and DOI links were refused, the SKKU repository has only the abstract, and the esmo.org eUpdate page (September 2021) does not link the 2025 document. The status note above stands: its recommendations, levels and grades are not in these notes.
+A second attempt on 21 November 2026 found no openable full text: no PMC or Europe PMC record surfaced, the Annals of Oncology and DOI links were refused, the SKKU repository has only the abstract, and the esmo.org eUpdate page (September 2021) does not link the 2025 document. The status note above stands: its recommendations, levels and grades are not in these notes. (Corrected 24 November 2026 from the full text: the PDF has since been read in full; see "ESMO 2025 early and locally advanced NSCLC, read in full" in this tab.)
 
 ## Guideline currency check, November 2026: thoracic documents from 2025 and 2026
 
@@ -187,3 +187,58 @@ So there are now three NICE-approved perioperative chemo-immunotherapy routes, a
 Target date: the 2023 announcement gave **100% coverage by March 2030**; CRUK quotes the National Cancer Plan as **100% by December 2030**. Quote "by 2030" unless asked.
 
 More than a third of lung cancers in the most deprived areas of England have been found early since the programme began (NHS England, May 2026).
+
+## ESMO 2025 early and locally advanced NSCLC, read in full: against the 2021 eUpdate, NICE NG122 and NCCN
+
+Added 24 November 2026 from Zer A, Ahn M-J, Barlesi F, et al., on behalf of the ESMO Guidelines Committee. Early and locally advanced non-small-cell lung cancer: ESMO Clinical Practice Guideline for diagnosis, treatment and follow-up. Ann Oncol 2025;36(11):1245-1262; doi:10.1016/j.annonc.2025.08.003. Read in full from the published PDF (pages 1245 to 1262, including Table 1, Figures 1 to 3 and the methodology). This replaces the "status in these notes" entries above, which recorded the full text as unobtainable. The other columns come from sections already in the notes: the 2021 eUpdate (this tab, read on esmo.org), NICE NG122 with its February 2026 update (this tab and Thoracic 1 and 2), and NCCN as quoted by the TSRA Review chapters 6, 8 and 9 (2020 versions, not current NCCN text).
+
+### About the document
+
+- Approved by the ESMO Guidelines Committee in July 2017 and last updated in August 2025. It supersedes Ann Oncol 2017;28(suppl 4):iv1-iv21 and its eUpdates. Later changes will appear on the ESMO guidelines website as Express Guideline Updates or Living Guidelines.
+- 18 authors from medical oncology, radiation oncology, pathology, pulmonology and thoracic surgery (P. Ugalde, Brigham and Women's). Recommendations rest on the evidence and the authors' collective opinion.
+- Grading: level of evidence I to V and grade of recommendation A to E, using the scheme in Supplementary Table S2 (not read), adapted from infectious-disease quality standards (Dykewicz 2001, after Gross 1994). Ungraded statements are standard practice in the authors' view.
+- Ordering of options: by level and grade, then ESMO-MCBS v2.0 score, then alphabetically. ESCAT scores are given for genomic targets. EMA and FDA approval status is as of writing.
+- The detailed recommendations are now in Thoracic 1 (diagnosis, staging, biomarkers), 2 (fitness, ILD), 9 (surgery), 3 (SBRT, PORT, unresectable stage III) and 4 (systemic therapy).
+
+### Side by side
+
+| Topic | ESMO 2025 | ESMO 2021 eUpdate (superseded) | NICE NG122 | NCCN as quoted by TSRA (2020) |
+|---|---|---|---|---|
+| Screening | Low-dose CT, 55 to 74, current over 30 pack-years or quit under 15 years [I, A] | Not in the eUpdate rows | Not in the NG122 rows in these notes | Annual low-dose CT 55 to 77 or 80, 30 pack-years and quit under 15 years, or 20 pack-years with another risk factor |
+| Brain imaging | MRI for stage II to III [III, A] | Not in the rows | None in asymptomatic stage I; contrast CT stage II; MRI stage III | MRI may be considered in IB; required from stage II |
+| Mediastinum | Endosonography for abnormal nodes [I, A]; mediastinoscopy optional | Not in the rows | Endosonography first; consider surgical staging if a negative result leaves high suspicion | Pathological staging optional for solid under 1 cm and pure non-solid under 3 cm |
+| Extent of resection | Sublobar for peripheral tumours of 2 cm or less, N0 on CT and PET [I, A]; pure ground glass [III, B]; lobectomy for solid over 2 cm [II, B]; anatomical over wedge [I, A] | Not in the rows | Lobectomy for the fit; SABR or sublobar only if lobectomy declined or contraindicated (1.5.1, 1.5.5) | Lobectomy the gold standard; sublobar for those unfit for lobectomy, margin at least the tumour size |
+| Nodes | 3 mediastinal and 3 hilar stations [III, A]; at least 6 stations including subcarinal | Not in the rows | Hilar and mediastinal sampling or en bloc resection for all (1.5.3) | Sample N1 and N2; N2 from at least 3 stations |
+| Approach | VATS or RATS for stage I to II [I, A]; stage III by experience [V, C] | Not in the rows | Open or thoracoscopic (1.5.1) | Open, VATS or robotic |
+| Fitness | ppo values 60% or more: proceed; under 30%: VO2 max; VO2 max under 10: sublobar or non-surgical [all IV, A] | Not in the rows | Under 30% may still be offered surgery; shuttle walk over 400 m or VO2 max over 15 is good function | History, examination, lung function, nutrition, cardiac assessment |
+| Inoperable stage I | SBRT [II, A]; salvage surgery after SBRT [IV, B] | Not in the rows | SABR (1.5.5, 1.5.8) | SBRT; radiofrequency ablation an alternative |
+| Adjuvant chemotherapy | Stage II to III, wild type, not eligible for chemo-immunotherapy: cisplatin [I, A]; carboplatin [II, B] | Stage IIB to III [I, A]; consider IIA over 4 cm [II, B]; carboplatin [IV, B] | Offer N1 to N2; consider N0 over 4 cm; PS 0 to 1 | Selected high-risk IB to II; cisplatin first, carboplatin-paclitaxel if not tolerated |
+| Chemo-immunotherapy before surgery | Neoadjuvant or perioperative, stage II to III wild type [I, A]; five regimens | Not in the rows | TA876, TA1030, TA1017 (TA1127 named elsewhere in the notes) | Not in the 2020 text |
+| Adjuvant immunotherapy | Atezolizumab (PD-L1 1% or more, after cisplatin) or pembrolizumab, 1 year [I, A] | Not in the rows | TA1071, TA1037 after platinum | Not in the 2020 text |
+| EGFR | Osimertinib 3 years, IB to IIIA [I, A]; after CRT [I, A] | Osimertinib IB to IIIA [I, A] | TA1043; after CRT TA1156 (named elsewhere) | Not in the 2020 text |
+| ALK | Alectinib 2 years, II to IIIA (T 4 cm or more) [I, A] | Not in the rows | TA1014 | Not in the 2020 text |
+| PORT | Not after R0, even with extracapsular spread [I, D]; may give 60 Gy in 30 after R1 [III, C] | Not after complete resection, including N2 [I, E]; consider after R1 [IV, B] | Not in the NG122 rows in these notes | R1 in stage I to II: re-resection preferred, or radiotherapy |
+| Stage III N2 | MDT decides surgery-based treatment or concurrent CRT for each patient [V, A] | Not in the rows | Consider CRT with surgery; operate 3 to 5 weeks after (1.6.3, 1.6.5) | T4 N2: non-surgical |
+| Unresectable stage III | Concurrent CRT 60 Gy [I, A]; durvalumab within 42 days [I, A], also after sequential CRT [III, B] | Durvalumab 1 to 42 days after CRT [I, A] | CRT (1.6.17), then durvalumab if PD-L1 1% or more (TA798, 1.6.18) | PACIFIC regimen |
+| Follow-up | See below | Every 6 months for 2 years with CT at least at 12 and 24 months, then yearly [III, B] | First specialist review within 6 weeks, then regular visits (1.19.1) | History, examination and chest CT every 6 months for 2 to 3 years, then yearly; no routine PET |
+
+### What has moved since 2021
+
+- Sublobar resection for small peripheral node-negative tumours is now [I, A] (the 2017 surgical recommendations were not read, so its old grade is not known here). NICE has not followed, so UK and European guidance differ.
+- Chemo-immunotherapy before surgery is the first choice for wild-type stage II to III, with five [I, A] regimens.
+- Adjuvant chemotherapy is now for patients who cannot have chemo-immunotherapy. The 2021 eUpdate's stage threshold (IIB to III, consider IIA over 4 cm) is replaced by stage II to III.
+- The R0 PORT grade has changed from [I, E] to [I, D]. The R1 PORT grade has changed from [IV, B] to [III, C], now with a dose of 60 Gy in 30 fractions.
+- Durvalumab after sequential CRT is new [III, B], and osimertinib after CRT is new [I, A].
+- Surveillance is graded higher ([I, B] against [III, B]) and now has an end point at 5 years.
+
+### Follow-up and survivorship (ESMO 2025)
+
+| Recommendation | Level, grade |
+|---|---|
+| After curative treatment: surveillance for treatment complications, recurrence and new primary lung cancer | I, A |
+| At least every 6 months for 2 years, then yearly to 5 years from definitive treatment: history, examination, blood tests and preferably contrast chest CT including the adrenals | I, B |
+| High recurrence risk and fit for salvage: CT every 3 to 6 months for 3 years, then yearly to 5 years | III, B |
+| Tailor visit frequency for patients unsuitable for salvage or with other risk factors | V, B |
+| Selective FDG-PET when serial CT suggests recurrence after SBRT or CRT | III, B |
+
+Complications to watch for after surgery (with or without neoadjuvant chemo-immunotherapy) are respiratory failure, pneumonia, pneumothorax and cardiac events, mostly in the first 30 days. After CRT they are infection, oesophagitis, pneumonitis, cytopenias, cardiac toxicity and hepatotoxicity. Immunotherapy and targeted drugs can cause late effects well into the surveillance period. Supplementary Section 5 (surveillance detail) was not read.

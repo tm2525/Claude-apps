@@ -5012,6 +5012,666 @@ def f50_cctga_repairs():
     return svg(400, b)
 
 
+# ---- figs_F51.py
+
+
+
+def f51_stage1():
+    """ESMO 2025 stage I pathway (redrawn from the guideline's Figure 1)."""
+    b = box(190, 8, 340, 40, 'Stage I NSCLC: work-up and MDT', 'b1', 'f-h')
+    b += arrow(300, 48, 110, 74) + arrow(420, 48, 470, 74)
+    # inoperable chain (left)
+    b += box(10, 76, 200, 36, 'Medically inoperable', 'b1')
+    b += arrow(110, 112, 110, 130)
+    b += box(10, 132, 200, 40, 'SBRT [II, A]', 'ok', 'f-h')
+    b += arrow(110, 172, 110, 190)
+    b += box(10, 192, 200, 36, 'Surveillance', 'b1')
+    b += arrow(110, 228, 110, 246)
+    b += box(10, 248, 200, 36, 'Local progression', 'b1')
+    b += arrow(110, 284, 110, 302)
+    b += box(10, 304, 200, 56, ['Salvage surgery [IV, B]', 'same indications,', 'higher risk'], 'warn')
+    b += arrow(110, 360, 110, 378)
+    b += box(10, 380, 200, 36, 'Surveillance [I, A]', 'b1')
+    # operable (right)
+    b += box(330, 76, 280, 36, 'Medically operable', 'b1')
+    b += arrow(470, 112, 470, 130)
+    b += box(240, 132, 470, 76, ['Surgery [III, A]; VATS or RATS [I, A]; anatomical over wedge [I, A]',
+                                 'Sublobar: peripheral, 2 cm or less, N0 on CT and PET [I, A]',
+                                 'or pure ground glass [III, B]. Lobectomy: solid over 2 cm [II, B]'], 'warn')
+    b += line(250, 208, 250, 500)
+    rows = [
+        (222, ['R2: MDT (re-resection, chemotherapy, PORT or CRT)'], 'b1', 36),
+        (268, ['R1: PORT 60 Gy in 30 fractions [III, C];', 'order with drug treatment set by MDT [III, A]'], 'ok', 48),
+        (326, ['R0, under 3 cm, N0: surveillance [I, A]'], 'b1', 36),
+        (372, ['R0, 3 to 4 cm, N0, EGFR exon 19 deletion or L858R:', 'osimertinib 3 years [I, A; MCBS A (AT)]'], 'b0', 48),
+        (430, ['R0, 3 to 4 cm, N0, EGFR wild type: surveillance [I, A]'], 'b1', 36),
+        (476, ['R0, higher pathological stage:', 'follow the resectable stage II to III pathway'], 'b1', 48),
+    ]
+    for y, lab, cls, h in rows:
+        b += arrow(250, y + h / 2, 266, y + h / 2)
+        b += box(268, y, 442, h, lab, cls)
+    b += T(10, 548, 'Amber: surgery. Green: radiotherapy. Plain: drug treatment. Tinted: other steps.', 'f-s', 'start')
+    return svg(560, b)
+
+
+def f51_resectability():
+    """Stage III resectability as framed by EORTC and STS, cited in ESMO 2025."""
+    b = T(360, 22, 'Stage III resectability (EORTC and STS frameworks, as cited by ESMO 2025)', 'f-h')
+    b += box(10, 40, 226, 34, 'Offer surgery', 'ok', 'f-h')
+    b += box(247, 40, 226, 34, 'Depends or no consensus', 'warn', 'f-h')
+    b += box(484, 40, 226, 34, 'Unresectable', 'b1', 'f-h')
+    b += box(10, 84, 226, 150, ['IIIA: cT3 N1', 'IIIA: cT1-2 N2, single station', 'IIIA: cT4 N0-1 for size or', 'separate nodules',
+                                'IIIB: cT3 N2', 'IIIB: cT4 N2 for size or', 'separate nodules'], 'ok')
+    b += box(247, 84, 226, 150, ['cT4 N0-1 by invasion:', 'depends on the structure', '',
+                                 'Multistation N2: no consensus', '',
+                                 'Bulky N2 (over 2.5 to 3 cm):', 'no consensus'], 'warn')
+    b += box(484, 84, 226, 150, ['Any N3'], 'b1')
+    b += box(10, 248, 700, 56, ['Frameworks for trial entry, not a substitute for individual MDT judgement.',
+                                'N2 disease: surgery-based treatment or concurrent CRT decided by an experienced MDT [V, A]'], 'b0')
+    b += T(10, 322, 'TNM9 splits N2 into N2a (single station) and N2b (multiple stations).', 'f-s', 'start')
+    return svg(334, b)
+
+
+def f51_resectable23():
+    """ESMO 2025 resectable stage II to III pathway (redrawn from the guideline's Figure 2)."""
+    b = box(170, 8, 380, 40, ['Resectable stage II to III: EGFR, ALK and', 'PD-L1 testing, then MDT'], 'b1', 'f-h')
+    b += arrow(280, 48, 200, 66) + arrow(440, 48, 560, 66)
+    b += box(10, 68, 380, 32, 'EGFR and ALK wild type', 'b1', 'f-h')
+    b += box(410, 68, 300, 32, 'EGFR mutation or ALK fusion', 'b1', 'f-h')
+    # wild type, chemo-immunotherapy eligible
+    b += arrow(100, 100, 100, 116)
+    b += box(10, 118, 180, 50, ['Chemo-immunotherapy', 'eligible'], 'b1')
+    b += arrow(100, 168, 100, 184)
+    b += box(10, 186, 180, 50, ['Chemo-immunotherapy', 'first [I, A]'], 'b0', 'f-h')
+    b += arrow(100, 236, 100, 252)
+    b += box(10, 254, 180, 40, 'Surgery [III, A]', 'warn')
+    b += arrow(100, 294, 100, 310, dash=True)
+    b += box(10, 312, 180, 64, ['Adjuvant immunotherapy', 'for perioperative', 'regimens [I, A]'], 'b0')
+    # wild type, not eligible
+    b += arrow(300, 100, 300, 116)
+    b += box(200, 118, 190, 50, ['Not eligible for', 'chemo-immunotherapy'], 'b1')
+    b += arrow(300, 168, 300, 184)
+    b += box(200, 186, 190, 40, 'Surgery [III, A]', 'warn')
+    b += arrow(300, 226, 300, 242)
+    b += box(200, 244, 190, 50, ['R0: cisplatin doublet', 'if fit [I, A]'], 'b0')
+    b += arrow(300, 294, 300, 310)
+    b += box(200, 312, 190, 64, ['PD-L1 1% or more: atezo-', 'lizumab or pembrolizumab', 'PD-L1 under 1%: pembro'], 'b0')
+    # mutated
+    b += arrow(560, 100, 560, 116)
+    b += box(410, 118, 300, 40, 'Surgery first [III, A]', 'warn')
+    b += arrow(500, 158, 480, 176) + arrow(620, 158, 640, 176)
+    b += box(410, 178, 140, 116, ['EGFR exon 19', 'deletion or L858R:', 'cisplatin doublet', 'if fit [I, A], then', 'osimertinib 3 y'], 'b0')
+    b += box(570, 178, 140, 116, ['ALK fusion,', 'II to IIIA (4 cm', 'or more): chemo', 'optional [II, C],', 'alectinib 2 y'], 'b0')
+    b += box(410, 312, 300, 64, ['Both [I, A], ESCAT I-A. R1 or R2 in any', 'arm: MDT (re-resection, chemotherapy,', 'PORT or CRT)'], 'b1')
+    b += arrow(480, 294, 480, 310) + arrow(640, 294, 640, 310)
+    b += box(10, 392, 700, 36, 'All arms end in surveillance [I, A]. Dashed arrow: optional step.', 'b1')
+    return svg(440, b)
+
+
+def f51_unresectable3():
+    """ESMO 2025 unresectable stage III pathway (redrawn from the guideline's Figure 3)."""
+    b = box(170, 8, 380, 40, ['Unresectable stage III: EGFR and', 'PD-L1 testing, MDT'], 'b1', 'f-h')
+    b += arrow(280, 48, 180, 66) + arrow(440, 48, 540, 66)
+    b += box(10, 68, 340, 34, 'EGFR mutation or PD-L1 under 1%', 'b1', 'f-h')
+    b += box(370, 68, 340, 34, 'EGFR wild type and PD-L1 1% or more', 'b1', 'f-h')
+    for x0 in (10, 370):
+        b += arrow(x0 + 60, 102, x0 + 60, 120) + arrow(x0 + 180, 102, x0 + 180, 120) + arrow(x0 + 290, 102, x0 + 290, 120)
+        b += box(x0, 122, 115, 50, ['Concurrent', 'CRT [I, A]'], 'ok')
+        b += box(x0 + 123, 122, 115, 50, ['Sequential', 'CRT [I, A]'], 'ok')
+        b += box(x0 + 246, 122, 94, 50, ['RT alone', '[I, A]'], 'ok')
+    # left: EGFR
+    b += arrow(67, 172, 67, 196) + arrow(190, 172, 190, 196)
+    b += box(10, 198, 250, 56, ['EGFR exon 19 deletion or L858R,', 'no progression after either CRT:', 'osimertinib [I, A; MCBS 4]'], 'b0')
+    # right: durvalumab
+    b += arrow(430, 172, 430, 196) + arrow(550, 172, 600, 196)
+    b += box(370, 198, 165, 56, ['No progression:', 'durvalumab 1 y', '[I, A; MCBS 4]'], 'b0')
+    b += box(545, 198, 165, 56, ['No progression:', 'durvalumab 1 y', '[III, B]'], 'b0')
+    b += box(10, 270, 700, 78, ['Concurrent CRT for those fit for it; sequential CRT or RT alone for the rest.',
+                                'Chemotherapy: platinum doublet for 2 to 3 cycles [I, A]. Radiotherapy: 60 Gy once daily [I, A].',
+                                'Durvalumab starts within 42 days of the end of CRT [I, A]. Then surveillance [I, A].'], 'b1')
+    b += T(10, 366, 'After sequential CRT durvalumab is EMA-approved (PD-L1 1% or more), not FDA-approved.', 'f-s', 'start')
+    return svg(378, b)
+
+
+# ---- figs_F52.py
+
+
+
+def f52_hf_stages():
+    """Heart failure stages A to D, LVEF phenotypes and therapy terms, ESC 2026 (sections 3.3.1 to 3.3.4)."""
+    b = T(12, 22, 'ESC 2026: four stages, two phenotypes, three kinds of therapy', 'f-h', 'start')
+    rows = [('A', 'At risk', ['Risk factors only: no symptoms, no structural', 'change, no raised cardiac biomarkers'], 'b1'),
+            ('B', 'Pre-heart failure', ['No symptoms, but structural or functional', 'abnormality, or raised NP or troponin'], 'b1'),
+            ('C', 'Symptomatic', ['Current or prior symptoms or signs caused', 'by a cardiac abnormality'], 'b0'),
+            ('D', 'Advanced', ['Severe symptoms and dysfunction, recurrent', 'events despite FMT, AMT and GDIT'], 'warn')]
+    y = 38
+    for s, name, desc, cls in rows:
+        b += box(10, y, 150, 58, ['Stage ' + s, name], cls, 'f-s')
+        b += box(170, y, 330, 58, desc, 'track', 'f-s')
+        y += 66
+    yc = 38 + 2 * 66
+    b += arrow(500, yc + 22, 540, yc - 8) + arrow(500, yc + 36, 540, yc + 40)
+    b += box(542, yc - 28, 168, 40, ['HFrEF: LVEF under 50%'], 'b0', 'f-s')
+    b += box(542, yc + 20, 168, 40, ['HFpEF: LVEF 50% or more'], 'b0', 'f-s')
+    b += box(542, 38 + 3 * 66 + 2, 168, 56, ['41 to 49% group removed;', 'improved EF: up 10 points', 'and above 40%'], 'track', 'f-s')
+    y = 38 + 4 * 66 + 6
+    b += box(10, y, 225, 64, ['FMT: class I, general HF', 'population, morbidity or', 'mortality benefit'], 'ok', 'f-s')
+    b += box(247, y, 225, 64, ['AMT: class IIa or IIb, or class I', 'for symptoms only, or class I', 'in a subgroup only'], 'b0', 'f-s')
+    b += box(484, y, 226, 64, ['GDIT: every device or', 'intervention with a', 'recommendation of any class'], 'b0', 'f-s')
+    b += T(12, y + 86, 'FMT for HFrEF: beta-blocker, ACE-I/ARNI/ARB, MRA, SGLT2-I. For HFpEF: MRA and SGLT2-I. GDMT = FMT + AMT.', 'f-s', 'start')
+    return svg(y + 98, b)
+
+
+def f52_icd_primary():
+    """Primary-prevention ICD in HFrEF, ESC 2026 Recommendation Table 6 and section 6.2.1.4."""
+    b = T(12, 22, 'Primary-prevention ICD in heart failure: who, when, which class', 'f-h', 'start')
+    b += box(160, 36, 400, 52, ['Symptomatic HFrEF, NYHA II or III', 'LVEF 35% or less after 3 months or more of optimal FMT'], 'b1', 'f-s')
+    b += arrow(360, 88, 360, 106)
+    b += box(160, 108, 400, 44, ['Expected survival over 1 year with good function?', 'Shared decision (competing risks, age, frailty)'], 'b1', 'f-s')
+    b += arrow(280, 152, 185, 180) + arrow(440, 152, 535, 180)
+    b += box(10, 182, 340, 60, ['Ischaemic aetiology, no MI in last 40 days', 'ICD recommended: I B1'], 'ok', 'f-s')
+    b += box(370, 182, 340, 60, ['Non-ischaemic aetiology', 'ICD should be considered: IIa B1'], 'b0', 'f-s')
+    b += box(10, 256, 340, 52, ['Within 40 days of MI: no primary-prevention', 'ICD (III B1); wearable ICD as bridge IIb C'], 'warn', 'f-s')
+    b += box(370, 256, 340, 52, ['NYHA IV refractory: no ICD unless CRT,', 'VAD or transplant candidate (III C)'], 'warn', 'f-s')
+    b += box(10, 320, 700, 44, ['Before every generator change: shared decision with a CIED and HF cardiologist (IIa C).',
+                               'Delaying implant carries a sudden death risk of 2 to 4% at 6 months and about 7% at 1 year.'], 'track', 'f-s')
+    return svg(374, b)
+
+
+def f52_shock_tmcs():
+    """Temporary MCS in cardiogenic shock by setting, ESC 2026 Recommendation Table 10."""
+    b = box(160, 8, 400, 44, ['Possible temporary MCS candidate: Shock Team decides', 'modality and device (I C)'], 'ok', 'f-s')
+    b += arrow(250, 52, 100, 78) + arrow(330, 52, 290, 78) + arrow(400, 52, 460, 78) + arrow(480, 52, 620, 78)
+    b += box(10, 80, 170, 34, 'STEMI shock, selected', 'b1', 'f-s')
+    b += box(190, 80, 170, 34, 'AMI shock, unselected', 'b1', 'f-s')
+    b += box(370, 80, 170, 34, 'Post-MI mechanical lesion', 'b1', 'f-s')
+    b += box(550, 80, 160, 34, 'Advanced HF shock', 'b1', 'f-s')
+    b += arrow(95, 114, 95, 132) + arrow(275, 114, 275, 132) + arrow(455, 114, 455, 132) + arrow(630, 114, 630, 132)
+    b += box(10, 134, 170, 104, ['Microaxial flow pump', 'IIa B1', 'LV systolic dysfunction,', 'no risk of hypoxic', 'brain injury'], 'ok', 'f-s')
+    b += box(190, 134, 170, 104, ['Any temporary MCS:', 'III B1 (harm)', 'IABP in unselected', 'shock: III B1', '(no effect)'], 'warn', 'f-s')
+    b += box(370, 134, 170, 104, ['Bridge to repair', 'IIa C', 'IABP or active device', 'by shock severity'], 'b0', 'f-s')
+    b += box(550, 134, 160, 104, ['Bridge to recovery,', 'decision, bridge,', 'candidacy or', 'transplant', 'IIa C'], 'b0', 'f-s')
+    b += box(10, 252, 700, 64, ['No risk of hypoxic brain injury = no out-of-hospital arrest with GCS under 8 after ROSC, and no or under 10 min CPR.',
+                               'Large VSD: caution (ECLS raises left-to-right shunt; microaxial pump may reverse it).',
+                               'Free-wall rupture: avoid temporary MCS, but VA-ECLS may allow emergency surgery.'], 'track', 'f-s')
+    return svg(326, b)
+
+
+def f52_dhf_diuretic():
+    """Decongestion steps in decompensated heart failure, ESC 2026 section 7.5.3 and Figure 15."""
+    b = box(110, 8, 500, 46, ['IV loop diuretic: furosemide 40 mg if diuretic-naive,', 'or twice the usual oral daily dose (higher in CKD)'], 'b1', 'f-s')
+    b += arrow(360, 54, 360, 72)
+    b += box(110, 74, 500, 46, ['Response? Spot urine Na 70 mmol/L or more at 2 h,', 'or urine output 100 mL/h or more over 6 h'], 'b0', 'f-s')
+    b += arrow(250, 120, 150, 146) + arrow(470, 120, 570, 146)
+    b += T(200, 146, 'Yes', 'f-s', 'start') + T(520, 146, 'No', 'f-s', 'end')
+    b += box(10, 148, 300, 64, ['Repeat every 12 h until fully', 'decongested; after 24 h, escalate', 'on day 2 if under 3 L and congested'], 'ok', 'f-s')
+    b += box(410, 148, 300, 64, ['Double the loop dose, or (if on loop', 'diuretic before) add IV acetazolamide', '500 mg or oral HCTZ by eGFR (IIa B1)'], 'b0', 'f-s')
+    b += arrow(560, 212, 560, 232)
+    b += box(410, 234, 300, 64, ['Still poor: escalate loop to maximum', '(furosemide 600 mg/day, up to 1000 mg', 'in severe kidney failure) + other agents'], 'warn', 'f-s')
+    b += arrow(560, 298, 560, 316)
+    b += box(410, 318, 300, 44, ['Ultrafiltration if still not', 'decongested (option, no class)'], 'warn', 'f-s')
+    b += box(10, 234, 380, 128, ['Throughout:', 'start or uptitrate FMT alongside;', 'SGLT2-I in hospital after stabilisation (I B1);', 'creatinine and electrolytes at least daily;', 'watch for hypotension and hypoperfusion;', 'MRA and potassium if hypokalaemic'], 'track', 'f-s')
+    return svg(372, b)
+
+
+# ---- figs_F53.py
+
+
+
+def f53_intermacs():
+    """INTERMACS profiles 1 to 7 and the time frame for MCS (ESC 2026 HF guideline, Figure 17)."""
+    rows = [('1', 'Critical cardiogenic shock', 'Life-threatening hypotension despite rising inotropes; acidosis or lactate', 'warn'),
+            ('2', 'Progressive decline', 'Declining despite IV inotropes (or intolerant of them)', 'warn'),
+            ('3', 'Stable but inotrope-dependent', 'Stable on inotropes or temporary support; weaning fails', 'b0'),
+            ('4', 'Resting symptoms', 'Daily congestion at near-normal volume; high diuretic needs', 'b0'),
+            ('5', 'Housebound', 'Comfortable at rest and with minor daily activities only', 'b1'),
+            ('6', 'Exertion limited', 'Tires after a few minutes of activity; no overload; CPET needed', 'b1'),
+            ('7', 'Advanced NYHA III', 'Comfortable with mild exertion; may not yet qualify', 'track')]
+    b = T(12, 22, 'INTERMACS profiles and when to place durable MCS', 'f-h', 'start')
+    b += T(600, 44, 'Time frame for MCS', 'f-s')
+    y = 54
+    for n, name, desc, cls in rows:
+        b += box(10, y, 34, 40, n, cls, 'f-h')
+        b += T(54, y + 17, name, 'f-h', 'start')
+        b += T(54, y + 34, desc, 'f-s', 'start')
+        y += 48
+    frames = [(54, 94, 'Within hours', 'warn'), (102, 142, 'Within days', 'warn'),
+              (150, 238, 'Elective: weeks to months', 'b0'),
+              (246, 334, 'Variable: organ function, nutrition, frailty', 'b1'),
+              (342, 382, 'Not currently indicated', 'track')]
+    for y1, y2, lab, cls in frames:
+        words = lab.split(': ') if ': ' in lab else ([lab] if len(lab) < 22 else [lab[:lab.rfind(' ', 0, 22)], lab[lab.rfind(' ', 0, 22) + 1:]])
+        if len(words) == 2 and len(words[1]) > 22:
+            words = ['Variable: organ function,', 'nutrition, frailty']
+        b += box(520, y1, 190, y2 - y1, words, cls, 'f-s')
+    b += T(12, 408, 'Redrawn from ESC 2026 heart failure guideline, Figure 17 (descriptions shortened).', 'f-s', 'start')
+    return svg(418, b)
+
+
+def f53_advhf_intermacs():
+    """Treatment of advanced HF by INTERMACS profile (ESC 2026 HF guideline, Figure 18)."""
+    b = box(160, 8, 400, 36, 'Consultation with an advanced HF centre (I A)', 'ok', 'f-s')
+    xs = [(10, 'INTERMACS 1'), (190, 'INTERMACS 2'), (370, 'INTERMACS 3 to 4'), (550, 'INTERMACS over 4')]
+    for x, lab in xs:
+        b += arrow(360, 44, x + 80, 64)
+        b += box(x, 66, 160, 32, lab, 'b1', 'f-s')
+    b += arrow(90, 98, 150, 116) + arrow(250, 98, 220, 116)
+    b += box(30, 118, 300, 36, 'Temporary MCS, with the Shock Team (IIa)', 'b0', 'f-s')
+    b += arrow(64, 154, 64, 176) + arrow(178, 154, 178, 176) + arrow(292, 154, 292, 176)
+    b += box(10, 178, 108, 64, ['Irreversible', 'organ damage'], 'warn', 'f-s')
+    b += box(124, 178, 108, 64, ['Cardiac and', 'organ', 'recovery'], 'b1', 'f-s')
+    b += box(238, 178, 108, 64, ['Organ recovery,', 'no cardiac', 'recovery'], 'b1', 'f-s')
+    b += arrow(64, 242, 64, 270) + arrow(178, 242, 178, 270) + arrow(300, 242, 360, 270)
+    b += box(10, 272, 108, 54, ['Withdraw MCS;', 'palliative care'], 'warn', 'f-s')
+    b += box(124, 272, 108, 54, ['Wean; very', 'close follow-up'], 'b1', 'f-s')
+    b += box(330, 272, 210, 54, ['LVAD (BTT, DT, BTC, BTR)', 'and/or transplant listing (I)'], 'ok', 'f-s')
+    b += line(350, 82, 362, 82) + line(362, 82, 362, 230) + arrow(362, 230, 385, 270)
+    b += arrow(450, 98, 450, 270)
+    b += box(560, 118, 150, 52, ['High risk? (see', 'footnote)'], 'b1', 'f-s')
+    b += arrow(630, 98, 630, 118)
+    b += arrow(570, 170, 520, 270)
+    b += T(585, 210, 'Yes', 'f-s', 'end')
+    b += arrow(650, 170, 650, 270) + T(660, 210, 'No', 'f-s', 'start')
+    b += box(560, 272, 150, 54, ['Defer advanced', 'therapy; follow closely'], 'b1', 'f-s')
+    b += box(10, 340, 700, 34, 'Advance care planning and palliative care run through every stage (class I)', 'ok', 'f-s')
+    b += T(12, 394, 'High risk: recurrent admissions, progressive organ failure, refractory congestion, unable to do CPET,', 'f-s', 'start')
+    b += T(12, 411, 'or peak VO2 under 12 to 14 mL/kg/min or under 50% predicted. Not for HCM, amyloid, ARVC, ACHD,', 'f-s', 'start')
+    b += T(12, 428, 'arrhythmic storm or refractory angina. Redrawn from ESC 2026 heart failure guideline, Figure 18.', 'f-s', 'start')
+    return svg(440, b)
+
+
+def f53_cad_hf():
+    """CAD in heart failure: who gets CABG, PCI or medical therapy (ESC 2026 HF guideline, Figure 19)."""
+    b = box(200, 8, 320, 44, ['Obstructive CAD and HF, possible candidate', 'for revascularisation (frailty etc. excluded)'], 'b1', 'f-s')
+    b += arrow(300, 52, 150, 72) + arrow(420, 52, 570, 72)
+    b += box(60, 74, 180, 32, 'HFrEF', 'b1', 'f-h') + box(480, 74, 180, 32, 'HFpEF', 'b1', 'f-h')
+    b += arrow(150, 106, 150, 122) + arrow(570, 106, 570, 122)
+    b += box(40, 124, 220, 40, ['Optimise FMT, beta-blocker', 'first (I)'], 'ok', 'f-s')
+    b += box(460, 124, 220, 40, 'Optimise FMT (I)', 'ok', 'f-s')
+    b += arrow(150, 164, 150, 180) + arrow(570, 164, 570, 180)
+    b += box(40, 182, 220, 40, ['Multivessel disease and', 'LVEF 35% or less?'], 'b0', 'f-s')
+    b += box(460, 182, 220, 40, 'Angina?', 'b0', 'f-s')
+    b += arrow(260, 202, 458, 202) + T(360, 196, 'No: go to angina', 'f-s')
+    b += arrow(150, 222, 150, 300) + T(160, 262, 'Yes', 'f-s', 'start')
+    b += arrow(495, 222, 380, 302) + T(430, 256, 'No', 'f-s', 'end')
+    b += arrow(610, 222, 610, 238) + T(620, 232, 'Yes', 'f-s', 'start')
+    b += box(500, 240, 210, 50, ['Uptitrate antianginals;', 'angina persists?'], 'b0', 'f-s')
+    b += arrow(530, 290, 400, 302) + T(470, 306, 'No', 'f-s', 'end')
+    b += arrow(640, 290, 640, 304) + T(650, 300, 'Yes', 'f-s', 'start')
+    b += box(40, 304, 220, 34, 'Heart Team', 'b1', 'f-s') + box(270, 304, 180, 34, 'Heart Team', 'b1', 'f-s') + box(540, 306, 170, 34, 'Heart Team', 'b1', 'f-s')
+    b += arrow(150, 338, 150, 354) + arrow(360, 338, 360, 354) + arrow(625, 340, 625, 354)
+    b += box(40, 356, 220, 64, ['CABG (IIa B1)', 'PCI or medical therapy', 'if not fit for CABG'], 'warn', 'f-s')
+    b += box(270, 356, 260, 64, ['CABG, PCI or continued', 'medical therapy by risk, anatomy,', 'comorbidity and preference'], 'b1', 'f-s')
+    b += box(540, 356, 170, 64, ['CABG or PCI', 'for symptoms', '(I C)'], 'ok', 'f-s')
+    b += T(12, 440, 'Redrawn from ESC 2026 heart failure guideline, Figure 19 and Recommendation Table 16. Persistent angina:', 'f-s', 'start')
+    b += T(12, 457, 'revascularise whatever the LVEF (I C). HFrEF without angina: the IIa B1 CABG route applies.', 'f-s', 'start')
+    return svg(468, b)
+
+
+def f53_smr_hf():
+    """Severe ventricular secondary MR in HFrEF (ESC 2026 HF guideline, Figure 20 and Table 19)."""
+    b = box(10, 8, 200, 48, ['HFrEF with severe', 'secondary MR'], 'b1', 'f-s')
+    b += arrow(210, 32, 258, 32)
+    b += box(260, 8, 200, 48, ['FMT optimised and CRT', 'implanted if indicated?'], 'b0', 'f-s')
+    b += arrow(460, 32, 508, 32) + T(484, 26, 'No', 'f-s')
+    b += box(510, 8, 200, 48, ['Optimise FMT (I); CRT', 'if indicated (I or IIa)'], 'ok', 'f-s')
+    b += arrow(610, 56, 610, 82)
+    b += box(510, 84, 200, 40, 'Severe MR persists?', 'b0', 'f-s')
+    b += arrow(660, 124, 660, 150) + T(670, 142, 'No', 'f-s', 'start')
+    b += box(600, 152, 110, 36, 'Follow up', 'b1', 'f-s')
+    b += arrow(360, 56, 360, 84) + T(370, 74, 'Yes', 'f-s', 'start')
+    b += arrow(510, 104, 462, 104) + T(486, 98, 'Yes', 'f-s')
+    b += box(260, 84, 200, 48, ['Meets Table 19', 'criteria?'], 'b0', 'f-s')
+    b += arrow(360, 132, 360, 150) + T(370, 146, 'Yes', 'f-s', 'start')
+    b += box(280, 152, 160, 40, 'Mitral TEER (I B1)', 'ok', 'f-s')
+    b += arrow(260, 108, 160, 108) + T(210, 102, 'No', 'f-s')
+    b += box(40, 88, 120, 40, 'Advanced HF?', 'b0', 'f-s')
+    b += arrow(70, 128, 70, 150) + T(60, 144, 'No', 'f-s', 'end')
+    b += arrow(140, 128, 190, 150) + T(176, 134, 'Yes', 'f-s', 'start')
+    b += box(10, 152, 130, 64, ['Surgery, TEER or', 'drugs by Heart', 'Team'], 'b1', 'f-s')
+    b += box(150, 152, 120, 64, ['LVAD or', 'transplant (I);', 'else TEER (IIb C)'], 'ok', 'f-s')
+    rows = ['Table 19, all needed: FMT and CRT optimised · NYHA II or worse · 1 or more HF admissions in a year,',
+            'or BNP 300 pg/mL or more, or NT-proBNP 1000 pg/mL or more · not stage D · no CAD needing revascularisation ·',
+            'no hypertrophic, restrictive or infiltrative cardiomyopathy · LVEF 20 to 50% · LVESD 70 mm or less ·',
+            'suitable anatomy · sPAP 70 mmHg or less · no severe RV dysfunction · no severe aortic or tricuspid disease']
+    b += box(10, 232, 700, 92, rows, 'track', 'f-s')
+    b += T(12, 344, 'Redrawn from ESC 2026 heart failure guideline, Figure 20, Table 19 and Recommendation Table 17.', 'f-s', 'start')
+    return svg(354, b)
+
+
+# ---- figs_F54.py
+
+
+
+def f54_ph_algorithm():
+    """Stepwise reversibility testing of pulmonary hypertension before listing (ISHLT 2024, section 2.1.2.7, Figure 1)."""
+    b = T(12, 22, 'Pulmonary hypertension in the adult candidate (ISHLT 2024)', 'f-h', 'start')
+    b += box(10, 36, 440, 50, ['Right heart catheter in every adult before listing',
+                               '(1, C-LD)'], 'b1')
+    b += arrow(230, 86, 230, 104)
+    b += box(10, 106, 440, 56, ['Potentially prohibitive: PASP 50 mmHg or more AND',
+                                'TPG 15 mmHg or more OR PVR 3 WU or more'], 'warn')
+    steps = [('Step 1: acute vasodilator challenge', '(e.g. nitroprusside, milrinone) · class 1', 'b0'),
+             ('Step 2: admit; diuretics, inotropes, vasodilators', 'monitor 24 to 48 h · class 1', 'b0'),
+             ('Step 3: temporary MCS to unload the LV', 'class 2a', 'b0'),
+             ('Step 4: durable LVAD if otherwise suitable', 'class 2a', 'b0')]
+    y = 184
+    b += arrow(230, 162, 230, y - 2)
+    for i, (a, c, cls) in enumerate(steps):
+        b += box(10, y, 440, 50, [a, c], cls)
+        b += line(450, y + 25, 478, y + 25)
+        if i < 3:
+            b += arrow(230, y + 50, 230, y + 66)
+            b += T(240, y + 62, 'no change', 'f-s', 'start')
+        y += 68
+    top, bot = 184 + 25, 184 + 3 * 68 + 25
+    b += line(478, top, 478, bot)
+    b += arrow(478, (top + bot) / 2, 500, (top + bot) / 2)
+    b += box(502, 222, 208, 128, ['Reversible if', 'TPG 12 to 15 or less', 'and PVR 2.5 to 3 WU', 'or less, with systolic', 'BP over 85 mmHg', '→ list'], 'ok')
+    b += box(502, 362, 208, 58, ['Reversible only with', 'SBP under 85: RV failure', 'risk stays high'], 'warn', 'f-s')
+    y += 4
+    b += arrow(230, y - 22, 230, y)
+    b += box(10, y, 700, 48, ['Irreversible after all steps: heart transplant alone not recommended (3: No Benefit, B-NR);',
+                              'heart-lung may be considered in carefully selected patients (2b, C-EO)'], 'warn')
+    b += box(10, y + 58, 700, 32, 'Children: transplant reasonable if PVRI under 9 WU·m² at baseline or after treatment (2a, B-NR)', 'b1')
+    return svg(y + 100, b)
+
+
+def f54_dual_organ():
+    """Kidney and liver pathways to combined transplant (ISHLT 2024 Figures 2 and 3, adapted from AHA 2023)."""
+    b = T(12, 22, 'When to consider heart-kidney or heart-liver transplant (ISHLT 2024)', 'f-h', 'start')
+    # kidney
+    b += box(10, 36, 340, 74, ['Kidney: trend over 3 to 12 months; two GFRs', '2 weeks apart (race-free eGFR) plus 24-h', 'creatinine clearance when optimised (1, B-NR)'], 'b1')
+    b += arrow(60, 110, 60, 136) + arrow(180, 110, 180, 136) + arrow(300, 110, 300, 136)
+    b += box(10, 138, 104, 92, ['GFR under', '30 for over', '90 days'], 'b0')
+    b += box(122, 138, 116, 92, ['GFR 30 to 44', 'plus CKD:', 'small kidneys or', 'protein >0.5 g/d'], 'b0', 'f-s')
+    b += box(246, 138, 104, 92, ['GFR 45', 'or more'], 'b0')
+    b += arrow(60, 230, 60, 252) + arrow(180, 230, 180, 252) + arrow(300, 230, 300, 252)
+    b += box(10, 254, 104, 56, ['Heart-kidney', '(1, B-NR)'], 'ok')
+    b += box(122, 254, 116, 56, ['Heart-kidney', '(2a, B-NR)'], 'warn')
+    b += box(246, 254, 104, 56, ['Heart', 'alone'], 'ok')
+    # liver
+    b += box(370, 36, 340, 74, ['Liver: albumin, bilirubin, INR; AST, ALT,', 'GGT; MELD-XI; ultrasound, CT or MRI', '(1, B-NR)'], 'b1')
+    b += arrow(430, 110, 430, 136) + arrow(640, 110, 640, 136)
+    b += box(370, 138, 150, 56, ['Normal tests,', 'MELD-XI under 11'], 'b0')
+    b += box(530, 138, 180, 56, ['Low albumin, high bilirubin,', 'MELD-XI over 11, ascites,', 'varices, low platelets'], 'b0', 'f-s')
+    b += arrow(445, 194, 445, 254)
+    b += box(370, 254, 150, 56, ['Heart', 'alone'], 'ok')
+    b += arrow(620, 194, 620, 206)
+    b += box(530, 208, 180, 46, ['Hepatology; transjugular', 'biopsy with pressure gradient'], 'b1', 'f-s')
+    b += arrow(570, 254, 570, 268) + arrow(670, 254, 670, 268)
+    b += box(530, 270, 84, 70, ['No cirrhosis,', 'gradient', '5 mmHg or', 'less: heart'], 'ok', 'f-s')
+    b += box(620, 270, 90, 70, ['Cirrhosis or', 'severe fibrosis', '+ portal HT:', 'heart-liver'], 'warn', 'f-s')
+    b += box(10, 352, 700, 44, ['Cirrhosis with isolated heart transplant: early mortality up to 50%. Do not diagnose cirrhosis on imaging alone.',
+                                'Heart-liver for biopsy-proven cirrhosis or severe fibrosis with portal hypertension: 2a, B-NR'], 'b1', 'f-s')
+    return svg(406, b)
+
+
+def f54_shkt_survival():
+    """Median survival, simultaneous heart-kidney vs heart alone (ISHLT 2024 supportive text, ref 209)."""
+    h, b = bars([('On dialysis: heart-kidney', 12.6, 'ok'),
+                 ('On dialysis: heart alone', 7.1, 'warn'),
+                 ('Not on dialysis: heart-kidney', 12.5, 'b1'),
+                 ('Not on dialysis: heart alone', 12.3, 'b1')],
+                ' years', 14, 'Adding a kidney lengthens survival only for patients on dialysis', lab_w=270)
+    b += T(12, h + 4, 'Median survival; dialysis p<0.0001, no dialysis p=0.24. Registry data quoted in ISHLT 2024, section 2.1.2.8', 'f-s', 'start')
+    return svg(h + 16, b)
+
+
+# ---- figs_F55.py
+
+
+
+def f55_hla_timeline():
+    """HLA antibody surveillance while listed and after a sensitising event (ISHLT 2024, sections 3.3.1.8 and 3.4.1)."""
+    b = T(12, 22, 'HLA antibodies while waiting (ISHLT 2024)', 'f-h', 'start')
+    # routine screening axis
+    b += T(12, 52, 'Routine screen of every listed patient: every 3 to 6 months (1, B-NR)', '', 'start')
+    x0, x1 = 60, 660
+    b += line(x0, 80, x1, 80)
+    for i, lab in enumerate(['Listing', '3 months', '6 months', '9 months', '12 months']):
+        x = x0 + i * (x1 - x0) / 4
+        b += line(x, 72, x, 88)
+        b += f'<circle cx="{x}" cy="80" r="7" class="f-b0"/>'
+        b += T(x, 106, lab, 'f-s')
+    # sensitising event timeline
+    b += T(12, 142, 'After a sensitising event', 'f-h', 'start')
+    y = 184
+    b += line(x0, y, x1, y)
+    pts = [(x0, 'Event (day 0)'), (x0 + 600 * 7 / 28, 'Day 7'), (x0 + 600 * 21 / 28, 'Day 21'), (x1, 'Day 28')]
+    for x, lab in pts:
+        b += line(x, y - 8, x, y + 8)
+        b += T(x, y - 14, lab, 'f-s')
+    b += box(x0 + 40, 210, 250, 74, ['Memory response: 5 to 7 days', 'Previously sensitised: screen', 'from day 7 (2a, C-EO)'], 'warn')
+    b += arrow(x0 + 150, 210, pts[1][0], y + 10)
+    b += box(390, 210, 270, 74, ['De novo antibody peaks', 'at about 21 days: screen at', 'about 3 weeks (1, B-NR)'], 'b0')
+    b += arrow(525, 210, pts[2][0], y + 10)
+    b += box(10, 300, 700, 50, ['Sensitising events: pregnancy, transfusion (platelets especially), human tissue grafts,',
+                               'MCS devices, renal replacement therapy, infection'], 'b1')
+    # cPRA scale
+    b += T(12, 384, 'What the antibody load means', 'f-h', 'start')
+    yb = 398
+    segs = [(0, 10, 'f-ok', '<10%'), (10, 50, 'f-b1', '10 to 50%'), (50, 80, 'f-warn', '50 to 80%'), (80, 100, 'f-warn', 'over 80%')]
+    for lo, hi, cls, lab in segs:
+        xa, xb = x0 + 6 * lo, x0 + 6 * hi
+        b += f'<rect x="{xa}" y="{yb}" width="{xb - xa - 2}" height="26" rx="4" class="{cls}"/>'
+        b += T((xa + xb) / 2, yb + 18, lab, 'f-s')
+    b += T(x0, yb + 50, ['PRA over 10% or a donor-specific', 'antibody at transplant: higher risk'], 'f-s', 'start')
+    b += T(x0 + 300, yb + 50, ['cPRA over 50%: fewer offers, more removal or death;', 'desensitisation reasonable (2a, B-NR). Over 80%: worst'], 'f-s', 'start')
+    b += box(10, yb + 92, 700, 50, ['Prevent it: leukodepleted blood, single-donor or matched platelets, decellularised homografts',
+                                    '(2a, B-NR); transfuse only for clear indications'], 'ok')
+    return svg(yb + 152, b)
+
+
+def f55_dmcs_complications():
+    """What a durable LVAD complication means for transplant candidacy (ISHLT 2024, section 4.4)."""
+    b = T(12, 22, 'Durable LVAD complication in a transplant candidate (ISHLT 2024)', 'f-h', 'start')
+    b += T(12, 46, 'Candidacy is reassessed throughout support, whatever the original strategy (1, C-EO)', 'f-s', 'start')
+    rows = [
+        ('Early RV failure: still on temporary RVAD or inotropes', 'Urgent transplant', '1, C-LD', 'b0'),
+        ('Late progressive RV failure despite treatment', 'Prioritise or urgent transplant', '1, C-LD', 'b0'),
+        ('Refractory VT: pump failure, RV failure, storm', 'Prioritise (ablation first: 2a)', '1, C-EO', 'b0'),
+        ('Deep driveline, pocket, pump or cannula infection', 'Transplant is the cure; list', '1, C-EO', 'b0'),
+        ('Pump thrombosis, stable, short expected wait', 'Defer exchange; urgent transplant', '2a, C-EO', 'b1'),
+        ('Refractory GI bleeding, short expected wait', 'Urgent transplant', '2a, C-EO', 'b1'),
+        ('Recurrent bleeding, no treatable source', 'May prioritise', '2b, C-EO', 'b1'),
+        ('Non-disabling neurological event', 'Non-urgent transplant', '2b, C-EO', 'b1'),
+    ]
+    y = 60
+    for comp, act, cls_lv, cls in rows:
+        b += box(10, y, 360, 34, comp, 'b1', 'f-s')
+        b += arrow(372, y + 17, 394, y + 17)
+        b += box(396, y, 214, 34, act, cls, 'f-s')
+        b += box(618, y, 92, 34, cls_lv, cls, 'f-s')
+        y += 42
+    b += box(10, y + 6, 345, 62, ['Disabling stroke or other irreversible', 'condition: do not transplant', '(3: Harm, C-EO)'], 'warn')
+    b += box(365, y + 6, 345, 62, ['Device sepsis or septic shock: not until', 'sepsis controlled and organs recover', '(3: Harm, C-EO)'], 'warn')
+    return svg(y + 80, b)
+
+
+def f55_tmcs_bridge():
+    """Bridging to transplant on temporary MCS (ISHLT 2024, section 4.5)."""
+    b = T(12, 22, 'Temporary MCS as a bridge to urgent transplant (ISHLT 2024)', 'f-h', 'start')
+    b += box(10, 36, 330, 40, 'Refractory cardiogenic shock on tMCS', 'b1', 'f-h')
+    b += T(350, 54, ['IABP, VA-ECMO, microaxial pump, or external', 'centrifugal or pulsatile pump (any ventricle)'], 'f-s', 'start')
+    b += arrow(175, 76, 175, 96)
+    b += box(10, 98, 330, 40, ['Prompt assessment by the specialist team', '(1, C-LD) and of neurology (1, C-EO)'], 'b0', 'f-s')
+    b += arrow(175, 138, 175, 158)
+    conds = ['Heart unlikely to recover', 'Otherwise suitable for transplant',
+             'Durable MCS or other replacement not appropriate', 'Short expected wait',
+             'Haemodynamics stabilised', 'Organ function recovered if it was impaired', 'Experienced centre']
+    h = 30 + 21 * len(conds)
+    b += f'<rect x="10" y="160" width="330" height="{h}" rx="9" class="f-ok"/>'
+    b += T(175, 182, 'Consider for urgent transplant if (1, C-LD):', 'f-h')
+    for i, c in enumerate(conds):
+        b += T(28, 204 + 21 * i, '• ' + c, 'f-s', 'start')
+    yb = 160 + h + 14
+    b += box(10, yb, 330, 56, ['Ongoing end-organ dysfunction: not heart', 'alone until it recovers or is shown', 'reversible (3: Harm, C-EO)'], 'warn', 'f-s')
+    # numbers column
+    b += box(370, 98, 340, 66, ['Recipients on tMCS at transplant:', 'almost none to 25%, by country'], 'b1', 'f-s')
+    b += box(370, 174, 340, 66, ['Start of tMCS to transplant: under 15 days', 'in most studies; waitlist mortality 0 to 28%'], 'b1', 'f-s')
+    b += box(370, 250, 340, 66, ['1-year survival after a tMCS bridge:', '50 to 90%; ECMO and percutaneous LVAD', 'predict death after transplant'], 'b1', 'f-s')
+    b += box(370, 326, 340, 66, ['Long wait expected (highly sensitised,', 'extreme size): plan another strategy'], 'warn', 'f-s')
+    return svg(max(yb + 66, 402), b)
+
+
+def f55_lvad_to_tx():
+    """How often durable LVAD patients reach transplant (ISHLT 2024, sections 4.1.2 and 4.4.1, quoting INTERMACS and EUROMACS)."""
+    h1, b1 = bars([('Bridge to transplant', 30.4, 'b1'), ('Bridge to candidacy', 15.9, 'b1'), ('Destination therapy', 4.7, 'track')],
+                  '%', 40, 'Transplanted within 1 year of LVAD, by implant strategy (US registry)', lab_w=230)
+    h2, b2 = bars([('USA after 2018 rules, 1 year', 7.3, 'warn'), ('USA after 2018 rules, 3 years', 17.2, 'warn'),
+                   ('Europe (registry), 1 year', 7.5, 'ok'), ('Europe (registry), 3 years', 20.2, 'ok')],
+                  '%', 40, 'Probability of transplant on a durable device', lab_w=230)
+    return svg(h1 + h2, b1 + f'<g transform="translate(0,{h1})">' + b2 + '</g>')
+
+
+# ---- figs_F56.py
+
+
+
+def f56_types():
+    """Three types of protected cardiac surgery (EACTS 2025 consensus, Figure 1)."""
+    b = ''
+    cols = [
+        ('Type 1', 'Preoperative tMCS', 'bridge to surgery', 'Poor preoperative condition',
+         ['Cardiogenic shock', 'Refractory metabolic acidosis', 'Severe lung oedema', 'Cardiac arrest',
+          'Severe acute infarction', 'Septic shock', 'Post-infarct VSD or PMR', 'Electrical storm',
+          'Poor uni- or biventricular function', 'Lactate not clearing'], 'b0'),
+        ('Type 2', 'Planned intraoperative tMCS', 'recovery or next therapy', 'High risk of postoperative LCOS',
+         ['Cardiogenic shock', 'Metabolic acidosis', 'Severe lung oedema', 'Cardiac arrest',
+          'Incomplete revascularisation', 'Suboptimal myocardial protection', 'Long cardiac ischaemia',
+          'Poor uni- or biventricular function'], 'ok'),
+        ('Type 3', 'Unplanned intraoperative tMCS', 'recovery or next therapy', 'Perioperative LCOS',
+         ['Cannot wean from bypass', 'Acidosis on bypass', 'Unexpected LV failure', 'Unexpected RV failure',
+          'Arrest after bypass', 'VIS over 30', 'Incomplete revascularisation', 'Suboptimal protection',
+          'Risk of cardiac or repair rupture', 'Failed operation'], 'warn'),
+    ]
+    for i, (t, what, aim, who, items, c) in enumerate(cols):
+        x = 10 + i * 238
+        b += box(x, 10, 224, 74, [t, what, 'aim: ' + aim], c, '')
+        b += arrow(x + 112, 84, x + 112, 100)
+        b += box(x, 102, 224, 34, who, 'b1', 'f-h')
+        b += f'<rect x="{x}" y="144" width="224" height="{20 + len(items) * 17}" rx="9" class="f-track"/>'
+        for j, it in enumerate(items):
+            b += T(x + 12, 164 + j * 17, '• ' + it, 'f-s', 'start')
+    b += T(360, 346, 'Timing: Type 1 before the operation · Type 2 planned for theatre · Type 3 rescue in theatre or soon after', 'f-s')
+    return svg(356, b)
+
+
+def f56_pathway():
+    """Assessment of a high-risk patient for pre-emptive tMCS (Figure 2 of the consensus)."""
+    b = box(170, 8, 380, 44, ['High risk of perioperative LCOS', 'low EF · redo · age over 70 · AMI · endocarditis with sepsis · shock'], 'b0')
+    b += arrow(360, 52, 360, 70)
+    b += box(220, 72, 280, 34, 'Heart Team assessment', 'b1', 'f-h')
+    b += arrow(360, 106, 360, 124)
+    b += box(170, 126, 380, 36, 'Disease reasonably amenable to surgery?', 'b0', 'f-h')
+    b += arrow(250, 162, 110, 196) + T(150, 170, 'No', 'f-h')
+    b += box(10, 198, 200, 62, ['Medical therapy', 'Percutaneous options', 'Palliative care'], 'warn')
+    b += arrow(470, 162, 470, 196) + T(490, 186, 'Yes', 'f-h', 'start')
+    b += box(300, 198, 340, 62, ['Signs of end-organ damage?', 'rising creatinine, LFTs or lactate,', 'altered consciousness, lung oedema'], 'b0')
+    b += arrow(390, 260, 330, 292) + T(352, 272, 'Yes', 'f-h', 'end')
+    b += arrow(560, 260, 600, 292) + T(598, 270, 'No', 'f-h', 'start')
+    b += box(240, 294, 220, 44, ['Pre-emptive tMCS', 'as bridge to surgery'], 'b1')
+    b += box(500, 294, 210, 44, ['Operate with tMCS', 'on stand-by'], 'ok')
+    b += arrow(350, 338, 350, 360)
+    b += box(220, 362, 260, 40, 'Reassess: organs improving?', 'b0', 'f-h')
+    b += arrow(480, 382, 520, 382) + T(500, 374, 'Yes', 'f-s')
+    b += box(522, 362, 188, 40, 'Protected cardiac surgery', 'ok', 'f-h')
+    b += line(220, 382, 110, 382) + arrow(110, 382, 110, 262) + T(165, 376, 'No', 'f-h')
+    return svg(412, b)
+
+
+def f56_triggers():
+    """Thresholds that should prompt consideration of tMCS (Table 1 of the consensus)."""
+    items = [('VIS > 30', 'strong case for', 'early tMCS', 'warn'),
+             ('CI ≤ 2.2', 'L/min/m² with MAP', '< 60 or high doses', 'warn'),
+             ('CPI < 0.6', 'W/m², sustained', '', 'warn'),
+             ('Lactate ≥ 8', 'mmol/L, or', 'failing to clear', 'warn'),
+             ('SvO2 < 50%', 'oxygen delivery', 'short of demand', 'warn'),
+             ('PCWP ≥ 16', 'mmHg: raised', 'LV filling pressure', 'b0'),
+             ('LVEF < 30%', 'LVOT VTI < 13 cm:', 'LV failure', 'b0'),
+             ('TAPSE < 14', 'mm; CVP ≥ 20;', 'RVFAC ≤ 30%', 'b1'),
+             ('PAPi < 1.85', 'severe RV', 'dysfunction', 'b1'),
+             ('CVP/PCWP ≥ 0.8', 'RV overload', 'relative to LV', 'b1')]
+    b = T(12, 22, 'When to think of temporary support: Table 1 thresholds', 'f-h', 'start')
+    for i, (big, s1, s2, c) in enumerate(items):
+        x = 10 + (i % 5) * 141
+        y = 36 + (i // 5) * 104
+        b += f'<rect x="{x}" y="{y}" width="133" height="94" rx="9" class="f-{c}"/>'
+        b += T(x + 66, y + 32, big, 'f-h')
+        b += T(x + 66, y + 56, [s1, s2] if s2 else [s1], 'f-s')
+    b += T(12, 266, 'Top row: drugs and perfusion · bottom row: LV then RV markers. VIS 20 to 30 with other instability: watch closely.', 'f-s', 'start')
+    return svg(278, b)
+
+
+def f56_devices():
+    """Flow and suitability of the left-sided devices (sections 10.1, 10.2 and Table 4)."""
+    h, b = bars([('IABP', (0.5, 1.0), 'b1'),
+                 ('Partial-support mAFP (percutaneous)', 3.5, 'b1'),
+                 ('Full-support mAFP (surgical access)', 5.5, 'ok')],
+                ' L/min', 6, 'A full-support microaxial pump adds up to 5.5 L/min; an IABP 0.5 to 1', lab_w=270)
+    y = h + 10
+    b += T(12, y + 4, 'Table 4: end-organ support and suitability for protected surgery (more marks = more)', 'f-h', 'start')
+    rows = [('IABP', 1, 1), ('Partial-support mAFP', 2, 2), ('Full-support mAFP', 3, 3),
+            ('VA-ECLS', 3, 2), ('VA-ECLS + IABP', 3, 2), ('VA-ECLS + mAFP', 4, 3)]
+    y += 24
+    b += T(390, y, 'End-organ support', 'f-s') + T(590, y, 'Suitability', 'f-s')
+    for i, (lab, eo, su) in enumerate(rows):
+        yy = y + 14 + i * 28
+        b += T(260, yy + 15, lab, '', 'end')
+        for k in range(4):
+            b += f'<rect x="{326 + k * 34}" y="{yy + 2}" width="28" height="18" rx="4" class="f-{"b1" if k < eo else "track"}"/>'
+        for k in range(3):
+            b += f'<rect x="{540 + k * 34}" y="{yy + 2}" width="28" height="18" rx="4" class="f-{"ok" if k < su else "track"}"/>'
+    return svg(y + 14 + len(rows) * 28 + 10, b)
+
+
+# ---- figs_F57.py
+
+
+
+def f57_mwho_ladder():
+    b = T(12, 22, 'mWHO 2.0 classes and Pregnancy Heart Team (PHT) role', 'f-h', 'start')
+    rows = [
+        ('I', 'Very low risk', ['Well-controlled minor lesion (e.g. treated', 'small ASD): standard obstetric care'], 'ok'),
+        ('II', 'Low to moderate', ['Minor symptoms or well-compensated', 'disease: cardiology follow-up'], 'ok'),
+        ('II-III', 'Moderate to high', ['Individualised management,', 'often with PHT advice'], 'warn'),
+        ('III', 'High', ['Marked limitation of activity:', 'mandatory PHT oversight, intensive care'], 'warn'),
+        ('IV', 'Extremely high', ['Pregnancy generally contraindicated:', 'extensive PHT counselling'], 'b1'),
+    ]
+    y = 40
+    for cls_, risk, desc, c in rows:
+        b += box(12, y, 70, 46, cls_, c, 'f-h')
+        b += T(94, y + 20, risk, 'f-h', 'start')
+        b += T(222, y + 18, desc, 'f-s', 'start')
+        y += 54
+    b += line(12, y + 2, 460, y + 2, 'f-grid')
+    b += T(12, y + 22, ['PHT involvement is a Class I C recommendation', 'for mWHO 2.0 II-III, III and IV.'], 'f-s', 'start')
+    # CARPREG II panel
+    x = 484
+    b += f'<rect x="{x}" y="40" width="226" height="{y - 44}" rx="9" class="f-b0"/>'
+    b += T(x + 113, 62, 'CARPREG II: 10 predictors', 'f-h')
+    items = ['5 general', '· prior cardiac event or arrhythmia', '· high NYHA class or cyanosis',
+             '· high-risk valve disease or LVOTO', '· systemic ventricular dysfunction',
+             '· no prior cardiac intervention', '4 lesion-specific', '· mechanical valve',
+             '· high-risk aortopathy', '· pulmonary hypertension', '· coronary artery disease',
+             '1 delivery of care', '· late pregnancy assessment']
+    yy = 86
+    for it in items:
+        cls = 'f-s' if it.startswith('·') else 'f-h'
+        b += T(x + 14, yy, it, cls, 'start')
+        yy += 17
+    return svg(y + 50, b)
+
+
+def f57_rec_levels():
+    items = [('I A', 1, 'ok'), ('I B', 16, 'ok'), ('I C', 103, 'warn'), ('IIa B', 2, 'b0'),
+             ('IIa C', 48, 'warn'), ('IIb B', 4, 'b0'), ('IIb C', 24, 'warn'), ('III C', 9, 'warn')]
+    h, b = bars(items, '', 110, 'ESC 2025 pregnancy guideline: 184 of 207 recommendations are level C', lab_w=120)
+    b += T(12, h + 8, 'Amber = level C. Counts from Arbustini et al. 2026, Table 1.', 'f-s', 'start')
+    return svg(h + 20, b)
+
+
 # ---- figs_D1.py
 """Drawing pass D1: coronary anatomy, grafting, cannulation, cardioplegia and venting (23 November 2026)."""
 

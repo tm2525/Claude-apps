@@ -149,10 +149,10 @@ DCD hearts are offered **through the non-urgent (centre-based) scheme only**, on
 
 ## Heart transplant candidate assessment: ISHLT listing criteria and the NHSBT listing policy
 
-Added 21 November 2026 from Mehra MR, Canter CE, Hannan MM, et al. The 2016 International Society for Heart Lung Transplantation listing criteria for heart transplantation: a 10-year update. J Heart Lung Transplant 2016;35(1), as hosted by SCTS at https://scts.org/_userfiles/pages/files/transplant/guidelines/heart_transplant_listing.pdf, read from the full text, sections I to IV; NHS Blood and Transplant POL229/12, Heart Transplantation: Selection Criteria and Recipient Registration (effective 4 March 2024), read in full; and Peled Y, Ducharme A, Kittleson M, et al. International Society for Heart and Lung Transplantation Guidelines for the Evaluation and Care of Cardiac Transplant Candidates-2024. J Heart Lung Transplant 2024;43:1529-1628.e54, doi:10.1016/j.healun.2024.05.010: **abstract only; full text not accessible here**. The 2024 guideline replaces the 2006 and 2016 documents; its individual recommendations could not be checked, so the 2016 classes below should be confirmed against it.
+Added 21 November 2026 from Mehra MR, Canter CE, Hannan MM, et al. The 2016 International Society for Heart Lung Transplantation listing criteria for heart transplantation: a 10-year update. J Heart Lung Transplant 2016;35(1), as hosted by SCTS at https://scts.org/_userfiles/pages/files/transplant/guidelines/heart_transplant_listing.pdf, read from the full text, sections I to IV; NHS Blood and Transplant POL229/12, Heart Transplantation: Selection Criteria and Recipient Registration (effective 4 March 2024), read in full; and Peled Y, Ducharme A, Kittleson M, et al. International Society for Heart and Lung Transplantation Guidelines for the Evaluation and Care of Cardiac Transplant Candidates-2024. J Heart Lung Transplant 2024;43:1529-1628.e54, doi:10.1016/j.healun.2024.05.010: **abstract only; full text not accessible here**. The 2024 guideline replaces the 2006 and 2016 documents; its individual recommendations could not be checked, so the 2016 classes below should be confirmed against it (updated 24 November 2026: the full text has now been read; every 2024 Task Force I recommendation with its class and level, and the 2016 comparison, is in the six "ISHLT 2024 candidate guideline, Task Force I" sections added today).
 
 ### What the 2024 guideline covers (abstract)
-Three task forces (each co-chaired by a paediatric transplant physician): patient selection, care of particular populations, and durable mechanical support, with management flow diagrams and guidance on care while waiting.
+Three task forces (each co-chaired by a paediatric transplant physician (corrected 24 November 2026 from the full text: Task Forces I and II had adult and paediatric co-chairs; the contents list gives Task Force III a single chair, Saeed)): patient selection, care of particular populations, and durable mechanical support, with management flow diagrams and guidance on care while waiting.
 
 ### Cardiopulmonary exercise testing (ISHLT 2016)
 | Recommendation | Class, level |
@@ -391,7 +391,7 @@ The trial papers could not be opened for these notes, so no trial figures are gi
 
 ## Temporary MCS guideline 2025 (EACTS/STS/AATS), part 2: protected cardiac surgery and post-cardiotomy shock
 
-Added 21 November 2026 from Potapov EV, Whitman G, John R, et al. EACTS/STS/AATS Guidelines on temporary mechanical circulatory support in adult cardiac surgery. Eur J Cardiothorac Surg 2025;68(7):ezaf330; doi:10.1093/ejcts/ezaf330. Read from the accepted manuscript, sections 7 to 9 and Tables 4 to 6 (extraction quoted short phrases and paraphrased long wordings; Table 5 was partly garbled, see below). The three-type scheme is from the EACTS Expert Consensus Document on protected cardiac surgery (Lorusso R, Salazar L, Nersesian G, et al. Eur J Cardiothorac Surg 2025;68(3):ezaf296; doi:10.1093/ejcts/ezaf296), which could not be opened: the types are taken from a 2026 review that summarises it (J Clin Med 2026;15(18):7158), and the consensus's own classes and levels are not known.
+Added 21 November 2026 from Potapov EV, Whitman G, John R, et al. EACTS/STS/AATS Guidelines on temporary mechanical circulatory support in adult cardiac surgery. Eur J Cardiothorac Surg 2025;68(7):ezaf330; doi:10.1093/ejcts/ezaf330. Read from the accepted manuscript, sections 7 to 9 and Tables 4 to 6 (extraction quoted short phrases and paraphrased long wordings; Table 5 was partly garbled, see below). The three-type scheme is from the EACTS Expert Consensus Document on protected cardiac surgery (Lorusso R, Salazar L, Nersesian G, et al. Eur J Cardiothorac Surg 2025;68(3):ezaf296; doi:10.1093/ejcts/ezaf296), which could not be opened: the types are taken from a 2026 review that summarises it (J Clin Med 2026;15(18):7158), and the consensus's own classes and levels are not known (corrected 24 November 2026 from the full text: published 2026;68(3), online 9 October 2025, and now read in full. It gives no classes or levels: each statement needed 75% agreement in an anonymous vote. The three types below are confirmed by its Figure 1; type 3 also covers deterioration soon after bypass, in theatre or on the ICU. See the three protected cardiac surgery sections added 24 November 2026).
 
 ### Temporary MCS as a bridge in advanced heart failure
 | Recommendation (Table 4) | Class | Level |
@@ -1041,7 +1041,7 @@ Steroid withdrawal within **3 to 12 months** in low-risk recipients where possib
 
 ## ISHLT 2024 guideline for heart transplant candidates: listing criteria and what changed from 2016
 
-Added 24 November 2026 from Peled Y, Ducharme A, Kittleson M, et al. International Society for Heart and Lung Transplantation guidelines for the evaluation and care of cardiac transplant candidates, 2024. J Heart Lung Transplant 2024;43:1529-1628.e54, doi:10.1016/j.healun.2024.05.010. Read from the PDF on the ISHLT website through a text-extraction tool: introduction and Task Force I (sections 2.1 to 2.3, with Tables 3 to 8 and 18), Task Force II (sections 3.1 to 3.5) and Task Force III (sections 4.1 to 4.5). Some recommendation tables in sections 2.3, 3.1.2, 3.2.2 and 3.3.1.2 were garbled in the extracted text; those classes are left out. The ISHLT page states that this guideline **replaces the 2006 listing criteria and the 2016 10-year update**. The guideline does not compare itself with 2016 point by point; the comparison table below is mine, set against the 2016 section earlier in this tab.
+Added 24 November 2026 from Peled Y, Ducharme A, Kittleson M, et al. International Society for Heart and Lung Transplantation guidelines for the evaluation and care of cardiac transplant candidates, 2024. J Heart Lung Transplant 2024;43:1529-1628.e54, doi:10.1016/j.healun.2024.05.010. Read from the PDF on the ISHLT website through a text-extraction tool: introduction and Task Force I (sections 2.1 to 2.3, with Tables 3 to 8 and 18), Task Force II (sections 3.1 to 3.5) and Task Force III (sections 4.1 to 4.5). Some recommendation tables in sections 2.3, 3.1.2, 3.2.2 and 3.3.1.2 were garbled in the extracted text; those classes are left out (updated 24 November 2026: the section 2.3 team classes, 1 B-NR, 1 C-EO and 1 C-EO, are now in the Task Force I part 6 section added later today from the published PDF, which also confirms this section's Task Force I classes). The ISHLT page states that this guideline **replaces the 2006 listing criteria and the 2016 10-year update**. The guideline does not compare itself with 2016 point by point; the comparison table below is mine, set against the 2016 section earlier in this tab.
 
 ### Grading
 The 2024 guideline uses the current ACC/AHA scale: class **1** (strong), **2a** (moderate), **2b** (weak), **3: No Benefit** (moderate) and **3: Harm** (strong); levels **A**, **B-R** (randomised), **B-NR** (non-randomised), **C-LD** (limited data) and **C-EO** (expert opinion). The 2016 document used I to III and A to C.
@@ -1090,7 +1090,7 @@ CPET values that support listing (Table 4, supportive text, not a recommendation
 - Continue full guideline-directed therapy (1, A). Do not use endothelin antagonists or prostanoids for group 2 PH (3: Harm, B-R).
 - Repeat right heart catheterisation periodically in listed adults (1, C-LD). If PH persists despite medicines and LV unloading, call it irreversible; reassess **3 to 6 months after an LVAD** (2a, C-LD).
 - HLA antibody screen **every 3 to 6 months**, and about 3 weeks after a sensitising event (1, B-NR). **Desensitisation is reasonable for cPRA over 50%** (2a, B-NR). Induction may be considered in sensitised patients (2a, C-EO).
-- Re-evaluate therapy every 3 to 6 months in ambulatory candidates; much-improved patients may be delisted (2b, B-NR). Do not upgrade status if decompensation settles on optimised baseline therapy (3: No Benefit, C-LD).
+- Re-evaluate therapy every 3 to 6 months in ambulatory candidates; much-improved patients may be delisted (2b, B-NR) (corrected 24 November 2026 from the full text: re-evaluation every 3 to 6 months with delisting considered if much improved is 1, C-LD; 2b, B-NR applies to delisting LVAD patients whose recovery led to device explant — see Task Force II part 2 added today). Do not upgrade status if decompensation settles on optimised baseline therapy (3: No Benefit, C-LD).
 - Before surgery: stop SGLT2 inhibitors and vasodilators (2a, C-LD); reverse anticoagulation and reprogramme devices (1, C-EO); one pre-incision dose of a first or second generation cephalosporin (1, C-LD).
 - Avoid mTOR inhibitors in retransplant candidates already on immunosuppression (2a, C-EO), because of wound healing and effusions.
 
@@ -1151,3 +1151,1096 @@ Added 24 November 2026 from Smith P, Rushton S (NHSBT Statistics and Clinical Re
 | Non-urgent | 123 (22%) | 74% | 50% | 28% |
 
 None of the post-transplant differences was significant (p=0.2, 0.46, 0.2). **Most UK hearts (78%) now go to urgent or super-urgent patients**, and a non-urgent listing rarely leads to transplant. The report also lists 172 paediatric registrations (Great Ormond Street and Newcastle), shown separately.
+
+## Temporary MCS in cardiogenic shock: ESC 2026 heart failure guideline (full text)
+
+Added 24 November 2026 from Køber L, Adamo M, Ruwald A-C, Tomasoni D, et al. 2026 ESC Guidelines for the management of heart failure (endorsed by EACTS). Eur Heart J 2026;47:5346–5457, doi:10.1093/eurheartj/ehag100. Read in full from the published PDF, section 7.5.11, Recommendation Table 10 with its footnotes and the revised-recommendations Table 6 (pages 5358 to 5359 and 5396 to 5397), checked against the page images. This is the newest European statement on temporary support in medical cardiogenic shock. It confirms the shock rows of the slide-set summary in Cardiac 18. Post-cardiotomy and protected surgery remain the territory of the EACTS/STS/AATS 2025 guideline above.
+
+### Recommendation Table 10
+!fig f52_shock_tmcs | Temporary MCS in cardiogenic shock by setting, with class and level and the footnote cautions for VSD and free-wall rupture (drawn for these notes from ESC 2026 Recommendation Table 10)
+
+| Setting | Recommendation | Class | Level |
+|---|---|---|---|
+| Any | Multidisciplinary **Shock Team** for potential temporary MCS candidates, to choose modality and device from patient and heart failure features (new) | I | C |
+| Acute MI | **Microaxial flow pump** in selected STEMI shock with LV systolic dysfunction and no risk of hypoxic brain injury, to reduce death (new) | IIa | B1 |
+| Acute MI | Temporary MCS in **unselected** infarct-related shock: not recommended, risk of harm (new) | III | B1 |
+| Any | **IABP** in unselected cardiogenic shock: not recommended, lack of effect | III | B1 |
+| Post-MI mechanical complication | Temporary MCS as a **bridge to definitive treatment** (new) | IIa | C |
+| Advanced heart failure shock | Temporary MCS in selected patients with heart-failure-related haemodynamic instability as bridge to recovery, decision, bridge, candidacy or transplant | IIa | C |
+
+Footnotes that matter to the surgeon:
+- **No risk of hypoxic brain injury** means (i) no out-of-hospital arrest with a persisting Glasgow coma score under 8 after return of circulation, and (ii) no resuscitation, or resuscitation under 10 minutes (the DanGer Shock entry criteria).
+- **Mechanical complications:** choose passive IABP or an active percutaneous device by shock severity, as judged by the Shock Team. **Large VSD:** use with caution, because VA-ECLS can increase the left-to-right shunt and a microaxial pump can reverse it. **Free-wall rupture:** avoid temporary MCS, but VA-ECLS may be considered to get a patient in profound shock or arrest to emergency surgery if there is no sign of irreversible brain injury.
+
+### What changed from ESC 2021 (Table 6)
+| 2021 | 2026 |
+|---|---|
+| IABP not routinely recommended in post-MI shock (III B) | IABP not recommended in unselected cardiogenic shock (III B1) |
+| Short-term MCS should be considered in shock as bridge to recovery, decision or bridge; also to treat the cause, or for long-term MCS or transplant (IIa C) | Temporary MCS should be considered in selected patients with heart-failure-related instability as bridge to recovery, decision, bridge, candidacy or transplant (IIa C) |
+| (none) | Shock Team I C; microaxial pump in selected STEMI shock IIa B1; no temporary MCS in unselected infarct shock III B1; bridge for mechanical complications IIa C |
+
+Compare: the ESC 2023 acute coronary syndrome guideline (above) gave short-term MCS only IIb C for severe or refractory shock, before DanGer Shock. The EACTS/STS/AATS 2025 guideline gives the Shock Team I B (ESC 2026: I C).
+
+### Shock Team and devices (section 7.5.11)
+- Temporary MCS is an option to stabilise haemodynamics and organ perfusion in **highly selected** patients. Devices can be combined for LV unloading or biventricular support.
+- The **Shock Team** is a heart failure cardiologist, a **cardiothoracic surgeon**, an interventional cardiologist and an intensivist, at an experienced advanced heart failure centre with a high temporary MCS volume. A meta-analysis supports benefit in highly selected STEMI shock without hypoxic brain injury, but severe complications remain frequent.
+
+| Device | Support | Evidence quoted in the guideline |
+|---|---|---|
+| Percutaneous microaxial flow pump | Up to 4 L/min; surgically inserted 5.5 L/min devices give full LV support | Earlier RCTs and propensity studies of over 100,000 patients: no survival gain, more major bleeding and limb ischaemia. **DanGer Shock** (360 highly selected STEMI shock patients): lower 180-day death (HR 0.74, 0.55 to 0.99; P = 0.04), persisting to 10-year follow-up, with more bleeding and limb ischaemia. Routine use is not recommended; no RCT in non-infarct shock |
+| VA-ECLS | Up to 6 L/min, full circulatory and respiratory support | **ECLS-SHOCK** (severe infarct-related shock): early routine ECLS, no difference in 30-day death (RR 0.98, 0.80 to 1.19); an individual-patient meta-analysis found no mortality benefit and more complications. Retrograde flow raises LV afterload; unloading with a microaxial pump or IABP aims to offset this, but an RCT of routine LV unloading by a transseptal left atrial cannula against ECLS alone showed no effect on death. No RCT in non-ischaemic shock |
+| IABP | Passive | IABP shock trial (40 post-MI patients): no gain in cardiac output or other haemodynamics. Large RCT in infarct shock (IABP-SHOCK II, per the reference list: NEJM 2012, 12-month and 6-year reports): no survival benefit at 30 days or later. Advanced heart failure shock: no survival benefit against standard care in two RCTs (den Uil, EuroIntervention 2019; Morici, J Am Coll Cardiol 2025). Use should be individual, by patient and the alternatives available |
+
+### For the viva
+"ESC 2026 is the first ESC heart failure guideline to support a specific device in shock: a microaxial flow pump in selected STEMI shock with LV dysfunction and no anoxic brain injury, IIa B1, on the strength of DanGer Shock. It says no to temporary support in unselected infarct shock and no to routine IABP, both III B1. Every decision goes through a Shock Team that includes a cardiac surgeon. For a post-infarct VSD or rupture, support is a bridge to surgery, IIa C, with care over shunt direction and no support for free-wall rupture except VA-ECLS to reach theatre."
+
+## ESC 2026 heart failure guideline (full text): durable LVAD and heart transplantation
+
+Added 24 November 2026 from Køber L, Adamo M, et al. 2026 ESC Guidelines for the management of heart failure. Eur Heart J 2026;47:5346–5457; doi:10.1093/eurheartj/ehag100. Read in full from the published PDF (section 8.2, journal pages 5399 to 5403; Recommendation Tables 13 and 14, Tables 16 and 17 and Figures 17 and 18 checked on the PDF pages). The referral criteria, INTERMACS treatment algorithm and palliative care recommendations are in Cardiac 18 (part 3, added today); the full LVAD contraindication list is in Cardiac 18 part 2. The guideline's own Table 6 (revised recommendations, journal page 5359, also read) shows what this replaces: in 2021, long-term MCS "should be considered" (IIa A) in advanced HFrEF not eligible for transplant and without severe RV dysfunction, and (IIa B) as a bridge to transplant. In 2026 the two merge into one class I recommendation covering every bridge and destination use, at level C under the new grading.
+
+### Recommendations
+| Recommendation | Class | Level |
+|---|---|---|
+| Durable MCS (LVAD) in selected advanced HFrEF despite FMT and GDIT, as BTT, BTC, BTR or destination therapy, to improve symptoms and reduce death | I | C |
+| Histology of the explanted heart or LVAD apical core in non-ischaemic HF, to find a treatable cause or prompt family screening | IIa | C |
+| Heart transplantation in selected advanced HF refractory to FMT and GDIT, without contraindications, to improve quality of life and survival | I | C |
+| Cardiac rehabilitation after LVAD (Recommendation Table 24) | I | B1 |
+| Temporary MCS for HF-related instability as BTR, BTD, BTB, BTC or BTT (Recommendation Table 10) | IIa | C |
+
+Why is a class I recommendation only level C? REMATCH (HeartMate XVE against medical therapy, destination therapy) is the **only RCT** of LVAD against medical treatment, and it is old; it showed lower all-cause death but high 2-year mortality in both arms. Other studies were not randomised or compared devices. Transplantation has never been tested in an RCT.
+
+### INTERMACS profiles (Figure 17)
+
+!fig f53_intermacs | INTERMACS profiles 1 to 7 with the time frame for durable MCS: hours for profile 1, days for 2, elective weeks to months for 3 and 4, variable for 5 and 6, not indicated for 7 (drawn for these notes from the 2026 ESC heart failure guideline, Figure 17)
+
+| Profile | Name | Nickname | Time frame for MCS |
+|---|---|---|---|
+| 1 | Critical cardiogenic shock | Crash and burn | Within hours |
+| 2 | Progressive decline on IV inotropes (or intolerant of them) | Sliding on inotropes | Within a few days |
+| 3 | Stable on inotropes or temporary support, repeated failure to wean | Dependent stability | Elective, weeks to months |
+| 4 | Resting symptoms, daily congestion, high diuretic need | Frequent flyer | Elective, weeks to months |
+| 5 | Housebound; comfortable at rest and minor daily activities | Exertion intolerant | Variable: organ function, nutrition, frailty |
+| 6 | Exertion limited; tires after a few minutes; needs CPET to confirm | Walking wounded | Variable |
+| 7 | Advanced NYHA III; may not qualify now | Placeholder | Not currently indicated |
+
+### LVAD indications (Table 16): severely reduced LVEF and one of
+- INTERMACS 1 to 2 on temporary MCS with neurological and other organ recovery but no cardiac recovery; or
+- INTERMACS 2 to 4; or
+- NYHA III to IV (INTERMACS over 4) despite optimal FMT and GDIT, with at least one of: unable to exercise, or peak VO2 under 12 to 14 mL/kg/min and/or under 50% predicted; organ dysfunction from low perfusion (kidney, liver, group 2 pulmonary hypertension, cardiac cachexia) with cardiac index 2 L/min/m² or less despite euvolaemia or therapy-resistant overload; repeated HF admission in 12 months without an obvious trigger.
+
+The transplant centre's assessment of severity includes right heart catheter and/or CPET. Absolute contraindications start with **severe RV dysfunction despite euvolaemia**; the others are irreversible kidney, liver or neurological disease, severe lung disease, inability to take long-term oral anticoagulation, non-adherence and inadequate social or psychological support. Relative contraindications include obesity or malnutrition, frailty, malignancy, severe peripheral arterial disease, systemic infection and alcohol, drugs or smoking in the last 6 months (full list in Cardiac 18 part 2, which matches Table 16).
+
+### What the text says about LVAD outcomes and care
+- An LVAD is "by far the most common and reliable" durable MCS. A total artificial heart or implantable biventricular device is occasionally used for biventricular failure or special anatomy.
+- **MOMENTUM 3** (fully magnetically levitated pump against an older LVAD): survival **79% at 2 years and 58.4% at 5 years**, although over 85% were INTERMACS 1 to 3 at implant. Two-year survival with current LVADs is now comparable to transplant. European and North American registries show similar results.
+- Pump thrombosis is now extremely rare; **driveline infection is no less common than with older devices**. Right HF and arrhythmia cause readmissions.
+- Bleeding can be reduced by **not adding antiplatelet therapy to anticoagulation**.
+- RCTs of early LVAD against prolonged medical therapy are running: Early-VAD, SweVAD, AMBU-VAD and TEAM-HF.
+- Some younger patients prefer to stay on an LVAD rather than proceed to transplant at once, to increase the life-years gained. Waiting-list time, centre experience and resources also shape the choice.
+- Deactivation: a patient may ask for withdrawal (poor quality of life, new cancer); deactivation follows careful evaluation by or under a specialised team, within national law.
+
+### Heart transplantation: the text and Table 17
+- "Gold standard" for advanced HF without contraindications. **One-year survival 80% to 90%; median survival about 12.5 years.** Donor shortage is the main limit. Donation after circulatory death programmes have comparable mid-term results and have increased transplant numbers.
+- Age: under 65 may be preferred for life expectancy, but most programmes accept up to 70; biological age counts as well as chronological. Surgical complexity matters: previous sternotomies, mediastinal radiation, adult congenital heart disease.
+- Indication: advanced HF with no other option (except durable MCS as bridge to transplant).
+
+| Contraindication | Detail and footnote |
+|---|---|
+| Absolute | Unable to comply with treatment (for example dementia); serious comorbidity with poor prognosis that transplant will not reverse |
+| Active infection | Relative only; **an infected LVAD may itself be an indication** |
+| Raised pulmonary vascular resistance not reversible with drugs | **LVAD as bridge to candidacy should be considered** |
+| Cancer | Highly selected cases may be eligible, with an oncologist |
+| Irreversible liver (cirrhosis) or kidney dysfunction | **Combined heart–liver or heart–kidney transplant may be considered** |
+| Others | Severe peripheral or cerebrovascular disease; multisystem disease; BMI over 35 or severe cachexia; alcohol, drugs or active smoking in the last 6 months; psychological instability; insufficient social support |
+
+The published table gives no numerical kidney threshold.
+
+### Notes for the viva
+- The ESC median survival (about 12.5 years, all recipients) and the ISHLT figure already in this tab (14.8 years median for those alive at 1 year, 2019 registry) measure different groups; they do not conflict.
+- UK listing and allocation follow NHSBT rules (in this tab); the ESC table is a clinical guide, not an allocation rule.
+- "Durable LVAD is now class I, level C, in the 2026 ESC heart failure guideline, for bridge or destination use; the indication is severely reduced LVEF with INTERMACS 2 to 4, or 1 to 2 after organ recovery on temporary support, or over 4 with high-risk features. The absolute contraindication surgeons are asked about is severe RV dysfunction."
+
+## ISHLT 2024 candidate guideline, Task Force I part 1 (full text): grading, indications, exercise testing, right heart catheter and pulmonary hypertension
+
+Added 24 November 2026 from Peled Y, Ducharme A, Kittleson M, et al. International Society for Heart and Lung Transplantation guidelines for the evaluation and care of cardiac transplant candidates, 2024. J Heart Lung Transplant 2024;43:1529-1628.e54, doi:10.1016/j.healun.2024.05.010. Read in full from the published PDF, pages 1 to 51 (take-home messages, introduction and Task Force I, sections 2.1 to 2.3, Tables 1 to 18, Figures 1 to 5); tables that were garbled in the extracted text were checked against the PDF pages. Task Forces II and III are written up separately. The overview section added earlier today ("ISHLT 2024 guideline for heart transplant candidates: listing criteria and what changed from 2016", read through a text-extraction tool) was checked against the PDF for Task Force I and its classes agree. These sections add every Task Force I recommendation and the supporting numbers.
+
+### Structure of the document
+- **Replaces** the 2006 ISHLT candidate guidelines and the 2016 10-year update of the listing criteria. Harmonised with ISHLT guidelines published up to November 2023; endorsed by the Pediatric Heart Transplant Society.
+- Three task forces: **I** evaluation for candidacy (co-chairs Kittleson and Bansal, paediatric); **II** care on the waiting list (Stehlik and Amdani, paediatric); **III** mechanical support (single chair, Saeed).
+- The first take-home message: an **individualised approach rather than absolute thresholds** for age, obesity, cancer, vascular, kidney, liver and connective tissue disease.
+
+### Grading (ACC/AHA scale, Table 2)
+| Class | Meaning | Level | Meaning |
+|---|---|---|---|
+| 1 (strong) | Benefit much greater than risk | A | More than one good RCT, or meta-analysis of good RCTs |
+| 2a (moderate) | Benefit clearly greater than risk | B-R | Moderate evidence from one or more RCTs |
+| 2b (weak) | Benefit greater than risk | B-NR | Well-designed non-randomised studies |
+| 3: No Benefit (moderate) | Benefit equals risk | C-LD | Limited data (studies with flaws in design or execution) |
+| 3: Harm (strong) | Risk exceeds benefit | C-EO | Expert consensus |
+
+### Indications (section 2.1.1)
+| Recommendation | Class, level |
+|---|---|
+| Clinical markers of advanced heart failure ("I NEED HELP", Table 3) should trigger evaluation for advanced therapies, including transplant, when consistent with the patient's goals | 1, B-NR |
+| CPET routinely in ambulatory adults referred for transplant (and children when age allows), to measure exercise intolerance, inform prognosis and guide listing | 1, B-NR |
+| Right heart catheter in adults before listing, to look for potentially prohibitive pulmonary hypertension and for shock needing inotropes or temporary MCS | 1, C-LD |
+| Right heart catheter in paediatric candidates before listing may be performed | 2b, C-EO |
+| Heart failure prognosis scores can be considered alongside the other evaluation data | 2a, C-LD |
+
+Points from the supporting text:
+- Commonest indications: highly symptomatic heart failure, cardiogenic shock and uncontrolled ventricular arrhythmia; less often restrictive or hypertrophic cardiomyopathy and complex congenital disease after failed palliation.
+- **First confirm that everything else has been tried**: optimal medical therapy, CRT and transcatheter mitral repair where indicated.
+- A **preserved ejection fraction does not exclude advanced failure** (restrictive or valve cardiomyopathy, isolated RV failure, congenital disease). Late recognition risks the patient being too unwell for transplant.
+- CPET: peak VO2 and VE/VCO2 slope predict equally in men and women, but the **VE/VCO2 slope discriminates better in women**. CPET has no clear role in inpatients needing urgent evaluation unless they improve enough to go home. Results are not the sole criterion for listing.
+- Children: protocols vary; single-ventricle patients often reach under 65% of predicted, so **under 50% predicted** is usually taken as supporting listing. Accurate PVR may be impossible in single-ventricle palliation; a high PVR is an independent risk for early and late death and RV failure, so catheterising all children when feasible "might be reasonable".
+- Scores: HFSS, SHFM, MAGGIC, MECKI (chronic); OPTIMIZE-HF, GWTG-HF, ESCAPE (acute). When listing is unclear, an **estimated 1-year survival under 85%** may help. Most scores perform poorly in individuals and few were validated in contemporary cohorts.
+
+### CPET values that support listing (Table 4; supporting text, not graded)
+| Group | Value |
+|---|---|
+| On a beta-blocker | Peak VO2 generally **12 ml/kg/min or less** |
+| Off a beta-blocker | Generally **14 ml/kg/min or less** |
+| BMI 30 or more | Lean-body-mass adjusted peak VO2 **19 ml/kg/min or less** |
+| Everyone, especially if the test is submaximal | **VE/VCO2 slope over 35** |
+| Women, or age 50 or under, or 70 or over | Peak VO2 **50% of predicted or less** |
+| Maximal test | RER over 1.05 and anaerobic threshold reached |
+
+### Pulmonary hypertension (section 2.1.2.7)
+| Recommendation | Class, level |
+|---|---|
+| Adults with **PASP 50 mmHg or more and either TPG 15 mmHg or more or PVR 3 WU or more**, keeping systolic BP over 85 mmHg: stepwise testing. (1) acute vasodilator challenge (class 1); (2) admission with continuous haemodynamic monitoring, because PVR often falls after **24 to 48 hours** of diuretics, inotropes and vasodilators (class 1); (3) temporary or durable MCS to unload the LV (class 2a) | 1, C-LD (step 3: 2a) |
+| Children: transplant is reasonable if **PVRI is under 9 WU·m²** at baseline or after diuretics, inotropes, vasodilators or MCS | 2a, B-NR |
+| Ineligible because of severe irreversible PH: heart-lung may be considered in carefully selected patients | 2b, C-EO |
+| Severe PH not reversible with all of the above: **heart transplant alone is not recommended** | 3: No Benefit, B-NR |
+
+- Definitions used: PH is mean PA pressure over 20 mmHg; group 2 (left heart disease) has wedge over 15 mmHg. A **PVR of 2.5 WU or more** is associated with higher early post-transplant mortality.
+- Risk rises continuously with PASP, TPG and PVR; **there is no absolute cut-off**.
+- **An acceptable response**: TPG down to **12 to 15 mmHg or less** and PVR down to **2.5 to 3 WU or less**, with systolic BP over 85 mmHg. If PVR falls but systolic pressure drops under 85 mmHg, the risk of right heart failure stays high.
+- Figure 1 of the guideline names nitroprusside and milrinone for the acute challenge; then diuretics and continuous vasoactive drugs with monitoring; then temporary MCS; then a durable LVAD if otherwise suitable. A fall to acceptable values at any step leads to listing.
+- Children: PVRI did not predict mortality from 30 days to 5 years except above 9 WU·m², in both congenital disease and cardiomyopathy. In a **Fontan** circulation do not assume PVR is low because flow is passive; low output and aortopulmonary collaterals with unequal lung flow make PVR hard to estimate.
+- Heart-lung: its main indication is PH (idiopathic or congenital). Survival is worse than after heart transplant alone, and some patients do well with an isolated lung transplant.
+
+!fig f54_ph_algorithm | Stepwise reversibility testing of pulmonary hypertension in the adult candidate, with class and level. Drawn for these notes from ISHLT 2024 (Peled et al.), section 2.1.2.7 and Figure 1
+
+### 2016 against 2024 for this part
+| Point | 2016 (Mehra) | 2024 (Peled) |
+|---|---|---|
+| Peak VO2 12 (beta-blocker) and 14 (intolerant) | Recommendations, I, B | Same numbers, now supporting text (Table 4); the graded recommendation is to do CPET (1, B-NR) |
+| 50% of predicted | Under 50s and women, IIa, B | Women, 50 or under, **or 70 or over** (ungraded) |
+| VE/VCO2 slope | 35 or more when RER under 1.05, IIb, C | Over 35 for all, especially submaximal tests (ungraded) |
+| Lean-mass peak VO2 (BMI 30 or more) | Under 19, IIb, B | 19 or less (ungraded) |
+| Prognostic scores | SHFM 1-year survival under 80% or HFSS medium or high risk, IIb, C | Scores alongside other data, 2a, C-LD; estimated 1-year survival **under 85%** may help |
+| Right heart catheter, adults | I, C | 1, C-LD |
+| Right heart catheter, children | Not routine periodic catheterisation | May be performed before listing, 2b, C-EO |
+| Vasodilator challenge, admission, then mechanical unloading | I, C; I, C; IIa, C | 1, C-LD; class 1; 2a |
+| Response targets | Not given in the notes | TPG 12 to 15 or less, PVR 2.5 to 3 WU or less, systolic over 85 |
+| Irreversible PH | Reasonable to call it irreversible if unloading fails, IIa, C | Heart alone not recommended, **3: No Benefit, B-NR**; heart-lung 2b, C-EO |
+| Children | Not graded | PVRI under 9 WU·m², 2a, B-NR |
+
+## ISHLT 2024 candidate guideline, Task Force I part 2 (full text): age, obesity and cancer, with waiting times after cancer
+
+Added 24 November 2026 from Peled Y, Ducharme A, Kittleson M, et al. ISHLT guidelines for the evaluation and care of cardiac transplant candidates, 2024. J Heart Lung Transplant 2024;43:1529-1628.e54, doi:10.1016/j.healun.2024.05.010. Read in full from the published PDF, sections 2.1.2 to 2.1.2.3 (pages 12 to 18), with Tables 5 to 8 checked on the PDF pages.
+
+### General approach to comorbidities
+- Registry trend: recipients now have higher BMI and more hypertension, diabetes, previous cancer, previous cardiac surgery, dialysis, sensitisation, older age, complex congenital disease and dual-organ need.
+- Three questions for any extracardiac condition: will it carry enough mortality to cancel the survival gain; will it impair quality of life and rehabilitation; will it worsen with immunosuppression?
+- Treat every patient with advanced heart failure as a potential candidate: keep up screening (cervical smear, mammogram, colonoscopy), vaccinations and comorbidity control, so that future eligibility is preserved.
+
+### Age (2.1.2.1)
+| Recommendation | Class, level |
+|---|---|
+| Advanced heart failure, **70 or under**: evaluation for transplant is recommended | 1, B-NR |
+| Over 70: may be considered in carefully selected patients by function and comorbidity control, allowing for specialised care and tailored immunosuppression | 2b, B-NR |
+
+- Older recipients have **more infection, renal dysfunction and cancer but less rejection**. Mortality rises with age, particularly over 70, although 5-year survival at 60 or over is acceptable.
+- At 70 or under, decide on comorbidities, **without specific attention to age**. Age alone is not a contraindication.
+- Older donors give worse survival in young and old recipients, so matching old donors to old recipients is of uncertain value. Using young hearts (and dual organs) for older recipients raises stewardship questions; programmes may set age limits for dual-organ transplant.
+
+### Obesity (2.1.2.2)
+| Recommendation | Class, level |
+|---|---|
+| Adults with **BMI 35 or more**: weight loss to under 35 before listing is reasonable | 2a, B-NR |
+| Children: a BMI threshold for candidacy is not established | 2b, C-LD |
+
+- BMI 35 or more: longer wait, higher waiting-list and post-transplant mortality. Survival is best at normal BMI but **acceptable at 30 to 35**. Bariatric surgery may be considered depending on centre expertise and stability.
+- Children: data conflict; excluding children on obesity alone may add to health-care disparities.
+
+### Cancer (2.1.2.3)
+| Recommendation | Class, level |
+|---|---|
+| Screen all candidates as for the general population: colorectal from 45 to 49 (2a) or 50 to 75 (1); PSA from 50 (45 if higher risk, 40 if several affected relatives); mammography yearly at 45 to 54 then every 2 years; primary HPV test every 5 years at 25 to 65; yearly low-dose CT at 50 to 80 with 20 pack-years who stopped within 15 years. Read every candidate's chest CT for lung cancer | 2a and 1, B-R |
+| Full-body skin examination by a dermatologist for every candidate can be useful | 2a, B-NR |
+| History of cancer: work with oncology on cancer-related survival and recurrence risk under immunosuppression | 1, C-LD |
+| History of cancer: transplant is recommended when cancer-related survival will not affect post-transplant survival and recurrence risk is low (tumour type, response, negative metastatic work-up) | 1, C-LD |
+| Circulating tumour DNA and similar tests can detect residual disease after treatment | 2a, B-NR |
+
+- Pre-transplant cancer predicts post-transplant cancer and lower survival, especially if **haematological, high risk, or present within 1 year** of transplant.
+- Low-risk, completely treated early cancers (prostate, renal cell, cervical, bladder) may need **little or no wait**. Arbitrary waiting periods cause unnecessary delay; decide case by case with oncology.
+- PET screening of asymptomatic candidates is not recommended routinely (no evidence of benefit; risk from incidental findings).
+- The waiting times below come from American Society of Transplantation and International Transplant Skin Cancer Collaborative consensus statements; times run from the end of all standard treatment.
+
+### Waiting times after cancer (Tables 5 to 8)
+| Cancer | Wait before transplant |
+|---|---|
+| Cutaneous SCC, low risk | None |
+| SCC, high risk / with perineural invasion or 2 risk factors / nodal disease | 2 years / 2 to 3 years / 5 years |
+| Merkel cell, local node-negative / node-positive | 2 years / 3 to 5 years |
+| Melanoma in situ | None (follow-up 3 months after transplant) |
+| Melanoma IA, IB, IIA / IIB, IIC / IIIA / IIIB / IIIC, IIID, IV | 1 year / 2 to 4 years / 1 to 2 years / 2 to 4 years / at least 5 years |
+| Distant metastatic SCC or Merkel cell | Not eligible |
+| Diffuse large B-cell, follicular, peripheral T-cell, Burkitt or Hodgkin lymphoma | 2 years (PET-negative Hodgkin after first treatment rarely relapses) |
+| Chronic lymphocytic leukaemia / monoclonal B-cell lymphocytosis | 2 to 3 years after treatment / none |
+| Myeloma (Table 7, from kidney data) | Stringent complete response (no monoclonal protein, normal free light-chain ratio, marrow plasma cells under 1%), performance status 0 to 1, no del(17p), t(4;14) or t(14;16), remission over 6 months |
+| Breast DCIS or stage I / II / III / IV | None after treatment / 1 to 2 years / 3 to 5 years disease-free / not eligible |
+| Colon stage I / II T3 / II T4 or III / IV | 1 year / 2 years / 3 years (5 if high-risk features) / 5 years disease-free |
+| Prostate, PSA under 10 and Gleason 6, T1c to T2a | None |
+| Prostate, intermediate or high risk | Surveillance or treatment; no wait if a nomogram predicts under 10% cancer death over 15 years. Castration-sensitive metastatic: consider after 2 years stable. Castration-resistant: not eligible |
+| Renal cell T1a (4 cm or less) / T1b Fuhrman 1 to 2 / T1b Fuhrman 3 to 4 / T2 / T3 or T4 | None / none / 1 to 2 years / 2 years / at least 2 years, then reassess |
+| Renal cell node-positive or metastatic; sarcomatoid, rhabdoid, collecting duct or medullary | Not a candidate (a single resected metastasis: tumour board) / not eligible |
+| **Lung** T1a or T1b N0 / T1c N0 / IB (T2a N0), IIA, IIB, IIIA | **At least 3 years / 3 to 5 years / 5 years** (caution with N2) |
+| **Lung** IIIB, IIIC, IV | **Not eligible** |
+
+- High-risk colon features: lymphovascular or perineural invasion, mucinous or signet-ring or poorly differentiated histology, obstruction, perforation, fewer than 12 nodes examined.
+- Prostate: immunosuppression does not raise the risk of significant prostate cancer or recurrence. Small renal masses: nephrectomy is still the usual approach before transplant.
+
+### 2016 against 2024 for this part
+| Point | 2016 | 2024 |
+|---|---|---|
+| Age 70 or under | I, C | 1, **B-NR** |
+| Over 70 | IIb, C | 2b, B-NR |
+| BMI 35 or more: lose weight first | IIa, C | 2a, **B-NR**; children: no threshold (2b, C-LD) |
+| Cancer | Decide with oncology; **no fixed waiting period** (I, C) | Oncology collaboration (1, C-LD) plus **tumour- and stage-specific waits** (Tables 5 to 8); general-population screening graded 1 or 2a |
+
+## ISHLT 2024 candidate guideline, Task Force I part 3 (full text): diabetes, vascular, lung, kidney and liver disease
+
+Added 24 November 2026 from Peled Y, Ducharme A, Kittleson M, et al. ISHLT guidelines for the evaluation and care of cardiac transplant candidates, 2024. J Heart Lung Transplant 2024;43:1529-1628.e54, doi:10.1016/j.healun.2024.05.010. Read in full from the published PDF, sections 2.1.2.4 to 2.1.2.9 (pages 19 to 25), with Figures 2 and 3 checked on the PDF pages.
+
+### Diabetes (2.1.2.4)
+| Recommendation | Class, level |
+|---|---|
+| Diabetes with end-organ damage or poor control (**HbA1c over 7.5%**): delaying evaluation and listing until control improves is reasonable | 2a, C-LD |
+| Ophthalmology review for retinopathy, as a marker of duration, control and vascular or kidney involvement, can be beneficial | 2a, B-NR |
+
+- About 30% of advanced heart failure patients and 20% of recipients have diabetes. **Uncomplicated diabetes does not worsen post-transplant survival**; complicated diabetes (obesity, kidney, cerebrovascular or peripheral disease) does, with more infection and kidney failure.
+- Calcineurin inhibitors and steroids worsen control, so aim for HbA1c 7.5% or less before transplant. Centres may set their own HbA1c relative contraindication; a high value may also signal poor adherence.
+
+### Cerebral and peripheral vascular disease (2.1.2.5)
+| Recommendation | Class, level |
+|---|---|
+| Previous stroke or neurological signs or symptoms: screen with **carotid ultrasound** | 1, C-EO |
+| Severe symptomatic cerebrovascular disease not amenable to revascularisation (neurologist's view): benefit of transplant uncertain | 2b, B-NR |
+| Claudication, weak pulses, atherosclerosis or risk factors: screen with **ankle-brachial index** | 1, C-EO |
+| Severe symptomatic peripheral disease, especially non-healing ischaemic ulcers (vascular surgeon's view): benefit uncertain | 2b, C-LD |
+
+- Carotid duplex detects 70% or greater stenosis with about **90% sensitivity and 94% specificity**. Screening asymptomatic people is of no benefit and may harm; combined carotid revascularisation at cardiac surgery is of unproven benefit. Treat carotid disease that needs revascularisation on its own merits.
+- Stroke after transplant brings lower function, dialysis and lower survival; stroke risk may have risen after the 2018 US allocation change.
+- Peripheral disease: disabling claudication that cannot be revascularised will block rehabilitation; non-healing ulcers carry prohibitive infection and healing risk under immunosuppression.
+
+### Lung disease (2.1.2.6)
+| Recommendation | Class, level |
+|---|---|
+| Spirometry, lung volumes, diffusion capacity and chest CT, ideally once fluid status is optimised | 1, C-EO |
+| Severe parenchymal disease (chronic hypoxia from a lung cause, or major test abnormalities, per a chest physician): benefit uncertain | 2b, C-LD |
+| Ineligible because of severe irreversible lung disease: heart-lung evaluation may be considered | 2b, C-EO |
+
+- Up to a third of heart failure patients have COPD. Severe obstruction or a very low DLCO marks high risk, but the guideline gives **no thresholds**. Congestion distorts the tests, so diurese first.
+
+### Kidney disease (2.1.2.8)
+| Recommendation | Class, level |
+|---|---|
+| Full kidney assessment: past trend; eGFR **and 24-hour creatinine clearance** when haemodynamically optimised; comorbidities. If abnormal: nephrology, renal ultrasound, proteinuria | 1, B-NR |
+| Established **GFR under 30** ml/min/1.73 m²: evaluate for simultaneous heart-kidney transplant | 1, B-NR |
+| **GFR 30 to 44** with signs of CKD (small kidneys, persistent proteinuria over 0.5 g/day) despite stable haemodynamics: heart-kidney evaluation is reasonable | 2a, B-NR |
+
+- The aim is to separate CKD that will not recover from kidney injury that will improve after transplant. Look at the trend over months to years before decompensation and over a few weeks once optimised.
+- Two GFR measurements **at least 2 weeks apart**, race-free equations (CKD-EPI creatinine; add cystatin C if eGFR 45 to 59), confirmed by a **measured** GFR such as 24-hour clearance. Kidney biopsy is rarely needed.
+- Figure 2: GFR under 30 **for more than 90 days** leads to heart-kidney; 30 to 45 with CKD, heart-kidney (2a); over 45, heart alone.
+- Evidence: in a US registry of over 26,000 recipients (2000 to 2010), heart-kidney gave better survival when eGFR was **under 37**, but median survival differed little (7.7 vs 7.1 years). Heart-kidney improved survival in **dialysis-dependent** patients (12.6 vs 7.1 years) but not in others (12.5 vs 12.3 years).
+- If eGFR is under 30 and the patient cannot have a kidney, heart transplant alone should generally not be pursued.
+- Stewardship: a dual organ denies a kidney to someone else. The US "Safety Net" gives kidney priority to heart recipients listed for a kidney before the first anniversary who are on dialysis or have GFR 20 or less between days 60 and 365.
+
+!fig f54_shkt_survival | Median survival with heart-kidney vs heart transplant alone, by dialysis status before transplant. Drawn for these notes from registry figures quoted in ISHLT 2024 (Peled et al.), section 2.1.2.8
+
+### Liver disease (2.1.2.9)
+| Recommendation | Class, level |
+|---|---|
+| Full liver assessment: albumin, bilirubin, INR; AST, ALT, GGT; **MELD-XI**; ultrasound, CT or MRI. If abnormal: hepatology and liver biopsy | 1, B-NR |
+| Biopsy-proven cirrhosis or severe fibrosis with portal hypertension: heart-liver evaluation is reasonable | 2a, B-NR |
+
+- Congestive or ischaemic liver injury comes with RV failure, biventricular failure, severe TR, restrictive or constrictive disease and Fontan circulation. The questions are whether it will reverse with a new heart and whether it is bad enough to raise operative risk or need a liver too.
+- MELD-XI (MELD excluding INR) is prognostic. Figure 3 treats **MELD-XI under 11** with normal tests and imaging as heart alone.
+- **Never diagnose cirrhosis on imaging alone** (it cannot grade fibrosis or separate nodular regenerative hyperplasia or non-cirrhotic portal hypertension). Elastography helps; biopsy is the reference standard but samples unevenly.
+- Isolated heart transplant in cirrhosis: **short-term mortality up to 50%**.
+- **Transvenous (transjugular) biopsy** is preferred because it measures wedged and free hepatic vein pressures: a gradient of **5 mmHg or less** excludes significant portal hypertension.
+- Children: rising MELD-XI and bilirubin and low albumin predict worse survival.
+
+!fig f54_dual_organ | Kidney and liver work-up and when to consider heart-kidney or heart-liver transplant, with class and level. Drawn for these notes from ISHLT 2024 (Peled et al.), sections 2.1.2.8 and 2.1.2.9 and Figures 2 and 3 (adapted there from the AHA 2023 dual-organ statement)
+
+### 2016 against 2024 for this part
+| Point | 2016 | 2024 |
+|---|---|---|
+| Diabetes | Relative contraindication: end-organ damage other than non-proliferative retinopathy, or HbA1c 7.5% or more despite effort (IIa, C) | Delay evaluation and listing while HbA1c over 7.5% or end-organ damage (2a, C-LD); eye review (2a, B-NR) |
+| Vascular disease | Severe symptomatic cerebrovascular disease may contraindicate; untreatable peripheral disease limiting rehabilitation is relative (IIb, C) | Screening graded 1, C-EO; benefit uncertain in severe disease (2b) |
+| Kidney | Irreversible eGFR under 30: relative contraindication to heart alone (IIa, C) | GFR under 30: evaluate for heart-kidney (1, B-NR); 30 to 44 with CKD: 2a, B-NR |
+| Liver | Hepatitis B or C with cirrhosis, portal hypertension or liver cancer: contraindication (III, C) | Cirrhosis (any cause) is a contraindication to heart alone; heart-liver reasonable (2a, B-NR) |
+| Lung | Not graded in the notes | Testing 1, C-EO; severe disease 2b, C-LD; heart-lung 2b, C-EO |
+
+## ISHLT 2024 candidate guideline, Task Force I part 4 (full text): connective tissue disease, infection, vaccination, frailty, surgical risk and bone
+
+Added 24 November 2026 from Peled Y, Ducharme A, Kittleson M, et al. ISHLT guidelines for the evaluation and care of cardiac transplant candidates, 2024. J Heart Lung Transplant 2024;43:1529-1628.e54, doi:10.1016/j.healun.2024.05.010. Read in full from the published PDF, sections 2.1.2.10 to 2.1.2.14 (pages 26 to 31), with Table 9 checked on the PDF page.
+
+### Connective tissue disease and sarcoidosis (2.1.2.10)
+| Recommendation | Class, level |
+|---|---|
+| Multidisciplinary review of: effect on survival, rehabilitation and quality of life; effect of immunosuppression on the disease; risk of cardiac recurrence; extracardiac features (PH, lung disease, aspiration, arthritis) | 1, B-NR |
+| Disease expected to shorten survival, with severe non-cardiac involvement, or not controlled by immunosuppression: **transplant not recommended** | 3: No Benefit, B-NR |
+
+- Commonest: lupus, systemic sclerosis, rheumatoid arthritis. **Cardiac sarcoidosis** has the most experience, with survival similar to other recipients; recurrence after transplant has been reported.
+- Look at: lungs in sarcoidosis; kidneys, arthritis and thrombosis in lupus; **oesophageal dysmotility**, arthritis, PH and kidneys in systemic sclerosis. Heart-lung may suit selected systemic sclerosis with cardiomyopathy and PH.
+
+### Infection and vaccination (2.1.2.11)
+| Recommendation | Class, level |
+|---|---|
+| Screen for chronic or latent infection that may reactivate: HIV, Chagas, TB, hepatitis B and C (Table 9), plus regional pathogens | 1, C-EO |
+| Not recommended with (1) active infection needing ongoing antibiotics, **except an infected durable LVAD**; (2) HIV with opportunistic infection or related cancer, no stable antiretroviral regimen, detectable viral load or low CD4 | 3: No Benefit, C-EO |
+| Review vaccine history and serology; give age-appropriate vaccines **at least 2 weeks before transplant**. Avoid live vaccines unless transplant can wait **4 weeks** | 1, B-NR |
+
+- Also test CMV IgG, EBV, toxoplasma, syphilis; Strongyloides, Coccidioides and trypanosomiasis if from endemic areas.
+- **No infection is an absolute contraindication**; active infection usually defers transplant. An infected LVAD is the exception because removing all hardware at transplant often cures it.
+- **Infective endocarditis**: transplant for active refractory endocarditis is controversial (case reports only); consider only when repeated operations have failed.
+- Vaccines work better before immunosuppression (most clearly for SARS-CoV-2). Refusing recommended vaccines **may be considered a contraindication** (parental refusal in children is handled case by case; see part 5). Recombinant zoster vaccine is preferred to the live vaccine.
+
+| Infection (Table 9) | Test | Before transplant | Contraindication |
+|---|---|---|---|
+| HIV | Viral load, CD4 | HIV specialist; regimen safe after transplant | Opportunistic infection or HIV cancer, wasting, no stable regimen, detectable RNA, CD4 under 200/µl in the 3 months before |
+| Chagas (Latin American birth, residence or mother; unscreened blood) | Two serological tests on different antigens or methods | Prophylaxis of unproven benefit | None |
+| TB | Skin test or IGRA | Positive test (skin 5 mm or more): **isoniazid with pyridoxine for 6 to 9 months, without delaying transplant**. From an endemic area, start only with one more risk factor | None |
+| Hepatitis B | sAg, core and surface antibody | Resolved infection: serology and DNA every 3 months while listed | Cirrhosis on biopsy (heart-liver in selected patients) |
+| Hepatitis C | Antibody and RNA | Direct-acting antivirals for sustained response | Cirrhosis on biopsy (heart-liver in selected patients) |
+
+### Frailty (2.1.2.12)
+| Recommendation | Class, level |
+|---|---|
+| Frailty assessment can help find targets for conditioning and assess risk | 2a, B-NR |
+| Regular exercise, ideally a structured programme, to prevent or improve frailty | 1, C-LD |
+| Severe frailty that will prevent rehabilitation and will not improve with a new heart: transplant not recommended | 3: No Benefit, C-EO |
+
+- Frailty phenotype (Table 11): exhaustion, weakness, weight loss, slowness, low activity. **0 = not frail, 1 to 2 = prefrail, 3 to 5 = frail**. Original thresholds: grip strength by sex and BMI (men about 29 to 32 kg or less), 15-foot walk 6 to 7 seconds or more, weight loss over 10 lb or 5% in a year, low weekly kilocalories.
+- The modified phenotype suits sick patients: **5 chair stands over 15 seconds** replaces grip; **5-metre walk over 6 seconds**; loss of appetite replaces weight loss (fluid masks weight loss).
+- Frailty affects up to 50% of heart failure patients and predicts death on the list and after transplant. It can partly reverse after LVAD or transplant; whether that improves outcomes is unknown. Walking ability and quadriceps strength indicate recovery potential.
+
+### Surgical risk and bone (2.1.2.13 and 2.1.2.14)
+| Recommendation | Class, level |
+|---|---|
+| Previous cardiac surgery: factor the added risk into the overall assessment (not an absolute contraindication) | 1, B-NR |
+| **Porcelain aorta** (circumferential calcification): benefit uncertain because of perioperative death and stroke | 2b, C-LD |
+| Assess for osteoporosis and fracture risk (fracture history, DEXA of spine and femoral neck, spine films or vertebral fracture assessment); treat before and after | 1, B-NR |
+
+- Porcelain aorta prevents safe cross-clamping or entry into the ascending aorta; mediastinal radiotherapy is one cause. Adapted techniques exist only in selected cases.
+
+### 2016 against 2024 for this part
+| Point | 2016 | 2024 |
+|---|---|---|
+| Frailty | 3 of 5 criteria could be considered (IIb, C) | Assessment 2a, B-NR; exercise 1, C-LD; severe irreversible frailty 3: No Benefit |
+| Latent TB | Screen (I, B); isoniazid without delaying transplant (I, B) | Screen within latent-infection screening (1, C-EO); isoniazid with pyridoxine 6 to 9 months, without delay (Table 9) |
+| HIV | Consider if stable on treatment for 3 months or more, undetectable, CD4 200 or more for 3 months (IIa, C) | Contraindications listed (3: No Benefit, C-EO); positive recommendation (1, C-EO) is in Task Force II |
+| New topics | none | Connective tissue disease and sarcoidosis, vaccination, porcelain aorta, bone disease |
+
+## ISHLT 2024 candidate guideline, Task Force I part 5 (full text): amyloid, restrictive and hypertrophic cardiomyopathy, congenital disease, retransplantation and children
+
+Added 24 November 2026 from Peled Y, Ducharme A, Kittleson M, et al. ISHLT guidelines for the evaluation and care of cardiac transplant candidates, 2024. J Heart Lung Transplant 2024;43:1529-1628.e54, doi:10.1016/j.healun.2024.05.010. Read in full from the published PDF, sections 2.1.3 and 2.1.4 (pages 32 to 41), with Table 12, the congenital recommendation table and Figure 4 checked on the PDF pages.
+
+### Cardiac amyloidosis (2.1.3.1)
+| Recommendation | Class, level |
+|---|---|
+| AL or ATTR cardiomyopathy with advanced failure by amyloid staging and usual risk markers: transplant evaluation is reasonable, with multidisciplinary review of extracardiac disease | 2a, B-NR |
+| **AL** with heavy albuminuria, significant liver infiltration, gut involvement with malnutrition, lung amyloid with refractory effusions, peripheral neuropathy with autonomic dysfunction, or poor projected survival despite plasma-cell therapy: transplant not recommended | **3: Harm**, B-NR |
+| **ATTR** with gut involvement and malnutrition, neuropathy with autonomic dysfunction, or advanced age: transplant not recommended | 3: No Benefit, B-NR |
+| Variant ATTR: role of heart-liver transplant not established now that TTR silencers slow neuropathy | 2b, B-NR |
+| AL or ATTR: role of a durable LVAD not established (small LV cavity, biventricular disease) | 2b, B-NR |
+
+- Troponin and NT-proBNP drive the staging systems (Table 12): Mayo 2004, European modification and Mayo 2012 for AL (2012 adds free light-chain difference of 18 mg/dl or more); Mayo and the **UK staging system** for ATTR (NT-proBNP over 3,000 pg/ml and eGFR under 45 ml/min).
+- **Do not delay evaluation to see whether tafamidis works** in highly symptomatic ATTR: it slows but does not reverse disease and works less well late.
+- AL: assess eligibility for stem cell transplant (less often needed now plasma-cell therapy works better). Give TTR-specific treatment after transplant if amyloid neuropathy coexists.
+- Mechanical support in amyloid: INTERMACS survival is worse than in dilated or non-amyloid restrictive disease with either LVAD or biventricular support; a total artificial heart is an option.
+- Table 13 also flags AL bleeding from **factor X deficiency**, and heart-kidney if eGFR under 50 with albuminuria over 0.5 g/day.
+
+### Restrictive cardiomyopathy (2.1.3.2.1)
+| Recommendation | Class, level |
+|---|---|
+| Restrictive cardiomyopathy with NYHA III to IV: transplant evaluation | 1, B-NR |
+| Look for treatable or reversible causes first | 1, C-LD |
+| Role of durable MCS not established | 2b, C-LD |
+
+- Waiting-list mortality is higher than in dilated cardiomyopathy (adults and children). Catheterise for PH; long-standing RV failure raises the chance of cirrhosis, so liver biopsy may be needed.
+- **Exclude or treat constrictive pericarditis first**; constriction and restriction can coexist (radiation, myocarditis, drugs). Look for haemochromatosis, glycogen storage disease and Fabry disease, which have specific treatment.
+- Small LV cavities mean more biventricular support; outcomes after bridging were otherwise comparable.
+
+### Hypertrophic cardiomyopathy (2.1.3.2.2)
+| Recommendation | Class, level |
+|---|---|
+| **Non-obstructive** HCM with NYHA III to IV despite medical therapy, or refractory life-threatening ventricular arrhythmia: evaluate for transplant | 1, B-NR |
+| Same group, otherwise suitable, with suitable anatomy: continuous-flow LVAD as a bridge is reasonable | 2a, B-NR |
+
+- Advanced failure affects **3 to 5%** of non-obstructive HCM. A reduced EF is not required (restrictive physiology can occur with preserved EF). Patients whose symptoms respond to drugs, septal reduction or devices, particularly with outflow obstruction, should not be referred.
+- Post-transplant survival is similar to, or better than, other diagnoses. LVAD results are better with an **LV cavity over 46 to 50 mm**.
+
+### Congenital heart disease (2.1.3.3)
+| Recommendation | Class, level |
+|---|---|
+| Care at centres expert in paediatric and adult congenital disease and transplant, confirming all other treatment is exhausted | 1, B-NR |
+| Detailed work-up: intrathoracic anatomy (MRI or CT); PH and all sources of lung blood flow; patency of major veins and arteries and chest-wall collaterals; other organ disease; HLA sensitisation; psychosocial and carer assessment | 1, C-LD |
+| **Fontan**: symptomatic HF with reduced systolic function (1); symptomatic HF with preserved function and high filling pressures (1); plastic bronchitis or protein-losing enteropathy refractory to lymphatic and medical treatment (2a); cirrhosis or CKD from high venous pressure (2a) | 1 and 2a, B-NR |
+| **Single ventricle without Fontan**: shunted or Glenn circulation with prohibitive risk for further palliation; cyanosis with severe AV valve regurgitation and prohibitive repair risk; PA-IVS with RV-dependent coronary circulation and atresia of at least one aorto-coronary ostium; neonatal HLHS with high-risk features (HF, ventricular dysfunction, LV-coronary fistulae) | 1, B-NR |
+| **Any CHD**: HF or ventricular arrhythmia refractory to all treatment (1); reactive PH at risk of becoming fixed (1); neonatal cyanotic CHD with high-risk features (2a) | 1 and 2a, B-NR |
+| Benefit uncertain: multiple previous operations, collaterals that cannot be treated, previous mediastinitis; congenital absence or near-total thrombosis of major systemic veins | 2b, B-NR |
+| Fontan liver disease: heart alone if Child-Pugh A and no portal hypertension; heart-liver if Child-Pugh B or C or portal hypertension (varices, ascites, splenomegaly, low platelets); **FALD score 2 or more** may favour heart-liver | 2b, B-NR |
+
+- Up to 90% of children with CHD reach adulthood; heart failure is the leading cause of death. Previous surgery, transfusion and homografts (sensitisation) bring longer waits, more waiting-list deaths and higher early mortality, but **long-term survival is equal or better**, and higher centre volume improves early results.
+- Waiting-list mortality is higher if listed within 6 months of a Fontan operation, not after a Glenn, which supports early listing for those who do poorly after the first stage. Standard-risk HLHS should have staged surgery, not a transplant.
+- Homograft sensitisation may be lessened by glutaraldehyde pretreatment or decellularised homografts.
+- FALD: liver disease is near-universal 20 years after Fontan and cirrhosis affects nearly half by 30 years. Fibrosis alone can regress after heart transplant, so judge **liver function rather than histology alone**. FALD score: 1 point each for cirrhosis, varices, splenomegaly and 2 or more paracenteses.
+- Two-ventricle disease (repaired D-TGA, unrepaired congenitally corrected TGA, DORV) usually presents later and fits the standard indications.
+
+### Retransplantation (2.1.3.4)
+| Recommendation | Class, level |
+|---|---|
+| **ISHLT grade 3 allograft vasculopathy**: evaluation for retransplant is reasonable | 2a, B-NR |
+| Benefit not established with graft failure from active rejection, advanced age, or durable MCS as a bridge to retransplant | 2b, C-LD |
+
+- Retransplants are about **3% of adult heart transplants (7% at 18 to 39 years)**; vasculopathy is the commonest indication.
+- Grade 3 vasculopathy: left main 50% or more; two or more primary vessels 70% or more, or isolated branch stenosis 70% or more in all three territories; grade 1 or 2 with **LVEF 45% or less** (usually with regional wall motion abnormality); or significant restrictive physiology. Mortality up to **75% at 5 years**.
+- Worse outcomes: retransplant for active rejection, within **2 years** of the first transplant, after age 60 (higher 5- and 10-year mortality), or on a durable MCS bridge. After matching, late retransplant does not raise mortality. Heart-kidney may suit those with calcineurin-inhibitor nephropathy.
+
+### Children (2.1.4)
+| Recommendation | Class, level |
+|---|---|
+| Extracardiac conditions (neuromuscular disease, chromosomal abnormalities): individual assessment | 1, B-NR |
+| Under 2 years: **ABO-incompatible transplant** to widen the donor pool | 1, B-NR |
+| Severe hypoplasia of the central branch pulmonary arteries or pulmonary veins: transplant not recommended | 3: No Benefit, C-LD |
+
+- Paediatric waiting-list mortality is **15 to 30%**. Isohaemagglutinins appear from about 18 months, which allows ABO-incompatible transplant in infants with comparable outcomes; UNOS is extending eligibility to under-18s with low titres.
+- Duchenne and other neuromuscular disease: assess respiratory muscle strength, aspiration and rehabilitation potential. Pulmonary artery or vein hypoplasia may suit heart-lung or lung transplant with cardiac repair.
+- Excluding children only because of **intellectual or developmental disability is not justified**; assess adaptive functioning and carer support. Parental vaccine refusal: decide case by case.
+
+## ISHLT 2024 candidate guideline, Task Force I part 6 (full text): substance use, psychosocial assessment, the transplant team and the evaluation checklist
+
+Added 24 November 2026 from Peled Y, Ducharme A, Kittleson M, et al. ISHLT guidelines for the evaluation and care of cardiac transplant candidates, 2024. J Heart Lung Transplant 2024;43:1529-1628.e54, doi:10.1016/j.healun.2024.05.010. Read in full from the published PDF, sections 2.2 and 2.3 (pages 42 to 51), with Tables 14 to 18 and Figure 5.
+
+### Substance use (2.2.1)
+| Recommendation | Class, level |
+|---|---|
+| Illicit drug use: at least **6 months' abstinence** before listing | 1, C-EO |
+| Cannabis: abstinence before evaluation and listing is reasonable (infection risk, drug interactions) | 2a, B-NR |
+| Alcohol use disorder: at least **6 months' abstinence** before listing | 1, B-NR |
+| Tobacco smoking: at least **6 months' abstinence** before listing | 1, B-NR |
+
+- Assess frequency, amount, duration, abstinence, impairment and treatment, by self-report, questionnaires (e.g. AUDIT) and biochemical tests; refer to addiction services.
+- Check abstinence with **urine toxicology** (drugs), **serum phosphatidylethanol** (alcohol) and **serum or urine cotinine** (tobacco).
+- Excessive alcohol use is described as an absolute contraindication. Active smoking is a contraindication (cancer, vasculopathy, renal dysfunction, death). Avoid all nicotine products including e-cigarettes. Inhaled cannabis carries fungal and TB infection risk and interacts with azoles, diltiazem, warfarin, co-trimoxazole, dapsone and statins; legally prescribed cannabis may be allowed.
+
+### Support, adherence and mental health (2.2.2)
+| Recommendation | Class, level |
+|---|---|
+| Confirm social support: carers who understand the illness and their role, can meet emotional and physical needs, and are dependable | 1, B-NR |
+| Candidates should show adherence to treatment and healthy behaviours and understand the post-transplant regimen | 1, B-NR |
+| Mental health screening by an expert: past and current mood disorder (including suicidal ideation or self-harm), anxiety, psychosis, personality disorder; response to treatment; mental health of the support network | 1, B-NR |
+| Screening tools (PACT, SIPAT, TERS) can be useful as part of the assessment | 2a, B-NR |
+
+- **No stable carer** should be considered a contraindication. **Serious, sustained non-adherence** with poor engagement is a contraindication. Mental illness is not a contraindication in itself; uncontrolled illness with non-adherence, substance use or no support is.
+- Tools are not to be used alone. **SIPAT** has the most heart transplant data (worse scores predict non-adherence and rejection): 0 to 6 excellent, 7 to 20 good, 21 to 39 minimally acceptable, 40 to 68 high risk, 69 or more poor. **PACT** scores 8 to 40 where **higher means lower risk**; **TERS** scores 26.5 to 79.5 where higher means higher risk. PACT and TERS have not been studied specifically in heart candidates.
+- Children: about 40% of families report psychosocial risk; focus on strengths and things to improve rather than reasons to refuse. Be aware of implicit bias. Jehovah's Witness families: transplant may be possible in highly selected cases.
+
+### The transplant team (2.3)
+| Recommendation | Class, level |
+|---|---|
+| Multidisciplinary team: heart failure cardiologist, cardiac surgeon, transplant coordinator, transplant infectious diseases, pharmacist, immunologist, mental health expert, social worker, dietitian, physiotherapist and occupational therapist, palliative care, others as needed | 1, B-NR |
+| Each member coordinates care in their field and attends **regular selection meetings** | 1, C-EO |
+| Children also need specialists in assent, child-life specialists and paediatric mental health experts | 1, C-EO |
+
+- The selection meeting decides: eligibility (accepted, declined, or deferred pending named tests), urgency, and candidacy for temporary or durable MCS.
+- The surgeon's role (Table 17): judge whether the patient is a surgical candidate, identify surgical risks, and explain risks, benefits and complications to the patient.
+
+### Evaluation checklist (Table 18, abridged)
+| Test | Class | Note |
+|---|---|---|
+| CPET | 1 at baseline; **2b on the list** | Never the sole basis for listing |
+| Right heart catheter | 1 | Vasodilator challenge if potentially prohibitive PH |
+| Prognostic scores | 2a | Not alone |
+| Natriuretic peptides | 1 at baseline; 2a on the list | |
+| Frailty | 2a | Table 11 |
+| Nutrition | 1 | BMI 35 or more a potential contraindication (2a) |
+| eGFR (race-free) and 24-hour creatinine clearance | 1 | Abnormal: nephrology, ultrasound, proteinuria |
+| Liver tests, MELD-XI, abdominal imaging | 1 | Abnormal: hepatology, biopsy |
+| Lung function and chest CT | 1 | CT also shows a porcelain aorta |
+| Carotid ultrasound and ankle-brachial index | 1 (selected) | |
+| Infection serology, latent infection screen, vaccination | 1 | Repeat serology if listed over a year or after exposure |
+| DEXA | 1 | |
+| HLA antibodies, ABO, tissue typing, PRA and flow cytometry | | HLA antibodies every 3 to 6 months and 3 weeks after a sensitising event |
+| Cancer screening | 1 (skin 2a; colorectal 1 to 2a) | Section 2.1.2.3 |
+| Psychosocial evaluation | 1 | Tables 14 to 16 |
+
+### 2016 against 2024 for this part
+| Point | 2016 | 2024 |
+|---|---|---|
+| Smoking | Cessation education (I, C); smoking in the past 6 months a relative contraindication (IIa, C) | **6 months' abstinence** before listing (1, B-NR), checked by cotinine |
+| Alcohol and drugs | Rehabilitation if alcohol misuse in past 24 months (IIb, C); active substance misuse: do not transplant (III, C) | 6 months' abstinence for alcohol (1, B-NR) and drugs (1, C-EO); cannabis abstinence reasonable (2a, B-NR) |
+| Psychosocial | Assessment required (I, C); poor support relative (IIa, C); repeated non-adherence: do not transplant (III, C) | Support, adherence and mental health all 1, B-NR; tools 2a, B-NR; no carer or sustained non-adherence a contraindication (text) |
+| Restrictive cardiomyopathy | Refer (I, B); exclude constriction (I, C) | Evaluate (1, B-NR); exclude reversible causes (1, C-LD); MCS 2b |
+| HCM | Transplant for severe untreatable failure (I, B) | Non-obstructive only (1, B-NR); LVAD bridge 2a, B-NR |
+| AL amyloid | Selected patients at expert centres with later stem cell transplant (IIa, B); severe extracardiac disease contraindicates (IIa, B) | Evaluation reasonable (2a, B-NR); extracardiac exclusions **3: Harm** |
+| Familial TTR | May need heart and liver | Heart-liver role not established with silencers (2b, B-NR) |
+| Congenital | Expert centres, imaging, HLA work-up (all I, C) | Expert centres 1, B-NR; work-up 1, C-LD; Fontan and single-ventricle indications graded |
+| Retransplantation | Significant vasculopathy with refractory dysfunction and no active rejection (IIa, C) | Grade 3 vasculopathy (2a, B-NR); active rejection, older age or MCS bridge 2b, C-LD |
+
+## ISHLT 2024 candidate guideline, Task Force II part 1 (full text): drugs, anticoagulation, structural and rhythm procedures while listed
+
+Added 24 November 2026 from Peled Y, Ducharme A, Kittleson M, et al. International Society for Heart and Lung Transplantation Guidelines for the Evaluation and Care of Cardiac Transplant Candidates—2024. J Heart Lung Transplant 2024;43:1529-1628.e54, doi:10.1016/j.healun.2024.05.010. Read in full from the published PDF (pages 52 to 61, sections 3.1 and 3.2). The text layer of the PDF leaves out most recommendation-table text, so every class and level below was read from the page images. This fills the classes that the earlier summary in this tab (section "ISHLT 2024 guideline for heart transplant candidates: listing criteria and what changed from 2016") left out for diuretics (3.1.2) and rhythm (3.2.2). Grading: class 1, 2a, 2b, 3: No Benefit, 3: Harm; levels A, B-R, B-NR, C-LD, C-EO.
+
+### Heart failure drugs on the list (3.1.1 to 3.1.3)
+| Recommendation | Class, level |
+|---|---|
+| Continue maximally tolerated GDMT in candidates with HFrEF | 1, A |
+| Continue maximally tolerated GDMT in durable-LVAD patients listed for transplant (RV failure may limit beta-blockers; an LVAD may let previously intolerant patients take more) | 2a, B-NR |
+| Reduce or stop GDMT drugs for intolerance: symptomatic hypotension not due to over-diuresis, renal or liver failure, cardiogenic shock | 1, C-LD |
+| Non-dilated cardiomyopathy (HCM, RCM, amyloid) with LV systolic dysfunction: GDMT helps but tolerance is limited (especially amyloid) | 2a, C-LD |
+| Diuretics at the lowest dose that decongests | 1, B-NR |
+| Refractory congestion despite IV and higher-dose loop diuretic: add a thiazide (metolazone) or acetazolamide | 1, B-NR |
+| Ultrafiltration for diuretic-resistant candidates | 2b, B-R |
+| Ischaemic disease with angina: continue anti-anginals (watch hypotension and vasoplegia) | 2a, C-LD |
+
+GDMT pillars named: ARNI or ACE inhibitor/ARB, beta-blocker, MRA, SGLT2 inhibitor; plus hydralazine-nitrate, ivabradine, vericiguat and digoxin for particular groups.
+
+### Pulmonary hypertension drugs (3.1.4)
+| Recommendation | Class, level |
+|---|---|
+| Endothelin antagonists and prostanoids for group 2 PH from left heart disease | 3: Harm, B-R |
+| PDE5 inhibitors to improve haemodynamics and exercise in PH with HFrEF, or HFpEF with combined pre- and post-capillary PH | 2b, C-LD |
+| PDE5 inhibitors in HFpEF with isolated post-capillary PH | 3: No Benefit, C-LD |
+
+Why harm: they raise filling pressures and cause decompensation; in the bosentan RCT in HFrEF-associated PH there was no benefit and more fluid retention. Whether sildenafil lowers post-transplant RV failure is unknown.
+
+### Anticoagulation and antiplatelets (3.1.5)
+| Recommendation | Class, level |
+|---|---|
+| Anticoagulation or DAPT: agree a peri-operative plan at listing | 1, C-EO |
+| Chronic anticoagulation: vitamin K antagonist or heparin is more established than a DOAC | 1, C-EO |
+| Reversal of a vitamin K antagonist: vitamin K; fresh frozen plasma; prothrombin complex concentrate | 1, B-NR; 1, B-NR; 2a, C-LD |
+| If a DOAC is continued, have the reversal agent on site | 2a, C-LD |
+| Stop P2Y12 inhibitors before surgery if possible | 2a, B-NR |
+| HIT: no heparin; use warfarin, a DOAC, argatroban, bivalirudin or fondaparinux as the situation needs | 1, B-NR |
+
+- Switch DOACs at listing to warfarin (outpatients) or heparin (inpatients). Specific reversal: idarucizumab for dabigatran (more data in transplant); andexanet for apixaban or rivaroxaban. PCC also lowers transfusion and so sensitisation.
+- Platelet transfusion does not reverse P2Y12 inhibition. Case reports describe bridging with a cangrelor infusion (half-life 3 to 6 minutes).
+- HIT: heparin re-challenge at transplant may be considered (limited evidence); intra-operative plasmapheresis has been used.
+
+### Systemic and combined-organ candidates (3.1.6 and 3.1.7)
+| Recommendation | Class, level |
+|---|---|
+| Continue disease-modifying drugs for systemic disease (sarcoid, amyloid, connective tissue) while listed, with a peri-operative and post-transplant plan made with the specialist | 1, C-EO (both) |
+| Heart-kidney candidates with low eGFR: no SGLT2 inhibitor (the trials excluded eGFR under 20 or 30) | 3, C-EO |
+| Heart-kidney candidates: MRA and RAAS inhibitors with caution, contraindicated on dialysis; potassium binders (patiromer, sodium zirconium cyclosilicate) may help | 2b, C-EO |
+| Heart-lung candidates with group 1 PH: oral, inhaled or parenteral pulmonary vasodilators per PH guidelines | 2b, C-EO |
+
+### Children (3.1.8)
+ACE inhibitor or ARB, beta-blocker and MRA if tolerated (2b, C-EO); evidence for ARNI and SGLT2 inhibitors is limited (2b, C-EO); digoxin helps in interstage single-ventricle physiology (2a, B-NR); continuous inotropes may be used in decompensation (2b, C-EO). If a child on continuous inotropes decompensates, consider a VAD early, before end-organ damage.
+
+### Structural intervention while listed (3.2.1)
+| Recommendation | Class, level |
+|---|---|
+| Heart team review before any structural intervention | 1, C-EO |
+| Optimise GDMT (and CRT if indicated) before mitral intervention for moderate-severe or severe secondary MR | 1, C-EO |
+| Mitral TEER: chronic severe secondary MR, LVEF 20 to 50%, NYHA II to IV, LV end-systolic dimension under 7 cm despite GDMT and CRT | 2a, B-R |
+| Right heart failure with oedema or ascites from severe secondary TR: diuretics | 1, C-EO |
+| Treat the causes of secondary TR (PH, RV failure, HFrEF) before transcatheter valve work | 2a, C-EO |
+| Tricuspid TEER if severe TR persists and surgical risk is high | 2b, B-R |
+| Implanted pulmonary artery pressure sensor (CardioMEMS) in symptomatic heart failure | 2a, B-R |
+
+Evidence quoted: COAPT, heart failure admission HR 0.53 and death at 24 months HR 0.62; MITRA-FR no difference (COAPT had more MR, EROA 0.41 against 0.31 cm², smaller LV, end-diastolic 62 against 69 mm, and less residual MR, 5% against 17%). MitraBridge registry (119 patients, 17 centres): freedom from death, urgent transplant or LVAD, or heart failure admission 64% at 1 year, and 23.5% came off the list for improvement. TRILUMINATE (85 patients): 83% NYHA I to II at 1 year; a 350-patient RCT of tricuspid TEER improved quality of life but not death. CHAMPION: heart failure admissions HR 0.70 (0.60 to 0.84) at 6 months; GUIDE-HF neutral overall; MONITOR-HF fewer admissions and better quality of life.
+
+### Rhythm (3.2.2)
+| Recommendation | Class, level |
+|---|---|
+| ICD in NYHA IV transplant candidates | 2a, B-NR |
+| CRT: LVEF 35% or less, sinus rhythm, LBBB with QRS 150 ms or more, ambulatory NYHA IV | 1, B-R |
+| CRT: same, QRS 120 to 149 ms | 2a, B-NR |
+| Catheter ablation for symptomatic AF with HFrEF | 2b, B-R |
+| AV node ablation with CRT for refractory AF | 2b, B-NR |
+| Catheter ablation for recurrent VT in NYHA IV candidates | 2b, C-LD |
+| Reduce or stop amiodarone case by case | 2a, B-NR |
+
+- ICD: in 32,599 listed patients an ICD was linked with lower mortality (HR 0.81 and 0.87, with and without an LVAD); a meta-analysis of 36,112 gave RR 0.6 for death and 0.27 for sudden death. A wearable defibrillator is a reasonable alternative. CRT evidence: COMPANION, death or admission HR 0.64 in ambulatory NYHA IV.
+- AF ablation: CASTLE-HTx (single centre, patients referred for transplant) cut death, LVAD or urgent transplant.
+- Amiodarone and the graft: one analysis of 14,944 patients found higher 1-year mortality (HR 1.15); an SRTR study of 25,394 found more graft dysfunction (OR 1.30) and higher 30-day (HR 1.25) and 1-year (1.13) mortality, not at 5 to 10 years; a single centre found PGD was dose-related and less common when amiodarone was stopped a median 74 days before. A 9-study meta-analysis found no link. Review the need for it while listed.
+
+### Children: ICD and CRT (3.2.3)
+ICD may be considered in congenital disease and in non-ischaemic dilated cardiomyopathy (LVEF under 35% plus risk factors) (2b, C-EO each); not in a child who will stay in hospital until transplant (3: No Benefit, C-EO). CRT may be considered in congenital disease with heart failure and dyssynchrony (2b, C-EO).
+
+## ISHLT 2024 candidate guideline, Task Force II part 2 (full text): surveillance on the list, delisting, decompensation and special groups
+
+Added 24 November 2026 from Peled Y, Ducharme A, Kittleson M, et al. ISHLT Guidelines for the Evaluation and Care of Cardiac Transplant Candidates—2024. J Heart Lung Transplant 2024;43:1529-1628.e54, doi:10.1016/j.healun.2024.05.010. Read in full from the published PDF (pages 61 to 76, sections 3.3.1 to 3.3.3, Tables 19 and 20); recommendation tables read from the page images. HLA monitoring (3.3.1.8) is in part 3.
+
+### Repeat testing on the list (3.3.1)
+| Test | Recommendation | Class, level |
+|---|---|---|
+| Right heart catheter | All adults periodically until transplant; vasodilator challenge for potentially prohibitive PH. Text: every 3 to 6 months is reasonable, or sooner if needed | 1, C-LD |
+| | Children: periodic catheter (PVRI, heart-only suitability, MCS need, aortopulmonary collaterals) | 2b, C-EO |
+| | PH irreversible if medicines and LV unloading (IABP and/or LVAD) fail; re-measure 3 to 6 months after LVAD | 2a, C-LD |
+| CPET | Repeat if symptoms change or after more than 1 year on the list (for example yearly) | 2b, C-EO |
+| | Do not change listing status on peak VO2 alone | 3: No Benefit, C-EO |
+| Kidney | Serial creatinine and eGFR, frequency by clinical state (daily in ICU, about 3-monthly in stable outpatients) | 1, B-NR |
+| Liver | Serial albumin, bilirubin, INR, AST, ALT, GGT and MELD-XI; imaging, hepatology and biopsy if worsening | 1, B-NR |
+| Vaccines | On the list over 1 year: yearly influenza before the season; COVID-19 per local advice | 1, B-NR |
+| Infection screen | Repeat after more than 1 year on the list | 2b, C-EO |
+| | Repeat after a relevant exposure | 1, C-EO |
+| Cancer | Age-appropriate screening as for the general population (Table 19) | 1, A |
+| Psychosocial | Periodic review; reassess at agreed times those treated for mental illness, those abstaining from smoking, alcohol or drugs, and those with past non-adherence; structured transition plan for adolescents moving to adult care | 1, C-EO (all) |
+| Nutrition | Establish nutritional status and reassess; set goals of nutritional therapy | 1, B-NR (both) |
+| Frailty | Periodic reassessment | 2a, C-LD |
+| Natriuretic peptide | At first evaluation (1); periodic on the list for early deterioration (2a) | 1 and 2a, B-R |
+| | A large fall with clinical improvement can support delisting | 2a, C-LD |
+| Lactate | In (suspected) cardiogenic shock, to grade severity and guide escalation | 1, C-LD |
+
+- eGFR under 30 carries adjusted HR 1.5 (1.4 to 1.7) for death against 45 to 59. Lactate over 2 mmol/L means at least SCAI stage C.
+- Weight loss of 10% or more before transplant predicts worse survival. A frailty level acceptable at outpatient listing may become unacceptable after long bed rest on temporary MCS.
+- **Table 19 (cancer screening)**: colorectal 45 to 75 (yearly FIT, or colonoscopy every 10 years); prostate from 50 (45 if higher risk, 40 if highest), PSA 2.5 or more yearly, under 2.5 every 2 years, 4 or more refer; breast 45 to 54 yearly mammogram, over 55 2-yearly; cervix 25 to 65 HPV test every 5 years; lung 50 to 80 with 20 pack-years and quit within 15 years, yearly low-dose CT; skin, every candidate yearly by a specialist.
+- **Table 20 (MNA-SF, scored 0 to 14)**: 12 to 14 normal, repeat each visit or at least 3-monthly (weekly in hospital); 8 to 11 mild malnutrition, re-check in 1 to 2 months (weekly in hospital) and refer if no better; 0 to 7 moderate or worse, start support and refer.
+
+### Improvement and delisting (3.3.1.10)
+| Recommendation | Class, level |
+|---|---|
+| Ambulatory patients on GDMT: re-evaluate every 3 to 6 months for maximal drug and device therapy; consider delisting if much improved | 1, C-LD |
+| LVAD patients whose recovery led to device explant may be delisted | 2b, B-NR |
+| After delisting, heart failure specialist review every 3 to 6 months | 1, B-NR |
+
+About 6 to 8% of removals are for improvement; about 30% of those delisted for improvement later present again with worsening failure.
+
+### Acute decompensation (3.3.2)
+| Recommendation | Class, level |
+|---|---|
+| Review urgency status at intervals and whenever the clinical state changes | 1, C-EO |
+| Upgrade under local rules if decompensation does not improve with treatment | 2a, C-LD |
+| No upgrade if symptoms and organ dysfunction settle with baseline therapy (oral decongestion, arrhythmia treatment, device optimisation) | 3: No Benefit, C-LD |
+| Continuous dobutamine and/or milrinone for shock, low output or organ dysfunction | 2a, B-NR |
+| Periodic levosimendan (24 to 48 h infusion or shorter intermittent doses) with hypoperfusion | 2a, B-R |
+| Start and titrate inotropes after pulmonary artery catheter profiling; implantable PA monitoring can guide therapy | 2a, C-EO |
+| Long-term inotropes instead of a durable device may lead to further deterioration | 2b, C-LD |
+| Other IV vasoconstrictors or vasodilators according to the haemodynamic profile | 2a, B-NR |
+| Routine oral midodrine or droxidopa to raise pressure or avoid inotropes | 3: No Benefit, C-EO |
+| Midodrine or droxidopa in amyloid with autonomic dysfunction, or on renal replacement therapy | 2b, C-EO |
+| Vericiguat in high-risk HFrEF (stop it once the transplant is confirmed) | 2b, B-R |
+| Cardiorenal syndrome: manage by published best practice | 1, B-NR |
+| Cardiorenal syndrome not responding to diuretics or needing vasoactive drugs: PA catheter | 2a, C-LD |
+| Cardiorenal syndrome from refractory shock: vasoactive drugs and early MCS | 1, B-NR |
+| Progressive renal decline: re-evaluate heart-only listing | 2a, B-NR |
+| Advance care planning with the team; shared decisions on quality of life | 1, C-EO (both) |
+
+- Levosimendan schedule in the text: first dose in hospital as a 24-hour infusion at 0.1 to 0.2 µg/kg/min; then 12.5 mg at 0.1 µg/kg/min every 4 weeks or 6.25 mg at 0.2 µg/kg/min every 2 weeks, if systolic pressure is over 100 mmHg, eGFR 45 or more and there is no history of ventricular arrhythmia.
+- Outpatient inotropes are safe in selected patients with an ICD, at the cost of line infection. Dobutamine and milrinone have not been shown to differ.
+- Predictors of death on the list: lower renal function and albumin, new neurological events, dialysis, respiratory complications, rising bilirubin and creatinine, right heart failure.
+- Advance care planning covers stopping drugs that no longer help, resuscitation, timing of ICD deactivation, withdrawal of MCS or delisting, and psychosocial and spiritual support.
+
+### Retransplant, multi-organ and congenital candidates (3.3.3)
+| Recommendation | Class, level |
+|---|---|
+| Retransplant candidates: same serial evaluation, followed closely | 1, C-EO |
+| Retransplant candidates: avoid mTOR inhibitors (wound healing, pleural and pericardial effusions) | 2a, C-EO |
+| Multi-organ candidates: multidisciplinary care, and an agreed peri-operative and immunosuppression plan | 1, C-EO (both) |
+| Children and congenital: repeated detailed HLA monitoring, especially failed Fontan and other single ventricles | 1, B-NR |
+| Desensitisation for allosensitised children to shorten the wait | 2b, B-NR |
+| Look for venous and arterial occlusions at evaluation and periodically, and prevent or treat thrombosis | 1, B-NR |
+| Mental health assessment and support for children and carers | 1, B-NR |
+| Failing Fontan: multidisciplinary care and ongoing FALD surveillance | 1, C-EO (both) |
+| Retest EBV and CMV IgM and IgG periodically | 1, C-LD |
+
+Retransplant candidates are younger, more sensitised and sicker; vasculopathy is the commonest indication, then chronic graft dysfunction. Multi-organ transplants are 4 to 7% of heart transplants, over 85% of them heart-kidney. Protein-losing enteropathy may make HLA and ABO antibody levels look lower than they are. Over half of children listed have congenital disease. Requiring a negative prospective crossmatch in children may not pay off once waitlist deaths are counted.
+
+## ISHLT 2024 candidate guideline, Task Force II part 3 (full text): sensitisation, desensitisation, crossmatch, the night of transplant and size matching
+
+Added 24 November 2026 from Peled Y, Ducharme A, Kittleson M, et al. ISHLT Guidelines for the Evaluation and Care of Cardiac Transplant Candidates—2024. J Heart Lung Transplant 2024;43:1529-1628.e54, doi:10.1016/j.healun.2024.05.010. Read in full from the published PDF (pages 68 to 69 and 76 to 85: sections 3.3.1.8, 3.4.1, 3.4.3, 3.4.4 and 3.5); recommendation tables read from the page images. This adds classes to the sensitisation section earlier in this tab, which was written from the ISHLT 2018 antibody consensus abstract, an ACC expert analysis and TSRA.
+
+### HLA and ABO antibody monitoring while listed (3.3.1.8)
+| Recommendation | Class, level |
+|---|---|
+| HLA antibody screen every 3 to 6 months in every active candidate | 1, B-NR |
+| HLA antibody screen about 3 weeks after a potentially sensitising event | 1, B-NR |
+| As soon as 7 days after the event if previously sensitised (memory response expected) | 2a, C-EO |
+| Children listed for ABO-incompatible transplant: isohaemagglutinin titres against the non-self groups every 4 weeks, or 1 to 3 weeks after a sensitising event | 1, B-NR |
+| Reduce de novo sensitisation: leukodepleted blood, single-donor or HLA-matched platelets, decellularised homografts | 2a, B-NR |
+
+- Why the timings: de novo antibody (T-cell dependent B-cell activation) peaks at about 21 days; reactivated memory appears within 5 to 7 days.
+- Sensitising events: pregnancy, transfusion (platelets carry HLA), human tissue grafts, MCS devices, renal replacement therapy, and infection (cross-reactive epitopes). Antibodies can change without any clear event.
+- Hearts are not allocated on HLA because of ischaemic time; the donor is typed for retrospective analysis and DSA. A **PRA over 10% or a donor-specific antibody at transplant** marks a higher risk of a poor outcome (the TSRA threshold earlier in this tab, PRA over 50% for "highly sensitised", is a different cut-off for a different purpose).
+- Children reach adult isohaemagglutinin titres between 6 and 24 months of age.
+
+!fig f55_hla_timeline | HLA antibody screening while listed and after a sensitising event, with the cPRA thresholds and prevention measures. Drawn for these notes from ISHLT 2024 candidate guideline, sections 3.3.1.8 and 3.4.1
+
+### Preparing the recipient when a heart is offered (3.4.1)
+| Recommendation | Class, level |
+|---|---|
+| Re-check for any change in clinical state that affects candidacy (infection, organ function, bleeding, recent sensitising event) | 1, C-EO |
+| Stop SGLT2 inhibitors and vasodilators before transplant | 2a, C-LD |
+| Reverse systemic anticoagulation | 1, C-EO |
+| Reprogramme pacemakers and ICDs | 1, C-EO |
+| **cPRA over 50%: desensitisation is reasonable** to improve access to donor hearts | 2a, B-NR |
+| Sensitised patients: accept donors according to the plan agreed with the histocompatibility and immunogenetics team | 1, B-NR |
+| Allosensitised patients: induction can be considered | 2a, C-EO |
+| Single pre-incision dose of a first- or second-generation cephalosporin | 1, C-LD |
+| Beta-lactam allergy: vancomycin or clindamycin | 1, C-EO |
+| Known MRSA colonisation or infection: vancomycin | 1, C-EO |
+
+- Why stop drugs: SGLT2 inhibitors risk post-operative ketoacidosis; ACE inhibitor, ARB and ARNI risk vasoplegia. In high-urgency patients expected to be transplanted within days, avoid them and long-acting oral vasodilators.
+- Devices: pacemaker to asynchronous mode (DOO or VOO); ICD anti-tachycardia pacing and shocks off.
+- Antibiotics (text): cefazolin for 24 to 48 hours; vancomycin plus cefazolin for MRSA colonisation; treat a known active infection (for example an infected LVAD) specifically. Surgical-site infection after heart transplant is 4 to 19% (staphylococci including MRSA, enterococci, Enterobacterales, Pseudomonas, Stenotrophomonas).
+
+### Desensitisation and crossmatch (3.4.1 supporting text)
+- **cPRA over 50%**: significantly lower chance of transplant and more removal or death on the list; **over 80%** has the most negative effect. Sensitisation also raises post-transplant rejection and death.
+- Methods: remove antibody (plasmapheresis or plasma exchange) or suppress it (IVIG, rituximab, bortezomib). Plasmapheresis and IVIG both lower HLA antibody but rebound; IVIG may work better and be safer than plasmapheresis. Rituximab plus IVIG gives less rebound and less antibody-mediated rejection than IVIG alone (kidney data: shorter time to transplant). After IVIG and rituximab failure, bortezomib plus plasmapheresis lowered HLA reactivity from 62% to 35%; bortezomib works better on class I than class II.
+- On the night: **virtual crossmatch** (avoid donors with listed unacceptable antigens), **prospective direct crossmatch** where needed, and altered peri-operative immunosuppression. Re-test antibodies if a sensitising event has happened since the last sample.
+- Positive crossmatch: induction with anti-thymocyte globulin or basiliximab can be considered; intra-operative plasmapheresis has limited data.
+
+This confirms the desensitisation ladder (IVIG and plasmapheresis, rituximab, then bortezomib) and the virtual crossmatch already in this tab, and gives the guideline's class for desensitisation.
+
+### Donor-recipient size matching (3.4.3)
+| Recommendation | Class, level |
+|---|---|
+| Use height, weight and predicted heart mass (pHM) ratio to match | 2a, B-NR |
+| Children: weight- and height-based matching, with the acceptable range reassessed as the child grows | 2a, B-NR |
+| Children: echo total cardiac volume or virtual 3D fit may safely widen the donor pool | 2b, C-LD |
+
+- Donor weight under 70% of the recipient's raises 30-day and later mortality. pHM ratio under 0.86 raises post-transplant mortality; undersized hearts are worst in recipients with PH. Oversizing gave no survival gain in moderate PH (PVR 2.5 to 5.0 WU or TPG 10 to 18 mmHg) at 90 days or 1 year, nor did oversizing female donors for male recipients.
+- Female donor to male recipient: higher 1-year mortality, no difference after 1 year; some of this is heart mass, so pHM helps when sexes differ.
+- Children: donor-recipient weight ratio up to 3.0 has equal short-term results; undersized donors raise mortality. Height ratio 0.7 to 1.2 is safe; over 1.2 raises 5-year mortality.
+
+### Children: the operation (3.4.4)
+Complex congenital disease: up-to-date cross-sectional imaging to plan re-sternotomy, cannulation (for example femoral), implantation and the donor tissue needed for reconstruction of aorta, pulmonary artery or veins (1, C-EO). ABO-incompatible transplant: check isohaemagglutinin titres on donor acceptance and again before cross-clamp removal, to decide on plasma or whole-blood exchange, access and immunosuppression (1, C-EO). Patients with many previous operations may go to theatre before the heart arrives to shorten cold ischaemia.
+
+### Ethics (3.5)
+Utility, autonomy and shared decision-making are the framework. Because immunosuppression harms, the candidate is expected to be up to date with effective vaccines. Areas of controversy: unproven vaccines or therapies, prioritisation of urgent cases, and medical cannabis (fungal infection, cognitive effects and adherence).
+
+## ISHLT 2024 candidate guideline, Task Force II part 4 (full text): hepatitis B and C, COVID-19 and HIV before transplant
+
+Added 24 November 2026 from Peled Y, Ducharme A, Kittleson M, et al. ISHLT Guidelines for the Evaluation and Care of Cardiac Transplant Candidates—2024. J Heart Lung Transplant 2024;43:1529-1628.e54, doi:10.1016/j.healun.2024.05.010. Read in full from the published PDF (pages 78 to 83, section 3.4.2, Tables 21 and 22); recommendation tables read from the page images.
+
+### Hepatitis B
+| Recommendation | Class, level |
+|---|---|
+| Screen with anti-HBs, anti-HBc and HBsAg before transplant | 1, C-EO |
+| Vaccinate non-immune candidates | 1, C-EO |
+| Chronic HBV (HBsAg positive): hepatitis specialist | 1, C-EO |
+| Past HBV (anti-HBc positive, HBsAg negative): HBsAg and HBV DNA every 3 to 6 months for the first year after transplant | 2a, C-LD |
+| HBsAg-positive donor may be considered, with infectious disease advice | 2b, C-EO |
+| Isolated anti-HBc-positive donor may be considered (seroconversion 0.28%); non-immune recipients get lamivudine for 12 months and 3-monthly monitoring | 2b, C-EO |
+
+Text: chronic HBV is treated with entecavir or tenofovir indefinitely. Past infection reactivates in about 5%. HBsAg-positive donor: indefinite entecavir or tenofovir, and HBIg for 6 to 12 months if anti-HBs is under 100 IU/ml. Isolated anti-HBc donor: transmission 2 to 5%, negligible if anti-HBs is over 10 IU/ml.
+
+### Hepatitis C
+| Recommendation | Class, level |
+|---|---|
+| Screen every candidate | 1, C-EO |
+| Active HCV: transplant infectious disease specialist | 1, C-EO |
+| HCV-viraemic donor hearts for HCV-negative recipients, with a direct-acting antiviral plan in place | 2a, C-LD |
+| Increased-risk donors: test recipient for HBV, HCV and HIV at 1, 3 and 12 months | 1, C-EO |
+
+- Transmission from a viraemic donor is nearly 100%; DAA cure is about 100% short term. Antibody-positive, RNA-negative donors should be considered routinely.
+- Table 21: **prophylaxis** starts DAA within hours of transplant (sofosbuvir/velpatasvir 4 weeks or glecaprevir/pibrentasvir 8 weeks); **pre-emptive** treatment starts when HCV RNA appears (sofosbuvir/velpatasvir 12 weeks or glecaprevir/pibrentasvir 8 to 12 weeks), aiming for sustained response at 12 weeks.
+- Interactions (Table 22): grazoprevir raises tacrolimus; ciclosporin raises voxilaprevir (combination not recommended) and glecaprevir/pibrentasvir (ciclosporin over 100 mg/day not recommended). Sofosbuvir with amiodarone can cause symptomatic bradycardia.
+
+### COVID-19
+| Recommendation | Class, level |
+|---|---|
+| Candidates fully vaccinated before transplant | 1, C-LD |
+| Every donor: SARS-CoV-2 NAT within 72 hours of donation, as close to retrieval as possible, result available at offer | 1, C-LD |
+| NAT-positive donor organs for non-lung transplant if death was not from COVID-19 (including myocarditis or pericarditis) and no hypercoagulable or hyperinflammatory state | 2b, C-LD |
+| Risk from a NAT-negative donor with a household contact in the last 10 days is unknown | 2a, C-EO |
+| Staff follow local infection control at retrieval and implant | 1, C-EO |
+| No recommendation on peri-transplant antivirals or monoclonals | 2b, C-LD |
+| Screen every candidate with NAT and an exposure questionnaire | 1, C-EO |
+| New active COVID-19 in the candidate: defer transplant | 3: No Benefit, C-LD |
+| Reactivate when symptoms have resolved, no COVID-related organ damage, and more than 14 to 28 days from onset | 2b, C-LD |
+
+Donor NAT positive with symptom onset 11 to 90 days before usually means non-infectious shedding; onset within 10 days, or asymptomatic positive, means active infection. No transmission to non-lung recipients is known (three lung transmissions came from donors negative in the upper but positive in the lower airway). Transplant within 4 weeks of infection only if delay is the greater risk. N95 and eye protection for aerosol-generating steps.
+
+### HIV
+| Recommendation | Class, level |
+|---|---|
+| Screen at listing and after possible exposure | 1, C-EO |
+| Undetectable viral load and CD4 over 200 on a tolerated regimen: consider for transplant | 1, C-EO |
+| Follow-up by an HIV-experienced clinician | 1, C-EO |
+| HIV-positive donor organs outside research | 3, C-EO |
+
+Text: viral control and CD4 over 200 for 4 to 6 months before listing; prefer a non-protease-inhibitor regimen (protease inhibitors interact with calcineurin inhibitors); document resolution of opportunistic infections and HIV-related cancers. Survival is comparable to HIV-negative recipients. This replaces ISHLT 2016 (IIa, C) in the listing section of this tab.
+
+## ISHLT 2024 candidate guideline, Task Force III (full text): LVAD-bridged candidates, device complications on the list, and temporary MCS as a bridge
+
+Added 24 November 2026 from Peled Y, Ducharme A, Kittleson M, et al. ISHLT Guidelines for the Evaluation and Care of Cardiac Transplant Candidates—2024. J Heart Lung Transplant 2024;43:1529-1628.e54, doi:10.1016/j.healun.2024.05.010. Read in full from the published PDF (pages 91 to 100, sections 4.3 to 4.5 and Tables 23 and 24); recommendation tables and Table 23 read from the page images. Indications and work-up for durable MCS (sections 4.1 and 4.2) are in Cardiac 18. The device management itself is in the ISHLT 2023 MCS guideline sections of this tab; this guideline defers to it. The table in the earlier summary of this guideline in this tab is confirmed, with one correction (delisting, see part 2).
+
+### Planning the transplant operation after an LVAD (4.3)
+| Recommendation | Class, level |
+|---|---|
+| Transplant after durable MCS by a dedicated, experienced team | 1, C-EO |
+| CT of chest and whole aorta before re-entry: outflow graft position, driveline position, ascending aortic calcification, alternative access routes | 1, C-EO |
+
+Explant transplant is longer and harder: redo sternotomy and excision of outflow graft, driveline and pump; apical adhesions are worse if the pump was not well covered at implant. Centres that implant by less invasive approaches report less complexity, bleeding and transfusion at transplant.
+
+### Complications on durable MCS and what they mean for candidacy (4.4)
+| Situation | Recommendation | Class, level |
+|---|---|---|
+| Any device strategy (BTT, BTC, DT) | Reassess transplant candidacy throughout follow-up | 1, C-EO |
+| Life-threatening complication | Evaluate for urgent transplant | 1, C-EO |
+| Device-specific, device-related or patient-related adverse event refractory to treatment | Evaluate for urgent transplant | 1, C-LD |
+| Irreversible condition that would limit survival (for example disabling stroke) | Precludes transplant | 3: Harm, C-EO |
+| Refractory GI bleeding, short expected wait | Urgent transplant to limit transfusion | 2a, C-EO |
+| Recurrent mucocutaneous bleeding, no source or untreatable source | Prioritisation may be reasonable | 2b, C-EO |
+| Confirmed pump thrombosis, stable, short expected wait | Reasonable to defer exchange for urgent transplant | 2a, C-EO |
+| Early moderate or severe RV failure, still dependent on a temporary RV device or inotropes | Consider urgent transplant | 1, C-LD |
+| Progressive late RV failure despite treatment | Prioritise or urgent transplant | 1, C-LD |
+| Persistent PH with RV failure despite usual treatment | PH-specific drugs (e.g. PDE5 inhibitor) might be considered | 2b, C-EO |
+| Deep driveline (below the fascia), pocket, pump or cannula infection | Transplant is the definitive cure | 1, C-EO |
+| Recalcitrant infection | Consider listing | 1, C-EO |
+| At transplant | Remove all hardware, including ICD and pacing leads, and all infected tissue | 1, C-EO |
+| Previous driveline or pump infection | Pathogen-directed antibiotics from before surgery to about 4 to 6 weeks after | 2a, C-EO |
+| Infected LVAD or TAH removed | Extensive antibiotic irrigation and prolonged drainage | 2a, C-LD |
+| Severe sepsis or septic shock from the device | Do not transplant until sepsis is controlled and organs recover | 3: Harm, C-EO |
+| Non-disabling neurological event | Non-urgent transplant might be considered | 2b, C-EO |
+| Disabling neurological event | Do not transplant | 3: Harm, C-EO |
+| Refractory VT causing device malfunction, RV failure, compromise or ICD storm | Prioritise for transplant | 1, C-EO |
+| Refractory unstable VT | Ablation by an experienced electrophysiologist before urgent listing | 2a, C-LD |
+| Acute end-organ dysfunction before implant | Monitor recovery; optimise organ function before listing | 1, C-EO (both) |
+| Children: liver or kidney dysfunction before implant | Assess severity and reversibility before transplant | 1, C-LD |
+| Children: persistent liver or kidney failure | Heart-liver or heart-kidney in expert high-volume centres might be considered | 2b, C-EO |
+| Children: life-threatening device complication not treatable | Urgent transplant may be considered | 2b, C-EO |
+
+!fig f55_dmcs_complications | What each durable LVAD complication means for transplant candidacy, with class and level. Drawn for these notes from ISHLT 2024 candidate guideline, section 4.4
+
+Numbers and definitions from the text:
+- About half of BTT implants are listed at implant; 30.4% of BTT, 15.9% of BTC and 4.7% of DT patients are transplanted within 1 year. US registry data show post-transplant survival of HeartMate 3-bridged patients is still inferior in the post-2018 allocation era (whether device complications explain this is unknown). Chronic RV failure and device infection predispose to vasoplegia, bleeding, multi-organ failure and infection after transplant; haemocompatibility events (bleeding, thrombosis) still leave good candidates unless the stroke was disabling.
+- GI bleeding affects 15 to 30% on LVAD support and recurs in 30 to 40%, mostly from angiodysplasia. Transfusion adds infection, lung injury and sensitisation; exhaust GI treatment first and be sure the bleeding is device-related.
+- Pump thrombosis recurs more after exchange; exchange from HeartMate II or HVAD to HeartMate 3 has had lower recurrence.
+- RV failure: "early acute" means an RVAD at the LVAD operation; "early post-implant" means temporary or durable RVAD or ECMO within 30 days, failure to wean inotropes or inhaled vasodilators by 14 days, or death from RV failure. After transplant, survival of patients with early RV failure is similar to those without it. Late RV failure causes: bleeding (volume), pneumonia (hypoxia), infection, pulmonary embolism, ARDS, or excessive pump speed with suction and septal shift.
+- Infection is the commonest adverse event (1.30 events per patient-year early, 0.43 late) and triples mortality. Untransplanted device infection: survival 55% at 1 year and 34% at 2 years; a meta-analysis found 30% higher post-transplant mortality with LVAD infection, though high-volume centres report few relapses.
+- Stroke on HeartMate 3: about 10% at 2 years. Older patients have more ischaemic and younger more haemorrhagic strokes.
+- Refractory VT despite drugs and ablation occurs in 20 to 50% of DMCS patients. Epicardial ablation after LVAD is hampered by adhesions.
+- End-organ recovery after LVAD happens mostly in the first 1 to 3 months. In children, failure of renal function to normalise by 30 days predicts CKD and worse post-transplant survival.
+
+### Temporary MCS as a bridge to transplant (4.5)
+| Recommendation | Class, level |
+|---|---|
+| Refractory cardiogenic shock on temporary MCS (right, left or biventricular): consider urgent transplant if recovery is unlikely, the patient is otherwise suitable, durable MCS is not appropriate, the expected wait is short, haemodynamics are stable, organ function has recovered, and the centre is experienced | 1, C-LD |
+| Assess urgent transplant eligibility promptly with a specialist team | 1, C-LD |
+| Assess neurological status thoroughly first | 1, C-EO |
+| Ongoing end-organ dysfunction on temporary MCS: not for heart transplant alone until it recovers or is shown reversible | 3: Harm, C-EO |
+
+Temporary MCS here means IABP, VA-ECMO, percutaneous microaxial pump, or percutaneous or surgical external centrifugal or pulsatile pump.
+
+!fig f55_tmcs_bridge | Conditions for urgent transplant from temporary MCS and the outcome figures quoted. Drawn for these notes from ISHLT 2024 candidate guideline, section 4.5
+
+- Recipients on temporary MCS at transplant range from almost none to 25% by country; the US 2018 allocation change increased them. One-year survival after a temporary-MCS bridge ranges from 50 to 90%; in a large international cohort ECMO and percutaneous temporary LVADs predicted death after transplant.
+- Work-up must be done within days: risk rises with time on support. Most series transplant within 15 days of starting temporary MCS; waitlist mortality 0 to 28%. If a long wait is likely (highly sensitised, extreme size), plan another strategy.
+- AKI occurs in 13 to 28% of cardiogenic shock and 20% need CRRT; liver dysfunction, ventilation and renal failure predict early death after transplant, and survival falls with each failing organ. Confirm neurological integrity in sedated patients before transplant.
+
+### Highest-priority tiers and temporary MCS by country (Table 23)
+| System | Top tier for temporary MCS |
+|---|---|
+| USA (2018) | Status 1: VA-ECMO under 7 days, non-dischargeable BiVAD. Status 2: non-dischargeable LVAD, IABP or percutaneous MCS, malfunctioning MCS, TAH, BiVAD, RVAD or single-ventricle VAD. Status 3: MCS complications, ECMO 7 days or more, other temporary MCS after 14 days |
+| UK | Super-urgent scheme: short-term MCS; IABP; or imminent risk of death meeting urgent criteria |
+| Eurotransplant | High urgency: short-term MCS (status 1A, Netherlands only: high-dose inotropes and/or IABP with restored organs) |
+| France | Candidate risk score (0 to 1,151 points: VA-ECMO, natriuretic peptide, renal function, bilirubin); ECMO patients stay at top priority for under 12 to 16 days |
+| Spain | Urgency 0: temporary MCS, including ECMO, for at least 48 hours without multi-organ failure |
+| Italy | Status 1: ECMO; IABP; ventilation plus IV inotropes plus IABP |
+| Canada | Status 4 (national): temporary BiVAD, RVAD or LVAD (not IABP) unweanable and not a durable LVAD candidate; non-dischargeable TAH; LVAD with severe complications |
+
+The UK row matches the NHSBT super-urgent categories 11 and 12 earlier in this tab.
+
+### Evidence gaps the guideline lists (Table 24, selected)
+Desensitisation strategies and their long-term effect on antibody-mediated rejection and vasculopathy; DOAC use and reversal; drugs and PGD (amiodarone, SGLT2 inhibitors); who needs induction; choice and timing of temporary MCS and listing on ECMO; the effect of DCD hearts on waiting times; frailty reversibility; heart-liver transplant in highly sensitised patients.
+
+## Protected cardiac surgery: EACTS 2025 expert consensus, part 1 (types, selection and preoperative support)
+
+Added 24 November 2026 from Lorusso R, Salazar L, Nersesian G, Milojevic M, Schmack B, Engelman DT, et al. EACTS Expert Consensus Document on protected cardiac surgery: pre-emptive use of temporary mechanical circulatory support in adult cardiac surgery patients at high risk for perioperative low cardiac output syndrome. Eur J Cardiothorac Surg 2026;68(3):ezaf296 (online 9 October 2025); doi:10.1093/ejcts/ezaf296. Read in full from the published PDF (pages 1 to 26, sections 1 to 17, Tables 1 to 4, Consensus Statement Tables 1 to 6 and Figures 1 to 3, with the tables checked against the PDF pages). The supplementary material was not available.
+
+### What kind of document it is
+- An EACTS expert consensus, not a guideline. **Its statements carry no class of recommendation and no level of evidence.** Each statement, figure and algorithm was approved by anonymous vote: at least 75% agreement was needed, with at least 80% of members voting. Individual agreement percentages are not published. Members with a relevant conflict did not vote on the statements it affected.
+- Evidence base: a PICOT systematic search, English-language adult cardiac surgery studies only, prospective studies preferred. In practice almost all of it is observational (registries, single-centre series, case reports). No cost-effectiveness analysis was done.
+- Wording tells you the strength: "should be initiated" or "is indicated" (strongest), "should be considered", "may be reasonable" or "might be considered" (weakest).
+- The graded companion is the 2025 EACTS/STS/AATS tMCS guideline (ezaf330), already in this tab with classes and levels. Where the two overlap they agree; the consensus adds thresholds, device lists by operation and practical ICU targets.
+
+### Why pre-emptive support
+- About 10% of cardiac surgical patients develop perioperative low cardiac output syndrome (LCOS). It raises hospital mortality 12 to 24 times.
+- Despite more temporary support for refractory LCOS, survival to discharge is still about 40%, and lactate at the time of VA-ECLS cannulation strongly predicts death.
+- Administrative data: patients given tMCS after the operation do much worse than those cannulated in theatre. Hence the shift from rescuing LCOS to preventing it, by analogy with protected PCI, TAVI and VT ablation.
+- In infarct-related shock, standardised protocols run by a shock team gave better results (National Cardiogenic Shock Initiative). The authors also cite DanGer Shock (a survival benefit from an early microaxial pump in infarct-related shock) as indirect support, while saying surgical trials are still needed.
+
+### The three types (Figure 1 of the consensus)
+!fig f56_types | The three types of protected cardiac surgery and the clinical triggers for each. Drawn for these notes from the EACTS 2025 protected cardiac surgery consensus, Figure 1
+
+| Type | When support starts | Aim | Typical patient |
+|---|---|---|---|
+| 1 | Before the operation | Bridge to surgery | Shock, refractory metabolic acidosis, severe lung oedema, arrest, severe acute infarction, septic shock, post-infarct VSD or papillary muscle rupture, electrical storm, poor uni- or biventricular function, lactate not clearing |
+| 2 | Planned, in theatre | Bridge to recovery or advanced therapy | Same physiology as type 1 but going straight to theatre; or expected incomplete revascularisation, suboptimal myocardial protection, long ischaemic time |
+| 3 | Unplanned, in theatre or soon after | Bridge to recovery or advanced therapy | Cannot wean from bypass, acidosis on bypass, unexpected LV or RV failure, arrest after bypass, VIS over 30, risk of cardiac or repair rupture, failed operation |
+
+### Thresholds that should prompt tMCS (Table 1)
+!fig f56_triggers | Haemodynamic, metabolic and echo thresholds the consensus lists as determinants of instability and of the move to temporary support. Drawn for these notes from the EACTS 2025 protected cardiac surgery consensus, Table 1
+
+| Domain | Threshold | What it means |
+|---|---|---|
+| Drug load | Vasoactive-inotropic score (VIS) over 30 | Strong indication for early tMCS; do not persist with high-dose drugs |
+| Drug load | VIS 20 to 30 with other signs of instability | Watch closely for hypoperfusion |
+| Output | Cardiac index 2.2 L/min/m² or less | Consider tMCS if sustained with MAP under 60 mmHg or high-dose drugs needed to hold it |
+| Output | Cardiac power index under 0.6 W/m² | Consider tMCS if sustained |
+| LV filling | PCWP 16 mmHg or more | Raised LV filling pressure |
+| Congestion | IVC over 20 mm and VExUS grade 3 | Worse organ failure (unreliable with severe TR) |
+| Perfusion | Lactate 8 mmol/L or more, or failure to clear | Higher mortality |
+| Perfusion | SvO2 under 50% | Oxygen delivery short of demand |
+| RV failure | TAPSE under 14 mm, RV free-wall strain worse than −20%, CVP 20 mmHg or more, RV fractional area change 30% or less | RV systolic dysfunction or overload |
+| RV failure | CVP/PCWP 0.8 or more; PAPi under 1.85 | RV overload relative to LV; severe RV dysfunction |
+| LV failure | LVEF under 30%, LVOT VTI under 13 cm; PCWP 16 or more with CVP under 12 | LV systolic failure; LV pressure overload |
+| Biventricular | Both sets, PCWP 16 or more with CVP 20 or more and signs of volume overload | Biventricular failure |
+
+Pulmonary artery catheter targets in the text: cardiac index 2.2 L/min/m² or more and cardiac power output 0.6 W or more.
+
+### Assessment algorithm (Figure 2)
+The pathway (adapted by the authors from Stein and Silvestry) is drawn in Cardiac 10 (Perioperative and safety). In short: high-risk patient, Heart Team, is the disease reasonably amenable to surgery? If not: medical therapy, percutaneous options or palliative care. If so: are there signs of end-organ damage (rising creatinine, transaminases or bilirubin, raised lactate, altered consciousness, lung oedema)? Yes: pre-emptive tMCS as a bridge to surgery, then reassess, and operate ("protected cardiac surgery") only if the organs improve. No: operate with tMCS on stand-by.
+
+### Consensus Statement Table 1: general principles for pre-emptive tMCS as a bridge to surgery
+No class or level is given for any statement.
+
+| Patient | Statement |
+|---|---|
+| Advanced HF or cardiogenic shock needing surgery | Optimise haemodynamic and clinical state before the operation (should) |
+| Same | Consider tMCS to stabilise haemodynamics and organ function before surgery (should be considered) |
+| Same | The decision to start preoperative tMCS should be made by a multidisciplinary Heart Team, aiming to lower the risk of the planned operation |
+| Shock with unclear neurological status needing a high-risk procedure | tMCS might be started to improve perfusion and allow time to assess the brain: bridge to decision |
+| Severe brain damage or comorbidity with short life expectancy | Weigh tMCS critically; consider palliative care |
+| Severely impaired LV needing preoperative tMCS | Active LV unloading should be considered |
+| On preoperative tMCS | Re-evaluate the indication for the operation, considering all exit strategies |
+| High risk of perioperative LCOS | Shared decision-making involving the patient or representatives is indicated |
+| Structural disease stabilised on tMCS | Time the definitive repair carefully: weigh the gain from waiting against tMCS complications |
+
+The text adds that pre-emptive tMCS is not itself the treatment: once the patient is stable, the timing of the operation must be weighed against device complications. After cardiac arrest or severe shock it buys time to assess for hypoxic brain injury, a leading cause of death in this group.
+
+### Consensus Statement Table 2: type 1 (preoperative) support by setting
+General statements: the device should give adequate circulatory support and enough ventricular unloading for the patient's haemodynamics, local resources and practice; decide in a timely way, to avoid operating on a poorly prepared patient and the harm of prolonged vasoactive drugs. Devices are listed in escalation order, but the treating team may choose.
+
+| Setting | Statement | Suggested devices |
+|---|---|---|
+| Refractory shock with severe metabolic acidosis from cardiopulmonary compromise, considered for surgery | Pre-emptive tMCS as a bridge to surgery should be considered | mAFP; VA-ECLS; VA-ECLS + mAFP |
+| Severe acute pulmonary oedema from cardiac failure | (setting) | mAFP alone or with VA-ECLS |
+| Cardiac arrest (post-arrest shock, ECPR) | (setting) | VA-ECLS, then active LV unloading with mAFP |
+| Severe acute respiratory failure from primary lung disease | (setting) | VV-ECLS |
+| Infarct-related shock scheduled for CABG | Pre-emptive tMCS as a bridge to surgery should be considered | mAFP; VA-ECLS; VA-ECLS + mAFP |
+| Ventricular septal rupture in shock with end-organ dysfunction and RV volume overload | Pre-emptive tMCS as a bridge to surgery should be initiated; choose by size of left-to-right shunt and RV and LV function, unloading both ventricles | IABP; mAFP; VA-ECLS; VA-ECLS + IABP; VA-ECLS + mAFP |
+| Free-wall rupture with tamponade and arrest | (setting) | VA-ECLS |
+| Papillary muscle rupture | Active LV unloading should be considered | mAFP with or without VA-ECLS |
+| Thrombosis or severe stenosis of an aortic or mitral prosthesis with severely depressed ventricular function and instability or shock | Pre-emptive tMCS as a bridge to surgery should be taken into consideration; replace the valve as an emergency once stable, because of the high risk of LV stasis and thrombus | VA-ECLS |
+
+Viva line: "Type 1 is shock or end-organ failure before the operation: Heart Team, stabilise on the right device, unload the LV, let the organs recover, and only then operate, while watching the device complication clock."
+
+## Protected cardiac surgery: EACTS 2025 expert consensus, part 2 (intraoperative support by operation, and special settings)
+
+Added 24 November 2026 from the same document (Lorusso R, et al. Eur J Cardiothorac Surg 2026;68(3):ezaf296; doi:10.1093/ejcts/ezaf296). Read in full from the published PDF (sections 6.2, 7, 12 to 14; Table 2; Consensus Statement Tables 3 to 6; Figure 3; table layout checked on PDF pages 10 to 12, 18 to 20). No statement carries a class or level.
+
+### Before starting support: exclude the reversible (Consensus Table 3, general statement)
+Rule out and treat: technical problems (ventilation failure, drug delivery, wrong measurements); hypovolaemia or bleeding; tamponade; tension pneumothorax; myocardial ischaemia or a kinked or occluded graft; paravalvular leak; iatrogenic dissection; pulmonary embolism. Wean from bypass slowly, using the MARS checklist (Metabolic, Airway, Resuscitation, Surgical): correct electrolytes and pH; check oxygenation and CO2; judge preload by PA catheter and echo and tune drugs to contractility and tone; check grafts (new wall motion abnormality: consider more grafts) and valve or repair function, and treat SAM.
+
+### When "direct transition" applies (footnote to Consensus Table 3)
+Either bypass cannot be weaned; or it can, but the heart fails before or just after chest closure, or deteriorates acutely in theatre, needing re-opening and treatment of the cause; or, in theatre or on the ICU, any one of:
+- VIS over 30; or VIS over 20 with cardiac index 2.2 L/min/m² or less;
+- PCWP over 16 mmHg and/or CVP over 20 mmHg when euvolaemic;
+- pulmonary oedema with PCWP over 16 mmHg (beware TRALI, which has a low PCWP);
+- LV or RV ejection fraction more than 50% below the preoperative value;
+- lactate up 50% on 2 measurements 30 minutes apart, or over 72 mg/dL (about 8 mmol/L);
+- SvO2 or ScvO2 under 50% on 2 measurements 30 minutes apart;
+- relative heart failure in severe vasoplegia.
+
+### Consensus Statement Table 3: types 2 and 3, by operation
+Every row is "direct transition to tMCS should be considered" (in a timely way, to avoid postoperative LCOS and prolonged high-dose drugs) unless stated. Devices in escalation order.
+
+| Operation and patient | Devices |
+|---|---|
+| CABG, LVEF under 30%, unstable at weaning | IABP; mAFP; VA-ECLS; VA-ECLS + mAFP |
+| CABG in infarct-related shock or arrest | mAFP with or without VA-ECLS |
+| CABG, LVEF under 30%, expected incomplete revascularisation or diffuse disease | IABP; mAFP; VA-ECLS + mAFP |
+| Mitral surgery for severe MR, LVEF under 30%, severe pulmonary hypertension, unstable at weaning (use a bioprosthesis with adequate unloading) | IABP; mAFP; VA-ECLS; VA-ECLS + mAFP |
+| Tricuspid surgery with RV dysfunction, severe pulmonary hypertension, LVEF under 30%, unstable | VA-ECLS; tRVAD or oxyRVAD; biventricular mAFP |
+| Aortic and/or mitral surgery for severe regurgitation with CABG, LVEF under 30%, unstable | IABP; mAFP; VA-ECLS; VA-ECLS + mAFP |
+| Acute mitral or aortic endocarditis with severe regurgitation, pulmonary oedema, ventricular dysfunction, unstable | IABP; mAFP; VA-ECLS; VA-ECLS + mAFP |
+| Redo surgery for prosthetic thrombosis or stenosis, severely depressed function, unstable | IABP; mAFP; VA-ECLS; VA-ECLS + mAFP |
+| TAVI with severely depressed function, unstable after the procedure: pre-emptive VA-ECLS should be taken into consideration | VA-ECLS |
+| Heart transplant, long ischaemic time, graft failure at weaning | LV or both: IABP; mAFP; VA-ECLS; VA-ECLS + mAFP. RV alone: tRVAD or oxyRVAD; VA-ECLS; RV-mAFP |
+| Durable LVAD with moderate to severe RV dysfunction, right heart failure once the LVAD runs: a temporary RVAD should be considered | tRVAD or oxyRVAD; RV-mAFP |
+| Pulmonary endarterectomy (chronic PE) with right heart failure: tRVAD should be considered | tRVAD; VA-ECLS |
+| Embolectomy for acute PE with RV dysfunction | VA-ECLS; tRVAD or oxyRVAD |
+| Type A dissection involving the coronaries, with ischaemia, severe dysfunction and instability after repair; choice must allow for residual dissection, a frozen elephant trunk or uncovered arch stents | mAFP; VA-ECLS; VA-ECLS + mAFP |
+| Long operations with long ischaemic time, unstable at weaning, especially RV failure | mAFP; VA-ECLS + mAFP; tRVAD or oxyRVAD; RV-mAFP |
+| Cardiac or great-vessel trauma with lung contusion: weigh benefit against anticoagulation risk | VA-ECLS; VV-ECMO |
+| Pericardiectomy with tricuspid intervention, RV dysfunction, unstable; plan for both ventricles (constriction often biventricular) | VA-ECLS with or without mAFP unloading; tRVAD or oxyRVAD; RV- or biventricular mAFP |
+
+Two further statements in section 7: the intraoperative move to tMCS should be timely, with the device chosen for support, enough unloading and local practice; and with valve disease a **biological prosthesis plus adequate unloading is advised**, to lessen stasis and valve thrombosis, especially if a durable VAD or a microaxial pump may follow.
+
+### Escalation ladder (Figure 3)
+Figure 3 maps planning to SCAI stages B to E. Isolated LV or biventricular failure: stage B (moderate dysfunction, no respiratory failure) IABP or mAFP; stage C to D (moderate to severe dysfunction with or without respiratory distress) full or partial support with mAFP or VA-ECLS + mAFP; stage E (arrest, no weaning because of severe LV or biventricular failure, with or without respiratory failure) full or partial mAFP, VA-ECLS + mAFP, VA-ECLS + IABP, an extracorporeal centrifugal pump, or VA-ECLS. Isolated RV failure: stage B partial support with a percutaneous mAFP from the femoral or internal jugular vein; C to D oxyRVAD, RVAD or full-support percutaneous mAFP; E oxyRVAD, RVAD or VA-ECLS, with pulmonary artery cannulation (jugular, or direct or graft-assisted, single or double lumen). The arrows run both ways: de-escalate as soon as possible.
+
+### Consensus Statement Table 4: special settings
+| Statement | Wording strength |
+|---|---|
+| Pre-emptive tMCS to keep haemodynamics and organ perfusion during VT ablation in patients at high risk of decompensation | should be employed |
+| Pre-emptive tMCS in selected complex TAVI or other transcatheter valve procedures, usually with concomitant PCI and/or severely reduced LVEF or shock | may be useful |
+| mAFP for stability during high-risk off-pump CABG with severely reduced LVEF | reasonable to consider |
+| Pericardiectomy for constriction with significantly impaired RV or severely decompensated HF: pre-emptive VA-ECLS or tMCS-RVAD | may be reasonable |
+| Pre-emptive temporary RVAD to prevent post-cardiotomy RV failure when preoperative RV indices suggest prolonged support will be needed | should be considered |
+
+Text: on-pump beating-heart CABG does better than off-pump in high-risk patients but needs full heparin and gives no support afterwards; CABG on VA-ECLS raises afterload and impairs haemostasis; CABG on a microaxial pump allows prolonged support and LV unloading after the operation. For post-cardiotomy RV failure, a ventricle-specific RVAD (right-sided mAFP or RA-to-PA pump) is "more reasonable" than VA-ECLS.
+
+### Consensus Statement Table 5: multimorbid patients
+- Consider tMCS in selected patients with decompensated renal, liver or lung failure to improve organ function before surgery (in acute liver failure it can show whether an operation is feasible).
+- Intraoperative tMCS should be considered in patients with poor haemodynamics to protect renal, liver and other organ function.
+- tMCS should be considered after surgery for endocarditis to treat post-cardiotomy failure and raise output (in septic shock it can give a supranormal output).
+
+### Consensus Statement Table 6: advanced heart failure
+- Listed or eligible for transplant: tMCS might be considered in preparation for transplant.
+- Impaired organ function, due for durable MCS: tMCS to improve organ function first should be considered (aim for normal renal and liver tests, but do not delay so long that device complications accrue).
+- Impaired RV function, due for durable MCS: tMCS with active LV unloading should be considered to test the RV further (left-sided support as a screen for LVAD against direct transplant).
+- High bleeding risk: a durable LVAD may be implanted on mAFP or VA-ECLS instead of full bypass.
+
+## Protected cardiac surgery: EACTS 2025 expert consensus, part 3 (devices, outcomes, ethics and gaps)
+
+Added 24 November 2026 from the same document (Lorusso R, et al. Eur J Cardiothorac Surg 2026;68(3):ezaf296; doi:10.1093/ejcts/ezaf296). Read in full from the published PDF (sections 10, 11, 15 to 17; Tables 3 and 4 checked on PDF pages 16 to 17). ICU care and weaning from this document are in Cardiac 17 (Critical care after cardiac surgery).
+
+### Device comparison (Table 3 of the consensus)
+| Device | Circuit | Output support | Contraindications | Device complications |
+|---|---|---|---|---|
+| IABP | Aorta | +/− (0.5 to 1.0 L/min) | Moderate to severe AR, severe PVD, aortic dissection, aortic aneurysm | Renal or gut ischaemia, balloon rupture, plaque embolism, limb ischaemia |
+| mAFP, left | LV to aorta | ++ to +++ by model | LV thrombus, mechanical aortic valve, severe PVD, aortic dissection (text adds severe aortic stenosis and axillary artery under 6 mm or badly diseased) | Ventricular arrhythmias, cardiac or vascular injury, haemolysis, limb ischaemia if percutaneous |
+| mAFP, right | RA to PA | | Mechanical tricuspid or pulmonary valve, severe TS, severe PS or PR, thrombus in the cava, RA or RV | as above |
+| Percutaneous centrifugal pump | RA to femoral artery, or RA/RV to PA (single or dual-lumen cannula) | +++ | Moderate to severe AR, severe PVD; for the right-sided form as for RV mAFP plus SVC or internal jugular stenosis | Air embolism, limb ischaemia, stroke; cardiac injury, tamponade |
+| Peripheral VA-ECLS | RA to femoral (or axillary) artery | ++++ | Severe AR, severe PVD | Limb ischaemia, pulmonary oedema, intracardiac thrombus, stroke, infection, SIRS |
+| Surgical centrifugal | LA or LV to aorta; RA or RV to PA | ++++ | Not a surgical candidate | Sternotomy or thoracotomy complications, bleeding, stroke |
+
+!fig f56_devices | Flow added by the IABP and the two classes of microaxial pump, and the consensus's ratings of end-organ support and suitability for protected surgery. Drawn for these notes from the EACTS 2025 protected cardiac surgery consensus, sections 10.1 and 10.2 and Table 4
+
+### Points by device (section 10)
+- **IABP**: raises coronary perfusion and output, lowers LV end-diastolic pressure and oxygen demand; adds only 0.5 to 1.0 L/min. Prophylactic short use in high-risk surgery has been linked to better outcomes, but unloading is too weak for severe LV dysfunction. Femoral; can be added to VA-ECLS.
+- **mAFP**: active LV unloading. Partial-support pumps (up to 3.5 L/min) go in percutaneously; full-support pumps (up to 5.5 L/min) need surgical access (the contraindications name a small or badly diseased axillary artery). Early reports of pre-emptive full-support pumps show less perioperative LCOS, at higher cost and complexity. The IMPACT trial (Impella-Protected Cardiac Surgery) is under way. Transvalvular placement through a bioprosthesis is feasible without harming the valve (case reports and the authors' experience).
+- **VA-ECLS**: the strongest systemic and respiratory support, for biventricular failure and as a bridge to surgery, but it raises LV afterload, so stasis and pulmonary congestion need unloading; severe LV dysfunction may do better on an mAFP. AR is a contraindication.
+- **Trans-septal extracorporeal LVAD** (left atrium to femoral artery): high flow with unloading; use has fallen because of septal puncture, shunting and dislodgement.
+- **Surgical temporary LVAD** (apical inflow, return to aorta, axillary or femoral artery): less afterload than VA-ECLS but needs sternotomy or thoracotomy and a return to theatre to remove; keep for severe PVD or an already open chest. Little data.
+- **RV support**: femoral or jugular RV-mAFP (jugular allows full mobilisation and dislodges less); percutaneous PA cannulation with single- or dual-lumen cannula, with an oxygenator if needed (oxyRVAD, which gives "central" gas exchange with little recirculation); surgical RA-to-PA centrifugal support after cardiotomy, watching for pulmonary congestion.
+- Reassess goals regularly and step down to the least invasive device that does the job and allows early mobilisation.
+
+### Outcomes (section 11)
+- Most reports give only in-hospital survival; no large registry follows conventional cardiac surgery patients after pre-emptive tMCS.
+- Bridged from VA-ECLS to a durable LVAD or transplant: about 70% 1-year survival.
+- Post-infarct VSD supported with an mAFP (Delmas multicentre registry): 25% survival both in hospital and at 1 year, so nearly all deaths are early. After structural repair without durable support, early and late outcomes run together; after transplant or LVAD, late complications dominate.
+
+### Ethics and consent (section 15)
+- Survival to discharge after perioperative LCOS is under 40%, and tMCS brings bleeding, haemolysis, renal failure, infection, limb ischaemia or amputation, and stroke.
+- Discuss: risks and benefits for that patient; the chance of prolonged dependence on tMCS and its effect on autonomy and quality of life; possible escalation to transplant or LVAD; and that support may become futile. Allow time to reflect and talk with family.
+- Outcome: informed consent to tMCS, or a do-not-initiate MCS order.
+- Involve palliative care and ethics early: to help judge futility and withdrawal, guide the ethical and legal framework, and support patient, family and team.
+
+### Gaps and conclusions (sections 16 and 17)
+No randomised trial in surgical patients; little long-term, quality-of-life or cost data; no standard algorithm for device choice, timing or weaning; no organised referral network; high cost limits use in low- and middle-income countries. Complications are the "Achilles' heel" and should be treated as targets for better design and protocols, not as inevitable.
+
+Viva line: "The consensus is ungraded expert agreement: IABP gives under 1 L/min; a full-support microaxial pump up to 5.5 L/min with true unloading; VA-ECLS gives the most support but loads the LV, so add unloading; and talk about futility and a do-not-initiate option before you start."

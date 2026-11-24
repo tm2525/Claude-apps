@@ -264,3 +264,40 @@ Added 24 November 2026 from Scottish Intercollegiate Guidelines Network. Cardiac
 After surgery: comprehensive rehabilitation is recommended after coronary revascularisation, surgical or percutaneous (**grade A**); it lowered lipids and improved perceived health, while exercise-only programmes improved capacity but not lipids or weight; no trial was powered for mortality after revascularisation. Rehabilitation starts once medically stable; SIGN 57 sets no start day for exercise after sternotomy. The Heart Manual resource notes that a phase model can exclude patients never admitted.
 
 Viva point: phase numbers are old shorthand; the BACPR standards (in the Coronary surgery tab) give the timings to quote now: referral during the admission or within 24 h of discharge, assessment within 10 working days, at least 8 weeks of programme.
+
+## Who is high risk for low output, and the Heart Team decision on pre-emptive support: EACTS 2025 protected cardiac surgery consensus
+
+Added 24 November 2026 from Lorusso R, Salazar L, Nersesian G, Milojevic M, Schmack B, Engelman DT, et al. EACTS Expert Consensus Document on protected cardiac surgery: pre-emptive use of temporary mechanical circulatory support in adult cardiac surgery patients at high risk for perioperative low cardiac output syndrome. Eur J Cardiothorac Surg 2026;68(3):ezaf296 (online 9 October 2025); doi:10.1093/ejcts/ezaf296. Read in full from the published PDF (sections 3 to 6 and 15, Figure 2). The document's statements carry no class or level (approval needed 75% agreement in an anonymous vote). Its statements and device tables are in Cardiac 15, "Protected cardiac surgery" parts 1 to 3.
+
+### Size of the problem
+About 10% of cardiac surgical patients develop perioperative low cardiac output syndrome (LCOS), which raises hospital mortality 12 to 24 times. Even with temporary support, survival to discharge is about 40%. The age of patients referred has risen by about 1.2 years every 4 years, with more women and more comorbidity, fewer isolated CABG and more combined and aortic operations.
+
+### Features that predict LCOS
+- Text (section 6.2): older age, female sex, previous cardiac surgery, LV dysfunction, acute endocarditis, coronary disease with previous infarction, left main disease, preoperative renal impairment; urgent or emergency surgery for acute infarction, especially if revascularisation will be incomplete.
+- Figure 2 list: reduced uni- or biventricular function, previous cardiac surgery, age over 70, acute-onset cardiovascular disease, endocarditis with septic shock, previous infarction or complex coronary disease, acute renal impairment, urgent or emergency operation, refractory shock or cardiac arrest.
+- Signs of hypoperfusion: cold peripheries, slow capillary refill, mottling, confusion, low urine output; metabolic acidosis, raised lactate, low SvO2, falling GFR, rising urea and liver enzymes. Thresholds (VIS, cardiac index, cardiac power, PCWP, lactate, SvO2, RV and LV echo indices) are in Cardiac 15, part 1.
+- Imaging: echo for LV and RV function (LVEF a main predictor of LCOS) and structural lesions; CT for vascular access (calcification, patency, tortuosity) for both the operation and the device.
+
+### Risk scores
+- EuroSCORE II and the STS score are the usual tools. The STS score uses more cardiac variables but tends to give lower mortality than EuroSCORE; EuroSCORE II was built for elective surgery and is poorly validated in emergencies.
+- In a patient on high-dose inotropes, tMCS or CPR, combine the surgical score with a shock score: the vasoactive-inotropic score (drug load), INTERMACS profile (clinical state and inotrope need) and the SCAI stage (shock-focused).
+
+### The pathway
+!fig f56_pathway | Assessment of a patient at high risk of post-cardiotomy shock for pre-emptive temporary support. Drawn for these notes from the EACTS 2025 protected cardiac surgery consensus, Figure 2 (which the authors adapted from Stein and Silvestry)
+
+### The Heart Team (section 4)
+| Member | Role in protected surgery |
+|---|---|
+| Cardiac surgeon | Leads the operation, chooses the tMCS strategy, coordinates theatre and postoperative care |
+| Intensivist | Perioperative care, LCOS, runs the device, ICU transitions |
+| Interventional and heart failure cardiologists | Clinical, echo and haemodynamic assessment; drug and catheter options; eligibility for transplant or LVAD |
+| Anaesthetist | Intraoperative stability and monitoring |
+| Critical care nurse | Continuous monitoring, early warning of instability |
+| Perfusionist | Runs the device in theatre and ICU, shares weaning protocols |
+| Clinical pharmacist | Drug therapy and interactions |
+| Palliative care specialist | Futility and end-of-life discussions in line with the patient's values |
+
+Standard handoffs: before the operation (baseline haemodynamics, plan, risks) and after it (intraoperative events, support in place, immediate goals). On deterioration the team reassesses and escalates between devices or to durable support.
+
+### Consent and futility (section 15)
+Before starting, discuss: risks and benefits for that patient; possible prolonged dependence on the device and its effect on independence and quality of life; possible escalation to transplant or LVAD; and that support may become futile. Allow time for reflection with family. The patient either consents or chooses a do-not-initiate MCS order. Involve palliative care and ethics early, to help judge futility and withdrawal, guide on ethical and legal aspects and support everyone involved.
