@@ -10547,3 +10547,52 @@ def d10_spirometry():
     for v in (0, 30, 50, 80, 100):
         b += T(12 + v * sx2, y + 70, f'{v}%', 'f-s')
     return svg(y + 80, b)
+
+
+# ---- figs_D11.py
+
+
+
+def _d11_lv(x, y, bulge=True):
+    """LV outline in long section, apex down; optional apical bulge."""
+    s = (f'<path d="M{x} {y} Q{x-6} {y+70} {x+30} {y+112}" class="f-vessel" fill="none"/>'
+         f'<path d="M{x+110} {y} Q{x+116} {y+70} {x+80} {y+112}" class="f-vessel" fill="none"/>'
+         f'<line x1="{x}" y1="{y}" x2="{x+110}" y2="{y}" class="f-dash"/>')
+    if bulge:
+        s += f'<path d="M{x+30} {y+112} Q{x+55} {y+160} {x+80} {y+112}" class="f-l" fill="none"/>'
+    return s
+
+
+def d11_lv_aneurysm_repairs():
+    b = T(12, 20, 'Left ventricular aneurysm: four repairs (long section, apex down; arrangement schematic)', 'f-h', 'start')
+    names = ['Plication', 'Linear closure', 'Patch closure', 'Endoventricular patch']
+    notes = [['Small, no thrombus;', 'not opened; closed in', 'two layers over felt'],
+             ['Open, clear thrombus,', 'trim to a 3 cm scar rim;', 'close vertically in two', 'layers with pledgets'],
+             ['Partial excision; circular', 'purse-string (Fontan', 'stitch) narrows the', 'neck; Dacron patch'],
+             ['Patch inside the cavity;', 'anterior aneurysms;', 'poor for posterior', 'or inferior ones']]
+    for i in range(4):
+        x = 30 + i * 172
+        y = 60
+        b += T(x + 55, 44, names[i], 'f-h')
+        if i == 0:
+            b += _d11_lv(x, y)
+            b += f'<line x1="{x+26}" y1="{y+118}" x2="{x+84}" y2="{y+118}" class="f-cut"/><line x1="{x+30}" y1="{y+126}" x2="{x+80}" y2="{y+126}" class="f-cut"/>'
+            b += f'<rect x="{x+20}" y="{y+114}" width="8" height="16" rx="2" class="f-ok"/><rect x="{x+82}" y="{y+114}" width="8" height="16" rx="2" class="f-ok"/>'
+        elif i == 1:
+            b += _d11_lv(x, y, False)
+            b += f'<line x1="{x+55}" y1="{y+88}" x2="{x+55}" y2="{y+140}" class="f-cut"/>'
+            b += f'<path d="M{x+30} {y+112} L{x+55} {y+140} L{x+80} {y+112}" class="f-vessel" fill="none"/>'
+            for k in range(4):
+                b += f'<line x1="{x+47}" y1="{y+96+k*12}" x2="{x+63}" y2="{y+96+k*12}" class="f-l"/>'
+        elif i == 2:
+            b += _d11_lv(x, y, False)
+            b += f'<ellipse cx="{x+55}" cy="{y+114}" rx="27" ry="7" class="f-dash" fill="none"/>'
+            b += f'<path d="M{x+30} {y+114} Q{x+55} {y+134} {x+80} {y+114}" class="f-stent" fill="none"/>'
+        else:
+            b += _d11_lv(x, y)
+            b += f'<path d="M{x+27} {y+108} Q{x+55} {y+92} {x+83} {y+108}" class="f-stent" fill="none"/>'
+        b += T(x + 55, y + 182, notes[i], 'f-s')
+    b += box(12, 318, 340, 74, ['Repair for (all relative): angina, heart failure despite', 'treatment, ventricular arrhythmia, embolism, enlargement,', 'rupture or false aneurysm; ESVI over 80 ml/m²'], 'b0', 'f-s')
+    b += box(366, 318, 342, 74, ['Not with RV dysfunction or a small residual cavity.', 'Know the coronaries before the ventriculotomy; do not', 'handle the ventricle before the clamp (thrombus)'], 'warn', 'f-s')
+    b += T(12, 412, ['Dashed line: mitral level. Dotted line: patch. Red: suture line.', 'STICH: reconstruction added to CABG gave no survival advantage over grafting alone.'], 'f-s', 'start')
+    return svg(440, b)
