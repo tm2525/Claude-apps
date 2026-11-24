@@ -125,7 +125,7 @@ STS and ESC classes were confirmed today; the ACC/AHA column is from a secondary
 | Trial | Design | Result |
 | --- | --- | --- |
 | LAAOS III, NEJM 2021 | 4,811 patients with AF and CHA₂DS₂-VASc 2 or more having cardiac surgery, 105 centres; appendage occlusion or not, both continuing anticoagulation | Ischaemic stroke or systemic embolism 4.8% against 7.0% (HR 0.67, 0.53–0.85) over a mean of 3.8 years; benefit mainly after 30 days; no excess bleeding, heart failure or death |
-| CTSN surgical ablation, NEJM 2015 | Ablation or not at mitral surgery, persistent AF | Freedom from AF at one year 63% against 29%; permanent pacemaker 21% against 8% (from memory) |
+| CTSN surgical ablation, NEJM 2015 | Ablation or not at mitral surgery, persistent AF | Freedom from AF at one year 63% against 29%; permanent pacemaker 21% against 8% (from memory) (corrected 24 November 2026: the FRCS Atlas draft gives 21.5 against 8.1 per 100 patient-years, not percentages, unchecked against the trial paper; "more pacemakers" is the confirmed point, STS 2023; see Cardiac 7) |
 
 ### Practice points
 

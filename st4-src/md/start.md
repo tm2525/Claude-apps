@@ -52,7 +52,7 @@ A snapshot of every tab (taken 18 November 2026, 86 diagrams, with search and of
 ## Open items
 
 - BTOG thymic pathway: the labels on the two tumour routes need checking against the pathway PDF.
-- Echo and CT thresholds tab: the moderate tricuspid regurgitation line still carries the 40 mm annulus condition that the 2025 guideline dropped.
+- Echo and CT thresholds tab: the moderate tricuspid regurgitation line still carries the 40 mm annulus condition that the 2025 guideline dropped (corrected 24 November 2026: done; ESC/EACTS 2025 Rec Table 9 has no annulus condition, so moderate TR repair at left-sided surgery stands without it, and the Echo and CT thresholds line now says so).
 - NICE list: the page returned stopped at May 2024; later appraisals are missing.
 - MDT case 10 is still a placeholder.
 - Download: export gives one tab at a time.

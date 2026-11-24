@@ -216,7 +216,7 @@ Added 21 November 2026 from Vrints C et al. 2024 ESC Guidelines for the manageme
 | Before valve surgery | Discuss recovery time and the need for cardiac and, if needed, psychological rehabilitation before return to activity and work | 2025 ESC/EACTS valve guideline |
 | After aortic or endocarditis surgery and LVAD | Covered in the aorta, endocarditis and circulatory support tabs | — |
 
-Not found in a primary source available here: rehabilitation phases I to IV as defined by BACPR, the timing of starting after sternotomy, sternal precautions, and UK uptake targets.
+Not found in a primary source available here: rehabilitation phases I to IV as defined by BACPR (corrected 24 November 2026: SIGN 57, 2002, defines cardiac rehabilitation phases 1 to 4; see Cardiac 10, Cardiac rehabilitation phases 1 to 4 (SIGN 57), added 24 November), the timing of starting after sternotomy, sternal precautions, and UK uptake targets.
 
 ## Post-infarction septal rupture: repair technique and temporary support
 
@@ -422,7 +422,7 @@ The BACPR 2023 (4th edition) document itself could not be opened; its five core 
 - NHS England: raising access to 85% of eligible patients would prevent 50,000 premature deaths and 140,000 admissions over 10 years.
 
 ### Phases
-Neither BACPR document nor the NHS England standards number rehabilitation "phases I to IV". BACPR refers instead to the six-stage pathway of care in the Department of Health commissioning guide (its figure 2; the stage names were not in the text read). A definition of numbered phases was not found in a primary source read for these notes.
+Neither BACPR document nor the NHS England standards number rehabilitation "phases I to IV". BACPR refers instead to the six-stage pathway of care in the Department of Health commissioning guide (its figure 2; the stage names were not in the text read). A definition of numbered phases was not found in a primary source read for these notes (corrected 24 November 2026: SIGN 57, 2002, defines cardiac rehabilitation phases 1 to 4; see Cardiac 10, Cardiac rehabilitation phases 1 to 4 (SIGN 57), added 24 November).
 
 ### Sternal precautions after median sternotomy
 No UK guideline on sternal precautions or on when exercise may start after sternotomy was found. What the sources read say:

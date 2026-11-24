@@ -376,7 +376,7 @@ An international Delphi panel (80% agreement needed) produced 21 consensus recom
 
 ### EACTS lung volume reduction guideline
 
-No EACTS guideline or consensus document on lung volume reduction was found as of 21 November 2026 (one web search plus the EACTS task force page; not an exhaustive check). The EACTS website lists an Emphysema Task Force chaired by David Waller, with members including Sara Buttery, Samuel Kemp, Claudio Caviezel and Laurens Ceulemans, but names no publication. Check again before the exam.
+No EACTS guideline or consensus document on lung volume reduction was found as of 21 November 2026 (one web search plus the EACTS task force page; not an exhaustive check) (corrected 24 November 2026: an EACTS Expert Consensus Document on Lung Volume Reduction for Emphysema exists, EJCTS 2026, doi:10.1093/ejcts/ezag226; title only, full text not read; see the Thoracic 6 and Thoracic 14 sections added 24 November). The EACTS website lists an Emphysema Task Force chaired by David Waller, with members including Sara Buttery, Samuel Kemp, Claudio Caviezel and Laurens Ceulemans, but names no publication. Check again before the exam.
 
 ## Lung implantation technique, part 1: incisions, single and bilateral sequential transplant
 

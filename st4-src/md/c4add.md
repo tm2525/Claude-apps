@@ -9,7 +9,7 @@ Untreated survival averages 3 to 5 years after angina or syncope and 1 to 2 year
 | Grade | Valve area (cm²) | Mean gradient (mmHg) | Peak velocity (m/s) |
 |---|---|---|---|
 | Mild | 1.6 to 2.5 | Under 20 | 2.0 to 2.9 |
-| Moderate | 1.1 to 1.5 | 20 to 39 | 3.0 to 3.9 |
+| Moderate | 1.1 to 1.5 | 20 to 39 (corrected 24 November 2026: ESC/EACTS 2025 and TSRA ch. 48 give 25–40) | 3.0 to 3.9 |
 | Severe | 1.0 or less | 40 or more | 4.0 or more |
 
 !fig asgrade | Severe aortic stenosis: the three numbers (my chart, from TSRA Review ch. 55)

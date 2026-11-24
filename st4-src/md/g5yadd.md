@@ -11,7 +11,7 @@ Added 21 November 2026 from: Jacobs ML, Jacobs JP, Thibault D, et al. Updating a
 | Tool | How built | Structure | Notes from the sources |
 |---|---|---|---|
 | RACHS-1 (references 2002 and 2004) | Not described in the sources read | 6 levels of increasing mortality risk | Scored 74.4% of operations in the Kansy single-centre series |
-| Aristotle Basic Complexity | Not described in the sources read | Sum of potential for mortality, potential for morbidity and technical difficulty | Scores about 98% of coded operations; covered 89% in the Kansy series |
+| Aristotle Basic Complexity | Not described in the sources read (corrected 24 November 2026: expert-panel scoring, 1999 to 2003, by the Aristotle working group; now described in the Aristotle score section added 24 November) | Sum of potential for mortality, potential for morbidity and technical difficulty | Scores about 98% of coded operations; covered 89% in the Kansy series |
 | STAT 2009 (STS-EACTS) | Empirical: about 77,000 operations, 2002 to 2007, Bayesian estimates for 148 procedures | Score 0.1 to 5.0; 5 categories | Procedure mortality 0.3% to 29.8%; C-index about 0.78, better than RACHS-1 and Aristotle Basic |
 | STAT 2020 | Empirical: 161,351 operations, 110 centres, January 2010 to June 2017 | 235 scored operations (58% more than 2009); 5 categories | Validation 46,933 operations at 108 centres: C-statistic 0.791 (score), 0.779 (category). About half the 2009 codes changed category |
 

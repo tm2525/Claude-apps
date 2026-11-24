@@ -72,7 +72,9 @@ SECTIONS = [
         ('k17', 'Pericardium, PE and pulmonary hypertension', 'card'), ('k18', 'Trauma', 'card'),
         ('k19', 'Heart failure, cardiomyopathy and ischaemic valve', 'card'), ('k20', 'The 9 critical conditions', 'card'),
         ('k21', 'The 8 index procedures', 'card'), ('k22', 'Anatomy facts and numbers', 'card'),
-        ('k23', 'Landmark trials in one line', 'card'), ('k24', 'Imaging thresholds: CT, TOE and nuclear', 'card')]),
+        ('k23', 'Landmark trials in one line', 'card'), ('k24', 'Imaging thresholds: CT, TOE and nuclear', 'card'),
+        ('fc1', 'Flashcards: angiography and pressure wire', 'card'), ('fc2', 'Flashcards: aortic root and ascending', 'card'),
+        ('fc3', 'Flashcards: endocarditis surgery timing', 'card')]),
     ('ref', 'Reference', [
         ('start', 'Start here', 'ref'), ('frcs', 'FRCS syllabus map', 'ref'), ('handbook', 'Society handbook', 'ref'), ('guidecheck', 'Guideline check', 'ref'), ('trials', 'Trials index', 'ref'),
         ('viva', 'Viva points', 'ref'), ('figures', 'Figure gallery', 'ref'), ('flagged', 'Flagged sections', 'ref')]),

@@ -34,7 +34,7 @@ All of these carry no 2024 or 2026 amendment tag. Numbers already quoted in the 
 
 !fig f13_ng122_periop | NICE NG122 section 1.6 drug options around resection, as linked in the February 2026 text (drawn for these notes)
 
-Two appraisals named elsewhere in the notes, **perioperative nivolumab (TA1127)** and **osimertinib after chemoradiotherapy (TA1156)**, are not linked in the guideline text I read. They may post-date the February 2026 edit. Check the appraisal pages themselves before quoting them as "in NG122".
+Two appraisals named elsewhere in the notes, **perioperative nivolumab (TA1127)** and **osimertinib after chemoradiotherapy (TA1156)**, are not linked in the guideline text I read. They may post-date the February 2026 edit. Check the appraisal pages themselves before quoting them as "in NG122". (Corrected 24 November 2026: TA1127 was published by NICE on 4 February 2026; see the currency check section added 24 November.)
 
 ### Points to note
 

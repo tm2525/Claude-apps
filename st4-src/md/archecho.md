@@ -23,7 +23,7 @@ Severe AS is Vmax ≥4.0 m/s, mean gradient ≥40 mmHg and AVA ≤1.0 cm²; when
 | Parameter | Mild | Moderate | Severe | Very severe |
 | --- | --- | --- | --- | --- |
 | Peak velocity (m/s) | 2.6–2.9 | 3.0–3.9 | ≥4.0 | >5.0 |
-| Mean gradient (mmHg) | <20 | 20–39 | ≥40 | ≥60 |
+| Mean gradient (mmHg) | <20 | 20–39 (corrected 24 November 2026: ESC/EACTS 2025 and TSRA ch. 48 give 25–40) | ≥40 | ≥60 |
 | AVA (cm²) | >1.5 | 1.0–1.5 | ≤1.0 |  |
 | Indexed AVA (cm²/m²) | >0.85 | 0.60–0.85 | ≤0.6 |  |
 | Dimensionless index (LVOT VTI ÷ AV VTI) | >0.50 | 0.25–0.50 | <0.25 |  |
@@ -32,7 +32,7 @@ Severe AS is Vmax ≥4.0 m/s, mean gradient ≥40 mmHg and AVA ≤1.0 cm²; when
 
 | Finding | Threshold | Meaning |
 | --- | --- | --- |
-| Stroke volume index | <35 mL/m² | Low flow |
+| Stroke volume index | <35 mL/m² (corrected 24 November 2026: ≤35 mL/m², ESC/EACTS 2025) | Low flow |
 | Dobutamine stress echo (LVEF <50%) | Vmax ≥4 m/s or gradient ≥40 mmHg with AVA ≤1.0 cm² at any flow | True severe |
 | Dobutamine stress echo | AVA rises above 1.0 cm² | Pseudo-severe: treat the ventricle |
 | Flow reserve | Stroke volume rise ≥20% | Absent reserve raises operative risk but does not rule out benefit |
@@ -238,9 +238,9 @@ At left-sided surgery, repair the tricuspid valve for severe TR (Class I) and fo
 | Tenting height | >8 mm | Annuloplasty alone likely to fail; consider replacement or leaflet augmentation |
 | Tenting area | >1.6 cm² | As above |
 | TAPSE | <17 mm | RV dysfunction |
-| Tricuspid annular S′ | <9.5 cm/s | RV dysfunction |
-| RV fractional area change | <35% | RV dysfunction |
-| RV basal diameter | >41 mm | RV dilatation |
+| Tricuspid annular S′ | <9.5 cm/s (corrected 24 November 2026: ESC/EACTS 2025 gives s′ <10 cm/s; see Cardiac 2) | RV dysfunction |
+| RV fractional area change | <35% (corrected 24 November 2026: ESC/EACTS 2025 gives FAC ≤35%; see Cardiac 2) | RV dysfunction |
+| RV basal diameter | >41 mm (corrected 24 November 2026: ESC/EACTS 2025 gives basal diameter index >24 mm/m²; see Cardiac 2) | RV dilatation |
 | TAPSE ÷ SPAP | <0.31 mm/mmHg | RV to pulmonary artery uncoupling; high risk for isolated surgery |
 | Tricuspid stenosis | Mean gradient ≥5 mmHg, pressure half-time ≥190 ms, area ≤1.0 cm² | Severe |
 
@@ -352,7 +352,7 @@ Risk factors (EACTS/STS 2024): age <50, height <1.69 m, ascending length >11 cm,
 | Turner, age ≥15, with risk factors or planned pregnancy | Aortic size index >23 mm/m², height index >23 mm/m, or z-score >3.5 | IIa |
 | Turner, no risk factors | Aortic size index >25 mm/m², height index >25 mm/m, or z-score >4 | IIb |
 
-High-risk features in heritable disease: family history of dissection at a small diameter, growth >3 mm per year, severe aortic or mitral regurgitation, resistant hypertension, planned pregnancy, marked tortuosity.
+High-risk features in heritable disease: family history of dissection at a small diameter, growth >3 mm per year, severe aortic or mitral regurgitation, resistant hypertension, planned pregnancy, marked tortuosity (corrected 24 November 2026: the EACTS/STS 2024 footnote to Recommendation Table 16 lists the Marfan high-risk features as family history of aortic dissection, growth over 0.3 cm a year, diffuse root and ascending dilatation, and marked vertebral artery tortuosity; severe AR or MR, resistant hypertension and planned pregnancy are not in that footnote; see Cardiac 6).
 
 ### Arch, descending and dissected aorta
 
@@ -444,11 +444,11 @@ Each lesion has its own LV trigger: the ejection fraction that counts as abnorma
 
 | Cross-cutting value | Threshold | Why it matters |
 | --- | --- | --- |
-| Stroke volume index | <35 mL/m² | Low flow: gradients under-call stenosis |
+| Stroke volume index | <35 mL/m² (corrected 24 November 2026: ≤35 mL/m², ESC/EACTS 2025) | Low flow: gradients under-call stenosis |
 | Resting SPAP | >50 mmHg | Trigger in MR and MS |
 | TR peak velocity | >3.4 m/s | High echo probability of pulmonary hypertension |
 | TAPSE | <17 mm | RV dysfunction; raises risk of any valve operation, most of all isolated tricuspid surgery |
-| RV fractional area change | <35% | RV dysfunction |
+| RV fractional area change | <35% (corrected 24 November 2026: ESC/EACTS 2025 gives FAC ≤35%; see Cardiac 2) | RV dysfunction |
 | LA volume index | ≥60 mL/m² | Trigger in primary MR; marker of chronicity |
 | Exercise systolic BP | Fall >20 mmHg | Trigger in asymptomatic AS |
 | BSA | <1.68 m² | Use indexed LV and aortic dimensions |

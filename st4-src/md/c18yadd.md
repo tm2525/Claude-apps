@@ -697,7 +697,7 @@ Added 21 November 2026 from the ESC: 2026 ESC Guidelines for the management of h
 | Therapy names | "Guideline-directed medical therapy" is replaced by foundational medical therapy, additional medical therapy, and guideline-directed interventional therapy (devices and interventions at any class) | |
 | Mineralocorticoid receptor antagonists | Class I in chronic heart failure whatever the LVEF | |
 | Semaglutide or tirzepatide | IIa in preserved EF with obesity (news report: to improve weight, exercise capacity and quality of life) | |
-| Upgraded (class not stated in the ESC materials read) | Digoxin or digitoxin in chronic heart failure (news report: IIa in selected HFrEF); **durable mechanical circulatory support**; **mitral transcatheter edge-to-edge repair** | 2021 classes for LVAD and TEER, not checked here |
+| Upgraded (class not stated in the ESC materials read) | Digoxin or digitoxin in chronic heart failure (news report: IIa in selected HFrEF); **durable mechanical circulatory support**; **mitral transcatheter edge-to-edge repair** | 2021 classes for LVAD and TEER, not checked here (corrected 24 November 2026: durable LVAD is I C; TEER for severe secondary MR is I B1, ESC 2026 slide set; see the Part 1 and Part 2 sections added 24 November) |
 
 News reports add: foundational therapy for reduced EF is a beta-blocker, ACE inhibitor or ARNI (or ARB), MRA and SGLT2 inhibitor; for preserved EF, an SGLT2 inhibitor and MRA; SGLT2 inhibitors are class I across the range; doses are uptitrated every 1 to 2 weeks where feasible.
 
