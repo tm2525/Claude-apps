@@ -4013,6 +4013,128 @@ def f31_paeds_arrest():
     return svg(388, b)
 
 
+# ---- figs_F45.py
+
+
+
+def f45_hf_crt():
+    """CRT by QRS width and morphology, ESC 2026 heart failure guideline (official slide set)."""
+    b = T(12, 22, 'CRT in sinus rhythm, symptomatic, LVEF 35% or less on optimal therapy', 'f-h', 'start')
+    b += T(330, 52, 'QRS 130 to 149 ms', 'f-s') + T(560, 52, 'QRS 150 ms or more', 'f-s')
+    b += T(200, 92, 'LBBB', 'f-h', 'end') + T(200, 152, 'Not LBBB', 'f-h', 'end')
+    b += box(220, 62, 220, 50, ['Should be considered', 'IIa C'], 'b0', 'f-s')
+    b += box(450, 62, 220, 50, ['Recommended', 'I A'], 'ok', 'f-s')
+    b += box(220, 122, 220, 50, ['May be considered', 'IIb C'], 'b1', 'f-s')
+    b += box(450, 122, 220, 50, ['Should be considered', 'IIa C'], 'b0', 'f-s')
+    b += box(10, 186, 345, 52, ['QRS under 130 ms and no pacing indication', 'for AV block: not recommended (III A)'], 'warn', 'f-s')
+    b += box(365, 186, 345, 52, ['High-degree AV block needing ventricular pacing:', 'CRT rather than RV pacing (IIa B1; was I A in 2021)'], 'b1', 'f-s')
+    b += box(10, 248, 345, 52, ['Pacemaker or ICD, LVEF 35% or less, worsening', 'failure, much RV pacing: upgrade to CRT (IIa B1)'], 'b1', 'f-s')
+    b += box(365, 248, 345, 52, ['Permanent AF, poor rate control, one or more', 'admissions: AV node ablation with CRT (IIa B1)'], 'b1', 'f-s')
+    return svg(310, b)
+
+
+def f45_hf_advanced():
+    """Advanced heart failure pathway, ESC 2026 heart failure guideline (official slide set)."""
+    b = box(10, 8, 340, 78, ['Rule of three (any one):', '2 or more admissions in a year (or 1 on inotropes),', 'diuretic resistance, drug intolerance', 'with cardiorenal syndrome'], 'b1', 'f-s')
+    b += box(370, 8, 340, 78, ['I NEED HELP (any one): inotropes, NYHA III/IV,', 'end-organ dysfunction, EF under 20%, shocks,', 'admissions, escalating diuretics, low pressure,', 'intolerance of prognostic drugs'], 'b1', 'f-s')
+    b += arrow(180, 86, 300, 108) + arrow(540, 86, 420, 108)
+    b += box(160, 110, 400, 46, ['Early consultation with an advanced heart failure centre', 'I A'], 'ok', 'f-s')
+    b += arrow(360, 156, 360, 174)
+    b += box(160, 176, 400, 46, ['Evaluation: cardiopulmonary exercise test (I C)', 'and right heart catheter (I C)'], 'b0', 'f-s')
+    b += arrow(250, 222, 180, 246) + arrow(470, 222, 540, 246)
+    b += box(10, 248, 340, 64, ['Durable LVAD (I C)', 'bridge to transplant, candidacy or recovery,', 'or destination therapy'], 'ok', 'f-s')
+    b += box(370, 248, 340, 64, ['Heart transplantation (I C)', 'refractory to drugs and interventions,', 'no contraindication'], 'ok', 'f-s')
+    b += box(10, 324, 700, 44, ['While waiting: continuous inotropes as a bridge (IIa C); temporary support for', 'haemodynamic instability as a bridge (IIa C); rehabilitation after LVAD (I B1)'], 'b1', 'f-s')
+    return svg(378, b)
+
+
+def f45_hf_changes():
+    """Recommendations whose class changed between ESC 2021 and ESC 2026 (slide set, revised table)."""
+    rows = [('Durable LVAD in advanced HFrEF', 'IIa A / IIa B', 'I C', 'ok'),
+            ('Mitral TEER, severe secondary MR, criteria met', 'IIa B', 'I B1', 'ok'),
+            ('Revascularisation for angina despite drugs', 'IIa C', 'I C', 'ok'),
+            ('Continuous inotropes as a bridge', 'IIb C', 'IIa C', 'b0'),
+            ('Pulmonary artery pressure monitoring', 'IIb B', 'IIa B1', 'b0'),
+            ('CRT instead of RV pacing in AV block', 'I A', 'IIa B1', 'warn')]
+    b = T(12, 22, 'Surgical and device recommendations: 2021 class against 2026 class', 'f-h', 'start')
+    b += T(430, 48, '2021', 'f-s') + T(620, 48, '2026', 'f-s')
+    y = 58
+    for lab, old, new, cls in rows:
+        b += T(350, y + 25, lab, 'f-s', 'end')
+        b += box(365, y, 130, 38, old, 'b1', 'f-s')
+        b += arrow(498, y + 19, 552, y + 19)
+        b += box(555, y, 130, 38, new, cls, 'f-s')
+        y += 46
+    b += T(12, y + 14, 'Top three rows: upgraded to class I. Next two: upgraded to IIa. Last row: downgraded.', 'f-s', 'start')
+    return svg(y + 26, b)
+
+
+# ---- figs_F48.py
+
+
+
+def f48_periop_os():
+    h, b = bars([
+        ('CheckMate 816 (nivolumab, neoadjuvant)', 0.72, 'ok'),
+        ('KEYNOTE-671 (pembrolizumab)', 0.72, 'ok'),
+        ('RATIONALE-315 (tislelizumab)', 0.65, 'ok'),
+        ('Neotorch (toripalimab)', 0.66, 'ok'),
+        ('CheckMate 77T (nivolumab), interim', 0.85, 'warn'),
+        ('AEGEAN (durvalumab), not yet tested', 0.89, 'warn'),
+    ], '', 1.0, 'Hazard ratio for death: four trials significant, two not yet', lab_w=300)
+    b += line(300 + (W - 300 - 90), 40, 300 + (W - 300 - 90), h - 8, 'f-dash')
+    b += T(300 + (W - 300 - 90), h + 8, '1.0 = no difference', 'f-s')
+    b += T(12, h + 8, 'Green: significant. Amber: boundary not crossed or not tested.', 'f-s', 'start')
+    return svg(h + 20, b)
+
+
+def f48_sano5():
+    h, b = bars([
+        ('Overall survival: surveillance', 50, 'b0'),
+        ('Overall survival: surgery', 54, 'b1'),
+        ('Distant spread: surveillance', 46, 'warn'),
+        ('Distant spread: surgery', 29, 'b1'),
+    ], '%', 100, 'SANO at 5 years: survival similar, more distant spread on surveillance', lab_w=260)
+    return svg(h, b)
+
+
+def f48_tactic():
+    h, b = bars([
+        ('Poudrage plus catheter (2 of 60)', 3, 'ok'),
+        ('Poudrage alone (19 of 56)', 34, 'warn'),
+    ], '%', 50, 'TACTIC: further invasive pleural procedures by 12 weeks', lab_w=270)
+    b += T(12, h + 8, 'Co-primary end points (hospital days, breathlessness over 4 weeks) did not differ.', 'f-s', 'start')
+    return svg(h + 20, b)
+
+
+def f48_screening():
+    return tiles([
+        ('3.3 million', ['invited for a lung', 'health check'], 'b1'),
+        ('800,000', ['low-dose CT', 'scans done'], 'b0'),
+        ('10,000', ['lung cancers found', 'by screening'], 'ok'),
+        ('0.78', ['late-stage incidence', 'rate ratio, Manchester'], 'ok'),
+    ], h=100)
+
+
+def f48_blvr_select():
+    b = box(210, 8, 300, 38, 'Severe emphysema, hyperinflated', 'b1', 'f-h')
+    b += arrow(360, 46, 360, 64)
+    b += box(60, 66, 600, 56, ['Stop: PaCO2 over 55 mm Hg on best treatment · severe pulmonary hypertension',
+                               'decompensated heart failure · mainly paraseptal disease or giant bulla'], 'warn')
+    b += arrow(360, 122, 360, 140)
+    b += box(60, 142, 600, 56, ['Quantitative CT target lobe: 50% or more below -910 HU,',
+                                'or 20% or more below -950 HU, with adjacent fissure 80% or more intact'], 'b0')
+    b += arrow(360, 198, 360, 216)
+    b += box(60, 218, 600, 56, ['Balloon-occlusion test for collateral ventilation:',
+                                'every right-sided lobe; left side if fissure under 95% intact'], 'b0')
+    b += arrow(250, 274, 190, 296) + arrow(470, 274, 530, 296)
+    b += box(40, 298, 300, 56, ['No collateral ventilation:', 'valves; admit at least 3 nights'], 'ok')
+    b += box(380, 298, 300, 56, ['Collateral ventilation present:', 'no valves; consider surgery'], 'b1')
+    b += arrow(190, 354, 190, 372)
+    b += box(40, 374, 300, 56, ['Review at 4 to 6 weeks, 3 to 6 months,', '12 months; CT if no benefit at 3 months'], 'b0')
+    return svg(440, b)
+
+
 # ---- figs_D1.py
 """Drawing pass D1: coronary anatomy, grafting, cannulation, cardioplegia and venting (23 November 2026)."""
 
@@ -10596,3 +10718,38 @@ def d11_lv_aneurysm_repairs():
     b += box(366, 318, 342, 74, ['Not with RV dysfunction or a small residual cavity.', 'Know the coronaries before the ventriculotomy; do not', 'handle the ventricle before the clamp (thrombus)'], 'warn', 'f-s')
     b += T(12, 412, ['Dashed line: mitral level. Dotted line: patch. Red: suture line.', 'STICH: reconstruction added to CABG gave no survival advantage over grafting alone.'], 'f-s', 'start')
     return svg(440, b)
+
+
+# ---- figs_K3.py
+
+
+
+def k3_ppotiers():
+    """ppo transfer factor tiers, ERS/ESTS 2025 as taught (Thoracic 2)."""
+    return tiles([
+        ('Over 60%', ['Normal risk', 'Surgery, no', 'further tests'], 'ok'),
+        ('40 to 59%', ['Moderate', 'Stair climb or', 'shuttle; MDT'], 'b0'),
+        ('Under 40%', ['High', 'CPET + V/Q SPECT;', 'consider sublobar'], 'b1'),
+        ('Under 30%', ['Very high', 'Not absolute; MDT,', 'consent, SABR'], 'warn'),
+    ], h=130)
+
+
+def k3_vo2():
+    """Peak VO2 bands as taught on the course slides, with NICE and course pack cut-offs."""
+    x0, x1, vmax = 30, W - 30, 30
+    sx = lambda v: x0 + (x1 - x0) * v / vmax
+    b = T(x0, 22, 'Peak VO2 (mL/kg/min): bands taught on the course slides', 'f-h', 'start')
+    bands = [(0, 10, 'warn', ['Under 10: high', 'SABR or ablation']),
+             (10, 15, 'b1', ['10 to 15', 'sublobar']),
+             (15, 20, 'b0', ['15 to 20', 'lobectomy']),
+             (20, 30, 'ok', ['Over 20: low', 'up to pneumonectomy'])]
+    for lo, hi, cls, lab in bands:
+        b += f'<rect x="{sx(lo)}" y="40" width="{sx(hi) - sx(lo)}" height="56" rx="6" class="f-{cls}"/>'
+        b += T((sx(lo) + sx(hi)) / 2, 63, lab, 'f-s')
+    for v in (0, 10, 12, 15, 20):
+        b += T(sx(v), 114, str(v), 'f-n')
+    for v in (12, 15):
+        b += line(sx(v), 30, sx(v), 40, 'f-dash') + line(sx(v), 96, sx(v), 101, 'f-dash')
+    b += T(sx(12) - 6, 136, 'Course pack high risk: under 12', 'f-s', 'end')
+    b += T(sx(15) + 6, 136, 'NICE good function: over 15', 'f-s', 'start')
+    return svg(148, b)

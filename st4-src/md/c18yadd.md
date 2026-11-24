@@ -843,3 +843,160 @@ Added 21 November 2026 from (1) Fang D, Huang W, Li H. Four years follow-up of e
 - Left minithoracotomy in the 4th space (or VATS), one-lung ventilation, pericardium opened anterior to the phrenic nerve.
 - Lateral or posterolateral LV between circumflex and obtuse marginal; check thresholds and phrenic capture at high output.
 - Tunnel to the pectoral pocket; leave a small pleural drain.
+
+## ESC 2026 heart failure guideline, part 1: defibrillators, resynchronisation, revascularisation and valves (class and level)
+
+Added 24 November 2026 from the ESC: 2026 ESC Guidelines for the management of heart failure (Task Force chairs Køber L, Adamo M). Eur Heart J 2026; doi:10.1093/eurheartj/ehag100. Read from the **official ESC educational slide set** for this guideline (escardio.org guideline page, slide-set download), which reproduces the recommendation tables. The journal full text and the pocket guideline could still not be opened, so the supporting text, trial citations and figures were not read. Each class and level below was read twice from the slide tables; wordings are paraphrased. This replaces the gaps in the section above ("what could be confirmed"), which had no class or level for these topics.
+
+### How to read the grades
+- Classes are I, IIa, IIb, III as before. Levels in 2026 are **A, B1, B2 and C**. The slide that defines them is an image and could not be read, so the difference between B1 and B2 is not stated here.
+- Reduced ejection fraction now runs up to an LVEF of 50%, and preserved is 50% and above (slide text). **The device and surgical thresholds have not moved with it: ICD, CRT and the CABG recommendation all still say LVEF 35% or less.**
+- The slides use FMT (foundational medical therapy) where older guidelines said optimal medical therapy, and GDIT for guideline-directed interventional therapy.
+
+!fig f45_hf_changes | Surgical and device recommendations whose class changed between the 2021 and 2026 ESC heart failure guidelines (drawn for these notes from the "revised recommendations" table of the official ESC 2026 slide set)
+
+### Implantable cardioverter-defibrillator
+| Recommendation | Class | Level |
+|---|---|---|
+| Secondary prevention: after a ventricular arrhythmia causing haemodynamic instability, with no reversible cause, not within 48 hours of an infarct, expected survival over 1 year with good function | I | A |
+| Primary prevention, **ischaemic** cause: symptomatic (NYHA II to III), LVEF 35% or less after at least 3 months of optimal therapy, no infarct in the last 40 days, expected survival over 1 year | I | B1 |
+| Primary prevention, **non-ischaemic** cause: same criteria; "should be considered" | IIa | B1 |
+| Before a generator change: shared decision between patient, device cardiologist and heart failure specialist that a device is still worthwhile | IIa | C |
+| Wearable defibrillator for a limited period of risk, as a bridge to an implant or while listed for transplant | IIb | C |
+| Primary prevention within 40 days of an infarct: not recommended | III | B1 |
+| NYHA IV with refractory symptoms: not recommended unless a candidate for CRT, a ventricular assist device or transplant | III | C |
+
+### Cardiac resynchronisation therapy
+All rows: symptomatic, LVEF 35% or less despite optimal therapy, sinus rhythm.
+
+!fig f45_hf_crt | CRT by QRS width and morphology, with the pacing-related recommendations, ESC 2026 heart failure guideline (drawn for these notes from the CRT recommendation table of the official ESC slide set)
+
+| Recommendation | Class | Level |
+|---|---|---|
+| LBBB, QRS 150 ms or more | I | A |
+| LBBB, QRS 130 to 149 ms | IIa | C |
+| Not LBBB, QRS 150 ms or more | IIa | C |
+| Not LBBB, QRS 130 to 149 ms | IIb | C |
+| QRS under 130 ms with no pacing indication for high-degree AV block: not recommended | III | A |
+| Upgrade to CRT: conventional pacemaker or ICD, LVEF 35% or less, worsening failure, a significant proportion of RV pacing | IIa | B1 |
+| High-degree AV block needing ventricular pacing in HFrEF, any NYHA class or QRS width: CRT rather than RV pacing. **Downgraded: the slides show I A in 2021** | IIa | B1 |
+| New: review the proportion of RV pacing in a device patient with new or worsening HFrEF | IIa | C |
+| New: LBBB, QRS 150 ms or more, LVEF 35% or less: start drug therapy and plan CRT together, rechecking LVEF before implant | IIb | C |
+| New: severely symptomatic permanent AF, poor rate control, at least one heart failure admission: AV node ablation with CRT | IIa | B1 |
+
+Catheter ablation of AF in symptomatic AF with HFrEF stays IIa C. The slides list no surgical AF item in the heart failure guideline.
+
+### Coronary revascularisation in chronic coronary syndrome with heart failure
+| Recommendation | Class | Level |
+|---|---|---|
+| Obstructive coronary disease with angina that persists despite therapy and antianginal drugs (reduced or preserved EF): revascularise for symptoms. **Upgraded from IIa C in 2021** | I | C |
+| If revascularisation is planned after Heart Team review, **CABG is the preferred strategy** at LVEF 35% or less with suitable multivessel disease, to improve long-term survival | IIa | B1 |
+| Invasive coronary angiography in heart failure with angina and a high probability of obstructive disease, in a possible revascularisation candidate | I | C |
+| Invasive angiography in HFrEF with a high pre-test likelihood of obstructive disease | IIa | C |
+| CT coronary angiography in HFrEF with a low to moderate pre-test likelihood | IIa | C |
+
+- PCI is not named in the slide tables. Surgical ventricular reconstruction, aneurysmectomy and viability testing do not appear in them either; whether the full text discusses them was not read.
+- Compare with the ESC 2024 chronic coronary syndromes guideline and the STICH and REVIVED-BCIS2 summary already in this tab: the 2026 heart failure guideline keeps CABG as the preferred method for survival benefit at LVEF 35% or less, at IIa.
+
+### Valve disease in heart failure
+| Recommendation | Class | Level |
+|---|---|---|
+| Severe aortic stenosis with heart failure: aortic valve intervention, SAVR or TAVI, for symptoms and survival. The 2021 wording was limited to "severe high-gradient" stenosis (I B) | I | B1 |
+| Severe secondary MR that persists despite optimised drugs (and CRT if indicated), haemodynamically stable, symptomatic HFrEF, **criteria below met**: mitral transcatheter edge-to-edge repair, to reduce heart failure admission and improve quality of life. **Upgraded from IIa B in 2021** | I | B1 |
+| Severe secondary MR, criteria not met, LVAD and transplant excluded: TEER may be considered for symptoms | IIb | C |
+
+Criteria for the class I TEER recommendation (slide):
+
+| Group | Criteria |
+|---|---|
+| Clinical | NYHA II or worse; at least one heart failure admission in the last year, or BNP 300 pg/mL or more, or NT-proBNP 1000 pg/mL or more; drugs and CRT optimised |
+| Echo and haemodynamic | LVEF 20 to 50%; LV end-systolic diameter 70 mm or less; suitable mitral anatomy; systolic PA pressure 70 mmHg or less; no severe RV dysfunction; no severe aortic or tricuspid valve disease |
+| Exclusions | Stage D heart failure; coronary disease needing revascularisation; hypertrophic, restrictive or infiltrative cardiomyopathy |
+
+- No regurgitant orifice area threshold is listed on the slide.
+- The slide tables contain **no recommendation for surgical mitral repair or replacement and none for the tricuspid valve**. For those, use the ESC/EACTS 2025 valve guideline in Cardiac 1 and 2. Do not infer that the heart failure guideline is silent in its text; only the tables were read.
+
+### For the viva
+"In the 2026 ESC heart failure guideline the surgical thresholds are unchanged at an ejection fraction of 35% or less, although reduced EF is now defined as under 50%. CABG is the preferred revascularisation for survival at IIa. TEER for severe secondary MR that meets COAPT-like criteria is now class I. A primary prevention ICD is class I in ischaemic and IIa in non-ischaemic cardiomyopathy. CRT is class I only for LBBB with a QRS of 150 ms or more."
+
+## ESC 2026 heart failure guideline, part 2: cardiogenic shock, advanced heart failure, LVAD and transplantation (class and level)
+
+Added 24 November 2026 from the ESC: 2026 ESC Guidelines for the management of heart failure (Køber L, Adamo M, chairs). Eur Heart J 2026; doi:10.1093/eurheartj/ehag100. Read from the official ESC educational slide set (recommendation tables and the tables of LVAD and transplant indications and contraindications). Full text not opened. The INTERMACS profile figure and the heart failure stages figure are images in the slide set and were not readable, so they are not reproduced. Classes and levels were read twice.
+
+### Temporary mechanical support in cardiogenic shock
+| Recommendation | Class | Level |
+|---|---|---|
+| New: a multidisciplinary Shock Team for possible candidates, to choose modality and device | I | C |
+| New: microaxial flow pump in selected patients with STEMI-related shock and LV systolic dysfunction who are not at risk of hypoxic brain injury, to reduce death | IIa | B1 |
+| New: temporary support in unselected infarct-related shock: not recommended (harm) | III | B1 |
+| Intra-aortic balloon pump in unselected cardiogenic shock: not recommended (no effect) | III | B1 |
+| New: post-infarct mechanical complications: temporary support as a bridge to definitive treatment | IIa | C |
+| Heart-failure-related haemodynamic instability in selected patients: temporary support as a bridge to recovery, decision, another bridge, candidacy or transplant | IIa | C |
+| Vasopressor, preferably noradrenaline, in cardiogenic shock | IIb | C |
+| Inotrope when systolic pressure is under 90 mmHg with hypoperfusion not responding to standard treatment including a fluid challenge | IIb | C |
+
+- The slide set shows the SCAI stages: A at risk; B beginning (unstable without hypoperfusion); C classic (hypoperfusion needing more than fluid); D deteriorating despite initial treatment; E extremis (refractory shock or arrest).
+- This matches the DanGer Shock and ECLS-SHOCK pair in Cardiac 15: benefit only in a selected STEMI group, none in unselected patients. The EACTS/STS/AATS 2025 temporary support guideline in Cardiac 15 remains the surgical document.
+
+### Who has advanced heart failure
+All four are needed, despite foundational and additional drugs and interventional therapy:
+
+| Criterion | Detail |
+|---|---|
+| 1. Symptoms | Severe and persistent, NYHA III or IV |
+| 2. Severe cardiac dysfunction, one of | LVEF 30% or less; isolated RV failure; inoperable severe valve disease; inoperable severe congenital disease; persistently high or rising natriuretic peptide with severe diastolic dysfunction or structural abnormality |
+| 3. Events in the last 12 months | Congestion needing high-dose intravenous or combination diuretics, or malignant arrhythmia, causing two or more unplanned visits or admissions; or one or more low-output episodes needing inotropes or vasoactive drugs |
+| 4. Exercise | Unable to exercise, 6-minute walk under 300 m, or peak VO2 under 12 to 14 mL/kg/min or under 50% of predicted |
+
+### Referral, evaluation and bridging
+
+!fig f45_hf_advanced | Advanced heart failure: referral triggers, evaluation and the two definitive options with class and level, ESC 2026 heart failure guideline (drawn for these notes from the advanced heart failure tables of the official ESC slide set)
+
+| Recommendation | Class | Level |
+|---|---|---|
+| New: early consultation with an advanced heart failure centre for patients with, or at risk of, advanced disease who are motivated and have no absolute contraindication to transplant or durable support | I | A |
+| Cardiopulmonary exercise testing in the evaluation for transplant and durable support | I | C |
+| Right heart catheterisation in the same evaluation | I | C |
+| Continuous inotropes in advanced HFrEF with low output and hypoperfusion or organ dysfunction, as a bridge to decision, transplant or durable support (was IIb C in 2021) | IIa | C |
+| Reducing or stopping beta-blocker or ivabradine when hypoperfusion persists | IIa | C |
+| Kidney replacement therapy for refractory overload with end-stage kidney failure | IIa | C |
+| Ultrafiltration for refractory overload not responding to escalated diuretics | IIb | C |
+
+High-risk triggers on the slides: the **rule of three** (two or more admissions in a year or one needing inotropes; diuretic resistance; intolerance of neurohormonal drugs with cardiorenal syndrome) and **I NEED HELP** (already in Cardiac 15).
+
+### Durable LVAD
+| Recommendation | Class | Level |
+|---|---|---|
+| Durable LVAD in selected patients with advanced HFrEF despite drugs and interventional therapy, as bridge to transplant, candidacy or recovery, or as destination therapy, to improve symptoms and reduce death. **Replaces two IIa recommendations of 2021** (IIa A when not eligible for transplant; IIa B as a bridge) | I | C |
+| New: cardiac rehabilitation in LVAD patients | I | B1 |
+| New: histology of the explanted heart or apical core in non-ischaemic disease, to find a treatable cause or prompt family screening | IIa | C |
+
+Indications (slide table): severely reduced LVEF plus one of
+
+- INTERMACS 1 to 2 on temporary support, with neurological and other organ recovery but no cardiac recovery;
+- INTERMACS 2 to 4;
+- INTERMACS above 4 (NYHA III or IV despite optimal therapy) with at least one of: unable to exercise, or peak VO2 under 12 to 14 mL/kg/min or under 50% predicted; organ dysfunction from low perfusion (kidney, liver, group 2 pulmonary hypertension, cachexia) with cardiac index 2 L/min/m² or less; repeated admissions in 12 months with no obvious precipitant.
+
+| Absolute contraindications | Relative contraindications |
+|---|---|
+| Severe RV dysfunction despite euvolaemia | Obesity or malnutrition |
+| Severe irreversible kidney or liver disease | Musculoskeletal disease limiting rehabilitation |
+| Severe irreversible neurological disease | Malignancy, by type and prognosis |
+| Severe lung disease | Severe peripheral arterial disease |
+| Contraindication to long-term oral anticoagulation | Systemic infection |
+| Non-adherence or other psychosocial limits | Alcohol or substance misuse in the last 6 months, or active smoking |
+| Insufficient social support | Impaired cognition |
+| Psychological instability threatening follow-up | Frailty |
+
+### Heart transplantation
+| Recommendation | Class | Level |
+|---|---|---|
+| Transplantation in selected patients with advanced heart failure refractory to drugs and interventional therapy, without contraindications, to improve quality of life and survival | I | C |
+
+- Indication: advanced heart failure with no other option (durable support as a bridge excepted).
+- Absolute contraindications: inability to comply with treatment (for example dementia); serious comorbidity with poor prognosis that transplant will not reverse.
+- Other contraindications: active infection; severe peripheral or cerebrovascular disease; raised pulmonary vascular resistance that drugs do not reverse; cancer; cirrhosis or irreversible kidney dysfunction (for example creatinine clearance under 30 mL/min/1.73 m²); multi-organ systemic disease; BMI over 35 kg/m² or severe cachexia; alcohol or substance misuse or smoking in the last 6 months; psychological instability; insufficient social support.
+- UK listing criteria are NHSBT's and are in Cardiac 15; the ESC list is not a UK allocation rule.
+
+### Not read
+The full-text discussion, the INTERMACS and stage figures, the definition of levels B1 and B2, and any recommendation that appears only in the text and not in the slide tables.

@@ -308,3 +308,38 @@ No recommendation on Q8 and Q9 because the trials were unblinded, imprecise and 
 
 ### Research priorities set by the panel
 Real-world data on conservative and ambulatory care; trials of aspiration in SSP; who among PSP patients is at highest risk of PAL and recurrence; trials of early surgery in SSP; standard definitions of PAL and its resolution; a powered blood patch trial; valve and suction trials; multicentre trials of surgical pleurectomy against chemical pleurodesis, and of surgically against medically delivered pleurodesis.
+
+## TACTIC: thoracoscopic poudrage with or without an indwelling catheter (Lancet Respir Med 2026)
+
+Added 24 November 2026 from Dipper A, Sundaralingam A, Hedley E, et al. Medical thoracoscopy with talc poudrage and indwelling pleural catheter insertion versus medical thoracoscopy with talc poudrage alone for patients with symptomatic malignant pleural effusion (TACTIC): a randomised, controlled phase 3 trial. Lancet Respir Med 2026;14(4):341-349, doi:10.1016/S2213-2600(25)00409-6. Abstract read via the University of Central Lancashire repository record; the full text was not read.
+
+### Design
+
+| Item | Detail |
+|---|---|
+| Design | Unblinded phase 3 randomised trial, 11 UK hospitals, December 2021 to January 2024 (ISRCTN11058680) |
+| Patients | 124 with symptomatic suspected malignant effusion (62 per arm); mesothelioma 46%, lung cancer 28%, breast cancer 10% |
+| Both arms | Local-anaesthetic (medical) thoracoscopy with talc poudrage |
+| Intervention | An indwelling pleural catheter placed at the same procedure |
+| Control | Usual care: admission with a large-bore chest tube |
+| Co-primary end points | Total hospital days over 4 weeks, including readmissions; mean breathlessness (0 to 100 mm visual analogue scale) over 4 weeks |
+
+### Results
+
+| Outcome | Catheter | Usual care | p |
+|---|---|---|---|
+| Hospital days, median (IQR) | 1 (1 to 3) | 2 (1 to 3) | 0.26 |
+| Breathlessness score, median, mm | 14.0 | 19.6 | 0.26 |
+| Further invasive pleural procedure by 12 weeks | 2 of 60 (3%) | 19 of 56 (34%) | <0.0001 |
+| Trial-related adverse events | 74% | 71% | 0.84 |
+| Related serious adverse events | 3 | 0 | |
+
+Length-of-stay data were available for 102 patients and breathlessness data for 108 (modified intention to treat).
+
+!fig f48_tactic | TACTIC: further invasive pleural procedures within 12 weeks after thoracoscopic poudrage with or without an indwelling catheter (Dipper et al., Lancet Respir Med 2026, abstract). Drawn for these notes.
+
+### What it changes
+
+- Both co-primary end points were negative: adding a catheter did not shorten hospital stay or improve breathlessness.
+- The secondary result is large: a tenfold reduction in repeat pleural procedures. Combined thoracoscopy, poudrage and catheter is a reasonable choice for patients who want fewer return visits, at the cost of the catheter itself (three related serious events).
+- Surgical relevance: this is a physician-thoracoscopy trial, but the same logic applies to VATS pleurodesis with a catheter placed at the same procedure (the IPC-PLUS idea, already in this tab, of talc and catheter together). The BTS 2023 recommendations in this tab are unchanged.

@@ -21,6 +21,7 @@
 body[data-g=cardiac]{--sec:#a3324a;--tint:#f8e6ea}
 body[data-g=congenital]{--sec:#9a5f0c;--tint:#f7ecd8}
 body[data-g=ref],body[data-g=home]{--sec:#3d5a80;--tint:#e4ebf4}
+body[data-g=cards],.hsec[data-g=cards],.navg[data-g=cards]{--sec:#5b3f8c;--tint:#ece6f5}
 .hsec[data-g=thoracic],.navg[data-g=thoracic]{--sec:#0f6b6b;--tint:#e2f0ee}
 .hsec[data-g=cardiac],.navg[data-g=cardiac]{--sec:#a3324a;--tint:#f8e6ea}
 .hsec[data-g=congenital],.navg[data-g=congenital]{--sec:#9a5f0c;--tint:#f7ecd8}
@@ -31,7 +32,8 @@ body[data-g=ref],body[data-g=home]{--sec:#3d5a80;--tint:#e4ebf4}
 body[data-g=cardiac],.hsec[data-g=cardiac],.navg[data-g=cardiac]{--sec:#f08ba0;--tint:#3a1c24}
 body[data-g=congenital],.hsec[data-g=congenital],.navg[data-g=congenital]{--sec:#e8b45f;--tint:#33270f}
 body[data-g=ref],body[data-g=home],.hsec[data-g=ref],.navg[data-g=ref]{--sec:#8fb3e0;--tint:#1a2636}
-.hsec[data-g=thoracic],.navg[data-g=thoracic]{--sec:#63c2bd;--tint:#17302f}}
+.hsec[data-g=thoracic],.navg[data-g=thoracic]{--sec:#63c2bd;--tint:#17302f}
+body[data-g=cards],.hsec[data-g=cards],.navg[data-g=cards]{--sec:#b9a3e3;--tint:#261d36}}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-padding-top:120px}
 body{margin:0;background:var(--bg);color:var(--ink);font:var(--fs)/1.58 var(--sans)}
@@ -162,7 +164,7 @@ a.back{display:block;font-size:.84em;font-weight:600;margin:1.1em 0 .2em;text-de
 </head>
 <body class="closed" data-g="home">
 <div id="bar"><button id="menu" aria-label="Topics">☰</button><a class="brand" href="#home">CT notes</a>
-<div id="pills"><a href="#home/thoracic" data-g="thoracic">Thoracic</a><a href="#home/cardiac" data-g="cardiac">Cardiac</a><a href="#home/congenital" data-g="congenital">Congenital</a><a href="#trials" data-g="ref">Trials</a><a href="#figures" data-g="ref">Figures</a><a href="#flagged" data-g="ref">Flagged</a></div>
+<div id="pills"><a href="#home/thoracic" data-g="thoracic">Thoracic</a><a href="#home/cardiac" data-g="cardiac">Cardiac</a><a href="#home/congenital" data-g="congenital">Congenital</a><a href="#home/cards" data-g="cards">Cheat sheets</a><a href="#trials" data-g="ref">Trials</a><a href="#figures" data-g="ref">Figures</a><a href="#flagged" data-g="ref">Flagged</a></div>
 <span id="off"></span><input id="q" type="search" placeholder="Search all notes" autocomplete="off" autocorrect="off" spellcheck="false"><button id="aa" aria-label="Text size">Aa</button></div>
 <nav id="side">{{NAV}}<div class="meta">Built {{BUILD}} from the ST4 course doc. Personal revision notes, not clinical guidance; check the cited source before relying on a figure. Stars and revised marks are stored on this device only.</div></nav>
 <main><div class="wrap"><div id="results"></div>{{SECTIONS}}</div></main>

@@ -134,3 +134,25 @@ Added 21 November 2026. This updates two lines of the guideline table above: the
 
 ### ESMO 2025 early and locally advanced NSCLC (Zer et al., Ann Oncol 2025;36(11):1245-1262)
 A second attempt on 21 November 2026 found no openable full text: no PMC or Europe PMC record surfaced, the Annals of Oncology and DOI links were refused, the SKKU repository has only the abstract, and the esmo.org eUpdate page (September 2021) does not link the 2025 document. The status note above stands: its recommendations, levels and grades are not in these notes.
+
+## Guideline currency check, November 2026: thoracic documents from 2025 and 2026
+
+Added 24 November 2026 from: the EJCTS "Guidelines, Recommendations, and Position Papers" page (academic.oup.com/ejcts/pages/guidelines, read in full for 2025 and 2026); the NICE NG122 update-information page (read); the ESTS news page for the ERS/ESGE/ESTS endosonography guideline (read); the CTSNet summary page of the ERS/ESTS fitness guideline (read); and Wahidi MM et al., Respiration 2026;105:397-420 (read in full, see Thoracic 14). Search budget: one search each for ESTS, BTS/NICE and EACTS documents. This check is not exhaustive.
+
+### Thoracic guidelines and consensus documents from 2025 to 2026
+
+| Document | Year | Status in these notes |
+|---|---|---|
+| ERS/ESTS fitness for curative-intent treatment of lung cancer (Brunelli et al.), Eur Respir J and EJCTS | 2025 (CTSNet summary January 2026) | Already in this tab |
+| ERS/ESGE/ESTS endobronchial and oesophageal endosonography for diagnosis and staging, Eur Respir J 68:2600097 | Online 14 May 2026 | Already in this tab and Thoracic 1. The ESTS news page adds: literature to April 2025, GRADE method; endosonography is supported for restaging after induction therapy, for central tumours next to the airway or oesophagus, and for the left adrenal; simulation training is advised; EBUS samples are suitable for PD-L1 |
+| NICE NG122, February 2026 update | 2026 | Already in this tab (NGS panels, recommendation 1.2.12). No newer entry as of today |
+| **EACTS Expert Consensus Document on Lung Volume Reduction for Emphysema**, EJCTS, doi:10.1093/ejcts/ezag226 | 2026 | **New.** Listed on the EJCTS page. The full text could not be opened, so its recommendations are not given. This corrects the note in Thoracic 14 that no EACTS document on lung volume reduction existed |
+| **EACTS Expert Consensus Document on Civil Aviation Following Cardiothoracic Surgery and Transcatheter Procedures**, doi:10.1093/icvts/ivag217 | 2026 | **New**, title only. Relevant to flying after pneumothorax and lung resection. Not read |
+| Bronchoscopic lung volume reduction with endobronchial valves: consensus statement (Wahidi et al.), Respiration 2026 | 2025 online, 2026 print | Was abstract only; now read in full in Thoracic 14 |
+
+### Searched for and not found
+
+- No new ESTS-only guideline in 2026 apart from the joint endosonography document.
+- No new BTS guideline on a thoracic surgical topic in 2025 or 2026. The pleural guideline (2023) remains the current one.
+- No IASLC guideline beyond TNM 9, which is already in Thoracic 16.
+- NICE: no new lung cancer guideline. The technology appraisals for perioperative drugs could not be listed because the NICE products page failed to load. Check NICE directly for tislelizumab and durvalumab in the perioperative setting.

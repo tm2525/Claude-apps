@@ -22,7 +22,7 @@ OUT = os.path.join(ROOT, 'st4')
 sys.path.insert(0, HERE)
 import figs  # noqa: E402
 
-BUILD_DATE = '21 November 2026'
+BUILD_DATE = '24 November 2026'
 
 # slug, title, kind   (kind: topic | course | digest | ref | new)
 SECTIONS = [
@@ -60,6 +60,19 @@ SECTIONS = [
         ('g12', 'Venous, single ventricle and coronary anomalies', 'new'), ('g13', 'Paediatric support and intensive care', 'new'),
         ('congfigs', 'Source figures (text)', 'digest'), ('archcong', 'Archive: congenital advanced', 'digest'),
         ('congenital', 'Course day notes', 'course')]),
+    ('cards', 'Cheat sheets', [
+        ('k1', 'Echo and valve numbers', 'card'), ('k2', 'Aorta numbers', 'card'),
+        ('k3', 'Haemodynamics and ICU', 'card'), ('k4', 'Bypass, perfusion and bleeding', 'card'),
+        ('k5', 'Lung resection fitness', 'card'), ('k6', 'Lung cancer staging and treatment', 'card'),
+        ('k7', 'Pleura, drains and thoracic emergencies', 'card'), ('k8', 'Oesophagus, mediastinum and airway', 'card'),
+        ('k9', 'Transplant and mechanical support', 'card'), ('k10', 'Coronary and congenital numbers', 'card'),
+        ('k11', 'Classifications and eponyms', 'card'), ('k12', 'Scores, statistics and professional', 'card'),
+        ('k13', 'Drugs and doses', 'card'), ('k14', 'Resuscitation and arrest after surgery', 'card'),
+        ('k15', 'Endocarditis', 'card'), ('k16', 'AF, pacing and devices', 'card'),
+        ('k17', 'Pericardium, PE and pulmonary hypertension', 'card'), ('k18', 'Trauma', 'card'),
+        ('k19', 'Heart failure, cardiomyopathy and ischaemic valve', 'card'), ('k20', 'The 9 critical conditions', 'card'),
+        ('k21', 'The 8 index procedures', 'card'), ('k22', 'Anatomy facts and numbers', 'card'),
+        ('k23', 'Landmark trials in one line', 'card'), ('k24', 'Imaging thresholds: CT, TOE and nuclear', 'card')]),
     ('ref', 'Reference', [
         ('start', 'Start here', 'ref'), ('frcs', 'FRCS syllabus map', 'ref'), ('handbook', 'Society handbook', 'ref'), ('guidecheck', 'Guideline check', 'ref'), ('trials', 'Trials index', 'ref'),
         ('viva', 'Viva points', 'ref'), ('figures', 'Figure gallery', 'ref'), ('flagged', 'Flagged sections', 'ref')]),

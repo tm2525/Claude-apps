@@ -108,3 +108,33 @@ Points to draw out:
 - "I would not call a second lesion a metastasis without tissue. IASLC 2016 replaced Martini-Melamed with clinical and pathological criteria; different histology or a clearly different comprehensive histological profile means separate primaries."
 - "Before resecting both I stage the mediastinum invasively and image for metastases (ACCP 1B). Same lobe: lobectomy. Other ipsilateral lobe: resect each (1B). Contralateral: consider resecting each (2C)."
 - "Multiple ground-glass lesions are multifocal lung cancer: curative intent, with sublobar resection of every lesion suspected to be malignant where feasible (ACCP 2C)."
+
+## The NHS Lung Cancer Screening Programme: design and results to 2026
+
+Added 24 November 2026 from: (1) UK Government press release "New lung cancer screening roll out to detect cancer sooner", 26 June 2023, https://www.gov.uk/government/news/new-lung-cancer-screening-roll-out-to-detect-cancer-sooner (read in full); (2) Manchester University NHS Foundation Trust news, 25 May 2026, national programme milestone (read in full); (3) Population impact of risk-based lung cancer screening on late-stage incidence in Greater Manchester. J Thorac Oncol 2025 (abstract read via the INCa bulletin of 8 December 2025; authors not shown there; the full text was not accessible).
+
+### How the programme works
+
+| Item | Detail |
+|---|---|
+| Origin | Targeted Lung Health Check pilots, adopted as a national programme in June 2023 on a UK National Screening Committee recommendation |
+| Who is invited | Age 55 to 74, current or former smokers, identified from GP records |
+| Risk assessment | Smoking history plus other factors, using risk models that include age, sex, ethnicity, BMI and personal history of cancer or lung disease. People at high risk are offered low-dose CT |
+| Interval | Every 2 years until the upper age limit; nodules may be scanned more often |
+| Smoking cessation | Offered alongside screening |
+| Rollout target | 40% of the eligible population by March 2025; 100% by March 2030 |
+| Expected at full rollout | About 992,000 scans a year, up to 9,000 cancers detected a year, £270 million a year |
+
+### Results
+
+- First phase, reported in 2023: about 900,000 invited, 200,000 scanned, more than 2,000 cancers found, 76% at an early stage. The comparison was 29% at an early stage outside the programme in 2019.
+- By May 2026: more than 3.3 million invited, over 800,000 scanned and more than 10,000 cancers diagnosed nationally, most at an early stage (no exact percentage published). The target is over 6 million invited by 2030 and up to 50,000 cancers diagnosed.
+- Greater Manchester study (J Thorac Oncol 2025): a difference-in-differences comparison of North and East Manchester (221,240 people aged 55 to 80) against four neighbouring regions without screening (982,130 people). Only 2.0% of the population (4,468 people) were screened. Even so, screening found 31% of all lung cancers in the area (221 of 722). The number needed to screen was 20 per cancer found. Late-stage incidence fell by 22% (adjusted incidence rate ratio 0.78, 95% CI 0.62 to 0.99, p=0.037). The area has high deprivation.
+
+!fig f48_screening | NHS Lung Cancer Screening Programme to May 2026 (MFT news, 25 May 2026) and the Greater Manchester late-stage incidence ratio (J Thorac Oncol 2025). Drawn for these notes.
+
+### What it changes for the surgeon
+
+- More stage I disease means more small, often subsolid, nodules referred for sublobar resection. The JCOG0802 and CALGB 140503 selection rules (in Thoracic 16) apply directly.
+- A late-stage incidence fall at population level, rather than only a stage shift among screened patients, is the evidence that screening is not just detecting indolent disease. Overdiagnosis remains a fair viva challenge.
+- Many screen-detected patients have emphysema and cardiovascular disease, so fitness assessment (ERS/ESTS 2025) and parenchyma-sparing resection matter more.

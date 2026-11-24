@@ -569,3 +569,60 @@ Added 21 November 2026 from Chambers DC, Cherikh WS, Harhay MO, et al. The Inter
 ### Viva points
 - Median survival about 6.7 years after lung transplant and about 9 years for 1-year survivors; heart transplant is about 12.5 years.
 - Graft failure kills early, infection in the first year, chronic rejection (BOS/CLAD) after that.
+
+## Endobronchial valves: the 2026 consensus recommendations in full, and the EACTS lung volume reduction document
+
+Added 24 November 2026 from Wahidi MM, Lentz RJ, Criner GJ, Gompelmann D, Ing AJ, Kapp CM, Li S, Sciurba FC, Shah PL, Slebos DJ, Strange C, Herth FJ. Bronchoscopic lung volume reduction with endobronchial valves: a consensus statement on practical aspects of patient selection and periprocedural management. Respiration 2026;105(3):397-420, doi:10.1159/000548437 (online 15 September 2025). Read from the publisher's online full text, all three parts, apart from the online supplementary Table S1. This replaces the abstract-only entry in this tab. Also the EJCTS guideline listing (see Thoracic 6).
+
+### Method
+
+Eleven experts used a modified Delphi process: three rounds, with agreement above 80% needed. Twenty-one recommendations reached consensus. Pulmonary rehabilitation did not reach consensus. Two topics had too little evidence for any recommendation.
+
+### The 21 recommendations
+
+| No. | Recommendation |
+|---|---|
+| 1 | Discuss at an MDT (clinical, radiological, physiological data) where COPD, surgical lung volume reduction or transplant expertise exists |
+| 2 | Caution if resting oxygen is 4 L/min or more |
+| 3 | Do not proceed if PaCO2 is above 55 mm Hg despite optimal treatment and nocturnal ventilation |
+| 4 | Caution if LVEF is under 40%; do not proceed with decompensated heart failure |
+| 5 | Caution with moderate pulmonary hypertension; do not proceed if severe |
+| 6 | BMI alone does not exclude, but take care below 18 or above 40 |
+| 7 | Centrilobular or panlobular disease, heterogeneous or homogeneous, can be assessed. Avoid routine valves for mainly paraseptal disease or a giant bulla |
+| 8 | Avoid valves on the same side as a previous lobectomy or pleurodesis. Valves may be considered after contralateral lobectomy or pleurodesis, ipsilateral sublobar resection, or sternotomy |
+| 9 | Alpha-1 antitrypsin deficiency does not exclude |
+| 10 | Quantitative CT for fissure integrity, emphysema extent and lobar volume. A target lobe has 50% or more of voxels below -910 HU, or 20% or more below -950 HU, next to a fissure that is 80% or more intact (40% or more below -920 HU is also used) |
+| 11 | Perfusion scan when there are several possible targets or the disease is homogeneous |
+| 12 | Do not target a lobe in the lung that has much less emphysema or more perfusion |
+| 13 | With several targets, choose by destruction score, volume, perfusion and disqualifying CT findings |
+| 14 | Perceived pneumothorax risk alone does not exclude, but the patient must be able to tolerate a pneumothorax physiologically |
+| 15 | Direct collateral ventilation test (for example balloon occlusion) before every right-sided valve placement, and before left-sided placement if the fissure is under 95% complete |
+| 16 | Admit for at least three nights afterwards |
+| 17 | Review at 4 to 6 weeks, 3 to 6 months and 12 months |
+| 18 | Subtotal atelectasis and no clinical benefit at 3 months: CT, then consider bronchoscopy to revise or remove valves |
+| 19 | Complete atelectasis but no benefit at 3 months: lung function, CT, cardiac assessment |
+| 20 | Benefit lost after an initial response: CT and revision bronchoscopy |
+| 21 | Marked rise in oxygen need early after the procedure: look for pneumothorax, pneumonia or pulmonary embolism. Mild rises are common; if they persist beyond 4 to 6 weeks, assess the heart and lungs |
+
+!fig f48_blvr_select | Endobronchial valve selection and follow-up from the 2026 consensus statement (Wahidi et al., Respiration 2026, recommendations 3 to 5, 7, 10, 15 to 18). Drawn for these notes.
+
+### Numbers worth knowing from the text
+
+- Pneumothorax: 12 to 29% in trials that used balloon-occlusion selection; about 26% in real-world series; up to about 40% after left upper lobe treatment in one study.
+- Revision: 41% of 179 patients in one series needed at least one revision bronchoscopy.
+- Trial residual volume thresholds: over 150 to 180% predicted in the heterogeneous-disease trials; over 200% in IMPACT (homogeneous disease).
+- Pulmonary rehabilitation (no consensus): a randomised trial of rehabilitation before, after or not at all found no difference in endurance after valves. In a post hoc VENT analysis, rehabilitation before valves raised walk distance by a mean of only 14 m, below the 26 m minimum important difference.
+- Too little evidence: sequential bilateral valves (three small series, 39 patients, more complications); staged placement over two sessions (pneumothorax 7% and 12% in two retrospective series, no comparison).
+
+### What it changes for the surgeon
+
+- The surgical decision is made at three points: the MDT (recommendation 1); valves are not used on the side of a previous lobectomy or pleurodesis (8), so surgery or the other side is the option; and a positive collateral ventilation test or incomplete fissure makes surgical lung volume reduction the alternative.
+- Pneumothorax after valves happens in about a quarter of patients, so the surgeon may be called. The three-night admission (16) exists for this reason. The consensus does not give a management algorithm in the text that was read.
+
+### EACTS consensus on lung volume reduction (2026)
+
+The EJCTS guideline page lists an "EACTS Expert Consensus Document on Lung Volume Reduction for Emphysema" (doi:10.1093/ejcts/ezag226, 2026). Its full text could not be opened today, so no recommendations are given here. The earlier line in this tab saying that no EACTS document existed (checked 21 November 2026) is now out of date.
+
+### Lung transplantation: nothing new confirmed
+
+No randomised lung transplant trial reported between mid-2025 and November 2026 could be confirmed with the searches available. The randomised trial of 10 °C against 4 °C static donor lung storage (NCT05898776) had no posted results. The earlier non-randomised 10 °C study (Ali et al., NEJM Evidence 2023; 70 patients at Toronto, Vienna and Madrid) was found only as a press release.

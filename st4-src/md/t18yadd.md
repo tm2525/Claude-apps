@@ -162,3 +162,39 @@ Added 21 November 2026 from Molena D, Sewell M, Maron SB, Hofstetter W, Worrell 
 
 ### To do
 Read the full text and add the 23 statements with class and level. Then compare with NICE NG83, especially on pT1b endoscopic treatment, FLOT against CROSS after ESOPEC, and active surveillance.
+
+## SANO at five years (ESMO 2026) and the case for surgery from a decision model
+
+Added 24 November 2026 from: (1) SANO 5-year results, Gangaram-Panday S et al., ESMO 2026 (Madrid), abstract LBA78. Read as an OncLive interview report of 17 November 2026; the abstract itself was not read. (2) Esophagectomy vs active surveillance in clinical complete responders after neoadjuvant chemoradiation: a Markov decision analysis. JAMA Surgery 2026 (open access). Abstract read via the INCa bulletin of 26 January 2026; authors and DOI were not shown there. The SANO design and its 2-year results (Lancet Oncol 2025) are already in this tab.
+
+### SANO: 5-year results
+
+| Item | Detail |
+|---|---|
+| Design | Stepped-wedge, cluster-randomised (by hospital), non-inferiority, 12 Dutch hospitals; powered on 2-year survival, so 5-year analyses are secondary |
+| Patients | Clinical complete response after neoadjuvant CROSS chemoradiotherapy: 198 active surveillance, 111 standard surgery |
+| Follow-up | Median 76 months |
+| Overall survival at 5 years | 50% surveillance against 54% surgery, HR 1.17 (0.77 to 1.77), p=0.46 |
+| Disease-free survival | HR 1.39 (0.94 to 2.06), p=0.10 |
+| Distant spread | 46% against 29%, subdistribution HR 2.04 (1.25 to 3.34), p<0.01 |
+| Oesophageal cancer deaths (exploratory) | 40% against 30% |
+| Deaths not from cancer (exploratory) | 10% against 15% |
+| Fate of the surveillance arm | 51% had locoregional regrowth (about half of these later developed distant spread after oesophagectomy); 11% had distant spread within 6 months of chemoradiotherapy; 32% kept a sustained complete response. In total 43% never had an oesophagectomy |
+| Delayed surgery | Complications and 30- and 90-day mortality similar to immediate surgery |
+
+!fig f48_sano5 | SANO at five years: overall survival and distant spread with active surveillance against standard surgery after a clinical complete response (ESMO 2026, LBA78, as reported by OncLive). Drawn for these notes.
+
+### The decision model (JAMA Surgery 2026)
+
+A Markov model built from SANO and published data, with a base case of a fit 60-year-old man with cT3 N1 disease and a clinical complete response:
+
+- Over 5 years, surgery gave 1.74 against 1.34 quality-adjusted life years (gain of 0.40, about 4.8 months in full health) and 3.11 against 2.41 life years.
+- Over 2 years, surveillance came out ahead by about 15 quality-adjusted days, which matches SANO.
+- Surveillance was favoured only if the risk of recurrence was below 43%, if more than 94% of recurrences were local and resectable, or if the quality-of-life cost of oesophagectomy was large.
+
+### What it changes
+
+- At 5 years there is no significant survival difference, but distant spread is clearly higher with surveillance. The investigators say surveillance "should be an option for patients". The model favours surgery for fit patients over the long term.
+- Viva answer: active surveillance is an option for a patient with a clinical complete response after CROSS who understands that the risk of distant spread is higher. Oesophagectomy remains the standard for fit patients who want the best long-term survival. Surveillance suits patients at high surgical risk or those who put a high value on avoiding oesophagectomy.
+- Caveats: the 5-year analyses are secondary and partly post hoc. The surveillance arm had more PET-CT scans, which may have found more metastases. The non-inferiority margin was not stated in the report.
+- Next: SANO-3 (nivolumab during surveillance, results expected December 2026) and TNT-OES-2 (FLOT plus CROSS, to increase the number eligible for surveillance).
