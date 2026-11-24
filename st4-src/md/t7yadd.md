@@ -265,3 +265,108 @@ Added 21 November 2026 from Shargall Y, Wiercioch W, Brunelli A, et al. Joint 20
 | Associated factors | Epidural analgesia linked to less VTE; VTE patients stayed longer (25 vs 8 days) |
 
 - The point for a viva: by Caprini almost every lung cancer resection is high risk, so the guideline's extended-prophylaxis suggestion would apply to nearly all patients, yet in this unit prophylaxis stopped at a median of 6 days. The median time to VTE (17.5 days) was well beyond the median stay of patients without VTE (8 days). Bleeding was not recorded in this series.
+
+## Best evidence topics: chest drains after lung resection
+
+Added 24 November 2026 from four best evidence topics (BETs): Dawson AG, Hosmane S. Should you place one or two chest drains in patients undergoing lobectomy? Interact CardioVasc Thorac Surg 2010;11:178–181, doi:10.1510/icvts.2010.235853 (full text read, author copy PDF); Sanni A, Critchley A (search checked by Dunning J). Should chest drains be put on suction or not following pulmonary lobectomy? BestBETs, Freeman Hospital, 12 April 2006, https://www.bestbets.org/?p=4532 (full text read; the page does not say whether it was also printed in ICVTS); The safe volume threshold for chest drain removal following pulmonary resection. Interact CardioVasc Thorac Surg 2017, doi:10.1093/icvts/ivx161 (abstract only; authors not seen). Supporting trials and meta-analyses, each read as noted: Coughlin SM et al., Can J Surg 2012;55:264–270, doi:10.1503/cjs.001411 (full text); Wang H et al., J Cardiothorac Surg 2019;14:13, doi:10.1186/s13019-019-0842-x (full text); McGuire AL et al., J Thorac Cardiovasc Surg 2015;150:1243–1249, doi:10.1016/j.jtcvs.2015.08.051 (abstract only); De Waele M et al., J Thorac Dis 2017;9:1598–1606, doi:10.21037/jtd.2017.05.78 (full text); Li X et al., Eur J Cardiothorac Surg 2024;65:ezae097, doi:10.1093/ejcts/ezae097 (full text). All read through a web extraction tool. The recommendations themselves (one drain, no routine suction, digital systems, removal at up to 450 mL a day) are already in this tab under ERAS/ESTS 2019; this section adds the evidence under them.
+
+### How a BET works (for the viva)
+
+A BET asks a three-part question (patient group, intervention against comparator, outcome), searches Medline by a fixed protocol, tabulates the best papers with their level of evidence, and ends with a clinical bottom line. It is a structured search and appraisal, not a meta-analysis: no pooling and no formal risk-of-bias scoring.
+
+### One or two drains after lobectomy (Dawson and Hosmane 2010)
+
+Question: in lobectomy patients, is two drains better than one for pain, cost and drainage? 243 papers found; 6 chosen (three RCTs, one cohort, two single-drain series).
+
+| Study | Design, n | Finding (one drain against two) |
+|---|---|---|
+| Alex 2003 | Cohort, 120 | Maximum pain score 1.02 against 1.4 (P=0.02); stay, drain time and volume the same; about $55 saved per patient |
+| Gomez-Caro 2006 | RCT, 119 | Non-standard analgesia 1.6% against 10.1% (P=0.0003); stay, drain time and volume the same |
+| Pawelczyk 2007 | RCT, 187 | Opioid days 4.8 against 5.6 (P=0.0001); NSAID days 6.8 against 7.7 (P=0.002); stay 7.6 against 9.0 days (P=0.001) |
+| Okur 2009 | RCT, 100 | Early pain 4.28 against 5.10 (P=0.014); late pain 1.48 against 2.00 (P=0.01); less drainage 600 against 896 mL (P<0.001) |
+| Icard 2006, Kejriwal 2005 | Single-drain series, 100 and 37 | Median drain time 5 days; mean 4.3 days with one 19 F drain |
+
+Bottom line: two drains are not better, may hurt more and cost more. No study showed a difference in drain duration, re-drainage or stay that favoured two drains.
+
+!fig f44_one_two_drains | One against two drains after lobectomy in the largest RCT of the topic: shorter opioid and NSAID use and shorter stay with one drain. Drawn for these notes from Dawson and Hosmane, ICVTS 2010, table of best evidence papers (Pawelczyk 2007).
+
+### Suction or water seal (Sanni and Critchley 2006, BestBETs)
+
+Question: after pulmonary resection, does suction on the drain reduce prolonged air leak? 391 abstracts; 6 papers tabulated (five RCTs, one cohort).
+
+| Study | Design, n | Prolonged air leak: water seal against suction |
+|---|---|---|
+| Cerfolio 2001 | RCT, 33 with a leak on day 2 (of 140) | Over 3 days: 33% against 93% (P=0.001); 13 of 14 leaks on suction stopped once switched to water seal |
+| Ayed 2003 | RCT, 100 (VATS for primary pneumothorax) | Over 5 days: 2% against 14% (P=0.03); drain time 2.7 against 3.8 days and stay 3.7 against 4.8 days (both P=0.004) |
+| Marshall 2002 | RCT, 68 | Leak duration 1.5 against 3.3 days (P=0.05) |
+| Alphonso 2005 | RCT, 239; the only trial randomised straight after surgery | Over 6 days: 10.1% (no suction) against 7.8% (P=0.62) |
+| Brunelli 2004 | RCT, 145 with a leak on day 1 | Over 7 days: 27.8% against 30.1% (P=0.8); complications 31.9% against 17.8% (P=0.056) |
+| Antanavicius 2005 | Retrospective cohort, 109 | Drain time 3.2 against 4.5 days (P<0.007) |
+
+Bottom line: no study found that suction reduced air leak; four favoured water seal and two found no difference. Exceptions: a large air leak, or a large pneumothorax on the film.
+
+!fig f44_suction_bet | Prolonged air leak on water seal against suction in the four trials that reported it as a rate; definitions run from over 3 to over 7 days. Drawn for these notes from the BestBETs topic by Sanni and Critchley, 2006.
+
+The later meta-analysis of seven RCTs (Coughlin 2012) agreed for air leak but added one benefit of suction: fewer post-operative pneumothoraces.
+
+| Outcome (Coughlin 2012) | Result |
+|---|---|
+| Air leak duration | WMD 1.15 days in favour of water seal (95% CI −0.64 to 2.94), not significant |
+| Prolonged air leak (814 patients) | ARR 0.04 (−0.01 to 0.09), not significant |
+| Drain duration; stay | 0.96 days (−0.12 to 2.05); 2.19 days (−0.63 to 5.01), not significant |
+| Pneumothorax | More with water seal: ARR −0.14 (−0.21 to −0.07); number needed to treat with suction about 7 |
+
+### Fluid volume threshold for removal (ICVTS 2017, ivx161)
+
+Question: after pulmonary resection, is there a safe drain-output threshold for removal? 1,054 papers; 5 chosen (two RCTs, two cohorts and one other). Thresholds studied ran from 250 to 500 mL a day. With the higher threshold: no rise in re-intervention in either RCT, no significant rise in other complications in four studies, the same or shorter stay in four, and mortality of 0 to 0.01% in two cohorts. Bottom line: removal at 250 to 500 mL a day appears safe and may shorten stay. (Abstract only; the individual studies were not seen.)
+
+### Digital against analogue drainage (no BET found in this search; trials and a meta-analysis)
+
+| Source | Design | Result |
+|---|---|---|
+| Wang 2019 | Meta-analysis, 8 studies (5 RCTs), 1,487 patients | Prolonged air leak RR 0.54 (0.40 to 0.73, P<0.0001); drain duration SMD −0.35 (P=0.008); stay SMD −0.35 (P=0.007) |
+| McGuire 2015 | RCT, 172, stratified by air leak on day 1 | Fewer clamping trials with digital in both strata (P=0.01 each; with a leak 23% against 50%); drain time and stay not significantly different (abstract only) |
+| De Waele 2017 | RCT, 103 | Prolonged air leak 2 against 9 patients (P=0.025); total drainage 1,001 against 944 mL (P=0.467); stay 4.8 against 4.9 days; drain time 2.3 against 2.5 days (P=0.055) |
+
+Reading these together: digital systems give an objective leak reading and fewer clamping trials and probably fewer prolonged leaks; any gain in drain time or stay is small and inconsistent between trials.
+
+### Air-flow threshold for removal in prolonged air leak (Li 2024)
+
+Single-centre non-inferiority RCT, 94 patients with an air leak beyond 5 days, digital drains. Clamping after 6 hours stable at 60 to 80 mL/min against 0 to 20 mL/min: drain reopening 6.5% (3/46) against 2.1% (1/48), difference 4.4% with upper 95% limit 12.6%, inside the 15% margin; stay 13.5 against 16.5 days (P=0.017); drain time 10 against 12 days (P=0.007). Small and short follow-up; the authors ask for multicentre confirmation.
+
+### Viva lines
+
+- "One drain, on water seal, out when serous output is below about 450 mL a day and the leak has stopped" rests on RCTs for one drain and no suction, and on a BET plus RCTs for the volume threshold.
+- Suction has one supported use: a pneumothorax, or a leak too big for water seal to keep the lung up.
+- Digital drains: quote the meta-analysis (prolonged air leak roughly halved) and the caveat that stay benefits are inconsistent.
+
+## Best evidence topics: paravertebral block and prophylactic minitracheostomy
+
+Added 24 November 2026 from Scarci M, Joshi A, Attia R. In patients undergoing thoracic surgery is paravertebral block as effective as epidural analgesia for pain management? Interact CardioVasc Thorac Surg 2010;10:92–96, doi:10.1510/icvts.2009.221127 (online full text read through a web extraction tool), and Abdelaziz M et al. Is prophylactic minitracheostomy beneficial in high-risk patients undergoing thoracotomy and lung resection? Interact CardioVasc Thorac Surg 2011;12:615–618, doi:10.1510/icvts.2010.255588 (abstract only, read on an index page; the first author's name comes from a published letter in reply, Cafarotti S et al., ICVTS 2011;12:618, which was read). The tab already says paravertebral block equals epidural (ERAS/ESTS, PROSPECT); this adds the numbers.
+
+### Paravertebral block against epidural (Scarci 2010)
+
+Question: in thoracic surgery, is paravertebral block (PVB) as effective as epidural for pain? 184 papers; 7 chosen.
+
+| Study | Design, n | Finding |
+|---|---|---|
+| Davies 2006 | Meta-analysis, 10 trials, 520 | Pain the same at 4–8, 24 and 48 h; with PVB fewer pulmonary complications (OR 0.36), less urinary retention (OR 0.23), less nausea (OR 0.47), less hypotension and fewer failed blocks |
+| Detterbeck 2005 | Systematic review, 17 trials, 619 | Pain as good or better with PVB; FEV1 better kept in all but one study; epidural side effects: retention 42%, nausea 22%, itch 22%, hypotension 3% |
+| Richardson 1999 | RCT, 100 | Pain lower with PVB at rest (P=0.02) and on coughing (P=0.0001); peak flow kept at 0.73 against 0.54 of baseline (P<0.004); stay the same |
+| Kaiser 1998 | RCT, 30 | FVC 46.8% against 39.3%, FEV1 48.4% against 35.9% of baseline (both P<0.05) |
+| Casati 2006 | RCT, 42 | Pain on coughing the same (P=0.29); clinically relevant hypotension 19% with epidural, none with PVB (P=0.04) |
+
+Bottom line: PVB is at least as effective as epidural, with fewer side effects and complications. Epidural failure or displacement was about 8%.
+
+### Prophylactic minitracheostomy (Abdelaziz 2011)
+
+Question: in high-risk patients (smoker, poor lung function, ischaemic heart disease, COPD, failed regional analgesia, previous stroke) having thoracotomy and lung resection, does a minitracheostomy placed at the end of the operation help? 115 papers; 4 chosen (three RCTs with 161 patients, one non-randomised study of 144).
+
+| Study | Finding |
+|---|---|
+| Bonde 2002, RCT, 102 (largest) | Less sputum retention and atelectasis; fewer pneumonias and toilet bronchoscopies, not significant |
+| Issa 1991, RCT | Less pneumonia |
+| Randell 1991, RCT | Less atelectasis and fewer toilet bronchoscopies |
+| Au 1989, non-randomised, 144 | Toilet bronchoscopy fell from 9% to 4% over four years as minitracheostomy use rose |
+
+No study showed a difference in mortality, ICU stay or hospital stay. Insertion complications ran from 5.6% to 57% across studies; of 227 patients, 1% had a life-threatening complication (the reply letter names haemorrhage, tube migration and oesophageal perforation) and there were no deaths. Bottom line: it reduces sputum retention, atelectasis and in some trials pneumonia, without proven effect on survival or stay. This matches the weak, low-evidence ERAS/ESTS recommendation already in Thoracic 17.

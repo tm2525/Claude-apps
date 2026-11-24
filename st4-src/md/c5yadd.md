@@ -443,3 +443,126 @@ No UK guideline on sternal precautions or on when exercise may start after stern
 - Numbers: refer before discharge or within 24 h; assess within 10 working days; start within 2 weeks of discharge; at least 8 weeks; exercise 2 to 3 times a week.
 - UK uptake about half of eligible patients; NHS England target 85%.
 - Sternal precautions are custom more than evidence; the move is toward pain-guided, both-arms-close-to-the-body activity.
+
+## Composite, sequential and extension arterial grafts: configurations and how they are built
+
+Added 24 November 2026 from (1) Buxton BF, Hayward PA. The art of arterial revascularization: total arterial revascularization in patients with triple vessel coronary artery disease. Ann Cardiothorac Surg 2013;2(4):543–551; doi:10.3978/j.issn.2225-319X.2013.07.14. (2) Raza S, Deo SV, Sabik JF 3rd. On-pump total arterial revascularization. Ann Cardiothorac Surg 2018;7(4):561–563; doi:10.21037/acs.2018.06.06. (3) Ramponi F, Seco M, Edelman JB, et al. Dual inflow, total-arterial, anaortic, off-pump coronary artery bypass grafting: how to do it. Ann Cardiothorac Surg 2018;7(4):552–560; doi:10.21037/acs.2018.06.17. All three read from the online full text (annalscts.com HTML) through a web extraction tool. (4) Song MH, Tokuda Y, Ito T. Revival of the side-to-side approach for distal coronary anastomosis. J Cardiothorac Surg 2007;2:2; doi:10.1186/1749-8090-2-2. Read from the online full text. A full step-by-step description of a hand-sewn end-to-side distal and an aortic proximal anastomosis (arteriotomy length, heel or toe first, needle direction, number of bites, punch size) was not found in an open written source. The CTSNet Step-by-Step proximal anastomosis piece (Chen et al., 2018, doi:10.25373/ctsnet.7416614) gives only its five stages in text: preparation, aortic hole, cutting the graft, parachuting, completion.
+
+### Vocabulary
+| Term | Meaning |
+|---|---|
+| Sequential (snake or jump) graft | One conduit supplies two or more targets: side-to-side at each intermediate target, then end-to-side at the last |
+| Composite Y graft | A free graft (radial or RITA) joined end-to-side on to an in situ ITA, which supplies inflow to both |
+| Composite T graft | The same idea with the free graft joined at right angles; commonly used on the left system |
+| Extension (I) graft | Oblique end-to-end join to lengthen a conduit, for example RITA to radial to reach right-sided targets |
+| Anaortic | No aortic clamp or proximal anastomosis; all inflow comes from the in situ ITAs |
+
+!fig f41_composite_configs | Y, T and sequential arterial grafts, with parallel and diamond side-to-side anastomoses. Drawn for these notes from Buxton and Hayward 2013, Raza et al. 2018 and Ramponi et al. 2018 (Ann Cardiothorac Surg); not to scale
+
+### Building them
+- **Order (Raza):** in a composite Y, make the graft-to-graft side-to-side join first, then the distal end-to-side anastomoses. Use 7-0 or 8-0 polypropylene; 8-0 for the gastroepiploic artery to the PDA.
+- **Side-to-side geometry:** parallel (longitudinal) joins are preferred to diamond (cross) joins. Raza argues this reduces the "seagull" deformity and obstruction in small ITAs. Song quotes flow modelling showing less low wall shear stress with parallel joins. Buxton keeps the oblique or diamond join for a conduit that is short. Ramponi runs lateral-wall targets parallel and inferior-wall targets perpendicular in the same graft.
+- **When sequential is not appropriate (Buxton):** a diagonal that does not lie next to the LAD. A long LITA loop can angulate and compromise the distal LAD anastomosis, so a short radial Y to the diagonal is more flexible.
+- **Extension:** cut both ends obliquely (bevelled) to offset the size mismatch and avoid purse-stringing. Ramponi sews RIMA to radial end-to-end with 7-0 polypropylene by the parachute method before the radial branches are clipped.
+- **Lie and length:** check graft lie before closing. Fix the graft to the epicardium at more than one point with 6-0. Take up excess length with an S loop rather than let it kink. Grafts slacken when the sternum is closed (Ramponi). Re-check flow after any pericardial closure, with the probe placed above the thymus.
+- **Routes:** the RITA should reach the LAD in a gentle curve above the aorta, crossing the midline over the innominate vein behind the thymic fat. Both ITAs enter the pericardium through a common slit, which helps at reoperation (Buxton). A wide left retrothymic tunnel stops the LITA kinking (Ramponi).
+
+### Distal anastomosis: what the written sources do give
+- **Off pump (Ramponi):** a silastic sling around the proximal artery, tightened only after an intracoronary shunt is in. Home-made silastic shunts are tied to a 5-0 silk tail held with a small clip. They prefer these to commercial shunts because a 7-0 polypropylene bite caught on the back wall can be pulled free. Then 7-0 polypropylene, parachuted.
+- **Side-to-side, as Song described it:** arteriotomy about 1.5 times the coronary diameter. First stitch at a point two-fifths of the way along the conduit opening, outside-in on the conduit. Matching point on the coronary, inside-out. Five stitches are parachuted before the conduit is lowered on to the artery, then the sewing runs round the heel and turns at the toe. Mean 6 minutes 17 seconds per anastomosis. All 186 grafts were patent on day-10 angiography.
+- **Flow acceptance (Ramponi, left-sided grafts, transit-time flow):** mean flow at least 15 mL/min, pulsatility index 3.0 or less, diastolic filling over 50%. Read these with the target size and the stenosis in mind. Song used flow over 10 mL/min, pulsatility index under 5 and diastolic dominance.
+
+### Choosing targets for arterial grafts (competitive flow)
+| Point | Source |
+|---|---|
+| Arterial grafts are at risk from competitive flow when the stenosis is under about 70% on the left, or under about 90% in a dominant right system. Lesser lesions may be better left alone or given vein | Buxton and Hayward |
+| An ITA to the right coronary only if the RCA is over 90% stenosed or occluded; the same caution applies to radial or gastroepiploic grafts | Raza |
+| ITA patency falls gradually as competitive flow rises, with no single threshold. ITAs beat vein at every degree of stenosis on the left | Raza |
+| Left main disease with two left grafts: balance them by using equivalent grafts (both ITAs in situ) or a Y from one inflow | Buxton and Hayward |
+| Composite Y grafts (Glineur study as quoted): enough flow for the whole left system, with even perfusion pressure in both branches | Raza |
+| Anaortic composite from one ITA: the worries are single inflow, possible steal, and lower distal LITA–LAD patency | Buxton and Hayward |
+
+### Configurations Buxton and Hayward use
+1. LITA in situ to the circumflex (single, sequential, or with a short radial Y). RITA to the LAD, with or without a radial Y to a diagonal. Radial to a right coronary branch.
+2. LITA to the LAD with a radial Y to a diagonal. RITA through the transverse sinus to a marginal, which is hard to see and hard to control at redo. Radial to the PDA.
+3. LITA to the LAD; radial to a marginal; RITA–radial extension to the right system, sequential to the PDA and posterolateral branch. An in situ RITA to the main RCA has poorer patency.
+4. Older patients: LITA to the LAD with radial grafts from both arms to the circumflex and right systems.
+
+Outcome figures quoted: LITA over 80% free of failure beyond 20 years. Tatoulis RITA against LITA patency was 96.5% against 94.5% to the LAD and 90.5% against 88.5% to the circumflex. Sternal complications rose from under 1% to about 3% in diabetic patients having extensive arterial grafting. Relative contraindications to bilateral ITA: BMI over 35, severe airways disease, diabetes, radiotherapy and immunosuppression; skeletonisation reduces some of this risk.
+
+## ICVTS best evidence topics: coronary surgery
+
+Added 24 November 2026 from seven best evidence topics (BETs) in Interactive CardioVascular and Thoracic Surgery (ICVTS), each cited in its row. Read from the journal's online full text (academic.oup.com). "Full" in the last column means the whole page including the clinical bottom line was read; "Part" means the abstract, three-part question, search and evidence table were read but the page was cut off before the bottom line section, so the conclusion given is the abstract's.
+
+A BET is a short structured review: a clinical scenario, a three-part question (patient group, intervention, outcome), a reported search, a table of the best papers, and a clinical bottom line. They are dated snapshots. Quote the year, and say what later trials did to the answer.
+
+### Conduits
+
+| Three-part question | Papers (found, best) | Bottom line and numbers | Citation, how read |
+|---|---|---|---|
+| In patients having CABG, is bilateral ITA grafting superior to single ITA grafting for long-term survival? | 214, 13 (none randomised; 9 propensity matched) | Observational evidence favours bilateral ITA and "is mounting"; no randomised evidence at the time. Lytle 2004 (1,152 matched pairs): survival 81% v 78% at 10 years, 67% v 58% at 15, 50% v 37% at 20. Kurlansky 2010 (2,197 pairs): 53.5% v 39.0% at 15 years. Grau 2012 (928 pairs): 79% v 61% at 15 years. Benefit not seen with ejection fraction under 30% (Galbut 2012), and fades with age: lost after 60 (Mohammadi 2008) or 70 (Kieser 2011) in two series, though Kinoshita 2012 found it in patients aged 70 and over. Diabetic series (Hirotani, Endo): no clear survival gain. | Smith T, Kloppenburg GTL, Morshuis WJ. ICVTS 2014;18(1):96-101. doi:10.1093/icvts/ivt423. Full (two fetches) |
+| In patients having CABG, does bilateral ITA grafting increase the risk of mediastinitis? | 140, 24 | Yes: 2.5 to 5 times the risk. Non-diabetics 1.3 to 4.7% with bilateral v 0.2 to 1.2% with single ITA. In diabetics the risk with pedicled bilateral harvest can exceed 10% in some series. Skeletonised bilateral harvest brings it to about 0.4 to 2.6%, close to single ITA. Peterson 2003, diabetics: 1.3% skeletonised v 11.1% pedicled (P=0.03). Kai 2007, insulin-dependent diabetics: 0.6% v 13.0%. Authors: skeletonise in diabetics; skeletonised bilateral ITA "can be safely applied in almost every patient". | Toumpoulis IK, Theakos N, Dunning J. ICVTS 2007;6(6):787-791. doi:10.1510/icvts.2007.164343. Full |
+| In elective CABG, does skeletonised ITA harvest decrease morbidity? | 106, 12 | Skeletonising adds about 3 cm of length and may increase flow and diameter. It is the technique of choice for diabetics having bilateral ITA (sternal infection falls from about 10% to about 2%). Cost: 15 to 20 minutes more per operation. No convincing outcome benefit for a single ITA. | Behranwala AA, Raja SG, Dunning J. ICVTS 2005;4(6):577-582. doi:10.1510/icvts.2005.118935. Full |
+| In CABG, does skeletonised or pedicled harvest of the left ITA give fewer postoperative complications? | 98, 11 (patency papers excluded) | Skeletonised harvest reduces sternal and pulmonary complications and postoperative pain. Saso 2010 meta-analysis (bilateral ITA, 3,663 patients): sternal wound infection odds ratio 0.41 (0.26 to 0.64), in diabetics 0.19 (0.10 to 0.34). Hu 2011 meta-analysis (5,184 patients): length +1.99 cm, flow +23 ml/min. Boodhwani 2006 within-patient trial: harvest 27 v 24 minutes, sternal perfusion 24% higher, less pain at 3 months. | Fouquet O, Tariel F, Desulauze P, Mével G. ICVTS 2015;20(5):663-668. doi:10.1093/icvts/ivv026. Full |
+
+!fig f43_bita_mediastinitis | Mediastinitis rates by conduit strategy, as ranges across the 24 papers summarised in Toumpoulis, Theakos and Dunning, ICVTS 2007 (my chart)
+
+### Acute coronary syndromes and antiplatelet drugs
+
+| Three-part question | Papers (found, best) | Bottom line and numbers | Citation, how read |
+|---|---|---|---|
+| In NSTEMI, what is the optimal timing of CABG for survival and complications? | 459, 7 (all retrospective, level 3) | Operate on stable patients more than 6 hours after the event. If troponin I is above 0.15 ng/ml, waiting until it falls below that lowers hospital mortality and major adverse events. Operating within 24 hours with troponin I above 0.72 ng/ml carries worse outcomes. Lee 2001 (21,382 non-transmural infarcts), hospital mortality by interval: under 6 hours 11.5%, 6 to 23 hours 6.2%, 1 to 7 days 3.5%, 8 to 14 days 2.5%, 15 days or more 2.5%. Parikh 2010 (2,647): under 48 hours v later, similar death, stroke and infarction; later surgery had longer stay. | Dayan V, Soca G, Parma G, Mila R. ICVTS 2013;17(1):140-142. doi:10.1093/icvts/ivt128. Full |
+| In acute myocardial infarction, is CABG superior to PCI for adverse outcomes? | 104, 6 | PCI has better short-term outcomes; CABG needs less repeat revascularisation; mid and long-term death is similar. ARTS subgroup (unstable angina, bare-metal stents): one-year survival free of repeat revascularisation 79.2% PCI v 96% CABG. ACUITY matched cohort: one-year unplanned revascularisation 16.5% v 3.8%; at one month CABG had more major bleeding and kidney injury. SHOCK (cardiogenic shock): 30-day survival 55.6% PCI v 57.4% CABG, with complete revascularisation in 23% v 87%. | Perrier S, Kindo M, Gerelli S, Mazzucotelli JP. ICVTS 2013;17(6):1015-1019. doi:10.1093/icvts/ivt381. Full |
+| In urgent CABG, can surgery be done safely early after recent clopidogrel without excessive bleeding? | 143, 14, plus guidelines | Clopidogrel within 5 to 7 days: 30 to 100% more chest drainage, more blood products, 2 to 5 times more re-exploration. Purkayastha 2006 meta-analysis (11 cohorts, 4,002 patients): re-exploration odds ratio 6.76, blood loss +323 ml, mortality unchanged (1.01). Against that, stopping it before revascularisation costs about 1% more myocardial infarction (from the clopidogrel trials). The guideline of the day advised stopping for 5 to 7 days where feasible. | Kunadian B, Thornley AR, Tanos M, Dunning J. ICVTS 2006;5(5):630-636. doi:10.1510/icvts.2006.140038. Part |
+
+### Using these in a viva
+
+- Bilateral ITA: the survival BET (2014) rests entirely on observational data and says so. Its own table shows where the signal is weakest: poor ventricles, older patients and diabetics. State that the answer depends on randomised data published since.
+- The diabetic bilateral ITA answer is the pair of mediastinitis and skeletonisation BETs: pedicled bilateral harvest in a diabetic is the high-risk combination; skeletonise, and the risk approaches that of a single ITA.
+- Timing after NSTEMI: the evidence is level 3 and confounded by who was operated on early. The BET itself flags these methodological limits; patients operated on within 6 hours were a selected group, so do not present the 11.5% as a pure effect of timing.
+- Clopidogrel: this BET predates the newer P2Y12 inhibitors; current stopping intervals are in the perioperative medication guideline section of Cardiac 10.
+
+## Coronary surgery evidence 2025 to 2026: NEWTON-CABG, FAVOR IV-QVAS, two STS registry analyses and the ESC/EACTS consensus on mechanical complications
+
+Added 24 November 2026 from (1) NEWTON-CABG CardioLink-5 Investigators. Evolocumab and saphenous vein graft disease after CABG. Lancet 2025 (ESC Congress 2025 Hot Line, 1 September 2025). Read from the ESC press release and the ACC trial summary; the paper was not opened. (2) FAVOR IV-QVAS, AHA Scientific Sessions November 2025. Read from the AHA meeting report only; journal not named. (3) Schwann T, et al. Multi-arterial CABG strategies, STS Adult Cardiac Surgery Database; and (4) Puskas J, et al. Off-pump against on-pump CABG by experienced surgeons, STS Adult Cardiac Surgery Database; both late-breaking abstracts at the STS Annual Meeting, New Orleans, 31 January 2026. Read from the STS press releases only; no hazard ratios were given. (5) Lorusso R, Matteucci M, Ronco D, et al. Ventricular free-wall rupture, ventricular pseudoaneurysm and papillary muscle rupture complicating acute myocardial infarction: ESC/EACTS clinical consensus statement. Eur J Cardiothorac Surg 2026;68(5):ezag157. Only the CTSNet summary could be read; the full text was not accessible.
+
+TACSI, TOP-CABG, DACAB one-year, ROMA, RAPCO and ART are already in this tab. None of the items below is.
+
+### NEWTON-CABG CardioLink-5: does lowering LDL further protect vein grafts?
+
+| Item | Detail |
+|---|---|
+| Design | Investigator-initiated, double-blind, placebo-controlled; 23 sites in Canada, USA, Australia and Hungary; funded by Amgen Canada |
+| Patients | 782 after CABG with at least two vein grafts, on moderate- or high-intensity statin; median age 66; 15% women; median LDL 1.9 mmol/L |
+| Intervention | Evolocumab 140 mg every 2 weeks or placebo, randomised 3 to 21 days after surgery |
+| Primary end point | Vein graft disease (at least 50% stenosis or occlusion) at 24 months, by CT coronary angiography or clinically indicated angiography |
+| Result | 21.7% against 19.7% of grafts (difference 2.0%, −3.1 to 7.1, p=0.44) despite LDL falling 52% against 4% |
+| Occlusion | Totally occluded grafts 17% against 16%; patients with any occluded graft 30% against 28% |
+
+What it changes: early vein graft disease was not reduced by extra LDL lowering, which points to technical and thrombotic causes (my reading, not the trial's conclusion); the conduit-handling consensus and antiplatelet trials earlier in this tab address those. Statins after CABG remain standard; adding a PCSK9 inhibitor for graft patency is not supported.
+
+### FAVOR IV-QVAS: physiology-guided grafting at valve surgery
+
+| Item | Detail |
+|---|---|
+| Design | Investigator-initiated, triple-blind, randomised 1:1; 12 Chinese sites, 2019 to 2024 |
+| Patients | 793 having valve surgery with coronary disease |
+| Arms | Graft only lesions with angiography-derived FFR 0.80 or less, against grafting every stenosis of 50% or more |
+| Primary end point (30 days) | Death, MI, stroke, unplanned revascularisation or new dialysis: 7.8% against 13.4% (RR 0.58, p=0.01) |
+| Later | At mean 30 months, death, MI, stroke, unplanned revascularisation or admission for unstable angina or heart failure 20.7% against 26.8% (HR 0.74, p=0.04) |
+| Grafts | Fewer grafts in the physiology-guided arm |
+
+What it changes: in valve patients with moderate coronary lesions, grafting by physiology rather than by eye means fewer grafts and fewer early complications. It does not test isolated CABG.
+
+### Two STS database analyses (STS 2026): registry evidence, not randomised
+
+| Question | Population | Findings |
+|---|---|---|
+| Bilateral IMA (BITA) or single IMA plus radial (SITA+RA)? | Over 172,000 multi-arterial CABG patients, 2008 to 2023, propensity matched, survival to 15 years from the National Death Index | 15-year survival equivalent overall. BITA better under age 60; SITA+RA better at 70 or older. SITA+RA ahead in years 0 to 5, BITA trending ahead after year 10. A third arterial graft added survival with either strategy. Multi-arterial use in the USA rose from about 9% to over 16%, mainly SITA+RA |
+| Off-pump or on-pump in experienced hands? | Over 184,000 matched pairs of non-emergency isolated CABG, surgeons meeting volume and experience criteria | Off-pump: lower operative mortality, stroke, AF, renal failure, reoperation, prolonged ventilation and transfusion; more incomplete revascularisation and slightly fewer grafts; more multiple arterial grafting. Early survival advantage faded by 5 years; no long-term difference in multivessel disease |
+
+Viva use: age guides the second arterial conduit (BITA for the young, radial for the older patient); off-pump is a specialist technique whose short-term benefits depend on the operator.
+
+### ESC/EACTS 2026 consensus on free-wall rupture, pseudoaneurysm and papillary muscle rupture
+
+Published in Eur J Cardiothorac Surg 2026;68(5):ezag157 (Lorusso and 34 co-authors from ESC associations and EACTS). From the summary only: these complications now occur in under 1% of infarcts because of prompt reperfusion but remain lethal; transcatheter options now exist for high-risk patients; the document stresses the risk of recurrence, the unresolved role of concomitant revascularisation, the place of mechanical circulatory support, and Heart Team management including palliative care. The individual recommendations could not be read here; they should be added when the full text is opened.

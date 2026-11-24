@@ -309,6 +309,164 @@ No recommendation on Q8 and Q9 because the trials were unblinded, imprecise and 
 ### Research priorities set by the panel
 Real-world data on conservative and ambulatory care; trials of aspiration in SSP; who among PSP patients is at highest risk of PAL and recurrence; trials of early surgery in SSP; standard definitions of PAL and its resolution; a powered blood patch trial; valve and suction trials; multicentre trials of surgical pleurectomy against chemical pleurodesis, and of surgically against medically delivered pleurodesis.
 
+## Chest drain insertion: the triangle of safety, technique, complications and removal
+
+Added 24 November 2026 from: BTS Pleural Disease Guideline Group. Pleural procedures and thoracic ultrasound: British Thoracic Society pleural disease guideline 2010. Thorax 2010;65(Suppl 2), https://thorax.bmj.com/content/65/Suppl_2/i61.long (online full text at thorax.bmj.com read through an extraction tool, chest drain sections; figure legends not shown); and Asciak R, et al. British Thoracic Society Clinical Statement on pleural procedures. Thorax 2023 (PubMed 37433579; https://brit-thoracic.org.uk/document-library/clinical-statements/pleural-procedures/bts-clinical-statement-on-pleural-procedures) (full statement on the BTS website read through an extraction tool in two passes to the end, with the separate Appendices 1 to 4 page; the step-by-step insertion appendix was not on the pages read). The 2023 statement updates the 2010 guideline; where they differ it is said below.
+
+### The triangle of safety
+- **Borders (BTS 2010):** the lateral edge of latissimus dorsi, the lateral border of pectoralis major, and a line at the horizontal level of the fifth intercostal space. The guideline's wording names these three; it does not mention the nipple or an apex in the axilla.
+- **Why there:** it keeps away from the internal mammary artery and avoids muscle, breast tissue and an unsightly scar.
+- **Above the rib:** the needle goes in just above a rib to miss the neurovascular bundle in the groove under the rib above.
+- **Avoid the posterior approach (BTS 2023):** near the spine the bundle may not be covered by the lower flange of the rib, so a lateral or anterior site is safer. Ultrasound does not show the intercostal vessels, so it does not remove this risk.
+- **Second space, mid-clavicular line:** sometimes used for an apical pneumothorax but not recommended routinely: uncomfortable and a more visible scar. A loculated apical collection after thoracotomy may need a posterior (suprascapular) apical tube placed under imaging or by a thoracic surgeon.
+- **Position:** supine and slightly rotated with the arm behind the head or on the hip; lateral decubitus; or sitting forward over a table on a pillow.
+
+!fig f42_safe_triangle | The BTS triangle of safety on the lateral chest wall (lateral border of pectoralis major, lateral edge of latissimus dorsi, horizontal level of the fifth space) and the rule to pass just above the lower rib of the space. Drawn for these notes from BTS 2010 and the BTS 2023 clinical statement; schematic
+
+### Before insertion
+| Point | BTS guidance |
+|---|---|
+| Indications listed (2023, Box 4) | Pneumothorax that has failed other treatment; drainage of large benign or malignant effusions; symptomatic effusion on a ventilator; talc pleurodesis; pleural infection; traumatic haemothorax or pneumothorax; after thoracic, oesophageal or cardiac surgery or thoracoscopy |
+| Consent | Written except in emergency; record common and serious risks and the chance of failure; recheck immediately before (2010, 2023) |
+| Confirm side and site | Identity, clinical signs, recent image (2010, 2023) |
+| Imaging | Image guidance strongly recommended for all drains for fluid [B] (2010). Ultrasound mandatory before procedures for fluid, generally not needed for pneumothorax (2023). CT for malposition [C] (2010) |
+| Aspirate first | Aspirate air or fluid through the anaesthetic needle; if nothing comes back, stop and reassess (good practice, 2010; repeated 2023) |
+| Asepsis | Gown, drapes, sterile gloves and skin preparation, away from general ward activity [C] (2010) |
+| Antibiotic prophylaxis | Not for non-trauma patients (good practice); consider in trauma, especially penetrating [A] (2010) |
+| Analgesia and sedation | Prescribe analgesia for every patient with a drain; any sedation follows Academy of Medical Royal Colleges guidance with continuous oximetry and reversal agents to hand (2010) |
+| Operator | Adequately trained, trainees supervised and procedures logged (2023) |
+
+### Anticoagulants and antiplatelets (2023)
+| Drug | Before a drain |
+|---|---|
+| Warfarin | Stop 5 days before; INR 1.5 or less |
+| DOAC | Stop 24 to 48 hours before; restart 1 day after a low-risk procedure, 2 to 3 days after a high-risk one |
+| Clopidogrel, prasugrel | Stop 5 days before |
+| Ticagrelor | Stop 7 days before |
+| Aspirin, prophylactic heparin | Continue |
+| Clotting screen | Only with a history of coagulopathy or anticoagulation. No platelet threshold is given |
+
+### Local anaesthetic
+| Source | Lidocaine dose |
+|---|---|
+| BTS 2010 | 1% lidocaine to skin, periosteum and pleura; up to 3 mg/kg, up to 5 mg/kg with adrenaline |
+| BTS 2023 | Up to 3 mg/kg (maximum 250 mg, 25 mL of 1%); up to 4.5 mg/kg (maximum 300 mg) used without more side effects; with 1:200,000 adrenaline up to 7 mg/kg (maximum 500 mg, 50 mL of 1%). Prefer 1% to 2% |
+
+### Technique
+**General rules (2010):** never use substantial force; advance the dilator no more than 1 cm beyond the depth at which the pleura was entered; never use a trocar [C]; blunt dissection for trauma and large-bore drains [C]. 2023 adds guards on Seldinger dilators to limit the length of sharp dilator that can enter.
+
+**Seldinger (small bore, usual for 14F or less):**
+1. Needle into the pleural space; aspirate; note the depth.
+2. Guidewire through the needle; remove the needle.
+3. Small skin incision.
+4. Dilate over the wire with a gentle twist, no force, to the depth limit; serial dilators if needed.
+5. Drain over the wire, upwards for air, towards the fluid for fluid; last side hole about 5 to 10 cm inside, not to the hilt.
+6. Remove the wire, stopper, secure and connect.
+
+**Blunt dissection (large bore, mainly over 20F):**
+1. Incision just above and parallel to the rib, a little larger than finger and tube.
+2. Separate the muscle fibres with a clamp.
+3. For drains over 24F explore the track with a finger to check for underlying organs; essential after trauma.
+4. Mattress or linear closure suture placed at insertion; not a purse-string. Small tubes usually need no closing suture.
+
+**Securing:** stout non-absorbable stitch (for example 0 or 1-0 silk) through skin and subcutaneous tissue, even with a commercial dressing; transparent dressing; omental tag of tape against kinking (2010). Every drain has a holding suture; record the sutures, the length at the skin and the fluid colour (2023).
+
+### Drain size (2023)
+| Situation | Size |
+|---|---|
+| Most indications, including empyema | Small bore, under 14F (1F = 1/3 mm, so 12F is 4 mm outer diameter) |
+| Talc slurry | At least 12F, probably about 18F, as small drains block |
+| After thoracotomy | 28 to 32F (consensus of four thoracic surgical societies); over 32F unlikely to be needed |
+| Unstable trauma, ventilated pneumothorax | Larger drain; in stable traumatic pneumothorax 14F was as effective as 28F |
+| After local anaesthetic thoracoscopy | Typically 16 to 24F |
+
+### Drainage, suction and clamping
+- Underwater seal: tube about 3 cm under water; bottle upright and below the patient (2010).
+- Suction: no evidence for or against routine use; if used, low pressure and high volume (10 to 20 cmH2O on an underwater seal; a Vernon-Thompson type pump, not a Roberts-type low-volume high-pressure pump) (2010). Avoid early suction and do not use it routinely at the start of pneumothorax drainage (2023).
+- **Never clamp a bubbling drain** [C] (2010).
+- **Effusion: no more than 1.5 L in the first hour**, then slowly, to limit re-expansion pulmonary oedema [C] (2010). Clamp at once for repeated coughing or chest pain; write the intended drainage rate in the notes and handover (2023).
+- Observations immediately, at 15 minutes, every 30 minutes for an hour, then 4-hourly; chest film within a few hours; saline flushes 30 mL every 6 to 8 hours for small drains (2023).
+
+### Complications (BTS 2023 Appendix 2, consent estimates)
+| Complication | Rate |
+|---|---|
+| Overall | 8 to 20% |
+| Pain at insertion / later | 8% / about 16% |
+| Malposition | about 1% small bore, 6% large bore |
+| Symptomatic hypotension | 2% |
+| Iatrogenic haemothorax | under 1% (0.1 to 1.3% in studies) |
+| Organ puncture | under 1% (0 to 0.6%) |
+| Blockage | about 8% |
+| Displacement | 5% (1.3 to 9.2%) |
+| Surgical emphysema | about 5% |
+| Skin infection | 1% |
+| Re-expansion oedema | under 1% clinically (radiological in up to a third of pneumothorax drains) |
+| Pleural infection | under 1% |
+| Death | under 1% (0.1% in the 2015 BTS audit) |
+
+Many serious organ injuries happened with the trocar technique. The extraction of the appendix table had some ambiguous column alignment; check figures against the BTS PDF before quoting them in a consent discussion.
+
+### Malposition and the non-working drain
+- Loss of swing usually means blockage: flush, check for kinks (2023).
+- Do not reposition a working drain because the film looks imperfect; withdraw one that is too far in; never push in one that has come out, and never re-site through the old hole (2010, 2023).
+
+### Removal
+- When drainage is under 200 mL a day, the pneumothorax has resolved, or the drain has stopped working; for pneumothorax only after bubbling has stopped and the film shows the lung up (2010).
+- A clamp trial is not routine; in one study it showed a small leak in 2 of 214 (2023).
+- Timing with inspiration or expiration did not change residual pneumothorax provided a Valsalva was used; steady pull, assistant ties the closure suture, then occlude (2010, 2023).
+
+## Best evidence topics: pleurodesis method for pneumothorax and VATS decortication for empyema
+
+Added 24 November 2026 from Sepehripour AH, Nasir A, Shah R. Does mechanical pleurodesis result in better outcomes than chemical pleurodesis for recurrent primary spontaneous pneumothorax? Interact CardioVasc Thorac Surg 2012;14:307–311, doi:10.1093/icvts/ivr094 (online full text read twice, journal page and PMC); Chambers A, Routledge T, Dunning J, Scarci M. Is video-assisted thoracoscopic surgical decortication superior to open surgery in the management of adults with primary empyema? Interact CardioVasc Thorac Surg, August 2010, PMID 20439299 (abstract only; volume and pages not seen); and, for support, Pan H et al. A meta-analysis of video-assisted thoracoscopic decortication versus open thoracotomy decortication for patients with empyema. J Thorac Dis 2017;9:2006–2014, doi:10.21037/jtd.2017.06.109 (full text). All read through a web extraction tool. BTS 2023 and the ERS/ESTS pneumothorax statement already in this tab leave the choice of surgical pleurodesis open; these topics give the comparative numbers.
+
+### Mechanical against chemical pleurodesis (Sepehripour 2012)
+
+Question: in surgery for recurrent primary spontaneous pneumothorax, does mechanical pleurodesis rather than chemical pleurodesis give the best freedom from recurrence? 542 papers; 6 chosen.
+
+| Study | Design, n | Comparison and result |
+|---|---|---|
+| Cardillo 2000 | Cohort, 432 | Talc 279 against pleurectomy 153: recurrence 1.79% against 9.15% (P=0.00018); no deaths |
+| Shaikhrezai 2011 (UK) | Case series, 480 patients, 550 VATS procedures over 17 years | Recurrence 1.4% after bullectomy plus abrasion, 0.4% after bullectomy plus talc; freedom from further surgery at 10 years 96.4% abrasion, 98.9% talc, 97.5% pleurectomy (P=0.22); no deaths; re-exploration for bleeding 0.4% |
+| Rena 2008 | RCT, 208 patients, 220 VATS | Abrasion 112 against pleurectomy 108: operating time 38 against 55 min (P=0.0001); bleeding and re-exploration 0.9% against 7.4% (P=0.036); less pain (P=0.001); recurrence 6.2% against 4.6% (P=0.821) |
+| Chang 2006 | Case series, 65 | Pleurectomy 0% against abrasion 8.6% recurrence (P=0.243); pleurectomy longer (103 against 78 min, P=0.001) |
+| Ayed 2000 | Cohort, 72 | Abrasion 4 recurrences against none after pleurectomy (P=0.05); abrasion shorter (50.7 against 61.8 min) |
+| Leo 2005 | Cohort, 10 | Ultrasound-confirmed symphysis 5/5 after pleurectomy against 1/5 after abrasion |
+
+Bottom line: mechanical and chemical pleurodesis give very similar results. The two largest comparisons showed less recurrence after talc, significant in one (Cardillo); the larger and more recent (Shaikhrezai) showed no difference in freedom from reoperation at 10 years. Between mechanical methods, abrasion is quicker with less bleeding, re-exploration and pain; pleurectomy has less recurrence. Apical bullectomy or wedge in three studies had recurrence of 0.4% to 6.2%.
+
+!fig f44_pleurodesis | Recurrence after talc against pleurectomy (Cardillo cohort), and recurrence and bleeding after abrasion against pleurectomy (Rena RCT). Drawn for these notes from Sepehripour, Nasir and Shah, ICVTS 2012, table of best evidence papers.
+
+Viva line: "Treat the bleb and get symphysis. Pleurectomy gives the lowest recurrence among mechanical methods at the price of more bleeding; abrasion is quicker; talc is at least as good on the cohort data, and the topic cites support for its safety in young patients."
+
+### VATS decortication for primary empyema (Chambers 2010)
+
+Question: in adults with primary empyema, is VATS decortication better than open decortication or chest drainage? 68 papers; 14 chosen (abstract only).
+
+| Stage or comparison | Result |
+|---|---|
+| Fibrinopurulent, VATS against chest tube (one study) | Success 91% against 44% (P<0.05); drain time 5.8 against 9.8 days (P=0.03); total stay 8.7 against 12.8 days (P=0.009) |
+| Early against late empyema (eight studies) | Conversion to open 0–3.5% early against 7.1–46% late; post-operative stay 5 against 8 days (P=0.001); with VATS less pain, atelectasis, prolonged air leak, sepsis and 30-day mortality (P from <0.0001 to 0.03) |
+| Chronic persistent empyema (five studies) | VATS resolved 88% with 1.3% mortality; conversion 10.5–17.1% |
+| VATS against open decortication (one study) | Less pain (P<0.0001), less air leak (P=0.004), shorter stay (P=0.020), quicker return to work (P<0.0001); re-operation 4.8% against 1% (P=0.09) |
+
+Bottom line: VATS decortication gives the same resolution as open decortication with less morbidity and a shorter stay; conversion rises steeply in late, organised disease. The abstract prints some figures ambiguously (a "62% and 11%" pair for tube thoracostomy, a mortality written as "4/123%"); these are left out.
+
+!fig f44_vats_empyema | Fibrinopurulent empyema: VATS against chest tube drainage for treatment success, chest tube time and hospital stay. Drawn for these notes from the abstract of Chambers et al., ICVTS 2010.
+
+Supporting meta-analysis (Pan 2017; five retrospective cohorts, 918 patients, 608 VATS and 310 open):
+
+| Outcome, VATS against open | Result |
+|---|---|
+| Operating time | 37 min shorter (P=0.003) |
+| Post-operative stay | 2.4 days shorter (P=0.0004) |
+| Prolonged air leak | 9.7% against 17.1%, RR 0.56 (P=0.03) |
+| Morbidity | 16.4% against 24.5%, RR 0.62 (P=0.007) |
+| Mortality | 4.1% against 6.2%, RR 0.47 (P=0.01) |
+| Relapse | 7.2% against 4.2%, RR 1.28 (P=0.68), no difference |
+| Conversion | 8.7% on average (0 to 11.3%) |
+
+All observational, so sicker patients probably went open; quote the direction, not the size, of the mortality difference.
+
 ## TACTIC: thoracoscopic poudrage with or without an indwelling catheter (Lancet Respir Med 2026)
 
 Added 24 November 2026 from Dipper A, Sundaralingam A, Hedley E, et al. Medical thoracoscopy with talc poudrage and indwelling pleural catheter insertion versus medical thoracoscopy with talc poudrage alone for patients with symptomatic malignant pleural effusion (TACTIC): a randomised, controlled phase 3 trial. Lancet Respir Med 2026;14(4):341-349, doi:10.1016/S2213-2600(25)00409-6. Abstract read via the University of Central Lancashire repository record; the full text was not read.

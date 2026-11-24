@@ -844,6 +844,80 @@ Added 21 November 2026 from (1) Fang D, Huang W, Li H. Four years follow-up of e
 - Lateral or posterolateral LV between circumflex and obtuse marginal; check thresholds and phrenic capture at high output.
 - Tunnel to the pectoral pocket; leave a small pleural drain.
 
+## Transaortic septal myectomy: where the incisions go
+
+Added 24 November 2026 from (1) Ralph-Edwards A, Vanderlaan RD, Bajona P. Transaortic septal myectomy: techniques and pitfalls. Ann Cardiothorac Surg 2017;6(4):410–415; doi:10.21037/acs.2017.07.08. Read from the online full text (annalscts.com HTML) through a web extraction tool. The landmark sentences were checked a second time and quoted back. (2) Hang D, Nguyen A, Schaff HV. Surgical treatment for hypertrophic cardiomyopathy: a historical perspective. Ann Cardiothorac Surg 2017;6(4):318–328; doi:10.21037/acs.2017.04.03. Read from the online full text the same way. This fills the gap noted in part 5 of the HOCM sections ("detailed surgical landmarks were not found").
+
+### Exposure (Ralph-Edwards, Toronto)
+- Preoperative echo and CMR give the septal thickness and the planned length of resection. Intraoperative TOE gives the length of the bulge, but is less reliable for thickness.
+- Single two-stage venous cannula; LV vent through the right superior pulmonary vein. Cool to 34°C; myocardial temperature 15°C.
+- Identify the right coronary before opening the aorta, because the ostia are often displaced upwards. Make a transverse aortotomy about 0.5 cm above the STJ, not crossing it, because closure across it distorts the valve. Mayo uses a lower hockey-stick incision closed in two layers.
+- A Ross retractor holds the right coronary cusp back, its lower edge 2 to 3 mm above the cusp hinge. Pressing on the RV with a sponge stick brings the distal septum into view (Mayo).
+
+### The incisions
+| Incision | Where |
+|---|---|
+| 1 (the main one) | 2 mm below the base of the right coronary cusp, 2 mm off the cusp's midline towards the membranous septum. Run it parallel to the outflow tract towards the apex. Depth usually 1 to 1.5 cm, leaving 8 to 10 mm of septum. Length 35 to 50 mm, guided by echo |
+| 2 | About 2 mm deep, 2 mm below the right cusp hinge, from the base of incision 1 across under the commissure |
+| 3 | Parallel to and 2 mm below the left cusp hinge, stopping 4 to 5 mm from the mitral annulus |
+| Deepen | Serial shallow cuts raise a flap, which forceps pull down. Finish by traction and cutting across the base of the specimen. Divide muscle bundles at the base under traction; trim the lateral edge by the mitral annulus with scissors. Do not cut papillary muscles or chords |
+| Extend | Carry the distal base 1 to 2 cm laterally under the membranous septum, narrowing towards the annulus. With mid-cavity obstruction, go at least to the head of the anteroseptal papillary muscle |
+
+Mayo (Hang et al.) describes the start as just to the right of the nadir of the right sinus, running up and then leftwards towards the anterior mitral leaflet and down past the endocardial scar towards the apex. The blade width serves as the depth guide, and 3 to 12 g of muscle is usually enough. Mayo stresses that the length of the resection matters more than its depth.
+
+!fig f41_myectomy_incisions | Transaortic myectomy seen through the aortotomy: start of incision 1 relative to the right coronary cusp, lateral limit at the mitral annulus, depth and length, and the areas that risk block and VSD. Drawn for these notes from Ralph-Edwards et al. and Hang et al., Ann Cardiothorac Surg 2017; not to scale
+
+### Is it enough?
+- The resection should extend at least 1 cm beyond the septal contact scar left by SAM. Feel the remaining septum with a finger: it should blend smoothly into the trabeculated cavity, and the papillary muscle bases and apex should be visible through the outflow tract.
+- Remove loose fragments with pledgets and irrigate the ventricle. The resection takes about 20 minutes on one dose of cardioplegia. Close the aorta with running monofilament.
+- After bypass, use TOE. Revise, where possible, if the gradient at rest or after an ectopic beat is over 20 mmHg, or if there is a VSD or significant residual turbulence. Close an iatrogenic VSD with a bovine pericardial patch. Mild central MR and septal perforator flow are common and settle.
+
+### Pitfalls
+| Error | Result |
+|---|---|
+| Incision 1 drifts towards the membranous septum, or starts too far right | Heart block (His bundle injury) |
+| Incision 1 not parallel to the outflow tract | A "corkscrew" outflow tract that does not relieve obstruction |
+| Resection flared under the right–left commissure | Septum too thin, and in the extreme a VSD into the RV outflow tract |
+| Stopping too early | Residual mid-ventricular obstruction. Traction lets you carry the resection further |
+| Retractor too hard on the cusp | Rarely, new AR |
+
+### After the operation
+- Keep AV synchrony and preload. Avoid inotropes and afterload reducers, because HCM ventricles are stiff and obstruct.
+- Aspirin and beta-blocker; beta-blockers also reduce AF.
+- New LBBB is common. A pacemaker was needed in 4 to 6% in Toronto's experience. Pre-existing RBBB makes complete block very likely, so these patients get a pacemaker by day 4 if needed.
+- Consider an ICD before discharge for extensive CMR fibrosis, syncope, or documented VT or VF.
+- Mayo: myectomy mortality under 1% in experienced centres, against 5.9% in a US national inpatient sample.
+
+## Temporary epicardial pacing wires: placement, checks and removal
+
+Added 24 November 2026 from (1) Richards C, Bartnik A, Jayakumar S, Harling L, Varzaly J, Edwards J. CTSNet Step-by-Step Series: Pacing wires. CTSNet, October 2018; doi:10.25373/ctsnet.7128545. Written text read in full; the video was not watched. (2) Life in the Fast Lane Critical Care Compendium: Temporary epicardial cardiac pacing (litfl.com; no author or date shown). This is an open educational page, read in full. It rests on Reade MC, Anaesthesia 2007;62:264–71 and 364–73, which were not opened. Permanent epicardial LV leads are covered in the section above.
+
+### Placement (CTSNet)
+| Point | Detail |
+|---|---|
+| Atrial wire | Right atrial appendage. Keep the bare part of the atrial wire off the RV, or both chambers are captured together |
+| Ventricular wire | Diaphragmatic surface of the RV |
+| Avoid | Visible arterioles and venules, and never straddle a bypass graft |
+| Securing | Pass the small needle partly through the myocardium and pull the bare part of the wire into the muscle. Cut off the needle. Lodge the wire firmly enough to stay but loosely enough to come out. Coiled wires give slack against movement |
+| Exit | Bring the large needle out through the body wall below the sternotomy, at the lower end of the pericardium, on as straight a path as possible so the wire does not tear on removal. By convention atrial wires exit to the right of the midline and ventricular wires to the left |
+| Unipolar or bipolar | Unipolar: the negative pole is on the epicardium and the positive in subcutaneous tissue. Bipolar: both poles on the heart, giving a lower threshold; better for dual-chamber pacing and may last longer (LITFL) |
+
+!fig f41_pacing_wires | Temporary epicardial wires: atrial on the RA appendage, ventricular on the diaphragmatic RV, exits below the sternotomy with atrial to the right and ventricular to the left. Drawn for these notes from the CTSNet Step-by-Step Series (Richards et al., 2018); schematic
+
+### Daily checks and settings (LITFL)
+- **Underlying rhythm:** turn the rate down, not the output, because there may be no underlying rhythm.
+- **Sensing threshold:** with the sensitivity value raised, the sense light stops and pacing becomes asynchronous. Lower it until the light flashes with each native beat. LITFL then says to set the sensitivity at half that threshold value.
+- **Capture threshold:** pace above the native rate and reduce the output until capture is lost. Set the output at twice the threshold.
+- Typical starting settings: output 10 mA in both chambers, rate 80/min, sensitivity 2 to 5 mV, AV delay 150 ms, PVARP 250 ms (or automatic).
+- **Wire life:** thresholds rise after about day 4. By day 5, pacing fails in over 60% of right atrial wires and over 80% of left atrial wires. Using the lowest output that captures helps the wires last longer.
+- Atrial wires can record an atrial electrogram, which separates atrial from junctional rhythms and shows the type of AV block.
+- **Safety:** handle wires with non-conductive gloves, in an electrically protected environment. Keep unused wires insulated, for example in a syringe barrel. Continuous ECG and a defibrillator with transcutaneous pacing must be at hand. An IABP triggered from the ECG can mistake pacing spikes for QRS complexes, so trigger it from the arterial pressure.
+
+### Removal and complications
+- Remove with gentle traction and let the heart's movement free the wire. If a wire will not come, cut it flush with the skin so it retracts. Observe for a few hours afterwards for tamponade (CTSNet).
+- Complications: tamponade and bleeding, infection, myocardial damage or perforation, disruption of a coronary anastomosis, and ventricular arrhythmia from microshock.
+- Which patients get wires varies: some units place ventricular wires in nearly everyone, others only after intraoperative rhythm problems (LITFL). Ramponi's off-pump arterial series (Coronary surgery tab) did not place them routinely.
+
 ## ESC 2026 heart failure guideline, part 1: defibrillators, resynchronisation, revascularisation and valves (class and level)
 
 Added 24 November 2026 from the ESC: 2026 ESC Guidelines for the management of heart failure (Task Force chairs Køber L, Adamo M). Eur Heart J 2026; doi:10.1093/eurheartj/ehag100. Read from the **official ESC educational slide set** for this guideline (escardio.org guideline page, slide-set download), which reproduces the recommendation tables. The journal full text and the pocket guideline could still not be opened, so the supporting text, trial citations and figures were not read. Each class and level below was read twice from the slide tables; wordings are paraphrased. This replaces the gaps in the section above ("what could be confirmed"), which had no class or level for these topics.

@@ -35,3 +35,42 @@ Added 21 November 2026 from: Jacobs ML, Jacobs JP, Thibault D, et al. Updating a
 - **Changes from PRAiS1**: 29 procedure categories became 49 specific procedures; 3 diagnosis categories became 29; one comorbidity flag became four; number of functioning ventricles became a univentricular indicator; parameters 38 to 36; the HLHS hybrid procedure added.
 - **Known weakness**: it under-predicts risk for the hybrid HLHS procedure; the authors suggest running it with and without hybrid cases.
 - Adults (16 and over) in the UK audit are risk-adjusted with the STAT score, not PRAiS2 (NCHDA 2022 report).
+
+## Aristotle score: components, levels and the comprehensive score
+
+Added 24 November 2026 from (1) Erek E, Yılmaz B, Kaya M, et al. Analysis of results according to the Aristotle scoring system in congenital heart surgery. Turk Gogus Kalp Dama 2014;22(3):509-16, doi:10.5606/tgkdc.dergisi.2014.9144 (open-access full text PDF, read through the extraction tool); (2) von Segesser LK. Aristotle scores in congenital heart surgery (editorial). Eur J Cardiothorac Surg 2004;25:909-10 (full text); (3) Sata S, Haun C, Weber T, et al. A morbidity score for congenital heart surgery based on observed complications. Eur J Cardiothorac Surg 2012;41:898-904, doi:10.1093/ejcts/ezr161 (full text to 100,000 of 116,000 characters); (4) Jacobs JP, Jacobs ML, Maruszewski B, et al. Initial application in the EACTS and STS Congenital Heart Surgery Databases of an empirically derived methodology of complexity adjustment. Eur J Cardiothorac Surg 2012;42:775-80, doi:10.1093/ejcts/ezs026 (full text to 100,000 of 108,000 characters). The original Lacour-Gayet 2004 paper was not opened. The risk-adjustment section above says the Aristotle components were "not described in the sources read"; this fills that gap.
+
+### How it was built
+
+- Developed 1999 to 2003 by the Aristotle working group led by François Lacour-Gayet: delegates from 50 centres in 23 countries (von Segesser; Erek). Built on **expert opinion** ("subjective probability"), not observed outcomes, which is the main criticism and the reason STAT was later derived empirically (Jacobs 2012).
+- Used by the STS and EACTS congenital databases from 2002 (Jacobs 2012).
+
+### Aristotle Basic Complexity (ABC) score
+
+- A fixed score per **procedure**, range **1.5 to 15**: the sum of three components, each scored by the panel: **potential for mortality, potential for morbidity, and technical difficulty** (Erek). (Morbidity is capped at 5 points, Sata; the morbidity component is estimated indirectly from ICU stay.)
+- Examples: ASD repair 3.0 to 3.4; VSD patch 6.2; arterial switch 10 to 10.7; Norwood 14.5 (Erek; Sata).
+
+### Aristotle Comprehensive Complexity (ACC) score
+
+- ABC plus **patient** factors, range 1.5 to **25** (Erek):
+  - procedure-dependent factors, 0 to 5 points: anatomical variants and associated procedures;
+  - procedure-independent factors, 0 to 5 points: general state, clinical parameters, extracardiac anomalies, preoperative ventilation, renal failure.
+
+### Levels
+
+| Level | Score | Applies to |
+|---|---|---|
+| 1 | 1.5 to 5.9 | ABC and ACC |
+| 2 | 6.0 to 7.9 | ABC and ACC |
+| 3 | 8.0 to 9.9 | ABC and ACC |
+| 4 | 10.0 to 15.0 | ABC and ACC |
+| 5 | 15.1 to 20 | ACC only |
+| 6 | 20.1 to 25 | ACC only |
+
+Mortality rose with ACC level in Erek's single-surgeon series of 167 operations (2012, overall hospital mortality 12.5%): level 1 3.7%, level 2 4.5%, level 3 13.6%, level 4 18.8%, level 5 2 of 3, level 6 1 of 1. ACC correlated with mortality, morbidity (ICU stay 7 days or more) and difficulty (bypass over 120 minutes).
+
+### Performance
+
+- The scores exist partly so that a unit taking harder cases is credited for it (Jacobs 2012). The original Aristotle definition of performance (complexity combined with survival) is in Lacour-Gayet 2004, which was not opened. Sata proposed: performance = Aristotle score × (1 − observed morbidity score / 5).
+- Against observed complications, ABC and ACC discriminated well in Sata's series (c-statistic 0.92 and 0.94) and the Aristotle morbidity estimate correlated with observed morbidity (r = 0.75 for operations done at least five times). Sata suggested the arterial switch is over-scored and the bidirectional cavopulmonary shunt under-scored.
+- The planned successor combines STAT mortality, a STAT morbidity score and technical difficulty (Jacobs 2012). In head-to-head testing STAT discriminates mortality better than ABC (section above).

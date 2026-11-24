@@ -156,3 +156,34 @@ Added 24 November 2026 from: the EJCTS "Guidelines, Recommendations, and Positio
 - No new BTS guideline on a thoracic surgical topic in 2025 or 2026. The pleural guideline (2023) remains the current one.
 - No IASLC guideline beyond TNM 9, which is already in Thoracic 16.
 - NICE: no new lung cancer guideline. The technology appraisals for perioperative drugs could not be listed because the NICE products page failed to load. Check NICE directly for tislelizumab and durvalumab in the perioperative setting.
+
+## Currency check, 24 November 2026: perioperative nivolumab (TA1127) and lung cancer screening across the UK
+
+Added 24 November 2026 from: NICE TA1127, Nivolumab with chemotherapy for neoadjuvant treatment then alone for adjuvant treatment of resectable non-small-cell lung cancer (4 February 2026), read from the guidance PDF through a summarising extract; Cancer Research UK, Lung cancer screening (health professional page, last reviewed 18 September 2024 but citing data to May 2026), read through a summarising extract; NHS England news, "Supermarket scans spotting thousands of cancers" (May 2026), read through a summarising extract. The programme design and results are already in Thoracic 1 ("The NHS Lung Cancer Screening Programme"); only new points are given here.
+
+### TA1127 is published
+
+The notes listed TA1127 as "pack only; not found" and noted that NG122 does not yet link it. It is published:
+
+| Item | TA1127 (4 February 2026) |
+|---|---|
+| Recommendation | Nivolumab with platinum chemotherapy before surgery, then nivolumab alone after, **can be used** (routine commissioning, with the company's commercial arrangement; funded within 30 days) |
+| Population | Adults with resectable NSCLC at high risk of recurrence: **4 cm or more, or node positive**; **no EGFR mutation or ALK rearrangement**. No PD-L1 threshold |
+| Choice between drugs (1.2) | Use the **least expensive** suitable option of **nivolumab, pembrolizumab (TA1017) or durvalumab (TA1030)**, after discussing them with the patient |
+| Evidence | Longer event-free survival than chemotherapy then placebo; no head-to-head trial with pembrolizumab, and indirect comparisons were "highly uncertain" (NICE does not name CheckMate 77T in the text read) |
+| Course | A full neoadjuvant course is 12 weeks and a full adjuvant course 1 year (section 2.3, costing) |
+
+So there are now three NICE-approved perioperative chemo-immunotherapy routes, and NICE asks for the least expensive suitable one.
+
+### Lung cancer screening: status by nation
+
+| Nation | Status (CRUK, data to May 2026) |
+|---|---|
+| England | National targeted programme (UK NSC recommendation 2022; rollout announced June 2023). More than half of the eligible population reached; more than 3.3 million invited, more than 800,000 scanned and 10,678 cancers found, over three quarters at stage 1 or 2 (NHS England, May 2026) |
+| Wales | Decision to roll out (June 2025) after the Welsh Lung Health Check pilot; Public Health Wales planning; first invitations expected **2028** |
+| Scotland | LUNGSCOT pilot ended August 2023; national implementation being planned, no date |
+| Northern Ireland | No programme; the LUNG SHOT project (Queen's University Belfast) is modelling one for Northern Ireland and the Republic of Ireland |
+
+Target date: the 2023 announcement gave **100% coverage by March 2030**; CRUK quotes the National Cancer Plan as **100% by December 2030**. Quote "by 2030" unless asked.
+
+More than a third of lung cancers in the most deprived areas of England have been found early since the programme began (NHS England, May 2026).

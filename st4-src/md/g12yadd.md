@@ -49,3 +49,74 @@ Added 21 November 2026 from: Azizova A, Onder O, Arslan S, Ardali S, Hazirolan T
 !fig f31_ivc_azygos | Interrupted IVC with azygos continuation compared with normal: the suprarenal IVC is missing, so infrarenal blood climbs a dilated azygos into the SVC, while the hepatic veins reach the RA through a short post-hepatic segment. My own schematic, drawn for these notes from Ghandour 2016; not to scale.
 
 !fig f31_ivc_cannulation | Practical points with azygos continuation: cannulation, never ligating the azygos, associations and the imaging trap. Drawn for these notes from Ghandour 2016.
+
+## TAPVC: primary sutureless repair, pooled evidence
+
+Added 24 November 2026 from Zhao L, Pan Z, Wu C, Shen L, Wu Y. Sutureless technique for primary total anomalous pulmonary venous connection repair: an updated meta-analysis. Front Cardiovasc Med 2022;9:890575, doi:10.3389/fcvm.2022.890575 (open-access full text, read through the extraction tool). The notes describe the sutureless technique as the choice for small veins and for reoperation; this adds the evidence for using it at the first operation.
+
+### What it is and why
+
+- A neo-left atrium is made by sewing the opened left atrial wall to the posterior pericardium around the opened pulmonary venous confluence, so no suture line lies on the vein walls themselves.
+- Rationale: avoids mechanical stimulus to the pulmonary veins and distortion of the suture line, both blamed for restenosis. First used for pulmonary vein stenosis after repair, now also used **prophylactically at primary repair**.
+- Main drawback: bleeding from the gap between pericardium and confluence into the posterior mediastinum (massive bleeding in one patient across the included studies).
+
+### The meta-analysis
+
+11 retrospective studies, 771 patients (315 sutureless, 456 conventional); no randomised trials.
+
+| Outcome | Sutureless, pooled incidence | Sutureless against conventional, odds ratio (95% CI) |
+|---|---|---|
+| Postoperative pulmonary vein obstruction | 3.3% | **0.16 (0.08 to 0.33)**, p<0.00001 |
+| Reoperation for obstruction | 1.8% | 0.25 (0.10 to 0.63), p=0.003 |
+| Early mortality | 3.2% | 0.40 (0.21 to 0.79), p=0.008 |
+| Late mortality | 2.5% | 0.63 (0.13 to 3.00), p=0.58 (no difference) |
+
+- Benefit held across subgroups (infracardiac or mixed types, preoperative obstruction) with no significant interaction; the effect looked larger in studies after 2016 (OR 0.06 against 0.35).
+- The authors suggest less benefit in supracardiac or cardiac TAPVC with unobstructed veins.
+- Limits: all retrospective; groups differed in type, age and weight; early mortality result depended on one study.
+
+## Kawashima operation: what it leaves out and why the hepatic veins matter
+
+Added 24 November 2026 from Larsen SH, Emmertsen K, Bjerre J, Hjortdal VE. Progressive cyanosis following Kawashima operation: slow resolution after redirection of hepatic veins. J Cardiothorac Surg 2013;8:67, doi:10.1186/1749-8090-8-67 (open-access full text, read through the extraction tool, including the literature table). The notes mention the Kawashima only in passing.
+
+### Definition
+
+- A bidirectional cavopulmonary connection in a functionally single ventricle with **left atrial isomerism and interrupted IVC with azygos (or hemiazygos) continuation**. The SVC (or both SVCs) carries the azygos, so it brings almost all systemic venous return except the **hepatic veins**, which still drain directly to the atrium.
+- So it is nearly a total cavopulmonary connection at the Glenn stage; saturations are slightly below normal because hepatic blood bypasses the lungs.
+
+### Pulmonary arteriovenous malformations
+
+- Hepatic venous blood is thought to carry an unidentified "hepatic factor" that must reach the lungs to prevent PAVMs.
+- After a Kawashima, or any TCPC in left isomerism that leaves the hepatic veins out, **PAVMs develop in 21 to 75%**, usually over several years (one report within 72 hours). They show as falling saturation, typically diagnosed at 65 to 76%.
+
+### Treatment: bring the hepatic veins to the lungs
+
+- Usually by Fontan completion (hepatic veins to the PA by a tube graft) through sternotomy on bypass; an off-pump route through a lateral thoracotomy joining the hepatic vein to the azygos has also been described (Lopez 2008).
+- Timing is debated; most patients will need redirection, especially beyond 60 months (Vollebregt 2012), and profound desaturation before redirection predicts a worse result, which argues for doing it earlier.
+- Recovery is slow: saturations often stay 70 to 85% for months, then reach 93 to 97% over months to years; some stay at 85 to 90%. In the case reported (Kawashima at 10 months, redirection with a Gore-Tex tube at 3 years), saturation went from 60 to 65% to about 85% at 4 weeks, 90 to 93% at 9 months and 95 to 100% at 3 years.
+- Series in the paper's table: McElhinney 16 patients, 76% to 90% at 6.3 years; Brown 10, 75% to 95% at 4.1 years; Kutty 13, 76% to 89%.
+
+!fig f50_kawashima | Kawashima operation: with an interrupted IVC the azygos brings lower-body blood to the SVC, so a Glenn carries nearly all systemic return; only the hepatic veins still enter the atrium, and leaving them out of the lungs causes arteriovenous malformations. Drawn for these notes from Larsen et al. 2013; schematic
+
+## Anomalous aortic origin of a coronary artery: AATS 2017 recommendations
+
+Added 24 November 2026 from Brothers JA, et al. Expert consensus guidelines: anomalous aortic origin of a coronary artery. J Thorac Cardiovasc Surg 2017;153:1440-57 (recommendations read from the Guideline Central summary page; the journal full text was not opened). CTSNet also lists a later AATS-linked expert review (Stephens EH, Jegatheeswaran A, Brothers JA, et al. Ann Thorac Surg 2024), summary only. The operations (unroofing, reimplantation, ostioplasty, PA translocation) are already in the coronary anomalies section above; this adds the graded recommendations.
+
+| Recommendation | Class, level |
+|---|---|
+| TTE in suspected AAOCA to define the origin and proximal course | I, B |
+| CT coronary angiography or cardiac MRI to define anatomy and confirm | IIa, B |
+| Without ischaemic chest pain or aborted sudden death, exercise testing with nuclear perfusion or stress echo to assess ischaemic burden | I, B |
+| Catheterisation if non-invasive imaging cannot define the anatomy, or in adults with risk factors for coronary atheroma | I, B |
+| Ischaemic chest pain, syncope thought to be arrhythmic, or aborted sudden death: restrict activity and offer surgery | I, B |
+| If surgery is prohibitively risky, catheter intervention may be considered | IIb, C |
+| Unrepaired left coronary from the right sinus with interarterial course, symptomatic or not: no competitive sport | I, B |
+| Left coronary from the right sinus with interarterial course, asymptomatic: offer surgery | I, B |
+| Right coronary from the left sinus, asymptomatic, negative stress imaging: competitive sport permissible after counselling | IIa, C |
+| Repair must remove the intramural course and any ostial narrowing (unroofing, ostioplasty or reimplantation) | I, B |
+| Moving the PA confluence away from the anomalous artery as an adjunct | IIb, C |
+| Return to sport at least 3 months after surgery if free of symptoms and stress test negative (no prior aborted sudden death) | I, C |
+| After aborted sudden death: wait 12 months for competitive sport (IIa, C); 3 months for recreational sport (IIa, C) | IIa, C |
+| AED and trained staff immediately available at competition and training | I, B |
+
+Viva line: symptoms or aborted sudden death mean surgery whichever coronary is anomalous; the left-from-right interarterial anomaly gets surgery even without symptoms; the asymptomatic right-from-left anomaly with negative stress imaging may play sport after counselling.

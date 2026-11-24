@@ -626,3 +626,41 @@ Kim 2025 (Northwestern, 2018 to 2024; 290 lung transplant recipients with a divi
 
 ### Subxiphoid incision
 Used for the pericardial window: less opioid in the first 48 hours than a left anterior mini-thoracotomy (32.4 against 78.3 mg morphine equivalent, P=0.0001) and earlier extubation, but more recurrent effusion (9.4% against 0%) (Langdon 2016; details in Cardiac 16).
+
+## Best evidence topics: post-pneumonectomy empyema and blood pleurodesis for persistent air leak
+
+Added 24 November 2026 from Zahid I, Routledge T, Billè A, Scarci M. What is the best treatment of postpneumonectomy empyema? Interact CardioVasc Thorac Surg 2011;12:260–264, doi:10.1510/icvts.2010.254706 (online full text read through a web extraction tool), and a best evidence topic on autologous blood pleurodesis for persistent air leak listed under the author Anthony J Chambers on a research index (abstract only; the full author list, year, volume and DOI were not seen, so treat the citation as incomplete). This tab already covers stump fistula and open window drainage; this adds the comparative evidence.
+
+### Post-pneumonectomy empyema: open or minimally invasive? (Zahid 2011)
+
+Question: in post-pneumonectomy empyema, does an open approach rather than minimally invasive surgery give better resolution, morbidity and survival? 171 papers; 12 chosen, all retrospective.
+
+| Strategy | Study, n | Result |
+|---|---|---|
+| Chest drain with chemical irrigation | Kacprzak 2004, 76 | Success 31%; 30-day mortality 17.1%; 35 needed further procedures |
+| VATS debridement | Gossot 2004, 11 | Success 8/11; no deaths; stay 18.8 days |
+| Open debridement, repeated | Schneiter 2001, 20; Schneiter 2008, 75 | No recurrence with a mean of 3.5 interventions; multicentre success 86.7%, recurrence 13.3% |
+| Thoracomyoplasty against tube drainage with or without window | Jadczuk 1998, 35 | Success 19/20 against 1/15; mortality 0/20 against 5/15; stay 17.6 against 47.5 days |
+| Thoracomyoplasty | Seify 2007, 16 | Success 87.5%; stay 34 days; mortality 6% |
+| Modified Clagett | Gharagozloo 1998, 22 (all with fistula) | Stay 12.9 days; no recurrence at one year |
+| Clagett | Zaheer 2006, 84 | Success 81%; operative mortality 7.1%; complications 55% |
+| Open window: immediate against delayed | Massera 2006, 31 | Time to resolution 3 against 38 months (P=0.02) |
+| Fenestration | Goldstraw 1979, 29 | 77% successful after one operation |
+| With fistula: thoracoplasty | Wong and Goldstraw 1994, 41 | Success 91% with thoracoplasty in those with a fistula; 61% with irrigation and debridement without |
+
+Bottom line: treatment is usually staged and studies are hard to compare, but open approaches (open window, Clagett, thoracomyoplasty) had high success, short stays and few re-interventions despite being used in harder cases, and appear more effective than drainage or irrigation alone.
+
+Viva line: "The evidence is twelve retrospective series. Drainage and irrigation alone succeeded in about a third; open strategies (Clagett, open window, thoracomyoplasty) succeeded in 80 to 95%, and an early open window resolved months sooner than a delayed one."
+
+### Autologous blood pleurodesis for persistent air leak (BET, abstract only)
+
+Question: is blood pleurodesis effective in stopping a persistent air leak? More than 43 papers; 10 chosen.
+
+- After lung surgery: 70–81% of leaks stopped within 12 hours and 95–100% within 48 hours, against a mean of 3 to 6.3 days with simple drainage.
+- Overall success 92.7% after lung surgery (n=133), 76.6% after a single injection; 91.7% for pneumothorax (n=109).
+- Recurrence 0–29% against 35–41% with drainage alone; in one controlled study 0% against 16% at 12 to 48 months.
+- Minor complications (empyema, fever, effusion) 0–18%.
+- One randomised trial: shorter stay after resection (P<0.001). In ARDS with pneumothorax, a controlled study found mortality OR 0.6 and quicker leak closure, weaning and ICU discharge (each P<0.01).
+- Optimal volume 100 mL in two studies.
+
+Bottom line: better than conservative management for post-operative persistent leak; for a pneumothorax with a persistent leak, consider it when surgery is unsuitable, talc has failed or cannot be used (including ARDS), and quick resolution is needed. This sits alongside the BTS 2023 and ERS/ESTS recommendation of a blood patch in secondary pneumothorax (1–2 mL/kg) already in Thoracic 11.

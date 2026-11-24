@@ -638,3 +638,21 @@ Added 21 November 2026 from Samama CM, Afshari A, Grønlykke L, et al. European 
 | High thrombosis risk with low bleeding risk: pharmacological, mechanical optional | 2B |
 
 - One way to apply these together (a synthesis, not a single recommendation): IPC from arrival in ICU while bleeding settles, then LMWH from 6 to 24 h once drains are quiet, continued to full mobilisation (EACTS), with platelet counts watched for HIT (HIT is covered earlier in this tab).
+
+## ICVTS best evidence topics: bleeding, re-exploration and sternal closure
+
+Added 24 November 2026 from three best evidence topics in Interactive CardioVascular and Thoracic Surgery (ICVTS), cited in their rows. Read from the journal's online full text (academic.oup.com), including the clinical bottom line of each. The vacuum-assisted closure BET (Yu et al., ICVTS 2013) is already in this tab.
+
+| Three-part question | Papers (found, best) | Bottom line and numbers | Citation, how read |
+|---|---|---|---|
+| After cardiac surgery, do patients who return to theatre for bleeding have worse clinical outcomes? | 598, 8 | Yes: more deaths and more neurological, respiratory and kidney complications, with longer intensive care and hospital stays. Return to theatre predicts death independently of transfusion, though the effects of blood loss, re-operation and blood products are hard to separate. Biancari 2012 meta-analysis (557,923 patients): relative risk of death at 30 days 3.27; death 5.1% if re-explored within 12 hours v 21.5% after 12 hours. Vivacqua 2011 (matched): 8.5% v 1.8%, prolonged ventilation 42% v 12%. Ruel 2017: in-hospital death 12% v 2.8%, worse after 24 hours. Only Tambe 2017 found no excess after matching (odds ratio 1.08). Do not delay the decision to re-explore. | Ali JM, Wallwork K, Moorjani N. ICVTS 2019;28(4):613-618. doi:10.1093/icvts/ivy285. Full |
+| In emergency re-sternotomy on the intensive care unit, do extra antibiotics or an iodine washout lower sternal wound infection? | 527, 9 | Infection or sepsis after emergency re-sternotomy is about 5%. Five of the seven series reporting infection gave extra intravenous antibiotics and an iodine washout routinely, but no study beyond uncontrolled cohorts tested either. Full aseptic technique with gown and gloves "might be regarded as best practice". Survival to discharge in the series ranged from 30% (Fairman 1981) to 79% (Anthi 1998). | Yap EYL, Levine A, Strang T, Dunning J. ICVTS 2008;7(3):464-469. doi:10.1510/icvts.2008.176016. Full |
+| In cardiac surgery, is a figure-of-eight or a simple sternal wire closure more effective in preventing dehiscence? | 111, 7 | Figure-of-eight is not superior to simple wires. Evidence is mainly biomechanical: in a sheep model, trans-sternal figure-of-eight wires did worse than simple wires, and peristernal simple wires resisted cutting through best (Casha 2001); in a porcine model, single peristernal wires needed more force to fail than figure-of-eight (Losanoff 2002). Clinical series: DiMarco 1989 (978 patients) major sternal complications 0.9% with peristernal figure-of-eight wires. | Khasati N, Sivaprakasam R, Dunning J. ICVTS 2004;3(1):191-194. doi:10.1016/S1569-9293(03)00259-7. Full |
+
+!fig f43_reexploration | Mortality with and without return to theatre for bleeding, and by timing of re-exploration, from the studies tabulated in Ali, Wallwork and Moorjani, ICVTS 2019 (my chart)
+
+### Using these in a viva
+
+- The 12-hour figure is the number to give for "when do you take a bleeding patient back?": return to theatre is itself associated with worse outcomes, and a delayed return with the worst. Pair it with the drain-loss thresholds already in this tab.
+- Emergency re-sternotomy: the infection risk is about 5%. Extra antibiotics and iodine washout are common practice but rest only on uncontrolled series; the BET's suggestion is full aseptic technique.
+- Sternal closure: the wire BET is about wire configuration; the rigid plate trial already in this tab is about wires versus plates. In the sheep model in the BET, peristernal wires resisted cutting through better than trans-sternal wires.

@@ -310,3 +310,28 @@ Other SVS 2026 points (13 recommendations in all):
 ### How this changes the notes above
 - The tab says "an intimal flap under 1 cm with a normal outer contour can be watched". Both 2026 guidelines go further: all minimal aortic injury (intimal tear and intramural haematoma, ESVS grade 1) is managed **without operation**.
 - The tab's "stent graft delayed until planning imaging is done" now has thresholds: delay **beyond 24 hours** for stable pseudoaneurysm (SVS III, ESVS 2 without high-risk features); **under 24 hours** for high-risk features; immediate for rupture.
+
+## Best evidence topic: fixation of painful non-flail rib fractures
+
+Added 24 November 2026 from Girsowicz E, Falcoz PE, Santelmo N, Massard G. Does surgical stabilization improve outcomes in patients with isolated multiple distracted and painful non-flail rib fractures? Interact CardioVasc Thorac Surg 2012;14:312–315, doi:10.1093/icvts/ivr028 (online full text read twice, journal page and PMC, through a web extraction tool). This tab already notes that EAST 2017 makes no recommendation for non-flail fractures and that the later randomised trials in non-flail patients (Marasco, Meyer) found no benefit. This BET predates those trials; it shows the low-level evidence that prompted them.
+
+### Question and search
+
+In patients over 45 with isolated, mobile, painful rib fractures without a true flail segment, is surgical stabilisation better than non-operative care for pain, disability, respiratory function and days off work? 356 papers; 9 chosen.
+
+| Study | Design (level), n | Result |
+|---|---|---|
+| Nirula and Mayberry 2010 | Review (5) | Lists indications: pain and disability, deformity, symptomatic non-union, fixation at thoracotomy |
+| Mayberry 2009 | Retrospective (3), 46 | Long-term McGill pain rating 6.7; RAND-36 quality of life equal to or better than the general population in most domains |
+| Moreno De La Santa Barajas 2010 | Retrospective (3), 22 | Stay 8 days; FVC 78% and FEV1 77% at 3 months; all back at work at about 2 months |
+| Nirula 2006 | Case-control (3), 30 against 30 | Same ICU and hospital stay; fewer ventilator days after fixation (P=0.02) |
+| Campbell 2009 | Retrospective (3), 32 | Pain 1.0/10 at rest and 1.3/10 on coughing; chest wall stiffness 60%, breathlessness 20% |
+| Richardson 2007 | Retrospective (3), 7 fixed of 3,844 | Good pain relief; two ventilated patients weaned quickly |
+| Kerr-Valentic 2003 | Prospective (3), 40 managed without surgery | Pain 3.5 at 30 days and 1.0 at 120 days; more disabled than the reference population at 30 days (P<0.001); 70 days lost from work |
+| Gasparri 2003; Cacchione 2000 | Case reports (4) | Pain relief and return to activity within two weeks; non-union fixed at 2 years |
+
+### Bottom line and how it fits now
+
+All nine papers suggested benefit in pain, lung function, quality of life and return to work, but they are small, uncontrolled or single cases, with short follow-up; the authors called for prospective controlled trials. The comparator data come largely from a separate non-operative cohort (Kerr-Valentic), not from head-to-head comparison.
+
+Viva line: "A 2012 BET was positive on low-level data. The subsequent randomised trials in non-ventilated non-flail patients found no benefit, and EAST makes no recommendation, so non-flail fixation is for selected patients (refractory pain, failing spirometry, non-union) and ideally within a trial."

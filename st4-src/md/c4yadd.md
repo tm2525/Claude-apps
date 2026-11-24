@@ -262,3 +262,265 @@ Added 21 November 2026 from Praz F, Borger MA, et al. 2025 ESC/EACTS Guidelines 
 - Manage in an expert centre.
 
 **Link to the consensus documents above.** The EACTS Ross consensus names the Ross as the preferred replacement for women of childbearing age; the guideline gives it a "may be considered" in experienced centres.
+
+## Ozaki aortic valve neocuspidisation (AVNeo): technique, sizing and outcomes
+
+Added 24 November 2026 from (1) Koechlin L, Eckstein FS. Aortic valve neocuspidization using autologous pericardium (Ozaki procedure): an alternative to aortic valve replacement in adult cardiac surgery? Curr Anesthesiol Rep 2021;11(3):318–325; doi:10.1007/s40140-021-00454-5. Open-access review read from the online full text (Springer HTML) through a web extraction tool: technique, benefits, limitations and outlook. The Ozaki, Krane, Benedetto, Iida and Mourad series it quotes were not opened. (2) Brenna D, Benussi S, Albertini A, Zanin F, Muneretto C. Aortic valve reconstruction: the Ozaki technique. CTSNet, April 2025; doi:10.25373/ctsnet.28771400. Written case description read in full; the video was not watched. (3) Tambrallimath PR, Chatterjee S, Bose S. Aortic valve repair with all cusp replacement using treated autologous pericardium: the Ozaki technique. CTSNet, August 2019; doi:10.25373/ctsnet.9589007. Written case description read in full.
+
+### What it is
+All three cusps are excised and each one is replaced with a neocusp cut from the patient's own pericardium, treated with glutaraldehyde. Each neocusp is sized to its own sinus by measuring the distance between that sinus's two commissures. The native annulus and root are kept, and no stent or sewing ring is used. Ozaki calls it reconstruction rather than replacement. The CTSNet comment thread shows the name is still argued over, which is worth knowing in a viva.
+
+### Steps
+| Step | Detail | Source |
+|---|---|---|
+| Harvest | Anterior pericardium, at least 7 × 8 cm, cleared of fat. Sutured to a hole-plate so it does not shrink | Brenna; Koechlin |
+| Fixation | 0.6% glutaraldehyde for 10 minutes, then three rinses of 6 minutes each in saline | Koechlin (rinse); Brenna (10 min) |
+| Excise and decalcify | Remove the native cusps; decalcify the annulus thoroughly | Brenna |
+| Size | Put the two horns of the dedicated sizer on the two commissures of each sinus and read the distance in millimetres. Cusp sizes run from 13 to 35 mm | Brenna; Koechlin |
+| Cut | Cut each neocusp with the matching template, leaving extra tissue on each side as a commissural wing. Take the larger cusps from the thicker, diaphragmatic pericardium | Brenna; Koechlin |
+| Orientation | Smooth inner (serous) surface faces the ventricle | Koechlin |
+| Sew | Running 4-0 polypropylene, starting at the nadir. Bites on the pericardium are evenly spaced. Bites on the annulus are closer together near the nadir (3 annular bites to 1 cusp bite), evening out to 1:1 towards the commissures | Brenna |
+| Commissures | Fix each wing with a U stitch of 4-0 polypropylene, pledgeted outside the aorta. Knots are buttressed outside the aorta with autologous pericardium | Brenna; Koechlin |
+| Test | Check coaptation by eye while the LV vent applies suction. TOE after the clamp comes off | Brenna; Koechlin |
+
+A variant without the proprietary kit (Tambrallimath, a 17-year-old with rheumatic AR): measure each cusp base with silk thread and size the annulus with an ordinary valve sizer. The sizer diameter in millimetres gives both the height and width of the free margin. Use 5-0 polypropylene at 2:1 (4 mm of pericardium to 2 mm of annulus) in the central part and 1:1 towards the commissures. After surgery the coaptation height was 9.4 mm, with no AR and an orifice area of 3.4 cm².
+
+!fig f41_ozaki_cusp | Ozaki neocuspidisation: intercommissural sizing, the neocusp template with its wings, and the bite ratio along the annulus. Drawn for these notes from Brenna et al., CTSNet 2025, and Koechlin and Eckstein, Curr Anesthesiol Rep 2021; not to scale
+
+### Who it suits (Koechlin and Eckstein)
+- In their unit, anyone who would be offered a bioprosthesis, or anyone who cannot take oral anticoagulation. It is feasible in bicuspid valves and in small annuli. It also suits aortic regurgitation, for which no transcatheter valve is certified.
+- Contraindications: pericarditis, previous chest radiotherapy, and reoperation, because the pericardium may be damaged or unusable.
+- Plan a bail-out replacement before you start, in case the reconstruction is unsatisfactory. The case should be discussed by the heart team.
+
+### Outcomes as quoted in the review
+| Series | Result |
+|---|---|
+| Ozaki 2018, 850 patients, mean follow-up 53.7 ± 28.2 months (longest 118) | Freedom from death 85.9%. Cumulative reoperation 4.2% (15 reoperations, 0.4% per patient-year, 13 of them for endocarditis). Recurrent AR of moderate or worse 7.3%. Mean peak gradient about 15.2 mmHg at about 8 years. Permanent pacemaker in 1 of 404 patients (0.25%) |
+| Krane 2020, 103 patients | Mean gradient 8.9 ± 3.8 mmHg and EOA 2.1 ± 0.7 cm² at discharge. Larger EOA than a virtual Trifecta of the same size. Freedom from AR of grade II or worse 98.2% at 12 months and 92.1% at 24 months. Four reoperations |
+| Benedetto (UK) 2021, 12.5 months | Peak gradient 16 ± 3.7 mmHg, mean 9 ± 2.2 mmHg. Endocarditis 5% |
+| Koechlin and Eckstein, 35 patients, median 21 months | Mean gradient 6 mmHg. One reoperation (endocarditis at 5 months). No pacemakers |
+
+!fig f41_ozaki_series | The largest Ozaki series as quoted by Koechlin and Eckstein (Curr Anesthesiol Rep 2021): 850 patients, mean follow-up 53.7 months. Drawn for these notes
+
+### Limitations to raise in a viva
+- Durability: the tissue is not living, and follow-up beyond 10 years is lacking. Early peak gradients in small annuli fell over the years without intervention, which Ozaki attributes to the pericardium remodelling.
+- Endocarditis: this was the main reason for reoperation in the Ozaki series. Rates in the quoted series range from 1% to 10%, and the 10% series mostly used tissue-engineered pericardium.
+- Isolated AVNeo takes about 80 minutes of cross-clamp time, even through a partial sternotomy.
+- Valve-in-valve TAVI inside an Ozaki valve: little experience so far. The long leaflets may risk coronary obstruction.
+- Antithrombotic therapy: aspirin for 6 months (Ozaki, Krane). Lifelong aspirin 100 mg (Basel) or 150 mg (the UK group).
+- The single-use sizers and templates cost almost as much as a prosthesis.
+- Randomised evidence: TriRec (NCT03600662) compares AVNeo with the Trifecta valve. Its primary end point is EOA at discharge. No result was found in the sources read.
+
+## Sutureless and rapid-deployment AVR: implantation steps and evidence
+
+Added 24 November 2026 from (1) Glauber M, Miceli A, di Bacco L. Sutureless and rapid deployment valves: implantation technique from A to Z, the Perceval valve. Ann Cardiothorac Surg 2020;9(4):330–340; doi:10.21037/acs-2020-surd-23. (2) Glauber M, Miceli A, Di Bacco L. The same series, the INTUITY Elite valve. Ann Cardiothorac Surg 2020;9(5):417–423; doi:10.21037/acs-2020-surd-23-intuity. Both read from the online full text (annalscts.com HTML) through a web extraction tool. Table 1 of the Intuity paper (inflation pressure by size) is an image and was not read. (3) International Expert Consensus Panel. Sutureless, rapid deployment valves and stented bioprosthesis in aortic valve replacement: recommendations. Eur J Cardiothorac Surg 2016;49(3):709 onwards. Read through a web extraction tool from a mirror of the journal page; the first author and DOI were not shown on that page. (4) Dokollari A, Ramlawi B, Torregrossa G, et al. Benefits and pitfalls of the Perceval sutureless bioprosthesis. Front Cardiovasc Med 2022;8:789392; doi:10.3389/fcvm.2021.789392. Narrative review read from the online full text, first 100,000 characters. (5) Lorusso R, Ravaux JM, Pollari F, et al. Pacemaker implant after sutureless or stented valve: results from a controlled randomized trial (PERSIST-AVR sub-study). Eur J Cardiothorac Surg 2021. Accepted manuscript read in full from the KU Leuven repository; the published volume and pages were not seen. This section adds to the Perceval and PERSIST-AVR rows already in this tab.
+
+### The two designs
+- **Perceval (sutureless):** bovine pericardial leaflets on a self-expanding nitinol frame. It is held by radial force; the three guiding sutures only position it and are removed.
+- **Intuity Elite (rapid deployment):** a Perimount-platform stented valve with a balloon-expanded, cloth-covered steel skirt below the annulus. It is seated on three guiding sutures, which are tied.
+
+### Perceval: steps and pitfalls (Glauber 2020)
+| Step | Detail |
+|---|---|
+| Cannulation | Distal ascending aorta or proximal arch, about 2 cm further up than usual. Leave 2 to 3 cm between the clamp and the aortotomy |
+| Aortotomy | Transverse, 1 to 2 cm above the STJ (at least 3.5 cm above the annulus). The plica transversa is a guide. A 4 to 5 cm aortotomy takes an XL valve. To convert to a stented valve, extend it as a hockey stick into the non-coronary sinus |
+| Decalcify | Remove bulky calcium at the annulus, below the non-coronary cusp towards the anterior mitral leaflet, and at the commissures. Do not over-decalcify or breach the annulus. Repair a damaged aortomitral curtain with interrupted 4-0 or 5-0 polypropylene stitches, not a running suture. Myectomy if the septum bulges |
+| Size | Start with S. The transparent obturator should pass easily into the LV and the white one should sit stable on the annulus. Go up a size until the white obturator needs firm pressure. Between sizes, take the smaller. Oversizing gives folding, a pinwheel coaptation line and higher gradients. Borderline root: STJ diameter ÷ 1.3 gives the smallest allowable size (STJ 31 mm → 23.8 mm → size L) |
+| Guiding sutures | One per sinus at 120°, 2 to 3 mm below the hinge point, passed from the LVOT up through the valve's eyelets. Hold equal tension without lifting the annulus |
+| Release | Tilt the holder towards you, because the non-coronary nadir is lowest. Release the inflow ring, then the outflow |
+| Check | Even Mercedes-star coaptation. Collar above the annulus and skirt within it all round. If the annulus is visible from above, the valve is too low; if it is visible from the ventricle, it is too high |
+| Balloon | Balloon of the matching size, 4 atm for 30 seconds, with warm saline (37°C) poured into the root, because cold reduces nitinol expansion. Turn off LV vent suction during inflation |
+| Finish | Cut the guiding sutures; never tie them, because that tilts the valve and causes leaks. Close the aorta without catching the stent crown. Do proximal vein grafts after closing the aorta, avoiding a side clamp on the root |
+| TOE | Look for paravalvular leak straight after the clamp is off, while still on bypass. More than a trace leak: suspect displacement or folding |
+
+Dokollari adds a modification by Yanagawa: placing the guiding sutures at the nadir of each sinus, rather than 2 to 3 mm below the hinge, cut the pacemaker rate from 28% to 0% in that series. For bicuspid valves, three nadirs 120° apart are recreated using a sizer marked at 120°. The non-coronary sinus is the commonest site of paravalvular leak.
+
+!fig f41_perceval_steps | Perceval implantation: aortotomy height, guiding sutures, sizing rule and balloon settings. Drawn for these notes from Glauber et al., Ann Cardiothorac Surg 2020; not to scale
+
+### Intuity Elite: steps (Glauber 2020)
+- Aortotomy usually crosses the STJ into the non-coronary sinus. If the STJ is the same size as or smaller than the annulus and the incision cannot be extended, do not use this valve.
+- Size with Magna Ease sizers at the annulus, never through the STJ, which leads to undersizing and leak. Between sizes, take the smaller.
+- Three guiding sutures about 120° apart, at the nadirs or mid-commissural points. Use braided, non-pledgeted sutures, because pledgets create leak channels and monofilament can damage the leaflets.
+- Parachute the valve down and snare each suture on the sewing ring. Inflate the size-specific balloon to its nominal pressure for 10 seconds while a second person holds the valve. Never re-inflate a balloon.
+- Tie the guiding sutures only after deflation. Check for paravalvular gaps with a hook before closing the aorta.
+
+### Expert consensus panel (EJCTS 2016): class and level as read
+| Recommendation | Class, level |
+|---|---|
+| Proctoring and training before a programme or surgeon starts | I, C |
+| Alternative to a stented valve at redo surgery or with a fragile aortic wall | IIa, C |
+| Preferred with concomitant procedures and small annuli, to shorten cross-clamp time | IIa, B |
+| Usable annulus 19 to 27 mm after decalcification; oversizing gives no benefit | I, C |
+| Annulus under 19 mm | III, C |
+| Annuloaortic ectasia with degenerative AR | III, C |
+| Bicuspid type 0 (no raphe) | III, C |
+| Bicuspid types 1 and 2 in selected anatomy (round annulus, coronary ostia not 180° apart, equal commissure heights in type 2) | IIa, C |
+| Annular abscess or destruction from endocarditis | III, C |
+| Preoperative CT; intraoperative TOE before bypass and at weaning | I, C |
+| Complete annular decalcification while avoiding extensive debridement | I, C (as read) |
+| To reduce perioperative and medium-term morbidity | IIa, B |
+| Pooled isolated AVR: bypass 56.7 min, cross-clamp 46.5 min | (data) |
+
+Remove the native aortic valve before any mitral procedure, then implant the sutureless valve after the mitral repair or replacement. Dokollari lists further contraindications: a ratio of observed to expected root diameter of 1.3 or more, nickel allergy, and an ascending aneurysm or dissection that needs repair.
+
+### PERSIST-AVR: the pacemaker sub-study
+- 910 patients randomised at 47 sites. Analysed as treated: 450 Perceval and 446 stented. Half had a mini-sternotomy.
+- Early permanent pacemaker (0 to 30 days): 10.4% with Perceval against 3.1% with a stented valve (P = 0.00001). From discharge to 1 year: 2.3% against 1.4% (no difference).
+- By Perceval size: S 4.9%, M 6.8%, L 7.3%, XL 21.6%. Predictors were size XL and a pre-existing conduction disturbance. The authors conclude the excess was significant only for XL, and hope the redesigned Perceval PLUS, with less collar below the annulus, helps.
+- Main indication: complete heart block (29 of 47 Perceval pacemakers).
+
+!fig f41_persist_ppi | PERSIST-AVR early pacemaker rate by Perceval size against stented valves. Drawn for these notes from Lorusso et al., EJCTS 2021 (PERSIST-AVR sub-study)
+
+### Other points from the Dokollari review
+- The randomised trial the review calls PERCEVAL-AVR (its 1-year figures match PERSIST-AVR): bypass 71 against 88 minutes, cross-clamp 48.5 against 65.2 minutes, pacemaker at 1 year 11.1% against 3.6%.
+- Platelets fall transiently and more with Perceval (46% against 32% in PERSIST-AVR). This usually needs no treatment.
+- At 5 years (Shrestha series): structural deterioration 0%, explant 1.5%, major paravalvular leak 1%. The frame may make later valve-in-valve TAVI easier.
+
+## Hemi-Commando: rebuilding the aortomitral curtain while keeping the mitral valve
+
+Added 24 November 2026 from Vojacek J, Zacek P, Ondrasek J. Multiple valve endocarditis: a Hemi-Commando procedure. Ann Cardiothorac Surg 2019;8(6):705–707; doi:10.21037/acs.2019.07.07. Read from the online full text (annalscts.com PDF) through a web extraction tool. Also Tohme S, Tseng J-C, Jarral O, Brinster D. Hemi-Commando procedure for bioprosthetic aortic valve endocarditis. CTSNet, June 2026; doi:10.25373/ctsnet.32826386 (case text read; video not watched). The full Commando (Perri and Johnston) is already in this tab.
+
+### Definitions
+- **Commando:** both valves are replaced, and the intervalvular fibrous body (aortomitral curtain) is excised and rebuilt with a patch of pericardium or Dacron. Cleveland Clinic calls it the Commando operation; Leipzig calls the same operation the "UFO" procedure.
+- **Hemi-Commando:** used when the posterior mitral leaflet is not infected and at least the free edge of the anterior leaflet can be kept. The curtain is rebuilt and the native mitral valve is preserved. Vojacek uses an aortic homograft with its donor anterior mitral leaflet attached.
+
+### Steps (Vojacek)
+1. Median sternotomy, with peripheral cannulation if a redo. Bicaval drainage (jugular SVC cannula plus femoral) for wide left atrial exposure. Custodiol cardioplegia.
+2. Transect the aorta above the STJ, remove the valve and mobilise both coronary buttons.
+3. Radical debridement of the annular abscess, the intervalvular fibrous body, the adjacent aortic wall and the left atrial roof. Reach the mitral valve through a biatrial transseptal incision extended into the left atrial roof. What remains of the anterior leaflet is its free edge with its chords.
+4. Optional mitral annuloplasty (suture or open band) at this point.
+5. Homograft: place interrupted, non-pledgeted sutures from the anterior to the posterior trigone. Before tying them, sew the homograft's anterior mitral leaflet to the patient's leaflet edge with running 5-0 monofilament.
+6. Close the left atrial roof using the homograft's own atrial rim. Reimplant the coronary buttons, join the homograft to the ascending aorta, and close the right atrium.
+
+The CTSNet case (TAVI endocarditis with root and mitral abscess) used bovine pericardium to rebuild the annulus, anterior leaflet, left atrial roof and curtain, with a 23 mm valved conduit.
+
+### Outcomes
+Rarely performed and no long-term data. The only mid-term series Vojacek quotes, from Cleveland Clinic (37 patients, 2010 to 2017): in-hospital mortality 8%, survival 91% at 1 year and 82% at 3 years. The case reported had 250 minutes of bypass and 185 minutes of cross-clamp time, needed dialysis, and went home at 2.5 months.
+
+## ICVTS best evidence topics: aortic valve surgery and prosthesis choice
+
+Added 24 November 2026 from five best evidence topics in Interactive CardioVascular and Thoracic Surgery (ICVTS), each cited in its row. Read from the journal's online full text (academic.oup.com). "Full" means the whole page including the clinical bottom line was read; "Part" means the abstract, question, search and evidence table were read but the page was cut off before the bottom line section, so the conclusion is the abstract's. No ICVTS BET on mechanical versus biological aortic valve by age band was found in the searches made; the nearest are the renal failure and aortic regurgitation topics below.
+
+| Three-part question | Papers (found, best) | Bottom line and numbers | Citation, how read |
+|---|---|---|---|
+| In bioprosthetic AVR, does a porcine or a bovine (pericardial) valve give better survival, outcomes and complication rates? | 562, 15 (6 level 1) | Bovine pericardial valves have the better haemodynamic and complication profile; mortality, functional class and durability are comparable. Chambers 2008 trial: mean gradient 17 v 11 mmHg (porcine v bovine), orifice area 1.28 v 1.47 cm². Dalmau 2011 trial at 5 years: mean gradient 16.8 v 9.6 mmHg and much greater mass regression with bovine. Chaudhry 2000 trial: 11-year freedom from reoperation 86.9% v 84.8% (no difference). Gao 2004 cohort: 10-year freedom from explant 90% v 97%. | Yap KH, Murphy R, Devbhandari M, Venkateswaran R. ICVTS 2013;16(3):361-373. doi:10.1093/icvts/ivs447. Part |
+| In a degenerated aortic bioprosthesis, is transcatheter valve-in-valve or redo AVR the best strategy for event-free survival? | 162, 12 (all retrospective) | Valve-in-valve is effective in the short term and acceptable in selected high-risk patients; redo AVR has acceptable medium and long-term results; the two are complementary. Redo AVR operative mortality 2.3 to 15.5% across series (Davierwala 4.6%, Leontyev 4.5%, Pechlivanidis 2.3% with 10-year survival 61.5%). Valve-in-valve registry (Dvir 2014, 459 patients): 30-day mortality 7.6%, major stroke 1.7%, pacemaker 8.3%, one-year survival 83.2%. Matched comparison (Wilbring 2013, 53 pairs): 30-day mortality 9.4% valve-in-valve v 5.7% redo; re-thoracotomy 1.9% v 16.9%. | Tourmousoglou C, Rao V, Lalos S, Dougenis D. ICVTS 2015;20(6):837-843. doi:10.1093/icvts/ivv037. Part |
+| In young patients with severe aortic regurgitation, is valve repair or bioprosthetic replacement the best operation for event-free survival? | 74, 10 (all retrospective) | Repair gives good early and mid-term results and is a viable alternative to a bioprosthesis in young patients who want to avoid warfarin. Repair: freedom from reoperation 86 to 94% at 5 years and 83 to 93% at 8 years; freedom from recurrent regurgitation above 2+ 85 to 94% at 5 years. Matched repair v bioprosthesis (Davierwala 2003): freedom from reoperation at 5 years 91% v 94%; freedom from moderate or severe regurgitation 79% v 94% (P=0.024). Ross: freedom from autograft reoperation 81 to 84% at 10 years, 51% at 18 years in one series. | Tourmousoglou C, Lalos S, Dougenis D. ICVTS 2014;18(2):211-218. doi:10.1093/icvts/ivt453. Part |
+| In end-stage renal disease needing valve replacement, is a mechanical or a bioprosthetic valve superior for early and late survival? | 247 (abstract says "more than 150"), 8 | Not enough evidence to recommend either; choose on age, activity and patient preference. Survival is poor whichever valve is used: Herzog 2002 (5,858 dialysis patients) two-year survival 39.7% in both groups; Thourani 2011 ten-year survival 18.1%. Bleeding or stroke is commoner with mechanical valves (Brinkman 2002: 50% v 8.3%). Chan 2011 meta-analysis: fewer valve-related complications with bioprostheses (odds ratio 0.4). Early structural degeneration of tissue valves was not shown, so a bioprosthesis should be considered. | Pai VB, Tai CK, Bhakri K, Kolvekar S. ICVTS 2012;15(2):240-243. doi:10.1093/icvts/ivs115. Full |
+| In aortic stenosis with moderate functional mitral regurgitation, does AVR alone suffice to improve the mitral regurgitation? | 325, 9 (all retrospective) | Moderate or milder functional MR without predictors of deterioration: treat conservatively (AVR alone). Moderate-to-severe or severe: add a mitral procedure. In the six papers favouring AVR alone, MR improved in 45 to 95%, was unchanged in 19 to 38% and worsened in 1 to 14% (Alghamdi 2010 pooled: 61%, 38%, 1%). Predictors of worsening: persistent AF, large left atrium, raised indexed left ventricular mass, pulmonary hypertension, and a preoperative peak aortic gradient under 60 mmHg. | Kowalówka AR, Onyszczuk M, Wańha W, Deja MA. ICVTS 2016;23(5):806-809. doi:10.1093/icvts/ivw212. Full |
+
+### Using these in a viva
+
+- Prosthesis in dialysis patients: the old teaching that tissue valves calcify early in renal failure is not supported by these series; limited life expectancy and bleeding risk both point towards a bioprosthesis, but the evidence is retrospective.
+- Failed bioprosthesis: this 2015 BET compares first-generation valve-in-valve series with historical redo surgery, in different risk groups. Give the numbers as a snapshot and then the current guideline position from the transcatheter tab (Cardiac 20).
+- Moderate functional MR at AVR: the practical point is the list of predictors of deterioration, which identifies the patient in whom "leave it alone" is unsafe.
+
+## Low-risk TAVI against surgery at six to seven years: PARTNER 3, Evolut Low Risk, the EACTS 2026 pooled analysis and the DEDICATE registry check
+
+Added 24 November 2026 from (1) Leon MB, Mack MJ, et al. PARTNER 3 seven-year outcomes. N Engl J Med 2025; doi:10.1056/NEJMoa2509766 (TCT 2025). Read from the ACC meeting summary and the CI Today report; the NEJM paper was not opened. (2) Forrest JK, Yakubov SJ, Deeb GM, Reardon MJ; Evolut Low Risk Trial Investigators. Six-year outcomes after transcatheter vs surgical aortic valve replacement in low-risk patients with aortic stenosis. J Am Coll Cardiol 2026; doi:10.1016/j.jacc.2026.02.5063. Read from the ACC journal review and the CTSNet abstract excerpt; full text not opened. (3) Pibarot P, Ternacle J, Hahn RT, et al. Seven-year valve durability with transcatheter or surgical aortic valve replacement (PARTNER 3 ad hoc analysis). JAMA Cardiol 2026; doi:10.1001/jamacardio.2026.2299. Read from the journal media page and the TCTMD report of the New York Valves 2026 presentation; full text not opened. (4) Heuts S, et al. Time-dependent pooled analysis of low-risk TAVI against SAVR, EACTS Annual Meeting, Barcelona, 9 October 2026 (no journal yet). Read from the TCTMD report only. (5) Veen K, et al. DEDICATE-DZHK6 compared with the Dutch national registry, EACTS 2026 President's Choice (no journal yet). Read from the TCTMD report only. (6) Dayan V, Kaul S, Shah BN. Transcatheter vs surgical aortic valve implantation: age vs lifetime perspective. Eur Heart J 2026; doi:10.1093/eurheartj/ehag407. Read in full from the SCTS-hosted PDF (viewpoint, 4 pages).
+
+The notes hold the five-year PARTNER 3 and DEDICATE one-year results and the 2025 ESC/EACTS age threshold of 70. Everything below is newer.
+
+### The randomised trials, longest follow-up
+
+| Trial | Patients | Result at latest follow-up |
+|---|---|---|
+| PARTNER 3, 7 years (NEJM 2025) | 1,000 low-risk (mean age 73, STS 1.9%), Sapien 3 transfemoral against SAVR, 71 sites | Death, stroke or valve/procedure/heart failure readmission 34.6% against 37.2% (HR 0.87, 0.70 to 1.08, p=0.21). Hierarchical win ratio 1.04 (0.84 to 1.30). Death 19.5% against 16.8% (p=0.31); stroke 8.5% against 8.1%; readmission 20.6% against 23.5%. Mild or worse paravalvular leak more common, and gradients slightly higher, after TAVI |
+| PARTNER 3 durability, 7 years (JAMA Cardiol 2026) | Same trial, VARC-3 valve end points | Stage 2/3 dysfunction from structural degeneration 7.3% against 7.6%; from leaflet thrombosis 5.2% against 0.9% (p<0.001, mostly subclinical). Bioprosthetic valve failure 6.9% against 7.5%. Reintervention 5.4% against 5.5%; 30-day death after reintervention 0% against 4.4% |
+| Evolut Low Risk, 6 years (JACC 2026) | 1,414 attempted implants (730 self-expanding supra-annular TAVI, 684 SAVR), surgical mortality 3% or less | Death or disabling stroke 23.3% against 20.4% (p=0.43); death 23.3% against 20.2% (p=0.24). Reintervention 5.5% against 3.3% at 6 years (p=0.07) and 9.8% against 6.0% at 7 years (sHR 1.68, p=0.02), mostly for regurgitation of the transcatheter valve (5.6% against 1.6%) |
+
+### The EACTS 2026 pooled analysis (Heuts)
+
+PARTNER 3, Evolut Low Risk and NOTION were pooled (2,644 patients, all with 7 years of follow-up). Death at 7 years was 26.9% after TAVI and 23.7% after SAVR (overall HR 1.14, confidence interval crossing 1). The survival curves cross, so a single Cox hazard ratio is the wrong summary; split by interval:
+
+| Interval | HR, TAVI vs SAVR (95% CI) |
+|---|---|
+| 0 to 1 year | 0.61 (0.38 to 1.00) |
+| 1 to 3 years | 0.84 (0.59 to 1.22) |
+| 3 to 5 years | 1.05 (0.77 to 1.43) |
+| 5 to 7 years | 1.64 (1.27 to 2.12), the only significant interval |
+
+Half (49%) of all TAVI deaths fell in years 5 to 7. Leaving out Evolut Low Risk made the late signal non-significant (HR 1.39, 0.96 to 2.01). Discussants raised differential loss to follow-up and whether the late deaths were valve-related; the data are a conference analysis, not yet peer reviewed.
+
+!fig f47_lowrisk_hr | Hazard ratio for death after TAVI against SAVR in four time windows, pooled PARTNER 3, Evolut Low Risk and NOTION. Drawn for these notes from the EACTS 2026 presentation as reported by TCTMD, October 2026
+
+### DEDICATE re-examined (EACTS 2026)
+
+DEDICATE-DZHK6 (NEJM 2024) is the trial behind much of the push to TAVI in the 70s; its surgical arm did worse than expected. Veen compared 3,389 Dutch registry SAVR patients who met DEDICATE entry criteria with the trial arms:
+
+| Comparison | Death or stroke | Stroke | Death |
+|---|---|---|---|
+| Trial SAVR against registry SAVR | HR 1.63 (1.02 to 2.26) | HR 2.96 (1.37 to 6.37) | HR 1.15 (0.65 to 2.02) |
+| Trial TAVI against registry SAVR | HR 0.71 (0.44 to 1.14) | HR 1.36 (0.62 to 2.90) | HR 0.46 (0.24 to 0.87) |
+
+So the trial's surgical patients had about three times the stroke rate of comparable Dutch surgical patients. Reweighting the trial to the registry population shrank TAVI's absolute mortality gain from 3.8% to 2.1%. The DEDICATE investigators will not release the primary efficacy result until 5 years.
+
+### The surgical viewpoint (Eur Heart J 2026)
+
+Endorsed by nine national surgical societies including SCTS. Its points:
+- Randomised low-risk follow-up stops at about 7 years, yet many 70-year-olds will live more than 15.
+- Redo SAVR is preferable to TAVI-in-TAVI where life expectancy is long. Surgical explant of a TAVI valve carries about 17% mortality, and SAVR after TAVI about 74% higher operative mortality than redo SAVR.
+- Coronary access may be impossible after TAVI in up to a third, depending on the valve.
+- Root or annular enlargement at SAVR leaves room for a later valve-in-valve.
+- Pacemakers and paravalvular leak after TAVI persist; most surgical complications resolve.
+- Conclusion: default TAVI from age 70 "cannot be considered definitively established"; think in terms of lifetime management.
+
+### What this changes for the viva
+
+- Seven-year randomised data show no difference in hard end points overall, but the direction after year 5 favours surgery, with more reintervention after self-expanding TAVI and more leaflet thrombosis after balloon-expandable TAVI.
+- The 2025 ESC/EACTS threshold of 70 rests partly on DEDICATE, whose surgical arm now looks unrepresentative.
+- In a fit patient in their early 70s with a long life expectancy, especially with a small annulus or bicuspid valve, SAVR (with enlargement if needed) remains the defensible lifetime-first choice; say that the Heart Team decision is about life expectancy, not age alone.
+
+## Aortic valve trials 2025 to 2026: TAVI PCI, RECOVERY at ten years, SEASON-AR and TAVI against surgery for regurgitation
+
+Added 24 November 2026 from (1) Stähli BE, et al. TAVI PCI trial. N Engl J Med 2026; doi:10.1056/NEJMoa2606924 (ESC Congress 2026 Hot Line). Read from the ESC press release, the CI Today report and the ACC meeting summary; the paper was not opened. (2) RECOVERY trial final outcomes, AHA Scientific Sessions November 2025. Read from the AHA meeting report only; the journal was not named. (3) Gao XF, Zhang JJ, et al. Transcatheter aortic-valve replacement in pure aortic regurgitation: the randomized SEASON-AR clinical trial. Circulation 2026 (online November 2026; TCT 2026). Read from the TCTMD report only. (4) Unnamed eight-centre trial of TAVR against SAVR in severe aortic regurgitation, TCT 2026 Late-Breaking Clinical Science with JAMA. Read from the ACC meeting summary only.
+
+PRO-TAVI, NOTION-3, TCW, PROGRESS, EARLY TAVR, EVOLVED and the 2020 RECOVERY paper are already in this tab. These four are not.
+
+### TAVI PCI (ESC 2026, NEJM): order of TAVI and PCI
+
+| Item | Detail |
+|---|---|
+| Design | Open-label, randomised 1:1, non-inferiority; 48 centres in six European countries (NCT04310046) |
+| Patients | 986 with severe AS and coronary disease judged suitable for both TAVI and PCI; mean age 82; 34% women |
+| Arms | TAVI then angiography-guided PCI, or PCI then TAVI; both done within 1 to 45 days of each other |
+| Primary end point (1 year) | Death, non-fatal MI, ischaemia-driven revascularisation, valve-, procedure- or heart failure-related readmission, or major, disabling or life-threatening bleeding |
+| Result | 22.2% against 24.2%; difference −2.0 points (−7.4 to 3.4); non-inferior, p<0.001 |
+| Bleeding | 6.6% against 9.7% |
+| Other | Components similar; no subgroup heterogeneity (age, sex, PCI complexity); fewer TAVI-first patients went on to PCI; coronary access after the valve was not a problem |
+
+!fig f47_tavi_pci | TAVI PCI trial: one-year composite and major bleeding, TAVI first against PCI first. Drawn for these notes from the ESC Congress 2026 press release
+
+What it changes: with PRO-TAVI (deferral is safe) and NOTION-3 (PCI of significant lesions reduces events), the message is that when PCI is needed at TAVI, doing the valve first is acceptable and bleeds less. None of these trials is about the surgical candidate with multivessel disease, where SAVR with CABG stays the guideline answer.
+
+### RECOVERY at ten years (AHA 2025)
+
+145 Korean patients (mostly very severe asymptomatic AS) randomised to early SAVR (73) or conservative care (72), followed at least 10 years.
+
+| Outcome | Early surgery | Conservative |
+|---|---|---|
+| Operative or cardiovascular death (primary) | 2.7% | 23.6% (HR 0.10, p=0.002) |
+| Cardiovascular death at 10 years | 1.4% | 18.8% (p<0.001) |
+| All-cause death at 10 years | 11.0% | 25.0% (p=0.012) |
+| Heart failure admission | 0% | 19.4% |
+
+No operative deaths in either arm. 85% of the conservative arm had AVR eventually, at a median of about 2.9 years. No interaction by peak velocity above or below 5 m/s. It strengthens the case for early surgery in asymptomatic severe AS at low surgical risk.
+
+### SEASON-AR (TCT 2026, Circulation): TAVI for pure regurgitation when surgery is not a good option
+
+| Item | Detail |
+|---|---|
+| Design | Randomised 1:1, 18 Chinese centres; 936 screened, 210 randomised (exclusions included EF under 30%, ascending aorta over 45 mm, annular perimeter over 85 mm) |
+| Arms | Transfemoral TAVI (VitaFlow, a recapturable valve, in 97%) plus medical therapy (109) against medical therapy alone (101); median age 73 to 74 |
+| Primary end point (1 year) | Death, disabling stroke or heart failure readmission: 8.3% against 24.8% (HR 0.31, 0.14 to 0.66) |
+| Driver | Heart failure readmission 3.7% against 21.3% (HR 0.16); no difference in death or stroke |
+| Harms at 30 days | Major or life-threatening bleeding 9.2% against 0; new pacemaker 20.2% against 2.0% |
+| Crossover | 9.9% of the medical arm had rescue valve replacement |
+
+!fig f47_season_ar | SEASON-AR: one-year composite, heart failure readmission and pacemaker rate, TAVI plus medical therapy against medical therapy alone for pure aortic regurgitation. Drawn for these notes from the TCT 2026 report (TCTMD)
+
+### TAVR against SAVR for severe regurgitation (TCT 2026)
+
+168 patients at intermediate or high surgical risk at eight centres, randomised to TAVR or SAVR. One-year death 2.4% against 1.2%, reported as consistent with the prespecified non-inferiority criterion; procedural success 98.8% against 100%; KCCQ 84.9 against 77.0 (p=0.018). The trial name, device and margin were not given in the summary I read.
+
+What these change: they are the first randomised data on TAVI for pure AR that I found. They support TAVI only in selected patients at high surgical risk with suitable anatomy, at the price of a one-in-five pacemaker rate. SEASON-AR excluded ascending aortas over 45 mm, so surgery remains the treatment for operable AR and for AR with a dilated aorta.

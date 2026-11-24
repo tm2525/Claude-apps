@@ -280,3 +280,59 @@ No primary source dedicated to repeat chest wall resection was found in this ses
 - Infected prosthesis: PTFE is removed; in a patient who is not septic removal can be delayed about 6 to 8 weeks until scar has formed (Sanna, quoting Seder and Rocco). Biological mesh or Vicryl and well-vascularised muscle are the options in a contaminated field.
 - Girotti 2023 does not address redo surgery or recurrence.
 - The earlier Atlas line that prosthesis removal does not usually cause flail once the scar has set was not confirmed by these sources.
+
+## Opening the diaphragm: circumferential against radial incisions and the phrenic branches
+
+Added 24 November 2026 from: Chiesa R, Civilini E, Melissano G, et al. Management of thoracoabdominal aortic aneurysms. HSR Proc Intensive Care Cardiovasc Anesth 2009;1(1):45–53, PMC3484541 (online full text read through an extraction tool); de la Cruz KI, LeMaire SA, Weldon SA, Coselli JS. Thoracoabdominal aortic aneurysm repair with a branched graft. Ann Cardiothorac Surg 2012;1(3):381–393, doi:10.3978/j.issn.2225-319X.2012.08.05 (online full text, diaphragm steps); Gambardella I, Lau C, Rahouma M, et al. Diaphragm preservation reduces respiratory failure after extent I thoracoabdominal aneurysm repair. Ann Thorac Surg 2021;112(5), doi:10.1016/j.athoracsur.2020.12.015 (abstract only); Radiopaedia, Phrenic nerve (online article); StatPearls, Anatomy, Thorax, Phrenic Nerves (updated July 2023); Whiteley J, Shoeib M, Bilancia R. Iatrogenic phrenic nerve palsy. Shanghai Chest 2021;5:27, doi:10.21037/shc-2019-amp-01 (online full text). This answers the gap noted in the diaphragm resection section above, where a safe-incision map had not been found.
+
+### The anatomy behind the rule
+- Each phrenic nerve is the sole motor supply to its hemidiaphragm. The right passes through the caval opening (about T8); the left pierces the muscular dome lateral to the heart (Radiopaedia; StatPearls).
+- Below the diaphragm each nerve divides into **anterior, lateral and posterior branches that run outward in a radial pattern** towards the costal and crural margins (Radiopaedia). Most branching is on the **inferior surface** (StatPearls), so branches are not seen from the chest.
+- The most peripheral rim of muscle takes sensory fibres from the lower intercostal nerves, not the phrenic (Radiopaedia).
+- Accessory phrenic nerves are present in 20 to 30% (Whiteley).
+- Named branch territories (sternal, anterolateral, posterolateral, crural) and Merendino's original incision map were not found in an open primary source this session.
+
+### What follows for incisions
+| Incision | Effect | Source |
+|---|---|---|
+| **Peripheral circumferential**, a few cm in from the costal attachment | Runs parallel to the branch ends, so most of the muscle should keep its supply (inference from the radial branching; not stated as such in these sources). In thoracoabdominal aortic repair the left hemidiaphragm is divided circumferentially from the costal margin to the crus, **leaving a 3 to 4 cm rim on the chest wall** for closure | de la Cruz/Coselli 2012; Chiesa 2009 |
+| **Radial**, from the costal margin to the hiatus | Crosses the branches; paralysis of the left hemidiaphragm after radial division to the aortic hiatus contributes significantly to respiratory failure | Chiesa 2009 (citing Safi) |
+| **Limited phrenotomy**, preserving the tendinous centre | Used when anatomy allows; shown to shorten ventilator weaning (Engle and colleagues, J Vasc Surg 1999, cited by Chiesa; numbers not given in the source read) | Chiesa 2009 |
+| **No diaphragm division** (crura splitting through a thoracotomy) | Extent I repairs, 325 patients: after propensity matching, tracheostomy 4.0% against 13.1% with thoracophrenolaparotomy (p = 0.035); thoracophrenolaparotomy an independent predictor (OR 3.66) | Gambardella 2021 (abstract) |
+
+**Closure (Coselli):** retraction sutures along the cardiac edge during the case; continuous No. 1 polypropylene from the crus to the costal margin, tied to the abdominal fascia suture so that no gap is left.
+
+!fig f42_diaphragm_incisions | Diaphragm seen from below: phrenic branches radiate outward from the entry point, so a peripheral circumferential incision leaving a 3 to 4 cm rim spares them, while a radial incision from the costal margin to the hiatus crosses them. Drawn for these notes from Radiopaedia (radial branching), Coselli 2012 (3 to 4 cm rim) and Chiesa 2009 (radial division and paralysis); schematic
+
+### Applying it in thoracic surgery
+- Resecting a diaphragm tumour or entering the abdomen from the chest: prefer a peripheral cut parallel to the chest wall and keep a rim to sew to; avoid long radial cuts towards the hiatus or central tendon unless the margin demands it (the resection section above already tailors the phrenotomy to the margin, after Solli).
+- Watch the phrenic trunk on the pericardium above the diaphragm: it can be caught when completing the horizontal fissure with a stapler and during left station 6 dissection, and is harder to see with high BMI at thymectomy (Whiteley).
+- After a phrenic injury, Whiteley advises against intervention within 18 months of the first radiological sign, because recovery can occur; plication is for symptoms.
+
+## Repeat chest wall resection: what the open literature adds
+
+Added 24 November 2026 from: Ozaniak A, Galova D, Benesova I, Lischke R, Ozaniak Strizova Z. Treatment approaches and outcomes of major chest wall resections and reconstructions in patients with soft tissue and bone sarcomas: a retrospective observational study. J Thorac Dis 2024;16(10):6863–6878, doi:10.21037/jtd-24-472 (online full text read through an extraction tool, twice); De Iaco G, Brascia D, De Palma A, et al. Iterative surgical demolition and reconstruction of the anterior chest wall and thoracic outlet for a recurrent chondrosarcoma: long term oncologic and functional results, case report. Curr Chall Thorac Surg 2020;2:21, doi:10.21037/ccts.2020.02.03 (online full text). Neither is a dedicated series of redo chest wall operations; the section above (Sternal resection and reconstruction, and reoperation on the chest wall) holds the earlier points (Arnold and Pairolero, PTFE removal timing).
+
+### Recurrent sarcoma referred after surgery elsewhere (Ozaniak, Prague, 2014 to 2022)
+| Measure | Primary soft tissue sarcoma (10) | Recurrent soft tissue sarcoma (12) |
+|---|---|---|
+| R0 | 10 of 10 | 11 of 12 (1 R1) |
+| Ribs resected | (not separated) | 7 (58%) |
+| Mesh / muscle flap | (not separated) | 8 (67%) / 7 (58%) |
+| Stay | Mean 13.4 days (5 to 29) | Mean 23.9 days (6 to 142) |
+| Clavien-Dindo IIIb to IVa | | 4 of 12 |
+| Any later local or distant relapse | 4 of 10 (40%) | 7 of 12 (58%) |
+
+- 54.6% of the soft tissue sarcoma group needed re-resection, which the authors put down to poor adherence to guidelines and to treatment outside a reference centre at the first operation (93.8% adherence in the bone sarcoma group). Re-resected patients had worse postoperative courses, more grade III to IV complications and longer stays.
+- Recurrent against primary surgery did not significantly change overall survival (HR 2.66, 95% CI 0.43 to 25.7); local recurrence (HR 93) and metastasis (HR 48) did, with very wide intervals from 22 patients.
+- Commonest serious complication: deep wound infection needing revision under general anaesthesia; infection around implants often meant repeated wound revisions and sometimes removal of the osteosynthesis material. Prolonged antibiotic prophylaxis did not lower infection risk in studies they cite.
+- Salvage of a failed free flap: omentum and negative-pressure dressing (one patient).
+- One recurrent case needed forequarter amputation.
+
+### Staged repeat resection of the anterior chest wall (De Iaco, single case)
+- Grade 2 chondrosarcoma of the upper sternum, ribs and clavicles: seven operations from 1996 to 2018 (right first rib; about two years later the medial right clavicle, half the manubrium, the first and part of the second rib with Mersilene and a latissimus flap; 2009 part of the left first rib; 2011 the middle of the left clavicle and rest of the manubrium; 2012 total sternectomy with three titanium plates to ribs 3, 5 and 7 and Mersilene, then 60.4 Gy; 2016 and 2018 left then right second rib recurrences removed with disarticulation at the costovertebral joint).
+- Alive and disease-free at last review, FEV1 77%, FVC 73%, mild restriction, shoulder function kept.
+- Lessons the authors draw: staged resections that stabilised the remaining cage probably lowered the risk of acute respiratory compromise compared with one large anterior resection; late relapses after wide margins suggest intramedullary spread, so take a recurrent rib back to its vertebral joint; the first operation decides survival (completeness of first resection was the strongest predictor in a Memorial Sloan Kettering review they cite); the first-rib histology was first read as benign and later revised to grade 2 chondrosarcoma on review of the slides.
+
+### Viva summary
+Refer chest wall sarcoma to a sarcoma centre before the first cut: an unplanned or non-radical first excision leads to re-resection with more complications and longer stay. At redo surgery aim again for R0 (taking the biopsy track and skin, as in the sternal section above), expect infection around implants (removal of infected material and biological or absorbable mesh with well-vascularised muscle are in the sections above), and consider staging very large anterior resections. (Evidence here is a 38-patient series and a single case report.)

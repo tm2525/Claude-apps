@@ -128,3 +128,139 @@ Added 21 November 2026 from Sündermann SH, Bäck C, Bischoff-Ferrari HA, Dehbi 
 | Nutrition and cognitive or mental state | assess before the procedure; no numeric cut-off reported |
 
 Viva use: quote a risk score together with a frailty measure, never alone. The consensus pairs assessment with measures to improve the patient's condition before the procedure.
+
+## ICVTS best evidence topics: perioperative drugs, AF prophylaxis and wound infection
+
+Added 24 November 2026 from six best evidence topics in Interactive CardioVascular and Thoracic Surgery (ICVTS), cited in their rows. Read from the journal's online full text (academic.oup.com). "Full" means the whole page including the clinical bottom line was read; "Part" means the abstract, question, search and evidence table were read but the page was cut off before the bottom line section, so the conclusion is the abstract's.
+
+### Tranexamic acid dose
+
+| Three-part question | Papers (found, best) | Bottom line and numbers | Citation, how read |
+|---|---|---|---|
+| In adults having cardiac surgery, what dose of tranexamic acid is most effective and safe? | 586, 12 | High dose (over 80 mg/kg in total) bleeds less than low dose (under 50 mg/kg). Sigaut 2014 trial (569 patients), low v high: blood loss on day 1 820 v 590 ml, blood product units 4.1 v 2.5, re-operation for bleeding 6.2% v 2.5%; transfusion rate, death and seizures did not differ. The benefit was largest in patients at high bleeding risk; trials that excluded them found no difference. Seizures rise with dose in observational data: Sharma 2014 (11,529 patients) 0.3% after a 50 mg/kg bolus v 2.6% with over 80 mg/kg, odds ratio 14.3; Kalavrouziotis 2012: over 100 mg/kg predicted seizure within 24 hours (odds ratio 2.6), and about 30% of those patients had an old brain lesion on imaging. Causation is unproven. Recommended: high bleeding risk 30 mg/kg bolus, 16 mg/kg/h infusion and 2 mg/kg in the prime; low risk 10 mg/kg bolus, 1 mg/kg/h and 1 mg/kg in the prime. | Hodgson S, Larvin JT, Dearman C. ICVTS 2015;21(3):384-388. doi:10.1093/icvts/ivv134. Full (two fetches) |
+
+!fig f43_txa_dose | Bleeding and seizure figures for low and high-dose tranexamic acid as reported in Hodgson, Larvin and Dearman, ICVTS 2015 (my chart; the seizure pair is observational)
+
+The current guideline line already in this tab (total dose no more than 100 mg/kg) matches the dose above which Kalavrouziotis 2012, in this BET, found seizures more likely.
+
+### Preventing postoperative atrial fibrillation
+
+| Three-part question | Papers (found, best) | Bottom line and numbers | Citation, how read |
+|---|---|---|---|
+| In cardiac surgery, are prophylactic beta-blockers of benefit in reducing postoperative AF? | 113, 8 (5 meta-analyses) | Yes: number needed to treat about 7. Crystal 2002 (27 trials, 3,840 patients): AF 33% to 19%. Andrews 1991: 34% to 8.7%. Sotalol reduced AF more than other beta-blockers. No reduction in stroke. Best agent and benefit with a poor ventricle unclear. | Omorphos S, Hanif M, Dunning J. ICVTS 2004;3(4):641-646. doi:10.1016/j.icvts.2004.07.014. Full |
+| In cardiac surgery, does preoperative statin therapy prevent postoperative AF? | 445, 12 | Yes in 10 of 12 studies, with less stroke and shorter stay; best dose, drug and duration (3 days to 2 months) unknown. Kuhn 2014 (91,491 patients): odds ratio 0.71 (0.61 to 0.82). ARMYDA-3 (atorvastatin 40 mg for 7 days, 200 patients): 35% v 57%. Chen 2010 meta-analysis of trials: relative risk 0.57, number needed to treat 8. Two large studies found no effect (Yin 2010, Virani 2008). | Goh SL, Yap KH, Chua KC, Chao VTT. ICVTS 2015;20(3):422-428. doi:10.1093/icvts/ivu402. Full |
+| In CABG, does posterior pericardiotomy reduce postoperative AF? | 12, 7 | Yes: number needed to treat 6. Biancari 2010 meta-analysis of trials (763 patients): AF 10.8% v 28.1%, odds ratio 0.33 (0.16 to 0.69). Two of the six trials were neutral (Asimakopoulos 1997, Arbatli 2003). | Kaleda VI, McCormack DJ, Shipolini AR. ICVTS 2012;14(4):384-389. doi:10.1093/icvts/ivr099. Part |
+
+!fig f43_poaf_prevention | Postoperative AF with and without beta-blockers, posterior pericardiotomy and preoperative atorvastatin, from the pooled or trial results quoted in three ICVTS best evidence topics (my chart)
+
+The statin BET (2015) predates the guideline line already in this tab: the 2024 EACTS perioperative medication guideline says do not start a statin shortly before surgery because of kidney injury (class III) but continue an existing one (IIa). Mention the change.
+
+### Other drugs and wound infection
+
+| Three-part question | Papers (found, best) | Bottom line and numbers | Citation, how read |
+|---|---|---|---|
+| Before cardiac surgery, should ACE inhibitors or angiotensin II receptor blockers be omitted to avoid postoperative vasodilation? | 421, 11 (3 randomised) | Omitting them is rational, as preoperative use lowers systemic vascular resistance and predicts vasoplegia, but the evidence is weak. Tuman 1995 (4,301): two or more vasoconstrictor infusions in 7.7% v 4.0%. Mekontso-Dessap 2001: ACE inhibitor an independent predictor of vasoplegia after bypass (relative risk 2.26). Webb 1998 trial: no difference in resistance on bypass. | Raja SG, Fida N. ICVTS 2008;7(3):470-475. doi:10.1510/icvts.2007.174698. Part |
+| In cardiac surgery, does routine topical antimicrobial use prevent sternal wound infection? | 238, 11 | Topical antibiotics reduce both superficial and deep infection, but agents, doses and definitions vary too much for a general recommendation. Kowalewski 2017 meta-analysis of topical vancomycin (20,039 patients): any sternal infection relative risk 0.24. Kowalewski 2015 meta-analysis of gentamicin-collagen sponges (23,102 patients, 4 trials): relative risk 0.62, mediastinitis 0.64. | Magro PL, Sousa Uva M. ICVTS 2021;32(3):452-456. doi:10.1093/icvts/ivaa292. Part |
+
+### Using these in a viva
+
+- Note the contrast in the drug questions: the BETs of 2004 to 2015 support beta-blockers (still class I to continue), but the statin and ACE inhibitor advice has since been rewritten by the 2024 EACTS perioperative medication guideline in this tab (continue, rather than start or stop).
+- Tranexamic acid: give the two regimens and the reason for the cap. Seizure risk is the cost of high doses; in Koster 2013 (in the BET's table) the link with seizures held for open-heart surgery but not for CABG.
+
+## SCTS 2025 to 2026: position statements, guidance and audit news
+
+Added 24 November 2026 from: SCTS position statements page (scts.org/about_scts/position_statements.aspx), read through a summarising extract; SCTS statement on patient safety, complex case management, consultant collaboration and teamwork (27 November 2025, scts.org/news/780), read through a summarising extract; SCTS Statement on the Retraining and Reskilling of Consultants in Cardiothoracic Surgery (January 2026, scts.org PDF), read through a summarising extract; SCTS Executive combined meeting report, June 2026, and its audit sub-committee report (June 2026) and adult cardiac sub-committee report (May 2026), read through summarising extracts. NICOR NCAP 2025 annual report: only a news summary (Arden and GEM CSU) was read, which gave no figures. The notes already hold the NACSA report on data to 2023/24, the NLCA 2026 and GIRFT (UK national audit 2025 to 2026, above); no newer NACSA report or SCTS "blue book" was found.
+
+### Position statements
+
+| Statement | Date | Content |
+|---|---|---|
+| Patient safety, complex case management, consultant collaboration and teamwork | 27 November 2025 (after the September 2025 unit representatives meeting) | Seven principles: (1) safety above all; (2) risk **reduction**, not risk **avoidance**, so complex patients are not denied surgery; (3) safety nets: checklists, MDT decisions, peer review, transparent M&M, escalation protocols; (4) **dual or multiple consultant operating and anaesthesia** for high-risk or complex cases, with mentoring and proctoring essential when new procedures are introduced; (5) collaborative culture; (6) continuous data collection and open sharing of outcomes, complications and near misses, including with patients for consent; (7) managers must fund realistic job plans for dual operating, resilient rotas and protected time for audit and peer review. No numerical thresholds |
+| Retraining and reskilling of consultants | January 2026 | For a consultant returning after restriction, suspension, investigation or absence (not for new procedures). Prompt, fair investigation (delay erodes skills); PPAS may give expert assessment and programme advice. A written **learning agreement** mapped to the ISCP curriculum, with roles, duration, review and sign-off criteria. **Two named consultant supervisors** with paid time; an independent educational supervisor; an external senior mentor. Monthly progress reviews, formal review at least every 3 months, MCR and MSF; WBAs, logbook and reflection. No on-call at first; fixed-term contract; target **3 to 12 months**. Competence for paediatric, transplant, aortic, mitral and robotic surgery at least at senior fellowship level. The **trust** funds, delivers and signs off; the SCTS advises only when invited |
+| UK transplant services | April 2026 | Cardiothoracic transplant services are not meeting international standards and are under strain; investment is not reaching surgical teams, critical care and perioperative pathways; surgeons and patients have not been consulted enough. An SCTS working group is building a framework for UK and Ireland heart and lung transplant services. The transplant committee (re-formed 2025) has run three Delphi rounds and proposes renaming itself the Mechanical Circulatory Support and Cardiothoracic Transplant Committee |
+| Aprotinin | Submitted to the Executive 16 January 2026 | Drafted at the MHRA's request after review of off-label use. Context: licence suspended 2007, restricted indication 2013 with a registry condition (NAPaR). In NAPaR, **52.2%** of patients given aprotinin across nine European countries were in the UK; of UK patients, **20%** had isolated CABG and **80%** high-risk surgery (aortic, valve, endocarditis). The statement text was not found |
+| SDCEP antibiotic prophylaxis against infective endocarditis | 2025 to 2026 | SCTS endorsed the revised SDCEP implementation advice supporting NICE CG64, UK-wide |
+
+Other guidance in progress (June 2026): RIB-GUIDE on rib fractures (being finalised); "Managing Risk" guidance (published; not read); a congenital "Framework for Good Practice in Congenital Heart Surgery in the UK and Ireland" (completed).
+
+### Audit and data
+
+| Item | Detail (SCTS reports, May to June 2026) |
+|---|---|
+| NICOR adult cardiac | Data deadline 31 May 2026, outlier analysis to follow. New deputy adult cardiac audit lead (S Budhia); an SCTS dashboard project chasing unit submissions |
+| Congenital | S Stoica is NICOR national congenital (NCHDA) clinical lead, the first surgeon in that role; a congenital data bank has stalled over cost and burden |
+| **Thoracic returns 2025/26** | **37 of 38 centres; more than 11,000 procedures, 21% more than the previous year; mortality after minimally invasive lobectomy about 0.5%** |
+| National Thoracic Database | Built with Epic, hosted on the cardiac model through the University of Bristol; a part-time database manager funded |
+| National Ambulatory Chest Drain Audit | Starts August 2026 (retrospective data from thoracic centres) |
+| Thoracic State of the Nation | The SCTS is preparing a Thoracic Surgery State of the Nation report; NHS England's National Diagnostic Standards of Care and Optimal Pathways for Thoracic Oncology are due |
+| NCAP 2025 annual report | "Very low" mortality and complication rates for adult and congenital surgery; most TAVI under conscious sedation, percutaneous transfemoral. No figures in the summary read |
+
+### National work touching cardiac surgery
+
+- NICE: SCTS expert advice on IP2042 (microaxial flow pump for cardiogenic shock). NICE published HTG774 and HTG775 on these pumps in March 2026 (see the NICE HealthTech section below); which of them IP2042 became was not confirmed.
+- Health Technology Wales: SCTS review of TAVI reassessment at intermediate risk and a new low-risk topic.
+- NHS England type B aortic dissection toolkit (combined societies), to extend to post-surgical surveillance and incidental aortic dilatation.
+- Proposed NCEPOD study of non-traumatic aortic emergencies (ruptured AAA and acute dissection), supported by the SCTS.
+- National rollout of minimally invasive cardiac surgery with ERACS will need perfusion training; cannula supply depends mostly on one US manufacturer.
+- RAMP (military casualty reception) planning, led by the SCTS for cardiothoracic surgery.
+
+### Viva points
+
+- Dual consultant operating is now the SCTS position for high-risk cases, with job planning to fund it: a useful answer to "how would you manage a very high-risk case?" alongside GIRFT's unit attribution of high-risk outcomes.
+- Retraining: trust-led, learning agreement, two supervisors plus mentor, 3 to 12 months, no on-call initially.
+- Minimally invasive lobectomy mortality in the UK is about 0.5% (SCTS 2025/26 returns).
+
+
+## NICE HealthTech guidance 2025 to 2026 for cardiac surgery: TAVI valves, TAVI for aortic regurgitation and microaxial flow pumps
+
+Added 24 November 2026 from: NICE HTG757, Transcatheter heart valves for transcatheter aortic valve implantation to treat aortic stenosis: late-stage assessment (21 August 2025, minor update December 2025; replaces HTE31); NICE HTG752, TAVI for native aortic valve regurgitation (24 June 2025 as IPG805; migrated to HTG752 in January 2026 with no change); NICE HTG775, Percutaneous insertion of a catheter-based left ventricular microaxial flow pump for cardiogenic shock (25 March 2026); NICE HTG774 overview page (surgical insertion of the same pump; last reviewed 25 March 2026). HTG757, HTG752 and HTG775 read from the guidance PDFs through summarising extracts; HTG774 from its overview page only (recommendations not shown). None of these was in the notes. Former interventional procedures and early value assessment documents now carry HealthTech (HTG) numbers: IPG805 became HTG752, and HTE31 was replaced by HTG757.
+
+### TAVI valves: HTG757 (August 2025)
+
+| Recommendation | Content |
+|---|---|
+| 1.1 | Not enough evidence to say whether price differences between transcatheter valves are justified |
+| 1.2 | Trusts should offer a **range** of valves so a clinically suitable one is available for everyone |
+| 1.3 | If more than one valve is suitable, use the **least expensive** |
+| 1.4 | Enter everyone into the **UK TAVI registry** (NICOR) |
+
+Reasoning: over half of patients do not need a particular valve; anatomy and calcium distribution predict outcome. The registry (7,409 procedures with identifiable device; 3,917 with complete linked data; follow-up to 31 months) showed some in-hospital differences between valves in stroke, aortic regurgitation and pacemaker rate, none after discharge, and could not separate valve from patient effects. Valves covered include Evolut, Sapien 3, Navitor, Myval Octacor, Allegra, Hydra and Trilogy (ACURATE neo2 withdrawn). Equality point: women more often need small valves, and some people decline particular valves for religious or cultural reasons.
+
+### TAVI for native aortic regurgitation: HTG752 (2025)
+
+| Patient group | Recommendation |
+|---|---|
+| SAVR unsuitable or high risk | Can be used **with special arrangements** for clinical governance, consent and audit or research, while evidence is generated |
+| SAVR suitable and not high risk | **Research only** |
+| Everyone | Selection by an experienced MDT (interventional cardiologist, cardiac surgeon, imaging expert; cardiac anaesthetist and elderly-care physician as needed) who set risk and valve; specialised centres with cardiac and vascular surgical backup; UK TAVI registry |
+
+Committee comments: devices not approved for regurgitation had worse safety; may not suit significant aortic root dilatation. Evidence: 10 studies, mostly small observational, short term.
+
+### Microaxial flow pump for cardiogenic shock: HTG775 (March 2026)
+
+- Percutaneous LV microaxial flow pump **can be used during an evidence generation period** with **enhanced informed consent** and **audit** (registry, or NICE's audit tool).
+- Only **primary PCI centres with on-site intensive care expertise**, by trained clinicians, with a **bleeding management protocol**.
+- Rationale: one randomised trial showed better survival than standard care in **infarct-related** cardiogenic shock, but with strict eligibility; benefit in wider shock is unknown; observational data are inconsistent; serious bleeding occurs. Uses: bridge to recovery, transplant or durable LVAD. (The NICE document does not name the trial or give its figures.)
+- HTG774 covers **surgical** insertion (through a graft into an artery); its recommendations were not read.
+
+### Viva points
+
+- Choosing a TAVI valve: suitability first, then cost (NICE HTG757); register every case.
+- Pure aortic regurgitation: SAVR remains standard; TAVI only under special arrangements in inoperable or high-risk patients.
+- Impella-type support in infarct-related shock is now NICE-sanctioned in primary PCI centres, under audit and enhanced consent.
+
+
+## Cardiac rehabilitation phases 1 to 4 (SIGN 57)
+
+Added 24 November 2026 from Scottish Intercollegiate Guidelines Network. Cardiac rehabilitation: a national clinical guideline (SIGN 57). January 2002. scotphn.net PDF, read through a summarising extract of the first 100,000 of 139,000 characters (sections 1 to 6); and The Heart Manual / NHS Lothian, Cardiac Rehabilitation training resource (about 2017), read through a summarising extract. The notes (Coronary surgery tab, BACPR section) say that a definition of numbered phases was not found in a primary source; SIGN 57 gives one. SIGN 57 dates from 2002: check whether it has been replaced before quoting it as current. BACPR refers instead to the six-stage Department of Health pathway of care (see the Coronary surgery tab).
+
+| Phase | Setting and timing | Content |
+|---|---|---|
+| 1 | In hospital, or after any "step change" (MI, new angina, emergency admission, **cardiac surgery**, angioplasty, new heart failure) | Medical evaluation, reassurance and education, correcting misconceptions, risk factor assessment, **mobilisation**, discharge planning; family involved |
+| 2 | Early after discharge, mostly at home | Home visits, telephone contact, supervised self-help (the Heart Manual); covers the period when patients feel isolated |
+| 3 | Structured exercise, historically hospital-based, increasingly community | Exercise with education, psychological support and risk factor advice; menu-based (smoking, weight, vocational rehabilitation, referral onward). **At least two exercise sessions a week for at least eight weeks** |
+| 4 | Long term, community (for example a support group at a leisure centre) | Maintenance of physical activity and lifestyle change; benefit lasts only if sustained |
+
+After surgery: comprehensive rehabilitation is recommended after coronary revascularisation, surgical or percutaneous (**grade A**); it lowered lipids and improved perceived health, while exercise-only programmes improved capacity but not lipids or weight; no trial was powered for mortality after revascularisation. Rehabilitation starts once medically stable; SIGN 57 sets no start day for exercise after sternotomy. The Heart Manual resource notes that a phase model can exclude patients never admitted.
+
+Viva point: phase numbers are old shorthand; the BACPR standards (in the Coronary surgery tab) give the timings to quote now: referral during the admission or within 24 h of discharge, assessment within 10 working days, at least 8 weeks of programme.

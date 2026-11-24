@@ -74,3 +74,52 @@ Reading it: routine use of this device does not prevent early stroke after TAVI.
 - SMART: annulus 430 mm² or less; self-expanding valve non-inferior clinically and far less valve dysfunction (9.4% vs 41.6%).
 - BHF PROTECT-TAVI: 7,635 patients; Sentinel did not reduce stroke (2.1% vs 2.2%).
 - All three are short follow-up; the 2025 ESC/EACTS advice on a small annulus (supra-annular valve or surgery with root enlargement) is earlier in this tab.
+
+## Transcatheter trials 2026: cerebral protection head to head, anticoagulation after TAVI and two-year transseptal mitral replacement
+
+Added 24 November 2026 from (1) PROTECT H2H (Emboliner against Sentinel), ACC.26, read from "ACC.26 structural intervention trials offer viable options" (ACC.org, April 2026); journal not given. (2) PROTEMBO IDE, TCT 2026 Late-Breaking Clinical Trials, read from the ACC TCT 2026 summary; journal not given. (3) ACASA-TAVI (presented by Øyvind Lie), ESC Congress 2026 and JAMA 2026, read from the ACC ESC 2026 summary only (no event rates were given). (4) ENCIRCLE two-year results (SAPIEN M3 transseptal mitral replacement), TCT 2026 and JACC 2026, read from the ACC TCT 2026 JACC summary only. No full papers were opened.
+
+BHF PROTECT-TAVI (Sentinel did not reduce stroke), UK TAVI and SMART are already in this tab.
+
+### Cerebral embolic protection during TAVI
+
+| Trial | Design | Result |
+|---|---|---|
+| PROTECT H2H (ACC.26) | Open-label RCT, 522 randomised (485 analysed), Emboliner against Sentinel; 30-day death, stroke or stage 3 AKI, non-inferiority | 4.5% against 5.0%, non-inferior; stroke about 2% in both; technical success 96% against 87% (p=0.0005); more debris captured with Emboliner |
+| PROTEMBO IDE (TCT 2026) | RCT 2:1:1, 305 patients: ProtEmbo against Sentinel against no protection | Safety met (MACCE 7.6%, 8.5%, 11.6%; ProtEmbo below a 19% goal). Efficacy failed: median new MRI lesion volume at 36 hours 402, 357 and 366 mm3. Stopped early for futility |
+
+What it changes: nothing yet for routine practice. After BHF PROTECT-TAVI, no device has shown fewer clinical strokes; PROTECT H2H only compares two devices, and PROTEMBO showed no reduction in new brain lesions against no protection.
+
+### ACASA-TAVI (ESC 2026, JAMA)
+
+360 patients having TAVI for severe AS, randomised to 12 months of a direct oral anticoagulant alone or aspirin alone. Anticoagulation reduced hypoattenuated leaflet thickening (HALT) on CT and was non-inferior for bleeding, thromboembolism or death; the presenter noted that life-threatening and fatal bleeds occurred only in the aspirin arm. Event rates and confidence intervals were not in the summary I read, so treat this as provisional until the paper is checked. Until the full results are read it should not be taken to change the single-antiplatelet default in the 2025 ESC/EACTS guideline.
+
+### ENCIRCLE at two years (TCT 2026, JACC)
+
+Transseptal SAPIEN M3 mitral replacement for symptomatic MR (main study cohort); 202 of 299 treated patients had two-year data.
+
+| Outcome at 2 years | Rate |
+|---|---|
+| Death or heart failure admission | 35.6% |
+| Freedom from death | about 75% |
+| Freedom from heart failure admission | about 77% |
+| Disabling stroke | 6.6% |
+| Clinically significant valve thrombosis | 7.1% |
+| Haemolysis needing intervention | 7.6% |
+| Significant LVOT obstruction | none |
+
+Viva point: a fully transseptal replacement is now feasible with no LVOT obstruction, but one in three patients died or was readmitted by two years and valve thrombosis, haemolysis and disabling stroke each affected about one in fifteen.
+
+## Society documents published in 2026 that the notes do not yet hold
+
+Added 24 November 2026 from the EJCTS "Guidelines, recommendations and position papers" index page (academic.oup.com/ejcts/pages/guidelines), read 24 November 2026. Only titles and DOIs were available; the documents themselves could not be opened in this session, so no recommendations are given.
+
+| Document | DOI | Belongs in |
+|---|---|---|
+| EACTS Expert Consensus on robotic cardiac surgery: minimum standards, training and quality assurance | 10.1093/ejcts/ezag187 | Transcatheter and minimally invasive (this tab) |
+| EACTS Expert Consensus on iatrogenic aortic dissection | 10.1093/ejcts/ezag221 | Aorta (the current section there uses a 2026 case series) |
+| EACTS Expert Consensus on civil aviation after cardiothoracic surgery and transcatheter procedures | 10.1093/icvts/ivag217 | Perioperative and safety |
+| ESC/EACTS clinical consensus on free-wall rupture, pseudoaneurysm and papillary muscle rupture after MI | 10.1093/ejcts/ezag157 | Coronary surgery (summary added there) |
+| EACTS Expert Consensus on lung volume reduction for emphysema | 10.1093/ejcts/ezag226 | Thoracic: emphysema and transplantation |
+
+The 2026 EACTS consensus on aortic valve repair and valve-sparing root replacement (ezag182) and the 2025 Ross, protected-surgery and temporary support documents are already in the notes. No new 2026 STS or AATS clinical practice guideline was found within the search budget.

@@ -592,6 +592,233 @@ An unadjusted CUSUM treats every death alike, so case mix moves the chart. In th
 ### How it relates to VLAD and funnel plots (application, linking to the section above)
 VLAD (expected minus observed deaths) is easy to explain; Steiner et al. point out that observed-minus-expected schemes with repeated testing (Poloniecki) give no formal false-alarm rate, whereas the risk-adjusted CUSUM's limit is set from its ARL. Funnel plots compare units over a fixed period. A unit can use VLAD for display and a CUSUM for alarms.
 
+## FRCS (C-Th) examination 2026: JCIE regulations, recent results and the August 2026 curriculum update
+
+Added 24 November 2026 from: (1) Joint Committee on Intercollegiate Examinations. Intercollegiate Specialty Examination in Cardiothoracic Surgery: Regulations (2015) and Guide to the Scope and Format of the Examination, Policy SR4 v8.0, last reviewed August 2025, jcie.org.uk (DocumentGenerator docID 456de175-d22b-44bd-abdb-55f6aacf3889). Read from the online document through two summarising extracts; the format section was asked for twice. (2) SCTS Executive, combined meeting report, June 2026 (JCIE examination board report by the Board Chair, curriculum/SAC report and audit report), scts.org/_userfiles/pages/files/combined_meeting_report_june_2026_16th_june_3.pdf, and the JCIE Intercollegiate Specialty Board report to SCTS (scts.org, 7e_intercollegiate_specialty_exam_board.pdf). Both read through summarising extracts. (3) ISCP. Change mapping proforma: Cardiothoracic Surgery curriculum update, August 2026, iscp.ac.uk/media/1451. Read through a summarising extract. The notes already have the curriculum's own description of the ISB examination, the assessment blueprint, index procedures, critical conditions and the new oesophageal appendix (Curriculum structure part 2). Only what is new is given here.
+
+### What the regulations add to the curriculum description
+
+The notes said the number of questions and the list of stations were not in the curriculum. The JCIE regulations give them.
+
+| Item | Detail (SR4 v8.0) |
+|---|---|
+| Eligibility | Primary medical qualification recognised by the GMC or Medical Council of Ireland, **at least 6 years qualified**, and **three structured references** in the JCIE format from senior colleagues. (The regulations do not mention ARCP; the curriculum sets ARCP outcome 1 at the end of phase 2 for trainees.) |
+| Section 1 | Two computer-based papers at Pearson VUE centres in the UK and Ireland. **Paper 1: 120 single best answer questions, 2 h 15 min. Paper 2: 120 SBA, 2 h 15 min.** Trained examiners standard-set the "eligibility to proceed" mark |
+| Section 2, clinical (format from August 2022) | Cardiac intermediate case: one 45-minute session, 3 patient volunteers. Thoracic intermediate case: one 45-minute session, 3 volunteers. Cardiac instruments and imaging/investigations: one 30-minute session, 6 scenarios (3 x 5 min instruments, 3 x 5 min imaging). Thoracic instruments and imaging/investigations: the same |
+| Section 2, oral | Cardiac critical conditions/ICU/trauma; thoracic critical conditions/ICU/trauma; sub-specialty oral in cardiac or thoracic surgery, chosen at application. The guide prints "3 x 30 minute sessions" under the orals and gives no separate time for each; read it as three 30-minute orals, but confirm with the JCIE |
+| Attempts | Section 1 within 2 years of the first attempt, maximum 4; Section 2 maximum 4; no re-entry; whole process within 7 years. **Attempts at the Joint Surgical Colleges Fellowship Examination (JSCFE) count towards the four** |
+| Prize | McCormack Medal: highest mark at first attempt, awarded at the Board's discretion |
+| Fellowship | Members of the Edinburgh, England, Glasgow or Ireland colleges who pass are promoted to Fellowship unless they decline |
+| Not stated | Number of examiners per station, Section 2 marking scale and pass mark, topic weightings (candidates are referred to the curriculum) |
+
+!fig f49_exam_structure | FRCS (C-Th) structure under JCIE regulations SR4 v8.0 (reviewed August 2025). Drawn for these notes from the regulations.
+
+### Results, 2025 to 2026 (JCIE report to the SCTS Executive, June 2026)
+
+| Sitting | Overall | Type 1 candidates | Not in training | Reliability (target) | SEM (target) |
+|---|---|---|---|---|---|
+| Section 1, 2 July 2025 | 15 of 33 (45%) eligible to proceed | 11 of 16 (69%) | 3 of 16 (19%) | 0.85 (above 0.8) | 2.84% (below 3%) |
+| Section 1, 14 January 2026 | 28 of 43 (65%) | 11 of 14 (79%) | 16 of 28 (57%) | not given | not given |
+| Section 2, 21 to 22 May 2025, Blackpool | 24 of 29 (83%) | 13 of 13 (100%) | 10 of 15 (67%) | 0.84 (above 0.7) | 2.31% (below 5%) |
+| Section 2, 22 to 23 October 2025, London (Ealing) | 20 of 32 (63%) | 11 of 12 (92%) | 9 of 20 (45%) | 0.79 (above 0.7) | 2.61% (below 5%) |
+
+No Type 2 candidates presented at any sitting. Maltese trainees: 1 of 1 passed at each of three sittings. The report does not define Type 1; it is reported separately from "not in training".
+
+!fig f49_jcie_results | FRCS (C-Th) pass rates, two sittings of each section pooled, from the JCIE board report to the SCTS Executive (June 2026). Drawn for these notes.
+
+Panel of examiners: 8 female and 43 male examiners, with 14 not declaring (1 female and 42 male in October 2015). Consultants may join the question-writing panel from appointment, and the Section 2 examiner panel after 5 years in a substantive post.
+
+### Changes announced in 2025 to 2026
+
+- **Sample questions**: the JCIE website now has **50** Section 1 sample SBAs (previously 5), each with the answer and explanation, aligned to the feedback domains.
+- **JSCFE ends**: the final JSCFE Section 2 is in Edinburgh in November 2026. Candidates who do not complete Section 2 may receive a Certificate in Cardiothoracic Surgical Sciences for their Section 1 pass.
+- **Congenital**: the SCTS congenital sub-committee will put a draft recommendation on a congenital-specific examination to the examination board within a year.
+- The Section 2 format has been unchanged since August 2022. No other format change for 2026 was found.
+
+### August 2026 curriculum update: changes not already in the notes
+
+The GMC approved the update on **14 January 2026** for adoption in August 2026. The notes already list the revised index procedures (isolated uncomplicated AVR and MVR; decortication and/or washout; resection of mediastinal lesion; robotic lung resection) and the oesophageal appendix 2a. Further changes from the ISCP change map:
+
+| Area | Change |
+|---|---|
+| Pathway | ST3 entry removed from the pathway diagram: training is run-through |
+| Scope | Republic of Ireland added throughout; text cites the SCTS-SAC Cardiothoracic Workforce Report 2025 |
+| On call | Not all trainees need to be on call; more detail on arrangements |
+| New generic areas | Paragraphs on genomics, clinical informatics and sustainability. Not yet expected to be fully evidenced by all trainees |
+| Management and leadership | Evidence should cover management structures and differences between the UK nations |
+| Rotation | Rotate through more than one unit where geography allows |
+| Syllabus levels | Level 2 now reads "under direct supervision"; level 4 is "a day-one UK consultant surgeon" |
+| Minimal access | Minimal access incisions (coronary, aortic, mitral) and minimal access vein harvest added; technical levels lowered from 2/3/3/2/2 to 1/2/2/1/1 |
+| Valve levels lowered | Mitral repair 1/3/4/1/1 to 1/2/3/1/1; sutureless AVR 2/3/4 to 1/2/3; minimally invasive mitral 1/2/3 to 1/2/2 |
+| Aorta | Non-A non-B dissection, frozen elephant trunk and head and neck debranching (knowledge) added; acute type A dissection raised from 1/1/2/1/1 to 1/2/3/1/1 |
+| AF | Standalone surgical AF knowledge added (convergent procedures); levels lowered from 2/3/3/1/1 to 1/2/2/1/1 |
+| Thoracic | Robotic incisions and mediastinal exploration added; "secondary" removed from pneumothorax surgery; robotic lung volume reduction added; diaphragmatic surgery and LVRS added to major cases |
+| Transplant | Donor retrieval level corrected from 2/1/2/1/2 to 1/1/2/1/2 |
+
+Other SAC points (June 2026): 2027 recruitment was planned at 12 ST1 and 2 ST4 posts, but deaneries offered more than the SAC advised; exam waiting lists may lengthen training; Portfolio Pathway applications are rising.
+
+### Viva and exam points
+
+- Section 1: 240 SBAs in 4 h 30 min of testing, so about 67 seconds per question.
+- Section 2 is two clinical sessions per side (intermediate cases; instruments with imaging) plus three orals; critical conditions are examined in the orals, which matches the blueprint (Section 2 maps to the critical conditions and CiPs 1, 2, 3 and 6).
+- Recent pass rates: Type 1 candidates pass Section 1 about three times in four and Section 2 almost always; candidates not in training do much worse.
+
+
+## UK GDPR and the Data Protection Act 2018 for clinicians, with the Data (Use and Access) Act 2025 changes
+
+Added 24 November 2026 from Information Commissioner's Office guidance (ico.org.uk), read online through summarising extracts: "A guide to lawful basis" (updated 2 April 2026 for the Data (Use and Access) Act); "What are the rules on special category data?"; "What are the conditions for processing?"; "Personal data breaches: a guide"; "Key data protection terms you need to know" (small organisations); "Individual rights"; and "The Data (Use and Access) Act 2025: what does it mean for organisations?" (updated 19 June 2026). The ICO subject access guidance itself was not opened, so the one-month limit is from the key terms page and extensions are not given. The notes already have the Caldicott principles (Professional practice: leadership, research governance and confidentiality); this fills the gap recorded there ("UK GDPR was not read").
+
+### Framework
+
+- **UK GDPR** sets the rules; the **Data Protection Act 2018** supplies UK detail, including Schedule 1 conditions for special category data. The **Data (Use and Access) Act 2025** amended both; the ICO states that all its data protection provisions were in force by June 2026.
+- Personal data: information that identifies a **living** person directly or in combination with other information. Health data is **special category data**, with genetic data, biometric data used for identification, racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, sex life and sexual orientation.
+- Controller decides how and why data are processed (usually the trust); processor acts on the controller's behalf (for example an IT supplier).
+
+### The seven principles
+
+| Principle | Plain meaning |
+|---|---|
+| Lawfulness, fairness and transparency | A lawful basis, used in ways people expect and have been told about |
+| Purpose limitation | Use only for the purpose collected (some reuses, such as public-interest archiving, are now presumed compatible) |
+| Data minimisation | Only what is needed |
+| Accuracy | Correct and up to date |
+| Storage limitation | Kept no longer than needed, then securely destroyed |
+| Integrity and confidentiality | Secure, yet available to those who need it |
+| Accountability | Be able to show compliance (records, policies) |
+
+### Two keys for health data
+
+Processing health data needs **both** an Article 6 lawful basis **and** an Article 9 condition (plus a Schedule 1 condition where required). The choice of one does not dictate the other.
+
+**Article 6: seven lawful bases** (ICO, April 2026): consent; contract; legal obligation; vital interests; public task; **recognised legitimate interest** (new: a fixed list including safeguarding vulnerable people, emergencies, crime and security, and disclosure to a public body at its request, with no balancing test); legitimate interests. Public authorities cannot use either legitimate-interest basis for their official tasks. The basis is chosen before processing and documented; switching later, especially away from consent, is generally not allowed.
+
+**Article 9: ten conditions**
+
+| Condition | Clinical relevance |
+|---|---|
+| (h) Health or social care | Direct care and management of health systems. Needs Schedule 1 condition 2: processing **by or under the responsibility of a professional owing a duty of secrecy** (doctors, nurses and others under DPA s204, or anyone with a legal duty of confidence). No appropriate policy document; no right to erasure |
+| (i) Public health | Schedule 1 condition 3; by or under a health professional or someone with a duty of confidence; benefit must be to the wider public |
+| (j) Archiving, research, statistics | Schedule 1 condition 4; necessary, proportionate and in the public interest; safeguards under UK GDPR articles 84B and 84C (no substantial damage or distress; no decisions about individuals except approved medical research; pseudonymise where possible) |
+| (a) Explicit consent | Freely given, specific, opt-in, confirmed by a clear statement naming the type of data; separate from other consents; caution where there is a power imbalance |
+| (c) Vital interests | Life-or-death only, and only when the person cannot consent physically or legally; cannot be used after a capacitous refusal |
+| (f) Legal claims | Establishing or defending legal claims, and courts acting judicially (medico-legal reports) |
+| Others | (b) employment and social security; (d) not-for-profit bodies; (e) made public by the person; (g) substantial public interest (23 Schedule 1 conditions, most needing an appropriate policy document) |
+
+!fig f49_gdpr | The two keys for lawful use of health data under UK GDPR: an Article 6 basis plus an Article 9 condition. Drawn for these notes from ICO guidance (2026).
+
+Other duties for special category data: a **DPIA** before large-scale processing (and before processing to decide access to a service, or genetic or biometric identification); a **data protection officer** where core activities involve large-scale special category data; extra security proportionate to sensitivity.
+
+### Individual rights
+
+Eight rights: to be informed; access (subject access request: respond within **one month**; since the 2025 Act, only **reasonable and proportionate searches** are required); rectification; erasure (not absolute, and not where condition (h) or (i) applies); restriction; portability (for consent or contract bases); objection; and rights over solely automated decisions (wider lawful bases allowed since 2025, but **not for special category data**).
+
+### Personal data breaches
+
+| Point | Rule |
+|---|---|
+| Definition | Breach of security leading to accidental or unlawful destruction, loss, alteration, unauthorised disclosure of or access to personal data, including loss of availability (wrong recipient, lost or stolen device) |
+| Tell the ICO | If a risk to people's rights and freedoms is **likely**: within **72 hours** of becoming aware, where feasible; may report in phases; give reasons for delay |
+| Tell the patients | Without undue delay if the risk is **high** |
+| Record | Every breach, reported or not, with the reasons for not reporting |
+| Penalty for failing to notify | Up to **£8.7 million or 2% of global turnover** |
+| ICO health examples | Hospital discloses patient records: likely high risk, tell patients. Records sent to the wrong professional, who deletes them securely: unlikely risk, no need to tell patients |
+
+### Data (Use and Access) Act 2025: points for clinicians and researchers
+
+- Clearer use of personal data for **scientific research**, including commercial research; **broad consent** to an area of research is allowed.
+- Reuse for research without a new privacy notice where that would need disproportionate effort (the notice must still be published).
+- Recognised legitimate interests (above); subject access limited to reasonable and proportionate searches.
+- Organisations must help people complain (for example an electronic form), acknowledge complaints within **30 days** and respond without undue delay.
+
+### Viva points (applications, not from the ICO pages)
+
+- "Is my audit spreadsheet lawful?" Trust as controller, Article 6 public task, Article 9(h) for care or service evaluation, minimum identifiers, held on trust systems (Caldicott principles 2 to 4), with a DPIA if large scale.
+- Confidentiality (common law, GMC) and data protection are separate duties: a disclosure must satisfy both.
+- Lost unencrypted list of patients: report internally at once; the trust decides on ICO notification within 72 hours and whether patients must be told.
+
+
+## FMLM Leadership and Management Standards for Medical Professionals (3rd edition, 2020)
+
+Added 24 November 2026 from Faculty of Medical Leadership and Management. Leadership and Management Standards for Medical Professionals, 3rd edition (December 2020), fmlm.ac.uk/sites/default/files/content/page/attachments/FMLM Standards (2021).pdf, read through a summarising extract; and the 2nd edition (October 2016) from the FMLM site for comparison, read through a summarising extract. The notes have the NHS Leadership Academy Healthcare Leadership Model and recorded that the FMLM standards were not read.
+
+### Structure
+
+Four domains, each a widening sphere of influence, with behaviour statements under sub-headings (58 behaviours in all, plus three narrative sections).
+
+| Domain | Sub-heading (number of behaviours) | Examples (paraphrased) |
+|---|---|---|
+| Self | Self-awareness and development (9) | Reflect, seek and act on feedback, know limits, recognise unconscious bias |
+| Self | Personal resilience, drive and energy (8) | Calm under pressure, speak up when safety is at risk and challenge discrimination, deliver on commitments, meet GMC duties on own health |
+| Team | Effective teamwork (15) | Take part in MDTs, promote inclusion, encourage others to speak up, coach, delegate with clear objectives, address poor performance, celebrate success |
+| Team | Cross-team collaborations (5) | Partnerships across groups, share good practice and networks |
+| Team | Team player / team leader (narrative) | Know when to lead and when to follow; mentoring; succession planning |
+| Organisation | Organisational team player (7) | Good governance, fair resource allocation, transparent decisions under uncertainty, manage risk, seek patient and carer feedback |
+| Organisation | Organisational culture, improvement and innovation (6) | Promote improvement, spread innovation, a culture of learning, openness and candour |
+| Organisation | Organisational responsibility (narrative) | Contribute to strategy; balance individual and population needs; Seven Principles of Public Life and GMC guidance |
+| System | System leadership (8) | Influence policy, negotiate, work without direct authority across organisations, align clinicians across a system, population health |
+
+### What changed
+
+- From the 2nd edition (2016; domains self, team player/team leader, corporate responsibility, system leadership): more weight on how individual values and behaviour affect teams and organisations; "corporate" became "organisation"; inclusion, unconscious bias and population health appear in the 3rd edition but not in the 2nd edition summary read; system leadership (new in 2016) was refined.
+- Aligned with GMC Good Medical Practice and Leadership and management for all doctors.
+
+### FMLM Fellowship
+
+Introduced in 2016; three levels by career stage: **Associate Fellow, Fellow, Senior Fellow**, awarded on written evidence against the four domains. Organisational responsibility is a major requirement for Fellow and Senior Fellow; system leadership for Senior Fellow. Doctors in training can be recognised.
+
+### Viva points
+
+- For the curriculum's management and leadership requirement, map the activity (rota, trainee representative, QI lead) to a domain: a rota is "team" and "organisation"; national committee work is "system".
+- FMLM (doctors, four domains, behaviours) and the Healthcare Leadership Model (all staff, nine dimensions) are complementary frameworks.
+
+
+## OCEBM 2011 Levels of Evidence: the full table
+
+Added 24 November 2026 from OCEBM Levels of Evidence Working Group. The Oxford 2011 Levels of Evidence (cited by CEBM as "The Oxford Levels of Evidence 2"), as reproduced in Table 2 of: The European guideline on management of major bleeding and coagulopathy following trauma: fifth edition. Crit Care 2019;23:98, doi:10.1186/s13054-019-2347-3. Read from the online table through two summarising extracts (row wording and disputed cells checked a second time); the CEBM pages themselves did not show the table. Background from Howick J et al., Explanation of the 2011 OCEBM Levels of Evidence (CEBM background document, cebm.ox.ac.uk), read through a summarising extract. This replaces the summary in "Evidence: OCEBM levels, GRADE certainty..." above, which gave only levels 1 and 2 from a secondary source.
+
+### The table (paraphrased; asterisk rules below)
+
+| Question | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 |
+|---|---|---|---|---|---|
+| How common is the problem? (prevalence) | Local and current random sample surveys or censuses | Systematic review of surveys that allow matching to local circumstances | Local non-random sample | (blank) | (blank) |
+| Is this diagnostic or monitoring test accurate? | Systematic review of cross-sectional studies with consistently applied reference standard and blinding | Individual cross-sectional studies with consistently applied reference standard and blinding | Non-consecutive studies, or studies without consistently applied reference standards | Case-control studies, or poor or non-independent reference standard | Mechanism-based reasoning |
+| What will happen if we do not add a therapy? (prognosis) | Systematic review of inception cohort studies | Inception cohort studies | Cohort study or control arm of a randomised trial | Case series, case-control studies, or poor-quality prognostic cohort study | Mechanism-based reasoning (as given in the copy read) |
+| Does this intervention help? (treatment benefits) | Systematic review of randomised trials or n-of-1 trials | Randomised trial or observational study with dramatic effect | Non-randomised controlled cohort/follow-up study | Case series, case-control or historically controlled studies | Mechanism-based reasoning |
+| What are the common harms? | Systematic review of randomised trials, of nested case-control studies, n-of-1 trial with the patient in question, or observational study with dramatic effect | Individual randomised trial or (exceptionally) observational study with dramatic effect | Non-randomised controlled cohort/follow-up study (post-marketing surveillance) with enough numbers to rule out a common harm (and long enough follow-up for long-term harms) | Case series, case-control or historically controlled studies | Mechanism-based reasoning |
+| What are the rare harms? | Systematic review of randomised trials or n-of-1 trials | Randomised trial or (exceptionally) observational study with dramatic effect | (blank in the copy read) | (blank) | (blank) |
+| Is this (early detection) test worthwhile? (screening) | Systematic review of randomised trials | Randomised trial | Non-randomised controlled cohort/follow-up study | Case series, case-control or historically controlled studies | Mechanism-based reasoning |
+
+Footnotes:
+- \* A level may be **graded down** for study quality, imprecision, indirectness (the study PICO does not match the question), inconsistency between studies, or a very small absolute effect size; it may be **graded up** for a large or very large effect size.
+- \*\* A systematic review is generally better than an individual study.
+
+!fig f49_ocebm | OCEBM 2011 levels for "Does this intervention help?", with the grading rules. Drawn for these notes from the 2011 table as reproduced in Crit Care 2019;23:98, Table 2.
+
+### How the 2011 version differs from the original OCEBM levels (first released 1998 to 2000)
+
+- Rows and columns swapped: columns are now the clinical question, rows the steps of a search.
+- **Sub-levels 1a, 1b, 1c removed**: one level 1.
+- Harms split into **common** (the background document treats as affecting more than 20% of participants) and **rare**; **screening** added.
+- Economic and decision analyses dropped; most footnotes removed; a fuller glossary added.
+- Ordered by risk of bias. For local prevalence a current local survey beats a systematic review.
+
+### OCEBM and GRADE
+
+| | OCEBM 2011 | GRADE |
+|---|---|---|
+| Unit rated | Type of study answering a question type | Body of evidence for one outcome |
+| Scale | Levels 1 to 5 | High, moderate, low, very low |
+| Up and down | Asterisk rule (quality, imprecision, indirectness, inconsistency, small effect; large effect up) | Five reasons down, three up |
+| Use | Quick search ladder for a clinician answering a question | Rating certainty of evidence for systematic reviews and guidelines |
+
+The authors warn that a flawed systematic review can mislead, and that the levels are a heuristic, not a substitute for judgement.
+
+### Viva points
+
+- "What level is STICH?" A single randomised trial for treatment benefit: level 2 (level 1 only as a systematic review of trials).
+- "What level is a propensity-matched registry study?" Non-randomised controlled cohort: level 3, unless the effect is dramatic.
+- Mechanism-based reasoning is level 5; expert opinion as such is not listed.
+
 ## Coverage check after the 21 November 2026 gap fill
 
 Added 21 November 2026. This replaces the coverage figures in the self-audit tables higher up this page (built 18 November), which said transplantation was 5% covered and pneumothorax surgery was missing. Those tables are kept for the record but are out of date.

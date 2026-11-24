@@ -96,3 +96,50 @@ Covers congenital aneurysms of the right and non-coronary sinuses that rupture i
 - Usually transvenous, with an arteriovenous wire loop; mostly duct occluders. Success 90 to 100%, mortality 0 to 7% in small series (StatPearls: 256 cases, 95.6% success, new or worse AR in about 5%).
 - **Not suitable:** moderate or severe AR, defect larger than about 10 to 12 mm, more than one rupture site, a large VSD, active endocarditis, other lesions needing surgery, or a large Qp:Qs.
 - Complications: tamponade, worse AR, device embolisation, residual shunt; some need urgent surgery.
+
+## Congenitally corrected transposition: physiological repair, double switch and LV retraining
+
+Added 24 November 2026 from (1) Kumar TKS. Congenitally corrected transposition of the great arteries. J Thorac Dis 2020;12(3):1213-8, doi:10.21037/jtd.2019.10.15 (open-access full text, read through the extraction tool); (2) Lee GS, Maeda K, Ma M, Vaikunth S. Outcomes of physiologic vs. anatomical repair and strategies for left ventricular retraining in congenitally corrected transposition of the great arteries. ACC Expert Analysis, 5 August 2025 (web article read through the extraction tool), which summarises Jacob et al., JACC 2024, doi:10.1016/j.jacc.2024.07.056, and Anzai et al., World J Pediatr Congenit Heart Surg 2023, doi:10.1177/21501351221127894 (meta-analyses not opened themselves). The notes define the double switch in one line; this adds the anatomy that drives the operation, the options and the comparative results.
+
+### Anatomy that matters at operation (Kumar 2020)
+
+- Under 1% of congenital heart disease. AV and VA discordance: the morphological RV and tricuspid valve are systemic.
+- **Conduction**: in situs solitus the AV node is **anterior**, at the junction of the right-sided mitral annulus and the limbus; the bundle runs across the front of the LV outflow tract just below the pulmonary valve, then down the right side of the septum. In situs inversus (about 10%) the node is posterior. Hence a high risk of complete heart block with any surgery: Kumar advises placing permanent pacing electrodes at operation.
+- Associated lesions: VSD 70 to 80% (often malaligned); LV (pulmonary) outflow obstruction 25 to 50%; Ebstein-like left-sided tricuspid valve with regurgitation in about a third. Dextrocardia about 25%.
+- Operate for symptoms, or without symptoms when systemic RV function or tricuspid regurgitation is getting worse; operating with a good RV and valve is debated.
+
+### Options
+
+| Repair | What is done | Comment |
+|---|---|---|
+| Physiological ("classic") | Close VSD (through the mitral valve, sutures on the RV side of the septum), LV-to-PA conduit (deliberately undersized) for outflow obstruction, deal with the tricuspid valve | Leaves the RV systemic; attrition from RV failure and tricuspid regurgitation. Still an option in older patients with a good RV |
+| Double switch: atrial plus arterial switch | Senning (or Mustard if the RA is small) plus arterial switch | Needs a good-sized pulmonary root, a "conditioned" LV and normal PVR. Coronary ostia often deep with early branching: buttons may need pericardial augmentation |
+| Atrial switch plus Rastelli | Atrial switch, VSD baffled from LV to aorta through a vertical RV incision (suture line on the RV side), RV-PA conduit beside the aorta, away from the sternum | For fixed LV outflow obstruction with a routable VSD; if not routable, Fontan |
+| Hemi-Mustard plus bidirectional Glenn (Hanley) | Only IVC blood baffled; SVC to the right PA | One-and-a-half repair for small RA or small RV: less sinus node dysfunction, baffle obstruction and TR |
+| Nikaidoh aortic translocation | For VSD and LVOTO unsuitable for Rastelli | Limited experience |
+| Fontan | Dextrocardia, multiple or remote VSDs, straddling valves, hypoplastic ventricle | |
+| Transplant | Too old to retrain, or failed repair | |
+
+Commonest complications after anatomical repair: heart block, SVC pathway obstruction and conduit stenosis (Kumar).
+
+### Training the LV
+
+- About a third have an intact septum, so the subpulmonary LV deconditions after birth (low pressure). A large VSD or real pulmonary stenosis keeps it trained; otherwise a **PA band** pressure-loads it first (Lee 2025).
+- Over 90% can be retrained, but those who needed retraining had more death, transplant and LV dysfunction later than those who did not; retraining works better young and carries higher mortality in older patients, in whom a band may be left as a "destination" palliation (Kumar; Lee).
+- Readiness criteria used (no formal guideline): LV-to-RV pressure ratio above 0.9, EF above 50 to 55%, LV end-diastolic pressure under 12 mmHg, and LV mass or wall thickness for age (Lee, Table 1).
+- With a large VSD an elective double switch can be done at about 6 months (Kumar).
+
+### Physiological against anatomical repair (meta-analyses summarised by Lee 2025)
+
+| | Physiological | Anatomical |
+|---|---|---|
+| Jacob 2024 (535 against 1,322; 10 years) post-discharge mortality | 9.7% | 6.1% |
+| Reoperation | 20.6% | 17.9% |
+| Ventricular dysfunction | 43% | 16% |
+| Anzai 2023 (1,222 against 1,622; 20 years) mortality | 17.4% | 11.7% |
+| Reintervention at 10 years | 30.3% | 24.5% |
+
+- Operative and in-hospital mortality were similar. Jacob found the true arterial double switch did better than the Rastelli type; Anzai found no mortality difference but fewer reoperations after the arterial type. Repair before age 5 and a preoperative PA band were associated with better survival (Anzai).
+- Few data beyond 20 years, and the LV can still fail after anatomical repair.
+
+!fig f50_cctga_repairs | Congenitally corrected transposition: which repair, by the state of the LV and the outflow tract. Drawn for these notes from Kumar 2020 and the ACC 2025 expert analysis; simplified

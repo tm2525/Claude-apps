@@ -83,3 +83,51 @@ Clinical pointers in Nankee: chest pressure (43% against 10%) and voice symptoms
 | Mortality after extracervical approaches | 0 to 15.3% in older series, often from tracheobronchial fistula or sternal dehiscence (StatPearls) |
 
 Viva line: CT decides. Below the aortic arch, behind the trachea or into the posterior mediastinum, a conical goitre wider than the inlet, an ectopic or recurrent goitre, or suspected invasive cancer: plan a sternal (or thoracic) approach with a cardiothoracic surgeon present, and consent for it. Above the arch, the neck nearly always suffices.
+
+## First rib resection for thoracic outlet syndrome: the approaches compared
+
+Added 24 November 2026 from: Teijink SBJ, Goeteyn J, Pesser N, van Nuenen BFL, Thompson RW, Teijink JAW. Surgical approaches for thoracic outlet decompression in the treatment of thoracic outlet syndrome. J Thorac Dis 2023;15(12):7088–7099, doi:10.21037/jtd-23-546 (online full text read through an extraction tool; the article gives no complication or outcome figures); and Suzuki T, Kimura H, Matsumura N, Iwamoto T. Surgical approaches for thoracic outlet syndrome: a review of the literature. J Hand Surg Glob Online 2022;5(4):577–584, doi:10.1016/j.jhsg.2022.04.007, PMC10382894 (online full text read through an extraction tool, tables of outcomes and complications). These settle several rows marked "FRCS Atlas draft; not checked" in the Atlas section above.
+
+### The compression sites
+Three spaces: the interscalene (scalene) triangle, the costoclavicular space, and the subpectoral (pectoralis minor) space (Suzuki; Teijink). This confirms the Atlas row on three sites. Inadequate release of a compressing structure is the main cause of failure or recurrence (Suzuki). Pectoralis minor was found in up to 69% of recurrent or persistent neurogenic TOS (Teijink). A positive anterior scalene block is at least 50% improvement in elevated arm stress test duration (Teijink).
+
+### Approaches step by step (Teijink)
+| | Transaxillary | Supraclavicular | Paraclavicular (supra plus infraclavicular) | Infraclavicular |
+|---|---|---|---|---|
+| Position | Lateral, arm held at 90 degrees in a holder, head tilted towards the side | Semi-Fowler 20 to 25 degrees, head turned 45 degrees away | As supraclavicular | (not stated) |
+| Incision | About 5 cm at the base of the axillary hairline between pectoralis major and latissimus | Transverse 5 to 7 cm, 2 cm above the clavicle, from lateral sternocleidomastoid to trapezius | Supraclavicular plus a second incision a fingerbreadth below the clavicle, about 6 cm laterally from the sternum | Below the clavicle |
+| Key steps | Pectoralis minor tenectomy (4 to 5 cm) through the same incision; through the axillary fat (keep the 2nd intercostobrachial nerve if possible); divide the costoclavicular ligament; take 1.5 to 3 cm of the lower scalenes and any scalene minimus or fibrous band; resect the rib from the sternocostal cartilage to beyond the costovertebral joint; lower trunk neurolysis | Mobilise the scalene fat pad, divide omohyoid; divide anterior scalene at the rib, free the phrenic nerve ("phrenic flip"), excise scalene to its C6 origin; excise middle scalene; identify C5 to T1, ligate transverse cervical vessels; divide the rib posteriorly then anteriorly; remove any cervical rib; full plexus neurolysis; wrap plexus in the fat pad (or film or bovine pericardium); drain | Scalenectomy and posterior rib division from above (plexus mobilised, not fully neurolysed); from below split pectoralis major, divide subclavius, first intercostal muscle and costoclavicular ligament, remove the anterior rib whole; axillo-subclavian venolysis to the jugular-innominate junction; venogram; patch for focal stenosis or axillo-innominate bypass for occlusion; open the pleural apex; drain | Anterior rib and costoclavicular space; subclavian venolysis; vein reconstruction possible |
+| At risk | Phrenic, long thoracic, subclavian vein, 2nd rib, sympathetic chain, pleura, intercostobrachial (traction gives allodynia) | Phrenic, long thoracic, subclavian vein and artery, C8 and T1 roots | As both | (not listed) |
+| For | Easiest complete rib resection; tenectomy without another cut; leaves the neck unscarred for a redo; best cosmesis | Best view of the scalene triangle; complete scalenectomy and five-root neurolysis; vascular control; supine for endovascular work; easier to teach | Complete rib removal with venous reconstruction | Simple; direct access to the costoclavicular space without exposing the plexus |
+| Against | Cannot remove the scalenes fully; less suitable at BMI over 40 | Scars the supraclavicular field, so a redo there is harder | Two incisions | Does not remove the whole rib; "no role" in neurogenic or arterial TOS |
+| TOS types | Any | Any | Mainly venous | Venous only, by some surgeons |
+
+**VATS and robotic:** most surgeons do a partial rib resection, divide rather than excise the scalene, and do not complete a lower plexus neurolysis; pectoralis minor needs a separate incision. Single-centre results are promising but midterm results need validation; the authors have reoperated on patients after VATS or robotic decompression (Teijink).
+
+**Correction to the Atlas row on choice of approach:** the Atlas draft above split transaxillary for venous and neurogenic and supraclavicular for arterial. Teijink states transaxillary, supraclavicular and paraclavicular can each be used for every form, with paraclavicular mostly for venous TOS, and that no approach has been shown superior; choice rests on the team and the patient. The Atlas row on nerves at risk in supraclavicular decompression (phrenic on anterior scalene, long thoracic in middle scalene) is consistent with Teijink's list.
+
+### Outcomes and complications (Suzuki 2022, pooled; mostly case series)
+| Approach (patients) | Success | Pneumothorax or pleura opened | Nerve injury | Vascular injury |
+|---|---|---|---|---|
+| Transaxillary (2,326, systematic review) | 76%; complete relief 53% | 14% | 5% | 0.1%; death 0.04% |
+| Supraclavicular with first rib (683) | 77%; complete 57% | 19% | 3% | 0.3%; death 0.07% |
+| Supraclavicular scalenectomy only (674) | 85%; complete 61% | 5% | 7% | 0.2% |
+| Infraclavicular, venous TOS (55) | Vein patency 95% | 7% | 0% | |
+| Posterior, reoperation (2,305) | Good 75%, fair 16%, poor 9% | Pleura opened in most | | |
+| Transaxillary plus supraclavicular (94) | Excellent 95% | 4% | 1% (phrenic) | |
+| Paraclavicular (100) | Excellent or good 76% (Derkash) | 0% | 6% | Effusion or haemothorax 6% |
+| Endoscopic-assisted transaxillary (131) | Excellent or good 81% | 3% | 2% (long thoracic, axillary) | |
+| VATS (30) | Excellent or good 67% | 100% (by design) | 3% (plexus) | |
+
+- Overall complication rates 13 to 26%.
+- Posterior approach: for reoperation or an irradiated field; poor anterior access.
+- Scalenectomy alone recurs more often than with rib resection; an earlier review quoted patient satisfaction 57% against 99%.
+- Chyle leak and robotic outcome figures were not given in either source.
+
+!fig f42_tos_outcomes | Thoracic outlet decompression: pleural breach by approach (highest after supraclavicular scalenectomy with first rib excision, 19%) and pooled success, which is similar across transaxillary, supraclavicular with rib, and scalenectomy alone. Drawn for these notes from Suzuki et al., J Hand Surg Glob Online 2022, outcome and complication tables; pooled non-randomised series
+
+### Viva lines
+- Neurogenic TOS: structured physiotherapy first (above); operate for failure. Supraclavicular gives the most complete scalenectomy and neurolysis; transaxillary gives the easiest complete rib removal and the best scar.
+- Venous TOS: thrombolysis, then early decompression; paraclavicular when the vein needs reconstruction.
+- Arterial TOS: supraclavicular or paraclavicular for vascular control and repair.
+- Redo: a transaxillary first operation leaves the neck unscarred for a later supraclavicular approach, whereas a supraclavicular scar makes a redo through the neck harder (Teijink); combined transaxillary and supraclavicular, or posterior, approaches are used for failed or recurrent cases (Suzuki).
