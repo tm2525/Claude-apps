@@ -1,0 +1,112 @@
+[
+ {
+  "fig": "d15_subclavian_steal",
+  "slug": "c5",
+  "anchor": "Revascularise proximal stenosis in patients having CABG with the ipsilateral internal mammary artery",
+  "caption": "Coronary-subclavian steal: proximal left subclavian stenosis with reversed flow in a left IMA graft and the vertebral artery on arm use, with the duplex criteria and the ESC 2024 recommendations with class and level. Arrangement schematic drawn for these notes from the ESC 2024 PAAD guideline, section 8.3.1, as summarised in this section (the reversed IMA flow is implied by the term coronary-subclavian steal, not drawn in the source)."
+ },
+ {
+  "fig": "d15_carotid_cabg",
+  "slug": "c5",
+  "anchor": "CABG ± elective CEA or CAS, case by case",
+  "caption": "Carotid disease at CABG: who gets a duplex, the strategy by carotid symptoms and coronary presentation, staged against concomitant surgery, and the prevalence of 70% carotid stenosis by extent of coronary disease. Drawn for these notes from TSRA Review ch. 53 as summarised in this section."
+ },
+ {
+  "fig": "d15_newton_favor",
+  "slug": "c5",
+  "anchor": "It does not test isolated CABG.",
+  "caption": "NEWTON-CABG: evolocumab did not reduce vein graft disease despite a 52% LDL fall; FAVOR IV-QVAS: grafting by angiography-derived FFR at valve surgery cut 30-day and 30-month events. Chart drawn for these notes from the trial figures in this section (ESC and AHA meeting reports; papers not opened)."
+ },
+ {
+  "fig": "d15_bacpr_timeline",
+  "slug": "c5",
+  "anchor": "Annual data to the National Audit of Cardiac Rehabilitation (NACR)",
+  "caption": "The BACPR 2017 standards as a timeline from referral to final assessment, with priority groups and UK uptake against the NHS England target. Drawn for these notes from the BACPR 2017 standards, Cowie 2019 and the NHS England commissioning standards as summarised in this section."
+ },
+ {
+  "fig": "d15_valvectomy_outcomes",
+  "slug": "c2",
+  "anchor": "Valvectomy is an acceptable initial therapy for IVDU tricuspid IE",
+  "caption": "Valvectomy against replacement for tricuspid endocarditis in people who inject drugs: pooled outcomes and freedom from tricuspid reoperation to one year. Chart drawn for these notes from the tables of Luc et al., Ann Cardiothorac Surg 2019, as given in this section."
+ },
+ {
+  "fig": "d15_angiovac_circuit",
+  "slug": "c2",
+  "anchor": "Suction applied; vegetation trapped in the AngioVac filter.",
+  "caption": "Percutaneous aspiration of a tricuspid vegetation: right internal jugular drainage with the suction cannula passed to the valve, filter, veno-venous circuit and femoral reinfusion, with the limits and evidence. Arrangement schematic drawn for these notes from Poliwoda et al. 2023 and the AHA 2022 and 2026 statements as summarised in this tab (the order of filter and pump is inferred)."
+ },
+ {
+  "fig": "d15_pwid_tv_pathway",
+  "slug": "c2",
+  "anchor": "Harm reduction if abstinence not achievable: sterile supplies",
+  "caption": "Tricuspid endocarditis in a person who injects drugs: antibiotics, the five ESC 2023 indications for surgery, the operative options, and addiction treatment. Drawn for these notes from de Waha et al., Ann Cardiothorac Surg 2026, as summarised in this section."
+ },
+ {
+  "fig": "d15_pericardiectomy_extent",
+  "slug": "c16",
+  "anchor": "Radical pericardiectomy: anterior, inferior and left lateral pericardium to behind the left phrenic nerve.",
+  "caption": "Partial anterior (phrenic to phrenic) against radical pericardiectomy, with the causes of failure, when to use bypass, timing, and the Mayo and ESC 2025 results. Arrangement schematic (anterior view, not to scale) drawn for these notes from TSRA Review ch. 86 and the ESC 2025 myocarditis and pericarditis guideline as given in this tab."
+ },
+ {
+  "fig": "d15_tumour_sites",
+  "slug": "c16",
+  "anchor": "Renal cell carcinoma extending up the inferior vena cava into the right atrium",
+  "caption": "Where each primary cardiac tumour sits in a four-chamber view (myxoma, papillary fibroelastoma, rhabdomyoma, fibroma, sarcoma, lipoma, renal cell carcinoma in the IVC), with the operating rules. Arrangement schematic drawn for these notes from the cardiac tumour table in this section (TSRA Review ch. 83)."
+ },
+ {
+  "fig": "d15_recurrent_pericarditis",
+  "slug": "c16",
+  "anchor": "Pericardiectomy for recurrent pericarditis is only a \"possible\" indication",
+  "caption": "Recurrent pericarditis treatment ladder with doses, class and level: aspirin or NSAID with colchicine, steroid, anti-IL-1, hydroxychloroquine, pericardiectomy; with post-pericardiotomy prevention. Drawn for these notes from the ESC 2025 myocarditis and pericarditis guideline, Recommendation Tables 10 and 22, as given in this section."
+ },
+ {
+  "fig": "d15_redo_bypass_plan",
+  "slug": "c11",
+  "anchor": "Early bypass or an endovascular adjunct for high-risk imaging",
+  "caption": "Redo sternotomy: who goes on bypass before the saw, how to cannulate, and the Bakaeen 2021 series (6,627 redos with CT). Drawn for these notes from Slisatkorn et al. 2022 and the Cleveland Clinic summary of Bakaeen et al. 2021, as given in this section."
+ },
+ {
+  "fig": "d15_reentry_injury",
+  "slug": "c11",
+  "anchor": "Head down, carbon dioxide in the field, vent the aorta",
+  "caption": "Re-entry injury: what to do for aorta, aneurysm, right heart and mammary graft injury, and what injury costs in mortality. Drawn for these notes from this tab's tables, Slisatkorn et al. 2022, the J Clin Med 2025 series (Hamid, Park) and TSRA Review ch. 62."
+ },
+ {
+  "fig": "d15_arrest_postcardiac",
+  "slug": "c13",
+  "anchor": "Protect grafts; do not lift the heart after mitral replacement",
+  "caption": "Arrest after cardiac surgery: first-minute checks, VF, asystole and PEA branches, resternotomy and internal massage. Drawn for these notes from the TSRA Primer critical care table in this section, with the atropine correction noted there (STS 2017, class III) and internal paddle energy from the defibrillation table."
+ },
+ {
+  "fig": "d15_rv_failure",
+  "slug": "c13",
+  "anchor": "Right-sided support devices; VA-ECMO when the left side is failing too",
+  "caption": "Acute right ventricular failure after surgery: the dilatation, septal shift and low-output spiral, and the preload, afterload, contractility, perfusion and mechanical levers. Arrangement schematic drawn for these notes from the TSRA Primer right heart failure table in this section (the closing of the loop is inferred)."
+ },
+ {
+  "fig": "d15_defib_energies",
+  "slug": "c13",
+  "anchor": "Poor contact, high potassium or other electrolyte problem, cold heart",
+  "caption": "Biphasic shock energies for AF, flutter, VT with a pulse, VF and internal paddles, and synchronised against unsynchronised shocks. Chart drawn for these notes from the TSRA Primer defibrillation and cardioversion table in this section."
+ },
+ {
+  "md": "### Constriction against restrictive cardiomyopathy at a glance\n\n| Feature | Constrictive pericarditis | Restrictive cardiomyopathy |\n|---|---|---|\n| Causes | Idiopathic, previous cardiac surgery, mediastinal radiotherapy; tuberculosis elsewhere | Amyloid, sarcoid, haemochromatosis, radiation |\n| Mitral annular e′ | Preserved; medial e′ exceeds lateral (\"annulus reversus\") in 75%; with heart failure, e′ over 8 cm/s points to constriction | Reduced, 6 cm/s or less |\n| Mitral inflow | Restrictive pattern (E/A over 2, DT under 160) | Restrictive pattern (E/A over 2, DT under 160) |\n| Respiratory variation | Mitral E over 25%, tricuspid E over 40%; septal bounce or shift; hepatic vein expiratory reversal | — |\n| Ventricular interdependence (FRCS Atlas, unchecked) | Enhanced: RV and LV systolic pressures move in opposite directions with respiration | RV and LV systolic pressures move together |\n| Catheter | Equal end-diastolic pressures; RV end-diastolic over one third of RV systolic (95% sensitive); square root sign; prominent y descent | — |\n| Pericardium | Thickened (MRI better than CT), but normal thickness in up to 20%; calcified on the film in 40% | — |\n| Treatment | Anti-inflammatory trial if inflamed (CMR oedema or LGE with raised CRP); radical pericardiectomy for permanent constriction | — |\n\nSource: summarised from this tab (TSRA Review ch. 48 and 86; ESC 2025 myocarditis and pericarditis guideline; the interdependence row is from the FRCS Atlas draft, not checked).",
+  "slug": "c16",
+  "anchor": "The alternative diagnosis is restrictive cardiomyopathy (amyloid, sarcoid, haemochromatosis, radiation)."
+ },
+ {
+  "md": "### Surgery for tricuspid endocarditis in people who inject drugs: what each source says\n\n| Option | Luc et al. 2019 (meta-analysis) | AHA 2022 statement | de Waha et al. 2026 |\n|---|---|---|---|\n| Repair | Preferred, but extensive destruction often precludes it | Repair and avoid prosthetic material where possible; repair a regurgitant valve as well as removing vegetations | Preferred when feasible: lower reinfection, no prosthetic material |\n| Replacement | 86% of 752 patients; 30-day mortality 7%, recurrent endocarditis 19% | Reasonable when repair is not possible; recurrent prosthetic endocarditis a particular concern | Bioprosthesis often chosen; no difference in reinfection between mechanical and biological among PWID; epicardial pacing lead |\n| Valvectomy | Acceptable initial therapy, a bridge to staged replacement; 30-day mortality 13%, right heart failure 27% | Not recommended: can cause significant morbidity | Selected patients with ongoing injecting; a stabilising first stage before staged replacement |\n| Percutaneous aspiration | AngioVac reported as promising | Alternative to prevent further septic emboli; does not treat valve dysfunction | Adjunct for large vegetations, recurrent emboli or instability in poor surgical candidates; evidence limited |\n| Addiction care | Team including addiction services; medication-assisted treatment, harm reduction, naloxone | A further operation needs an addiction treatment plan supported by addiction-trained clinicians | Start buprenorphine or methadone in hospital; Endocarditis Team with addiction medicine |\n\nSource: summarised from the Luc 2019, AHA scientific statements and de Waha 2026 sections of this tab.",
+  "slug": "c2",
+  "anchor": "Acute specialties dominate in hospital; addiction care determines long-term outcome."
+ },
+ {
+  "md": "### ANOCA and INOCA endotypes at a glance\n\n| Endotype | What defines it | Treatment (ESC 2024) |\n|---|---|---|\n| Endothelial dysfunction | Abnormal response to intracoronary acetylcholine (80% of those tested in ILIAS) | Statin and ACE inhibitor; ACE inhibitor for symptoms (IIa B) |\n| Microvascular angina, impaired vasodilation | CFR under 2.5, or IMR 25 or more (HMR over 2.5, MRR under 2.7) | Beta-blocker, CCB, ranolazine, trimetazidine, ivabradine; antianginals against demand ischaemia (IIa B) |\n| Microvascular vasospasm | Symptoms and ECG changes on acetylcholine with under 90% lumen reduction | CCB, second CCB, nitrates |\n| Epicardial vasospasm | Symptoms, ischaemic ECG changes and 90% or more lumen reduction | CCB (I A), nitrates (IIa B), nicorandil; severe: high-dose diltiazem |\n| Overlapping endotypes | Combinations of the above | Nitrates, CCBs and other vasodilators combined (IIb B) |\n\nSource: summarised from the ESC 2024 chronic coronary syndromes ANOCA/INOCA section (section 5.2, Recommendation Table 25).",
+  "slug": "c5",
+  "anchor": "Spinal cord stimulation for refractory cases."
+ },
+ {
+  "md": "### Exercise prescription by FITT (ESC 2024)\n\n| | Aerobic | Resistance |\n|---|---|---|\n| Frequency | At least 3 days a week, preferably 6 to 7 | At least 2 days a week |\n| Intensity | Moderate or moderate-to-high, set from the individual's peak (% VO2 max, % peak heart rate or ventilatory thresholds) | Printed as \"6%–80%\" of one-repetition maximum (probably a typesetting error) |\n| Time | 150 to 300 min a week moderate, or 75 to 150 min vigorous (I B) | 1 to 3 sets of 8 to 12 repetitions |\n| Type | Moderate continuous training; high-intensity intervals only for selected targets such as peak VO2 | 8 to 10 exercises covering the major muscle groups |\n\nSource: summarised from the 2024 ESC chronic coronary syndromes guideline, section 4.1.3 and Recommendation Table 15, as given in this section.",
+  "slug": "c5",
+  "anchor": "Continued exercise (phase III rehabilitation) is recommended."
+ }
+]

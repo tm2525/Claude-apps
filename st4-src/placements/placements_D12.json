@@ -1,0 +1,112 @@
+[
+ {
+  "fig": "d12_lcos_sequence",
+  "slug": "c17",
+  "anchor": "Emergency angiography is preferred to re-operation",
+  "caption": "Low output after cardiac surgery worked through in viva order: rate and rhythm, preload, contractility, afterload, then tamponade and graft failure, with resuscitation targets and the flow added by each device. Schematic drawn for these notes from the 'By cause', 'Drugs' and 'Viva points' text in this tab (TSRA ch. 116 and 118)."
+ },
+ {
+  "fig": "d12_vasoplegia_ladder",
+  "slug": "c17",
+  "anchor": "noradrenaline or vasopressin first line; for refractory cases, off-label angiotensin II",
+  "caption": "Vasoplegia ladder: first-line noradrenaline or vasopressin, then off-label angiotensin II, methylene blue or hydroxocobalamin, with the ischaemia and serotonin-syndrome costs. Arrangement schematic drawn for these notes from the EACTS 2025 protected-surgery consensus (this section), ISHLT 2022 transplant and ISHLT 2023 LVAD hypotension recommendations (Cardiac 15), TSRA ch. 118 and the NOMI and EACTS 2024 medication notes in this tab."
+ },
+ {
+  "fig": "d12_cals_algorithm",
+  "slug": "c17",
+  "anchor": "Do not delay BLS for defibrillation or pacing for more than 1 minute.",
+  "caption": "Arrest within 10 days of cardiac surgery: three stacked shocks, pacing or pausing the pacemaker before compressions, then resternotomy within 5 minutes, with airway and drug rules and shock success by attempt. Schematic drawn for these notes from the CSU-ALS algorithm text in this section (TSRA ch. 124) and the STS 2017 consensus section in this tab."
+ },
+ {
+  "fig": "d12_lvad_troubleshoot",
+  "slug": "c17",
+  "anchor": "Falling pulsatility and flow, or suction events without a speed change",
+  "caption": "Early after LVAD implant: cardiac index and MAP point to a cause; if index is low with low or normal MAP, whether the LV is decompressed separates tamponade, RV failure and hypovolaemia from low speed, cannula obstruction and hypertension, each with its CVP, PAP, PAOP and pulsatility signature. Arrangement schematic drawn for these notes from the two haemodynamic tables in this section (ISHLT 2023 MCS guideline, Task Force 3)."
+ },
+ {
+  "fig": "d12_lvad_arrest",
+  "slug": "c17",
+  "anchor": "Figure 5 (adult CPR in LVAD patient):",
+  "caption": "Unresponsive LVAD patient: conscious, VF or VT, pulse, then Doppler or arterial MAP with end-tidal CO2 decide between checking the device, shocking, starting 'VAD arrest' or transfer. Schematic drawn for these notes from the numbered steps and recommendations in this section (ISHLT 2023 MCS guideline, Task Force 4); the guideline's own figure is not reproduced."
+ },
+ {
+  "fig": "d12_espen_feeding",
+  "slug": "c17",
+  "anchor": "Viva summary: feed the gut within 48 h once perfusion is restored",
+  "caption": "ESPEN 2023 ICU feeding: enteral nutrition within 48 h, no more than 70% of expenditure early, 80 to 100% after day 3, parenteral only after 3 to 7 days if the gut cannot be used, the route ladder and when to hold feed. Schematic drawn for these notes from the recommendation tables in this section; the energy curve is an arrangement schematic, not data."
+ },
+ {
+  "fig": "d12_vte_timeline",
+  "slug": "c17",
+  "anchor": "One way to apply these together (a synthesis, not a single recommendation)",
+  "caption": "Thromboprophylaxis after cardiac surgery on one timeline: compression while bleeding settles, LMWH from 6 to 24 h to full mobilisation, and a watch on platelets for HIT. Arrangement schematic drawn for these notes from the European 2024 VTE update and the synthesis line in this section, with HIT points from 'Complications' in this tab."
+ },
+ {
+  "fig": "d12_rrt_timing",
+  "slug": "c17",
+  "anchor": "Viva line: no survival gain from starting RRT pre-emptively",
+  "caption": "ELAIN, AKIKI and STARRT-AKI: where the early and delayed arms started RRT on the KDIGO course, and what each found. Schematic drawn for these notes from the trial table in this section (ADQI 20, STARRT-AKI abstract, TSRA ch. 118); positions are not to scale."
+ },
+ {
+  "fig": "d12_bicaval_biatrial",
+  "slug": "c15",
+  "anchor": "Its specific risk is caval anastomotic stenosis (SVC more than IVC)",
+  "caption": "Biatrial against bicaval implantation: recipient atrial cuffs and two sinus nodes against a left atrial cuff with separate caval anastomoses and an intact donor right atrium, with the bicaval suture order and the trade-offs. Arrangement schematic drawn for these notes from this section, the bicaval steps in 'Heart transplantation' in this tab and TSRA ch. 74."
+ },
+ {
+  "fig": "d12_procurement",
+  "slug": "c15",
+  "anchor": "Inspect: PFO, ASD/VSD, valve abnormality, vascular injury, cuff length",
+  "caption": "Donor heart procurement: where the SVC, IVC, aorta, pulmonary artery and pulmonary veins are divided, where to vent and give cardioplegia, and the key numbers. Arrangement schematic drawn for these notes from the operative steps in this section (TSRA ch. 73)."
+ },
+ {
+  "fig": "d12_dcd_routes",
+  "slug": "c15",
+  "anchor": "Decline if lactate is 5 mmol/L or more, rising despite more pressure or flow",
+  "caption": "DCD heart: withdrawal, circulatory arrest, the 5-minute stand-off and warm ischaemia, then normothermic regional perfusion or direct procurement onto ex situ perfusion, with the Organ Care System accept and decline rules. Schematic drawn for these notes from this section (AoMRC Code 2025, Singh 2019, EXPAND protocols, NHSBT POL228/13, TSRA ch. 73)."
+ },
+ {
+  "fig": "d12_immuno_phases",
+  "slug": "c15",
+  "anchor": "Surveillance biopsy is right ventricular endomyocardial biopsy, every 7 to 10 days early after transplant.",
+  "caption": "Immunosuppression after heart transplant in three phases (induction, triple maintenance, treatment of rejection with compromise), each drug's target and main toxicity, and the early adjuncts on a timeline. Schematic drawn for these notes from Table 74-1 and the text in this section (TSRA ch. 74)."
+ },
+ {
+  "fig": "d12_registry_burden",
+  "slug": "c15",
+  "anchor": "malignancy, vasculopathy, renal failure and late rejection rise with time",
+  "caption": "Cumulative vasculopathy, severe renal dysfunction, diabetes and malignancy in survivors at 1, 5 and 10 years, median survival, and how the causes of death change with time. Chart drawn for these notes from the ISHLT 2019 registry figures in this section."
+ },
+ {
+  "fig": "d12_htx_early_timeline",
+  "slug": "c15",
+  "anchor": "Early postoperative care (Task Force 1, Topic 4)",
+  "caption": "The first weeks after heart transplant: pacing, inotrope weaning, tricuspid reassessment, support for graft failure, CMV prophylaxis and renal timing, with the ICU targets. Arrangement schematic drawn for these notes from the early postoperative care table in this section (ISHLT 2022 recipient guideline, Task Force 1); bar lengths are not to scale."
+ },
+ {
+  "fig": "d12_recovery_pathway",
+  "slug": "c15",
+  "anchor": "These are minimum requirements; if measures are still improving, continue support until maximal improvement.",
+  "caption": "Bridge to recovery: select, unload, give neurohormonal blockade, test at net zero flow, then explant against the Harefield criteria. Schematic drawn for these notes from both myocardial recovery sections in this tab (ISHLT 2023 MCS guideline, Task Force 7)."
+ },
+ {
+  "md": "### Early right heart failure after LVAD at a glance\n\n| Item | What the notes say |\n|---|---|\n| Presentation | Failure to wean from bypass, or low or falling output and blood pressure with high or rising CVP and escalating inotropes and vasopressors, without another cause such as tamponade |\n| Trial definition | Need for RV support (RVAD or VA ECMO) or prolonged inotropes (over 1 to 2 weeks) |\n| Haemodynamic criteria used (no agreed definition) | CI under 2.0 L/min/m², MAP 55 mmHg or less, CVP over 15 mmHg, SvO2 55% or less, more than 10 mcg/kg/min dobutamine or equivalent |\n| PAPi | (PA systolic − PA diastolic) / RA pressure; no single threshold; means of 1.3 to 1.8 reported in severe post-LVAD RHF |\n| Causes | Intrinsic RV dysfunction, high PVR, bypass injury, loss of pericardial restraint, LV over-decompression, sternal compression of the RV, reduced LV contractility and twist |\n| Exclude first | Tamponade (bleeding) or sternal compression (I, C); delayed sternal closure is reasonable with excessive bleeding, thoracic oedema or RV distension |\n| Medical | Early inotrope (dobutamine, low-dose dopamine) or milrinone; vasopressor with inotropic action if hypotensive; avoid both hypovolaemia and RV distension (CVP/PAOP ratio under 1); lower PVR with LV unloading, fluid removal and inhaled NO or prostacyclins; avoid over-decompressing the LV |\n| Mechanical | Early surgical or percutaneous RVAD for refractory RV failure (I, C); planned RVAD for high-risk patients before shock worsens (IIb, C); unplanned RVAD carried 50% in-hospital mortality (Takeda) |\n\nSource: summarised from \"Early right heart failure\" in this section (ISHLT 2023 MCS guideline, Task Force 3).",
+  "slug": "c17",
+  "anchor": "Planned RVAD in patients with high-risk pre-operative features, before cardiogenic shock worsens"
+ },
+ {
+  "md": "### Early ICU care: isolated LVAD against BiVAD and total artificial heart\n\n| | Isolated LVAD | BiVAD or TAH |\n|---|---|---|\n| Heparin starts | Within 24 h once haemostasis is secure and drain output under 50 mL for several hours (at least 8 h after surgery) | Not in the first 24 h; then UFH once haemostasis is secured |\n| Heparin target | aPTT 40 to 60 s, moving to the upper end after a few days | aPTT 50 to 70 s; 60 to 75 s after 48 h (SynCardia and BiVAD table) |\n| Warfarin | From day 2 to 3 once enteral absorption is adequate; INR 2 to 3 | After all chest drains are out; INR typically 2.5 to 3.0, 2.5 to 3.5 for SynCardia; DOACs not indicated (III, C) |\n| Aspirin | 81 to 325 mg from day 1 to 3 | Once bleeding has stopped, low dose; use sparingly in BiVADs |\n| MAP goal | 75 to 90 mmHg | 65 to 80 mmHg (BiVAD) |\n| Output | Drugs to keep CI over 2.2 L/min/m² (I, C) | Device flow for CI over 2.2 (I, A); left flow 5 to 10% above right |\n| PA catheter | Swan-Ganz for output, SvO2, PA pressure and PVR (I, C) | BiVAD: thermodilution unreliable, may be reasonable for SvO2 (IIb, C); TAH: cannot be placed, use an LA line (LAP 8 to 16, CVP 12 to 15 mmHg) |\n| Arrest | Defibrillation safe (I, B); compressions if unconscious without adequate perfusion (IIa, B) | TAH: no CPR, defibrillation or pacing (III, C) |\n\nSource: summarised from this section and the earlier LVAD sections of this tab (\"Early ICU management after durable LVAD\" and \"arrhythmias and cardiac arrest in LVAD inpatients\"), ISHLT 2023 MCS guideline Task Forces 3, 4 and 8.",
+  "slug": "c17",
+  "anchor": "Discharge and home care with BiVAD or TAH follow Task Force 5"
+ },
+ {
+  "md": "### Right heart failure risk before LVAD at a glance\n\n| Item | What the 2023 guideline says |\n|---|---|\n| Why it happens | RV–PA uncoupling after transient (volume, ischaemia) and structural (septal shift, apical coring) changes, plus more venous return once the pump starts: RV dilatation, TR, leftward septal shift |\n| Clinical risk factors for biventricular support | Chemotherapy cardiomyopathy, cardiogenic shock, VA-ECMO before LVAD, pre-implant phosphodiesterase inhibitor use |\n| Haemodynamic predictors | RA/PCWP ratio (the classic one); RV stroke work (needs Fick output); PAPi under 1.85 ± 0.1; RA pressure with PA elastance; a Y descent as deep as or deeper than the X descent; no single afterload index identifies RHF alone |\n| Right heart catheter | Urgent: to guide diuresis, inotropes or temporary MCS, with a PA catheter in ICU before surgery; elective: within 1 to 2 weeks of surgery |\n| Optimise | CVP 15 mmHg or less before LVAD; IV loop diuretic with thiazide adjunct; ultrafiltration only after diuretics, inotropes and temporary MCS have been tried |\n| Cautions | Pulmonary vasodilators can raise left-sided filling pressures; pre-operative sildenafil was linked to more RV failure |\n| If the RV stays poor | ECMO or planned BiVAD; planned BiVAD may do better than unplanned or delayed |\n\nSource: summarised from \"Right heart assessment before LVAD\" and \"RV optimisation before LVAD\" in this section (ISHLT 2023 MCS guideline, Task Force 2).",
+  "slug": "c15",
+  "anchor": "Poor RV or refractory biventricular failure: ECMO or planned BiVAD"
+ },
+ {
+  "md": "### Who recovers on an LVAD: predictors at a glance\n\n| Source | Predictors of recovery |\n|---|---|\n| Clinical | Non-ischaemic cardiomyopathy (recovers about 4 times as often as ischaemic), younger (under 40 to 50), shorter heart failure history (under 1 to 5 years) |\n| Echo on full support (should trigger low-speed testing) | Normal LVEDD, better wall motion, MR and AR absent or grade 1 or less, no RV dilatation, TR grade 2 or less, more frequent aortic valve opening at unchanged speed |\n| Dandel (off pump) | LVEF 50% or more with LVEDD 55 mm or less or heart failure for 5 years or less; or LVEF 45% or more with LVEDD 55 mm or less and heart failure for 5 years or less: best predictors of over 5-year stability after explant |\n| I-CARS (INTERMACS) | Age under 50, non-ischaemic, under 2 years from diagnosis, no ICD, creatinine 1.2 mg/dl or less, LVEDD under 6.5 cm |\n| Other | Pre-LVAD speckle-tracking rotational mechanics (sensitivity 92%, specificity 73%); lower pre-LVAD inflammatory markers; short ryanodine receptor to sarcolemma distance |\n\nSource: summarised from \"Who recovers\" in this section (ISHLT 2023 MCS guideline, Task Force 7).",
+  "slug": "c15",
+  "anchor": "Focus on NICM, younger patients and short HF history"
+ }
+]

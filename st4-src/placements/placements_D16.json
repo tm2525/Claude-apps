@@ -1,0 +1,105 @@
+[
+ {
+  "fig": "d16_ap_classification",
+  "slug": "g3",
+  "anchor": "An elderly patient with a small ASD and dominant acquired disease",
+  "caption": "The AP classification as a grid: anatomic class I to III by physiological stage A to D, with the guideline's worked example (repaired coarctation IIA, IIC with moderate ventricular dysfunction) and the lesions that can never be stage A. Schematic drawn for these notes from Table 4 as summarised in this section (2025 ACC/AHA ACHD guideline)."
+ },
+ {
+  "fig": "d16_pvr_closure",
+  "slug": "g3",
+  "anchor": "Change from 2018: the old 2b recommendation (closure if Qp:Qs ≥1.5",
+  "caption": "Closure of ASD, VSD, AVSD and PDA in adults by PVR band, with the class of recommendation for each band; grey bands are not addressed. Chart drawn for these notes from the ASD, VSD, AVSD and PDA recommendations and closure algorithms in this tab (2025 ACC/AHA ACHD guideline)."
+ },
+ {
+  "fig": "d16_achd_late_problems",
+  "slug": "g3",
+  "anchor": "Commonest surgical issues: septal defects, single ventricle, coarctation",
+  "caption": "Before any adult congenital reoperation, and the late problems that bring each repaired lesion back. Schematic drawn for these notes from this section (TSRA ch. 113)."
+ },
+ {
+  "fig": "d16_adult_fontan_map",
+  "slug": "g3",
+  "anchor": "AV valve dysfunction is relatively common, particularly with a common AV valve",
+  "caption": "Adult Fontan: seven sites of late failure with the guideline's test or treatment for each, and the anticoagulation and transplant-referral rules. Arrangement schematic drawn for these notes from the Fontan sections of this tab (2025 ACC/AHA ACHD guideline)."
+ },
+ {
+  "fig": "d16_eisenmenger",
+  "slug": "g3",
+  "anchor": "Shunt closure removes the RV \"pop-off\" and worsens RV strain",
+  "caption": "Eisenmenger syndrome: why the defect is left open, the PAH drug sequence by class, high-risk markers, and the four harms or no-benefit recommendations. Schematic drawn for these notes from this section (2025 ACC/AHA ACHD guideline)."
+ },
+ {
+  "fig": "d16_aaoca_decision",
+  "slug": "g3",
+  "anchor": "Asymptomatic middle-aged patients without high-risk features: surgery has no documented benefit",
+  "caption": "Anomalous aortic origin of a coronary in adults: imaging, risk stratification and the class of surgery for left-from-right and right-from-left, plus ALCAPA and anomalous RCA from the PA. Decision chart drawn for these notes from the recommendations and Figure 7 text in this section (2025 ACC/AHA ACHD guideline)."
+ },
+ {
+  "fig": "d16_fontan_failure",
+  "slug": "g12",
+  "anchor": "Main causes of late death: thromboembolism, heart failure, sudden death",
+  "caption": "Why the Fontan fails: the three physiological problems, five complications with their figures, PLE management and Mayo Clinic survival at 10, 20 and 30 years. Chart drawn for these notes from this section (TSRA ch. 105)."
+ },
+ {
+  "fig": "d16_tricuspid_atresia",
+  "slug": "g12",
+  "anchor": "Catheter: equivocal echo, PVR measurement, interventions",
+  "caption": "Tricuspid atresia: the obligatory route RA, ASD, LA, LV, VSD, RV; Tandon-Edwards types 1 and 2; and the stage I operation by pulmonary or systemic flow problem, with criteria for the later stages. Schematic drawn for these notes from this section (TSRA ch. 107)."
+ },
+ {
+  "fig": "d16_coronary_operations",
+  "slug": "g12",
+  "anchor": "Reserved for AAOCA with native coronary atherosclerosis",
+  "caption": "Coronary anomaly operations: ALCAPA reimplantation and Takeuchi tunnel, and unroofing of an intramural anomalous aortic origin, with the other options and pitfalls. Arrangement schematic drawn for these notes from the operation tables in this section (TSRA ch. 111)."
+ },
+ {
+  "fig": "d16_segmental_analysis",
+  "slug": "g5",
+  "anchor": "Perimembranous VSD: the penetrating bundle runs close to the inferior margin",
+  "caption": "Sequential segmental analysis in seven steps, the right and left atrial appendage, and the three parts of every ventricle. Schematic drawn for these notes from this section (London Deanery teaching 2024)."
+ },
+ {
+  "fig": "d16_general_approach",
+  "slug": "g5",
+  "anchor": "Can the heart be repaired, that is, are there two adequate ventricles?",
+  "caption": "The questions to ask of any congenital lesion, ending in the two-ventricle or single-ventricle decision. Flowchart drawn for these notes from this section."
+ },
+ {
+  "fig": "d16_aristotle",
+  "slug": "g5",
+  "anchor": "Mortality rose with ACC level in Erek's single-surgeon series",
+  "caption": "Aristotle basic (ABC) and comprehensive (ACC) scores on one scale with levels 1 to 6, four example procedures, the components, and hospital mortality by ACC level in Erek's series. Chart drawn for these notes from this section (Erek 2014; Sata 2012; Jacobs 2012; von Segesser 2004)."
+ },
+ {
+  "fig": "d16_ap_window",
+  "slug": "g6",
+  "anchor": "Repair early, on bypass, through the aorta or the window itself",
+  "caption": "Aortopulmonary window types I (proximal), II (distal) and III (total) against truncus, with repair and contraindications. Schematic drawn for these notes from this section and TSRA ch. 110 (arrangement schematic)."
+ },
+ {
+  "md": "### ACHD: when to intervene, lesion by lesion\n\n| Lesion | Intervene when | Technique and points |\n|---|---|---|\n| VSD | Qp:Qs at least 1.5:1 with LV volume overload | Only if PA systolic \"50% less than systemic\" (as printed) and PVR no more than one third of SVR; Eisenmenger: surgery typically contraindicated |\n| ASD | Qp:Qs at least 1.5 | Device for secundum up to 38 mm; surgery for primum, sinus venosus, large secundum with poor rims, or with arrhythmias |\n| RVOT reconstruction | Pulmonary stenosis or regurgitation (the commonest late problem) | Percutaneous valve (graft rupture about 4%, stent fracture 20%); else annulus-sparing repair; replacement preferred over repair; replacement before 17 linked with normal RV function |\n| Ebstein | Worse exercise tolerance, heart failure, cyanosis, sustained arrhythmia, paradoxical stroke, symptomatic TR, pregnancy, resting SpO2 below 90% | Repair preferred |\n| Supravalvar AS | Discrete lesion, mean gradient above 50 mmHg | Patch aortoplasty, rarely root replacement |\n| Valvar AS or AR | Symptoms; valve area below 0.6 cm²; regular exercise or planned pregnancy; symptomatic moderate or severe AR; EF below 55%; LVESD above 55 mm | Root replacement above 55 mm |\n| Subvalvar AS | Mean gradient above 50 mmHg as printed (2025 ACC/AHA: peak 50 or more), symptoms, or moderate or severe AR | Myectomy or myotomy if the valve is kept; 20% recurrence; tunnel: Konno |\n| Transposition, RVOT obstruction | Gradient above 60 mmHg or RV/LV pressure ratio above 0.6 | Baffle stenosis: balloon or patch; IVC stenosis urgent, SVC stenosis usually benign |\n| Failing Fontan | Pathway obstruction that the catheter cannot treat | Revision with Maze and epicardial pacemaker; otherwise transplant listing, sometimes heart-liver |\n\nSource: summarised from \"Adult congenital heart disease: surgical overview\" in this tab (TSRA ch. 113).",
+  "slug": "g3",
+  "anchor": "Deteriorating patients: individual discussion of MCS or transplantation"
+ },
+ {
+  "md": "### Neonatal physiology at a glance\n\n| Feature | What follows |\n|---|---|\n| High metabolic rate and oxygen consumption | High respiratory rate and cardiac index |\n| Limited ability to raise stroke volume or heart rate | Very sensitive to negative inotropes |\n| Myocardial metabolism | Favours glucose over fatty acids |\n| Poorly developed sarcoplasmic reticulum | Contraction depends on extracellular calcium; hypocalcaemia badly tolerated (hence calcium infusions) |\n| Autonomic imbalance | Prone to vagal reflexes |\n| Relatively non-compliant lungs, small distal airways | Airways block easily with secretions; prone to respiratory failure |\n| Fetal haemoglobin (alpha2 gamma2) until about 6 months | Binds oxygen more avidly; dissociation curve shifted to the left |\n\nSource: summarised from \"Neonatal physiology\" in this tab (London Deanery teaching 2024).",
+  "slug": "g5",
+  "anchor": "Fetal haemoglobin (alpha2 gamma2) persists to about 6 months"
+ },
+ {
+  "md": "### Cardiac tumours in children at a glance\n\n| Tumour | Where and with what | Course | Management |\n|---|---|---|---|\n| Rhabdomyoma | Commonest; multiple, ventricular; tuberous sclerosis | Regresses | Operate only for obstruction or arrhythmia |\n| Fibroma | Single; ventricular septum or free wall | Does not regress; arrhythmia and sudden death | Resect |\n| Teratoma | Pericardial; infancy | Not given in the notes | Not given in the notes |\n| Myxoma | Older children; Carney complex | Not given in the notes | Not given in the notes |\n\nSource: summarised from \"Cardiac tumours in children\" in this tab.",
+  "slug": "g6",
+  "anchor": "Teratoma (pericardial, infancy), myxoma (older children; Carney complex)"
+ },
+ {
+  "md": "### AAOCA: AATS 2017 consensus against the 2025 ACC/AHA adult guideline\n\n| Question | AATS 2017 (written mainly for the young) | ACC/AHA 2025 (adults) |\n|---|---|---|\n| First imaging | TTE (I, B); then CT coronary angiography or CMR (IIa, B) | Coronary CT angiography (1); MR angiography if CT contraindicated |\n| Ischaemia testing | Exercise testing with nuclear perfusion or stress echo (I, B) | Exercise or dobutamine stress (echo, nuclear or MR) preferred to vasodilator stress |\n| Symptomatic | Ischaemic chest pain, arrhythmic syncope or aborted sudden death: restrict activity and offer surgery (I, B) | Symptoms or ischaemia attributable to the anomalous artery: surgery (1) |\n| Asymptomatic left from right sinus | Interarterial course: offer surgery (I, B); no competitive sport (I, B) | High-risk anatomy: surgery reasonable (2a); without ischaemia otherwise observation or surgery (2b) |\n| Asymptomatic right from left sinus | Negative stress imaging: competitive sport after counselling (IIa, C) | Observation or surgery (2b) |\n| Operation | Remove the intramural course and any ostial narrowing: unroofing, ostioplasty or reimplantation (I, B); PA translocation as adjunct (IIb, C) | Unroofing with or without ostioplasty, reimplantation, pulmonary translocation; CABG only with coexisting coronary disease |\n| Age | Not in the summary read | Sudden death mainly at extreme exertion and under 35; no documented benefit of surgery in asymptomatic middle-aged patients without high-risk features |\n\nSource: summarised from \"Anomalous aortic origin of a coronary artery: AATS 2017 recommendations\" in this tab and \"American ACHD guideline 2025: coronary anomalies, coronary fistula and vascular rings\" in Adult congenital.",
+  "slug": "g12",
+  "anchor": "AED and trained staff immediately available at competition and training"
+ },
+ {
+  "md": "### Systemic venous anomalies: why each matters\n\n| Anomaly | What it is | Why it matters |\n|---|---|---|\n| Persistent left SVC | 0.2 to 3% of healthy people, 1.3 to 11% with congenital heart disease; drains to an enlarged coronary sinus; a bridging innominate vein may be absent | Cannulation; retrograde cardioplegia washes out; pacing leads; the Glenn may need to be bilateral |\n| Unroofed coronary sinus with left SVC | Occurs with a persistent left SVC | Right-to-left shunt to the left atrium |\n| Interrupted IVC with azygos continuation | Occurs with left isomerism | A Glenn then carries almost all venous return (Kawashima) |\n\nSource: summarised from \"Systemic venous anomalies\" in this tab, with the corrected prevalence from Congenital 12.",
+  "slug": "g6",
+  "anchor": "Interrupted IVC with azygos continuation: with left isomerism"
+ }
+]

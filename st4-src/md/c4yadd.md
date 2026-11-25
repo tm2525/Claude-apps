@@ -585,3 +585,134 @@ Added 24 November 2026 from Arbustini E, Beneventi F, Bozzani A, et al. ESC guid
 
 - "A woman with a mechanical mitral valve tells you she is 6 weeks pregnant." The ESC 2025 pregnancy guideline (I C) asks for a structured anticoagulation plan at once, ideally made before conception; DOACs are not an option (III C); LMWH only with anti-Xa monitoring (III C otherwise); delivery planned by the Pregnancy Heart Team, with caesarean if she is still on a vitamin K antagonist near labour (I C).
 - "When would you operate on a native valve in pregnancy?" Only when maternal mortality risk is high and other treatments (medical, percutaneous) have failed: IIa C.
+
+## PEARS and the supported Ross ("Pers-Ross"), part 1: PEARS in general
+
+Added 25 November 2026 from (1) Treasure T, Takkenberg JJM, Golesworthy T, Rega F, Petrou M, Rosendahl U, et al., Pepper J. Personalised external aortic root support (PEARS) in Marfan syndrome: analysis of 1–9 year outcomes by intention-to-treat in a cohort of the first 30 consecutive patients. Heart 2014;100:969–75. doi:10.1136/heartjnl-2013-304913. Read from the full-text PDF in UCL Discovery. (2) Pepper J, Izgi C, Golesworthy TJ, Takkenberg JJM, Treasure T. Personalised external aortic root support (PEARS) to stabilise an aortic root aneurysm. Br J Cardiol 2020;27(3):22. doi:10.5837/bjc.2020.022. Read from the PMC full text. (3) Treasure T, Austin C, Kenny LA, Pepper J. Personalised external aortic root support in aneurysm disease (Current Opinion review, 2022). Read from the author's accepted manuscript in UCL Discovery; journal details are not printed in it. (4) Kougioumtzoglou AM, Lam BCY, Bouma BJ, Groenink M, Scholte AJHA, Dolmaci OB, et al. Personalized external aortic root support: the Dutch experience. J Thorac Cardiovasc Surg 2025;170(6):1729–36.e5. doi:10.1016/j.jtcvs.2025.07.041. Read from the full-text PDF in the Amsterdam UMC repository. (5) El-Gamel A, Austin C. Personalized external aortic root support (PEARS). CTSNet, April 2022. doi:10.25373/ctsnet.19658133. Text page read; the video was not watched. (6) NICE HealthTech guidance HTG623 (formerly IPG724), May 2022. Read from the guidance PDF. (7) Golesworthy TJ. ExoVasc PEARS project status, Exstent, August 2022, and the Exstent website: manufacturer information, used only for device description and labelled as such. All web sources were read through a tool that returns a model's extraction, not raw text. The 2024 ESC and EACTS/STS aortic guidelines were searched in full text on disk.
+
+"Pers-Ross" in these notes means the Ross operation with the autograft supported by PEARS. It is written Ross-PEARS, ROSS-PEARS or PEARS-Ross in the literature; one 2025 technique paper expands it as "personalized external root support". No separate, established operation called "PERS-Ross" was found.
+
+### What it is and where it came from
+- A custom-made, soft, macroporous mesh sleeve fitted round the outside of the aortic root and ascending aorta to stop further dilatation. The valve, sinuses and coronary origins stay native; nothing is opened or replaced.
+- Idea: Tal Golesworthy, an engineer with Marfan syndrome, at a British Marfan Association meeting in 2000. Tom Treasure brought the project together; John Pepper was the surgeon. Golesworthy was the first patient: Pepper operated at the Royal Brompton in May 2004 (first-in-man reported in the Lancet, 2004). He was alive more than 18 years later.
+- Device: ExoVasc (Exstent Ltd, UK). Not available in the USA (manufacturer). About 1,600 implanted in more than 40 centres (manufacturer's own figure, not peer reviewed).
+
+### How it is made
+1. ECG-gated CT of the root and ascending aorta (MRI in the early cases).
+2. CAD model of the patient's aorta.
+3. 3D-printed (rapid-prototyped) thermoplastic former: a replica of the aorta. At operation the surgeon uses it to mark the coronary positions.
+4. The sleeve is knitted from polyethylene terephthalate (the polymer of ordinary vascular grafts), open mesh with 0.7 mm pores, shaped on the former.
+- Sizing: device size is set from the lumen, so a "100%" device already pushes the wall in slightly. A 2025 CTSNet case used 95% of the diastolic inner diameter; the manufacturer attributes the reduction in AR seen after PEARS partly to this undersizing (a hypothesis, not tested).
+- It is made to order in advance (the Dutch paper says several weeks), so it cannot be used in an emergency or for dissection.
+
+!fig f71_pears_pathway | From scan to sleeve: manufacture and the operative sequence. Drawn for these notes from Treasure 2014 (Heart), Pepper 2020 (Br J Cardiol), El-Gamel and Austin (CTSNet 2022) and Kougioumtzoglou 2025 (JTCVS)
+
+### Operative technique (isolated PEARS)
+1. Median sternotomy (minimal access has been described). Perfusionist in theatre and pump primed. Usually no bypass: 1 of the first 30, about 73% of 117 and about 79% of uncomplicated cases (manufacturer) were done off pump. Heparin is usually withheld so the tissue planes stay visible.
+2. Keep the pressure low while dissecting: systolic no more than 80 mmHg with mean in the 50s (CTSNet); the Dutch centres hold systolic at about 50 to 60 mmHg and use neuromonitoring.
+3. Free the aorta circumferentially up to beyond the brachiocephalic artery. Separate the root from the pulmonary artery (left), RVOT (anterior), right atrium (right) and left atrium (posterior), with low-energy diathermy and blunt dissection.
+4. Dissect down to the aortoventricular junction, below the coronary origins. Free the left main fully, with nothing left behind it: the authors call this the most important step. The right coronary is more fragile.
+5. Prepare the sleeve: open its seam to lift it off the former; cut the coronary openings (asterisk-shaped, not round holes) at the positions marked on the former, so that a tongue of mesh passes beneath each coronary artery. Lubricate it (paraffin oil or K-Y jelly).
+6. Pass it behind the aorta without twisting; bring the tongues under the right and left coronaries; reclose the seam with a continuous suture, keeping the needle out of the aortic wall. A second suture line can snug it. Proximal edge at the aortoventricular junction, distal edge beyond the brachiocephalic artery.
+7. TOE: laminar coronary flow and regional wall motion.
+- With other surgery (for example mitral repair in Marfan) the operation is on bypass and the sleeve goes on just before weaning.
+
+!fig f71_pears_root | The sleeve in place: from the aortoventricular junction to beyond the brachiocephalic artery, with a cut opening and a tongue beneath each coronary. Schematic drawn for these notes from Treasure 2014, Pepper 2020 and El-Gamel and Austin (CTSNet 2022)
+
+### Who it is for
+| Source | Selection |
+|---|---|
+| Treasure 2014, first use | Marfan, root 40 to 45 mm, little or no AR |
+| Pepper 2020 | Root and ascending dilatation 40 to 50 mm, asymptomatic, age 16 or more, no more than mild AR |
+| Dutch 2025 | Heritable aortopathy with root no more than 5 mm above the guideline threshold; bicuspid aortopathy with good valve function; neoaortic root dilatation after congenital repair (but not after truncus repair, where results were poor) |
+| Exclusions (Dutch) | More than mild or asymmetric AR; low or aberrant coronary ostia; acute type A dissection |
+
+It is used at smaller diameters than root replacement, so it is a pre-emptive operation; Treasure calls the choice between watching and early PEARS one for shared decision-making. Ten women had eleven later pregnancies without further dilatation; one PEARS was done off pump in the second trimester.
+
+### Results
+| Series | Patients | Early | Late |
+|---|---|---|---|
+| Treasure 2014 (Heart) | First 30, Marfan; mean age 32; root 46.2 mm | Operating time mean 160 min; bypass in 1; no in-hospital death | Mean follow-up 4.4 years (133 patient-years); no aortic, valve or cerebrovascular events; one sudden death in 2013 with the support intact and no dissection |
+| Pepper 2020 (Br J Cardiol) | 117 (2004 to 2017), 14 teams | 1 death (day 5, left main injured during dissection); 4 converted to another operation | 1 arrhythmic death at 4.5 years; 2 reoperations (6 and 9 years) for AR, both where the right and non-coronary sinuses had not been fully covered |
+| First 200 (reported in Treasure 2022) | Median age 33; 753 patient-years | Perioperative mortality 0.5% | One asymptomatic type B dissection at 3 years; no device-related aortic event; AR abolished in 30 of 48 with preoperative AR |
+| Kougioumtzoglou 2025 (Dutch) | 90 (60 isolated, 9 combined, 21 Ross); mean age 36.5 | Success 96.6%; no deaths, stroke or MI; AF 17%; pericardial drainage 8% | Sinus 44.6 to 38.6 mm and ascending 35.4 to 31.5 mm (both P<0.001); arch and descending unchanged; median follow-up only 6 months; reintervention 3.4% |
+
+Histology: a Marfan patient who died 4.5 years after PEARS of a non-aortic cause had the mesh incorporated into the adventitia and a normal-looking media under it, while the unsupported arch showed Marfan changes (Pepper et al., as summarised in the reviews read; the original was not read).
+
+### Complications to name
+- Left main injury during dissection: the one perioperative death in the early series (day 5; the support was never placed).
+- Coronary compression or ischaemia at closure (one sleeve repositioned days later; one VF arrest settled by releasing the closing suture; one circumflex occlusion needing a vein graft, manufacturer report).
+- Incomplete coverage: one surgeon discarded the subcoronary part of the sleeve; the uncovered sinus dilated and the valve leaked, needing rescue surgery.
+- AF, pericardial collection, mesh infection (Cutibacterium acnes, treated by homograft root replacement).
+- Dilatation of the aorta beyond the sleeve.
+
+### NICE and the guidelines
+- NICE HTG623 (published May 2022 as IPG724; moved to HealthTech guidance in January 2026 with the recommendations unchanged; it replaced IPG394): short-term safety and efficacy evidence is adequate but long-term evidence is limited, so use only with **special arrangements** for clinical governance, consent and audit or research. Patient selection by an MDT; only in specialist centres by surgeons experienced in root surgery; NICE encourages a registry and wants future studies to report diameter at selection and long-term dilatation and dissection. The evidence was 8 sources (3 cohort studies, 2 non-randomised comparisons, 2 case series, 1 case report).
+- **2024 ESC aortic guideline: no mention of PEARS or external root support** (full text searched). It cites the Treasure group's shared decision-making framework for Marfan root surgery only in its heritable-disease introduction.
+- **2024 EACTS/STS aortic guideline: no mention** (full text searched). Its root recommendations remain valve-sparing replacement IIa B for a normal tricuspid valve and IIb B for a bicuspid valve (Recommendation Table 22, earlier in Cardiac 6).
+
+### PEARS against valve-sparing root replacement
+| | PEARS | Valve-sparing root replacement |
+|---|---|---|
+| What it does | Stops further growth; everything stays native | Replaces the diseased sinuses and resuspends the valve |
+| Bypass and clamp | Usually neither | Both |
+| Time | About 2 to 3 hours (manufacturer); first 30 mean 160 min | About 4 to 7 hours (manufacturer's comparison) |
+| Early mortality | 0.3 to 0.5% in the large series | Elective 0.3 to 1.5% in experts' hands (EACTS/STS 2024) |
+| When | Earlier, at smaller diameters | At the guideline threshold |
+| Cannot handle | More than mild AR, emergencies, dissection, aberrant coronaries | Can repair the valve as well |
+| Evidence | Cohorts, no control group, short follow-up for most; supporters argue a randomised trial is not sound | Long-term series; guideline recommendation |
+| Later | May still need valve surgery (NICE); the mesh composite can be cut at reoperation (manufacturer) | May still need valve surgery |
+
+Viva line. PEARS is a pre-emptive, usually off-pump, valve- and root-sparing operation for a modestly dilated root with a competent valve, mostly in Marfan; NICE allows it only under special arrangements, neither 2024 European guideline mentions it, and its danger is the left main during dissection.
+
+## PEARS and the supported Ross ("Pers-Ross"), part 2: PEARS on the pulmonary autograft
+
+Added 25 November 2026 from (1) Redondo A, Austin C. Our 7-year experience supporting the Ross autograft with the novel technique of Personalized External Aortic Root Support. JTCVS Techniques 2024. Abstract only (DOAJ and AMiner records, and the AATS 2023 meeting abstract with 46 patients); the full text could not be opened. (2) Kougioumtzoglou AM, et al. J Thorac Cardiovasc Surg 2025;170(6):1729–36.e5, as in part 1 (Ross-PEARS subgroup). Read in full. (3) Hebala M, Nassar M, Austin C, Kenny L. Personalized external root support for the pulmonary autograft in the aortic position: the ROSS-PEARS procedure. Oper Tech Thorac Cardiovasc Surg 2025;30(3):232–43. doi:10.1053/j.optechstcvs.2025.01.004. Abstract only. (4) Conci L, Laufer G, Zimpfer D, Andreeva A, Kocher A, Austin C, Osorio-Jaramillo E. Ross procedure with personalized external aortic root support. MMCTS 2023. doi:10.1510/mmcts.2023.077. Catalogue description only; the video was not watched. (5) Van Hoof L, Verbrugghe P, Jones EAV, Humphrey JD, Janssens S, Famaey N, Rega F. Understanding pulmonary autograft remodeling after the Ross procedure: stick to the facts. Front Cardiovasc Med 2022;9:829120. doi:10.3389/fcvm.2022.829120. Read from the online full text, main text and Table 3. (6) Vanderveken E, Vastmans J, Verbelen T, Verbrugghe P, Famaey N, Verbeken E, Treasure T, Rega F. Reinforcing the pulmonary artery autograft in aortic position with a textile mesh sleeve: a histological evaluation (sheep). Author's manuscript in UCL Discovery, read in full; journal details not printed in it. (7) Chalek AD, Ferrell BE, Sugiura T, Spindel SM. The supported Ross: a review of the technique and long-term outcomes. Heart Surg Forum 2025;28(12):49142. doi:10.31083/HSF49142. Read from the online full text; secondary source, and its page carries placeholder correction and retraction text, so check its status. (8) Treasure 2022 review and the Exstent 2022 status report and Ross-PEARS web pages, as in part 1 (manufacturer information labelled). Read through a summarising fetch tool. No Ross-PEARS paper by Nijs was found; Van Hoof's contributions are the review and the sheep work above.
+
+### Why support the autograft
+- The free-standing autograft is pulmonary artery wall exposed to aortic pressure. Up to 60% of the dilatation present at 1 year is there before discharge; diameter exceeds 40 mm in up to 50% at 12 years, and up to 24% need reoperation for non-structural failure by 15 years (Van Hoof).
+- Risk factors: preoperative isolated AR, a large aortic annulus, annular size mismatch, preexisting aortic dilatation, younger age, male sex, postoperative hypertension. At least 9 autograft dissections are reported (54 to 64 mm, 5 to 18 years after operation, all bicuspid with AR).
+- These are the patients the EACTS 2026 consensus calls "less ideal" (regurgitation with an annulus of 27 mm or more; see the consensus sections above).
+
+### Timing
+- At the Ross itself: this is the published practice (Evelina/St Thomas', Vienna, the Dutch centres).
+- Later, on a dilating autograft: the manufacturer's 2022 register groups "aortic valve disease and dilated autograft" together (84 patients) without separating them. No published series of late PEARS on a dilating autograft was found. If done, the isolated-PEARS selection rules (no more than mild AR, root not far past threshold) would logically apply; that is an inference, not a published rule.
+
+### Technique
+1. Preoperative CT of the pulmonary trunk; the former replicates the autograft, not the aorta.
+2. Free-standing root Ross as usual: harvest, excise the aortic valve, mobilise the coronary buttons.
+3. Dutch technique: the autograft is placed in the sleeve and sutured to it at the base, which fixes the commissures; it is implanted with a single continuous proximal suture line; the coronary buttons come through openings cut in the sleeve; the native ascending aorta is then drawn into the sleeve, avoiding a supracoronary graft. The Vienna MMCTS tutorial anchors the sleeve after coming off bypass.
+4. Size mismatch between autograft and ascending aorta: reduction aortoplasty, needed in 44% of the London series.
+5. Cover the whole autograft: the one Dutch pseudoaneurysm arose at an uncovered spot next to the right coronary button.
+- Shape is harder to predict than for an aortic PEARS because the autograft changes shape once exposed to aortic pressure, and it is devascularised at harvest (Van Hoof).
+
+!fig f71_ross_support | Four ways to support the pulmonary autograft: tailored free root, autologous inclusion, prosthetic inclusion and PEARS-Ross. Schematic drawn for these notes from the EACTS 2026 Ross consensus (table 3, as summarised above), Van Hoof 2022 and Kougioumtzoglou 2025
+
+### Published results
+| Series | Patients | Results |
+|---|---|---|
+| Redondo and Austin 2024 (abstract) | 50 over 7 years; mean age 29.8 (youngest 9); 38% redo sternotomy (11 previous AVR); 72% bicuspid; mean ascending 38.3 mm | Bypass 201 min, clamp 151 min; median stay 6 days; mean follow-up 16.9 months; no deaths; 2 later AVR (1 rheumatic disease, 1 iatrogenic autograft cusp damage); ascending dimensions stable |
+| Kougioumtzoglou 2025 (Dutch) | 21 Ross-PEARS within 90 PEARS | No in-hospital deaths in the cohort; one reoperation on day 1 for right coronary compression; one autograft pseudoaneurysm at an uncovered site; median follow-up 6 months |
+| Exstent status report 2022 (manufacturer) | 76 Ross-PEARS | One perioperative death (biventricular failure, right coronary ostial stenosis, hepatic failure); 3 conversions (one back to a free-standing root Ross) |
+
+Pepper 2020 excluded seven PEARS-supported Ross autografts from its aortic series. There is no randomised or matched comparison with the unsupported Ross, and no registry outside the manufacturer's.
+
+### Against the other ways of supporting the autograft
+| Method | Evidence in brief | Drawback |
+|---|---|---|
+| Tailored free root: annular ring, STJ graft or reduction (EACTS 2026 table 3) | Endorsed by the consensus | Sinuses unsupported |
+| Autologous inclusion (endorsed) | de Kerchove, 218 patients (as reported in the Chalek review): freedom from proximal dilatation over 40 mm at 10 years 80% against 57% with root replacement; autograft reoperation similar (84% against 81%) | Not for severe mismatch; failure by cusp prolapse |
+| Prosthetic (Dacron) inclusion (endorsed) | As reported in the Chalek review. Skillington, 310 patients: freedom from reoperation or late AR more than mild 93% at 15 years. Starnes, 129 bicuspid adults: autograft failure 5% with the autograft wrapped against 35% without | Stiff woven graft: concerns about pulsatility, cusp stress and stress-shielding atrophy |
+| External Dacron sewn to the autograft (Linz, CTSNet 2025) | Technique paper | Adds about 45 minutes; graft about 2 mm larger than the root |
+| PEARS-Ross | Cohorts above, under 2 years' mean follow-up | Weeks to make; coronary compression; uncovered gaps |
+
+- **EACTS 2026 Ross consensus and external support:** as summarised from its full text earlier in this tab, its technique table endorses three methods (tailored free-standing root, autologous inclusion, prosthetic inclusion) and does not list an external mesh. I could not reopen the full text today to search it for a passing mention of PEARS, so "not among the endorsed techniques" is certain and "not mentioned at all" is unchecked. A 2025 JAHA Ross review does not mention PEARS.
+- Sheep evidence (Vanderveken): mesh round a pulmonary artery interposed in the descending aorta for 6 to 8 months; autograft-to-aorta diameter ratio 1.11 with mesh against 1.59 without. The mesh was incorporated in a fibrotic sheet, but the media thinned (about 42 to 53%) with smooth muscle atrophy; mechanical testing found the composite wall stronger. The mesh was not custom-made and there were only 3 controls.
+
+### Controversies
+- **Children and growth:** the youngest London patient was 9, and the Dutch cohort included 7 children. A permanent sleeve cannot grow; no published growth data with Ross-PEARS were found. Absorbable support (polydioxanone STJ banding in children; composite meshes in growing sheep) is the alternative explored for growing patients.
+- **No randomised or long-term data:** short follow-up, mostly one surgeon's practice, data collected on manufacturer forms (Dutch series), and a proctoring author with travel reimbursed by the manufacturer (Treasure 2022).
+- **Biology:** stress-shielding and medial atrophy under a stiff, inelastic support; erosion, seroma and migration are known with other aortic wraps, though none has been reported in the supported Ross.
+- **Coronaries:** compression of the right coronary through the sleeve is the recurring early complication.
+
+Viva line. Pers-Ross is a free-standing root Ross with a CT-made mesh round the autograft, aimed at the patients who dilate (regurgitation, big annulus); early results from a few centres are good, but follow-up is under two years, there are no comparative or growth data, and the EACTS 2026 consensus endorses inclusion and tailored annular and STJ support, not mesh.

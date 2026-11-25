@@ -325,7 +325,7 @@ Three cycles of neoadjuvant nivolumab with chemotherapy raised complete response
 - Control patients had limited access to later immunotherapy in some regions, which can inflate a survival difference.
 - It cannot say whether adjuvant immunotherapy adds benefit.
 
-The five-year figures were confirmed today; the first-analysis, subgroup and surgical figures are from memory of the 2022 paper.
+The five-year figures were confirmed today; the first-analysis, subgroup and surgical figures are from memory of the 2022 paper (checked 25 November 2026: first-analysis and subgroup figures against the full paper, Forde et al., NEJM 2022, in Thoracic 16, "CheckMate 816: detail from the full paper"; surgical figures, including residual viable tumour 10% against 74%, against the surgical outcomes abstract, Spicer et al., ASCO 2021).
 
 ## KEYNOTE-671 in depth
 
@@ -343,7 +343,7 @@ Perioperative pembrolizumab is the first perioperative regimen to show an overal
 | Endpoint | Pembrolizumab | Placebo |
 | --- | --- | --- |
 | Pathological complete response | 18.1% | 4.0% |
-| Major pathological response | 30% | 11% (from memory) |
+| Major pathological response | 30% | 11% (checked 25 November 2026: 30.2% against 11.0%, Wakelee et al., NEJM 2023, PMC11074923) |
 | Reached surgery | 82.1% | 79.4% |
 | Median event-free survival | 47.2 months | 18.3 months (HR 0.59) |
 | 36-month overall survival | 71% | 64% (HR 0.72) |
@@ -674,7 +674,7 @@ The trials that changed practice, with the journal and the figures confirmed tod
 | MEDIASTrial, Journal of Clinical Oncology 2023 | Omit confirmatory mediastinoscopy after negative endosonography | Unforeseen N2 8.8% against 7.7%, non-inferior; no difference in two-year survival |
 | VIOLET, NEJM Evidence 2022 | VATS against open lobectomy | Better recovery, less pain, fewer complications (from memory) (corrected 24 November 2026: ESMO 2025 read in full: less pain, better physical function at 5 weeks, shorter stay, fewer readmissions; complications not stated; see Thoracic 9) |
 | Lung ART, Lancet Oncology 2022 | Postoperative radiotherapy for N2 | No disease-free survival gain (from memory) (corrected 24 November 2026: ESMO 2025 read in full: 3-year disease-free survival 47% against 44%, HR 0.86 (0.68 to 1.08), P = 0.18; see Thoracic 3) |
-| Revised STARS, Lancet Oncology 2021 | SABR against matched VATS lobectomy | Three-year survival 91% in both (from memory) |
+| Revised STARS, Lancet Oncology 2021 | SABR against matched VATS lobectomy | Three-year survival 91% in both (checked 25 November 2026 against the paper, Chang et al., Lancet Oncol 2021, PMC8521627: 80 SABR patients against a propensity-matched VATS lobectomy cohort; 5-year 87% against 84%; ESMO 2025 quotes the same 5-year 87%) |
 
 ### What the last five years add up to
 
@@ -701,7 +701,7 @@ In routine English practice, more patients reached surgery than in CheckMate 816
 | 90-day mortality | 5.8% | 2.5% |  |
 | Pathological complete response | 31.4%, no difference by stage | 30% (major response 52.7%) | 24% |
 
-The CheckMate 816 column is from memory of the trial's surgical report; the two real-world columns were confirmed from the abstracts on 17 November 2026.
+The CheckMate 816 column is from memory of the trial's surgical report (checked 25 November 2026 against the surgical outcomes abstract, Spicer et al., ASCO 2021, and the full paper in Thoracic 16: all figures match); the two real-world columns were confirmed from the abstracts on 17 November 2026.
 
 ### Surgical points to take from it
 
@@ -791,7 +791,7 @@ Short answers to points raised during the teaching on 17 November 2026. From sta
 | --- | --- | --- |
 | [RTOG 0915](https://pmc.ncbi.nlm.nih.gov/articles/PMC4744654) | 34 Gy in 1 against 48 Gy in 4; 94 patients, peripheral T1–T2 N0 | One-year tumour control 97.0% against 92.7%; five-year primary failure 10.6% against 6.8%; grade 3 or worse toxicity 2.6% against 11.1%; five-year survival 29.6% against 41.1% |
 | [Roswell Park and Cleveland Clinic](https://consultqd.clevelandclinic.org/single-fraction-sbrt-outcomes-comparable-multiple-fraction-regimen-non-small-cell-lung-cancer) | 30 Gy in 1 against 60 Gy in 3; 98 patients | Equivalent survival and toxicity |
-| SAFRON II | 28 Gy in 1 against 48 Gy in 4; lung oligometastases | Similar toxicity and control (from memory) |
+| SAFRON II | 28 Gy in 1 against 48 Gy in 4; lung oligometastases | Similar toxicity and control (checked 25 November 2026 against the paper, Siva et al., JAMA Oncol 2021, PMC8404145: 90 patients, 133 metastases, 28 Gy in 1 against 12 Gy × 4; grade 3 or worse toxicity 5% against 3%; local failure HR 0.5 (0.2 to 1.3); overall and disease-free survival no different) |
 
 - All were phase II with toxicity endpoints; none proves equivalent tumour control or survival.
 - No trial compares 3, 5 and 8 fractions. Each comes from single-arm studies for its tumour position: RTOG 0236 and 0618 (54 Gy in 3, peripheral), RTOG 0813 (5 fractions, central), LungTech (60 Gy in 8, central), HILUS (ultracentral; fatal bleeding about 15%).
@@ -961,7 +961,7 @@ Both produce PET-avid nodules and nodes that mimic lung cancer and its nodal spr
 | Problem | Operation and points |
 | --- | --- |
 | Undiagnosed nodule that proves to be a tuberculoma | Wedge for diagnosis; frozen section shows necrotising granulomas; send fresh tissue for culture; treat medically afterwards |
-| Multidrug-resistant disease, localised | WHO gives a conditional recommendation for elective lobectomy or wedge resection alongside a recommended regimen, only with experienced surgeons, good facilities and careful selection. The supporting analysis favoured partial resection over pneumonectomy (last point from memory) |
+| Multidrug-resistant disease, localised | WHO gives a conditional recommendation for elective lobectomy or wedge resection alongside a recommended regimen, only with experienced surgeons, good facilities and careful selection. The supporting analysis favoured partial resection over pneumonectomy (last point checked 25 November 2026 against the WHO operational handbook, tbksp.who.int node 2982, and TSRA ch. 22: partial resection went with higher treatment success, pneumonectomy did not) |
 | Massive haemoptysis | Bronchial artery embolisation first; resection for failure or recurrence with localised disease |
 | Aspergilloma in an old cavity | Resection for haemoptysis if fit; high risk in complex disease with pleural thickening |
 | Destroyed lung | Pneumonectomy, often extrapleural; cover the stump with muscle |
@@ -980,13 +980,13 @@ Both produce PET-avid nodules and nodes that mimic lung cancer and its nodal spr
 - Scadding chest radiograph stages: I nodes only; II nodes and lung; III lung only; IV fibrosis.
 - Diagnosis when needles fail: mediastinoscopy for nodes, VATS biopsy for lung.
 - In a lung cancer patient with symmetric avid hilar and mediastinal nodes, sample by EBUS before deciding on stage; if benign on adequate sampling, treat the cancer on its true stage and sample nodes systematically at resection.
-- Treatment is medical. The BTS statement says many patients need no treatment; it is started for risk of death or disability from organ involvement, or for unacceptable loss of quality of life. Prednisolone is first line, with methotrexate as the usual second agent (drug choice from memory).
+- Treatment is medical. The BTS statement says many patients need no treatment; it is started for risk of death or disability from organ involvement, or for unacceptable loss of quality of life. Prednisolone is first line, with methotrexate as the usual second agent (drug choice from memory; partly checked 25 November 2026 against TSRA ch. 19: steroids are standard and methotrexate, ciclosporin, chlorambucil and antimalarials have been used; methotrexate as the usual second agent is not stated there).
 - Before any operation in known sarcoidosis, screen for cardiac involvement (ECG, with MRI if abnormal or symptomatic), pulmonary hypertension and hypercalcaemia, and cover long-term steroids.
 - Late surgery: aspergilloma in fibrocavitary disease, and lung transplant for stage IV disease.
 
 ### Sources and status
 
-Confirmed today: [BTS sarcoidosis statement](https://thorax.bmj.com/content/76/1/4.full); [GRANULOMA trial](https://repub.eur.nl/pub/63259); [EBUS against oesophageal sampling trial](https://scholarlypublications.universiteitleiden.nl/handle/1887/3564978); [WHO recommendation on surgery](https://tbksp.who.int/en/node/882) and [operational guidance](https://tbksp.who.int/en/node/3039); [WHO 2022 drug-resistant TB update](https://www.who.int/publications-detail-redirect/9789240063129). From memory: the imaging table, operative points, NICE NG33 regimen, timing of surgery, and the sarcoid-like reaction and perioperative points.
+Confirmed today: [BTS sarcoidosis statement](https://thorax.bmj.com/content/76/1/4.full); [GRANULOMA trial](https://repub.eur.nl/pub/63259); [EBUS against oesophageal sampling trial](https://scholarlypublications.universiteitleiden.nl/handle/1887/3564978); [WHO recommendation on surgery](https://tbksp.who.int/en/node/882) and [operational guidance](https://tbksp.who.int/en/node/3039); [WHO 2022 drug-resistant TB update](https://www.who.int/publications-detail-redirect/9789240063129). From memory: the imaging table, operative points, NICE NG33 regimen, timing of surgery, and the sarcoid-like reaction and perioperative points. (25 November 2026: timing of surgery after several months of treatment and culture conversion, partial resection rather than pneumonectomy, decortication for trapped lung and pericardiectomy for constriction checked against TSRA ch. 22; the imaging table, NG33 regimen, sarcoid-like reaction and remaining operative and perioperative points are still unchecked.)
 
 ## Anterior mediastinal lesions: the BTOG diagnostic pathway
 
@@ -1021,13 +1021,13 @@ Concern for thymoma or high-grade malignancy at any point moves the patient to t
 - A UK single-centre series of simple thymic cysts concluded that extended surveillance may not be needed once the cyst is properly characterised on MRI.
 - In a lung cancer screening cohort, 74% of lesions under 3 cm stayed stable over two annual rounds; of the 14 that grew, four were thymomas at surgery. Among all 16 resections the benign resection rate was 50%, which is the figure the pathway is trying to bring down.
 
-### Surgical points (from memory, not in the pathway text)
+### Surgical points (not in the pathway text; checked 25 November 2026, see the last point)
 
 - No biopsy for a resectable lesion that looks like thymoma: it adds nothing and risks seeding the pleura or the track.
 - Biopsy when lymphoma or a germ cell tumour is possible, or when the tumour is unresectable and induction treatment is planned. Use a core biopsy; needle cytology cannot type lymphoma.
-- In a young man with a mediastinal mass, send AFP, beta-hCG and LDH before anything else; a raised AFP or very high hCG makes the diagnosis of a non-seminomatous germ cell tumour without a biopsy.
+- In a young man with a mediastinal mass, send AFP, beta-hCG and LDH before anything else; a raised AFP or very high hCG makes the diagnosis of a non-seminomatous germ cell tumour without a biopsy (corrected 25 November 2026: TSRA ch. 43 requires any rise in AFP together with beta-hCG above 100 mIU/mL).
 - Operation: complete thymectomy with the tumour, capsule intact, no-touch technique; inspect the pleura and pericardium; convert if the capsule is at risk.
-- Check acetylcholine receptor antibody before surgery even without symptoms, and optimise myasthenia first.
+- Check acetylcholine receptor antibody before surgery even without symptoms, and optimise myasthenia first. (Checked 25 November 2026 against ESMO 2015 and TSRA ch. 43, Thoracic 5: no biopsy when a thymic tumour is highly probable and resectable, biopsy otherwise with care to avoid pleural seeding, core or excisional biopsy for lymphoma, complete thymectomy, anti-AChR in the work-up. The no-touch and conversion points are not stated there.)
 
 ### Status
 
@@ -1042,10 +1042,10 @@ Every thymoma is resected whether or not the patient has myasthenia, and every p
 | Starting from | Proportion | Consequence |
 | --- | --- | --- |
 | Myasthenia | About 10–15% have a thymoma; about 65% have thymic hyperplasia | Image the mediastinum in every new diagnosis |
-| Thymoma | About 30–40% have myasthenia, most often with type B histology | Check acetylcholine receptor antibody before any thymectomy, symptoms or not |
+| Thymoma | About 30–40% have myasthenia, most often with type B histology (corrected 25 November 2026: about a third, 30% in TSRA ch. 43 and one-third in ESMO 2015; commonest in AB, B1 and B2) | Check acetylcholine receptor antibody before any thymectomy, symptoms or not |
 | Thymoma with positive antibody but no symptoms | A minority develop myasthenia after surgery, sometimes years later | Warn the patient and the anaesthetist; follow up with neurology |
 
-Proportions are from memory.
+Proportions are from memory (25 November 2026: the thymoma row was checked and corrected as shown; the 10–15% thymoma and 65% hyperplasia figures appear only in the FRCS Atlas draft and remain unchecked).
 
 - Thymoma-associated myasthenia is almost always acetylcholine receptor antibody positive; titin and ryanodine receptor antibodies in a younger patient point to a thymoma.
 - Other paraneoplastic conditions: pure red cell aplasia, hypogammaglobulinaemia (Good syndrome, hence immunoglobulins in the BTOG work-up), and less often limbic encephalitis or myositis.
@@ -1059,9 +1059,9 @@ Proportions are from memory.
 | Generalised, acetylcholine receptor antibody positive, age 18–50 | Consider early, to improve outcome and reduce immunotherapy | International consensus, 2020 update |
 | Same, but failing or intolerant of immunotherapy | Strongly consider | International consensus, 2020 update (confirmed) |
 | Antibody positive, age 50–65 | Reasonable in selected patients; MGTX enrolled up to 65 | Trial entry criteria (confirmed) |
-| Seronegative generalised disease failing immunotherapy | May be considered | International consensus (from memory) |
-| MuSK, LRP4 or agrin antibody positive | Not recommended | International consensus (from memory) |
-| Purely ocular, antibody positive, failing or unable to take treatment | May be considered | International consensus (from memory) |
+| Seronegative generalised disease failing immunotherapy | May be considered | International consensus, 2020 update (checked 25 November 2026 against the paper, Narayanaswami et al., Neurology 2021) |
+| MuSK, LRP4 or agrin antibody positive | Not recommended | International consensus, 2020 update (checked 25 November 2026 against the paper, Narayanaswami et al., Neurology 2021) |
+| Purely ocular, antibody positive, failing or unable to take treatment | May be considered | International consensus, 2020 update (checked 25 November 2026 against the paper, Narayanaswami et al., Neurology 2021) |
 
 ### MGTX
 
@@ -1093,12 +1093,12 @@ Proportions are from memory.
 ### After a thymoma resection
 
 - Stage by TNM (ninth edition) and classify by WHO histology; completeness of resection is the main prognostic factor.
-- Postoperative radiotherapy: not for completely resected stage I; discussed for stage II to III and for incomplete resection; routine for thymic carcinoma beyond stage I. Details vary by guideline and are from memory.
+- Postoperative radiotherapy: not for completely resected stage I; discussed for stage II to III and for incomplete resection; routine for thymic carcinoma beyond stage I. Details vary by guideline and are from memory (corrected 25 November 2026 against ESMO 2015, Thoracic 5: stage II thymoma after complete resection, not recommended but may be considered for B2–B3 or stage IIB; stage III–IVA, recommended; R1–R2, recommended; thymic carcinoma optional in stage I, considered in stage II, recommended in stage III–IVA).
 - CT follow-up for at least 10 years because recurrence is late and often pleural.
 
 ### Status
 
-Confirmed on 17 November 2026: MGTX entry criteria, the three-year effect sizes and the five-year extension ([investigator slides](https://cme.utsouthwestern.edu/sites/default/files/S-3_Results%20from%20the%20MGTX%20Extension%20Study_G.%20Wolfe.pdf), [five-year report](https://mdedge.com/content/clinical-benefits-persist-5-years-after-thymectomy-myasthenia-gravis)); the 2020 international consensus statements on refractory disease and on endoscopic and robotic thymectomy ([summary](https://medicaldialogues.in/neurology-neurosurgery/guidelines/management-of-myasthenia-gravis-international-consensus-guidance-74498), [paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC7884987/)). Everything else in this section is from memory.
+Confirmed on 17 November 2026: MGTX entry criteria, the three-year effect sizes and the five-year extension ([investigator slides](https://cme.utsouthwestern.edu/sites/default/files/S-3_Results%20from%20the%20MGTX%20Extension%20Study_G.%20Wolfe.pdf), [five-year report](https://mdedge.com/content/clinical-benefits-persist-5-years-after-thymectomy-myasthenia-gravis)); the 2020 international consensus statements on refractory disease and on endoscopic and robotic thymectomy ([summary](https://medicaldialogues.in/neurology-neurosurgery/guidelines/management-of-myasthenia-gravis-international-consensus-guidance-74498), [paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC7884987/)). Everything else in this section is from memory (partly checked 25 November 2026 against ESMO 2015 and TSRA ch. 43, Thoracic 5: extent of thymectomy, en bloc resection of involved structures, the phrenic nerve trade-off, completeness of resection as the main prognostic factor, follow-up for 10 to 15 years; the perioperative myasthenia points and antibody details remain unchecked).
 
 ## Flow-volume loops
 
@@ -1153,7 +1153,7 @@ The same floppy segment gives opposite loops depending on which side of the thor
 - After sleeve resection or lung transplant: a biphasic or newly flattened limb suggests an anastomotic stricture.
 - Before lung resection: the scooped loop of emphysema goes with the FEV1 and gas transfer findings covered under fitness; the loop adds the check that a low FEV1 is not partly central airway obstruction from the tumour itself.
 
-This section is from memory and was not searched.
+This section is from memory and was not searched (partly checked 25 November 2026: TSRA ch. 40 gives a fixed pattern in post-intubation stenosis, and Hattab 2024, in Thoracic 12, says loops miss mild to moderate obstruction; the rest is unchecked).
 
 ## Carinal resection: cross-field ventilation and reconstruction
 
@@ -1223,7 +1223,7 @@ Published figures of these reconstructions (open the link for the drawings and o
 - Operative mortality for carinal pneumonectomy in experienced centres is about 7–15%, with post-pneumonectomy pulmonary oedema and anastomotic failure the main causes. Restrict fluid and avoid high airway pressures.
 - A single-centre series of 36 isolated carinal resections without lung resection (Shanghai, 2006–2020) used a right thoracotomy in 92% and cross-field intubation in 86%; complications occurred in 39%, mostly anastomotic stenosis (22%) and fistula (8%).
 
-Status: the Shanghai figures, and the use of jet ventilation and veno-venous ECMO as alternatives, were confirmed on 17 November 2026 ([series](https://pmc.ncbi.nlm.nih.gov/articles/PMC8743516), [CTSNet technique article](https://www.ctsnet.org/article/technical-options-carinal-resection-and-reconstruction), [ECMO review](https://ccts.amegroups.org/article/view/42056/html)). The steps, length thresholds, release manoeuvres and mortality range are from memory.
+Status: the Shanghai figures, and the use of jet ventilation and veno-venous ECMO as alternatives, were confirmed on 17 November 2026 ([series](https://pmc.ncbi.nlm.nih.gov/articles/PMC8743516), [CTSNet technique article](https://www.ctsnet.org/article/technical-options-carinal-resection-and-reconstruction), [ECMO review](https://ccts.amegroups.org/article/view/42056/html)). The steps, length thresholds, release manoeuvres and mortality range are from memory (25 November 2026: release manoeuvres, cross-table ventilation with apnoea or ECMO, and the lateral segmental blood supply checked against TSRA ch. 41, which lists pretracheal dissection, neck flexion with a chin stitch, laryngeal release, division of the inferior pulmonary ligament and right hilar release by pericardial incision; mortality corrected: Weder and Inci, J Thorac Dis 2016, give 3% to 20% after carinal resection with complications in 11% to 50%; the steps and length thresholds remain unchecked).
 
 ## NICE NG122: diagnosis and staging
 
@@ -1274,7 +1274,7 @@ Contrast CT first, PET-CT for everyone who could have curative treatment, then t
 
 ### Where NICE and the surgical guidelines differ
 
-- NICE triggers endosonography on node size and PET avidity. The ESTS staging guideline also asks for invasive staging when the mediastinum is negative on CT and PET but the tumour is central, larger than 3 cm, or there is suspected N1 disease (from memory).
+- NICE triggers endosonography on node size and PET avidity. The ESTS staging guideline also asks for invasive staging when the mediastinum is negative on CT and PET but the tumour is central, larger than 3 cm, or there is suspected N1 disease (corrected 25 November 2026 against ESTS 2014, De Leyn et al., in Thoracic 1 and 6: a central tumour or suspected N1 is an indication; a tumour over 3 cm, mainly adenocarcinoma with high uptake, is only "may be considered").
 - NICE has no brain imaging for stage I; many units image stage II and above with MRI directly.
 - The stage groups here predate the ninth edition of TNM; the logic by stage is unchanged.
 
@@ -1311,7 +1311,7 @@ For stage III disease that cannot be resected in a patient fit for combined trea
 
 - Start durvalumab within 6 weeks of finishing radiotherapy, after a CT that shows no progression and no significant pneumonitis.
 - Durvalumab is not used for EGFR-mutant disease when osimertinib is available: the PACIFIC benefit in that subgroup was unclear.
-- NICE restricts durvalumab to PD-L1 of 1% or more after concurrent chemoradiotherapy (from memory; check the current technology appraisal).
+- NICE restricts durvalumab to PD-L1 of 1% or more after concurrent chemoradiotherapy (checked 25 November 2026: NICE NG122 1.6.18 and TA798, 2022; see Thoracic 16 and Thoracic 6).
 
 ### PACIFIC in depth: the primary report
 
@@ -1363,7 +1363,7 @@ PACIFIC enrolled only patients treated concurrently; [PACIFIC-6](https://www.sci
 - Resectable stage III is now treated with neoadjuvant or perioperative chemo-immunotherapy and surgery (CheckMate 816, KEYNOTE-671 and related trials, covered above). The decision between that and chemoradiotherapy with durvalumab is made at the MDT before any treatment starts, because the two pathways are not interchangeable once begun.
 - Salvage resection after definitive chemoradiotherapy is possible in selected patients with isolated local persistence or relapse; expect fibrosis, a higher bronchial stump risk and the need for stump coverage.
 
-Status: PACIFIC and LAURA figures confirmed on 17 November 2026. The session points are as you recorded them and agree with standard practice; rows marked from memory were not searched.
+Status: PACIFIC and LAURA figures confirmed on 17 November 2026. The session points are as you recorded them and agree with standard practice; rows marked from memory were not searched (25 November 2026: durvalumab funding checked; the fitness row and the remaining viva points are still unchecked).
 
 ## NICE advice products for lung cancer
 
@@ -1510,7 +1510,7 @@ Ectopic ACTH from a thoracic neuroendocrine tumour accounts for most non-pituita
 | Hypoglycaemia (Doege-Potter) and clubbing | Solitary fibrous tumour of the pleura |
 | Acromegaly from ectopic GHRH | Bronchial carcinoid, rare |
 
-Status: the series figures were confirmed on 17 November 2026 ([Italian multicentre series](https://iris.uniroma1.it/retrieve/e3835322-3908-15e8-e053-a505fe0a3de9/Faggiano_Cushing%27s-syndrome.pdf), [London series](https://www.ovid.com/journals/jceme/pdf/00004678-200602000-00004~the-ectopic-adrenocorticotropin-syndrome-clinical-features), [MD Anderson series](https://pmc.ncbi.nlm.nih.gov/articles/PMC3134535)). The work-up, perioperative points and comparison table are from memory.
+Status: the series figures were confirmed on 17 November 2026 ([Italian multicentre series](https://iris.uniroma1.it/retrieve/e3835322-3908-15e8-e053-a505fe0a3de9/Faggiano_Cushing%27s-syndrome.pdf), [London series](https://www.ovid.com/journals/jceme/pdf/00004678-200602000-00004~the-ectopic-adrenocorticotropin-syndrome-clinical-features), [MD Anderson series](https://pmc.ncbi.nlm.nih.gov/articles/PMC3134535)). The work-up, perioperative points and comparison table are from memory (partly checked 25 November 2026 against TSRA ch. 10, 11, 14 and 43: ACTH that does not suppress with dexamethasone, medical control with steroid synthesis inhibitors, and the SIADH, hypercalcaemia, Lambert-Eaton, acromegaly and thymoma rows; TSRA gives carcinoid syndrome as under 3% of carcinoids; the detailed work-up steps, perioperative points and the solitary fibrous tumour row remain unchecked).
 
 ## Small-cell lung cancer: treatment by stage
 
@@ -1529,7 +1529,7 @@ Surgery has a place only in T1–2 N0 disease after the mediastinum has been pro
 | T1–2 N0 M0 (about 5% of presentations) | Lobectomy with systematic node dissection, then four cycles of adjuvant platinum and etoposide | Only after PET-CT, brain MRI and invasive mediastinal staging are negative. Add mediastinal radiotherapy if nodes are positive at surgery. If unfit for or declining surgery: chemoradiotherapy, or SABR with chemotherapy |
 | Limited stage, not resectable (T any, N any, M0, treatable in one radiotherapy field) | Four cycles of cisplatin and etoposide with concurrent thoracic radiotherapy starting with cycle 1 or 2; then durvalumab for up to 24 months if there is no progression | Carboplatin if cisplatin is not tolerated |
 | Extensive stage | Carboplatin and etoposide with atezolizumab or durvalumab, then immunotherapy maintenance | NICE TA638 covers atezolizumab; durvalumab in this setting was a terminated appraisal (TA662) in the list above |
-| Relapse | Re-challenge with platinum and etoposide if the interval is long; topotecan or other second-line agents if short | Newer agents from memory: lurbinectedin, tarlatamab |
+| Relapse | Re-challenge with platinum and etoposide if the interval is long; topotecan or other second-line agents if short | Newer agents: lurbinectedin (checked 25 November 2026 against TSRA ch. 10 and ESMO 2021: response 35.2% in a single-arm trial; the randomised ATLANTIS trial missed its survival end point); tarlatamab (from memory, not checked). ESMO 2021 counts 3 months or more as a platinum-sensitive interval |
 
 ### ESMO guideline (Dingemans and colleagues, Annals of Oncology 2021)
 
@@ -1556,7 +1556,7 @@ As taught: brain imaging and staging of the mediastinum before surgery, on level
 | Extensive stage | Atezolizumab or durvalumab with four cycles of platinum and etoposide | I, A |
 |  | Cranial irradiation may be omitted if MRI is clear and regular MRI follow-up is possible | II, B |
 
-- How to read the brackets (from memory of the ESMO scheme, not in the text I read): level I is randomised trial or meta-analysis evidence, IV is retrospective cohort or case-control data, V is case series or expert opinion; grade A is strongly recommended, E is never recommended.
+- How to read the brackets (from memory of the ESMO scheme, not in the text I read; checked 25 November 2026 against the same ESMO grading table in the ESMO 2015 thymic guideline, Table 8, in Thoracic 5): level I is randomised trial or meta-analysis evidence, IV is retrospective cohort or case-control data, V is case series or expert opinion; grade A is strongly recommended, E is never recommended.
 - So the surgical recommendations are strong in wording but rest on weak evidence: mediastinal staging, node dissection and adjuvant chemotherapy are all level IV, grade A, and surgery itself is only III, B.
 - The guideline predates ADRIATIC, so it does not include durvalumab after chemoradiotherapy in limited-stage disease.
 - The guideline text says nothing specific on postoperative radiotherapy for N1 disease.
@@ -1565,7 +1565,7 @@ As taught: brain imaging and staging of the mediastinum before surgery, on level
 
 - CONVERT (Lancet Oncology 2017): 45 Gy in 30 twice-daily fractions over 19 days against 66 Gy in 33 once-daily fractions over 45 days, both starting on day 22 of cisplatin and etoposide. Median survival 30 against 25 months (HR 1.18, 0.95–1.45, not significant); two-year survival 56% against 51%. Once-daily was not shown to be superior, so twice-daily remains the standard, with once-daily acceptable where twice-daily cannot be delivered.
 - A secondary analysis of CONVERT found that stage I–II patients treated with chemoradiotherapy lived longer than stage III patients, which is the comparator for any claim that surgery is better in early disease.
-- Prophylactic cranial irradiation has been standard after a response in limited-stage disease; MRI surveillance is the alternative under study (from memory).
+- Prophylactic cranial irradiation has been standard after a response in limited-stage disease; MRI surveillance is the alternative under study (checked 25 November 2026 against TSRA ch. 10 and ESMO 2021, which says trials of irradiation with MRI surveillance against MRI surveillance alone are in development).
 
 ### Prophylactic cranial irradiation or MRI surveillance: PRIMALung
 
@@ -1573,14 +1573,14 @@ As taught: brain imaging and staging of the mediastinum before surgery, on level
 
 | Background | Finding | Checked |
 | --- | --- | --- |
-| Aupérin meta-analysis, NEJM 1999 | Prophylactic cranial irradiation after complete response improved three-year survival by about 5% and halved brain metastases | From memory |
-| Slotman, NEJM 2007 | In extensive-stage disease responding to chemotherapy, irradiation reduced symptomatic brain metastases and improved one-year survival, but brain imaging was not required at entry | From memory |
-| Takahashi, Lancet Oncology 2017 | Extensive-stage disease with a clear MRI and MRI surveillance in both arms: irradiation gave no survival benefit | From memory |
-| Cost of irradiation | Measurable decline in memory and executive function in a substantial minority, worse over 60; hippocampal avoidance reduces it | From memory |
+| Aupérin meta-analysis, NEJM 1999 | Prophylactic cranial irradiation after complete response improved three-year survival by about 5% and halved brain metastases | Partly checked 25 November 2026: ESMO 2021 gives a 5.4% absolute gain in 3-year survival with complete remission and fewer symptomatic brain metastases; "halved" not checked |
+| Slotman, NEJM 2007 | In extensive-stage disease responding to chemotherapy, irradiation reduced symptomatic brain metastases and improved one-year survival, but brain imaging was not required at entry | Partly checked 25 November 2026: ESMO 2021 confirms no brain MRI for staging or follow-up in this trial; the results were not checked |
+| Takahashi, Lancet Oncology 2017 | Extensive-stage disease with a clear MRI and MRI surveillance in both arms: irradiation gave no survival benefit | Checked 25 November 2026 against ESMO 2021: stopped early for futility, no difference in overall or progression-free survival |
+| Cost of irradiation | Measurable decline in memory and executive function in a substantial minority, worse over 60; hippocampal avoidance reduces it | Corrected 25 November 2026: ESMO 2021 gives mild decline in about 30%, with age a cofactor; the two phase III trials it cites found no neurocognitive or memory benefit from hippocampal sparing |
 
 - Why the question is open again: the older evidence predates routine brain MRI at staging and predates immunotherapy, and ADRIATIC stratified by irradiation because practice already varies.
 - Design points to confirm from the paper: sample size, the non-inferiority margin, MRI schedule and the cognitive endpoint. A parallel North American trial (MAVERICK) asks the same question (from memory).
-- For the resected stage I patient: brain MRI at staging and surveillance afterwards; irradiation is usually omitted in pathological stage I because the brain relapse rate is low (from memory).
+- For the resected stage I patient: brain MRI at staging and surveillance afterwards; irradiation is usually omitted in pathological stage I because the brain relapse rate is low (from memory; ESMO 2021 calls the role of irradiation in stage I–II not well defined and advises shared decision-making, including MRI surveillance [V, C] (checked 25 November 2026); the low relapse rate was not checked).
 
 ### Durvalumab after chemoradiotherapy: ADRIATIC
 
@@ -1645,9 +1645,9 @@ The Japan Clinical Oncology Group trials define how much lung to remove for a sm
 
 | Trial | Question | Result |
 | --- | --- | --- |
-| JCOG0403 | SABR for T1 N0 disease, operable and inoperable cohorts | Three-year survival about 77% in operable and 60% in inoperable patients (from memory) |
-| JCOG9502 | Left thoracoabdominal against transhiatal approach for junctional cancer | No benefit from the thoracic approach, more morbidity (from memory) |
-| JCOG1205/1206 | Adjuvant irinotecan and cisplatin against etoposide and cisplatin for resected high-grade neuroendocrine carcinoma | No difference (from memory) |
+| JCOG0403 | SABR for T1 N0 disease, operable and inoperable cohorts | Three-year survival 76.5% in 64 operable and 59.9% in 100 inoperable patients, 48 Gy in 4 fractions (checked 25 November 2026 against the abstract, Nagata et al., PubMed 26581137) |
+| JCOG9502 | Left thoracoabdominal against transhiatal approach for junctional cancer | No benefit from the thoracic approach, more morbidity (checked 25 November 2026 against the 10-year report, Kurokawa et al., Br J Surg 2015, PMC5024022: 167 patients with junctional or cardia adenocarcinoma and oesophageal invasion of 3 cm or less; 5-year survival 51% transhiatal against 37% thoracoabdominal, HR for death 1.42 (0.98 to 2.05); major complications 22% against 41%; stopped early) |
+| JCOG1205/1206 | Adjuvant irinotecan and cisplatin against etoposide and cisplatin for resected high-grade neuroendocrine carcinoma | No difference (checked 25 November 2026 against the ASCO Post report of Kenmotsu et al., J Clin Oncol 2020: 221 patients; 3-year relapse-free survival 69.0% against 65.4%, HR 1.076; stopped for futility; etoposide-cisplatin remains standard) |
 
 Status: JCOG0804, JCOG1211, JCOG0802 and the JCOG1413 design were confirmed on 17 November 2026 ([JCOG0804](https://cir.nii.ac.jp/crid/1360013171981804544?lang=en), [JCOG1211](https://pubmed.ncbi.nlm.nih.gov/36893780/), [ten-year commentary](<https://www.thelancet.com/journals/lanres/article/PIIS2213-2600(26)00022-6/fulltext>), [JCOG1413](https://www.frontiersin.org/journals/surgery/articles/10.3389/fsurg.2024.1389943/xml)).
 
@@ -1667,12 +1667,12 @@ Osimertinib now has trial evidence at every stage of EGFR-mutant NSCLC: after re
 | Setting | Trial | Design | Result | Checked |
 | --- | --- | --- | --- | --- |
 | Adjuvant, after resection | ADAURA, NEJM 2020 and 2023 | 682 patients, completely resected stage IB–IIIA (seventh edition), exon 19 deletion or L858R, with or without adjuvant chemotherapy; osimertinib for 3 years against placebo | Disease-free survival HR 0.17 at first report in stage II–IIIA (0.23 with longer follow-up). Five-year overall survival 85% against 73% in stage II–IIIA (HR 0.49) and 88% against 78% in stage IB–IIIA. Fewer brain relapses | Confirmed |
-| Neoadjuvant | NeoADAURA, 2025 | Resectable stage II–IIIB; osimertinib with chemotherapy, osimertinib alone, or chemotherapy alone before surgery | Major pathological response about 26% and 25% with the osimertinib arms against 2% with chemotherapy; complete response 4%, 9% and 0%. Event-free survival immature | Confirmed, except the two response percentages, which are from memory |
+| Neoadjuvant | NeoADAURA, 2025 | Resectable stage II–IIIB; osimertinib with chemotherapy, osimertinib alone, or chemotherapy alone before surgery | Major pathological response about 26% and 25% with the osimertinib arms against 2% with chemotherapy; complete response 4%, 9% and 0%. Event-free survival immature | Confirmed; the two response percentages checked 25 November 2026 against the ASCO Post report of He et al., J Clin Oncol 2025 (26% and 25% against 2%) |
 | After chemoradiotherapy, unresectable stage III | LAURA, NEJM 2024 | 216 patients without progression; osimertinib until progression against placebo | Median progression-free survival 39.1 against 5.6 months (HR 0.16) | Confirmed earlier today |
-| Metastatic, first line | FLAURA, NEJM 2018 and 2020 | Osimertinib against gefitinib or erlotinib | Progression-free survival 18.9 against 10.2 months; overall survival 38.6 against 31.8 months | From memory |
+| Metastatic, first line | FLAURA, NEJM 2018 and 2020 | Osimertinib against gefitinib or erlotinib | Progression-free survival 18.9 against 10.2 months; overall survival 38.6 against 31.8 months | Checked 25 November 2026 against the final survival paper, Ramalingam et al., NEJM 2020 (author version): survival HR 0.80; progression-free HR 0.46 |
 | Metastatic, first line | FLAURA2, NEJM 2023 and 2025 | 557 patients; osimertinib with platinum and pemetrexed against osimertinib alone | Median overall survival 47.5 against 37.6 months (HR 0.77); progression-free survival HR 0.62 | Confirmed |
-| Metastatic, first line | MARIPOSA | Amivantamab with lazertinib against osimertinib | Longer progression-free and overall survival with the combination, at the cost of more skin, infusion and thrombotic toxicity | From memory |
-| Metastatic, after earlier inhibitor with T790M | AURA3, NEJM 2017 | Osimertinib against platinum and pemetrexed | Progression-free survival 10.1 against 4.4 months | From memory |
+| Metastatic, first line | MARIPOSA | Amivantamab with lazertinib against osimertinib | Longer progression-free and overall survival with the combination, at the cost of more skin, infusion and thrombotic toxicity | Checked 25 November 2026 (ESMO and OncLive reports): progression-free survival 23.7 against 16.6 months, HR 0.70; overall survival HR 0.75 (0.61 to 0.92), 3-year 60% against 51%; venous thromboembolism 37% against 9%; infusion reactions 63% |
+| Metastatic, after earlier inhibitor with T790M | AURA3, NEJM 2017 | Osimertinib against platinum and pemetrexed | Progression-free survival 10.1 against 4.4 months | Checked 25 November 2026 against the ESMO report of Mok et al., NEJM 2017: 419 patients, HR 0.30; response 71% against 31% |
 
 ### What this means for surgery
 
@@ -1697,4 +1697,4 @@ Course slide deck "From lung nodule to resection" (23 slides, uploaded 17 Novemb
 - [Reduced-fractionation lung radiotherapy guidance citing UK SABR Consortium schedules](https://pmc.ncbi.nlm.nih.gov/articles/PMC7218369)
 - [AATS 2023 early-stage NSCLC consensus, Guideline Central](https://guidelinecentral.com/guideline/3110985)
 
-Added in the guideline and research update: NICE NG122 management chapter (opened), CALGB 140503 in NEJM, JCOG0802 in the Lancet and the CTSNet report of its ten-year results, MEDIASTrial, and review tables for AEGEAN, CheckMate 77T, IMpower010 and PEARLS. Still from memory and not checked: imaging accuracy figures, CT invasion criteria, SABR outcome and toxicity rates, STARS, ROSEL and SABR-COMET figures, ADAURA and ALINA hazard ratios, CheckMate 816 subgroup and surgical figures, VIOLET, Lung ART, LAURA and Intergroup 0139.
+Added in the guideline and research update: NICE NG122 management chapter (opened), CALGB 140503 in NEJM, JCOG0802 in the Lancet and the CTSNet report of its ten-year results, MEDIASTrial, and review tables for AEGEAN, CheckMate 77T, IMpower010 and PEARLS. Still from memory and not checked: imaging accuracy figures, CT invasion criteria, SABR outcome and toxicity rates, STARS, ROSEL and SABR-COMET figures, ADAURA and ALINA hazard ratios, CheckMate 816 subgroup and surgical figures, VIOLET, Lung ART, LAURA and Intergroup 0139 (25 November 2026: the CheckMate 816 subgroup and surgical figures, revised STARS, the ADAURA and ALINA hazard ratios, VIOLET, Lung ART and LAURA have since been checked; see the rows above).

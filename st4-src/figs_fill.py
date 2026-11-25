@@ -6295,6 +6295,139 @@ def f64_mc_mortality():
     return svg(h + 20, b)
 
 
+# ---- figs_F71.py
+
+
+
+def _f71_hatch(x0, y0, x1, y1, step=11):
+    """Diagonal cross-hatch lines covering a rectangle (to be clipped)."""
+    s = ''
+    span = (x1 - x0) + (y1 - y0)
+    k = 0
+    while k <= span:
+        s += f'<line x1="{x0 + k}" y1="{y0}" x2="{x0 + k - (y1 - y0)}" y2="{y1}" class="f-grid"/>'
+        s += f'<line x1="{x0 + k - (y1 - y0)}" y1="{y0}" x2="{x0 + k}" y2="{y1}" class="f-grid"/>'
+        k += step
+    return s
+
+
+def f71_pears_root():
+    aorta = ('M162 340 C138 310 134 268 156 236 L152 120 C150 70 200 40 260 40 L390 40 '
+             'L390 92 L300 92 C270 92 248 105 246 130 L244 236 C266 268 262 310 238 340 Z')
+    b = '<defs><clipPath id="f71clipA"><path d="' + aorta + '"/></clipPath></defs>'
+    # brachiocephalic artery
+    b += '<path d="M206 52 L196 14 L232 14 L238 42" class="f-b1"/>'
+    b += T(214, 10, 'Brachiocephalic', 'f-s')
+    b += f'<path d="{aorta}" class="f-b1"/>'
+    # mesh: from annulus to just beyond the brachiocephalic artery
+    b += '<g clip-path="url(#f71clipA)">' + _f71_hatch(110, 30, 276, 346) + '</g>'
+    b += line(276, 38, 276, 94, 'f-stent') + line(158, 342, 242, 342, 'f-stent')
+    # coronary arteries with openings (asterisk cuts)
+    b += '<path d="M154 284 C120 290 96 304 70 334" class="f-vessel" style="stroke-width:9px"/>'
+    b += '<path d="M250 278 C280 280 304 290 330 312" class="f-vessel" style="stroke-width:9px"/>'
+    for cx, cy in [(152, 284), (252, 278)]:
+        for dx, dy in [(-9, 0), (-6, -6), (0, -9), (6, -6)]:
+            b += line(cx - dx, cy - dy, cx + dx, cy + dy, 'f-l')
+    b += T(64, 354, 'Right coronary', 'f-s') + T(338, 330, 'Left main', 'f-s')
+    # seam with suture ticks
+    b += line(228, 130, 228, 330, 'f-l')
+    for y in range(140, 330, 16):
+        b += line(223, y, 233, y + 6, 'f-l')
+    b += T(120, 262, 'Sinuses', 'f-s', 'end') + T(186, 360, 'Annulus', 'f-s')
+    b += T(120, 180, 'Ascending', 'f-s', 'end') + T(120, 196, 'aorta', 'f-s', 'end')
+    # annotations
+    notes = [
+        (56, ['Distal edge: just beyond the', 'brachiocephalic artery'], (280, 66)),
+        (128, ['Seam reclosed with a continuous', 'suture once the sleeve is round'], (232, 180)),
+        (200, ['Opening cut for each coronary;', 'a tongue of mesh passes beneath'], (258, 274)),
+        (272, ['Proximal edge at the aorto-', 'ventricular junction, below the', 'coronaries'], (244, 338)),
+    ]
+    for y, txt, (ax, ay) in notes:
+        b += box(410, y - 22, 300, 20 + 17 * len(txt), txt, 'b0', 'f-s')
+        b += arrow(410, y - 2 + 8 * (len(txt) - 1), ax, ay)
+    b += box(10, 376, 700, 44, ['Knitted polyethylene terephthalate, 0.7 mm pores; becomes incorporated into the adventitia.',
+                                'Valve, root and coronary origins stay native; usually done on the beating heart without bypass.'], 'ok', 'f-s')
+    return svg(430, b)
+
+
+def f71_pears_pathway():
+    b = T(12, 20, 'PEARS: from scan to sleeve', 'f-h', 'start')
+    row1 = [['ECG-gated CT', '(MRI in early', 'cases)'],
+            ['CAD model of root', 'and ascending', 'aorta'],
+            ['3D-printed former:', 'a replica of the', "patient's aorta"],
+            ['Mesh made on the', 'former; made to', 'order, not for', 'emergencies']]
+    w1 = 160
+    for i, txt in enumerate(row1):
+        x = 10 + i * (w1 + 20)
+        b += box(x, 34, w1, 82, txt, 'b0', 'f-s')
+        if i < 3:
+            b += arrow(x + w1 + 2, 75, x + w1 + 18, 75)
+    b += T(12, 142, 'At operation (median sternotomy)', 'f-h', 'start')
+    row2 = [['Perfusionist in', 'theatre, pump', 'primed; no', 'heparin as a rule'],
+            ['Systolic pressure', 'kept low (about', '80 mmHg or less)', 'while dissecting'],
+            ['Free root from PA,', 'RVOT, RA and LA', 'down to the AV', 'junction'],
+            ['Free the left main', 'fully; most', 'dangerous step;', 'RCA more fragile'],
+            ['Cut coronary', 'openings; pass', 'tongues under', 'the coronaries'],
+            ['Close seam to', 'beyond innominate;', 'TOE: coronary flow,', 'wall motion']]
+    w2 = 108
+    for i, txt in enumerate(row2):
+        x = 10 + i * (w2 + 10.4)
+        cls = 'warn' if i == 3 else 'b0'
+        b += box(x, 154, w2, 96, txt, cls, 'f-s')
+        if i < 5:
+            b += arrow(x + w2 + 1, 202, x + w2 + 9.4, 202)
+    b += T(12, 274, 'Drawn for these notes from Treasure 2014 (Heart), Pepper 2020 (Br J Cardiol), El-Gamel and Austin (CTSNet 2022).', 'f-s', 'start')
+    return svg(286, b)
+
+
+def _f71_root_path(cx, a, s, j, asc, ya=196, yj=136, yt=80):
+    l = f'M{cx - a} {ya} C{cx - s} {ya - 20} {cx - s} {yj + 18} {cx - j} {yj} L{cx - asc} {yt}'
+    r = f'M{cx + a} {ya} C{cx + s} {ya - 20} {cx + s} {yj + 18} {cx + j} {yj} L{cx + asc} {yt}'
+    return l, r
+
+
+def f71_ross_support():
+    b = T(12, 20, 'Four ways to support the pulmonary autograft', 'f-h', 'start')
+    w, g = 168, 9
+    spec = [('a', 'Tailored free root', ['Ring at the annulus;', 'graft or reduction', 'at the STJ; sinuses', 'left free'], 'b0'),
+            ('b', 'Autologous inclusion', ['Native aortic root', 'wraps the autograft;', 'not for a large', 'size mismatch'], 'b0'),
+            ('c', 'Prosthetic inclusion', ['Autograft inside a', 'Dacron tube, 26 to', '30 mm; concern over', 'stress-shielding'], 'b0'),
+            ('d', 'PEARS-Ross', ['Custom mesh from CT', 'of the pulmonary', 'trunk; porous;', 'short follow-up'], 'ok')]
+    for i, (k, title, txt, cls) in enumerate(spec):
+        x = 10 + i * (w + g)
+        cx = x + w / 2
+        b += f'<rect x="{x}" y="32" width="{w}" height="300" rx="10" class="f-{cls}"/>'
+        b += T(cx, 54, f'({k}) {title}', 'f-h')
+        a, s, j, asc = 24, 40, 26, 24
+        if k == 'b':
+            b += T(cx + 58, 120, 'native', 'f-s') + T(cx + 58, 136, 'root', 'f-s')
+            lo, ro = _f71_root_path(cx, a + 8, s + 9, j + 8, asc + 6, ya=200, yt=74)
+            b += f'<path d="{lo}" class="f-l" style="stroke-width:7px;opacity:.35"/><path d="{ro}" class="f-l" style="stroke-width:7px;opacity:.35"/>'
+        if k == 'c':
+            b += f'<rect x="{cx - s - 8}" y="76" width="{2 * (s + 8)}" height="126" rx="6" class="f-stent"/>'
+        if k == 'd':
+            lo, ro = _f71_root_path(cx, a + 4, s + 4, j + 4, asc + 4, ya=200, yt=74)
+            clip = (f'M{cx - a - 4} 200 C{cx - s - 4} 180 {cx - s - 4} 158 {cx - j - 4} 140 L{cx - asc - 4} 74 '
+                    f'L{cx + asc + 4} 74 L{cx + j + 4} 140 C{cx + s + 4} 158 {cx + s + 4} 180 {cx + a + 4} 200 Z')
+            b += f'<defs><clipPath id="f71clipD"><path d="{clip}"/></clipPath></defs>'
+            b += '<g clip-path="url(#f71clipD)">' + _f71_hatch(cx - 60, 70, cx + 60, 204, 9) + '</g>'
+            b += f'<path d="{lo}" class="f-stent"/><path d="{ro}" class="f-stent"/>'
+        l, r = _f71_root_path(cx, a, s, j, asc)
+        b += f'<path d="{l}" class="f-l" style="stroke-width:2.5px"/><path d="{r}" class="f-l" style="stroke-width:2.5px"/>'
+        # cusps
+        for q in (-1, 1):
+            b += f'<path d="M{cx + q * a} 196 Q{cx + q * a / 2} 186 {cx} 172" class="f-l"/>'
+        if k == 'a':
+            b += f'<ellipse cx="{cx}" cy="199" rx="{a + 10}" ry="6" class="f-cut" style="stroke-width:4px"/>'
+            b += f'<rect x="{cx - asc}" y="80" width="{2 * asc}" height="54" rx="3" class="f-stent"/>'
+            b += T(cx + a + 14, 222, 'ring', 'f-s', 'end') + T(cx, 102, 'graft', 'f-s')
+        b += T(cx, 236, 'Autograft', 'f-s')
+        for n, t in enumerate(txt):
+            b += T(cx, 262 + n * 16, t, 'f-s')
+    b += T(12, 352, 'EACTS 2026 Ross consensus table 3 lists (a) to (c); (d) is from published single-centre series and a manufacturer register.', 'f-s', 'start')
+    return svg(364, b)
+
+
 # ---- figs_D1.py
 """Drawing pass D1: coronary anatomy, grafting, cannulation, cardioplegia and venting (23 November 2026)."""
 
@@ -12878,6 +13011,4325 @@ def d11_lv_aneurysm_repairs():
     b += box(366, 318, 342, 74, ['Not with RV dysfunction or a small residual cavity.', 'Know the coronaries before the ventriculotomy; do not', 'handle the ventricle before the clamp (thrombus)'], 'warn', 'f-s')
     b += T(12, 412, ['Dashed line: mitral level. Dotted line: patch. Red: suture line.', 'STICH: reconstruction added to CABG gave no survival advantage over grafting alone.'], 'f-s', 'start')
     return svg(440, b)
+
+
+# ================================================================ second pass (25 November 2026): aorta
+
+import math as _m
+
+
+def _d11_pt(cx, cy, r, deg):
+    a = _m.radians(deg)
+    return cx + r * _m.cos(a), cy - r * _m.sin(a)
+
+
+def _d11_dim(x1, y1, x2, y2):
+    return (f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" class="f-l" style="stroke-width:1.8"'
+            ' marker-start="url(#ah)" marker-end="url(#ah)"/>')
+
+
+def _d11_card(x, y, w, h, head, lines, cls='b0', hcls='b1'):
+    out = f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="10" class="f-{cls}"/>'
+    out += f'<rect x="{x}" y="{y}" width="{w}" height="28" rx="10" class="f-{hcls}"/>'
+    out += T(x + w / 2, y + 19, head, 'f-h') + T(x + w / 2, y + 47, lines, 'f-s')
+    return out
+
+
+def _d11_root_walls(cx, ann_y, sin_y, stj_y, top_y, ha=50, hs=80, hj=45, ht=48):
+    """Root and ascending aorta in long section: annulus, sinus bulge, STJ, tube."""
+    out = ''
+    for s in (-1, 1):
+        a, sx, j, t = cx + s * ha, cx + s * hs, cx + s * hj, cx + s * ht
+        out += (f'<path d="M{a} {ann_y} C{a + s * 30} {ann_y - 18} {sx} {sin_y + 22} {sx} {sin_y} '
+                f'C{sx} {sin_y - 26} {j + s * 4} {stj_y + 16} {j} {stj_y} L{t} {stj_y - 14} L{t} {top_y}" '
+                'class="f-l" style="stroke-width:3"/>')
+    out += line(cx - ha, ann_y, cx + ha, ann_y, 'f-dash')
+    return out
+
+
+# ---------------------------------------------------------------- 1 measurement levels and edge conventions
+
+def d11_measure_levels():
+    b = T(12, 20, 'Upper normal diameters, men / women (ESC 2024 Figure 5), and how each modality measures', 'f-h', 'start')
+    cx = 150
+    b += _d11_root_walls(cx, 318, 262, 205, 54)
+    b += T(cx, 338, 'Annulus', 'f-s')
+    for y, x1, x2, lab, sub in [(262, cx - 80, cx + 80, 'Sinuses: 40 / 34 mm', '(also under 22 mm/m²)'),
+                                (205, cx - 45, cx + 45, 'STJ: 38 / 33 mm', ''),
+                                (110, cx - 48, cx + 48, 'Ascending: 40 / 36 mm', '(indexed over 22 mm/m²: dilated)')]:
+        b += _d11_dim(x1 + 4, y, x2 - 4, y)
+        b += line(x2 + 2, y, 246, y, 'f-grid')
+        b += T(252, y + 4, lab, 'f-h', 'start')
+        if sub:
+            b += T(252, y + 21, sub, 'f-s', 'start')
+    b += T(cx, 44, 'to the innominate', 'f-s')
+    # further segments
+    b += f'<rect x="458" y="40" width="252" height="244" rx="10" class="f-b0"/>'
+    b += T(584, 62, 'Further along (men / women)', 'f-h')
+    rows = [('Proximal arch', '37 / 34'), ('Mid arch', '34 / 31'), ('Proximal descending', '29 / 26'),
+            ('Distal descending', '23 / 20'), ('Abdominal', '23 / 19')]
+    for i, (n, v) in enumerate(rows):
+        y = 92 + i * 34
+        b += T(470, y, n, '', 'start') + T(698, y, v + ' mm', 'f-n', 'end')
+        if i < 4:
+            b += line(470, y + 14, 698, y + 14, 'f-grid')
+    b += T(584, 270, 'DTA indexed over 16 mm/m²: dilated', 'f-s')
+    # edge conventions
+    b += T(12, 370, 'Which edges (arrangement schematic: near wall at the top, far wall below)', 'f-h', 'start')
+    spec = [('Echo', 'leading edge to leading edge', 0, 1),
+            ('CT or CMR (ESC 2024)', 'inner edge to inner edge', 1, 1),
+            ('Thick wall or dissection', 'also outer edge to outer edge', 0, 2)]
+    for i, (head, sub, top, bot) in enumerate(spec):
+        x = 12 + i * 236
+        b += f'<rect x="{x}" y="384" width="224" height="142" rx="10" class="f-track"/>'
+        b += T(x + 112, 404, head, 'f-h') + T(x + 112, 421, sub, 'f-s')
+        b += f'<rect x="{x + 40}" y="432" width="144" height="14" rx="3" class="f-warn"/>'
+        b += f'<rect x="{x + 40}" y="494" width="144" height="14" rx="3" class="f-warn"/>'
+        y1 = 432 if top == 0 else 446
+        y2 = {1: 494, 2: 508}[bot]
+        b += _d11_dim(x + 112, y1 + 2, x + 112, y2 - 2)
+        b += T(x + 36, 443, 'near', 'f-s', 'end') + T(x + 36, 505, 'far', 'f-s', 'end')
+    b += T(12, 548, ['All at end-diastole (systole adds about 2 mm). CT or CMR on double-oblique images, not axial images.',
+                     'EACTS/STS 2024 measures CT outer wall to outer wall: state which convention you used.',
+                     'Root: cusp to cusp; over 5 mm between root diameters = asymmetry. Echo growth of 3 mm or more: confirm by CT or CMR.'], 'f-s', 'start')
+    return svg(598, b)
+
+
+# ---------------------------------------------------------------- 2 ESC 2024 Figure 24 ladder
+
+def d11_asc_ladder():
+    b = T(12, 20, 'Root or ascending dilatation, tricuspid or bicuspid valve with normal function (ESC 2024 Figure 24)', 'f-h', 'start')
+    rows = [('40 to 44 mm', '(women 36 to 44)', ['Baseline CT or CMR; TTE at 1 year. Growth under 3 mm/year: TTE every', '2 to 3 years. Growth 3 mm/year or more: manage as 45 to 49 mm'], 'b0', 'ok'),
+            ('45 to 49 mm', '', ['Confirm by CT or CMR; TTE yearly', '(every 6 months if growth 3 mm/year or more)'], 'b0', 'ok'),
+            ('50 to 52 mm', 'ascending phenotype', ['High-risk features: surgery if low operative risk (IIb). None: CT or CMR at', '6 months; growth 3 mm/year or more: surgery if low risk (IIb); less: TTE yearly'], 'b1', 'b1'),
+            ('50 to 54 mm', 'root phenotype', ['Tricuspid valve: surgery if low operative risk (IIb)', 'Bicuspid valve: surgery (I)'], 'b1', 'b1'),
+            ('53 to 54 mm', 'ascending phenotype', ['Surgery if low operative risk (IIa)'], 'warn', 'warn'),
+            ('55 mm or more', '', ['Confirm by CT or CMR; surgery (I)'], 'warn', 'warn')]
+    y = 36
+    for d, sub, act, cls, dcls in rows:
+        h = 54
+        b += f'<rect x="40" y="{y}" width="150" height="{h}" rx="9" class="f-{dcls}"/>'
+        b += T(115, y + (24 if sub else 32), d, 'f-h')
+        if sub:
+            b += T(115, y + 42, sub, 'f-s')
+        b += box(200, y, 510, h, act, cls, 'f-s')
+        y += h + 8
+    b += arrow(20, 44, 20, y - 10) + T(14, (y + 36) / 2, 'diameter', 'f-s', 'middle').replace('<text ', f'<text transform="rotate(-90 14 {(y + 36) / 2})" ')
+    b += box(10, y + 4, 700, 58, ['High-risk features: age under 50, height under 1.69 m, ascending length over 11 cm, uncontrolled', 'hypertension; with a bicuspid valve also coarctation and family history of acute aortic events.',
+                                  'Not operated: re-image every 6 months.'], 'b0', 'f-s')
+    return svg(y + 72, b)
+
+
+# ---------------------------------------------------------------- 3 TEM and SVS/STS entry-based classes
+
+def _d11_aorta(cx, cy, r, y_asc, y_desc, w=22):
+    d = f'M{cx - r} {y_asc} L{cx - r} {cy} A{r} {r} 0 0 1 {cx + r} {cy} L{cx + r} {y_desc}'
+    return f'<path d="{d}" class="f-vessel" style="stroke-width:{w}"/>'
+
+
+def d11_tem():
+    b = T(12, 20, 'TEM: Type, Entry, Malperfusion (arrangement schematic)', 'f-h', 'start')
+    cx, cy, r = 200, 196, 70
+    b += _d11_aorta(cx, cy, r, 356, 486)
+    b += f'<ellipse cx="{cx - r}" cy="364" rx="24" ry="18" class="f-vessel" style="stroke-width:13"/>'
+    for deg in (132, 100, 68):
+        x1, y1 = _d11_pt(cx, cy, r, deg)
+        x2, y2 = _d11_pt(cx, cy, r + 40, deg)
+        b += f'<path d="M{x1:.0f} {y1:.0f} L{x2:.0f} {y2:.0f}" class="f-vessel" style="stroke-width:9"/>'
+    b += T(cx, 64, 'M2 supra-aortic', 'f-h')
+    b += f'<path d="M{cx - r - 22} 360 L{cx - r - 52} 348" class="f-vessel" style="stroke-width:6"/>'
+    b += f'<path d="M{cx - r + 22} 360 L{cx - r + 46} 350" class="f-vessel" style="stroke-width:6"/>'
+    b += T(16, 334, 'M1 coronary', 'f-h', 'start')
+    for y in (432, 456):
+        b += f'<path d="M{cx + r} {y} L{cx + r - 32} {y - 6}" class="f-vessel" style="stroke-width:6"/>'
+    b += T(cx + r - 44, 436, ['M3 visceral,', 'renal, spinal', 'or limb'], 'f-h', 'end')
+    b += line(40, 404, 330, 404, 'f-dash') + T(44, 398, 'Diaphragm', 'f-s', 'start')
+    for (x, y, lab) in [(cx - r, 270, 'E1'), (cx, cy - r, 'E2'), (cx + r, 280, 'E3')]:
+        b += f'<circle cx="{x:.0f}" cy="{y:.0f}" r="15" class="f-b1"/>' + T(x, y + 5, lab, 'f-h')
+    b += T(cx - r - 22, 274, 'ascending', 'f-s', 'end') + T(cx, cy - r + 36, 'arch', 'f-s')
+    b += T(cx + r + 22, 284, 'descending', 'f-s', 'start')
+    b += T(16, 496, 'E0: no entry seen', 'f-s', 'start')
+    b += _d11_card(380, 36, 330, 106, 'T: type by extent', ['A: involves the ascending aorta', 'B: spares the ascending aorta', 'Non-A non-B: arch involved, ascending spared'])
+    b += _d11_card(380, 152, 330, 92, 'E: primary entry site', ['E0 not visible · E1 ascending', 'E2 arch · E3 descending'])
+    b += _d11_card(380, 254, 330, 106, 'M: malperfusion', ['M0 none · M1 coronary · M2 supra-aortic', 'M3 visceral, renal or limb (ESC adds spinal)', '+ clinical signs · − imaging only'])
+    b += _d11_card(380, 370, 330, 112, 'SVS/STS 2020: by entry zone', ['A with subscript D: entry in zone 0', 'B with subscripts P and D: entry zone 1 or beyond', 'I with subscript D: entry not found, zone 0 involved', 'P and D give proximal and distal zones (0 to 12)'], 'b0', 'warn')
+    b += T(12, 520, ['EACTS/STS 2024 recommends TEM for any acute aortic syndrome (IIa, C).',
+                     'Stanford and DeBakey cannot separate subgroups with different outcomes.'], 'f-s', 'start')
+    return svg(548, b)
+
+
+# ---------------------------------------------------------------- 4 ADD-RS diagnostic pathway
+
+def d11_add_rs():
+    b = T(12, 20, 'Suspected acute aortic syndrome: ADD-RS pathway (ESC 2024 Figure 30)', 'f-h', 'start')
+    cols = [('High-risk condition', ['Marfan syndrome', 'Family history of aortic disease', 'Known aortic valve disease', 'Recent aortic manipulation', 'Known aortic aneurysm']),
+            ('High-risk pain', ['Chest, back or abdominal pain:', 'abrupt onset, severe,', 'or ripping or tearing']),
+            ('High-risk examination', ['Hypotension or shock', 'Pulse deficit or differential', 'systolic BP', 'Focal neurological deficit', 'New aortic regurgitation murmur'])]
+    for i, (h, ls) in enumerate(cols):
+        x = 10 + i * 236
+        b += _d11_card(x, 32, 226, 132, h + ': 1 point', ls)
+    b += box(10, 176, 700, 32, 'ECG for everyone, to exclude STEMI. Unstable: TTE and/or TOE first, by local expertise', 'b0', 'f-s')
+    b += arrow(190, 208, 190, 228) + arrow(530, 208, 530, 228)
+    b += box(10, 230, 345, 40, 'ADD-RS 2 or 3: high risk', 'warn', 'f-h')
+    b += box(365, 230, 345, 40, 'ADD-RS 0 or 1: low risk', 'ok', 'f-h')
+    b += arrow(182, 270, 182, 292)
+    b += box(10, 294, 345, 58, ['ECG-gated CT neck to pelvis without delay', 'and/or focused TTE'], 'warn', 'f-s')
+    b += arrow(530, 270, 530, 292)
+    b += box(365, 294, 345, 58, ['Chest X-ray, bloods, point-of-care', 'ultrasound if available, D-dimer'], 'b0', 'f-s')
+    b += arrow(450, 352, 300, 352 + 0) if False else ''
+    b += arrow(440, 352, 440, 374) + arrow(640, 352, 640, 374)
+    b += box(365, 376, 165, 58, ['Any positive: CT,', 'as for high risk'], 'b1', 'f-s')
+    b += box(540, 376, 170, 58, ['All negative (D-dimer', 'under 500 ng/mL)'], 'ok', 'f-s')
+    b += arrow(625, 434, 625, 454)
+    b += box(365, 456, 345, 40, 'AAS unlikely: look for an alternative diagnosis', 'ok', 'f-s')
+    b += box(10, 376, 345, 120, ['CT gated neck to pelvis: sensitivity 100%,', 'specificity 98%; shows entry tear, extent', 'and malperfusion. D-dimer also rises in PE', 'and infection. Normal X-ray or ECG must', 'not delay imaging (I, B for the algorithm)'], 'b0', 'f-s')
+    return svg(506, b)
+
+
+# ---------------------------------------------------------------- 5 acute aortic syndrome mortality
+
+def d11_aas_mortality():
+    h1, b1 = bars([('Hypotension or shock', 56, 'warn'), ('Branch vessel involvement, no shock', 28.6, 'warn'),
+                   ('Peri-aortic haematoma only', 10.5, 'b1'), ('None of these', 4.4, 'ok')], '%', 100,
+                  'In-hospital mortality by presenting complication (ESC 2024 Figure 32)', 270)
+    h2, b2 = bars([('Type A, medical (IRAD, recent)', 23.7, 'warn'), ('Type A, surgery (IRAD, recent)', 4.4, 'ok'),
+                   ('Cerebral malperfusion, medical', 76, 'warn'), ('Cerebral malperfusion, surgery', (25, 27), 'ok'),
+                   ('Mesenteric malperfusion', (65, 95), 'warn')], '%', 100,
+                  'Mortality: operate or not, and by malperfusion bed', 270)
+    b = b1 + f'<g transform="translate(0 {h1})">{b2}</g>'
+    y = h1 + h2
+    b += T(12, y + 16, ['Untreated type A: about 50% die within 48 hours, 1 to 2% per hour. Malperfusion syndrome in about 30%.',
+                       'Age alone is not an exclusion: all acute type A should be operated on.'], 'f-s', 'start')
+    return svg(y + 52, b)
+
+
+# ---------------------------------------------------------------- 6 type B algorithm
+
+def d11_tbad_algorithm():
+    b = T(12, 20, 'Acute type B dissection (ESC 2024 Figure 33)', 'f-h', 'start')
+    b += box(160, 32, 400, 36, 'All: pain relief and BP control (I); beta-blocker first line (IIa)', 'b0', 'f-s')
+    b += arrow(360, 68, 360, 88)
+    b += box(10, 90, 700, 58, ['Complicated if any: contained or free rupture · organ malperfusion · extension or progressive', 'enlargement on serial imaging · refractory hypertension (more than 3 drug classes) · refractory pain over 12 h'], 'warn', 'f-s')
+    b += arrow(150, 148, 150, 172) + T(160, 166, 'yes', 'f-s', 'start')
+    b += arrow(500, 148, 500, 172) + T(510, 166, 'no', 'f-s', 'start')
+    b += box(10, 174, 280, 74, ['Favourable TEVAR anatomy:', 'TEVAR (I), not first line in HTAD', 'Unfavourable: open repair (I)'], 'warn', 'f-s')
+    b += box(300, 174, 410, 112, ['High-risk features? Imaging: aorta over 40 mm · false', 'lumen over 20 to 22 mm · entry tear over 10 mm · entry on', 'the lesser curve · diameter up over 5 mm · haemorrhagic', 'pleural effusion · malperfusion. Clinical: readmission,', 'pain or symptoms return'], 'b1', 'f-s')
+    b += arrow(400, 286, 400, 310) + T(410, 304, 'any', 'f-s', 'start')
+    b += arrow(640, 286, 640, 310) + T(650, 304, 'none', 'f-s', 'start')
+    b += box(300, 312, 260, 92, ['Favourable anatomy and life', 'expectancy over 5 years: TEVAR', 'in the subacute phase, 14 to 90', 'days (IIa). Else: OMT, closer imaging'], 'b1', 'f-s')
+    b += box(570, 312, 140, 92, ['Optimal medical', 'therapy and', 'surveillance'], 'ok', 'f-s')
+    b += box(10, 262, 280, 142, ['Favourable TEVAR anatomy:', 'adequate proximal and distal', 'landing zones and adequate', 'iliac or femoral access.', 'Uncomplicated acute TBAD: 30-day', 'mortality 10%. Complicated: 20%', 'by day 2, 25% by day 30'], 'b0', 'f-s')
+    return svg(414, b)
+
+
+# ---------------------------------------------------------------- 7 intramural haematoma
+
+def d11_imh():
+    b = T(12, 20, 'Intramural haematoma: management and natural history (ESC 2024)', 'f-h', 'start')
+    b += box(160, 32, 400, 34, 'All: pain relief and BP control, as for dissection (I)', 'b0', 'f-s')
+    b += arrow(250, 66, 180, 88) + arrow(470, 66, 540, 88)
+    b += box(10, 90, 340, 40, 'Type A IMH: urgent surgery (I)', 'warn', 'f-h')
+    b += box(10, 140, 340, 58, ['Selected high operative risk, uncomplicated,', 'no high-risk features: wait and see (IIb)'], 'b0', 'f-s')
+    b += box(370, 90, 340, 40, ['Type B IMH: medical therapy, repeat CT or CMR (I)'], 'b1', 'f-s')
+    b += arrow(450, 130, 450, 150) + arrow(630, 130, 630, 150)
+    b += box(370, 152, 165, 92, ['Complicated:', 'TEVAR (I); surgery', 'if anatomy', 'unfavourable (IIb)'], 'warn', 'f-s')
+    b += box(545, 152, 165, 92, ['Uncomplicated with', 'high-risk imaging', 'features: TEVAR', '(IIa)'], 'b1', 'f-s')
+    b += box(10, 208, 340, 92, ['Complicated = recurrent pain, IMH expansion,', 'peri-aortic haematoma or intimal disruption.', 'High-risk: diameter over 45 to 50 mm (A) or', '47 to 50 mm (B); thickness over 10 mm (A) or', '13 mm (B); ulcer-like projection'], 'b0', 'f-s')
+    b += box(370, 254, 340, 46, ['In-hospital mortality: type A 26.6% (medical 40.0%),', 'type B 4.4% (surgical 20.0%, medical 3.8%)'], 'b0', 'f-s')
+    h, bb = bars([('Intimal disruption', 54, 'b1'), ('Partial or total regression', 34, 'ok'), ('Fusiform aneurysm', 22, 'warn'),
+                  ('Progression to dissection', 12, 'warn'), ('Saccular aneurysm', 8, 'warn')], '%', 100,
+                 'How IMH evolves', 230)
+    b += f'<g transform="translate(0 306)">{bb}</g>'
+    b += T(12, 306 + h + 4, 'Hallmark on CT: crescentic or circular wall thickening, no intimal flap, no enhancement after contrast.', 'f-s', 'start')
+    return svg(306 + h + 18, b)
+
+
+# ---------------------------------------------------------------- 8 penetrating ulcer
+
+def d11_pau():
+    b = T(12, 20, 'Penetrating atherosclerotic ulcer (arrangement schematic of the wall; ESC 2024 Figure 35)', 'f-h', 'start')
+    # wall layers, lumen above
+    b += T(60, 50, 'Lumen', 'f-s', 'start')
+    layers = [(60, 14, 'f-b1', 'Intima with plaque'), (74, 4, 'f-warn', 'Internal elastic lamina'),
+              (78, 40, 'f-b0', 'Media'), (118, 24, 'f-track', 'Adventitia')]
+    for (y, h, cls, lab), ly in zip(layers, (50, 84, 104, 136)):
+        b += f'<rect x="60" y="{y}" width="420" height="{h}" class="{cls}"/>'
+        b += line(480, y + h / 2, 500, ly - 4, 'f-grid') + T(504, ly, lab, 'f-s', 'start')
+    b += '<path d="M220 60 C226 92 240 108 270 110 C300 108 314 92 320 60 Z" class="f-lumen"/>'
+    b += _d11_dim(224, 56, 316, 56)
+    b += T(270, 48, 'width', 'f-s')
+    b += _d11_dim(336, 62, 336, 108) + T(344, 98, 'depth', 'f-s', 'start')
+    b += T(60, 162, ['Ulcer through the internal elastic lamina into the media; often with IMH. High-risk: width 13 to 20 mm or more,',
+                     'depth 10 mm or more, growth over 5 mm a year, saccular aneurysm, increasing pleural effusion.'], 'f-s', 'start')
+    b += _d11_card(10, 202, 345, 150, 'Acute or symptomatic', ['Any of: instability; rupture, contained or', 'impending; refractory pain; aorta 55 mm or', 'more at the ulcer; large pseudo-aneurysm;', 'IMH or high-risk features', '→ endovascular (I); if none, follow-up'], 'b0', 'warn')
+    b += _d11_card(365, 202, 345, 150, 'Chronic or asymptomatic', ['Any of: width or depth growth over', '5 mm a year; aorta 55 mm or more;', 'high-risk imaging features', '→ endovascular (IIa)', 'If none: optimal medical therapy (I)'], 'b0', 'b1')
+    h, bb = bars([('Endovascular, early', 7.2, 'ok'), ('Open, early', 15.9, 'warn'), ('Endovascular, 3 years', 10.4, 'ok'), ('Open, 3 years', 25.0, 'warn')],
+                 '%', 50, 'Aortic mortality when intervention is needed', 230)
+    b += f'<g transform="translate(0 358)">{bb}</g>'
+    b += T(12, 358 + h + 4, 'Type A PAU: surgery (I). Ascending PAU is rare, but with IMH rupture risk is 33 to 75%.', 'f-s', 'start')
+    return svg(358 + h + 18, b)
+
+
+# ---------------------------------------------------------------- 9 Dunning classes
+
+def d11_dunning():
+    b = T(12, 20, 'Iatrogenic type A dissection: Dunning classes by extent (arrangement schematic)', 'f-h', 'start')
+    cx = 150
+    b += _d11_root_walls(cx, 330, 278, 226, 44)
+    b += T(cx, 350, 'Annulus', 'f-s')
+    # brackets on the right
+    def brk(y1, y2, lab, cls):
+        x = 260
+        return (f'<path d="M{x} {y1 + 2} L{x + 10} {y1 + 2} L{x + 10} {y2 - 2} L{x} {y2 - 2}" class="f-l" style="stroke-width:2"/>'
+                f'<rect x="{x + 22}" y="{(y1 + y2) / 2 - 15}" width="72" height="30" rx="8" class="f-{cls}"/>' + T(x + 58, (y1 + y2) / 2 + 5, lab, 'f-h'))
+    b += brk(226, 330, 'Type 1', 'ok') + brk(150, 226, 'Type 2', 'b1') + brk(44, 150, 'Type 3', 'warn')
+    b += line(cx - 60, 150, 250, 150, 'f-dash') + T(cx - 64, 146, '40 mm', 'f-s', 'end')
+    b += T(cx - 64, 162, 'from annulus', 'f-s', 'end')
+    b += T(cx - 92, 228, 'STJ', 'f-s', 'end')
+    b += box(380, 40, 330, 64, ['Type 1: limited to the sinuses of Valsalva'], 'ok', 'f-s')
+    b += box(380, 114, 330, 64, ['Type 2: beyond the sinuses but under', '40 mm from the annulus'], 'b1', 'f-s')
+    b += box(380, 188, 330, 64, ['Type 3: more than 40 mm', 'from the annulus'], 'warn', 'f-s')
+    b += box(380, 262, 330, 92, ['Types 1 and 2: conservative, if coronary', 'flow is preserved and the dissection small.', 'Type 3: surgery. Coronary involvement:', 'a stent to seal the flap may be proposed'], 'b0', 'f-s')
+    b += T(12, 380, ['Iatrogenic dissection: cardiac catheterisation about 0.01 to 0.02%, cardiac surgery 0.06 to 0.23%.',
+                     'GERAADA: mortality now similar to spontaneous dissection.'], 'f-s', 'start')
+    return svg(408, b)
+
+
+# ---------------------------------------------------------------- 10 follow-up after acute aortic syndrome
+
+def _d11_mx(m):
+    """Months to x: 0 to 12 months over 240 px, 12 to 60 months over 300 px."""
+    return 160 + m * 20 if m <= 12 else 400 + (m - 12) * 6.25
+
+
+def d11_followup():
+    b = T(12, 20, 'Imaging after an acute aortic syndrome (ESC 2024 Recommendation Table 54)', 'f-h', 'start')
+    y0 = 48
+    b += line(160, y0, 700, y0)
+    b += T(150, y0 + 4, 'Months', 'f-s', 'end')
+    for m in (0, 1, 3, 6, 12, 24, 36, 48, 60):
+        x = _d11_mx(m)
+        b += line(x, y0 - 5, x, y0 + 5) + T(x, y0 - 10, str(m), 'f-s')
+    rows = [('After TEVAR', 'for AAS (I, B)', [1, 6, 12, 24, 36, 48, 60], 'warn', 'Abnormal at any time: CT every 3 to 6 months (IIa)'),
+            ('Medical type B', 'or IMH (I, C)', [1, 3, 6, 12, 24, 36, 48, 60], 'b1', 'Then yearly if stable'),
+            ('Medical PAU', '(I, C)', [1, 6, 12, 18, 24], 'b1', 'Stable 2 years, low risk: longer intervals (IIa)'),
+            ('After open', 'surgery (IIa, B)', [6, 12, 24, 36, 48, 60], 'ok', 'No complications in 5 years: CT every 2 years')]
+    for i, (a, a2, ms, cls, note) in enumerate(rows):
+        y = 84 + i * 66
+        b += T(150, y + 4, a, 'f-h', 'end') + T(150, y + 20, a2, 'f-s', 'end')
+        b += line(160, y, 700, y, 'f-grid')
+        for m in ms:
+            b += f'<circle cx="{_d11_mx(m)}" cy="{y}" r="8" class="f-{cls}"/>'
+        if a == 'After open':
+            b += T(_d11_mx(6), y - 13, 'CT + TTE by 6', 'f-s')
+        b += T(170, y + 26, note, 'f-s', 'start')
+    b += T(12, 356, ['After TEVAR the 1-month scan looks for silent retrograde type A dissection (70% occur within 30 days).',
+                     'Frequent imaging after the first year: CMR instead of CT (IIa, C).',
+                     'After open surgery, no patent false lumen for 3 years: CT every 2 to 3 years (IIa, C).'], 'f-s', 'start')
+    return svg(406, b)
+
+
+# ---------------------------------------------------------------- 11 endoleaks
+
+def d11_endoleaks():
+    b = T(12, 20, 'Endoleak types after stent grafting (arrangement schematic)', 'f-h', 'start')
+    # native aorta above and below, sac in between
+    b += '<path d="M120 40 L120 110 C40 140 40 330 120 360 L120 430" class="f-l" style="stroke-width:3"/>'
+    b += '<path d="M220 40 L220 110 C300 140 300 330 220 360 L220 430" class="f-l" style="stroke-width:3"/>'
+    b += T(84, 244, 'Sac', 'f-s')
+    # graft in two pieces with an overlap
+    b += '<rect x="123" y="70" width="94" height="160" rx="6" class="f-stent"/>'
+    b += '<rect x="128" y="214" width="84" height="186" rx="6" class="f-stent"/>'
+    # leaks
+    b += '<path d="M124 96 C110 116 96 130 92 150" class="f-cut" marker-end="url(#ah)"/>'
+    b += '<path d="M124 386 C110 370 96 350 92 330" class="f-cut" marker-end="url(#ah)"/>'
+    b += '<path d="M300 200 L262 210" class="f-vessel" style="stroke-width:8"/>'
+    b += '<path d="M302 196 C290 200 276 204 264 208" class="f-cut" marker-end="url(#ah)"/>'
+    b += '<path d="M212 222 C230 226 246 236 254 250" class="f-cut" marker-end="url(#ah)"/>'
+    b += '<path d="M217 150 C230 150 240 156 250 166" class="f-cut" marker-end="url(#ah)"/>'
+    tags = [(60, 150, 'Ia'), (60, 334, 'Ib'), (334, 176, 'II'), (270, 266, 'IIIa'), (268, 160, 'IIIb')]
+    for x, y, t in tags:
+        b += f'<rect x="{x - 20}" y="{y - 13}" width="40" height="22" rx="6" class="f-warn"/>' + T(x, y + 3, t, 'f-h')
+    b += T(310, 226, 'branch', 'f-s', 'start')
+    rows = [('Ia / Ib / Ic', 'Proximal or distal seal failure; Ic: target', 'artery after F/BEVAR. Treat at diagnosis (I)', 'warn'),
+            ('II', 'Retrograde branch flow: treat only if the', 'sac grows 10 mm or more (IIa)', 'b1'),
+            ('IIIa / IIIb / IIIc', 'Component separation, fabric tear, bridging', 'stent detachment: reintervene (I)', 'warn'),
+            ('IV', 'Graft porosity: practically absent with', 'current devices', 'b0'),
+            ('V', 'Endotension: sac grows 10 mm or more, no', 'visible leak; treat (IIa), open conversion', 'b1')]
+    for i, (t, l1, l2, cls) in enumerate(rows):
+        y = 40 + i * 76
+        b += f'<rect x="372" y="{y}" width="338" height="68" rx="9" class="f-{cls}"/>'
+        b += T(384, y + 20, t, 'f-h', 'start') + T(384, y + 40, [l1, l2], 'f-s', 'start')
+    b += T(12, 454, ['Types I and III are treatment failures. Primary leaks are present at the procedure; secondary ones appear in follow-up.',
+                     'In dissection, retrograde false-lumen flow is not an endoleak; distal membrane rupture is a dSINE.'], 'f-s', 'start')
+    return svg(484, b)
+
+
+# ---------------------------------------------------------------- 12 pregnancy and the aorta
+
+def d11_pregnancy():
+    b = T(12, 20, 'Pregnancy and the root or ascending aorta (EACTS/STS 2024 Table 33; ACC/AHA 2022 delivery)', 'f-h', 'start')
+    cols = [('Under 40 mm', 'ok', ['Vaginal delivery (I, C)', 'Marfan: dissection risk', 'about 1% at 40 mm or less']),
+            ('40 to 45 mm', 'b1', ['Marfan grey zone (WHO III)', 'Repair before pregnancy', 'with risk factors: family', 'history or growth over', '3 mm a year (IIb, C)', 'ACC/AHA: vaginal with', 'regional anaesthesia and', 'expedited second stage (2b)']),
+            ('45 mm or more', 'warn', ['Caesarean should be', 'considered (IIa, C)', 'Marfan: repair before', 'pregnancy (I, C);', 'WHO IV: avoid pregnancy'])]
+    for i, (h, cls, ls) in enumerate(cols):
+        x = 10 + i * 236
+        b += _d11_card(x, 34, 226, 176, h, ls, 'b0', cls)
+    b += arrow(20, 222, 700, 222) + T(360, 240, 'root or ascending diameter', 'f-s')
+    b += T(12, 272, 'Acute dissection in pregnancy', 'f-h', 'start')
+    y = 290
+    b += f'<rect x="10" y="{y}" width="440" height="34" rx="8" class="f-b1"/>' + T(230, y + 22, 'Type A, first 26 weeks: urgent repair, foetal monitoring', 'f-s')
+    b += f'<rect x="470" y="{y}" width="240" height="34" rx="8" class="f-warn"/>' + T(590, y + 22, 'After 28 weeks: caesarean, then repair', 'f-s')
+    b += T(12, y + 52, 'Weeks 0 to 26 (first two trimesters)', 'f-s', 'start') + T(708, y + 52, 'third trimester', 'f-s', 'end')
+    b += box(10, y + 64, 345, 58, ['Type B: optimal medical therapy', 'unless complicated (I, C)'], 'b0', 'f-s')
+    b += box(365, y + 64, 345, 58, ['History of aortic dissection:', 'caesarean section (I, C)'], 'b0', 'f-s')
+    b += T(12, y + 140, ['Dissection risk peaks from the third trimester to 3 months post partum and lasts up to 1 year.',
+                         'Bicuspid aortopathy: correct before pregnancy at 50 mm or more (ESC/EACTS 2025 valve guideline).'], 'f-s', 'start')
+    return svg(y + 172, b)
+
+
+# ---------------------------------------------------------------- 13 dissection timing schemes
+
+def _d11_dx(d):
+    """Days to x, stretched: 0 to 1 day 100 px, 1 to 14 days 160 px, 14 to 90 days 170 px, beyond to 710."""
+    if d <= 1:
+        return 190 + d * 100
+    if d <= 14:
+        return 290 + (d - 1) / 13 * 160
+    if d <= 90:
+        return 450 + (d - 14) / 76 * 170
+    return 620
+
+
+def d11_timing_bands():
+    b = T(12, 20, 'Dissection phases: four schemes on one (stretched) time axis', 'f-h', 'start')
+    y0 = 52
+    b += line(190, y0, 710, y0)
+    for d, lab in [(0, 'onset'), (1, '24 h'), (7, '7 d'), (14, '14 d'), (30, '30 d'), (90, '90 d')]:
+        x = _d11_dx(d)
+        b += line(x, y0 - 5, x, y0 + 5) + T(x, y0 - 10, lab, 'f-s')
+    rows = [('ESC 2024, SVS/STS 2020', [(0, 1, 'Hyperacute', 'warn'), (1, 14, 'Acute 1 to 14 d', 'warn'), (14, 90, 'Subacute 15 to 90 d', 'b1'), (90, 200, 'Chronic', 'b0')]),
+            ('EACTS/STS 2024', [(0, 14, 'Acute 14 d or less', 'warn'), (14, 90, 'Subacute 15 to 90 d', 'b1'), (90, 200, 'Chronic', 'b0')]),
+            ('IRAD', [(0, 1, 'Hyperacute', 'warn'), (1, 7, '2 to 7 d', 'warn'), (7, 30, 'Subacute 8 to 30 d', 'b1'), (30, 200, 'Chronic over 30 d', 'b0')]),
+            ('Traditional', [(0, 14, 'Acute 2 weeks or less', 'warn'), (14, 200, 'Chronic over 2 weeks', 'b0')])]
+    for i, (n, segs) in enumerate(rows):
+        y = 70 + i * 46
+        b += T(180, y + 23, n, 'f-h', 'end')
+        for a, z, lab, cls in segs:
+            x1, x2 = _d11_dx(a), (_d11_dx(z) if z < 200 else 710)
+            b += f'<rect x="{x1 + 1}" y="{y}" width="{x2 - x1 - 2}" height="34" rx="6" class="f-{cls}"/>'
+            b += T((x1 + x2) / 2, y + 22, lab, 'f-s')
+    y = 70 + 4 * 46
+    b += box(190, y, 520, 40, 'TEVAR for uncomplicated type B with high-risk features: subacute phase, 14 to 90 days', 'b1', 'f-s')
+    b += T(12, y + 62, 'Untreated acute type A: mortality 1 to 2% per hour early on.', 'f-s', 'start')
+    return svg(y + 74, b)
+
+
+# ---------------------------------------------------------------- 14 TEVAR landing zones and sizing
+
+def d11_tevar_sizing():
+    b = T(12, 20, 'TEVAR: sealing zones and oversizing (arrangement schematic; EACTS/STS 2024 as quoted)', 'f-h', 'start')
+    cx, cy, r = 170, 172, 70
+    b += _d11_aorta(cx, cy, r, 300, 500, 34)
+    for deg in (132, 100, 68):
+        x1, y1 = _d11_pt(cx, cy, r, deg)
+        x2, y2 = _d11_pt(cx, cy, r + 36, deg)
+        b += f'<path d="M{x1:.0f} {y1:.0f} L{x2:.0f} {y2:.0f}" class="f-vessel" style="stroke-width:10"/>'
+    lx, ly = _d11_pt(cx, cy, r + 36, 68)
+    b += T(lx + 8, ly, 'Left subclavian', 'f-s', 'start')
+    # stent graft in the descending aorta
+    gx = cx + r
+    b += f'<rect x="{gx - 15}" y="192" width="30" height="270" rx="5" class="f-stent"/>'
+    # proximal and distal brackets on the inner (left) side
+    b += _d11_dim(gx - 30, 194, gx - 30, 256) + T(gx - 40, 218, ['Proximal seal', '25 mm or more'], 'f-h', 'end')
+    b += T(gx - 40, 252, ['healthy aorta,', 'inner curve'], 'f-s', 'end')
+    b += _d11_dim(gx - 30, 402, gx - 30, 460) + T(gx - 40, 422, ['Distal seal 25 mm', '(50 mm inside an', 'old prosthesis)'], 'f-s', 'end')
+    b += _d11_dim(gx - 17, 182, gx + 17, 182)
+    b += T(gx + 26, 186, 'landing zone diameter 38 mm or less', 'f-s', 'start')
+    b += _d11_card(340, 202, 370, 92, 'Acute or subacute dissection, type B IMH', ['Oversize under 10% (I, C); low radial force;', 'no proximal bare struts; taper distally to', 'the true lumen to prevent dSINE (IIa, C)'], 'b0', 'warn')
+    b += _d11_card(340, 304, 370, 74, 'Chronic disease (PAU, TAA, chronic type B)', ['Oversize 15 to 20% (TSRA quotes 10 to 20%)', 'Chronic dissection: distal aorta 40 mm or less'], 'b0', 'b1')
+    b += _d11_card(340, 388, 370, 112, 'Why it matters', ['Retrograde type A after TEVAR 1.7% (mortality', '33.6%); risk rises 14% for each 1% of oversizing', 'beyond 9%. Seal zone: no connective tissue', 'disease, thrombus, calcification, IMH or flap'], 'b0', 'b0')
+    b += T(12, 530, 'Zone 2 cover: revascularise the left subclavian before TEVAR (I, B). Device instructions and TSRA give a 20 mm landing zone.', 'f-s', 'start')
+    return svg(542, b)
+
+
+# ---------------------------------------------------------------- 15 heritable thresholds by gene
+
+def d11_htad_ladder():
+    b = T(12, 20, 'Root or ascending replacement thresholds by condition (EACTS/STS 2024 unless stated)', 'f-h', 'start')
+    lo, hi, x0, x1 = 38, 56, 220, 690
+    X = lambda v: x0 + (v - lo) / (hi - lo) * (x1 - x0)
+    rows = [('Sporadic (comparison)', 55, 'I', None, None),
+            ('Marfan', 50, 'I', 45, 'IIa'),
+            ('LDS: TGFBR2', 45, 'I', 40, 'IIa'),
+            ('LDS: TGFBR1', 45, 'I', 40, 'IIb'),
+            ('SMAD3', 45, 'IIa', None, None),
+            ('SMAD2 or TGFB2', 45, 'IIb', None, None),
+            ('TGFB3', 50, 'IIb', None, None),
+            ('ACTA2', 45, 'IIa', 42, 'IIb'),
+            ('PRKG1', 42, 'IIb', 40, ''),
+            ('MYLK or MYH11', 45, 'IIb', None, None)]
+    top = 44
+    for v in range(40, 57, 2):
+        b += line(X(v), top - 6, X(v), top + len(rows) * 30, 'f-grid') + T(X(v), top - 10, f'{v}', 'f-s')
+    b += T(x1 + 24, top - 10, 'mm', 'f-s')
+    for i, (n, v, c, hv, hc) in enumerate(rows):
+        y = top + 14 + i * 30
+        b += T(x0 - 10, y + 5, n, 'f-h' if i == 0 else '', 'end')
+        if hv:
+            b += line(X(hv), y, X(v), y, 'f-dash')
+            b += f'<circle cx="{X(hv):.0f}" cy="{y}" r="8" class="f-b1"/>'
+            if hc:
+                b += T(X(hv) - 12, y + 5, hc, 'f-s', 'end')
+        b += f'<circle cx="{X(v):.0f}" cy="{y}" r="9" class="f-{"b0" if i == 0 else "warn"}"/>'
+        b += T(X(v) + 14, y + 5, c, 'f-n', 'start')
+    y = top + len(rows) * 30 + 14
+    b += f'<circle cx="24" cy="{y}" r="8" class="f-warn"/>' + T(38, y + 5, 'threshold (class)', 'f-s', 'start')
+    b += f'<circle cx="170" cy="{y}" r="7" class="f-b1"/>' + T(184, y + 5, 'with high-risk features (class)', 'f-s', 'start')
+    b += T(12, y + 30, ['Marfan high-risk features: family history of dissection, growth over 0.3 cm a year, diffuse root and ascending',
+                        'dilatation, marked vertebral tortuosity. Marfan planning pregnancy: over 45 mm (ESC 2024, I). LDS TGFBR1/2 at 45 mm is',
+                        'IIa in ESC 2024. ACC/AHA: Marfan root CSA ÷ height 10 cm²/m or more (2a). vEDS: no diameter threshold.'], 'f-s', 'start')
+    return svg(y + 82, b)
+
+
+# ---- figs_D12.py
+"""D12 drawings, second pass (25 November 2026): circulatory support and transplantation (c15)
+and critical care after cardiac surgery (c17). Every label comes from the notes or TSRA text on disk."""
+
+
+
+# ---------------------------------------------------------------- helpers
+
+def _d12_d12_card(x, y, w, h, head, lines, hcls='b1', bcls='b0', top=56):
+    out = f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="10" class="f-{bcls}"/>'
+    out += f'<rect x="{x}" y="{y}" width="{w}" height="32" rx="10" class="f-{hcls}"/>'
+    out += T(x + w / 2, y + 21, head, 'f-h')
+    out += T(x + w / 2, y + top, lines, 'f-s')
+    return out
+
+
+def _d12_d12_num(cx, cy, n, cls='b1', r=13):
+    return f'<circle cx="{cx}" cy="{cy}" r="{r}" class="f-{cls}"/>' + T(cx, cy + 5, str(n), 'f-h')
+
+
+def _d12_d12_tile(x, y, w, h, big, small, cls):
+    out = f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="10" class="f-{cls}"/>'
+    out += f'<text x="{x + w / 2}" y="{y + 30}" text-anchor="middle" class="f-t f-big" style="font-size:20px">{big}</text>'
+    out += T(x + w / 2, y + 50, small, 'f-s')
+    return out
+
+
+def _d12_d12_axis(x0, x1, y, ticks):
+    b = line(x0, y, x1, y)
+    for x, lab in ticks:
+        b += line(x, y - 5, x, y + 5) + T(x, y - 10, lab, 'f-s')
+    return b
+
+
+def _d12_d12_seg(x0, x1, y, h, cls, text, tcls='f-s'):
+    out = f'<rect x="{x0}" y="{y}" width="{x1 - x0}" height="{h}" rx="7" class="f-{cls}"/>'
+    if isinstance(text, str):
+        text = [text]
+    ty = y + h / 2 - (len(text) - 1) * 8.5 + 4
+    return out + T((x0 + x1) / 2, ty, text, tcls)
+
+
+# ---------------------------------------------------------------- c17: low output sequence
+
+def d12_lcos_sequence():
+    b = T(12, 20, 'Low output after cardiac surgery: work through it in this order', 'f-h', 'start')
+    rows = [
+        ('Rate and rhythm', 'b1', 52, ['AF in 30 to 40%; the atrial kick is 10 to 20% of output; transient AV block in 25%',
+                                       'Amiodarone; pace through the epicardial wires']),
+        ('Preload', 'b1', 52, ['Low filling pressures: give volume. The stiff post-bypass ventricle needs',
+                               'a higher preload but has a narrow optimum']),
+        ('Contractility', 'b1', 70, ['Left ventricle: inotrope chosen by resistance; mechanical support',
+                                     'Right ventricle: adrenaline or milrinone; inhaled nitric oxide or epoprostenol',
+                                     'Diastolic (normal EF, preload optimised): sinus rhythm, careful diuresis, milrinone']),
+        ('Afterload', 'b1', 52, ['Hypertensive pattern (high resistance): vasodilator',
+                                 'Vasoplegic pattern (low resistance, normal or high output): alpha agonist']),
+        ('Then exclude', 'warn', 70, ['Tamponade: drains stop suddenly with instability, equal pressures on the catheter:',
+                                      're-open, at the bedside if unstable. Graft failure: new ST change or Q waves,',
+                                      'arrhythmia, rising enzymes, new wall motion defect: emergency angiography']),
+    ]
+    y = 34
+    for i, (head, cls, h, txt) in enumerate(rows):
+        b += f'<rect x="10" y="{y}" width="186" height="{h}" rx="9" class="f-{cls}"/>'
+        b += _d12_d12_num(34, y + h / 2, i + 1, 'b0') + T(118, y + h / 2 + 5, head, 'f-h')
+        b += arrow(198, y + h / 2, 212, y + h / 2)
+        b += box(214, y, 496, h, txt, 'b0', 'f-s')
+        if i < len(rows) - 1:
+            b += arrow(103, y + h, 103, y + h + 10)
+        y += h + 10
+    b += box(10, y + 2, 345, 62, ['Targets: mean pressure over 65 mmHg, CVP 10 to 12,',
+                                  'urine 0.5 to 1 ml/kg/h, falling lactate, cardiac',
+                                  'index over 2.0 to 2.2, haemoglobin 7 g/dL or more'], 'ok', 'f-s')
+    b += box(365, y + 2, 345, 62, ['Mechanical support adds flow: balloon pump',
+                                   'about 0.5 L/min; Impella, TandemHeart or',
+                                   'veno-arterial ECMO up to 5 to 7 L/min'], 'b1', 'f-s')
+    return svg(y + 74, b)
+
+
+# ---------------------------------------------------------------- c17: vasoplegia ladder
+
+def d12_vasoplegia_ladder():
+    b = T(12, 20, 'Vasoplegia after cardiac surgery: the ladder, and what each rung costs', 'f-h', 'start')
+    b += box(10, 32, 700, 44, ['Recognise: low pressure and resistance with normal or high cardiac output, normal or low CVP and wedge.',
+                               'Risk: preoperative ACE inhibitor or ARB, anaesthetic agents; primary vasoplegia after LVAD 33 to 48%'], 'b1', 'f-s')
+    base = 360
+    steps = [
+        (10, 120, 'Rung 1', ['Hold vasodilators', 'Fever: cultures and', 'broad-spectrum', 'antibiotics (sepsis)'], 'b0'),
+        (246, 180, 'Rung 2: first line', ['Noradrenaline or vasopressin', 'After heart transplant:', 'noradrenaline first,', 'then vasopressin (I, C)'], 'ok'),
+        (482, 240, 'Rung 3: refractory', ['Off-label angiotensin II,', 'methylene blue or', 'hydroxocobalamin', 'After transplant: one dose of', 'methylene blue may be considered'], 'warn'),
+    ]
+    for x, h, head, txt, cls in steps:
+        y = base - h
+        b += f'<rect x="{x}" y="{y}" width="228" height="{h}" rx="10" class="f-{cls}"/>'
+        b += T(x + 114, y + 24, head, 'f-h') + T(x + 114, y + 50, txt, 'f-s')
+    b += arrow(30, 200, 470, 108) + T(20, 150, ['Climb only when', 'the rung below fails'], 'f-s', 'start')
+    b += line(10, base, 710, base, 'f-grid')
+    b += box(10, base + 12, 700, 62, ['Every rung adds risk: avoid prolonged vasopressors. The adjuncts can cause peripheral and splanchnic ischaemia',
+                                      '(NOMI warning signs: noradrenaline above 0.1 µg/kg/min, vasopressin, high vasoactive-inotropic score,',
+                                      'lactate that will not clear). Methylene blue with an SSRI can cause serotonin syndrome.'], 'warn', 'f-s')
+    b += box(10, base + 84, 700, 40, 'Low output is different: vasoconstriction worsens ejection, so prefer inodilators (dobutamine, milrinone)', 'b0', 'f-s')
+    return svg(base + 134, b)
+
+
+# ---------------------------------------------------------------- c17: CSU-ALS arrest algorithm
+
+def d12_cals_algorithm():
+    b = T(12, 20, 'Arrest in the first 10 days after cardiac surgery: electricity before compressions', 'f-h', 'start')
+    b += box(10, 32, 700, 44, ['Recognise: arterial, PA and CVP traces flatten, end-tidal CO2 falls. If several traces fall, do not feel',
+                               'for a pulse: call the arrest. Gowned resternotomy team prepares from the moment it is called.'], 'b1', 'f-s')
+    cols = [('VF or pulseless VT', 10), ('Asystole or severe bradycardia', 247), ('PEA', 484)]
+    for head, x in cols:
+        b += arrow(x + 113, 76, x + 113, 92)
+        b += box(x, 94, 226, 34, head, 'warn', 'f-h')
+    r1 = [['3 stacked DC shocks', 'without compressions'],
+          ['Pace through the wires:', 'DDD 80 to 100, maximum output'],
+          ['If paced, pause pacing', 'to unmask fine VF']]
+    for (head, x), t in zip(cols, r1):
+        b += arrow(x + 113, 128, x + 113, 140) + box(x, 142, 226, 50, t, 'ok', 'f-s')
+    for head, x in cols:
+        b += arrow(x + 113, 192, x + 113, 214)
+    b += box(10, 216, 700, 44, ['Compressions (delayed no more than 1 minute for shocks or pacing): 100 to 120/min,',
+                                'aiming for an arterial systolic of 60 mmHg; exclude reversible causes'], 'b0', 'f-s')
+    r3 = [['Amiodarone 300 mg (central line)', 'after 3 failed shocks, 150 mg more;', 'single shock every 2 minutes'],
+          ['Consider external pacing', '(set up after compressions start)'],
+          ['Continue CPR', 'until resternotomy']]
+    for (head, x), t in zip(cols, r3):
+        b += arrow(x + 113, 260, x + 113, 272) + box(x, 274, 226, 62, t, 'b0', 'f-s')
+    for head, x in cols:
+        b += arrow(x + 113, 336, x + 113, 350)
+    b += box(10, 352, 700, 44, ['Resternotomy within 5 minutes: mandatory if compressions cannot reach a systolic of 60 mmHg.',
+                                'Internal massage and defibrillation; rapid ECMO is an alternative in expert centres'], 'warn', 'f-s')
+    b += box(10, 408, 345, 80, ['Airway: FiO2 100%, PEEP off, hand-bag; check', 'the tube and both sides; tension pneumothorax:',
+                                'large-bore cannula, 2nd intercostal space,', 'mid-clavicular line'], 'b1', 'f-s')
+    b += box(365, 408, 345, 80, ['Drugs: stop infusions; no adrenaline unless a', 'senior advises (only 100 to 300 µg boluses);',
+                                 'no atropine (pace instead). Balloon pump to', 'pressure trigger'], 'b1', 'f-s')
+    y = 500
+    b += T(12, y + 14, 'Why stop at three external shocks: success by attempt (15 studies)', 'f-h', 'start')
+    for i, (lab, v) in enumerate([('1st shock', 78), ('2nd shock', 35), ('3rd shock', 14)]):
+        yy = y + 26 + i * 28
+        b += T(110, yy + 15, lab, '', 'end')
+        b += f'<rect x="120" y="{yy}" width="{5 * v}" height="20" rx="4" class="f-{"ok" if v > 50 else "warn"}"/>'
+        b += T(128 + 5 * v, yy + 15, f'{v}%', 'f-n', 'start')
+    return svg(y + 116, b)
+
+
+# ---------------------------------------------------------------- c17: LVAD troubleshooting
+
+def _d12_d12_sig(x, y, w, head, sig, cls):
+    out = f'<rect x="{x}" y="{y}" width="{w}" height="102" rx="9" class="f-{cls}"/>'
+    out += T(x + w / 2, y + 20, head, 'f-h')
+    out += T(x + w / 2, y + 42, sig, 'f-s')
+    return out
+
+
+def d12_lvad_troubleshoot():
+    b = T(12, 20, 'Low output or abnormal pressure early after LVAD: from index and MAP to a cause', 'f-h', 'start')
+    b += box(170, 30, 380, 30, 'Goal: cardiac index over 2.2 L/min/m², MAP 75 to 90 mmHg', 'ok', 'f-s')
+    b += box(285, 74, 150, 32, 'Cardiac index?', 'b1', 'f-h')
+    b += arrow(320, 106, 200, 130) + arrow(400, 106, 545, 130)
+    b += T(244, 118, 'Low', 'f-h', 'end') + T(500, 118, 'Normal or high', 'f-h', 'start')
+    b += box(60, 132, 250, 32, 'Low index: what is the MAP?', 'b0', 'f-s')
+    b += box(420, 132, 250, 32, 'Normal or high index: what is the MAP?', 'b0', 'f-s')
+    # right branch
+    for i, (lab, txt, cls) in enumerate([('Under 75', ['Vasoplegia,', 'sepsis'], 'warn'),
+                                         ('75 to 90', ['Goal'], 'ok'),
+                                         ('90 or more', ['Hypertension,', 'speed too high,', 'hypervolaemia'], 'warn')]):
+        x = 382 + i * 112
+        b += arrow(545, 164, x + 53, 184)
+        b += f'<rect x="{x}" y="186" width="106" height="82" rx="9" class="f-{cls}"/>'
+        b += T(x + 53, 204, lab, 'f-h') + T(x + 53, 224, txt, 'f-s')
+    # left branch
+    b += arrow(130, 164, 80, 184) + arrow(240, 164, 250, 184)
+    b += box(10, 186, 140, 82, ['MAP 90 or more:', 'hypertension,', 'excess vasopressors'], 'warn', 'f-s')
+    b += box(165, 186, 200, 82, ['MAP low or normal:', 'echo, is the LV', 'decompressed?'], 'b1', 'f-s')
+    b += arrow(220, 268, 180, 294) + arrow(320, 268, 520, 294)
+    b += T(176, 286, 'Yes, small', 'f-s', 'end') + T(312, 290, 'No, dilated', 'f-s', 'end')
+    b += box(10, 296, 340, 32, 'LV decompressed: low preload or suction', 'b0', 'f-h')
+    b += box(370, 296, 340, 32, 'LV not decompressed', 'b0', 'f-h')
+    cards = [('Tamponade', ['CVP up', 'PAP down', 'PAOP down', 'PI down'], 'warn'),
+             ('RV failure', ['CVP up', 'PAP down or up', 'PAOP down', 'PI down'], 'warn'),
+             ('Hypovolaemia', ['CVP down', 'PAP down', 'PAOP down', 'PI down'], 'b1'),
+             ('Speed too low', ['CVP down or up', 'PAP up', 'PAOP up', 'PI up'], 'b1'),
+             ('Cannula', ['obstruction', 'PAP up, PAOP up', 'CVP down or up', 'PI down or up'], 'warn'),
+             ('Hypertension', ['CVP down or up', 'PAP up', 'PAOP up', 'PI up'], 'b1')]
+    for i, (head, sig, cls) in enumerate(cards):
+        x = 10 + i * 113 + (20 if i > 2 else 0)
+        b += _d12_d12_sig(x, 338, 107, head, sig, cls)
+    b += T(360, 458, 'PI: pulsatility index. Bleeding shows as the hypovolaemia pattern.', 'f-s')
+    b += box(10, 468, 700, 44, ['Falling pulsatility and flow, or suction without a speed change, usually mean bleeding, tamponade or',
+                                'RV dysfunction. Make only minor pump changes early: major ones can harm the RV.'], 'b1', 'f-s')
+    return svg(522, b)
+
+
+# ---------------------------------------------------------------- c17: LVAD arrest
+
+def d12_lvad_arrest():
+    b = T(12, 20, 'Unresponsive patient with an LVAD: the decision steps', 'f-h', 'start')
+    q = [(40, 'Conscious?'), (130, 'VF or VT?'), (220, 'Carotid pulse?'), (330, 'Doppler or arterial MAP, and PETCO2?')]
+    for y, t in q:
+        b += box(10, y, 270, 46, t, 'b1', 'f-h')
+    b += arrow(145, 86, 145, 128) + T(152, 112, 'No', 'f-s', 'start')
+    b += arrow(145, 176, 145, 218) + T(152, 202, 'No (or resolved, still unconscious)', 'f-s', 'start')
+    b += arrow(145, 266, 145, 328) + T(152, 292, ['Present or', 'unsure'], 'f-s', 'start')
+    b += arrow(280, 63, 360, 63) + T(320, 56, 'Yes', 'f-s')
+    b += box(362, 36, 348, 54, ['Check the controller and batteries are', 'connected; call the VAD coordinator'], 'ok', 'f-s')
+    b += arrow(280, 153, 360, 153) + T(320, 146, 'Yes', 'f-s')
+    b += box(362, 126, 348, 54, ['Shock as in ACLS: defibrillation is', 'safe with an LVAD (I, B)'], 'warn', 'f-s')
+    b += arrow(280, 243, 360, 243) + T(320, 236, 'No', 'f-s')
+    b += box(362, 206, 348, 112, ['Begin "VAD arrest": standard ACLS with', 'compressions, shocks when indicated and',
+                                  'intubation; reassess blood pressure and', 'VAD flow every 2 minutes. Also if no Doppler',
+                                  'pressure is available with malperfusion'], 'warn', 'f-s')
+    b += arrow(280, 342, 362, 296) + T(292, 362, ['MAP under 50 with', 'PETCO2 under 20'], 'f-s', 'start')
+    b += arrow(145, 376, 145, 404) + T(152, 394, 'MAP 50+ and PETCO2 over 20', 'f-s', 'start')
+    b += box(10, 406, 270, 40, ['Transfer to ICU or ED and', 'call the coordinator'], 'ok', 'f-s')
+    b += box(10, 460, 345, 96, ['Listen for the pump hum: if absent, check', 'device and power connections. CF-LVAD',
+                                'often has no pulse and unreliable oximetry:', 'MAP 75 or more is usually adequate;',
+                                'Doppler if no arterial line'], 'b0', 'f-s')
+    b += box(365, 460, 345, 96, ['PETCO2 under 20 mmHg in a correctly intubated', 'pulseless patient means very low flow',
+                                 '(under 1.5 L/min in animal models).', 'Total artificial heart: no CPR, defibrillation',
+                                 'or pacing (III, C)'], 'b0', 'f-s')
+    return svg(566, b)
+
+
+# ---------------------------------------------------------------- c17: ESPEN feeding
+
+def d12_espen_feeding():
+    b = T(12, 20, 'Feeding in the cardiac ICU (ESPEN 2023): when, how much and by which route', 'f-h', 'start')
+    x0, x1 = 150, 700
+
+    def X(d):
+        return x0 + (x1 - x0) * d / 8
+
+    b += _d12_d12_axis(x0, x1, 50, [(X(0), 'Day 0'), (X(2), '48 h'), (X(3), 'Day 3'), (X(7), 'Day 7'), (X(8), 'later')])
+    # energy ramp
+    top, bot = 64, 184
+    y70 = bot - (bot - top) * 0.7
+    b += T(140, top + 4, '100%', 'f-s', 'end') + T(140, y70 + 4, '70%', 'f-s', 'end') + T(140, bot, '0', 'f-s', 'end')
+    b += line(x0, top, x1, top, 'f-grid') + line(x0, y70, x1, y70, 'f-grid') + line(x0, bot, x1, bot, 'f-grid')
+    pts = f'{X(0)},{bot} {X(0.4)},{bot - 14} {X(2)},{bot - 50} {X(3)},{y70} {X(5)},{top + 16} {X(7)},{top + 4} {X(8)},{top + 4} {X(8)},{bot}'
+    b += f'<polygon points="{pts}" class="f-b1"/>'
+    b += T(158, 122, 'Start EN within 48 h (B)', 'f-s', 'start')
+    b += T(X(3.1), 150, ['Early phase: no more', 'than 70% (B)'], 'f-s')
+    b += T(X(6.0), 102, ['After day 3: 80 to 100%', 'of measured expenditure (0)'], 'f-s')
+    b += T(12, 140, ['Energy as %', 'of expenditure'], 'f-s', 'start')
+    # rows
+    rows = [(196, 'Oral diet', [(0, 8, 'ok', 'First choice if the patient can eat safely (GPP)')]),
+            (230, 'Enteral', [(0, 2, 'ok', 'Early EN over PN (A)'), (2, 7, 'b1', 'Build to full target over 3 to 7 days (A)')]),
+            (264, 'Parenteral', [(3, 7, 'warn', 'Only if oral and EN impossible (B)')]),
+            (298, 'Protein', [(0, 8, 'b0', 'Up to 1.3 g/kg/day, built up progressively (0)')])]
+    for y, lab, segs in rows:
+        b += T(140, y + 18, lab, 'f-h', 'end')
+        for d0, d1, cls, t in segs:
+            b += _d12_d12_seg(X(d0), X(d1), y, 26, cls, t)
+    b += T(X(5), 336, 'PN within 3 to 7 days when the gut cannot be used', 'f-s')
+    # route ladder
+    yy = 352
+    b += T(12, yy + 4, 'Route, stepping up only for intolerance', 'f-h', 'start')
+    route = [('Gastric tube', ['continuous, not bolus', '(GPP; B)'], 'ok'),
+             ('Prokinetic', ['IV erythromycin first line (B);', 'metoclopramide alternative (0)'], 'b1'),
+             ('Post-pyloric', ['if intolerance persists (B), or', 'aspiration risk is high (GPP)'], 'warn')]
+    for i, (h, t, cls) in enumerate(route):
+        x = 10 + i * 238
+        b += _d12_d12_card(x, yy + 14, 226, 82, h, t, cls, 'b0', 54)
+        if i < 2:
+            b += arrow(x + 226, yy + 55, x + 236, yy + 55)
+    b += box(10, yy + 108, 700, 62, ['Delay EN (B): uncontrolled shock, unstable hypoxaemia or acidosis, active upper GI bleeding, bowel',
+                                     'ischaemia, gastric aspirate over 500 ml in 6 h. Once shock is controlled, low-dose EN can start;',
+                                     'watch for bowel ischaemia (feed intolerance, distension, rising lactate on high support).'], 'warn', 'f-s')
+    return svg(yy + 180, b)
+
+
+# ---------------------------------------------------------------- c17: VTE timeline
+
+def d12_vte_timeline():
+    b = T(12, 20, 'Thromboprophylaxis after cardiac surgery: one way to combine the 2024 recommendations', 'f-h', 'start')
+    x0, x1 = 150, 700
+    ticks = [(150, 'ICU arrival'), (250, '6 h'), (350, '24 h'), (620, 'Full mobilisation')]
+    b += _d12_d12_axis(x0, x1, 52, ticks)
+    b += T(140, 86, 'Mechanical', 'f-h', 'end')
+    b += _d12_d12_seg(150, 350, 66, 32, 'b1', 'IPC while bleeding settles (1C)')
+    b += _d12_d12_seg(350, 700, 66, 32, 'b0', 'Add IPC to the drug if thrombosis risk is very high (1C)')
+    b += T(140, 128, 'Drug', 'f-h', 'end')
+    b += _d12_d12_seg(250, 620, 108, 32, 'ok', 'LMWH from 6 to 24 h when drains are quiet (1C)')
+    b += T(140, 170, 'Watch', 'f-h', 'end')
+    b += _d12_d12_seg(350, 700, 150, 32, 'warn', 'Platelet count for HIT: a fall usually comes on days 5 to 10')
+    b += box(10, 196, 226, 76, ['LMWH over UFH (2B):', 'heparin-induced', 'thrombocytopenia is commoner', 'in cardiac surgery'], 'b1', 'f-s')
+    b += box(247, 196, 226, 76, ['ICU: IPC over stockings (2B);', 'no routine anti-Xa; anti-Xa', 'dose protocol in renal', 'impairment (2C)'], 'b0', 'f-s')
+    b += box(484, 196, 226, 76, ['HIT: platelets fall over 50%;', 'stop all heparin, give an', 'alternative anticoagulant;', 'no platelet transfusion'], 'warn', 'f-s')
+    b += T(360, 292, 'The combined timeline is the notes\' synthesis (European 2024 update with EACTS 2024), not one recommendation.', 'f-s')
+    return svg(304, b)
+
+
+# ---------------------------------------------------------------- c17: RRT timing trials
+
+def d12_rrt_timing():
+    b = T(12, 20, 'When to start renal replacement: where the early and delayed arms started', 'f-h', 'start')
+    xs = {'s2': 230, 's3': 350, 'ind': 480}
+    b += line(150, 50, 520, 50)
+    for k, lab in [('s2', 'KDIGO stage 2'), ('s3', 'Stage 3'), ('ind', 'Indication*')]:
+        b += line(xs[k], 44, xs[k], 56) + T(xs[k], 38, lab, 'f-s')
+    b += arrow(500, 50, 524, 50)
+    b += T(615, 38, 'Result', 'f-h')
+    trials = [
+        ('ELAIN', ['n=231, one centre,', 'about 47% cardiac'], ('s2', 'within 8 h'), ('s3', 'within 12 h'),
+         ['Lower mortality with early', 'RRT (about 25% lower); only', '10% of delayed avoided RRT'], 'ok'),
+        ('AKIKI', ['n=620,', 'stage 3'], ('s3', 'within 6 h'), ('ind', 'only if needed'),
+         ['Mortality about 50% in both;', 'about half the delayed arm', 'never needed RRT'], 'b0'),
+        ('STARRT-AKI', ['n=2,927,', 'severe AKI'], ('s3', 'within 12 h'), ('ind', 'indication'),
+         ['90-day death 43.9% v 43.7%;', 'RRT given 96.8% v 61.8%;', 'more dialysis dependence'], 'b0'),
+    ]
+    y = 66
+    for name, pts, early, late, res, cls in trials:
+        b += f'<rect x="10" y="{y}" width="700" height="78" rx="10" class="f-track"/>'
+        b += T(20, y + 24, name, 'f-h', 'start') + T(20, y + 44, pts, 'f-s', 'start')
+        b += line(150, y + 39, 520, y + 39, 'f-grid')
+        ex, lx = xs[early[0]], xs[late[0]]
+        b += f'<circle cx="{ex}" cy="{y + 39}" r="9" class="f-ok"/>' + T(ex, y + 22, 'Early', 'f-h') + T(ex, y + 66, early[1], 'f-s')
+        b += f'<circle cx="{lx}" cy="{y + 39}" r="9" class="f-warn"/>' + T(lx, y + 22, 'Delayed', 'f-h') + T(lx, y + 66, late[1], 'f-s')
+        b += box(528, y + 6, 176, 66, res, cls, 'f-s')
+        y += 88
+    b += T(360, y + 4, '* Absolute or conventional indication; in STARRT-AKI also AKI lasting over 72 h. Its early arm: within 12 h of eligibility.', 'f-s')
+    b += box(10, y + 16, 345, 62, ['Conventional indications (TSRA ch. 118): worsening', 'function with fluid overload, hyperkalaemia,',
+                                   'metabolic acidosis or uraemia'], 'b1', 'f-s')
+    b += box(365, y + 16, 345, 62, ['ADQI 20: do not start on creatinine or stage alone;', 'once decided, start promptly. Continuous therapy',
+                                    'if unstable (1B)'], 'ok', 'f-s')
+    return svg(y + 88, b)
+
+
+# ---------------------------------------------------------------- c15: bicaval against biatrial
+
+def _d12_d12_atria(ox, bicaval):
+    """Front-view arrangement schematic of the atrial and caval anastomoses."""
+    b = ''
+    # ventricles (donor)
+    b += f'<path d="M{ox + 60} 196 C{ox + 70} 280 {ox + 140} 330 {ox + 175} 340 C{ox + 210} 330 {ox + 280} 280 {ox + 290} 196 Z" class="f-b1"/>'
+    b += T(ox + 175, 300, 'Donor ventricles', 'f-s')
+    # great arteries
+    b += f'<rect x="{ox + 140}" y="84" width="32" height="96" rx="10" class="f-b1"/>' + T(ox + 156, 78, 'Ao', 'f-s')
+    b += f'<rect x="{ox + 184}" y="98" width="32" height="82" rx="10" class="f-b1"/>' + T(ox + 200, 92, 'PA', 'f-s')
+    b += line(ox + 138, 132, ox + 174, 132, 'f-cut') + line(ox + 182, 140, ox + 218, 140, 'f-cut')
+    # right atrium (viewer's left), left atrium (viewer's right)
+    if bicaval:
+        b += f'<ellipse cx="{ox + 96}" cy="186" rx="62" ry="40" class="f-b1"/>'
+        b += T(ox + 96, 190, 'Donor RA', 'f-s')
+        # SVC and IVC: donor segment then suture ring then recipient stump
+        b += f'<rect x="{ox + 66}" y="96" width="30" height="56" rx="6" class="f-b1"/>'
+        b += f'<rect x="{ox + 66}" y="54" width="30" height="40" rx="6" class="f-track"/>'
+        b += f'<rect x="{ox + 66}" y="54" width="30" height="40" rx="6" class="f-dash"/>'
+        b += line(ox + 62, 95, ox + 100, 95, 'f-cut')
+        b += f'<rect x="{ox + 66}" y="220" width="30" height="44" rx="6" class="f-b1"/>'
+        b += f'<rect x="{ox + 66}" y="266" width="30" height="40" rx="6" class="f-track"/>'
+        b += f'<rect x="{ox + 66}" y="266" width="30" height="40" rx="6" class="f-dash"/>'
+        b += line(ox + 62, 265, ox + 100, 265, 'f-cut')
+        b += f'<circle cx="{ox + 92}" cy="156" r="6" class="f-ah"/>'
+    else:
+        b += f'<path d="M{ox + 96} 146 C{ox + 50} 146 {ox + 34} 166 {ox + 34} 186 C{ox + 34} 206 {ox + 50} 226 {ox + 96} 226 Z" class="f-track"/>'
+        b += f'<path d="M{ox + 96} 146 C{ox + 50} 146 {ox + 34} 166 {ox + 34} 186 C{ox + 34} 206 {ox + 50} 226 {ox + 96} 226 Z" class="f-dash"/>'
+        b += f'<path d="M{ox + 96} 146 C{ox + 140} 146 {ox + 158} 166 {ox + 158} 186 C{ox + 158} 206 {ox + 140} 226 {ox + 96} 226 Z" class="f-b1"/>'
+        b += f'<path d="M{ox + 96} 146 C{ox + 88} 170 {ox + 88} 202 {ox + 96} 226" class="f-cut"/>'
+        b += T(ox + 128, 190, 'Donor', 'f-s')
+        b += f'<rect x="{ox + 48}" y="54" width="30" height="96" rx="6" class="f-track"/>'
+        b += f'<rect x="{ox + 48}" y="54" width="30" height="96" rx="6" class="f-dash"/>'
+        b += f'<rect x="{ox + 48}" y="222" width="30" height="84" rx="6" class="f-track"/>'
+        b += f'<rect x="{ox + 48}" y="222" width="30" height="84" rx="6" class="f-dash"/>'
+        b += f'<circle cx="{ox + 66}" cy="160" r="6" class="f-ah"/>'
+        b += f'<circle cx="{ox + 116}" cy="160" r="6" class="f-ah"/>'
+    # left atrium: recipient cuff with pulmonary veins on the far side, donor LA inside (same in both)
+    b += f'<path d="M{ox + 254} 150 C{ox + 300} 150 {ox + 318} 168 {ox + 318} 188 C{ox + 318} 208 {ox + 300} 226 {ox + 254} 226 Z" class="f-track"/>'
+    b += f'<path d="M{ox + 254} 150 C{ox + 300} 150 {ox + 318} 168 {ox + 318} 188 C{ox + 318} 208 {ox + 300} 226 {ox + 254} 226 Z" class="f-dash"/>'
+    b += f'<path d="M{ox + 254} 150 C{ox + 214} 150 {ox + 196} 168 {ox + 196} 188 C{ox + 196} 208 {ox + 214} 226 {ox + 254} 226 Z" class="f-b1"/>'
+    b += f'<path d="M{ox + 254} 150 C{ox + 262} 174 {ox + 262} 202 {ox + 254} 226" class="f-cut"/>'
+    b += T(ox + 226, 192, 'LA', 'f-s')
+    for yy in (162, 210):
+        b += line(ox + 316, yy, ox + 340, yy - 6, 'f-dash')
+    return b
+
+
+def d12_bicaval_biatrial():
+    b = T(12, 20, 'Where the donor heart is joined: biatrial against bicaval (front view, schematic)', 'f-h', 'start')
+    b += line(360, 30, 360, 362, 'f-dash')
+    b += T(180, 44, 'Biatrial (Lower and Shumway, 1960)', 'f-h') + T(540, 44, 'Bicaval (1990s; now standard)', 'f-h')
+    b += _d12_d12_atria(10, False) + _d12_d12_atria(370, True)
+    b += T(52, 68, 'SVC', 'f-s', 'end') + T(52, 300, 'IVC', 'f-s', 'end')
+    b += T(12, 324, ['Recipient RA cuff,', 'with both cavae'], 'f-s', 'start')
+    b += T(10 + 330, 250, ['Recipient', 'LA cuff'], 'f-s', 'end')
+    b += T(432, 62, 'SVC', 'f-s', 'end') + T(432, 84, ['Recipient', 'stump'], 'f-s', 'end') + T(432, 300, 'IVC', 'f-s', 'end')
+    b += T(370 + 330, 250, ['Recipient', 'LA cuff'], 'f-s', 'end')
+    for n, (x, y, r) in enumerate([(624, 134, 13), (484, 265, 13), (526, 156, 11), (570, 162, 11), (484, 95, 13)], 1):
+        b += _d12_d12_num(x, y, n, 'ok', r)
+    b += T(180, 356, 'Two sinus nodes (dots): recipient and donor', 'f-s')
+    b += T(540, 356, 'One sinus node; donor RA intact', 'f-s')
+    y = 380
+    b += line(20, y - 4, 40, y - 4, 'f-cut') + T(46, y, 'suture line', 'f-s', 'start')
+    b += f'<rect x="130" y="{y - 12}" width="22" height="14" rx="3" class="f-track"/>' + T(158, y, 'recipient tissue', 'f-s', 'start')
+    b += f'<rect x="270" y="{y - 12}" width="22" height="14" rx="3" class="f-b1"/>' + T(298, y, 'donor heart', 'f-s', 'start')
+    b += T(390, y, 'Bicaval order: 1 LA, 2 IVC, 3 aorta (clamp off), 4 PA, 5 SVC', 'f-s', 'start')
+    b += box(10, y + 12, 345, 98, ['Large composite atria with two sinus nodes:', 'more atrial arrhythmias, sinus node',
+                                   'dysfunction needing pacing, tricuspid', 'regurgitation from distorted RA geometry,',
+                                   'atrial thrombus'], 'warn', 'f-s')
+    b += box(365, y + 12, 345, 98, ['Keeps RA geometry and the donor sinus node:', 'less TR, fewer arrhythmias and pacemakers,',
+                                    'shorter stay, survival at least as good. Costs:', 'longer preparation and implant time; caval',
+                                    'stenosis (SVC more than IVC)'], 'ok', 'f-s')
+    return svg(y + 120, b)
+
+
+# ---------------------------------------------------------------- c15: cardiac procurement
+
+def d12_procurement():
+    b = T(12, 20, 'Donor heart procurement: where each structure is divided (front view, schematic)', 'f-h', 'start')
+    b += T(12, 38, "Patient's right on the viewer's left", 'f-s', 'start')
+    # heart body
+    b += '<path d="M230 210 C222 290 280 360 360 380 C440 372 500 320 500 250 C500 206 470 186 430 184 L270 184 C246 186 232 196 230 210 Z" class="f-b1"/>'
+    b += T(380, 300, 'Heart', 'f-h')
+    # RA
+    b += '<ellipse cx="248" cy="232" rx="44" ry="52" class="f-b1"/>' + T(248, 236, 'RA', 'f-h')
+    # SVC up to innominate vein
+    b += '<rect x="232" y="82" width="32" height="124" rx="8" class="f-b0"/>' + T(226, 150, 'SVC', 'f-s', 'end')
+    b += '<path d="M248 84 C300 70 360 64 420 66" class="f-l" style="stroke-width:14;opacity:.35"/>'
+    b += T(196, 66, 'Innominate vein', 'f-s', 'end') + line(200, 64, 296, 74, 'f-grid')
+    # azygos from behind
+    b += '<path d="M150 120 C190 118 214 124 232 130" class="f-l" style="stroke-width:8;opacity:.4"/>' + T(146, 116, 'Azygos', 'f-s', 'end')
+    # IVC
+    b += '<rect x="232" y="276" width="32" height="76" rx="8" class="f-b0"/>' + T(226, 334, 'IVC', 'f-s', 'end')
+    b += line(170, 352, 330, 352, 'f-dash') + T(170, 368, 'Diaphragm', 'f-s', 'start')
+    # aorta and arch
+    b += '<path d="M330 184 L330 110 C330 60 430 50 470 90 L470 184" class="f-l" style="stroke-width:26;opacity:.3"/>'
+    b += T(312, 160, 'Ao', 'f-h', 'end')
+    # PA
+    b += '<path d="M400 186 L400 156 L382 134 M400 156 L432 142" class="f-l" style="stroke-width:16;opacity:.35"/>'
+    b += T(410, 180, 'PA', 'f-h', 'start')
+    # LA appendage
+    b += '<ellipse cx="490" cy="206" rx="20" ry="12" class="f-b0"/>' + T(516, 210, 'LA appendage', 'f-s', 'start')
+    # cut marks
+    b += line(456, 80, 486, 64, 'f-cut') + line(458, 86, 488, 70, 'f-cut')   # arch
+    b += line(368, 138, 384, 124, 'f-cut') + line(426, 132, 436, 152, 'f-cut')  # PA branches
+    b += line(222, 92, 274, 92, 'f-cut')                                         # SVC at innominate
+    b += line(222, 150, 274, 150, 'f-dash')                                      # SVC 2-3 cm from RA
+    b += line(222, 342, 274, 342, 'f-cut')                                       # IVC
+    b += '<circle cx="330" cy="120" r="7" class="f-ok"/>'                         # cardioplegia cannula
+    b += '<rect x="316" y="138" width="28" height="8" rx="3" class="f-warn"/>'   # cross clamp
+    # labels
+    b += T(500, 46, 'Aorta: at the arch', 'f-s', 'start')
+    b += T(446, 160, 'PA: at the bifurcation', 'f-s', 'start')
+    b += T(16, 184, ['SVC: at the innominate', '(bicaval) or 2 to 3 cm', 'from the RA (dashed);', 'ligate distal to the', 'azygos: spares SA node'], 'f-s', 'start')
+    b += T(16, 278, ['IVC: above the', 'diaphragm (with', 'the liver team)'], 'f-s', 'start')
+    b += T(560, 238, ['LA vent: appendage,', 'LA wall in front of the', 'left inferior vein, or', "Waterston's groove"], 'f-s', 'start')
+    b += line(338, 118, 500, 98, 'f-grid') + T(504, 92, ['Cardioplegia cannula (circle)', 'and cross-clamp (bar); root', 'pressure 60 to 70 mmHg'], 'f-s', 'start')
+    b += T(560, 318, ['Pulmonary veins: at the', 'pericardial reflection;', 'with lungs, LA cuff on', 'the heart 1.5 cm or more'], 'f-s', 'start')
+    y = 392
+    b += _d12_d12_tile(10, y, 168, 80, '400 U/kg', ['Heparin, timed', 'with all teams'], 'b1')
+    b += _d12_d12_tile(187, y, 168, 80, '4 to 6 h', ['Safe ischaemic', 'time'], 'warn')
+    b += _d12_d12_tile(364, y, 168, 80, '10 to 12%', ['Metabolic rate', 'at 4°C'], 'b0')
+    b += _d12_d12_tile(541, y, 169, 80, '2 × 1,000 mL', ['4°C solution,', 'two bags'], 'ok')
+    b += box(10, y + 92, 700, 40, 'Avoid ventricular distension at all costs; topical ice only once good-pressure perfusate flow is confirmed', 'warn', 'f-s')
+    return svg(y + 142, b)
+
+
+# ---------------------------------------------------------------- c15: DCD routes
+
+def d12_dcd_routes():
+    b = T(12, 20, 'Donation after circulatory death: the sequence and the two ways to recover the heart', 'f-h', 'start')
+    steps = [('Withdrawal of', 'treatment'), ('Hypoxaemia,', 'hypercarbia'), ('Circulatory', 'arrest'),
+             ('5-minute', 'stand-off'), ('Death', 'confirmed')]
+    for i, (a, c) in enumerate(steps):
+        x = 10 + i * 142
+        cls = 'warn' if i in (1, 2) else ('b1' if i == 3 else 'b0')
+        b += box(x, 34, 130, 50, [a, c], cls, 'f-s')
+        if i < 4:
+            b += arrow(x + 130, 59, x + 140, 59)
+    b += T(207, 100, 'Pulmonary vasoconstriction loads the right ventricle', 'f-s')
+    # warm ischaemia bracket
+    b += line(220, 112, 700, 112, 'f-cut') + line(220, 106, 220, 118, 'f-cut')
+    b += T(226, 132, 'Warm ischaemia: often counted from a systolic under 50 mmHg (may underestimate),', 'f-s', 'start')
+    b += T(226, 148, 'and running until regional or ex situ perfusion starts', 'f-s', 'start')
+    b += arrow(360, 156, 190, 184) + arrow(360, 156, 530, 184)
+    b += _d12_d12_card(10, 186, 345, 118, 'Normothermic regional perfusion', ['Circulation restored to chest and abdomen', 'in situ after death; heart assessed in the donor',
+                                                                        'UK Code: protocols must ensure', 'no blood flow to the brain'], 'b1', 'b0', 60)
+    b += _d12_d12_card(365, 186, 345, 118, 'Direct procurement and perfusion', ['Heart removed after death is confirmed and', 'placed on an ex situ normothermic circuit',
+                                                                         '(Organ Care System), assessed beating;', 'warm ischaemia until the circuit starts'], 'b1', 'b0', 60)
+    b += arrow(537, 304, 537, 318)
+    b += box(365, 320, 168, 96, ['Accept: final arterial', 'perfusate lactate', 'under 5 mmol/L with', 'a stable trend'], 'ok', 'f-s')
+    b += box(542, 320, 168, 96, ['Decline: lactate 5', 'or more, rising despite', 'more pressure or flow,', 'or an unstable heart'], 'warn', 'f-s')
+    b += box(10, 320, 345, 96, ['On the circuit, usual ranges: mean aortic', 'pressure 40 to 100 mmHg and coronary flow',
+                                '400 to 900 ml/min, but the lactate trend', 'decides (EXPAND protocols)'], 'b0', 'f-s')
+    b += box(10, 428, 700, 40, 'UK: DCD hearts are offered through the non-urgent (centre-based) scheme only (NHSBT POL228/13)', 'b1', 'f-s')
+    return svg(478, b)
+
+
+# ---------------------------------------------------------------- c15: immunosuppression phases
+
+def d12_immuno_phases():
+    b = T(12, 20, 'Immunosuppression after heart transplant: phases, targets and the early adjuncts (TSRA ch. 74)', 'f-h', 'start')
+    cols = [('Induction', 'b1', [('Basiliximab (anti-CD25)', 'Blocks the IL-2 receptor', 'Hepatitis, hypersensitivity'),
+                                ('Anti-thymocyte globulin', 'Removes T-cell receptors', 'Cytokine release, PTLD, CMV')]),
+            ('Maintenance: triple', 'ok', [('Tacrolimus (preferred CNI)', 'Blocks IL-2 production', 'Nephro-, neurotoxicity, K+ up'),
+                                           ('Mycophenolate', 'Antimetabolite (azathioprine', 'replaced); GI upset, leucopenia'),
+                                           ('Tapering steroid', 'Inhibits cytokine transcription', 'Diabetes, bone, infection')]),
+            ('Rejection with compromise', 'warn', [('Methylprednisolone', '1 g IV daily for 3 days', ''),
+                                                   ('Inotropes, PA catheter', 'if needed; anti-thymocyte', 'globulin if severe'),
+                                                   ('Repeat biopsy', '7 to 10 days after', 'treatment ends')])]
+    for i, (head, cls, items) in enumerate(cols):
+        x = 10 + i * 238
+        b += f'<rect x="{x}" y="32" width="226" height="250" rx="10" class="f-b0"/>'
+        b += f'<rect x="{x}" y="32" width="226" height="34" rx="10" class="f-{cls}"/>'
+        b += T(x + 113, 54, head, 'f-h')
+        for j, (a, l1, l2) in enumerate(items):
+            y = 78 + j * 68
+            b += T(x + 113, y + 14, a, 'f-h') + T(x + 113, y + 32, [l1, l2] if l2 else [l1], 'f-s')
+            if j < len(items) - 1:
+                b += line(x + 16, y + 62, x + 210, y + 62, 'f-grid')
+        if i < 2:
+            b += arrow(x + 226, 157, x + 236, 157)
+    # adjunct timeline
+    x0, x1 = 150, 700
+    ty = 312
+    b += T(12, ty - 10, 'Early adjuncts', 'f-h', 'start')
+    ticks = [(150, 'Day 0'), (230, 'Day 4'), (330, '2 weeks'), (620, '3 months')]
+    b += _d12_d12_axis(x0, x1, ty + 10, ticks)
+    rows = [('Antibiotics', 150, 230, 'b1', 'Piperacillin-tazobactam and vancomycin for 2 to 4 days', True),
+            ('Statin', 150, 330, 'ok', 'Started within 2 weeks: less allograft vasculopathy', True),
+            ('CMV', 150, 620, 'warn', 'Valganciclovir for 3 months (longer if CMV positive)', False),
+            ('Biopsy', 150, 450, 'b0', 'RV biopsy every 7 to 10 days early on', False),
+            ('Also', 150, 700, 'b0', 'Aspirin (accelerated graft coronary disease) and an H2 antagonist (steroids)', False)]
+    y = ty + 22
+    for lab, a, c, cls, t, outside in rows:
+        b += T(140, y + 17, lab, 'f-h', 'end')
+        if outside:
+            b += f'<rect x="{a}" y="{y}" width="{c - a}" height="24" rx="7" class="f-{cls}"/>' + T(c + 8, y + 16, t, 'f-s', 'start')
+        else:
+            b += _d12_d12_seg(a, c, y, 24, cls, t)
+        y += 30
+    return svg(y + 8, b)
+
+
+# ---------------------------------------------------------------- c15: registry burden
+
+def d12_registry_burden():
+    items = [('Vasculopathy, 1 year', 7.7, 'b1'), ('Vasculopathy, 5 years', 29.0, 'b1'), ('Vasculopathy, 10 years', 46.8, 'warn'),
+             ('Severe renal dysfunction, 1 year', 6.7, 'b1'), ('Severe renal dysfunction, 5 years', 15.7, 'b1'),
+             ('Severe renal dysfunction, 10 years', 22.3, 'warn'),
+             ('Diabetes, 1 year', 20.0, 'b1'), ('Diabetes, 5 years', 33.8, 'warn'),
+             ('Malignancy, 10 years (mostly skin)', 28, 'warn')]
+    h, b = bars(items, '%', 60, 'Cumulative morbidity in survivors after heart transplant (ISHLT registry, 2019)', 270)
+    y = h + 4
+    b += _d12_d12_tile(10, y, 168, 80, '12.5 years', ['Median survival,', '2002 to 2009'], 'b1')
+    b += _d12_d12_tile(187, y, 168, 80, '14.8 years', ['Median if alive', 'at 1 year'], 'ok')
+    b += _d12_d12_tile(364, y, 168, 80, '12.6%', ['Treated rejection,', 'discharge to 1 year'], 'warn')
+    b += _d12_d12_tile(541, y, 169, 80, 'Just over 50%', ['Had induction: no', 'survival difference'], 'b0')
+    y += 104
+    b += T(12, y, 'Causes of death by time after transplant', 'f-h', 'start')
+    b += box(10, y + 12, 180, 48, ['Acute graft failure:', 'peaks in first 30 days'], 'warn', 'f-s')
+    b += arrow(190, y + 36, 204, y + 36)
+    b += box(206, y + 12, 180, 48, ['Infection: peaks in', 'the first year'], 'b1', 'f-s')
+    b += arrow(386, y + 36, 400, y + 36)
+    b += box(402, y + 12, 308, 48, ['Rising with time: malignancy, vasculopathy,', 'renal failure, late rejection'], 'b0', 'f-s')
+    return svg(y + 70, b)
+
+
+# ---------------------------------------------------------------- c15: early care timeline after heart transplant
+
+def d12_htx_early_timeline():
+    b = T(12, 20, 'The first weeks after heart transplant: ISHLT 2022 timings (class, level)', 'f-h', 'start')
+    ticks = [(150, 'Theatre'), (250, '24 h'), (380, '3 to 5 days'), (560, '3 weeks'), (700, 'months')]
+    b += _d12_d12_axis(150, 700, 52, ticks)
+    rows = [('Pacing', [(150, 560, 'b1', 'Atrial and ventricular wires; pace to keep rate over 90 (I, B)'),
+                        (560, 700, 'ok', 'Permanent: AAIR/DDDR')]),
+            ('Inotropes', [(150, 380, 'b1', 'Weaned over 3 to 5 days (I, C)')]),
+            ('Tricuspid', [(150, 250, 'warn', 'Reassess TR')]),
+            ('Graft failure', [(150, 380, 'warn', 'VA-ECMO for severe PGD (I, B)')]),
+            ('CMV', [(150, 250, 'ok', 'Start 24-48 h'), (250, 700, 'ok', '3 months if recipient positive; 3 to 6 if D+/R- (I, B)')]),
+            ('Kidneys', [(150, 450, 'b0', 'Delay CNI if renal function poor (IIb, C)')])]
+    y = 66
+    for lab, segs in rows:
+        b += T(140, y + 18, lab, 'f-h', 'end')
+        for a, c, cls, t in segs:
+            b += _d12_d12_seg(a, c, y, 26, cls, t)
+        y += 34
+    b += T(258, 66 + 2 * 34 + 17, 'moderate or severe intraoperative TR within 24 h (I, C)', 'f-s', 'start')
+    b += T(388, 66 + 3 * 34 + 11, ['No recovery in 3 to 4 days: exclude rejection,', 'consider relisting (IIa, C)'], 'f-s', 'start')
+    y += 22
+    b += box(10, y, 345, 78, ['Start MCS early for failure to wean from bypass,', 'multiple high-dose inotropes, or a falling',
+                              'index with SvO2 under 50%. First exclude', 'tamponade and hyperacute or antibody rejection'], 'warn', 'f-s')
+    b += box(365, y, 345, 78, ['Permanent pacing is for chronotropic', 'incompetence at 3 weeks, with minimal',
+                               'ventricular pacing (I, C). Sustained VT:', 'angiography and biopsy (I, B)'], 'b1', 'f-s')
+    y += 90
+    b += _d12_d12_tile(10, y, 168, 80, 'CVP 5 to 12', ['mmHg (I, C)'], 'b0')
+    b += _d12_d12_tile(187, y, 168, 80, 'Rate over 90', ['temporary pacing', '(I, B)'], 'b1')
+    b += _d12_d12_tile(364, y, 168, 80, '7.8 to 10', ['mmol/L glucose by', 'insulin infusion (IIa, B)'], 'ok')
+    b += _d12_d12_tile(541, y, 169, 80, 'RAP over 20', ['despite drugs:', 'ultrafilter (IIa, B)'], 'warn')
+    return svg(y + 90, b)
+
+
+# ---------------------------------------------------------------- c15: myocardial recovery on LVAD
+
+def d12_recovery_pathway():
+    b = T(12, 20, 'Bridge to recovery on an LVAD: from unloading to explant (ISHLT 2023, Task Force 7)', 'f-h', 'start')
+    rows = [
+        ('Select', ['Non-ischaemic cardiomyopathy (recovers about 4 times as often as ischaemic), younger',
+                    '(under 40 to 50), short heart failure history; echo every LVAD patient at least once (IIa, C)']),
+        ('Unload', ['Ramp to RAP under 12 and PCWP under 18 mmHg; septum midline, aortic valve mostly closed,',
+                    'minimal MR; outpatient LVEDD 6 cm or less (ideally 5.5) without suction (IIa, B)']),
+        ('Drugs', ['Neurohormonal blockade early after inotrope wean: ACEI/ARNI/ARB, beta-blocker and MRA',
+                   'together, to maximum tolerated doses; MAP under 80; new hypertension may mean recovery']),
+        ('Test', ['At net zero flow for 15 minutes, fully anticoagulated: HeartMate II 6,000, HVAD 1,800,',
+                  'HeartMate 3 about 3,800 to 4,000 rpm. Echo, again after a 6-minute walk; PA catheter; CPET']),
+    ]
+    y = 34
+    for i, (head, txt) in enumerate(rows):
+        b += f'<rect x="10" y="{y}" width="120" height="50" rx="9" class="f-b1"/>'
+        b += _d12_d12_num(32, y + 25, i + 1, 'b0') + T(80, y + 30, head, 'f-h')
+        b += box(140, y, 570, 50, txt, 'b0', 'f-s')
+        b += arrow(70, y + 50, 70, y + 60)
+        y += 60
+    b += T(12, y + 16, 'Explant criteria after 15 minutes at net zero flow (Harefield, adapted in RESTAGE-HF)', 'f-h', 'start')
+    crit = [('under 60 mm', 'LVEDD', 'ok'), ('under 50 mm', 'LVESD', 'ok'), ('over 45%', 'LVEF', 'ok'),
+            ('15 or less', 'PCWP or LVEDP', 'ok'), ('over 2.4', 'Resting CI', 'ok'), ('16 or more', 'Peak VO2, optional', 'b0')]
+    for i, (big, small, cls) in enumerate(crit):
+        x = 10 + i * 118
+        b += f'<rect x="{x}" y="{y + 28}" width="110" height="64" rx="9" class="f-{cls}"/>'
+        b += T(x + 55, y + 54, big, 'f-h') + T(x + 55, y + 76, small, 'f-s')
+    y += 104
+    b += box(10, y, 345, 78, ['Defer explant while measures are still improving;', 'moderate or worse MR is a concern; symptoms or',
+                              'arrhythmia at low speed = inadequate recovery:', 'retest after longer unloading'], 'warn', 'f-s')
+    b += box(365, y, 345, 78, ['Explant: less invasive (left subcostal, apical plug)', 'or decommission; remove everything if the device',
+                               'is infected. Hold ACEI/ARB/ARNI and MRA 36 h', 'before; keep the beta-blocker to that morning'], 'ok', 'f-s')
+    return svg(y + 88, b)
+
+
+# ---- figs_D13.py
+"""D13 second drawing pass: bypass, myocardial protection and perioperative safety.
+Every label and number is taken from the notes (corpus3 tabs c10, c12, c13, c14) or TSRA ch. 49."""
+
+
+
+# ---------------------------------------------------------------- helpers
+
+def _d13_pill(x, y, text, cls='warn', w=None):
+    """Small rounded tag, text centred; width from text length unless given."""
+    if w is None:
+        w = len(text) * 6.3 + 14
+    return (f'<rect x="{x}" y="{y}" width="{w:.0f}" height="20" rx="10" class="f-{cls}"/>'
+            + T(x + w / 2, y + 14, text, 'f-s'))
+
+
+def _d13_card(x, y, w, h, head, lines, hcls='b1', bcls='b0', tcls='f-s'):
+    out = f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="10" class="f-{bcls}"/>'
+    out += f'<rect x="{x}" y="{y}" width="{w}" height="30" rx="10" class="f-{hcls}"/>'
+    out += T(x + w / 2, y + 20, head, 'f-h')
+    out += T(x + w / 2, y + 50, lines, tcls)
+    return out
+
+
+def _d13_harrow(x1, x2, y):
+    return arrow(x1, y, x2, y)
+
+
+def _d13_step(x, y, w, h, n, lines, cls='b0'):
+    """Numbered step box: number on the left, text left-aligned."""
+    out = f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="9" class="f-{cls}"/>'
+    out += f'<circle cx="{x + 20}" cy="{y + h / 2}" r="12" class="f-b1"/>' + T(x + 20, y + h / 2 + 5, str(n), 'f-n')
+    if isinstance(lines, str):
+        lines = [lines]
+    ty = y + h / 2 - (len(lines) - 1) * 8.5 + 4
+    out += T(x + 42, ty, lines, 'f-s', 'start')
+    return out
+
+
+# ---------------------------------------------------------------- c14: circuit and safety devices
+
+def d13_circuit_monitors():
+    """The bypass circuit with each component and the monitors the 2024 guideline asks for."""
+    b = T(12, 20, 'Components (boxes) and the monitors the 2024 guideline recommends on them (amber tags)', 'f-h', 'start')
+    # patient
+    b += '<rect x="10" y="96" width="112" height="226" rx="12" class="f-b1"/>'
+    b += T(66, 120, 'Patient', 'f-h')
+    b += T(66, 160, ['Right atrium', 'or cavae'], 'f-s')
+    b += T(66, 270, ['Distal', 'ascending', 'aorta'], 'f-s')
+    # suction and vents into cardiotomy reservoir
+    b += box(150, 40, 150, 46, ['Cardiotomy suction', 'and vents'], 'b0', 'f-s')
+    b += arrow(122, 112, 150, 72)
+    b += _d13_harrow(300, 336, 63)
+    b += box(338, 36, 160, 54, ['Cardiotomy reservoir', '(defoamer, filter)'], 'b0', 'f-s')
+    # venous line and venous reservoir
+    b += arrow(122, 160, 336, 160) + T(200, 152, 'Venous line', 'f-s')
+    b += _d13_pill(150, 168, 'SvO2 and HCT (I B)')
+    b += arrow(418, 90, 418, 128)
+    b += box(338, 130, 160, 60, ['Venous reservoir', 'open hardshell or', 'closed bag'], 'b0', 'f-s')
+    b += _d13_pill(338, 194, 'Level sensor (I C)')
+    # pump
+    b += _d13_harrow(498, 528, 160)
+    b += box(530, 122, 180, 76, ['Arterial pump', 'centrifugal (with flow', 'probe) or roller'], 'b0', 'f-s')
+    # oxygenator
+    b += arrow(620, 198, 620, 236)
+    b += box(530, 238, 180, 64, ['Membrane oxygenator', 'and heat exchanger'], 'b0', 'f-s')
+    b += _d13_pill(530, 212, 'Pressure pre-oxygenator (I C)', w=180)
+    b += _d13_pill(530, 306, 'Pressure post-oxygenator (I C)', w=180)
+    b += _d13_pill(530, 330, 'Outlet temperature, max 37°C', w=180)
+    # gas and heater-cooler
+    b += box(338, 236, 160, 50, ['O2 and air; CO2 for', 'flush and pH-stat'], 'ok', 'f-s')
+    b += _d13_harrow(498, 528, 262)
+    b += box(338, 292, 160, 46, ['Exhaust: scavenge', 'if volatiles given'], 'ok', 'f-s')
+    b += arrow(528, 286, 500, 306)
+    # arterial line back to patient
+    b += line(620, 352, 620, 388)
+    b += arrow(620, 388, 470, 388)
+    b += box(360, 370, 108, 40, ['Arterial line', 'filter (IIb C)'], 'b0', 'f-s')
+    b += arrow(360, 390, 124, 300)
+    b += _d13_pill(196, 372, 'Bubble detector (I C)')
+    b += _d13_pill(150, 398, 'Ultrasonic arterial flow (I C)')
+    # cardioplegia and HCU
+    b += box(10, 436, 345, 58, ['Cardioplegia set: roller pump, with pressure', 'monitoring (I C) and a bubble detector on', 'every line to the patient (I C)'], 'b1', 'f-s')
+    b += box(365, 436, 345, 58, ['Heater-cooler unit: outside theatre where', 'possible (I C) because of Mycobacterium', 'chimaera; disinfect at least yearly (I C)'], 'warn', 'f-s')
+    b += T(360, 516, 'Also always available: backups or a spare heart-lung machine (I C) and a primed or dry circuit for emergencies (I C).', 'f-s')
+    return svg(528, b)
+
+
+def d13_miecc():
+    """Conventional CPB against MiECC, from the 2024 bypass and blood management guidelines."""
+    b = ''
+    for col, (x, title, hcls) in enumerate([(10, 'Conventional CPB (CECC)', 'b1'), (370, 'MiECC', 'ok')]):
+        b += f'<rect x="{x}" y="10" width="340" height="34" rx="10" class="f-{hcls}"/>' + T(x + 170, 32, title, 'f-h')
+    # conventional chain
+    x = 10
+    chain_c = [('Venous line (gravity)', 'b0'), ('Open hardshell reservoir', 'b0'),
+               ('Arterial roller pump', 'b0'), ('Oxygenator, uncoated circuit', 'b0'), ('Patient', 'b1')]
+    chain_m = [('Venous line', 'b0'), ('Venous bubble trap or air removal', 'warn'),
+               ('Centrifugal pump (mandatory)', 'ok'), ('Oxygenator, coated tip to tip', 'ok'), ('Patient', 'b1')]
+    for x, chain in [(10, chain_c), (370, chain_m)]:
+        y = 56
+        for i, (lab, cls) in enumerate(chain):
+            b += box(x + 30, y, 240, 32, lab, cls, 'f-s')
+            if i < len(chain) - 1:
+                b += arrow(x + 150, y + 32, x + 150, y + 44)
+            y += 44
+    # side inputs
+    b += box(10 + 280 - 6, 92, 66, 64, ['Shed', 'blood', 'sucked in'], 'warn', 'f-s')
+    b += arrow(284, 118, 280, 112)
+    b += box(370 + 280 - 6, 92, 66, 64, ['Cell', 'salvage', 'instead'], 'ok', 'f-s')
+    # facts
+    b += box(10, 282, 340, 92, ['Open to air; blood meets air in the', 'reservoir. Prime at least 1500 mL', '(early-2000s European definition); no', 'dedicated suction blood management'], 'b0', 'f-s')
+    b += box(370, 282, 340, 92, ['Closed, no venous reservoir, small prime', '(600 vs 1200 mL in one 5164-patient series).', 'Type IV (modular) adds vents and a', 'reservoir so it suits all procedures'], 'b0', 'f-s')
+    h, c = bars([('New AF at discharge, CECC', 9.4, 'warn'), ('New AF at discharge, MiECC', 3.0, 'ok')],
+                '%', 12, 'Retrospective study of 763 (difference persisted after matching)', lab_w=230)
+    b += f'<g transform="translate(0 384)">{c}</g>'
+    y = 384 + h
+    b += box(10, y, 700, 62, ['Optimise CPB the MiECC way to cut blood loss and haemodilution (I B) · MiECC over conventional',
+                              'CPB to reduce new AF after CABG (IIa B) · COMICS stopped at 1071 of 3500 (COVID-19): benefit uncertain'], 'b1', 'f-s')
+    return svg(y + 72, b)
+
+
+def _d13_mini_circuit(x, y, dim=False):
+    """Reservoir, pump, oxygenator in a row; returns svg. dim draws dashed outlines."""
+    out = ''
+    spec = [('Reservoir', 0, 66), ('Pump', 79, 44), ('Oxygenator', 136, 72)]
+    for i, (lab, dx, w) in enumerate(spec):
+        bx = x + dx
+        cls = 'f-dash' if dim else 'f-b0'
+        out += f'<rect x="{bx}" y="{y}" width="{w}" height="30" rx="7" class="{cls}"/>'
+        out += T(bx + w / 2, y + 19, lab, 'f-s')
+        if i < 2:
+            out += arrow(bx + w, y + 15, x + spec[i + 1][1], y + 15)
+    return out
+
+
+def _d13_filter(x, y):
+    out = f'<rect x="{x}" y="{y}" width="56" height="34" rx="6" class="f-b1"/>'
+    for k in range(4):
+        out += line(x + 10 + k * 12, y + 4, x + 10 + k * 12, y + 30, 'f-grid')
+    out += T(x + 28, y - 6, 'Filter', 'f-s')
+    return out
+
+
+def d13_ultrafiltration():
+    """CUF, ZBUF and MUF: where the filter sits and when it runs."""
+    b = ''
+    cols = [('CUF', 'During CPB', 'b1'), ('ZBUF', 'During CPB', 'b1'), ('MUF', 'After weaning', 'ok')]
+    for i, (name, when, cls) in enumerate(cols):
+        x = 10 + i * 238
+        b += f'<rect x="{x}" y="10" width="226" height="250" rx="10" class="f-b0"/>'
+        b += f'<rect x="{x}" y="10" width="226" height="40" rx="10" class="f-{cls}"/>'
+        b += T(x + 113, 28, name, 'f-h') + T(x + 113, 44, when, 'f-s')
+    # CUF
+    x = 10
+    b += _d13_mini_circuit(x + 6, 66)
+    b += line(x + 178, 96, x + 178, 138) + arrow(x + 178, 138, x + 150, 138)
+    b += _d13_filter(x + 92, 121)
+    b += line(x + 92, 138, x + 39, 138) + arrow(x + 39, 138, x + 39, 98)
+    b += arrow(x + 120, 155, x + 120, 182)
+    b += T(x + 113, 196, 'Water removed', 'f-s')
+    b += T(x + 113, 222, ['Pumped or shunted across', 'a pressure gradient'], 'f-s')
+    # ZBUF
+    x = 248
+    b += _d13_mini_circuit(x + 6, 66)
+    b += line(x + 178, 96, x + 178, 138) + arrow(x + 178, 138, x + 150, 138)
+    b += _d13_filter(x + 92, 121)
+    b += line(x + 92, 138, x + 39, 138) + arrow(x + 39, 138, x + 39, 98)
+    b += arrow(x + 120, 155, x + 120, 182)
+    b += T(x + 120, 196, 'Filtrate out', 'f-s')
+    b += arrow(x + 18, 186, x + 18, 98) + T(x + 24, 182, 'Volume in', 'f-s', 'start')
+    b += T(x + 113, 222, ['Volume removed is', 'replaced'], 'f-s')
+    # MUF
+    x = 486
+    b += _d13_mini_circuit(x + 6, 66, dim=True)
+    b += T(x + 113, 112, 'Bypass circuit off', 'f-s')
+    b += box(x + 8, 136, 76, 36, ['Aortic', 'cannula'], 'b1', 'f-s')
+    b += arrow(x + 84, 154, x + 100, 154)
+    b += _d13_filter(x + 102, 137)
+    b += arrow(x + 158, 154, x + 172, 154)
+    b += box(x + 172, 136, 48, 36, ['RA'], 'b1', 'f-s')
+    b += arrow(x + 130, 171, x + 130, 192) + T(x + 130, 206, 'Water out', 'f-s')
+    b += T(x + 113, 232, ['Can follow CUF'], 'f-s')
+    # evidence
+    b += box(10, 272, 226, 112, ['12 RCTs: less low output,', 'shorter ventilation, less', 'pneumonia. Removing over', '32 mL/kg raised AKI, no', 'transfusion benefit'], 'b0', 'f-s')
+    b += box(248, 272, 226, 112, ['No effect on low output or', 'ventilation (meta-analysis);', 'registry of 73,783: lower', 'diuresis. Raises bivalirudin', 'elimination'], 'b0', 'f-s')
+    b += box(486, 272, 224, 112, ['13 RCTs, 1236 patients: fewer', 'transfusions, higher HCT, less', 'drain loss; ICU stay only', '3.1 h shorter. Vancomycin falls,', 'not below inhibitory levels'], 'ok', 'f-s')
+    b += box(10, 394, 700, 40, 'MUF, or CUF combined with MUF, in high-risk or anaemic patients to reduce drain loss and transfusion (I A)', 'b1', 'f-s')
+    return svg(444, b)
+
+
+def d13_cardioplegia_solutions():
+    """Cardioplegia solutions placed by their blood:crystalloid content, with how each is given."""
+    b = T(12, 22, 'Solutions by blood content (blood : crystalloid)', 'f-h', 'start')
+    x0, x1, y = 70, 650, 72
+    b += f'<rect x="{x0}" y="{y - 12}" width="{x1 - x0}" height="24" rx="12" class="f-track"/>'
+    b += f'<rect x="{x0}" y="{y - 12}" width="{x1 - x0}" height="24" rx="12" class="f-b0"/>'
+    b += T(x0 - 4, y + 34, 'All crystalloid: HTK, St Thomas No. 2', 'f-s', 'start') + T(x1, y + 34, 'more blood →', 'f-s', 'end')
+
+    def at(frac):
+        return x0 + (x1 - x0) * frac
+    marks = [(0.0, 'HTK, St Thomas No. 2'), (0.2, 'del Nido 1:4'), (0.5, '1:1'), (0.8, 'Buckberg 4:1'), (5 / 6, '5:1')]
+    for f, lab in marks:
+        cx = at(f)
+        b += f'<circle cx="{cx:.1f}" cy="{y}" r="7" class="f-b1"/>'
+    b += T(at(0.2), y - 20, 'del Nido 1:4', 'f-s')
+    b += T(at(0.5), y - 20, '1:1', 'f-s')
+    b += T(at(0.8) - 6, y - 20, 'Buckberg 4:1', 'f-s', 'end')
+    b += T(at(5 / 6) + 8, y - 20, '5:1', 'f-s', 'start')
+    # bracket for other mixes
+    b += line(at(0.5), y + 18, at(5 / 6), y + 18, 'f-cut')
+    b += T((at(0.5) + at(5 / 6)) / 2 - 20, y + 34, 'Other blood mixes, many untested', 'f-s')
+    # cards
+    cy = 126
+    b += _d13_card(10, cy, 170, 168, 'HTK (Custodiol)', ['Intracellular crystalloid,', 'single dose,', 'hyperpolarising.', 'Near sodium-free:', 'do not correct the', 'hyponatraemia'], 'b1')
+    b += _d13_card(190, cy, 170, 168, 'St Thomas No. 2', ['Extracellular', 'crystalloid,', 'multidose. The most', 'used extracellular', 'crystalloid'], 'b1')
+    b += _d13_card(370, cy, 170, 168, 'del Nido', ['Single dose for up to', '90 min of ischaemia;', 'shorter CPB, clamp', 'and operating times.', 'Open: long clamp, poor', 'RV, low LVEF, redo clamp'], 'ok')
+    b += _d13_card(550, cy, 160, 168, 'Buckberg', ['Cold induction, cold', 'multidose, warm', 'terminal reperfusion;', 'ante- and retrograde;', 'any adult case incl.', 'acute occlusion'], 'ok')
+    # choosing
+    b += box(10, 306, 345, 92, ['Blood v crystalloid: no difference in MI or', 'death (34 RCTs, 5044); less low output on', 'reperfusion with blood. Crystalloid adds', 'haemodilution, blood loss and transfusion'], 'b0', 'f-s')
+    b += box(365, 306, 345, 92, ['Cold doses every 20 to 30 min. Single shot', '(intracellular crystalloid or del Nido) is', 'acceptable for low-risk short clamps. Warm', 'must be continuous or warm ischaemia results'], 'b0', 'f-s')
+    b += box(10, 408, 700, 44, ['Tailor protection to the patient and operation, not a fixed house solution (I C); blood cardioplegia', 'for anaemia, low BSA, CKD or complex procedures (IIa B)'], 'b1', 'f-s')
+    return svg(462, b)
+
+
+def d13_heparin_protamine():
+    """Heparin, ACT and protamine around bypass, with heparin resistance and HIT branches."""
+    b = ''
+    w = 160
+    steps = [('Heparin', ['300 to 600 IU/kg;', 'binds antithrombin,', 'thrombin and Xa', 'inhibited up to', '1000-fold'], 'b1'),
+             ('ACT before CPB', ['Over 480 s is the', 'accepted threshold', '(uncoated circuit,', 'cardiotomy suction)'], 'b1'),
+             ('On bypass', ['Recheck ACT at', 'regular intervals', 'and redose (I C);', 'ACT- or heparin-level', 'guided (I A)'], 'b1'),
+             ('Protamine', ['Ratio under 1.0 to', 'the initial heparin', 'dose (I B); give', 'slowly; stop cardiotomy', 'suction (IIa C)'], 'ok')]
+    for i, (head, ls, cls) in enumerate(steps):
+        x = 10 + i * (w + 20)
+        b += _d13_card(x, 10, w, 140, head, ls, cls)
+        if i < 3:
+            b += _d13_harrow(x + w, x + w + 20, 85)
+    # heparin resistance branch
+    b += arrow(270, 150, 270, 192)
+    b += box(10, 194, 345, 112, ['Heparin resistance: ACT under 400 s after', '300 IU/kg. Causes include low antithrombin,', 'preoperative LMWH (1 to 5 times the risk),', 'endocarditis, high fibrinogen, thrombocytosis.',
+                                 'Antithrombin concentrate (I A); FFP if none'], 'warn', 'f-s')
+    # protamine branch
+    b += arrow(630, 150, 630, 192)
+    b += box(365, 194, 345, 112, ['Overdose impairs platelets, weakens clot', 'and activates fibrinolysis. Ratio 0.6:1 and', '0.8:1 bled less than 1:1 or more. Prolonged',
+                                  'ACT after CPB may be cold, platelets, factors', 'or antithrombin, not residual heparin'], 'b0', 'f-s')
+    # HIT
+    b += box(10, 318, 700, 26, 'HIT antibodies and surgery cannot wait: a direct thrombin inhibitor instead of heparin', 'b1', 'f-h')
+    b += box(10, 352, 345, 96, ['Bivalirudin, first line (IIa B): 1 mg/kg,', 'then 2.5 mg/kg/h, 50 mg in the prime.', 'Usually ACT 2.5 times baseline (over 300 s).', 'No reversal; recirculate shunts every 15 to 20 min'], 'ok', 'f-s')
+    b += box(365, 352, 345, 96, ['Argatroban, with renal dysfunction (IIb C):', 'hepatic clearance. 0.1 mg/kg, then 5 to 25', 'µg/kg/min, 4 mg in the prime; ACT over 450', 'to 500 s reported. More bleeding after CPB'], 'b0', 'f-s')
+    b += T(360, 470, 'Electively, defer surgery until functional assays are negative, typically after 100 days (expert opinion).', 'f-s')
+    return svg(482, b)
+
+
+def d13_cpb_hct_ladder():
+    """Red cell transfusion on bypass by haematocrit, 2024 bypass guideline section 9.9."""
+    b = T(12, 22, 'Red cells on bypass: decide by haematocrit and oxygen delivery (bands not to scale)', 'f-h', 'start')
+    bands = [(40, 'Over 24%', 'f-ok'), (150, '18 to 24%', 'f-b1'), (260, 'Under 18%', 'f-warn')]
+    for y, lab, cls in bands:
+        b += f'<rect x="20" y="{y}" width="120" height="104" rx="8" class="{cls}"/>' + T(80, y + 57, lab, 'f-h')
+    b += box(156, 46, 554, 92, ['Red cells not recommended if DO2 and extraction are acceptable (III C).',
+                                'An RCT of HCT over 25% against 21 to 25% found worse neurological', 'outcome with moderate haemodilution'], 'ok', 'f-s')
+    b += box(156, 152, 554, 100, ['May be considered by adequacy of tissue oxygenation: DO2 kept over',
+                                  '273 mL/min/m² and satisfactory cerebral oximetry (IIb B). Transfusion helped',
+                                  'when SvO2 was under 68% and/or O2ER over 39% (retrospective).', 'Low Hb can be offset by higher pump flow'], 'b1', 'f-s')
+    b += box(156, 266, 554, 92, ['Transfuse red cells: HCT under 18%, Hb 6.0 g/dL (I C).', 'Use leucodepleted red cells where possible'], 'warn', 'f-s')
+    b += box(10, 378, 700, 62, ['Usually no role for platelets or cryoprecipitate on bypass. FFP only to supply antithrombin in heparin',
+                                'resistance, and antithrombin concentrate is better (I B). No prophylactic FFP (III B)'], 'b0', 'f-s')
+    return svg(450, b)
+
+
+def d13_arch_temps():
+    """Hypothermia categories for circulatory arrest, with safe durations and cerebral perfusion targets."""
+    b = T(12, 22, 'Core (rectal or bladder) temperature categories for circulatory arrest', 'f-h', 'start')
+    x0, x1, y = 60, 660, 70
+
+    def xp(t):
+        return x0 + (x1 - x0) * (t - 14) / (37 - 14)
+    cats = [(14.1, 20, 'Deep', 'f-warn'), (20.1, 24, 'Low-moderate', 'f-b1'), (24.1, 28, 'High-moderate', 'f-b1'),
+            (28.1, 34, 'Mild', 'f-ok')]
+    for lo, hi, lab, cls in cats:
+        b += f'<rect x="{xp(lo - 0.1):.1f}" y="{y - 16}" width="{xp(hi) - xp(lo - 0.1) - 3:.1f}" height="32" rx="6" class="{cls}"/>'
+        b += T((xp(lo - 0.1) + xp(hi)) / 2, y + 5, lab, 'f-s')
+    b += f'<rect x="{xp(34):.1f}" y="{y - 16}" width="{xp(37) - xp(34):.1f}" height="32" rx="6" class="f-b0"/>'
+    for t in (14, 20, 24, 28, 34, 37):
+        b += T(xp(t), y + 34, f'{t}°C', 'f-s')
+    # recommended band
+    b += line(xp(20.1), y + 46, xp(28), y + 46, 'f-cut')
+    b += T((xp(20.1) + xp(28)) / 2, y + 62, 'Arrest under moderate hypothermia (20.1 to 28°C) with ACP (IIa B)', 'f-s')
+    # durations chart
+    h, c = bars([('Deep arrest alone', (30, 40), 'warn'), ('Unilateral ACP', (30, 50), 'b1'),
+                 ('Bilateral ACP', (86, 164), 'ok')], ' min', 190,
+                'Safe duration quoted (bilateral: 86 to more than 164 min)', lab_w=200)
+    c = c.replace('86 to 164 min', '86 to over 164 min')
+    b += f'<g transform="translate(0 140)">{c}</g>'
+    y2 = 140 + h
+    b += box(10, y2, 226, 96, ['ACP: 10 to 15 mL/kg/min,', 'right radial 40 to 80 mmHg.', 'Axillary, innominate or', 'carotid inflow'], 'ok', 'f-s')
+    b += box(247, y2, 226, 96, ['RCP via the SVC: jugular', 'venous pressure 20 mmHg,', '100 to 500 mL/min; only', '3 to 5% returns via arch'], 'b1', 'f-s')
+    b += box(484, y2, 226, 96, ['Cool only once on CPB;', 'exchanger to inflow gradient', 'max 10°C. Hb over 7.5 g/dL,', 'HCT over 22% in arch work'], 'b0', 'f-s')
+    b += T(360, y2 + 118, 'Monitor nasopharyngeal and core temperature (I C) and bilateral NIRS (I C). Rewarm slowly once the arch is done.', 'f-s')
+    return svg(y2 + 130, b)
+
+
+def d13_coming_off():
+    """Coming off bypass: readiness checks, the wean, and escalation when weaning is difficult."""
+    b = T(12, 22, 'Preparing to come off', 'f-h', 'start')
+    pre = ['De-air through the root vent', 'Cross-clamp off', 'Rewarm']
+    for i, lab in enumerate(pre):
+        x = 10 + i * 238
+        b += box(x, 34, 226, 36, lab, 'b0', 'f-s')
+        if i < 2:
+            b += _d13_harrow(x + 226, x + 238, 52)
+    b += T(12, 96, 'Then four checks (a weaning checklist is recommended, I C)', 'f-h', 'start')
+    checks = [('Bleeding', ['Suture lines and', 'cannulation sites dry']),
+              ('Beating', ['Rhythm, contractility,', 'pacing wires capture']),
+              ('Breathing', ['Ventilation restarted', 'and confirmed aloud']),
+              ('Temperature', ['About 36°C'])]
+    for i, (h, ls) in enumerate(checks):
+        x = 10 + i * 177
+        b += _d13_card(x, 108, 167, 82, h, ls, 'b1')
+    b += arrow(360, 190, 360, 206)
+    b += box(60, 208, 600, 40, 'Wean stepwise: reduce venous drainage and arterial flow together so the heart fills and ejects', 'ok', 'f-s')
+    b += arrow(360, 248, 360, 264)
+    b += box(60, 266, 600, 52, ['Decannulate: venous out first, arterial last (do not tie the venous purse-string until', 'the arterial cannula is out); protamine, with cardiotomy suction stopped'], 'b0', 'f-s')
+    b += T(12, 346, 'Difficult weaning: rising support, a failed first attempt, or a device needed to separate', 'f-h', 'start')
+    b += _d13_step(10, 358, 700, 42, 1, ['Optimise preload and afterload (TOE, RV inspection), heart rate and rhythm'], 'b0')
+    b += _d13_step(10, 408, 700, 56, 2, ['Look for a structural cause (shunt, regurgitation, paraprosthetic leak, occluded graft): revise it.',
+                                     'Dynamic cause (LV, RV or diastolic dysfunction): drugs by protocol'], 'b0')
+    b += _d13_step(10, 472, 700, 42, 3, ['Still failing: short-term mechanical support (IIa B): IABP, microaxial pump, ECMO'], 'warn')
+    b += T(360, 536, 'Not recommended: forcing the wean with high-dose inotropes and vasoconstrictors (III B). Multidisciplinary approach (I B).', 'f-s')
+    return svg(548, b)
+
+
+def d13_air_embolism():
+    """Massive arterial air embolism on bypass: the sequence in order."""
+    b = T(12, 22, 'Arterial air embolism: act in this order', 'f-h', 'start')
+    seq = [('Stop the pump; clamp the venous and arterial lines', 'warn'),
+           ('Steep head-down (Trendelenburg)', 'b0'),
+           ('100% oxygen', 'b0'),
+           ('Vent the aortic root', 'b0'),
+           ('Retrograde cerebral perfusion via the SVC (or carotid occlusion)', 'b0'),
+           ('De-air the circuit and refill the reservoir', 'b0'),
+           ('Restart bypass and finish the operation', 'ok')]
+    y = 36
+    for i, (lab, cls) in enumerate(seq):
+        b += _d13_step(10, y, 440, 38, i + 1, lab, cls)
+        if i < len(seq) - 1:
+            b += arrow(30, y + 38, 30, y + 46)
+        y += 46
+    b += box(466, 36, 244, 116, ['Advocated by some:', 'steroids and mannitol;', 'hyperbaric oxygen after', 'surgery where possible.', 'Guideline adds hypothermia'], 'b1', 'f-s')
+    b += box(466, 162, 244, 112, ['Sources: circuit, field or', 'vascular access. Assisted', 'venous drainage adds risk', '(reservoir overpressure).', 'TOE confirms'], 'b0', 'f-s')
+    b += box(466, 284, 244, 70, ['Venous airlock is different:', 'lift and refill the line,', 'reseat or repair'], 'ok', 'f-s')
+    return svg(y + 4, b)
+
+
+# ---------------------------------------------------------------- c12: going on bypass
+
+def d13_going_on():
+    """Going on bypass: the sequence and the numbers (TSRA intern guide, bypass fundamentals)."""
+    b = T(12, 22, 'Going on bypass, in order', 'f-h', 'start')
+    seq = [('Heparin', ['400 units/kg;', 'ACT over 480 s']),
+           ('Arterial cannula', ['Systolic under 100', 'mmHg; then venous']),
+           ('Purse-strings', ['for vent and', 'cardioplegia']),
+           ('De-air, connect', ['wet to wet; test', 'the line, check ACT']),
+           ('Start', ['stop ventilating once', 'the heart is empty'])]
+    w, gap = 128, 15
+    for i, (h, ls) in enumerate(seq):
+        x = 10 + i * (w + gap)
+        b += _d13_card(x, 36, w, 90, h, ls, 'b1')
+        if i < 4:
+            b += _d13_harrow(x + w + 1, x + w + gap - 1, 81)
+    b += box(10, 140, 700, 40, 'Before the clamp: check drainage, perfusion, oxygenation and decompression', 'ok', 'f-s')
+    b += T(12, 208, 'Numbers to quote', 'f-h', 'start')
+    items = [('Pump to cannula gradient', 'under 100 mmHg'), ('Flow', '2.1 to 2.5 L/min/m²'), ('MAP', '50 to 80 mmHg'),
+             ('Antegrade cardioplegia', '60 to 100 mmHg'), ('Retrograde cardioplegia', '40 mmHg or less'), ('Redose', 'about every 20 min')]
+    for i, (k, v) in enumerate(items):
+        x = 10 + (i % 3) * 237
+        y = 220 + (i // 3) * 58
+        b += f'<rect x="{x}" y="{y}" width="225" height="50" rx="9" class="f-b0"/>'
+        b += T(x + 112, y + 20, k, 'f-s') + T(x + 112, y + 40, v, 'f-h')
+    b += box(10, 342, 700, 44, ['Pitfalls: back-wall injury and dissection at cannulation; calcified aorta; aortic regurgitation', 'distending the heart (vent it); heparin resistance; clamp not fully across the aorta'], 'warn', 'f-s')
+    return svg(396, b)
+
+
+def d13_stopping_times():
+    """When to stop each antithrombotic before elective cardiac surgery (2024 PBM and perioperative medication guidelines)."""
+    import math
+    b = T(12, 22, 'Last dose before elective surgery (log time scale)', 'f-h', 'start')
+    lab_w, x1, tx = 220, 560, 572
+
+    def xp(hours):
+        return lab_w + (x1 - lab_w) * math.log10(hours) / math.log10(240)
+    ticks = [(1, '1 h'), (4, '4 h'), (12, '12 h'), (24, '1 d'), (48, '2 d'), (96, '4 d'), (168, '7 d')]
+    ytop = 54
+    rows = [('Eptifibatide, tirofiban', 4, None, 'b1', 'at least 4 h'),
+            ('UFH infusion', 2, 4, 'b1', '2 to 4 h'),
+            ('Abciximab', 12, None, 'b1', 'at least 12 h'),
+            ('LMWH (bridging)', 12, 24, 'b1', '12 to 24 h'),
+            ('Fondaparinux', 24, None, 'b1', 'at least 24 h'),
+            ('DOAC (by drug and CrCl)', 48, 96, 'warn', '48 to 96 h'),
+            ('Ticagrelor', 72, None, 'warn', 'at least 3 days'),
+            ('Aspirin, high bleeding risk only', 72, 96, 'b1', '3 to 4 days'),
+            ('VKA (to INR 1.5 or less)', 96, None, 'warn', 'at least 4 days'),
+            ('Clopidogrel', 120, None, 'warn', 'at least 5 days'),
+            ('Prasugrel', 168, None, 'warn', '7 days'),
+            ('Aspirin for CABG', None, None, 'ok', 'continue (I B)')]
+    ybot = ytop + len(rows) * 30 + 4
+    for hrs, lab in ticks:
+        b += line(xp(hrs), ytop, xp(hrs), ybot, 'f-grid') + T(xp(hrs), ytop - 6, lab, 'f-s')
+    b += T(tx, ytop - 6, 'Interval', 'f-h', 'start')
+    y = ytop + 4
+    for lab, lo, hi, cls, txt in rows:
+        b += T(lab_w - 10, y + 16, lab, 'f-s', 'end')
+        if lo is None:
+            b += f'<rect x="{lab_w}" y="{y + 3}" width="{x1 - lab_w}" height="18" rx="5" class="f-ok"/>'
+            b += T((lab_w + x1) / 2, y + 16, 'Continue up to and through surgery', 'f-s')
+        else:
+            end = xp(hi) if hi else xp(lo)
+            b += f'<rect x="{lab_w}" y="{y + 3}" width="{end - lab_w:.1f}" height="18" rx="5" class="f-track"/>'
+            if hi:
+                b += f'<rect x="{xp(lo):.1f}" y="{y + 3}" width="{xp(hi) - xp(lo):.1f}" height="18" rx="5" class="f-{cls}"/>'
+            else:
+                b += f'<rect x="{end - 8:.1f}" y="{y + 3}" width="8" height="18" rx="3" class="f-{cls}"/>'
+        b += T(tx, y + 16, txt, 'f-s', 'start')
+        y += 30
+    y += 14
+    b += box(10, y, 700, 62, ['Very high ischaemic risk (recent stent): cangrelor bridging may be considered (IIb C). Bridge VKA only for',
+                              'high thrombotic risk: mechanical valve, rheumatic AF, thrombosis within 12 weeks, thrombophilia, LV thrombus'], 'b1', 'f-s')
+    b += T(360, y + 82, 'Aspirin: PBM guideline says at least 4 days; the perioperative medication guideline says 3 days for non-coronary surgery.', 'f-s')
+    return svg(y + 94, b)
+
+
+def d13_doac_renal():
+    """DOAC stopping interval by creatinine clearance, and the anti-Xa level ladder (2024 perioperative medication guideline, Table 5)."""
+    b = T(12, 22, 'Stop before surgery, by creatinine clearance (Table 5)', 'f-h', 'start')
+    cols = [('CrCl over 50', 'b1'), ('30 to 50', 'b1'), ('15 to 30', 'warn'), ('Under 15', 'warn')]
+    x0, cw = 200, 127
+    for i, (h, cls) in enumerate(cols):
+        b += box(x0 + i * cw, 34, cw - 6, 30, h, cls, 'f-s')
+    rows = [('Apixaban, edoxaban,', 'rivaroxaban (FXa)', ['48 h', '72 h', '96 h; consider level', 'Not recommended']),
+            ('Dabigatran (FIIa)', '85 to 90% renal', ['48 h', '96 h (CrCl 30 to 49);', 'consider level', 'Contraindicated under 30'])]
+    y = 72
+    b += box(10, y, 184, 58, [rows[0][0], rows[0][1]], 'b0', 'f-s')
+    for i, v in enumerate(rows[0][2]):
+        cls = 'warn' if i == 3 else 'b0'
+        b += box(x0 + i * cw, y, cw - 6, 58, v, cls, 'f-s')
+    y = 138
+    b += box(10, y, 184, 58, [rows[1][0], rows[1][1]], 'b0', 'f-s')
+    b += box(x0, y, cw - 6, 58, '48 h (CrCl 50+)', 'b0', 'f-s')
+    b += box(x0 + cw, y, cw - 6, 58, ['96 h', '(CrCl 30 to 49);', 'consider level'], 'b0', 'f-s')
+    b += box(x0 + 2 * cw, y, 2 * cw - 6, 58, 'Contraindicated under CrCl 30', 'warn', 'f-s')
+    b += T(360, 222, 'Recommendation: stop DOAC 48 to 96 h before elective open-heart surgery, no routine bridging (I B)', 'f-s')
+    # anti-Xa ladder
+    b += T(12, 254, 'Calibrated anti-Xa level before surgery', 'f-h', 'start')
+    lad = [('Under 30 ng/ml', 'Safe for major surgery', 'ok'), ('30 to 200 ng/ml', 'Delay 12 h', 'b1'),
+           ('200 to 400 ng/ml', 'Delay 24 h', 'warn')]
+    for i, (a, c, cls) in enumerate(lad):
+        x = 10 + i * 238
+        b += box(x, 266, 226, 56, [a, c], cls, 'f-s')
+        if i < 2:
+            b += _d13_harrow(x + 226, x + 238, 294)
+    b += box(10, 334, 345, 76, ['Dabigatran: diluted thrombin time is', 'linear with level; safe under 21 s.', 'Normal aPTT suggests minimal dabigatran'], 'b0', 'f-s')
+    b += box(365, 334, 345, 76, ['Emergency: idarucizumab 5 g for dabigatran', '(IIa B); off-label 4F-PCC 50 U/kg for anti-Xa', 'drugs. No andexanet before CPB (III C)'], 'b1', 'f-s')
+    return svg(420, b)
+
+
+def d13_antibiotic_timeline():
+    """Antibiotic prophylaxis for open-heart surgery on a timeline (2024 perioperative medication guideline, part 6)."""
+    b = T(12, 22, 'Prophylaxis timeline (not to scale)', 'f-h', 'start')
+    y = 92
+    b += line(20, y, 700, y)
+    marks = [(60, 'Day −4 or −5'), (230, '30 to 60 min'), (300, 'Incision'), (420, 'Start of CPB'),
+             (520, 'After 2 half-lives'), (620, '24 h'), (690, '48 h')]
+    for x, lab in marks:
+        b += line(x, y - 6, x, y + 6) + T(x, y - 12, lab, 'f-s')
+    b += f'<rect x="{230}" y="{y - 4}" width="70" height="8" rx="3" class="f-ok"/>'
+    # boxes under
+    b += box(10, 112, 150, 110, ['S. aureus carriers:', 'nasal mupirocin', 'twice daily from', '4 days before (I B;', 'text: 5 days)'], 'b1', 'f-s')
+    b += box(170, 112, 170, 110, ['First dose infused', 'within 30 to 60 min', 'before incision (I B).', 'Cefuroxime: least SSI', 'at 0 to 30 min (text)'], 'ok', 'f-s')
+    b += box(350, 112, 170, 110, ['CPB raises volume of', 'distribution up to 58%:', 'extra dose after CPB', 'starts, or double', 'cefazolin dosing'], 'b0', 'f-s')
+    b += box(530, 112, 180, 110, ['Redose if over 2 half-', 'lives (cefazolin 1.5 h),', 'or blood loss or', 'haemodilution (IIa B).', 'Give 24 h, not over 48 h'], 'b0', 'f-s')
+    b += T(12, 252, 'Which drug', 'f-h', 'start')
+    b += box(10, 264, 226, 72, ['No allergy: cefazolin or', 'cefuroxime (IIa A)'], 'ok', 'f-s')
+    b += box(247, 264, 226, 72, ['Documented beta-lactam', 'allergy: vancomycin or', 'clindamycin (IIa B)'], 'b1', 'f-s')
+    b += box(484, 264, 226, 72, ['MRSA colonisation:', 'vancomycin (IIa B)'], 'b1', 'f-s')
+    b += box(10, 346, 700, 62, ['Up to 15% report penicillin allergy; 90 to 99% are not confirmed on testing. Over 24 h against under 24 h:',
+                                'SSI down 38%, DSWI down 68% (12 RCTs); no benefit beyond 48 h, and more resistance'], 'b0', 'f-s')
+    b += T(360, 430, 'Adjuncts: topical vancomycin or a gentamicin-collagen sponge (IIb B). Adjust dose to renal function (eGFR under 50).', 'f-s')
+    return svg(442, b)
+
+
+def d13_anaemia_pathway():
+    """Preoperative anaemia and thrombocytopenia, 2024 patient blood management guideline part 2."""
+    b = box(170, 8, 380, 50, ['Anaemia: Hb under 120 g/L (women),', 'under 130 g/L (men)'], 'b1', 'f-h')
+    b += T(360, 76, 'Up to 40% of elective cardiac patients; mortality OR 2.5', 'f-s')
+    b += arrow(360, 82, 360, 98)
+    b += box(170, 100, 380, 36, 'Investigate the cause and treat it (I B)', 'b0', 'f-s')
+    b += arrow(300, 136, 170, 158) + arrow(420, 136, 550, 158)
+    b += box(10, 160, 330, 84, ['Surgery can wait: oral iron for 1 to 3', 'months (IIa B); lower doses on', 'alternate days absorb as well'], 'ok', 'f-s')
+    b += box(380, 160, 330, 84, ['Surgery within 2 to 4 weeks or poor', 'absorption: IV iron (IIa A); no test', 'dose needed'], 'ok', 'f-s')
+    b += arrow(530, 244, 530, 262)
+    b += box(380, 264, 330, 52, ['Rapid rise needed: add EPO (IIa A),', 'e.g. 500 IU/kg 1 to 3 days before'], 'b1', 'f-s')
+    b += box(10, 264, 330, 52, ['Routine preoperative red cell', 'transfusion: not recommended (III B)'], 'warn', 'f-s')
+    # platelets ladder
+    b += T(12, 346, 'Thrombocytopenia (platelets per µL): risk rises stepwise in cardiac surgery', 'f-h', 'start')
+    lad = [('Under 50,000', 'Severe', 'warn'), ('50,000 to 100,000', 'Moderate', 'warn'),
+           ('100,000 to 150,000', ['Mild: already linked to', 'severe bleeding after CABG'], 'b1')]
+    for i, (a, c, cls) in enumerate(lad):
+        x = 10 + i * 238
+        lines = [a] + (c if isinstance(c, list) else [c])
+        b += box(x, 358, 226, 64, lines, cls, 'f-s')
+    b += box(10, 432, 700, 44, ['No routine preoperative platelet transfusion, whatever the count (III C); non-emergency: consider delay and', 'involve a haematologist. Autologous donation: Hb over 110 g/L and transfusion risk over 10% (IIb B)'], 'b0', 'f-s')
+    return svg(486, b)
+
+
+# ---------------------------------------------------------------- c13: bleeding after cardiac surgery
+
+def d13_bleeding_steps():
+    """Bleeding after cardiac surgery: first steps in order, and when to re-open (TSRA intern guide; 2024 PBM guideline)."""
+    b = T(12, 22, 'Bleeding in ICU: first steps, in order', 'f-h', 'start')
+    seq = [['Warm to 37°C'],
+           ['Control blood pressure, agitation and shivering'],
+           ['Check the drains are patent', '(a drain that suddenly stops may be blocked: tamponade)'],
+           ['Protamine if ACT over 130 s or aPTT over 1.5 times normal'],
+           ['Products for what is abnormal: plasma, platelets, cryoprecipitate']]
+    y = 36
+    for i, s in enumerate(seq):
+        b += _d13_step(10, y, 470, 40, i + 1, s, 'b0')
+        if i < len(seq) - 1:
+            b += arrow(30, y + 40, 30, y + 48)
+        y += 48
+    b += box(494, 36, 216, 136, ['Re-open: generally over', '200 mL an hour. The trend', 'and the look of the blood', 'matter more than one', 'reading; more may be', 'tolerated after long CPB'], 'warn', 'f-s')
+    b += box(494, 182, 216, 94, ['Causes: residual heparin,', 'platelet dysfunction, and', 'surgical sites (mammary', 'bed, clips, aortotomy)'], 'b0', 'f-s')
+    y += 6
+    b += T(12, y + 10, '2024 PBM guideline, postoperative triggers when bleeding', 'f-h', 'start')
+    trig = [('Fibrinogen', ['under 1.5 g/L:', 'give fibrinogen']), ('Platelets', ['under 50 × 10⁹/L', 'and/or DDAVP on', 'antiplatelets']),
+            ('Factors', ['PCC or FFP for', 'deficiency']), ('Algorithm', ['POC-guided;', 'early re-exploration'])]
+    for i, (h, ls) in enumerate(trig):
+        x = 10 + i * 177
+        b += _d13_card(x, y + 22, 167, 90, h, ls, 'b1')
+    y += 122
+    b += T(360, y + 10, 'Pitfalls: treating numbers without bleeding; persisting with products for surgical bleeding.', 'f-s')
+    return svg(y + 22, b)
+
+
+# ---- figs_D14.py
+"""D14 second drawing pass: endocarditis (c8) and aortic valve (c4)."""
+import textwrap
+
+
+
+# ---------------------------------------------------------------- helpers
+
+def _d14_wrap(text, w, px=6.3):
+    """Wrap a string (or keep a list) to fit a box of width w in f-s text."""
+    if isinstance(text, list):
+        return text
+    n = max(10, int((w - 16) / px))
+    return textwrap.wrap(text, n)
+
+
+def _d14_bh(text, w, px=6.3, pad=14):
+    return len(_d14_wrap(text, w, px)) * 17 + pad
+
+
+def _d14_bx(x, y, w, text, cls='b0', h=None, tcls='f-s', px=6.3):
+    lines = _d14_wrap(text, w, px)
+    if h is None:
+        h = len(lines) * 17 + 14
+    return box(x, y, w, h, lines, cls, tcls)
+
+
+def _d14_head(x, y, s):
+    return T(x, y, s, 'f-h', 'start')
+
+
+def _d14_note(x, y, s, anchor='start'):
+    return T(x, y, s, 'f-s', anchor)
+
+
+def _d14_dot(x, y, cls, r=7):
+    return f'<circle cx="{x}" cy="{y}" r="{r}" class="f-{cls}"/>'
+
+
+# ---------------------------------------------------------------- c8 endocarditis
+
+def d14_ie_esc_criteria():
+    """2023 ESC modified diagnostic criteria (Table 10) and the classification."""
+    b = _d14_head(12, 22, '2023 ESC modified diagnostic criteria for infective endocarditis')
+    # major column
+    b += '<rect x="10" y="36" width="345" height="340" rx="10" class="f-warn"/>'
+    b += T(182, 58, 'Major criteria', 'f-h')
+    maj = [('1 Blood cultures', ['(a) Typical organism in 2 separate cultures:', 'oral streptococci, S. gallolyticus, HACEK,',
+                                 'S. aureus, E. faecalis (now typical)', '(b) Continuously positive: 2 or more >12 h',
+                                 'apart, or all of 3 or most of 4 or more', '(first and last at least 1 h apart)',
+                                 '(c) One culture of C. burnetii, or phase I', 'IgG titre >1:800']),
+           ('2 Imaging', ['Valvular, perivalvular or periprosthetic,', 'and foreign-material lesions on echo,',
+                          'cardiac CT, FDG-PET/CT(A) or WBC SPECT/CT', '(abnormal periprosthetic uptake counts', 'whatever the time since surgery)'])]
+    y = 82
+    for t, ls in maj:
+        b += T(24, y, t, 'f-n', 'start')
+        b += T(24, y + 18, ls, 'f-s', 'start')
+        y += 18 + len(ls) * 17 + 14
+    # minor column
+    b += '<rect x="365" y="36" width="345" height="340" rx="10" class="f-b1"/>'
+    b += T(537, 58, 'Minor criteria', 'f-h')
+    mino = [('1 Predisposition', ['High or intermediate risk heart condition, or PWID']),
+            ('2 Fever', ['Over 38°C']),
+            ('3 Embolic dissemination', ['Including lesions seen only on imaging:', 'emboli, infarcts, abscesses, spondylodiscitis,',
+                                         'mycotic aneurysms, intracranial lesions,', 'conjunctival haemorrhages, Janeway lesions']),
+            ('4 Immunological', ['Glomerulonephritis, Osler nodes, Roth spots,', 'rheumatoid factor']),
+            ('5 Microbiological', ['Positive culture not meeting a major criterion,', 'or serology of active infection'])]
+    y = 82
+    for t, ls in mino:
+        b += T(379, y, t, 'f-n', 'start')
+        b += T(379, y + 17, ls, 'f-s', 'start')
+        y += 17 + len(ls) * 17 + 8
+    # classification with dots: filled = major, open = minor
+    b += _d14_head(12, 402, 'Classification (Endocarditis Team, at admission and during follow-up)')
+    b += _d14_dot(30, 422, 'warn', 6) + T(42, 426, 'major', 'f-s', 'start') + _d14_dot(96, 422, 'b1', 6) + T(108, 426, 'minor', 'f-s', 'start')
+    cols = [('Definite', 'warn', 254, [[('M', 2)], [('M', 1), ('m', 3)], [('m', 5)]], ['2 major', '1 major + ≥3 minor', '5 minor']),
+            ('Possible', 'b1', 254, [[('M', 1), ('m', 1)], [('m', 3)]], ['1 major + 1–2 minor', '3 or 4 minor']),
+            ('Rejected', 'b0', 172, [], ['Meets neither at', 'admission, with or', 'without a firm', 'alternative diagnosis'])]
+    x = 10
+    for name, cls, w, combos, txt in cols:
+        b += f'<rect x="{x}" y="438" width="{w}" height="144" rx="10" class="f-{cls}"/>'
+        b += T(x + w / 2, 460, name, 'f-h')
+        if combos:
+            for j, combo in enumerate(combos):
+                yy = 484 + j * 32
+                xx = x + 18
+                for kind, n in combo:
+                    for _ in range(n):
+                        b += _d14_dot(xx, yy, 'warn' if kind == 'M' else 'b1', 5.5)
+                        xx += 14
+                b += T(x + 96, yy + 4, txt[j], 'f-s', 'start')
+        else:
+            b += T(x + w / 2, 488, txt, 'f-s')
+        x += w + 10
+    b += _d14_note(12, 604, 'Cerebral microbleeds are not a minor criterion. CIED-related IE is treated as right-sided IE for diagnosis.')
+    return svg(616, b)
+
+
+def d14_ie_imaging_paths():
+    """Imaging after the baseline work-up: native valve, prosthetic valve, device (ESC 2023 Figures 5 to 7)."""
+    b = _d14_head(12, 22, 'Imaging pathway by setting (ESC 2023 Figures 5 to 7, as summarised in this section)')
+    b += _d14_bx(110, 34, 500, ['Suspected IE: clinical findings, blood cultures, TTE and TOE (Class I).',
+                            'TOE in all, unless right-sided native IE with a good, conclusive TTE'], 'b1')
+    b += arrow(360, 82, 360, 98)
+    b += _d14_bx(110, 100, 500, ['Possible, or rejected with ongoing suspicion: repeat cultures if', 'negative or doubtful; repeat TTE/TOE within 5 to 7 days'], 'b0')
+    b += arrow(360, 148, 360, 166)
+    colx = [150, 340, 530]
+    heads = ['Native valve', 'Prosthetic valve', 'Cardiac device (CIED)']
+    for x, h in zip(colx, heads):
+        b += f'<rect x="{x}" y="168" width="180" height="30" rx="7" class="f-b1"/>' + T(x + 90, 188, h, 'f-h')
+    rows = [('Cardiac lesion imaging', [['Cardiac CTA (I)'], ['Cardiac CTA or', 'FDG-PET/CT(A) (I);', 'WBC SPECT/CT if no', 'PET (IIa)'],
+                                        ['PET/CT(A): pocket', 'infection, pulmonary', 'embolism']], 'b0'),
+            ('Add minor criteria', [['Brain or whole-body', 'imaging: MRI, CT,', 'PET/CT, WBC SPECT', '(IIa)'], ['As native valve (IIa)'],
+                                    ['Thoracic CT for septic', 'pulmonary emboli (IIa);', 'PET/CT(A) for lead', 'infection (IIb)']], 'b0'),
+            ('Paravalvular complication, TOE inconclusive', [['Cardiac CTA (I)'], ['Cardiac CTA (I)'], ['Not listed']], 'warn'),
+            ('Symptoms of an extracardiac complication', [['Brain and whole-body', 'imaging (I)'], ['Brain and whole-body', 'imaging (I)'], ['Not listed']], 'b0'),
+            ('No such symptoms', [['Screening brain and', 'whole-body imaging (IIb)'], ['Screening brain and', 'whole-body imaging (IIb)'], ['Not listed']], 'b0')]
+    y = 206
+    for lab, cells, cls in rows:
+        ll = _d14_wrap(lab, 150, 6.0)
+        n = max(max(len(c) for c in cells), len(ll))
+        h = n * 17 + 14
+        b += T(140, y + h / 2 - (len(ll) - 1) * 8.5 + 4, ll, 'f-s', 'end')
+        for x, c in zip(colx, cells):
+            b += box(x, y, 180, h, c, cls if c != ['Not listed'] else 'b0', 'f-s')
+        y += h + 8
+    b += _d14_note(12, y + 14, 'CTA beats TOE for abscess, pseudoaneurysm and fistula; echo beats CT for small vegetations (<10 mm) and perforation.')
+    b += _d14_note(12, y + 31, 'FDG-PET/CT: low sensitivity (about 31%) in native valve IE, so a negative scan does not exclude it.')
+    return svg(y + 44, b)
+
+
+def d14_ie_micro_path():
+    """Microbiological diagnosis (ESC 2023 section 5.3 and Figure 4)."""
+    b = _d14_head(12, 22, 'Microbiological work-up of suspected endocarditis (ESC 2023)')
+    b += _d14_bx(110, 34, 500, ['At least 3 sets of blood cultures at 30-minute intervals before antibiotics:',
+                            '10 mL each, aerobic and anaerobic bottles, peripheral vein, strict asepsis'], 'b1')
+    b += arrow(250, 82, 190, 104) + arrow(470, 82, 530, 104)
+    b += T(196, 96, 'Positive', 'f-s', 'end') + T(526, 96, 'Negative at 48 h', 'f-s', 'start')
+    b += _d14_bx(10, 106, 340, ['Gram stain: presumptive identification', 'MALDI-TOF MS: full identification the same', 'or next day'], 'ok')
+    b += arrow(180, 172, 180, 190)
+    b += _d14_bx(10, 192, 340, ['Susceptibility testing: MIC determination', 'remains the gold standard'], 'ok')
+    b += _d14_bx(370, 106, 340, ['Consult microbiology. Serology: C. burnetii,', 'Bartonella, Aspergillus, L. pneumophila,', 'Brucella, M. pneumoniae'], 'b0')
+    b += arrow(450, 172, 450, 190) + arrow(630, 172, 630, 190)
+    b += T(444, 186, 'Positive', 'f-s', 'end') + T(636, 186, 'Negative', 'f-s', 'start')
+    b += _d14_bx(370, 192, 160, ['Specific PCR'], 'b0', h=60)
+    b += _d14_bx(550, 192, 160, ['Blood and vegetation', 'PCR: bacteria, fungi,', 'mycobacteria'], 'b0', h=60)
+    b += arrow(630, 252, 630, 272) + T(636, 266, 'Negative', 'f-s', 'start')
+    b += _d14_bx(370, 274, 340, ['Non-bacterial endocarditis? Antinuclear,', 'antiphospholipid and anti-pork antibodies', '(immunology lab)'], 'warn')
+    b += _d14_bx(10, 264, 340, ['Usual reason for negative cultures: prior', 'antibiotics. Stable subacute patient: stopping', 'antibiotics and repeating cultures may be needed'], 'b1')
+    b += _d14_head(12, 372, 'At operation')
+    b += _d14_bx(10, 382, 700, ['All excised valve tissue in a sterile container without fixative or culture medium, to both pathology and microbiology:',
+                            'culture, histology and 16S/18S rRNA sequencing. Pathology of resected tissue or emboli is the gold standard;',
+                            'histology can also show a non-infective cause (neoplastic, autoimmune).'], 'ok')
+    return svg(454, b)
+
+
+def d14_ie_abx_weeks():
+    """Antibiotic duration by organism, native against prosthetic valve (ESC 2023 Recommendation Tables 7 to 9)."""
+    b = _d14_head(12, 22, 'How long to treat: ESC 2023 durations by organism')
+    x0, wk = 290, 60          # weeks scale: 6 weeks = 360 px
+    top = 58
+    b += f'<rect x="{x0}" y="38" width="16" height="11" rx="3" class="f-b0"/>' + T(x0 + 22, 48, 'Native valve', 'f-s', 'start')
+    b += f'<rect x="{x0 + 116}" y="38" width="16" height="11" rx="3" class="f-b1"/>' + T(x0 + 138, 48, 'Prosthetic valve', 'f-s', 'start')
+    b += f'<rect x="{x0 + 256}" y="40" width="16" height="7" rx="2" class="f-warn"/>' + T(x0 + 278, 48, 'Gentamicin', 'f-s', 'start')
+    rows = [('Oral streptococci, susceptible', 4, 6, 0, 0, 'Uncomplicated NVE: 2 weeks + gentamicin'),
+            ('Streptococci, resistant', 4, 6, 2, 2, 'Beta-lactam + gentamicin 2 weeks'),
+            ('MSSA or MRSA', (4, 6), 6, 0, 2, 'No aminoglycoside in NVE; PVE + rifampin'),
+            ('E. faecalis, not HLAR', 6, 6, 0, 0, 'Ampicillin + ceftriaxone, or + gentamicin 2 wk'),
+            ('E. faecalis, HLAR', 6, 6, 0, 0, 'Ampicillin + ceftriaxone; no aminoglycoside'),
+            ('HACEK', 4, 6, 0, 0, 'Ceftriaxone'),
+            ('Non-HACEK Gram-negative', 6, 6, 0, 0, 'Early surgery; beta-lactam + aminoglycoside')]
+    y = top + 12
+    gy0 = y
+    for lab, nve, pve, gn, gp, note in rows:
+        b += T(x0 - 10, y + 17, lab, '', 'end')
+        b += T(x0 - 10, y + 34, note, 'f-s', 'end')
+        for k, (v, g, cls) in enumerate([(nve, gn, 'b0'), (pve, gp, 'b1')]):
+            yy = y + 6 + k * 18
+            if isinstance(v, tuple):
+                lo, hi = v
+                b += f'<rect x="{x0}" y="{yy}" width="{lo * wk}" height="14" rx="3" class="f-{cls}"/>'
+                b += f'<rect x="{x0 + lo * wk}" y="{yy}" width="{(hi - lo) * wk}" height="14" rx="3" class="f-{cls}" style="opacity:.5"/>'
+                lab2 = f'{lo} to {hi}'
+            else:
+                hi = v
+                b += f'<rect x="{x0}" y="{yy}" width="{v * wk}" height="14" rx="3" class="f-{cls}"/>'
+                lab2 = f'{v}' + ('+' if (k == 1 and lab.startswith('MSSA')) else '')
+            if g:
+                b += f'<rect x="{x0}" y="{yy + 4}" width="{g * wk}" height="6" rx="2" class="f-warn"/>'
+            b += T(x0 + hi * wk + 6, yy + 12, lab2, 'f-n', 'start')
+        y += 50
+    # week grid
+    for k in range(7):
+        b += line(x0 + k * wk, gy0, x0 + k * wk, y, 'f-grid')
+        b += T(x0 + k * wk, y + 14, str(k), 'f-s')
+    b += T(x0 + 3 * wk, y + 30, 'weeks', 'f-s')
+    y += 44
+    notes = ['Count from the first day of effective therapy (first negative culture), not from the day of surgery.',
+             'Native valve replaced during treatment: continue the native valve regimen. New full course only if valve cultures are positive.',
+             'Staphylococcal PVE: rifampin 6 weeks or more, added after 3 to 5 days once bacteraemia has cleared.',
+             'Blood culture-negative causes run longer (e.g. Q fever over 18 months) and are off this scale.']
+    for i, s in enumerate(notes):
+        b += _d14_note(12, y + i * 17, s)
+    return svg(y + 4 * 17 + 4, b)
+
+
+def d14_ie_oral_switch():
+    """Two phases of antibiotic treatment and the POET-based switch to oral or OPAT."""
+    b = _d14_head(12, 22, 'Two phases of treatment and the switch to oral or outpatient therapy (ESC 2023)')
+    x0, dw = 40, 15.2   # px per day: 42 days = 638 px
+    yb = 92
+    b += f'<rect x="{x0}" y="{yb}" width="{14 * dw}" height="34" rx="6" class="f-warn"/>'
+    b += T(x0 + 5 * dw, yb + 22, 'Critical phase', 'f-n')
+    b += f'<rect x="{x0 + 14 * dw}" y="{yb}" width="{28 * dw}" height="34" rx="6" class="f-ok"/>'
+    b += T(x0 + 28 * dw, yb + 22, 'Continuation phase: to 4 to 6 weeks', 'f-n')
+    for d in (0, 7, 14, 21, 28, 35, 42):
+        b += line(x0 + d * dw, yb + 34, x0 + d * dw, yb + 42, 'f-l') + T(x0 + d * dw, yb + 56, f'{d // 7} wk' if d else 'Day 0', 'f-s')
+    # day 10 marker
+    xd = x0 + 10 * dw
+    b += f'<line x1="{xd}" y1="{yb - 30}" x2="{xd}" y2="{yb + 34}" class="f-cut"/>'
+    b += T(xd + 6, yb - 34, 'Day 10 and at least 7 days after surgery:', 'f-s', 'start')
+    b += T(xd + 6, yb - 18, 'earliest switch; TOE first (Class I)', 'f-s', 'start')
+    b += T(x0, yb - 34, 'Day 0 = first day of', 'f-s', 'start') + T(x0, yb - 18, 'effective therapy', 'f-s', 'start')
+    # phase contents
+    b += _d14_bx(10, 162, 340, ['Critical phase (up to 2 weeks)', 'Rapidly bactericidal i.v. combinations; cardiac',
+                            'surgery if indicated; remove infected devices;', 'drain cardiac and extracardiac abscesses'], 'warn')
+    b += _d14_bx(370, 162, 340, ['Continuation phase', 'Stable patients: OPAT or oral step-down with a',
+                             'two-drug oral combination; complicated cases', 'stay on inpatient i.v. treatment (IIa A)'], 'ok')
+    b += _d14_head(12, 268, 'Stable enough to switch? (all must be met; based on POET)')
+    crit = ['Definite IE with S. aureus, streptococci, CoNS or E. faecalis',
+            'At least 10 days of appropriate i.v. antibiotics, and 7 days after valve surgery',
+            'No fever for more than 2 days; CRP below 25% of peak or under 20 mg/L; leucocytes under 15 × 10⁹/L',
+            'Infection controlled; no other reason for i.v. therapy; BMI 40 or less; normal gut absorption',
+            'TOE shows no new surgical indication (no abscess or valve abnormality needing surgery)']
+    y = 280
+    for c in crit:
+        b += f'<rect x="10" y="{y}" width="700" height="26" rx="6" class="f-b0"/>'
+        b += T(24, y + 18, '✓', 'f-n', 'start') + T(44, y + 18, c, 'f-s', 'start')
+        y += 31
+    b += _d14_bx(10, y + 6, 700, ['Not for OPAT (Class III): highly difficult-to-treat organisms, Child–Pugh B or C cirrhosis, severe CNS',
+                              'emboli, untreated large extracardiac abscesses, valve complications or other conditions needing surgery,',
+                              'severe post-surgical complications, PWID-related IE'], 'warn')
+    b += _d14_note(12, y + 88, 'POET: oral therapy remained as effective as i.v. therapy at 5 years in selected patients; up to 20% could finish orally.')
+    return svg(y + 100, b)
+
+
+def d14_ie_root_extension():
+    """Perivalvular extension of aortic endocarditis seen at the base of the heart (arrangement schematic)."""
+    b = _d14_head(12, 22, 'Where aortic root infection spreads (base of the heart, arrangement schematic)')
+    b += T(360, 44, 'Anterior', 'f-s') + T(360, 404, 'Posterior', 'f-s')
+    # valves
+    b += '<circle cx="310" cy="96" r="30" class="f-b0"/>' + T(310, 100, 'Pulmonary', 'f-s')
+    ax, ay, r = 360, 190, 54
+    b += f'<circle cx="{ax}" cy="{ay}" r="{r}" class="f-b0"/>'
+    # three sinus lines from centre to commissures: R top, L lower-left, N lower-right
+    import math
+    for ang in (150, 30, 270):   # commissures: L/R at 150, N/R at 30, L/N at 270 (down)
+        a = math.radians(ang)
+        b += line(ax, ay, ax + r * math.cos(a), ay - r * math.sin(a), 'f-l')
+    b += T(ax, ay - 26, 'R', 'f-h') + T(ax - 26, ay + 22, 'L', 'f-h') + T(ax + 26, ay + 22, 'N', 'f-h')
+    b += '<ellipse cx="250" cy="318" rx="80" ry="50" class="f-b1"/>' + T(250, 330, 'Mitral', 'f-h')
+    b += '<ellipse cx="490" cy="318" rx="70" ry="50" class="f-b1"/>' + T(490, 330, 'Tricuspid', 'f-h')
+    # intervalvular fibrosa abscess between L/N commissure and anterior mitral annulus
+    b += '<path d="M318 228 Q340 262 316 276 Q290 284 274 270 Q300 250 318 228 Z" class="f-warn"/>'
+    b += '<path d="M330 236 Q350 270 330 290 Q312 300 296 284" class="f-warn" style="opacity:.7"/>'
+    # pseudoaneurysm bulge off N sinus
+    b += '<path d="M404 222 Q440 236 432 262 Q418 280 398 262 Q396 240 404 222 Z" class="f-lumen"/>'
+    # conduction tissue near N/R commissure towards septal tricuspid annulus
+    b += '<circle cx="414" cy="166" r="6" class="f-ah"/>'
+    b += '<path d="M414 166 Q440 210 452 272" class="f-nerve"/>'
+    # mitral posterior/lateral abscess
+    b += '<path d="M190 352 Q220 372 262 368" class="f-cut" style="stroke-width:6px"/>'
+    # labels left
+    b += T(12, 108, ['Abscess: aortic IE extends most', 'often into the mitral–aortic', 'intervalvular fibrosa (curtain)'], 'f-s', 'start')
+    b += line(190, 124, 300, 252)
+    b += T(12, 178, ['Drop lesion: infected aortic', 'valve seeds the anterior', 'mitral leaflet (TSRA)'], 'f-s', 'start')
+    b += line(176, 196, 262, 286, 'f-dash')
+    b += T(12, 388, ['Mitral abscesses: usually posterior', 'or lateral; annular calcification', 'can hide them on TOE'], 'f-s', 'start')
+    b += line(156, 380, 196, 360)
+    # labels right
+    b += T(708, 92, ['AV node and His bundle: below the', 'non-coronary and right coronary', 'cusps, near the septal tricuspid', 'leaflet. New AV block suggests', 'paravalvular extension'], 'f-s', 'end')
+    b += line(560, 150, 422, 166)
+    b += T(708, 214, ['Pseudoaneurysm: echo-free cavity', 'open to the bloodstream, expands', 'in systole; may rupture into LA,', 'aorta, LV or pericardium'], 'f-s', 'end')
+    b += line(560, 250, 436, 248)
+    b += T(708, 390, ['Fistula to the right chambers:', 'turbulent colour flow between', 'chambers on echo'], 'f-s', 'end')
+    b += line(572, 384, 470, 290, 'f-dash')
+    b += _d14_bx(10, 430, 700, 'Perivalvular extension: 10 to 30% of native valve IE, more in PVE; commoner in aortic than mitral IE. '
+             'Clues: persistent fever, new AV block, chest pain, new murmur, recurrent embolism, heart failure. Abscess, pseudoaneurysm '
+             'and fistula rarely respond to antibiotics: urgent surgery (3 to 5 days). Prosthetic dehiscence is usually at the non-coronary '
+             'sinus. Shaded: abscess in the curtain; gold line: conduction axis.', 'b1', px=6.6)
+    return svg(430 + _d14_bh('x' * 560, 700, 6.6) + 12, b)
+
+
+def d14_ie_cied_path():
+    """Cardiac device infection with endocarditis: extraction, antibiotic duration, reimplantation (ESC 2023 Figure 13)."""
+    b = _d14_head(12, 22, 'Device (CIED) endocarditis: pathway (ESC 2023 Figure 13 and Recommendation Table 20)')
+    b += _d14_bx(60, 34, 600, ['At least 3 blood culture sets, then empirical cover for MRSA and Gram-negatives (I C).',
+                           'TTE and TOE, or ICE (I B); FDG-PET/CT or WBC SPECT if no pocket signs and TOE',
+                           'negative. Apply the 2023 ESC criteria.'], 'b1')
+    b += arrow(160, 99, 100, 116) + arrow(290, 99, 280, 116) + arrow(430, 99, 460, 116) + arrow(600, 99, 640, 116)
+    cards = [(10, 170, 'Definite CIED involvement', 'Complete extraction without delay (I B)', 'warn'),
+             (190, 170, 'Probable valve IE, leads not proven', 'Extraction (IIa), weighing organism and valve surgery', 'b1'),
+             (370, 170, 'Possible IE: occult bacteraemia, no other source',
+              'Persistent Gram-positive or fungaemia: extract (IIa). Gram-negative: (IIb)', 'b1'),
+             (550, 160, 'No IE', 'Repeat tests within 7 days', 'b0')]
+    for x, w, t, s, cls in cards:
+        lines = _d14_wrap(t, w, 6.6) + _d14_wrap(s, w, 6.1)
+        b += box(x, 118, w, 124, lines, cls, 'f-s')
+    b += _d14_note(12, 262, 'Not recommended (III C): removing a device after a single positive blood culture with no other evidence of infection.')
+    b += _d14_head(12, 290, 'Extraction')
+    b += _d14_bx(10, 300, 700, ['Percutaneous, in an expert centre with on-site surgical back-up (tamponade, vein laceration);',
+                            'large vegetations may be aspirated first. Surgical extraction for large vegetations (e.g. over 20 mm)',
+                            'if aspiration fails or is unavailable, and preferred if valve surgery is indicated. Culture the hardware,',
+                            'especially the lead tip (sonication raises the yield). Never reimplant any part of the old system.'], 'b0')
+    b += _d14_head(12, 400, 'Antibiotics after extraction')
+    durs = [('No vegetations, not S. aureus', 2, 'IIb', 'ok'), ('Vegetations and/or S. aureus', 4, 'IIa', 'b1'),
+            ('Septic emboli or prosthetic valve', 6, 'IIa', 'warn')]
+    y = 410
+    for lab, w, c, cls in durs:
+        b += T(250, y + 17, lab, 'f-s', 'end')
+        b += f'<rect x="260" y="{y + 3}" width="{w * 56}" height="20" rx="4" class="f-{cls}"/>'
+        b += T(268 + w * 56, y + 18, f'{w} weeks ({c})', 'f-n', 'start')
+        y += 28
+    b += _d14_head(12, y + 22, 'Reimplantation (if still indicated): distant site, as late as possible (I C)')
+    b += _d14_bx(10, y + 32, 340, ['Blood cultures negative at least 72 h with no', 'vegetations or "ghosts"; or at least 2 weeks of', 'negative cultures if vegetations were seen'], 'ok')
+    b += _d14_bx(370, y + 32, 340, ['Pacing-dependent bridge: active-fixation lead', 'via the internal jugular vein to an external', 'pacemaker for up to 4 to 6 weeks'], 'b0')
+    return svg(y + 106, b)
+
+
+def d14_ie_relapse():
+    """Relapse or reinfection (ESC 2023 Figure 12 and section 11.1)."""
+    b = _d14_head(12, 22, 'A new episode after endocarditis: relapse or reinfection? (ESC 2023)')
+    b += _d14_bx(210, 34, 300, ['New episode: store and compare the isolates'], 'b1', h=36)
+    b += arrow(300, 70, 190, 92) + arrow(420, 70, 540, 92)
+    b += T(222, 80, 'Same species', 'f-s', 'end') + T(500, 80, 'Different species', 'f-s', 'start')
+    b += _d14_bx(60, 94, 260, ['Interval since the first episode?'], 'b0', h=36)
+    b += _d14_bx(440, 94, 200, ['Reinfection'], 'warn', h=36, tcls='f-h')
+    b += arrow(140, 130, 100, 152) + arrow(240, 130, 290, 152)
+    b += T(104, 144, 'Under 6 months', 'f-s', 'end') + T(282, 144, 'Later', 'f-s', 'start')
+    b += _d14_bx(10, 154, 180, ['Relapse'], 'b1', h=36, tcls='f-h')
+    b += _d14_bx(210, 154, 220, ['Strain typing'], 'b0', h=36)
+    b += arrow(270, 190, 240, 212) + arrow(370, 190, 420, 212)
+    b += _d14_bx(150, 214, 170, ['Same strain: relapse'], 'b1', h=34)
+    b += _d14_bx(340, 214, 220, ['Different strain: reinfection'], 'warn', h=34)
+    b += _d14_bx(10, 264, 340, ['Relapse = treatment failure (too short, wrong drug,', 'persistent focus). Further i.v. antibiotics for',
+                            '4 to 6 weeks and consider cardiac surgery;', 'resistance may have developed'], 'b1')
+    b += _d14_bx(370, 264, 340, ['Reinfection: a different organism, usually more', 'than 6 months later; a long interval suggests',
+                             'reinfection even with the same strain. Worse', 'outcome than relapse'], 'warn')
+    b += _d14_note(12, 362, 'Recurrence after IE: 2 to 9% in contemporary series.')
+    return svg(374, b)
+
+
+# ---------------------------------------------------------------- c4 aortic valve
+
+def d14_av_lflg():
+    """Discordant aortic stenosis grading: the low-flow, low-gradient pathway (ESC/EACTS 2025)."""
+    b = _d14_head(12, 22, 'Valve area 1.0 cm² or less but mean gradient under 40 mmHg: is it severe?')
+    b += _d14_bx(150, 34, 420, ['Exclude measurement error first: LVOT diameter,', 'multiwindow Doppler'], 'b1')
+    b += arrow(360, 82, 360, 98)
+    b += _d14_bx(210, 100, 300, ['Stroke volume index (SVi)'], 'b0', h=34)
+    b += arrow(300, 134, 170, 158) + arrow(420, 134, 580, 158)
+    b += T(218, 142, '35 mL/m² or less: low flow', 'f-s', 'end') + T(512, 142, 'Over 35 mL/m²: normal flow', 'f-s', 'start')
+    # low flow branch split by LVEF
+    b += _d14_bx(10, 160, 330, ['Low flow, low gradient'], 'b1', h=34, tcls='f-h')
+    b += arrow(90, 194, 90, 214) + arrow(260, 194, 260, 214)
+    b += T(96, 208, 'LVEF under 50%', 'f-s', 'start') + T(266, 208, 'LVEF 50% or more', 'f-s', 'start')
+    b += _d14_bx(10, 216, 160, ['Dobutamine stress', 'echo, or CT calcium', 'score'], 'b0', h=66)
+    b += _d14_bx(180, 216, 160, ['Recheck; confirm with', 'another modality (CT', 'calcium score)'], 'b0', h=66)
+    # DSE outcomes
+    b += arrow(60, 282, 60, 302) + arrow(130, 282, 130, 302)
+    b += _d14_bx(10, 304, 110, ['AVA stays', '1.0 or less:', 'true severe'], 'warn', h=66)
+    b += _d14_bx(124, 304, 110, ['AVA rises', 'above 1.0:', 'pseudo-severe'], 'ok', h=66)
+    b += _d14_bx(238, 304, 102, ['Confirmed', 'severe'], 'warn', h=66)
+    b += arrow(65, 370, 65, 390) + arrow(179, 370, 179, 390) + arrow(289, 370, 289, 390)
+    b += _d14_bx(10, 392, 110, ['Symptomatic:', 'intervene', '(Class I)'], 'warn', h=66)
+    b += _d14_bx(124, 392, 110, ['Guideline', 'medical', 'therapy'], 'ok', h=66)
+    b += _d14_bx(238, 392, 102, ['Symptomatic:', 'intervene', '(IIa)'], 'warn', h=66)
+    # normal flow branch
+    b += _d14_bx(380, 160, 330, ['Normal-flow, low-gradient (LVEF 50% or more)', 'Usually moderate: prognosis like moderate AS.',
+                             'Check for bradycardia or uncontrolled hypertension.', 'Surveillance unless multimodality work-up', 'clearly shows severe AS'], 'b0')
+    b += _d14_bx(380, 270, 330, ['Flow reserve on dobutamine: stroke volume rise', 'of 20% or more. A 10 to 20% rise: calculate the',
+                             'projected AVA. No reserve: higher surgical and late', 'mortality, but TAVI and SAVR still improved LVEF',
+                             'and outcomes (observational); since 2025 the', 'Class I no longer requires reserve'], 'b1')
+    b += _d14_bx(380, 402, 330, ['Discordant high gradient (40 or more, AVA over 1):', 'severe unless reversible high flow (anaemia,', 'hyperthyroidism, AV fistula)'], 'b0')
+    b += _d14_note(12, 486, 'Low flow also comes from a small cavity, AF or significant MR. CT calcium score and dobutamine echo are')
+    b += _d14_note(12, 503, 'complementary: if one is inconclusive, use the other.')
+    return svg(514, b)
+
+
+def d14_av_calcium():
+    """CT aortic valve calcium score thresholds by sex (ESC/EACTS 2025)."""
+    b = _d14_head(12, 22, 'CT aortic valve calcium score: how likely is severe AS? (Agatston units)')
+    x0, sc = 90, 0.17   # 0 to 3600 AU over 612 px
+    rows = [('Men', 1600, 2000, 3000), ('Women', 800, 1200, 1600)]
+    y = 52
+    for lab, unl, lik, spec in rows:
+        b += T(x0 - 10, y + 24, lab, 'f-h', 'end')
+        b += f'<rect x="{x0}" y="{y + 6}" width="{unl * sc}" height="28" rx="4" class="f-ok"/>'
+        b += f'<rect x="{x0 + unl * sc}" y="{y + 6}" width="{(lik - unl) * sc}" height="28" class="f-track"/>'
+        b += f'<rect x="{x0 + lik * sc}" y="{y + 6}" width="{(spec - lik) * sc}" height="28" class="f-b1"/>'
+        b += f'<rect x="{x0 + spec * sc}" y="{y + 6}" width="{(3600 - spec) * sc}" height="28" rx="4" class="f-warn"/>'
+        for v in (unl, lik, spec):
+            b += T(x0 + v * sc, y + 50, f'{v}', 'f-n')
+        b += T(x0 + unl * sc / 2, y + 25, 'Unlikely', 'f-s')
+        if (lik - unl) * sc > 50:
+            b += T(x0 + (unl + lik) * sc / 2, y + 25, 'Grey zone', 'f-s')
+        b += T(x0 + (lik + spec) * sc / 2, y + 25, 'Likely', 'f-s')
+        b += T(x0 + (spec + 3600) * sc / 2, y + 25, 'Very specific', 'f-s')
+        y += 74
+    b += _d14_note(12, y + 6, 'Likely: sensitivity and specificity about 85%. Unlikely: below 1600 in men, below 800 in women.')
+    b += _d14_bx(10, y + 18, 340, ['Use: confirms true severe AS in low-flow,', 'low-gradient stenosis; complements', 'dobutamine stress echo'], 'b1')
+    b += _d14_bx(370, y + 18, 340, ['Caution: severe AS without heavy calcium in', 'bicuspid valves, amyloidosis and fibrotic stenosis', '(post-rheumatic, radiation, inflammatory)'], 'warn')
+    return svg(y + 92, b)
+
+
+def d14_av_as_pathway():
+    """Severe AS: when to intervene and by which route (ESC/EACTS 2025 Figure 7 and Recommendation Table 4)."""
+    b = _d14_head(12, 22, 'Severe aortic stenosis: when to intervene and how (ESC/EACTS 2025)')
+    b += _d14_bx(210, 34, 300, ['Severe AS'], 'b1', h=34, tcls='f-h')
+    b += arrow(300, 68, 180, 90) + arrow(420, 68, 540, 90)
+    b += _d14_bx(10, 92, 340, ['Symptoms (absence confirmed by a normal', 'exercise test if feasible), or LVEF under 50%', 'with no other cause (Class I)'], 'warn')
+    b += _d14_bx(370, 92, 340, ['Asymptomatic, LVEF 50% or more'], 'b0', h=40)
+    b += arrow(540, 132, 540, 172)
+    b += _d14_bx(370, 174, 340, ['Any of: high-gradient AS; severe calcification', '(AVCS >2000 men, >1200 women) with Vmax rise',
+                             '0.3 m/s or more a year; BNP or NT-proBNP over 3×', 'normal for age and sex; LVEF under 55% from AS;',
+                             'sustained BP fall over 20 mmHg on exercise'], 'b0')
+    b += arrow(470, 280, 420, 300) + arrow(620, 280, 640, 300)
+    b += _d14_bx(370, 302, 160, ['Low procedural', 'risk: intervene', '(IIa)'], 'b1', h=66)
+    b += _d14_bx(550, 302, 160, ['Otherwise: close', 'active surveillance,', 'review 6-monthly'], 'ok', h=66)
+    b += arrow(180, 156, 180, 300) + arrow(370, 335, 352, 335)
+    b += _d14_bx(10, 302, 340, ['Heart Team: clinical, anatomical and', 'procedural factors, lifetime management', 'and life expectancy (I C)'], 'b1', h=66)
+    b += arrow(180, 368, 180, 400)
+    opts = [('Under 70 and low surgical risk', '(STS-PROM and EuroSCORE II <4%)', 'SAVR (I B)', 'b0'),
+            ('70 or over, tricuspid valve,', 'suitable transfemoral anatomy', 'TAVI (I A)', 'b0'),
+            ('All other bioprosthesis', 'candidates', 'SAVR or TAVI (I B)', 'b0')]
+    for i, (a1, a2, r, cls) in enumerate(opts):
+        x = 10 + i * 238
+        b += f'<rect x="{x}" y="402" width="226" height="84" rx="9" class="f-{cls}"/>'
+        b += T(x + 113, 424, a1, 'f-s') + T(x + 113, 441, a2, 'f-s') + T(x + 113, 470, r, 'f-h')
+    b += _d14_note(12, 508, 'Also: non-transfemoral TAVI if unsuitable for surgery and transfemoral access (IIa B); TAVI for bicuspid AS at')
+    b += _d14_note(12, 525, 'increased surgical risk (IIb B); balloon valvotomy as a bridge in unstable patients (IIb C). Moderate AS: SAVR')
+    b += _d14_note(12, 542, 'only at CABG, ascending aortic or other valve surgery (IIa C).')
+    return svg(554, b)
+
+
+def d14_av_tavi_savr():
+    """Factors favouring SAVR or TAVI (ESC/EACTS 2025 Figure 9)."""
+    b = _d14_head(12, 22, 'Heart Team balance: what favours SAVR and what favours TAVI (ESC/EACTS 2025)')
+    b += T(185, 50, 'Favours SAVR', 'f-h') + T(535, 50, 'Favours TAVI', 'f-h')
+    rows = [('Age', ['Under 70 years'], ['70 years or over']),
+            ('Anatomy', ['Hostile annulus or LVOT calcium; bicuspid', 'valve; annulus outside TAVI sizes; risk of',
+                         'coronary obstruction (cusp taller than', 'coronary height, shallow sinuses, bulky cusps)'],
+             ['Suitable transfemoral access; porcelain', 'aorta; intact coronary grafts; severe', 'chest deformity or scoliosis']),
+            ('Other disease', ['Other primary valve disease; complex CAD;', 'root or ascending aneurysm; septal', 'hypertrophy needing myectomy'],
+             ['Comorbidity raising surgical risk;', 'frailty; sequelae of chest radiation'])]
+    y = 62
+    for lab, left, right in rows:
+        n = max(len(left), len(right))
+        h = n * 17 + 16
+        b += box(10, y, 340, h, left, 'b1', 'f-s')
+        b += box(370, y, 340, h, right, 'ok', 'f-s')
+        b += f'<rect x="318" y="{y + h / 2 - 12}" width="84" height="24" rx="12" class="f-b0"/>' + T(360, y + h / 2 + 5, lab, 'f-n')
+        y += h + 8
+    b += _d14_bx(10, y, 700, ['Lifetime management: weigh the next step. Redo SAVR: redo surgery risk. SAVR after TAVI: valve explant risk.',
+                          'Valve-in-valve TAVI: coronary obstruction, impaired coronary access, prosthesis-patient mismatch.'], 'b0')
+    y += 56
+    b += _d14_bx(10, y, 700, ['LV thrombus and infective endocarditis are relative contraindications to TAVI. Trial advantages of TAVI are',
+                          'largely confined to transfemoral access: if iliofemoral disease precludes it, SAVR is preferred; non-transfemoral',
+                          'routes are an option for patients unsuitable for surgery.'], 'warn')
+    return svg(y + 76, b)
+
+
+def d14_av_ar_pathway():
+    """Severe aortic regurgitation: when to operate and which operation (ESC/EACTS 2025 Figure 5 and Recommendation Table 3)."""
+    b = _d14_head(12, 22, 'Severe aortic regurgitation: when and how to operate (ESC/EACTS 2025)')
+    b += _d14_bx(10, 34, 340, ['Significant root enlargement?'], 'b1', h=34)
+    b += arrow(180, 68, 180, 86)
+    b += _d14_bx(10, 88, 340, ['Good tissue, team expertise, young: valve-', 'sparing root replacement and repair; otherwise', 'Bentall. Root or ascending 45 mm or more at AV',
+                           'surgery with low risk: replace it too (IIa C)'], 'b0')
+    b += _d14_bx(370, 34, 340, ['Severe AR, eligible for surgery'], 'b1', h=34)
+    b += arrow(540, 68, 540, 86)
+    b += _d14_bx(370, 88, 340, ['Symptoms, or LVEF 50% or less, or LVESD', 'over 50 mm, or LVESDi over 25 mm/m²', '(especially BSA under 1.68 m²)'], 'warn')
+    b += T(540, 176, 'AV surgery: Class I B', 'f-h')
+    b += arrow(540, 182, 540, 198)
+    b += _d14_bx(370, 200, 340, ['If not: LVEF 55% or less, or LVESDi over', '22 mm/m², or LVESVi over 45 mL/m² (echo or',
+                             'CMR), low surgical risk'], 'b0')
+    b += T(540, 278, 'AV surgery may be considered: IIb B', 'f-h')
+    b += arrow(540, 284, 540, 300)
+    b += _d14_bx(370, 302, 340, ['Neither: follow up. Yearly if severe; 3 to 6', 'months if near thresholds or the LV is', 'enlarging (CMR useful)'], 'ok')
+    b += _d14_head(12, 220, 'Which operation')
+    b += _d14_bx(10, 230, 340, ['AV repair (IIa B): good tissue, expertise, young;', 'otherwise SAVR. Ross: good alternative in', 'selected young patients'], 'b0')
+    b += _d14_bx(10, 302, 340, ['Not eligible for surgery: TAVI may be', 'considered if anatomy suitable (IIb B, new);', 'second valve needed in about 10%'], 'b1')
+    b += _d14_note(12, 400, 'Also Class I C: AV surgery for severe AR at CABG or ascending aortic surgery. Acute severe AR (endocarditis, dissection)')
+    b += _d14_note(12, 417, 'usually needs immediate surgery. Aortic dilatation dictates surgery irrespective of AR severity.')
+    b += _d14_note(12, 440, 'Changed from 2021: repair IIb C to IIa B; low-risk asymptomatic cut-off from LVESDi >20 mm/m² (IIb C)')
+    b += _d14_note(12, 457, 'to LVESDi >22 mm/m² or LVESVi >45 mL/m² (IIb B).')
+    return svg(468, b)
+
+
+def d14_av_pvd_grades():
+    """Haemodynamic deterioration of an aortic prosthesis: two grades."""
+    b = _d14_head(12, 22, 'Haemodynamic deterioration of a prosthesis: two grades (handbook, as taught)')
+    cols = ['Mean gradient', 'Effective orifice area', 'Doppler velocity index']
+    for i, c in enumerate(cols):
+        b += T((260, 470, 630)[i], 50, c, 'f-n')
+    rows = [('Possible', 'b1', ['Rises 10 mmHg or more,', 'to 20 mmHg or more'], ['Falls 0.3 cm²', 'or 25%'], ['Falls 0.1', 'or 20%']),
+            ('Significant', 'warn', ['Rises 20 mmHg or more,', 'to 30 mmHg or more'], ['Falls 0.6 cm²', 'or 50%'], ['Falls 0.2', 'or 40%'])]
+    y = 62
+    for lab, cls, g, e, d in rows:
+        b += f'<rect x="10" y="{y}" width="700" height="58" rx="9" class="f-{cls}"/>'
+        b += T(30, y + 34, lab, 'f-h', 'start')
+        b += T(260, y + 25, g, 'f-s') + T(470, y + 25, e, 'f-s') + T(630, y + 25, d, 'f-s')
+        b += T(372, y + 34, 'with', 'f-s') + T(552, y + 34, 'or', 'f-s')
+        y += 68
+    b += _d14_bx(10, y + 4, 700, ['Before calling it deterioration, exclude prosthesis-patient mismatch, high flow, thrombosis and measurement error;',
+                              'keep haemodynamic deterioration separate from proven structural degeneration.'], 'b0')
+    return svg(y + 60, b)
+
+
+# ---- figs_D15.py
+"""D15 second drawing pass: coronary (c5), tricuspid (c2), pericardium, tumours and PE (c16),
+redo surgery (c11) and cardiac critical care (c13)."""
+
+
+
+def _d15_g(y, body, x=0):
+    return f'<g transform="translate({x} {y})">{body}</g>'
+
+
+def _d15_v(d, w, extra=''):
+    """A vessel drawn as a broad translucent stroke."""
+    return f'<path d="{d}" class="f-vessel" style="stroke-width:{w}"{extra}/>'
+
+
+def _d15_lead(x1, y1, x2, y2):
+    return f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" class="f-dash"/>'
+
+
+def _d15_pairs(rows, vmax, unit, lab_w, names, x0=0, bw=None, step=46):
+    """rows: (label, a, b). Two bars per row: a in f-warn, b in f-ok (names gives the legend)."""
+    span = (bw or (W - lab_w - 80))
+    out = ''
+    y = 0
+    for lab, a, c in rows:
+        out += T(x0 + lab_w - 10, y + 22, lab, '', 'end')
+        for k, (v, cls) in enumerate(((a, 'warn'), (c, 'ok'))):
+            yy = y + 4 + k * 19
+            out += f'<rect x="{x0 + lab_w}" y="{yy}" width="{max(2, span * v / vmax):.1f}" height="16" rx="3" class="f-{cls}"/>'
+            out += T(x0 + lab_w + span * v / vmax + 6, yy + 13, f'{v:g}{unit}', 'f-n', 'start')
+        y += step
+    leg = (f'<rect x="{x0 + 12}" y="{y + 4}" width="14" height="12" rx="2" class="f-warn"/>'
+           + T(x0 + 32, y + 15, names[0], 'f-s', 'start')
+           + f'<rect x="{x0 + 352}" y="{y + 4}" width="14" height="12" rx="2" class="f-ok"/>'
+           + T(x0 + 372, y + 15, names[1], 'f-s', 'start'))
+    return y + 24, out + leg
+
+
+# ---------------------------------------------------------------- c5 coronary
+
+def d15_subclavian_steal():
+    """Coronary-subclavian steal and what ESC 2024 PAAD recommends."""
+    b = T(12, 22, 'Coronary-subclavian steal after a left IMA graft (arrangement schematic)', 'f-h', 'start')
+    # heart and LAD
+    b += '<path d="M70 392 C70 346 130 326 196 332 C268 338 322 366 312 416 C302 458 232 466 180 458 C116 450 70 434 70 392 Z" class="f-b0"/>'
+    b += '<path d="M236 338 C244 376 254 414 270 456" class="f-l" style="stroke-width:3"/>'
+    b += T(280, 452, 'LAD', 'f-s', 'start') + T(140, 410, 'Heart', 'f-s')
+    # arch and branches
+    b += _d15_v('M160 340 C152 250 176 204 236 200 C296 196 330 236 328 300', 30)
+    b += _d15_v('M196 208 C184 160 158 118 128 74', 15)
+    b += _d15_v('M236 198 L236 74', 13)
+    b += _d15_v('M286 206 C292 166 312 142 350 138 L462 138', 15)
+    b += _d15_v('M376 138 L380 56', 9)
+    # stenosis
+    b += '<rect x="278" y="168" width="26" height="12" rx="3" class="f-warn" transform="rotate(-62 291 174)"/>'
+    # LIMA graft to LAD
+    b += '<path d="M404 140 C412 230 380 318 262 392" class="f-vessel" style="stroke-width:7;opacity:.9"/>'
+    b += '<circle cx="262" cy="392" r="5" class="f-ah"/>'
+    # reversed-flow arrows (dashed) and arm-flow arrow
+    b += arrow(330, 336, 386, 266, dash=True) + arrow(394, 64, 394, 112, dash=True)
+    b += arrow(420, 124, 470, 124)
+    b += T(128, 62, 'Innominate', 'f-s') + T(236, 62, 'Left carotid', 'f-s')
+    b += T(388, 48, 'Left vertebral', 'f-s', 'start')
+    b += T(466, 118, 'arm', 'f-s', 'end')
+    b += T(240, 266, 'Aortic arch', 'f-s')
+    b += T(14, 140, ['Stenosis proximal to the', 'vertebral and IMA origins'], 'f-s', 'start') + _d15_lead(150, 150, 280, 172)
+    b += T(424, 210, ['Left IMA', 'graft'], 'f-s', 'start')
+    b += T(350, 486, ['Arm use: blood is drawn back up the IMA graft', 'from the LAD territory and down the vertebral'], 'f-s')
+    b += T(30, 300, ['Dashed arrows:', 'reversed flow'], 'f-s', 'start')
+    # right panel
+    x = 486
+    b += box(x, 40, 224, 76, ['Suspect it: inter-arm systolic', 'difference over 10 to 15 mmHg;', 'over 25 mmHg doubles prevalence'], 'b1', 'f-s')
+    b += box(x, 124, 224, 76, ['Duplex: 50% stenosis at PSV 230', 'cm/s (ratio 2.2); 70% at 340 cm/s', '(ratio 3.0). Vertebral reversal >90%'], 'b0', 'f-s')
+    b += box(x, 208, 224, 60, ['CABG planned with ipsilateral', 'IMA: revascularise first (IIa C)'], 'ok', 'f-s')
+    b += box(x, 276, 224, 60, ['IMA already grafted and', 'myocardial ischaemia (IIa C)'], 'ok', 'f-s')
+    b += box(x, 344, 224, 76, ['Endovascular over open (IIb B).', 'Open, 5-year patency: subclavian-', 'carotid transposition 96%,', 'carotid-subclavian bypass 97%'], 'b0', 'f-s')
+    b += box(x, 428, 224, 44, 'Routine revascularisation: III C', 'warn', 'f-s')
+    return svg(526, b)
+
+
+def d15_carotid_cabg():
+    """Carotid disease at CABG: who to scan and which strategy (TSRA ch. 53)."""
+    b = box(10, 8, 700, 60, ['Carotid duplex before CABG if any one of: age 65 or more, symptomatic PAD, left main stenosis,',
+                             'hypertension, prior stroke or TIA, diabetes, smoking. Not for an isolated bruit.'], 'b1', 'f-s')
+    b += arrow(360, 68, 360, 84)
+    b += box(250, 86, 220, 30, 'Significant carotid stenosis', 'b0', 'f-h')
+    b += arrow(300, 116, 130, 142) + arrow(360, 116, 360, 142) + arrow(420, 116, 590, 142)
+    b += box(10, 144, 230, 62, ['Symptomatic (stroke or TIA):', 'stenosis 50% or more in men,', '70% or more in women'], 'warn', 'f-s')
+    b += box(250, 144, 220, 62, ['Asymptomatic, high risk: bilateral', '50% or more, or unilateral 50%', 'with contralateral occlusion'], 'warn', 'f-s')
+    b += box(480, 144, 230, 62, ['Asymptomatic, low risk'], 'b0', 'f-s')
+    b += arrow(70, 206, 70, 228) + arrow(180, 206, 180, 228) + arrow(360, 206, 360, 228) + arrow(595, 206, 595, 228)
+    b += box(10, 230, 110, 62, ['ACS:', 'concomitant', 'CEA-CABG'], 'ok', 'f-s')
+    b += box(126, 230, 114, 62, ['Stable angina:', 'concomitant or', 'staged'], 'ok', 'f-s')
+    b += box(250, 230, 220, 62, ['ACS or stable angina:', 'concomitant CEA-CABG'], 'ok', 'f-s')
+    b += box(480, 230, 230, 62, ['ACS or stable angina: CABG,', 'with or without elective CEA', 'or stenting, case by case'], 'b0', 'f-s')
+    b += box(10, 304, 345, 78, ['Staged: CEA then CABG within 6 months.', 'Reverse staged: CABG then CEA within 6 months.', 'Concomitant: CEA then CABG, same anaesthetic.', 'Unstable angina, asymptomatic carotid: heart first'], 'b0', 'f-s')
+    b += box(365, 304, 345, 78, ['Stenting needs dual antiplatelets: bleeding', 'risk fourfold if urgent CABG follows. So CEA', 'is preferred for concomitant surgery; stenting', 'can suit elective reverse-staged cases'], 'b1', 'f-s')
+    h, bb = bars([('One-vessel disease', 5, 'b1'), ('Two-vessel', 13, 'b1'), ('Three-vessel', 25, 'b1'), ('Left main', 40, 'warn')],
+                 '%', 50, 'Carotid stenosis of 70% or more by extent of coronary disease', lab_w=230)
+    b += _d15_g(392, bb)
+    y = 392 + h
+    b += T(12, y + 4, 'No randomised trial; level of evidence C. Stroke after isolated CABG about 1.3%, three quarters cardioembolic.', 'f-s', 'start')
+    return svg(y + 18, b)
+
+
+def d15_newton_favor():
+    """NEWTON-CABG and FAVOR IV-QVAS headline results."""
+    b = T(12, 22, 'NEWTON-CABG (Lancet 2025): evolocumab after CABG did not protect vein grafts', 'f-h', 'start')
+    h1, p1 = _d15_pairs([('Vein graft disease at 24 months', 21.7, 19.7),
+                     ('Totally occluded grafts', 17, 16),
+                     ('Patients with any occluded graft', 30, 28),
+                     ('LDL fall', 52, 4)], 60, '%', 260, ['Evolocumab 140 mg every 2 weeks', 'Placebo (all on a statin)'])
+    b += _d15_g(34, p1)
+    y = 34 + h1
+    b += T(12, y + 10, '782 patients with two or more vein grafts; graft disease difference 2.0% (-3.1 to 7.1), p=0.44.', 'f-s', 'start')
+    y += 40
+    b += T(12, y, 'FAVOR IV-QVAS (AHA 2025): graft by physiology at valve surgery', 'f-h', 'start')
+    h2, p2 = _d15_pairs([('Composite at 30 days', 13.4, 7.8),
+                     ('Composite at mean 30 months', 26.8, 20.7)], 60, '%', 260,
+                    ['Graft every stenosis of 50% or more', 'Graft only if angio-FFR 0.80 or less'])
+    b += _d15_g(y + 12, p2)
+    y += 12 + h2
+    b += T(12, y + 10, '793 valve patients. 30 days: RR 0.58, p=0.01 (death, MI, stroke, unplanned revascularisation, new dialysis).', 'f-s', 'start')
+    b += T(12, y + 27, '30 months: HR 0.74, p=0.04. Fewer grafts in the physiology arm. Isolated CABG not tested.', 'f-s', 'start')
+    return svg(y + 42, b)
+
+
+def d15_bacpr_timeline():
+    """BACPR 2017 standards as a timeline, with UK uptake."""
+    b = T(12, 22, 'Cardiac rehabilitation after CABG: the BACPR 2017 clock', 'f-h', 'start')
+    b += line(30, 92, 690, 92)
+    steps = [(40, 'Refer', ['in hospital or', 'within 24 h of', 'discharge (72 h', 'community)']),
+             (160, 'Contact', ['within 3', 'working days', '(NHS England:', '5 working days)']),
+             (280, 'Assess', ['within 10', 'working days of', 'referral; exercise', 'risk stratified']),
+             (400, 'Start', ['within 10 working', 'days of referral;', 'early rehab within', '2 weeks of discharge']),
+             (530, 'Programme', ['exercise 2 to 3', 'times a week;', 'contact for at', 'least 8 weeks']),
+             (650, 'Final review', ['results to GP,', 'referrer and', 'patient within 10', 'working days'])]
+    for x, h, s in steps:
+        b += f'<circle cx="{x + 10}" cy="92" r="7" class="f-ah"/>'
+        b += T(x + 10, 72, h, 'f-h')
+        b += T(x + 10, 118, s, 'f-s')
+    b += box(10, 196, 345, 60, ['Priority groups: ACS, coronary revascularisation', '(PCI and surgery), heart failure. Also valve', 'surgery, ICD or CRT, transplant or VAD'], 'b1', 'f-s')
+    b += box(365, 196, 345, 60, ['Annual data to the National Audit of Cardiac', 'Rehabilitation (NACR); national certification', '(NCP_CR); team led by a clinical coordinator'], 'b0', 'f-s')
+    h, bb = bars([('UK uptake, 2017', 51, 'warn'), ('NHS England target', 85, 'ok')], '%', 100,
+                 'Uptake of eligible patients', lab_w=230)
+    b += _d15_g(262, bb)
+    y = 262 + h
+    b += T(12, y + 4, 'Reaching 85% would prevent 50,000 premature deaths and 140,000 admissions over 10 years (NHS England).', 'f-s', 'start')
+    return svg(y + 18, b)
+
+
+# ---------------------------------------------------------------- c2 tricuspid
+
+def d15_valvectomy_outcomes():
+    """Luc 2019 meta-analysis: valvectomy against replacement for tricuspid IE in PWID."""
+    b = T(12, 22, 'Tricuspid endocarditis in drug users: valvectomy or replacement? (16 studies, 752 patients)', 'f-h', 'start')
+    h, p = _d15_pairs([('30-day mortality', 13, 7),
+                   ('Prolonged ventilation (p<0.01)', 40, 26),
+                   ('Right heart failure', 27, 11),
+                   ('Recurrent endocarditis', 7, 19),
+                   ('Delayed TVR or re-replacement', 56, 14),
+                   ('Survival at 1 year', 77, 82)], 100, '%', 250, ['Valvectomy (106)', 'Replacement (646)'], step=44)
+    b += _d15_g(34, p)
+    y = 34 + h + 14
+    b += T(12, y, 'Freedom from tricuspid reoperation', 'f-h', 'start')
+    # small line chart
+    x0, x1, yt, yb = 80, 640, y + 20, y + 170
+    b += line(x0, yb, x1, yb, 'f-grid') + line(x0, yt, x0, yb, 'f-grid')
+    for v in (40, 60, 80, 100):
+        yy = yb - (v - 40) / 60 * (yb - yt)
+        b += line(x0, yy, x1, yy, 'f-grid') + T(x0 - 8, yy + 4, f'{v}%', 'f-s', 'end')
+    pts = [('30 d', 88, 96), ('3 mo', 89, 96), ('6 mo', 89, 97), ('9 mo', 89, 97), ('1 yr', 89, 46)]
+    xs = [x0 + 40 + i * (x1 - x0 - 80) / 4 for i in range(5)]
+
+    def yv(v):
+        return yb - (v - 40) / 60 * (yb - yt)
+    for k, cls in ((1, 'f-l'), (2, 'f-cut')):
+        d = 'M' + ' L'.join(f'{xs[i]:.0f} {yv(p_[k]):.0f}' for i, p_ in enumerate(pts))
+        b += f'<path d="{d}" class="{cls}" style="stroke-width:2.5"/>'
+    for i, p_ in enumerate(pts):
+        b += T(xs[i], yb + 18, p_[0], 'f-s')
+        b += f'<circle cx="{xs[i]:.0f}" cy="{yv(p_[1]):.0f}" r="4" class="f-ok"/>'
+        b += f'<circle cx="{xs[i]:.0f}" cy="{yv(p_[2]):.0f}" r="4" class="f-warn"/>'
+    b += T(xs[4] - 10, yv(46) + 4, 'valvectomy 46%', 'f-n', 'end')
+    b += T(xs[4] - 6, yv(89) + 22, 'replacement 89%', 'f-n', 'end')
+    b += T(xs[1] + 10, yv(96) - 10, 'valvectomy 96 to 97%', 'f-s', 'start')
+    y = yb + 30
+    b += T(12, y + 6, ['Only prolonged ventilation differed significantly; delayed reoperation p=0.06. The fall after 9 months is elective TVR', 'after rehabilitation, or heart failure. Authors: valvectomy is acceptable first-stage therapy (Luc et al. 2019).'], 'f-s', 'start')
+    return svg(y + 42, b)
+
+
+def d15_angiovac_circuit():
+    """Percutaneous aspiration of a tricuspid vegetation on veno-venous bypass."""
+    b = T(12, 22, 'Aspiration of a tricuspid vegetation on veno-venous bypass (arrangement schematic)', 'f-h', 'start')
+    # torso outline
+    # heart: RA with tricuspid valve and RV
+    b += '<path d="M150 190 C120 190 112 236 130 262 C148 286 190 282 204 256 C214 232 198 192 170 190 Z" class="f-lumen"/>'
+    b += '<path d="M204 250 C240 240 290 260 286 300 C282 336 236 346 206 320 C192 306 194 276 204 260 Z" class="f-lumen"/>'
+    b += '<path d="M200 244 L212 262 M196 270 L210 262" class="f-l" style="stroke-width:3"/>'
+    b += '<path d="M208 256 C214 250 222 252 220 260 C218 268 210 266 208 262 Z" class="f-warn"/>'
+    b += T(150, 240, 'RA', 'f-s') + T(250, 300, 'RV', 'f-s')
+    # SVC / IJV and IVC / femoral
+    b += _d15_v('M160 60 L160 192', 12) + _d15_v('M160 280 L160 420', 14)
+    # drainage cannula with suction cannula inside, from neck to TV
+    b += '<path d="M160 50 L160 240 C162 250 176 256 196 256" class="f-l" style="stroke-width:5"/>'
+    b += '<path d="M160 50 L160 30 L420 30 L420 92" class="f-l" style="stroke-width:3"/>'
+    b += '<path d="M160 430 L160 452 L420 452 L420 330" class="f-l" style="stroke-width:3"/>'
+    b += '<path d="M160 420 L160 330" class="f-l" style="stroke-width:5"/>'
+    # circuit boxes
+    b += box(370, 94, 100, 60, ['AngioVac', 'filter traps', 'vegetation'], 'warn', 'f-s')
+    b += arrow(420, 154, 420, 184)
+    b += box(370, 186, 100, 60, ['Pump', '(veno-venous', 'ECMO circuit)'], 'b1', 'f-s')
+    b += arrow(420, 246, 420, 270)
+    b += box(370, 272, 100, 56, ['Reinfusion', 'cannula'], 'b0', 'f-s')
+    b += arrow(300, 30, 340, 30) + arrow(340, 452, 300, 452)
+    b += T(170, 70, ['Right internal jugular:', 'drainage cannula;', 'suction cannula passed', 'through it to the valve'], 'f-s', 'start')
+    b += T(170, 392, ['Femoral vein:', 'reinfusion'], 'f-s', 'start')
+    b += T(232, 238, 'vegetation', 'f-s', 'start')
+    # right notes
+    x = 490
+    b += box(x, 40, 220, 76, ['General anaesthesia; TOE and', 'fluoroscopy throughout; heparin', 'to ACT over 300 s'], 'b0', 'f-s')
+    b += box(x, 124, 220, 76, ['Does not treat valve dysfunction;', 'may unmask or worsen TR.', 'May bridge to later surgery'], 'warn', 'f-s')
+    b += box(x, 208, 220, 76, ['ESC 2023 IIb C: right intra-atrial', 'septic masses, high surgical risk', '(as cited by AHA 2026)'], 'b1', 'f-s')
+    b += box(x, 292, 220, 76, ['Worku, 56 procedures: success', 'no more than 82%; complications', '12% (haematoma, retroperitoneal)'], 'b0', 'f-s')
+    b += box(x, 376, 220, 60, ['Against surgery (George, 100):', 'stay 35 v 45 days (P=0.028)'], 'b0', 'f-s')
+    return svg(466, b)
+
+
+def d15_pwid_tv_pathway():
+    """Tricuspid IE in people who inject drugs: from antibiotics to addiction care (de Waha 2026)."""
+    b = box(160, 8, 400, 44, ['Tricuspid IE in a person who injects drugs: cultures, TTE,', 'TOE if equivocal or left side suspected, CT chest'], 'b1', 'f-s')
+    b += arrow(360, 52, 360, 68)
+    b += box(10, 70, 700, 62, ['Antibiotics (about 90% managed medically). Two weeks of oxacillin or cloxacillin may do for uncomplicated',
+                              'MSSA: good response, vegetation 20 mm or less, no metastatic infection, empyema, prosthesis or', 'left-sided involvement. Otherwise 4 to 6 weeks.'], 'b0', 'f-s')
+    b += arrow(360, 132, 360, 148)
+    b += box(10, 150, 700, 78, ['Surgery (ESC 2023 indications): I RV dysfunction from acute severe TR despite diuretics; II persistent vegetation',
+                               'with respiratory failure after recurrent septic emboli; III residual vegetation over 20 mm after recurrent emboli;',
+                               'IV bacteraemia or sepsis after 7 days of appropriate antibiotics; V left-heart involvement.',
+                               'Decided by the Endocarditis Team with addiction-trained clinicians.'], 'warn', 'f-s')
+    b += arrow(120, 228, 100, 248) + arrow(280, 228, 280, 248) + arrow(440, 228, 440, 248) + arrow(600, 228, 620, 248)
+    b += box(10, 250, 170, 78, ['Repair preferred:', 'lower reinfection, no', 'prosthetic material'], 'ok', 'f-s')
+    b += box(190, 250, 170, 78, ['Replacement: often', 'bioprosthesis; epicardial', 'pacing lead tunnelled', 'to a pocket'], 'b0', 'f-s')
+    b += box(370, 250, 170, 78, ['Valvectomy: selected,', 'ongoing injecting;', 'staged TVR after', 'abstinence'], 'b0', 'f-s')
+    b += box(550, 250, 160, 78, ['Percutaneous', 'debulking: poor', 'surgical candidates;', 'limited evidence'], 'b0', 'f-s')
+    b += arrow(360, 328, 360, 344)
+    b += box(60, 346, 600, 62, ['Treat the addiction: start buprenorphine or methadone (MOUD) in hospital; counselling alone is worse.',
+                               'Harm reduction if abstinence is not achieved; screen for HIV and hepatitis; vaccinate.'], 'ok', 'f-s')
+    b += T(360, 432, 'Readmission 22 to 49% by 3 months; survival under 50% at 10 years; up to 70% continue injecting after surgery.', 'f-s')
+    return svg(446, b)
+
+
+# ---------------------------------------------------------------- c16 pericardium and tumours
+
+def _d15_peric_panel(ox, radical):
+    b = ''
+    sac = (f'M{ox + 60} 70 C{ox + 30} 120 {ox + 20} 220 {ox + 40} 280 L{ox + 300} 280 '
+           f'C{ox + 330} 220 {ox + 314} 110 {ox + 262} 70 Z')
+    b += f'<path d="{sac}" class="f-b0"/>'
+    if radical:
+        # from the right phrenic round to beyond the left phrenic, plus the inferior band
+        b += (f'<path d="M{ox + 74} 72 L{ox + 262} 70 C{ox + 314} 110 {ox + 330} 220 {ox + 300} 280 '
+              f'L{ox + 74} 280 C{ox + 66} 220 {ox + 64} 120 {ox + 74} 72 Z" class="f-warn"/>')
+        b += f'<path d="M{ox + 60} 282 L{ox + 304} 282 L{ox + 304} 292 L{ox + 60} 292 Z" class="f-warn"/>'
+    else:
+        b += (f'<path d="M{ox + 74} 72 L{ox + 240} 72 C{ox + 256} 120 {ox + 264} 200 {ox + 262} 278 '
+              f'L{ox + 74} 278 C{ox + 66} 220 {ox + 64} 120 {ox + 74} 72 Z" class="f-warn"/>')
+    # heart: base up, apex down and to the patient's left (viewer's right)
+    b += (f'<path d="M{ox + 104} 112 C{ox + 80} 150 {ox + 86} 220 {ox + 140} 254 C{ox + 186} 280 {ox + 246} 276 '
+          f'{ox + 282} 264 C{ox + 282} 200 {ox + 258} 134 {ox + 206} 110 C{ox + 168} 96 {ox + 126} 98 {ox + 104} 112 Z" class="f-lumen"/>')
+    b += _d15_v(f'M{ox + 130} 104 L{ox + 130} 44', 16) + _d15_v(f'M{ox + 180} 104 L{ox + 180} 40', 18)
+    b += f'<path d="M{ox + 4} 298 C{ox + 100} 282 {ox + 240} 282 {ox + 346} 298" class="f-l" style="stroke-width:2.5"/>'
+    # phrenic nerves on the sac
+    b += f'<path d="M{ox + 72} 40 C{ox + 66} 120 {ox + 64} 200 {ox + 74} 290" class="f-nerve"/>'
+    b += f'<path d="M{ox + 238} 40 C{ox + 256} 110 {ox + 266} 200 {ox + 262} 290" class="f-nerve"/>'
+    return b
+
+
+def d15_pericardiectomy_extent():
+    """Partial anterior against radical pericardiectomy (TSRA ch. 86, ESC 2025)."""
+    b = T(12, 18, 'Pericardiectomy: how much to remove (anterior view, arrangement schematic)', 'f-h', 'start')
+    b += _d15_g(0, _d15_peric_panel(10, False)) + _d15_g(0, _d15_peric_panel(370, True))
+    b += T(180, 336, 'Partial anterior (phrenic to phrenic)', 'f-h') + T(540, 336, 'Radical (complete)', 'f-h')
+    b += T(180, 353, 'Leaves constricting tissue: avoid (ESC 2025)', 'f-s')
+    b += T(540, 353, 'Anterior, inferior and left lateral, to behind the left phrenic', 'f-s')
+    b += T(76, 36, 'right phrenic', 'f-s', 'end') + T(254, 36, 'left phrenic', 'f-s', 'start')
+    b += T(436, 36, 'right phrenic', 'f-s', 'end') + T(614, 36, 'left phrenic', 'f-s', 'start')
+    b += T(380, 316, 'Inferior strip also removed', 'f-s', 'start')
+    b += T(190, 190, 'heart', 'f-s') + T(550, 190, 'heart', 'f-s')
+    b += f'<rect x="300" y="366" width="14" height="12" rx="2" class="f-warn"/>' + T(320, 377, 'pericardium removed', 'f-s', 'start')
+    b += box(10, 390, 230, 92, ['Commonest failure: a thin', 'residual layer of epicarditis;', 'bypass can make its', 'removal safer'], 'b1', 'f-s')
+    b += box(250, 390, 220, 92, ['Bypass for dense posterior', 'adhesions, instability, calcium', 'invading myocardium or', 'concomitant surgery'], 'b0', 'f-s')
+    b += box(480, 390, 230, 92, ['Operate within 6 months of', 'symptoms: lowest mortality.', 'Waffle incisions when no', 'plane: relief often temporary'], 'b0', 'f-s')
+    h, bb = bars([('Survival at 5 years (Mayo)', 80, 'ok'), ('Survival at 10 years', 60, 'ok'), ('Survival at 15 years', 38, 'b1'),
+                  ('Operative mortality (Mayo)', 2.3, 'warn'), ('Operative mortality (ESC 2025)', (6, 10), 'warn')],
+                 '%', 100, None, lab_w=250)
+    b += _d15_g(488, bb)
+    y = 488 + h
+    b += T(12, y + 4, 'ESC 2025: under 1.5% for idiopathic constriction. Mayo: atrial arrhythmia 13%, prolonged ventilation 11%.', 'f-s', 'start')
+    return svg(y + 18, b)
+
+
+def d15_tumour_sites():
+    """Where primary cardiac tumours sit (TSRA ch. 83, as in this section)."""
+    b = T(12, 22, 'Primary cardiac tumours by site (four-chamber arrangement schematic)', 'f-h', 'start')
+    # four chambers: RA top left, LA top right, RV bottom left, LV bottom right (viewer's view)
+    b += '<path d="M240 90 C190 90 170 130 176 170 L330 170 L330 96 C300 90 270 90 240 90 Z" class="f-lumen"/>'
+    b += '<path d="M480 90 C530 90 550 130 544 170 L390 170 L390 96 C420 90 450 90 480 90 Z" class="f-lumen"/>'
+    b += '<path d="M176 190 L330 190 L330 400 C290 390 210 320 176 190 Z" class="f-lumen"/>'
+    b += '<path d="M544 190 L390 190 L390 400 C430 392 510 320 544 190 Z" class="f-lumen"/>'
+    # septa
+    b += '<rect x="330" y="94" width="60" height="76" class="f-b1"/>' + '<path d="M330 190 L390 190 L390 400 L330 400 Z" class="f-b1"/>'
+    # valves
+    b += line(184, 180, 250, 186, 'f-l') + line(320, 180, 262, 186, 'f-l')
+    b += line(400, 180, 460, 186, 'f-l') + line(536, 180, 472, 186, 'f-l')
+    b += T(250, 160, 'RA', 'f-h') + T(490, 136, 'LA', 'f-h') + T(260, 260, 'RV', 'f-h') + T(460, 260, 'LV', 'f-h')
+    # IVC
+    b += _d15_v('M184 156 C150 166 140 220 140 440', 18)
+    b += T(128, 440, 'IVC', 'f-s', 'end')
+    # myxoma on stalk at fossa ovalis (LA side) and small RA one
+    b += '<path d="M390 132 L410 132" class="f-l" style="stroke-width:3"/><ellipse cx="434" cy="134" rx="26" ry="20" class="f-warn"/>'
+    b += '<path d="M330 140 L316 142" class="f-l" style="stroke-width:3"/><ellipse cx="302" cy="144" rx="14" ry="11" class="f-warn"/>'
+    # fibroelastoma on a valve
+    b += '<circle cx="466" cy="194" r="7" class="f-warn"/>'
+    # rhabdomyomas (multiple, ventricular)
+    for cx, cy in ((450, 300), (480, 250), (270, 330)):
+        b += f'<circle cx="{cx}" cy="{cy}" r="9" class="f-warn"/>'
+    # fibroma in the ventricular septum
+    b += '<ellipse cx="360" cy="300" rx="22" ry="30" class="f-warn"/>'
+    # sarcoma in RA
+    b += '<path d="M198 112 C212 102 232 108 228 124 C224 138 204 136 198 124 Z" class="f-warn"/>'
+    # labels
+    b += T(566, 92, ['Myxoma: 75% left atrium,', '18% right; stalk at the', 'fossa ovalis'], 'f-s', 'start') + _d15_lead(564, 100, 458, 128)
+    b += T(566, 196, ['Papillary fibroelastoma:', 'on valves, 1 to 2 cm'], 'f-s', 'start') + _d15_lead(564, 200, 474, 194)
+    b += T(566, 288, ['Rhabdomyoma: ventricular,', 'multiple; children; tuberous', 'sclerosis in over half'], 'f-s', 'start') + _d15_lead(564, 294, 490, 254)
+    b += T(452, 430, ['Fibroma: solitary, ventricular septum,', 'calcified; heart block'], 'f-s', 'start') + _d15_lead(450, 434, 370, 326)
+    b += T(14, 70, ['Sarcoma: usually right', 'atrium (angiosarcoma 30%', 'of malignant primaries)'], 'f-s', 'start') + _d15_lead(120, 104, 198, 116)
+    b += T(154, 404, ['Renal cell carcinoma', 'up the IVC into the', 'right atrium: resectable'], 'f-s', 'start')
+    b += T(14, 200, ['Lipoma: encapsulated,', 'often right atrium'], 'f-s', 'start') + _d15_lead(140, 196, 186, 150)
+    b += box(10, 470, 700, 62, ['Operate: bicaval cannulation for atrial tumours; arrest before handling (emboli); no vent through a pulmonary vein;',
+                               'excise en bloc with the stalk and its septal base; patch a large septal defect so the tricuspid annulus is not distorted.'], 'b1', 'f-s')
+    return svg(542, b)
+
+
+def d15_recurrent_pericarditis():
+    """ESC 2025 treatment ladder for acute and recurrent pericarditis."""
+    b = T(12, 22, 'Recurrent pericarditis: the ESC 2025 treatment ladder', 'f-h', 'start')
+    steps = [
+        ('1', ['Aspirin 750 to 1000 mg or ibuprofen 600 to 800 mg three times daily, with a PPI (I B),',
+               'plus colchicine (I A): 0.5 mg once daily under 70 kg, otherwise twice; 6 months or more for recurrence'], 'ok'),
+        ('2', ['Low to medium dose steroid (prednisone 0.2 to 0.5 mg/kg/day, slow taper) if the above are',
+               'contraindicated or fail (IIa C). Steroid as first choice without a specific indication: III C'], 'b1'),
+        ('3', ['Anti-IL-1 (anakinra 1 to 2 mg/kg/day for 6 months or more; rilonacept): recurrence with raised CRP',
+               'after first-line drugs and steroids (I A); inflammation on CMR whatever the CRP (IIa C)'], 'b1'),
+        ('4', ['Hydroxychloroquine for refractory recurrence (IIb B)'], 'b0'),
+        ('5', ['Pericardiectomy: only a "possible" indication, when refractory to best medical and interventional care'], 'warn'),
+    ]
+    y = 40
+    for i, (n, s, cls) in enumerate(steps):
+        x = 10 + i * 18
+        hgt = 26 + 17 * len(s)
+        b += f'<rect x="{x}" y="{y}" width="{700 - i * 18}" height="{hgt}" rx="9" class="f-{cls}"/>'
+        b += T(x + 18, y + hgt / 2 + 9, n, 'f-big')
+        b += T(x + 44, y + 22, s, 'f-s', 'start')
+        y += hgt + 12
+    b += box(10, y + 4, 345, 78, ['Recurrence 20 to 30% without colchicine.', 'Restrict exercise until symptoms settle and', 'markers are normal (at least 1 month).', 'Beta-blocker if rest rate over 75 (IIa C)'], 'b0', 'f-s')
+    b += box(365, y + 4, 345, 78, ['Post-pericardiotomy syndrome: colchicine from', '48 to 72 h before surgery for 1 month (IIa A).', 'Afterwards: recurrence under 4%, tamponade', 'under 2%, constriction about 3%'], 'b1', 'f-s')
+    return svg(y + 94, b)
+
+
+# ---------------------------------------------------------------- c11 redo
+
+def d15_redo_bypass_plan():
+    """Redo sternotomy: when to go on bypass before the saw (Slisatkorn 2022; Bakaeen 2021)."""
+    b = box(110, 8, 500, 46, ['Every redo: contrast CT chest, coronary and graft angiography,', 'the old operation note'], 'b1', 'f-s')
+    b += arrow(360, 54, 360, 70)
+    b += box(170, 72, 380, 30, 'High risk on CT or clinically?', 'b0', 'f-h')
+    b += arrow(250, 102, 180, 124) + arrow(470, 102, 540, 124)
+    b += box(10, 126, 345, 112, ['High risk: aorta under 10 mm from the sternum,', 'structures stuck to the sternum, aneurysm', 'against it; also functional TR, instability,', 'EF under 25%, previous mediastinitis'], 'warn', 'f-s')
+    b += box(365, 126, 345, 112, ['Low risk on imaging', 'CABG or mitral surgery at low risk:', 'late bypass (after sternotomy)'], 'ok', 'f-s')
+    b += arrow(182, 238, 182, 254) + arrow(537, 238, 537, 254)
+    b += box(10, 256, 345, 112, ['Peripheral cannulation and bypass before the', 'saw (or an endovascular adjunct); cost: early', 'heparin, longer bypass, more bleeding. Severe', 'AR: vent the LV apex by small left anterior', 'thoracotomy'], 'b0', 'f-s')
+    b += box(365, 256, 345, 112, ['Standard re-entry: pads on, blood in theatre,', 'oscillating saw; heparin only after the', 'dissection is finished'], 'b0', 'f-s')
+    b += box(10, 380, 345, 96, ['Artery: axillary with an 8 mm side graft if arch', 'work or arrest is planned; femoral if young,', 'clean descending aorta or emergency (not with', 'descending thrombus or atheroma)'], 'b1', 'f-s')
+    b += box(365, 380, 345, 96, ['Vein: right femoral, tip in the mid right atrium', 'on TOE; add a superior caval cannula for', 'mitral or tricuspid work or poor drainage.', 'Prepare both groins'], 'b1', 'f-s')
+    h, bb = bars([('Operative mortality, early bypass', 4.1, 'b1'), ('Operative mortality, late bypass', 3.5, 'b1'),
+                  ('Major re-entry or dissection injury', 2.8, 'warn')], '%', 6,
+                 'Bakaeen 2021: 6,627 redos with CT (563 high risk, 755 early bypass)', lab_w=280)
+    b += _d15_g(482, bb)
+    y = 482 + h
+    b += T(12, y + 4, 'Early against late bypass: no significant difference in mortality. From the news summary; paper not opened.', 'f-s', 'start')
+    return svg(y + 18, b)
+
+
+def d15_reentry_injury():
+    """What to do when the saw enters a structure, and what it costs."""
+    b = box(140, 8, 440, 46, ['Structure entered at re-entry: do not spread the retractor;', 'pack and compress, push the sternal edges together'], 'warn', 'f-s')
+    for x in (95, 270, 450, 625):
+        b += arrow(360, 54, x, 76)
+    b += box(10, 78, 170, 150, ['Aorta', 'Full heparin; femoral', 'artery and vein; bypass;', 'cool to 25 C and lower', 'the flow, then open', 'the sternum; repair', 'decompressed'], 'b0', 'f-s')
+    b += box(186, 78, 170, 150, ['Aneurysm', 'Cool to 20 to 22 C;', 'circulatory arrest with', 'brain perfusion; then', 'open the whole', 'sternum'], 'b0', 'f-s')
+    b += box(362, 78, 170, 150, ['Right atrium or', 'ventricle', 'Local suture control;', 'if that fails, clamp', 'and arrest'], 'b0', 'f-s')
+    b += box(538, 78, 172, 150, ['Mammary graft', 'divided', 'Bypass at once;', 'perfuse the graft or', 'its territory; regraft'], 'b0', 'f-s')
+    b += box(10, 238, 700, 34, 'Air: head down, carbon dioxide in the field, vent the aorta. Right ventricle is the commonest structure injured.', 'b1', 'f-s')
+    h, bb = bars([('Injury rate, Hamid', 2.7, 'b1'), ('Injury rate, Park', 9.0, 'b1'),
+                  ('Mortality with injury, Hamid', 26, 'warn'), ('Mortality without, Hamid', 9, 'ok'),
+                  ('Mortality with injury, Park', 18.6, 'warn'), ('Mortality without, Park', 6.5, 'ok'),
+                  ('Patent LIMA injured (TSRA ch. 62)', 50, 'warn')], '%', 60,
+                 'What re-entry injury costs', lab_w=260)
+    b += _d15_g(280, bb)
+    y = 280 + h
+    b += T(12, y + 4, 'Up to nearly 50% mortality with exsanguinating bleeding. Risk factors: more previous operations, chest radiotherapy.', 'f-s', 'start')
+    return svg(y + 18, b)
+
+
+# ---------------------------------------------------------------- c13 critical care
+
+def d15_arrest_postcardiac():
+    """Arrest after cardiac surgery, as the TSRA Primer chapter gives it (with the atropine correction)."""
+    b = box(110, 8, 500, 62, ['Arrest after cardiac surgery: first minute', 'Confirm no pulse; reconnect pacing wires; pause the pacemaker to unmask VF;',
+                             'hand-ventilate to exclude the ventilator; check drains and the chest film'], 'b1', 'f-s')
+    for x in (125, 360, 595):
+        b += arrow(360, 70, x, 92)
+    b += box(10, 94, 230, 128, ['VF or pulseless VT', 'Up to three stacked shocks', '(200 J biphasic), then', 'amiodarone 300 mg;', 'compressions and a shock', 'every 2 min until chest open'], 'warn', 'f-s')
+    b += box(245, 94, 230, 128, ['Asystole or severe', 'bradycardia', 'Pace via epicardial wires:', 'DDD 80 to 100, maximum', 'output. Atropine: not', 'recommended (III, STS 2017)'], 'warn', 'f-s')
+    b += box(480, 94, 230, 128, ['Pulseless electrical', 'activity', 'Tamponade, tension', 'pneumothorax, graft', 'occlusion, hypovolaemia;', 'compress while opening'], 'warn', 'f-s')
+    for x in (125, 360, 595):
+        b += arrow(x, 222, 360, 244)
+    b += box(110, 246, 500, 62, ['Resternotomy ready within 5 minutes: routine within 10 days of surgery,', 'a senior decision later. Small set: scalpel, wire cutters, heavy needle', 'holder, retractor, sucker'], 'b0', 'f-s')
+    b += arrow(360, 308, 360, 324)
+    b += box(110, 326, 500, 46, ['Internal massage: protect the grafts; do not lift the heart after mitral', 'replacement. Internal paddles 10 to 20 J, off distal anastomoses'], 'ok', 'f-s')
+    return svg(382, b)
+
+
+def d15_rv_failure():
+    """Acute right heart failure after surgery: the spiral and the levers (TSRA Primer)."""
+    b = T(12, 22, 'Acute right ventricular failure: the spiral and where to break it (arrangement schematic)', 'f-h', 'start')
+    cx, cy, r = 200, 204, 132
+    nodes = [(-90, ['RV afterload up or', 'ischaemia']), (-18, ['RV dilates;', 'very afterload', 'sensitive']),
+             (54, ['Septum pushed', 'left']), (126, ['LV underfills;', 'output falls']), (198, ['Pressure falls;', 'RV coronary', 'flow falls'])]
+    import math
+    pos = []
+    for ang, s in nodes:
+        a = math.radians(ang)
+        pos.append((cx + r * math.cos(a), cy + r * math.sin(a), s))
+    def _exit(x, y, s, dx, dy):
+        hh = (18 + 17 * len(s)) / 2 + 4
+        t = min(66 / abs(dx) if dx else 9e9, hh / abs(dy) if dy else 9e9)
+        return x + dx * t, y + dy * t
+    for i in range(5):
+        x1, y1, s1 = pos[i]
+        x2, y2, s2 = pos[(i + 1) % 5]
+        dx, dy = x2 - x1, y2 - y1
+        ax, ay = _exit(x1, y1, s1, dx, dy)
+        bx, by = _exit(x2, y2, s2, -dx, -dy)
+        b += arrow(ax, ay, bx, by)
+    for x, y, s in pos:
+        hh = 18 + 17 * len(s)
+        b += box(x - 62, y - hh / 2, 124, hh, s, 'warn', 'f-s')
+    b += T(cx, cy + 4, 'spiral', 'f-h')
+    x = 400
+    rows = [('Preload', 'Small boluses only if empty; otherwise offload (diuresis, filtration); lower PEEP', 'b0'),
+            ('Afterload', 'Correct hypoxia, hypercapnia, acidosis; inhaled nitric oxide or prostacyclin', 'b0'),
+            ('Contractility', 'Exclude ischaemia first; milrinone or dobutamine', 'b0'),
+            ('Perfusion', 'Add a vasopressor to keep coronary perfusion', 'b0'),
+            ('Mechanical', 'Right-sided support; VA-ECMO if the left side fails too', 'b1')]
+    y = 44
+    for h, s, cls in rows:
+        b += f'<rect x="{x}" y="{y}" width="310" height="58" rx="9" class="f-{cls}"/>'
+        b += T(x + 12, y + 20, h, 'f-h', 'start')
+        words = s.split(' ')
+        l1, l2 = '', ''
+        for w_ in words:
+            if len(l1) + len(w_) < 46 and not l2:
+                l1 += (' ' if l1 else '') + w_
+            else:
+                l2 += (' ' if l2 else '') + w_
+        b += T(x + 12, y + 37, [l1, l2] if l2 else [l1], 'f-s', 'start')
+        y += 64
+    b += box(10, 372, 700, 62, ['Recognise: TAPSE under 1.7 cm, S′ under 10 cm/s, fractional area change under 35% (all can fall after surgery',
+                               'without true dysfunction); high CVP with a normal wedge. Causes: ischaemia, pulmonary hypertensive crisis,',
+                               'protamine, PE, tamponade, post-cardiotomy, after LVAD (at least 20%)'], 'b1', 'f-s')
+    return svg(444, b)
+
+
+def d15_defib_energies():
+    """Synchronised and unsynchronised shocks and their energies (TSRA Primer)."""
+    h, bb = bars([('AF (synchronised)', (120, 200), 'b1'), ('Flutter (synchronised)', (50, 100), 'b1'),
+                  ('VT with a pulse (synchronised)', 100, 'b1'), ('VF or pulseless VT (unsynchronised)', (120, 200), 'warn'),
+                  ('Internal paddles', (10, 20), 'ok')], ' J', 220, 'Shock energy, biphasic', lab_w=260)
+    b = bb
+    y = h
+    b += box(10, y, 345, 78, ['Defibrillation: unsynchronised, for VF.', 'Cardioversion: synchronised to the R wave for', 'AF, flutter, re-entry and VT with a pulse; an', 'unsynchronised shock can cause VF'], 'b0', 'f-s')
+    b += box(365, y, 345, 78, ['Pads front and back, or right of the sternum', 'and apex; move them after a failed shock.', 'Failure: poor contact, high potassium or other', 'electrolyte problem, a cold heart'], 'b1', 'f-s')
+    return svg(y + 88, b)
+
+
+# ---- figs_D16.py
+"""D16 drawings: adult congenital (g3), core principles (g5), venous/single ventricle/coronary (g12), g6.
+Second drawing pass, 25 November 2026. Every label comes from the ST4 notes or TSRA text on disk."""
+
+
+
+# ------------------------------------------------------------------ helpers
+
+def _d16_d16_num(x, y, n):
+    return f'<circle cx="{x}" cy="{y}" r="10" class="f-b1"/>' + T(x, y + 5, str(n), 'f-n')
+
+
+def _d16_d16_card(x, y, w, h, head, lines, cls='b0'):
+    b = f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="9" class="f-{cls}"/>'
+    b += T(x + 10, y + 20, head, 'f-h', 'start')
+    b += T(x + 10, y + 40, lines, 'f-s', 'start')
+    return b
+
+
+def _d16_d16_tube(x1, y1, x2, y2, cls='f-b0'):
+    x, y = min(x1, x2), min(y1, y2)
+    return f'<rect x="{x}" y="{y}" width="{abs(x2 - x1)}" height="{abs(y2 - y1)}" rx="6" class="{cls}"/>'
+
+
+# ================================================================== g3
+
+def d16_ap_classification():
+    b = T(12, 20, 'ACHD AP classification: anatomic class (rows) by physiological stage (columns)', 'f-h', 'start')
+    x0, cw = 196, 128
+    heads = [('A', ['No symptoms or', 'sequelae; normal', 'exercise and PA', 'pressure'], 'ok'),
+             ('B', ['Mild valve or', 'ventricle change;', 'arrhythmia stable', 'for 12 months;', 'small shunt'], 'b0'),
+             ('C', ['BNP or NT-proBNP', '2x ULN or more;', 'significant shunt;', 'SpO2 86 to 92%;', 'moderate valve or', 'ventricle disease;', 'low-risk PAH'], 'b1'),
+             ('D', ['HF admission or', 'endocarditis in the', 'past year (new);', 'Eisenmenger;', 'NYHA III to IV;', 'SpO2 85% or less'], 'warn')]
+    for i, (s, ls, cls) in enumerate(heads):
+        x = x0 + i * cw
+        b += f'<rect x="{x + 3}" y="34" width="{cw - 6}" height="150" rx="9" class="f-{cls}"/>'
+        b += T(x + cw / 2, 58, s, 'f-big')
+        b += T(x + cw / 2, 80, ls, 'f-s')
+    rows = [('I Simple', ['Secundum ASD, PDA,', 'VSD, pulmonary stenosis']),
+            ('II Moderate', ['AAOCA, ALCAPA, APVC,', 'AVSD, coarctation, Ebstein,', 'TOF, TGA after ASO']),
+            ('III Great complexity', ['Fontan, single ventricle,', 'CCTGA, atrial switch,', 'Rastelli, truncus, DORV,', 'pulmonary atresia'])]
+    y0, rh = 192, 94
+    for j, (name, ls) in enumerate(rows):
+        y = y0 + j * rh
+        b += f'<rect x="10" y="{y + 3}" width="180" height="{rh - 6}" rx="9" class="f-b0"/>'
+        b += T(20, y + 21, name, 'f-h', 'start') + T(20, y + 37, ls, 'f-s', 'start')
+        for i in range(4):
+            x = x0 + i * cw
+            b += f'<rect x="{x + 3}" y="{y + 3}" width="{cw - 6}" height="{rh - 6}" rx="7" class="f-track"/>'
+            code = ['I', 'II', 'III'][j] + 'ABCD'[i]
+            b += T(x + cw / 2, y + 26, code, 'f-n')
+    # worked example: repaired coarctation
+    y = y0 + rh
+    b += f'<rect x="{x0 + 8}" y="{y + 34}" width="{cw - 16}" height="40" rx="6" class="f-ok"/>'
+    b += T(x0 + cw / 2, y + 50, ['coarctation,', 'repaired, well'], 'f-s')
+    b += f'<rect x="{x0 + 2 * cw + 8}" y="{y + 34}" width="{cw - 16}" height="40" rx="6" class="f-warn"/>'
+    b += T(x0 + 2.5 * cw, y + 50, ['same + moderate', 'LV dysfunction'], 'f-s')
+    b += f'<path d="M{x0 + cw - 6} {y + 54} L{x0 + 2 * cw + 4} {y + 54}" class="f-l" marker-end="url(#ah)" stroke-dasharray="5 4"/>'
+    # III A: never for these
+    y = y0 + 2 * rh
+    b += T(x0 + cw / 2, y + 46, ['Never A: Fontan,', 'systemic RV,', 'truncus'], 'f-s')
+    b += box(10, 478, 700, 62, ['Classify by the HIGHEST relevant feature; with several lesions the most complex sets the class. Higher AP class means',
+                                'higher short- and long-term mortality, worse surgical outcomes and more pregnancy complications. NT-proBNP,',
+                                'HF admissions and recent endocarditis were added in 2025. Follow-up intervals by stage are suggestions only.'], 'b1', 'f-s')
+    return svg(550, b)
+
+
+def d16_pvr_closure():
+    b = T(12, 20, 'Closing a shunt in adults by PVR (ACC/AHA 2025): class of recommendation', 'f-h', 'start')
+    x0, x1, vmax = 120, 690, 12.0
+
+    def X(v):
+        return x0 + (x1 - x0) * v / vmax
+    # axis
+    for v in range(0, 13, 1):
+        b += line(X(v), 52, X(v), 300, 'f-grid')
+        b += T(X(v), 318, str(v), 'f-s')
+    b += T((x0 + x1) / 2, 338, 'PVR, Wood units (on PAH therapy where stated)', 'f-s')
+    rows = [('ASD', [(0, 2, 'ok', '1'), (2, 5, 'b1', '2a'), (5, 8, 'b1', '2a / 2b*')], 'Eisenmenger: harm'),
+            ('VSD', [(0, 2, 'ok', '1'), (2, 5, 'b1', '2a'), (5, 8, 'b0', '2b*'), (10, 12, 'warn', 'harm')], ''),
+            ('AVSD', [(0, 2, 'ok', '1'), (2, 5, 'b1', '2a'), (10, 12, 'warn', 'harm')], ''),
+            ('PDA', [(0, 2, 'ok', '1'), (2, 5, 'b1', '2a'), (5, 8, 'b0', '2b*'), (10, 12, 'warn', 'harm')], '')]
+    for j, (lab, segs, note) in enumerate(rows):
+        y = 60 + j * 60
+        b += T(x0 - 12, y + 26, lab, 'f-h', 'end')
+        b += f'<rect x="{X(0)}" y="{y + 6}" width="{X(12) - X(0)}" height="30" rx="5" class="f-track"/>'
+        for lo, hi, cls, t in segs:
+            b += f'<rect x="{X(lo) + 1}" y="{y + 6}" width="{X(hi) - X(lo) - 2}" height="30" rx="5" class="f-{cls}"/>'
+            b += T((X(lo) + X(hi)) / 2, y + 26, t, 'f-n')
+        if note:
+            b += T(X(12) - 6, y + 26, note, 'f-s', 'end')
+    b += T(X(9), 54, 'grey: not stated', 'f-s')
+    b += box(10, 352, 700, 44, ['Applies to a haemodynamically significant shunt: Qp:Qs 1.5 or more and/or enlargement of the chamber distal to it',
+                                '(RV for ASD; LV for VSD and PDA). ASD rules assume no significant left heart disease (LA pressure 15 or more).'], 'b0', 'f-s')
+    b += box(10, 404, 700, 78, ['* 5 to 8 WU: close only if PVR falls below 5 on targeted PAH therapy (repeat catheter; VSD: at least',
+                                '3 months of therapy, no hypoxaemia, specialist centres; flap patch or fenestration possible).',
+                                'ASD still 5 to 8 on therapy: 2b. PAH = mean PA pressure over 20 mmHg, PVR over 2 WU, wedge 15 or less.',
+                                'Replaces the 2018 rule (PA systolic 50% of systemic and/or PVR over 1/3 systemic).'], 'b1', 'f-s')
+    return svg(492, b)
+
+
+def d16_achd_late_problems():
+    b = T(12, 20, 'Adult congenital surgery: what comes back, lesion by lesion (TSRA ch. 113)', 'f-h', 'start')
+    b += box(10, 32, 700, 62, ['Before any reoperation: is sternal re-entry safe (several previous operations)? Plan myocardial protection and bypass.',
+                               'Hazards: abnormal relationships, veno-venous fistulas, septal defects, left SVC, anomalous coronaries, calcified',
+                               'homografts and conduits, old devices and stents. Duplex the groins and neck: old catheters thrombose vessels.'], 'warn', 'f-s')
+    cards = [('VSD', ['Aortic valve prolapse,', 'endocarditis (lifelong', 'follow-up); late large', 'VSD: PVR rises, then', 'Eisenmenger']),
+             ('ASD', ['Commonest in ACHD.', 'Fatigue, dyspnoea,', 'palpitations, atrial', 'arrhythmia; sinus', 'venosus: PAPVR in 90%']),
+             ('Fontan', ['Arrhythmia; giant RA', 'compresses pulmonary', 'veins; PE; PLE (10%),', 'plastic bronchitis;', 'AV valve regurgitation']),
+             ('Coarctation', ['Patch pseudoaneurysm;', 'aneurysm after stent', '(serial MRI); hyper-', 'tension, intracranial', 'aneurysm, early CAD']),
+             ('RVOT / Fallot', ['PS or PR commonest;', 'transannular patch:', 'PR, RV volume load,', 'arrhythmia, sudden', 'death (6%)']),
+             ('Ebstein', ['Young adult: exercise', 'intolerance, arrhythmia,', 'fatigue; sudden death', 'mostly with an', 'accessory pathway']),
+             ('LVOT obstruction', ['Subvalvar: recurs in', '20%; jet causes AR;', 'tunnel needs Konno;', 'Shone: pacing and', 'Maze often needed']),
+             ('Transposition', ['Atrial switch: baffle', 'stenosis or leak, flutter', '20%, sinus node or', 'junctional in half.', 'ASO: AR under 5%'])]
+    for i, (h, ls) in enumerate(cards):
+        x = 10 + (i % 4) * 177
+        y = 104 + (i // 4) * 132
+        b += _d16_d16_card(x, y, 168, 124, h, ls, 'b0' if i % 2 else 'b1')
+    b += T(360, 384, 'After any repair: lifelong ACHD follow-up; early referral for MCS or transplant when deteriorating.', 'f-s')
+    return svg(394, b)
+
+
+def d16_adult_fontan_map():
+    b = T(12, 20, 'Adult Fontan: where it fails and what the 2025 guideline asks (arrangement schematic, front view)', 'f-h', 'start')
+    # lungs and pulmonary arteries
+    b += '<ellipse cx="58" cy="112" rx="46" ry="58" class="f-b0"/>' + '<ellipse cx="402" cy="112" rx="46" ry="58" class="f-b0"/>'
+    b += T(58, 90, 'R lung', 'f-s') + T(402, 90, 'L lung', 'f-s')
+    b += _d16_d16_tube(96, 102, 364, 122, 'f-b1') + T(300, 140, 'PAs', 'f-s')
+    # SVC and the extracardiac pathway from the IVC
+    b += _d16_d16_tube(176, 40, 200, 102) + T(170, 54, 'SVC', 'f-s', 'end') + arrow(188, 46, 188, 98)
+    b += '<rect x="174" y="122" width="28" height="206" rx="8" class="f-stent"/>'
+    b += _d16_d16_tube(178, 328, 198, 370) + T(206, 364, 'IVC', 'f-s', 'start')
+    b += arrow(188, 322, 188, 128)
+    b += T(166, 200, ['Fontan', 'pathway'], 'f-s', 'end')
+    # liver with hepatic veins into the IVC
+    b += '<path d="M40 356 C46 330 120 326 172 340 L172 392 C130 402 70 400 44 388 Z" class="f-b0"/>' + T(100, 372, 'Liver', 'f-s')
+    # heart to the right of the pathway
+    b += '<rect x="240" y="166" width="120" height="56" rx="18" class="f-b0"/>' + T(300, 199, 'Common atrium', 'f-s')
+    b += line(252, 230, 348, 230) + T(300, 246, 'AV valve', 'f-s')
+    b += '<path d="M244 254 L356 254 L346 306 C336 326 264 326 254 306 Z" class="f-b0"/>' + T(300, 284, 'Single ventricle', 'f-s')
+    b += _d16_d16_tube(356, 262, 430, 278, 'f-b1') + T(398, 296, 'Aorta', 'f-s')
+    b += '<path d="M420 262 C432 230 430 196 414 168" class="f-dash"/>' + T(436, 214, 'APCs', 'f-s', 'start')
+    b += '<rect x="240" y="346" width="140" height="40" rx="14" class="f-b0"/>' + T(310, 371, 'Gut, lymphatics', 'f-s')
+    for x, y, n in [(214, 160, 1), (214, 276, 2), (374, 194, 3), (246, 318, 4), (440, 168, 5), (40, 348, 6), (390, 366, 7)]:
+        b += _d16_d16_num(x, y, n)
+    notes = [(1, 'Pathway stenosis', ['Size down 25% or pullback gradient', '1 mmHg or more: stent (2a)']),
+             (2, 'Thrombus', ['TTE cannot exclude it: TOE, CMR,', 'or CT with dual injection']),
+             (3, 'Atrial arrhythmia', ['Over 60% of adults; TOE before', 'any cardioversion; rhythm control']),
+             (4, 'Pacing', ['Atrial-based; high-grade AV block:', 'epicardial apical lead']),
+             (5, 'Collaterals (APCs)', ['Volume load, low output:', 'closure can be useful (2a)']),
+             (6, 'Liver (FALD)', ['Imaging and AFP at least yearly;', 'cirrhosis: imaging 6-monthly']),
+             (7, 'PLE, lymphatics', ['Lymphopenia, low albumin; stool', 'alpha-1 antitrypsin clearance'])]
+    for k, (n, h, ls) in enumerate(notes):
+        y = 36 + k * 56
+        b += _d16_d16_num(484, y + 6, n)
+        b += T(502, y + 11, h, 'f-h', 'start') + T(502, y + 28, ls, 'f-s', 'start')
+    b += box(10, 432, 700, 62, ['Anticoagulate: sustained arrhythmia over 30 s, thrombus or thromboembolism, stroke, atriopulmonary Fontan (1).',
+                                'Otherwise aspirin or anticoagulation (1). Refer to heart failure/transplant BEFORE multiorgan dysfunction.',
+                                'Atriopulmonary Fontan with refractory atrial arrhythmia: conversion to TCPC, with Maze (2b).'], 'b1', 'f-s')
+    return svg(504, b)
+
+
+def d16_eisenmenger():
+    b = T(12, 20, 'Eisenmenger syndrome in adults: why not close, and what to give (ACC/AHA 2025)', 'f-h', 'start')
+    # left: physiology
+    b += '<rect x="10" y="34" width="300" height="236" rx="10" class="f-b0"/>'
+    b += T(160, 56, 'Large shunt, severely raised PVR', 'f-h')
+    b += box(30, 70, 110, 44, 'RV', 'b1') + box(180, 70, 110, 44, 'LV / aorta', 'b0')
+    b += f'<path d="M140 86 L180 86" class="f-l" marker-end="url(#ah)"/>' + f'<path d="M180 100 L140 100" class="f-l" marker-end="url(#ah)"/>'
+    b += T(160, 132, 'bidirectional shunting', 'f-s')
+    b += T(160, 160, ['The defect is the RV "pop-off".', 'Closing it worsens RV strain,', 'morbidity and mortality (3: Harm).', 'Confirm with invasive haemodynamics', 'and exclude post-capillary PH,', 'valve streaming and RV outflow', 'obstruction first (1)'], 'f-s')
+    # right: drug ladder
+    b += T(520, 52, 'Drugs (LVEF over 40%)', 'f-h')
+    steps = [('Symptoms or poor exercise: monotherapy, ERA or PDE5i (1)', 'ok'),
+             ('Still symptomatic: ERA plus PDE5i (1)', 'b1'),
+             ('High risk or rapid: inhaled or SC prostacyclin (2b)', 'b0')]
+    for i, (t, cls) in enumerate(steps):
+        y = 64 + i * 58
+        b += box(330, y, 380, 44, t, cls, 'f-s')
+        if i < 2:
+            b += arrow(520, y + 44, 520, y + 58)
+    b += T(520, 248, ['High risk: WHO FC 3 to 4, 6MWD under 165 m, TAPSE', 'under 16 mm, NT-proBNP over 1400. IV prostacyclin', 'usually avoided (paradoxical embolism from the line)'], 'f-s')
+    # bottom: do not
+    b += T(12, 296, 'Do not', 'f-h', 'start')
+    donts = [('Pregnancy', ['Advise against (Harm):', 'maternal death 30 to 50%']),
+             ('Shunt closure', ['Any intracardiac or', 'vascular shunt (Harm)']),
+             ('Endocardial leads', ['Systemic emboli (Harm):', 'epicardial or S-ICD']),
+             ('Routine OAC', ['No benefit; consider', 'only if high risk'])]
+    for i, (h, ls) in enumerate(donts):
+        b += _d16_d16_card(10 + i * 177, 306, 168, 82, h, ls, 'warn')
+    b += box(10, 398, 700, 44, ['Also avoid: prolonged high altitude, extreme heat or humidity, large volume shifts, nephrotoxins, extreme exertion.',
+                                'Oxygen individually, not to "normalise" saturation. Atrial arrhythmia: restore sinus rhythm promptly (1).'], 'b0', 'f-s')
+    return svg(452, b)
+
+
+def d16_aaoca_decision():
+    b = T(12, 20, 'Anomalous aortic origin of a coronary from the opposite sinus in adults (ACC/AHA 2025)', 'f-h', 'start')
+    b += box(160, 32, 400, 44, ['Suspected AAOCA: coronary CT angiography (1);', 'MR angiography if CT is contraindicated'], 'b1', 'f-s')
+    b += arrow(360, 76, 360, 92)
+    b += box(110, 94, 500, 60, ['Risk-stratify (1): exercise or dobutamine stress imaging (not vasodilator);',
+                                'high-risk anatomy = ostial or proximal stenosis, slit-like orifice,',
+                                'acute take-off angle, intramural course'], 'b0', 'f-s')
+    b += arrow(250, 154, 190, 180) + arrow(470, 154, 530, 180)
+    b += box(10, 182, 340, 44, 'LEFT coronary from the right sinus', 'b1', 'f-h')
+    b += box(370, 182, 340, 44, 'RIGHT coronary from the left sinus', 'b1', 'f-h')
+    for x in (10, 370):
+        b += arrow(x + 85, 226, x + 85, 244) + arrow(x + 255, 226, x + 255, 244)
+    b += box(10, 246, 164, 76, ['Symptoms or', 'ischaemia:', 'surgery (1)'], 'ok', 'f-s')
+    b += box(186, 246, 164, 76, ['No ischaemia: high-risk', 'anatomy, surgery (2a);', 'otherwise observe or', 'operate (2b)'], 'b0', 'f-s')
+    b += box(370, 246, 164, 76, ['Symptoms or', 'ischaemia:', 'surgery (1)'], 'ok', 'f-s')
+    b += box(546, 246, 164, 76, ['No ischaemia:', 'observation or', 'surgery (2b)'], 'b0', 'f-s')
+    b += box(10, 334, 700, 44, ['Left from right is less common than right from left but more often causes sudden death, especially at extreme',
+                                'exertion and under 35. A normal stress ECG does not fully reassure.'], 'warn', 'f-s')
+    b += box(10, 386, 345, 78, ['Operations: unroofing with or without', 'ostioplasty, reimplantation, pulmonary', 'translocation. CABG only with coexisting', 'coronary disease'], 'b0', 'f-s')
+    b += box(365, 386, 345, 78, ['ALCAPA in an adult: surgery (1). Anomalous', 'RCA from the PA: surgery if symptomatic with', 'ischaemia (1); asymptomatic (2b). Aim: stop', 'the steal, give a dual coronary supply'], 'b1', 'f-s')
+    return svg(474, b)
+
+
+# ================================================================== g12
+
+def d16_fontan_failure():
+    b = T(12, 20, 'Why a Fontan fails: one pump, passive lung flow (TSRA ch. 105)', 'f-h', 'start')
+    b += box(10, 32, 220, 92, ['No subpulmonary ventricle', 'CVP 10 to 15 mmHg', '(normal under 10):', 'chronic venous hypertension'], 'b1', 'f-s')
+    b += box(250, 32, 220, 92, ['Non-pulsatile lung flow:', 'endothelial dysfunction', 'and rising PVR'], 'b0', 'f-s')
+    b += box(490, 32, 220, 92, ['Preload = what passes the', 'lungs; diastolic dysfunction', 'from old volume load and', 'surgery raises pressure more'], 'b0', 'f-s')
+    b += arrow(230, 78, 250, 78) + arrow(470, 78, 490, 78)
+    b += arrow(360, 124, 360, 146)
+    cards = [('Liver', ['About 50% fibrosis,', 'half of them then', 'cirrhosis. Screen', 'by 10 years']),
+             ('PLE, up to 15%', ['Low IgG, clotting', 'factors, albumin;', 'mortality 50% at', '5 years']),
+             ('Plastic bronchitis', ['Protein casts in', 'the airways;', 'asphyxia']),
+             ('Thromboembolism', ['Low flow, prosthetic', 'material: aspirin for', 'all; warfarin if risk']),
+             ('Arrhythmia', ['Atrial scars, SA node', 'injury: drugs, pacing;', 'Maze if refractory'])]
+    for i, (h, ls) in enumerate(cards):
+        b += _d16_d16_card(10 + i * 141, 148, 135, 100, h, ls, 'warn' if i < 2 else 'b0')
+    # PLE steps
+    b += box(10, 258, 345, 112, ['PLE: catheter first for pathway obstruction,', 'outflow obstruction or AV valve regurgitation;',
+                                 'make a fenestration (costs saturation);', 'steroids and heparin; sildenafil promising;', 'refractory: transplant'], 'b1', 'f-s')
+    # survival bars (Mayo, 40 years)
+    b += T(375, 276, 'Mayo Clinic, 40 years: survival', 'f-h', 'start')
+    for i, (lab, v) in enumerate([('10 years', 74), ('20 years', 61), ('30 years', 43)]):
+        y = 288 + i * 28
+        b += T(440, y + 16, lab, 'f-s', 'end')
+        b += f'<rect x="450" y="{y + 2}" width="220" height="20" rx="4" class="f-track"/>'
+        b += f'<rect x="450" y="{y + 2}" width="{220 * v / 100}" height="20" rx="4" class="f-ok"/>'
+        b += T(450 + 220 * v / 100 + 6, y + 17, f'{v}%', 'f-n', 'start')
+    b += box(10, 382, 700, 62, ['Fontan failure typically at about 25 to 30 years: most need heart or heart-liver transplant, at higher risk than other',
+                                'adults (allo-antibodies, liver disease). PLE mortality 50% at 5 and 80% at 10 years.',
+                                'Main late deaths: thromboembolism, heart failure, sudden (probably arrhythmic) death.'], 'b0', 'f-s')
+    return svg(454, b)
+
+
+def d16_tricuspid_atresia():
+    b = T(12, 20, 'Tricuspid atresia: the only way through, and the stage I choice (TSRA ch. 107)', 'f-h', 'start')
+    # flow chain
+    chain = [('RA', 'b0'), ('ASD', 'warn'), ('LA', 'b0'), ('LV', 'b1'), ('VSD', 'warn'), ('RV', 'b0')]
+    for i, (t, cls) in enumerate(chain):
+        x = 10 + i * 82
+        b += box(x, 40, 66, 40, t, cls, 'f-h')
+        if i < len(chain) - 1:
+            b += arrow(x + 66, 60, x + 82, 60)
+    b += T(43, 98, ['no TV:', 'muscular floor'], 'f-s') + T(125, 98, ['obligatory,', 'usually large'], 'f-s')
+    b += T(371, 98, ['muscular rims;', 'conduction', 'inferoposterior'], 'f-s') + T(453, 98, ['no inlet;', 'size follows', 'the VSD'], 'f-s')
+    b += box(520, 34, 190, 98, ['Type 1 (about 70%):', 'normal great arteries,', 'PA from the small RV.', 'Type 2 (about 30%): d-TGA,', 'aorta from the small RV'], 'b1', 'f-s')
+    b += T(10, 166, 'Stage I aim: secure lung flow, atrial mixing, unobstructed systemic flow; then saturations 75 to 85%', 'f-h', 'start')
+    b += box(10, 180, 220, 108, ['Type 1, low lung flow', '(duct closing, PS,', 'restrictive VSD):', 'PGE, then modified BT', 'shunt or ductal stent'], 'ok', 'f-s')
+    b += box(250, 180, 220, 108, ['Type 1, too much', 'lung flow (early heart', 'failure, risk of', 'pulmonary vascular', 'disease): PA band'], 'b0', 'f-s')
+    b += box(490, 180, 220, 108, ['Type 2: systemic flow', 'limited by restrictive', 'VSD, coarctation or arch:', 'VSD enlargement, coarct', 'repair, DKS or Norwood'], 'warn', 'f-s')
+    b += box(10, 300, 700, 44, ['Then superior cavopulmonary connection at 3 to 6 months (take down other sources of lung flow) and Fontan at',
+                                '24 to 48 months if PAs adequate, mean PA under 15 mmHg, PVR under 4 WU/m2, competent AV valve, good ventricle.'], 'b1', 'f-s')
+    return svg(354, b)
+
+
+def _d16_d16_roots(ox, oy, pa_dx=78, pa_dy=-34):
+    """Aorta and PA in short axis seen from above: aorta behind and right, PA in front and left."""
+    b = f'<circle cx="{ox}" cy="{oy}" r="34" class="f-b0"/>' + T(ox, oy + 5, 'Ao', 'f-s')
+    b += f'<circle cx="{ox + pa_dx}" cy="{oy + pa_dy}" r="30" class="f-b1"/>' + T(ox + pa_dx, oy + pa_dy + 5, 'PA', 'f-s')
+    return b
+
+
+def d16_coronary_operations():
+    b = T(12, 20, 'Coronary anomalies: the operations (TSRA ch. 111; arrangement schematic, roots seen from above)', 'f-h', 'start')
+    panels = [('ALCAPA: reimplantation', ['Standard; possible in most.', 'Excise with a rim of PA,', 'implant into the aorta;', 'repair PA (primary or patch)']),
+              ('ALCAPA: Takeuchi', ['Ostium too far to reach.', 'AP window above the STJ;', 'PTFE tunnel inside the PA.', 'Leak, occlusion, PA stenosis']),
+              ('AAOCA: unroofing', ['Commonest. Excise the wall', 'shared with the intramural', 'segment: neo-ostium in the', 'correct sinus'])]
+    for i, (h, ls) in enumerate(panels):
+        ox = 10 + i * 240
+        b += f'<rect x="{ox}" y="32" width="230" height="314" rx="10" class="f-b0"/>'
+        cx, cy = ox + 80, 140
+        b += _d16_d16_roots(cx, cy)
+        if i == 0:
+            b += f'<circle cx="{cx + 62}" cy="{cy - 10}" r="7" class="f-dash"/>' + T(ox + 14, 56, ['button with', 'a rim of PA'], 'f-s', 'start')
+            b += line(ox + 60, 76, cx + 56, cy - 14, 'f-dash')
+            b += T(cx + 112, cy + 18, 'PA repaired', 'f-s')
+            b += f'<path d="M{cx + 22} {cy + 12} C{cx + 50} {cy + 40} {cx + 80} {cy + 60} {cx + 120} {cy + 70}" class="f-l" style="stroke-width:5px"/>'
+            b += f'<circle cx="{cx + 26}" cy="{cy + 14}" r="8" class="f-ok"/>'
+            b += arrow(cx + 58, cy - 2, cx + 34, cy + 8)
+            b += T(cx + 120, cy + 90, 'LCA', 'f-s')
+        elif i == 1:
+            b += f'<path d="M{cx + 26} {cy - 20} L{cx + 52} {cy - 28}" class="f-l" style="stroke-width:8px"/>'
+            b += f'<path d="M{cx + 52} {cy - 28} C{cx + 80} {cy - 24} {cx + 104} {cy - 30} {cx + 100} {cy - 4}" class="f-stent"/>'
+            b += f'<circle cx="{cx + 100}" cy="{cy - 4}" r="6" class="f-warn"/>'
+            b += f'<path d="M{cx + 104} {cy} C{cx + 120} {cy + 30} {cx + 120} {cy + 60} {cx + 130} {cy + 80}" class="f-l" style="stroke-width:5px"/>'
+            b += T(cx - 4, cy - 52, 'window', 'f-s') + line(cx + 8, cy - 48, cx + 36, cy - 26, 'f-dash')
+            b += T(cx + 130, cy + 98, 'LCA', 'f-s') + T(cx + 64, cy + 30, 'tunnel', 'f-s')
+        else:
+            # intramural segment (red) inside the aortic wall, from the slit ostium to where the artery leaves the aorta
+            b += f'<path d="M{cx - 32} {cy + 12} A34 34 0 0 0 {cx + 26} {cy - 22}" class="f-cut" style="stroke-width:5px"/>'
+            b += f'<path d="M{cx + 26} {cy - 22} C{cx + 40} {cy - 6} {cx + 60} {cy + 20} {cx + 110} {cy + 60}" class="f-l" style="stroke-width:5px"/>'
+            b += f'<circle cx="{cx - 32}" cy="{cy + 12}" r="6" class="f-lumen"/>' + T(cx - 44, cy + 44, ['slit ostium,', 'wrong sinus'], 'f-s')
+            b += f'<circle cx="{cx + 26}" cy="{cy - 22}" r="7" class="f-ok"/>'
+            b += T(ox + 12, 52, ['neo-ostium where it', 'leaves the aorta'], 'f-s', 'start') + line(ox + 70, 74, cx + 22, cy - 26, 'f-dash')
+            b += T(cx + 100, cy + 92, 'interarterial', 'f-s')
+            b += T(cx - 4, cy + 82, 'red: unroofed', 'f-s')
+        b += T(ox + 115, 262, h, 'f-h')
+        b += T(ox + 115, 280, ls, 'f-s')
+    b += box(10, 356, 345, 112, ['Other AAOCA options. PA translocation: if', 'great-artery compression contributes (move',
+                                 'the main PA left or the RPA in front of the aorta).', 'Reimplantation: no intramural course, two',
+                                 'ostia. Ostioplasty: hardest. CABG: rarely'], 'b1', 'f-s')
+    b += box(365, 356, 345, 112, ['ALCAPA: exclude in every infant with dilated', 'cardiomyopathy; all need surgery; ligation is',
+                                  'historical. AAOCA: unroofing pitfalls are AR', '(resuspend the commissure), dissection at the',
+                                  'end (tack the neo-ostium), full-thickness cuts'], 'warn', 'f-s')
+    return svg(478, b)
+
+
+def d16_segmental_analysis():
+    b = T(12, 20, 'Sequential segmental analysis: work through the heart in order', 'f-h', 'start')
+    steps = [('1 Position', 'Levocardia, dextrocardia, mesocardia'),
+             ('2 Laterality', 'Usual, mirror-image, left or right isomerism'),
+             ('3 Atria', 'Judge by the appendage (below)'),
+             ('4 AV connection', 'Concordant (LA to LV) or discordant'),
+             ('5 Ventricles', 'Each: inlet, apical trabecular, outlet'),
+             ('6 VA connection', 'Concordant or discordant (LV to PA)'),
+             ('7 Associated', 'Septal defects, outflow, arch, veins')]
+    for i, (h, t) in enumerate(steps):
+        y = 34 + i * 44
+        b += box(10, y, 150, 36, h, 'b1' if i in (3, 5) else 'b0', 'f-h')
+        b += T(172, y + 23, t, 'f-s', 'start')
+        if i < len(steps) - 1:
+            b += arrow(85, y + 36, 85, y + 44)
+    # appendage drawings
+    b += '<rect x="440" y="34" width="270" height="168" rx="10" class="f-b0"/>'
+    b += T(575, 54, 'Atrial appendages', 'f-h')
+    b += '<path d="M470 170 L540 170 L505 96 Z" class="f-b1"/>'
+    for k in range(5):
+        b += line(482 + k * 11, 168, 492 + k * 7, 128 + k * 3)
+    b += line(454, 172, 556, 172, 'f-dash')
+    b += T(505, 190, 'Right: broad-based triangle', 'f-s')
+    b += '<path d="M630 170 C622 144 626 118 640 104 C654 96 662 106 656 124 C650 142 662 156 660 170 Z" class="f-b1"/>'
+    b += T(648, 190, 'Left: narrow finger', 'f-s')
+    b += T(575, 72, 'Pectinate muscles: beyond the right', 'f-s') + T(575, 86, 'appendage to the crest; left: confined', 'f-s')
+    # ventricle parts
+    b += '<rect x="440" y="212" width="270" height="140" rx="10" class="f-b0"/>'
+    b += T(575, 232, 'Every ventricle has three parts', 'f-h')
+    b += '<path d="M470 254 L680 254 L640 336 L520 336 Z" class="f-b1"/>'
+    b += line(548, 254, 548, 336, 'f-dash') + line(604, 254, 604, 336, 'f-dash')
+    b += T(524, 300, 'Inlet', 'f-s') + T(576, 292, ['Apical', 'trabecular'], 'f-s') + T(630, 300, 'Outlet', 'f-s')
+    b += box(10, 360, 700, 62, ['Example: corrected transposition = discordant AV plus discordant VA connections (RA to morphological LV to PA).',
+                                'Conduction at risk: perimembranous VSD, bundle near the inferior margin; AVSD, AV node displaced inferiorly',
+                                'towards the coronary sinus.'], 'b1', 'f-s')
+    return svg(432, b)
+
+
+def d16_general_approach():
+    b = T(12, 20, 'Any congenital lesion: the questions in order', 'f-h', 'start')
+    steps = [('Anatomy', 'echo, cross-sectional imaging, catheter'),
+             ('Physiology', 'left-to-right shunt; poor or obstructed lung flow; poor or obstructed systemic flow'),
+             ('Change', 'ductal closure and the fall in PVR'),
+             ('The whole child', 'weight, gestation, other anomalies, syndromes')]
+    for i, (h, t) in enumerate(steps):
+        y = 34 + i * 48
+        b += box(10, y, 160, 38, h, 'b0', 'f-h') + T(182, y + 24, t, 'f-s', 'start')
+        b += arrow(90, y + 38, 90, y + 48)
+    b += box(10, 226, 360, 44, 'Two adequate ventricles?', 'b1', 'f-h')
+    b += arrow(120, 270, 120, 290) + arrow(300, 270, 460, 290)
+    b += T(110, 284, 'yes', 'f-s', 'end') + T(390, 276, 'no', 'f-s', 'start')
+    b += box(10, 292, 330, 92, ['Biventricular repair: when, at what weight,', 'and is a temporising step needed first', '(medical, catheter or surgical)?'], 'ok', 'f-s')
+    b += box(370, 292, 340, 92, ['Single-ventricle pathway: is the child', 'suitable for palliation, and what is needed', 'now to make the circulation adequate?'], 'warn', 'f-s')
+    return svg(394, b)
+
+
+def d16_aristotle():
+    b = T(12, 20, 'Aristotle complexity scores: basic (procedure) and comprehensive (procedure plus patient)', 'f-h', 'start')
+    x0, x1, vmax = 60, 690, 25.0
+
+    def X(v):
+        return x0 + (x1 - x0) * v / vmax
+    levels = [(1.5, 6.0, '1'), (6.0, 8.0, '2'), (8.0, 10.0, '3'), (10.0, 15.0, '4'), (15.0, 20.0, '5'), (20.0, 25.0, '6')]
+    for k, (lo, hi, n) in enumerate(levels):
+        cls = 'b1' if k < 4 else 'warn'
+        b += f'<rect x="{X(lo) + 1}" y="70" width="{X(hi) - X(lo) - 2}" height="34" rx="5" class="f-{cls}"/>'
+        b += T((X(lo) + X(hi)) / 2, 92, 'L' + n, 'f-n')
+    for v in (1.5, 6, 8, 10, 15, 20, 25):
+        b += T(X(v), 120, f'{v:g}', 'f-s')
+    b += f'<rect x="{X(1.5)}" y="40" width="{X(15) - X(1.5)}" height="22" rx="5" class="f-ok"/>' + T((X(1.5) + X(15)) / 2, 56, 'ABC 1.5 to 15: levels 1 to 4', 'f-s')
+    b += f'<rect x="{X(1.5)}" y="132" width="{X(25) - X(1.5)}" height="22" rx="5" class="f-track"/>' + T((X(1.5) + X(25)) / 2, 148, 'ACC 1.5 to 25: levels 1 to 6 (5 and 6 only with patient factors)', 'f-s')
+    # example procedures
+    for v, lab, dy in [(3.2, 'ASD 3.0 to 3.4', 0), (6.2, 'VSD patch 6.2', 18), (10.4, 'Arterial switch 10 to 10.7', 0), (14.5, 'Norwood 14.5', 18)]:
+        b += line(X(v), 160, X(v), 176 + dy, 'f-l') + T(X(v), 190 + dy, lab, 'f-s')
+    b += box(10, 222, 345, 92, ['ABC = potential mortality + potential', 'morbidity (capped at 5) + technical', 'difficulty, scored per procedure by an', 'expert panel (50 centres, 23 countries)'], 'b0', 'f-s')
+    b += box(365, 222, 345, 92, ['ACC = ABC + procedure-dependent factors', '(0 to 5: anatomical variants, associated', 'procedures) + independent factors (0 to 5:', 'general state, ventilation, renal failure)'], 'b0', 'f-s')
+    h, bb = bars([('Level 1', 3.7, 'ok'), ('Level 2', 4.5, 'ok'), ('Level 3', 13.6, 'b1'), ('Level 4', 18.8, 'warn')], '%', 25,
+                 'Erek, 167 operations: hospital mortality by ACC level (levels 5 and 6: 2 of 3, 1 of 1)', 160)
+    b += f'<g transform="translate(0 320)">{bb}</g>'
+    b += T(12, 320 + h + 8, 'Built on expert opinion, not observed outcomes: STAT, derived empirically, discriminates mortality better.', 'f-s', 'start')
+    return svg(320 + h + 18, b)
+
+
+# ================================================================== g6
+
+def _d16_d16_apw_panel(ox, kind):
+    """Front view: aorta on the viewer's left (patient's right), PA on the right; valves at the bottom."""
+    ax, px, top, bot = ox + 26, ox + 102, 50, 200
+    if kind == 'truncus':
+        b = _d16_d16_tube(ox + 50, 120, ox + 120, bot) + line(ox + 56, bot - 6, ox + 114, bot - 6, 'f-l')
+        b += _d16_d16_tube(ox + 56, 50, ox + 96, 120) + T(ox + 76, 44, 'Ao', 'f-s')
+        b += _d16_d16_tube(ox + 96, 108, ox + 150, 126, 'f-b1') + T(ox + 150, 100, 'PAs', 'f-s', 'end')
+        b += T(ox + 85, bot + 18, 'one trunk, one valve', 'f-s')
+        return b
+    b = _d16_d16_tube(ax, top, ax + 50, bot) + _d16_d16_tube(px, top + 10, px + 50, bot, 'f-b1')
+    if kind == 'II':
+        b += f'<rect x="{ox + 4}" y="{top + 22}" width="{px - ox - 2}" height="16" rx="6" class="f-dash"/>'
+        b += T(ox + 4, top + 14, 'RPA, behind', 'f-s', 'start')
+    b += T(ax + 25, bot + 18, 'Ao', 'f-s') + T(px + 25, bot + 18, 'PA', 'f-s')
+    b += line(ax + 4, bot - 6, ax + 46, bot - 6, 'f-l') + line(px + 4, bot - 6, px + 46, bot - 6, 'f-l')
+    y1, y2 = {'I': (bot - 62, bot - 22), 'II': (top + 40, top + 80), 'III': (top + 20, bot - 22)}[kind]
+    b += f'<rect x="{ax + 44}" y="{y1}" width="{px - ax - 38}" height="{y2 - y1}" rx="3" class="f-warn"/>'
+    return b
+
+
+def d16_ap_window():
+    b = T(12, 20, 'Aortopulmonary window: three types, two valves (front view, schematic; TSRA ch. 110)', 'f-h', 'start')
+    spec = [('I', 'Type I, proximal', ['just above the sinuses']),
+            ('II', 'Type II, distal', ['posterior wall, near', 'the RPA origin']),
+            ('III', 'Type III, total', ['no aortopulmonary', 'septum at all']),
+            ('truncus', 'Not this: truncus', ['one semilunar valve'])]
+    for i, (k, h, ls) in enumerate(spec):
+        ox = 6 + i * 178
+        if i:
+            b += line(ox - 4, 40, ox - 4, 300, 'f-dash')
+        b += _d16_d16_apw_panel(ox, k)
+        b += T(ox + 85, 256, h, 'f-h') + T(ox + 85, 276, ls, 'f-s')
+    b += box(10, 306, 345, 112, ['Repair before 6 months whatever the', 'symptoms. Sternotomy, high aortic and',
+                                 'bicaval cannulation; open the anterior wall', 'of the window, avoid the coronaries, patch,',
+                                 'close the aortotomy into the patch line'], 'ok', 'f-s')
+    b += box(365, 306, 345, 112, ['Alternative: divide the window and patch', 'both vessels. Contraindicated if PVR over',
+                                  '8 to 10 WU or PVR/SVR over 0.7. Associated', 'lesions in a third to a half; anomalous',
+                                  'coronary from the PA in 5%, near the window'], 'warn', 'f-s')
+    return svg(428, b)
+
+
+# ---- figs_D17.py
+"""D17 drawings (second pass, 25 November 2026): thoracic tabs t1, t4, t7, t8, t10, t15.
+Every label comes from the notes (corpus3 tab text) or TSRA Review ch. 114 and 115 on disk."""
+
+
+
+# ---------------------------------------------------------------- helpers
+
+def _d17_d17_num(x, y, n, cls='b1', r=11):
+    return (f'<circle cx="{x}" cy="{y}" r="{r}" class="f-{cls}"/>'
+            f'<text x="{x}" y="{y + 4.5}" text-anchor="middle" class="f-t f-n">{n}</text>')
+
+
+def _d17_d17_path(d, cls='f-l'):
+    return f'<path d="{d}" class="{cls}"/>'
+
+
+def _d17_d17_torso(cx, top, bot, half):
+    """Front torso outline, no arms."""
+    return (f'<path d="M{cx - 34} {top} L{cx - half + 6} {top + 18} L{cx - half} {top + 90} '
+            f'L{cx - half + 10} {bot - 60} L{cx - half + 18} {bot} L{cx + half - 18} {bot} '
+            f'L{cx + half - 10} {bot - 60} L{cx + half} {top + 90} L{cx + half - 6} {top + 18} '
+            f'L{cx + 34} {top} Z" class="f-b0"/>')
+
+
+def _d17_d17_lungs(cx, top, h, gap=34, w=118, cls='f-b0'):
+    """Pair of lung outlines (front view): apex above, dome-shaped base; right lung on viewer's left."""
+    out = ''
+    for s in (-1, 1):
+        xin = cx + s * gap
+        xout = cx + s * (gap + w)
+        ax = cx + s * (gap + 0.36 * w)
+        out += (f'<path d="M{xin} {top + h - 30} L{xin} {top + 80} C{xin} {top + 26} {ax - s * 14} {top} {ax} {top} '
+                f'C{ax + s * 0.4 * w} {top} {xout} {top + 0.32 * h} {xout} {top + h} '
+                f'C{xout - s * 0.3 * w} {top + h - 40} {xin + s * 0.3 * w} {top + h - 44} {xin} {top + h - 30} Z" class="{cls}"/>')
+    return out
+
+
+# ================================================================ t15 trauma
+
+def d17_resus_thoracotomy():
+    """Resuscitative left anterior thoracotomy: cardiac box, incision, inside view and steps (TSRA ch. 114)."""
+    b = T(12, 22, 'Resuscitative thoracotomy: where to cut and what to do inside', 'f-h', 'start')
+    # Panel A: torso with cardiac box and incision
+    cx = 150
+    b += _d17_d17_torso(cx, 50, 300, 112)
+    b += T(cx - 78, 44, "patient's right", 'f-s')
+    # clavicles
+    b += _d17_d17_path(f'M{cx - 14} 66 C{cx - 40} 60 {cx - 70} 62 {cx - 98} 72')
+    b += _d17_d17_path(f'M{cx + 14} 66 C{cx + 40} 60 {cx + 70} 62 {cx + 98} 72')
+    # sternum
+    b += f'<rect x="{cx - 12}" y="70" width="24" height="150" rx="6" class="f-track"/>'
+    b += f'<rect x="{cx - 12}" y="70" width="24" height="150" rx="6" class="f-l"/>'
+    # cardiac box: right midclavicular line to left midaxillary line, clavicles to epigastrium
+    b += f'<rect x="{cx - 56}" y="72" width="{56 + 104}" height="186" rx="4" class="f-dash"/>'
+    # nipples
+    b += f'<circle cx="{cx - 56}" cy="150" r="4" class="f-b1"/><circle cx="{cx + 56}" cy="150" r="4" class="f-b1"/>'
+    # internal mammary arteries beside the sternum
+    for s_ in (-1, 1):
+        b += f'<line x1="{cx + s_ * 20}" y1="76" x2="{cx + s_ * 20}" y2="214" class="f-grid"/>'
+    # clamshell extension across the sternum (dashed)
+    b += _d17_d17_path(f'M{cx + 14} 176 C{cx - 14} 182 {cx - 60} 190 {cx - 110} 168', 'f-dash')
+    # left anterolateral incision, inframammary, 4th to 5th space, past posterior axillary line
+    b += _d17_d17_path(f'M{cx + 14} 176 C{cx + 46} 188 {cx + 84} 186 {cx + 118} 166', 'f-cut')
+    b += _d17_d17_path(f'M{cx + 15} 178 C{cx + 46} 190 {cx + 84} 188 {cx + 118} 168', 'f-cut')
+    for s_ in (-1, 1):
+        b += f'<circle cx="{cx + s_ * 20}" cy="181" r="5" class="f-warn"/>'
+    b += _d17_d17_num(cx + 84, 206, 1, 'warn')
+    b += T(cx, 318, 'Dashed box: cardiac box', 'f-h')
+    b += T(cx, 335, ['R midclavicular to L midaxillary line,', 'clavicles to epigastrium. Dashed curve:',
+                     'clamshell extension; tie both IMAs', '(dots) once perfusion returns'], 'f-s')
+    # Panel B: inside view through the incision (front view, schematic)
+    ox = 300
+    b += f'<rect x="{ox}" y="40" width="410" height="356" rx="12" class="f-track"/>'
+    b += T(ox + 205, 60, "Inside, front view: patient's left on the right", 'f-h')
+    # descending aorta posterior, running to the diaphragm
+    b += _d17_d17_path(f'M{ox + 360} 110 L{ox + 360} 350', 'f-vessel')
+    b += T(ox + 360, 92, 'Descending aorta', 'f-s')
+    # diaphragm
+    b += _d17_d17_path(f'M{ox + 20} 372 C{ox + 140} 350 {ox + 280} 350 {ox + 400} 372', 'f-l')
+    b += T(ox + 24, 390, 'Diaphragm', 'f-s', 'start')
+    # left hilum
+    b += f'<ellipse cx="{ox + 300}" cy="170" rx="32" ry="22" class="f-b1"/>'
+    b += T(ox + 300, 175, 'L hilum', 'f-s')
+    # aortic cross-clamp below hilum, above diaphragm
+    b += f'<rect x="{ox + 330}" y="290" width="60" height="10" rx="3" class="f-warn"/>'
+    b += _d17_d17_num(ox + 394, 318, 5, 'warn')
+    b += T(ox + 322, 298, ['Clamp below the L hilum,', 'above the diaphragm;', 'about 30 min tolerated'], 'f-s', 'end')
+    # pericardium and heart
+    b += f'<ellipse cx="{ox + 140}" cy="200" rx="92" ry="72" class="f-b0"/>'
+    b += T(ox + 110, 206, 'Pericardium', 'f-s')
+    # phrenic nerve along the lateral pericardium
+    b += _d17_d17_path(f'M{ox + 216} 92 C{ox + 236} 150 {ox + 238} 230 {ox + 222} 282', 'f-nerve')
+    b += T(ox + 216, 84, 'Phrenic nerve', 'f-s')
+    # pericardiotomy line, 1 cm medial to and parallel to the phrenic
+    b += _d17_d17_path(f'M{ox + 194} 126 C{ox + 210} 170 {ox + 212} 222 {ox + 198} 262', 'f-cut')
+    b += _d17_d17_num(ox + 176, 140, 3, 'warn')
+    b += T(ox + 16, 98, ['Open the pericardium 1 cm medial', 'to and parallel to the phrenic'], 'f-s', 'start')
+    # steps
+    steps = [
+        (1, 'Left anterolateral incision, 4th to 5th space in the inframammary fold, from the sternum past the posterior axillary line'),
+        (2, 'Enter over the top of the rib; Finochietto retractor with the handle towards the axilla'),
+        (3, 'Open the pericardium; relieve tamponade; control the wound with pressure'),
+        (4, 'Asystole: internal massage, adrenaline 1 mg every 3 to 5 min; shockable rhythm: internal paddles, 30 J'),
+        (5, 'Cross-clamp the descending aorta to redirect volume to brain and myocardium'),
+        (6, 'To theatre for definitive repair; an impaled object stays until the chest is open'),
+    ]
+    y = 420
+    for n, s_ in steps:
+        b += _d17_d17_num(24, y, n, 'warn' if n in (1, 3, 5) else 'b1')
+        b += T(44, y + 5, s_, 'f-s', 'start')
+        y += 26
+    b += box(10, y + 2, 700, 62, ['Indications as listed in these notes (the TSRA list is partly garbled; check against EAST): lost signs of life',
+                                  'in transit or unresponsive, with blunt trauma and under 10 min CPR, penetrating chest under 15 min,',
+                                  'penetrating neck or limb under 5 min, or signs of life with systolic pressure under 60 mmHg'], 'b1', 'f-s')
+    return svg(y + 74, b)
+
+
+def d17_lung_injury_ladder():
+    """Lung laceration by depth and the hilar control sequence (TSRA ch. 115)."""
+    b = T(12, 22, 'Bleeding lung: depth sets the repair; the hilum has its own sequence', 'f-h', 'start')
+    # left: lung with three injuries
+    b += (f'<path d="M80 70 C150 44 250 50 300 110 C330 160 326 260 290 320 C230 350 120 352 70 318 '
+          f'C40 260 36 130 80 70 Z" class="f-b0"/>')
+    b += f'<ellipse cx="300" cy="200" rx="22" ry="36" class="f-b1"/>'
+    b += T(300, 205, 'hilum', 'f-s')
+    # superficial laceration near the edge
+    b += _d17_d17_path('M74 140 L96 150', 'f-cut')
+    b += _d17_d17_num(60, 120, 1, 'ok')
+    # peripheral wedge
+    b += _d17_d17_path('M120 300 L160 262 L196 330', 'f-dash')
+    b += _d17_d17_path('M150 300 L170 312', 'f-cut')
+    b += _d17_d17_num(112, 330, 2, 'b1')
+    # deep through-and-through track with tractotomy stapler line
+    b += _d17_d17_path('M150 74 L236 236', 'f-cut')
+    b += _d17_d17_path('M146 78 L232 240', 'f-dash')
+    b += _d17_d17_num(126, 76, 3, 'warn')
+    rows = [
+        (1, 'ok', 'Superficial', 'Suture; haemostasis and aerostasis'),
+        (2, 'b1', 'Peripheral', ['Non-anatomic stapled wedge; open the', 'fissure for slightly deeper wounds']),
+        (3, 'warn', 'Deep, through and through', 'Stapled tractotomy along the track'),
+    ]
+    y = 368
+    for n, cls, h, s in rows:
+        b += _d17_d17_num(22, y, n, cls)
+        b += T(42, y + 5, h, 'f-h', 'start') + T(42, y + 22, s, 'f-s', 'start')
+        y += 44 if isinstance(s, str) else 61
+    # right: hilar sequence
+    hx = 360
+    b += T(hx + 175, 50, 'Hilar injury: survival 6 to 15%', 'f-h')
+    seq = [('Finger compression of the hilum', 'between two fingers', 'b1'),
+           ('Hilar clamp', 'allows transport to theatre', 'b1'),
+           ('Hilar twist if needed', 'deflate, rotate the lung 180 degrees, pack', 'warn'),
+           ('Definitive control', 'single-lung ventilation, open the pleura widely, divide the inferior ligament; incise the pericardium in front of the hilum, parallel to the phrenic', 'b0'),
+           ]
+    y = 64
+    for i, (h, s, cls) in enumerate(seq):
+        lines = [h]
+        if len(s) > 46:
+            words, cur, out = s.split(), '', []
+            for w_ in words:
+                if len(cur) + len(w_) + 1 > 46:
+                    out.append(cur)
+                    cur = w_
+                else:
+                    cur = (cur + ' ' + w_).strip()
+            out.append(cur)
+            lines += out
+        else:
+            lines.append(s)
+        hh = 22 + 17 * len(lines)
+        b += box(hx, y, 350, hh, lines, cls, 'f-s')
+        if i < len(seq) - 1:
+            b += arrow(hx + 175, y + hh, hx + 175, y + hh + 14)
+        y += hh + 14
+    b += box(hx, y + 4, 350, 56, ['Vein tears usually need lobectomy', 'Trauma pneumonectomy: last resort; mortality', 'over 50%, mostly acute right heart failure'], 'warn', 'f-s')
+    y += 72
+    b += box(hx, y, 350, 56, ['Bronchoscope if CT shows extensive surgical or', 'mediastinal air, or tracheobronchial injury is', 'suspected; air embolism with penetrating hilar wounds'], 'b1', 'f-s')
+    return svg(max(y + 66, 536), b)
+
+
+def _d17_d17_airway(o, top, car):
+    """Front view of larynx, trachea and main bronchi (patient's right on viewer's left)."""
+    b = f'<rect x="{o - 34}" y="{top}" width="68" height="34" rx="10" class="f-b1"/>'
+    b += T(o, top + 22, 'Larynx', 'f-s')
+    pts = [(o - 22, top + 34), (o - 22, car), (o - 100, car + 70), (o - 82, car + 86), (o - 4, car + 18),
+           (o, car + 12), (o + 4, car + 18), (o + 94, car + 104), (o + 110, car + 90), (o + 22, car), (o + 22, top + 34)]
+    b += '<polygon points="' + ' '.join(f'{x},{y}' for x, y in pts) + '" class="f-b0"/>'
+    for yy in range(top + 50, car - 4, 18):
+        b += line(o - 20, yy, o + 20, yy, 'f-grid')
+    return b
+
+
+def d17_airway_injury():
+    """Tracheobronchial injury: where blunt tears lie, how to secure the airway and which approach (TSRA ch. 115)."""
+    b = T(12, 22, "Tracheobronchial injury: front view, patient's right on the left", 'f-h', 'start')
+    o, top, car = 220, 40, 320
+    inlet = 150
+    # azygos arching over the right main bronchus into the SVC side of the trachea
+    b += _d17_d17_path(f'M{o - 120} 440 L{o - 120} {car + 40} C{o - 120} {car - 6} {o - 70} {car - 20} {o - 24} {car - 12}', 'f-dash')
+    b += _d17_d17_airway(o, top, car)
+    # zones: cervical trachea above the inlet, and within 2 cm of the carina
+    b += f'<rect x="{o - 22}" y="{top + 40}" width="44" height="{inlet - top - 44}" class="f-warn"/>'
+    zone = [(o - 22, car - 50), (o - 22, car), (o - 53, car + 28), (o - 35, car + 45), (o - 4, car + 18), (o, car + 12),
+            (o + 4, car + 18), (o + 40, car + 52), (o + 57, car + 36), (o + 22, car), (o + 22, car - 50)]
+    b += '<polygon points="' + ' '.join(f'{x},{y}' for x, y in zone) + '" class="f-warn"/>'
+    # thoracic inlet line
+    b += line(40, inlet, 380, inlet, 'f-dash') + T(44, inlet - 6, 'Thoracic inlet', 'f-s', 'start')
+    b += T(o + 34, 100, ['Blunt tears: above', 'the inlet ...'], 'f-s', 'start')
+    b += T(o + 34, car - 30, ['... or within 2 cm', 'of the carina'], 'f-s', 'start')
+    # tube passed bronchoscopically into the opposite (left) bronchus
+    b += _d17_d17_path(f'M{o + 2} {top + 20} L{o + 2} {car + 14} L{o + 74} {car + 80}', 'f-stent')
+    b += T(o - 40, 196, ['Dotted: tube passed', 'bronchoscopically past', 'the injury into the', 'distal trachea or the', 'opposite bronchus'], 'f-s', 'end')
+    b += T(o - 128, 456, 'Azygos (divide for the low approach)', 'f-s', 'start')
+    # right column
+    rx = 410
+    items = [
+        ('b1', 'Secure the airway', ['Bronchoscopic intubation past the injury;', 'surgical airway if that fails']),
+        ('warn', 'Cervical trachea', ['Neck incision; retrieve a divided trachea', 'and intubate it directly']),
+        ('warn', 'Lower trachea, carina, right bronchus', ['Right thoracotomy or clamshell; divide the', 'azygos; intubate across the field']),
+        ('b0', 'Distal left main bronchus', ['Left thoracotomy (Atlas draft; approaches', 'consistent with TSRA ch. 115)']),
+        ('ok', 'Repair', ['Debride; keep the lateral blood supply;', 'interrupted absorbable sutures, no tension;', 'vascularised flap; bronchoscopy at 1 week']),
+    ]
+    y = 40
+    for cls, h, s_ in items:
+        hh = 30 + 17 * len(s_)
+        b += f'<rect x="{rx}" y="{y}" width="300" height="{hh}" rx="9" class="f-{cls}"/>'
+        b += T(rx + 12, y + 20, h, 'f-h', 'start') + T(rx + 12, y + 38, s_, 'f-s', 'start')
+        y += hh + 10
+    b += box(10, 470, 700, 44, ['Suspect it after the drain: a lung that will not re-expand, a large continuous leak, or stridor',
+                                'means tracheobronchial injury until bronchoscopy shows otherwise'], 'b1', 'f-s')
+    return svg(524, b)
+
+
+def d17_ng39_decompression():
+    """NICE NG39 chest trauma: decompression and first imaging, pre-hospital and in hospital."""
+    b = T(12, 22, 'NICE NG39: suspected tension and first chest imaging', 'f-h', 'start')
+    b += box(200, 36, 320, 40, 'Suspected chest trauma', 'b1', 'f-h')
+    b += arrow(360, 76, 360, 94)
+    b += box(150, 96, 420, 56, ['Suspected tension pneumothorax with haemodynamic', 'instability or severe respiratory compromise?'], 'b0')
+    b += arrow(250, 152, 170, 182) + T(196, 172, 'Yes', 'f-h', 'end')
+    b += arrow(470, 152, 550, 182) + T(524, 172, 'No', 'f-h', 'start')
+    # yes branch
+    b += box(10, 184, 330, 40, 'Decompress before imaging (1.3.4, 1.4.1)', 'warn', 'f-h')
+    b += box(10, 234, 160, 112, ['Pre-hospital:', 'open thoracostomy', 'rather than needle if', 'skilled; then a drain if', 'breathing spontaneously', '(1.3.5)'], 'warn', 'f-s')
+    b += box(180, 234, 160, 112, ['In hospital:', 'open thoracostomy', 'followed by a', 'chest drain', '(1.4.2)'], 'warn', 'f-s')
+    b += box(10, 356, 330, 40, ['Watch for recurrence after decompression (1.3.6)'], 'b1', 'f-s')
+    # no branch
+    b += box(380, 184, 330, 40, 'Urgent imaging, read at once (1.4.3)', 'b0', 'f-h')
+    b += box(380, 234, 330, 46, ['Adult, severe respiratory compromise:', 'consider immediate chest film and/or eFAST (1.4.4)'], 'b1', 'f-s')
+    b += box(380, 290, 330, 46, ['Adult without severe compromise, responding or', 'haemodynamically normal: consider CT (1.4.5)'], 'ok', 'f-s')
+    b += box(380, 346, 330, 50, ['Child: chest film and/or ultrasound first;', 'CT not routinely first-line (1.4.6, 1.4.7)'], 'b0', 'f-s')
+    b += box(10, 410, 700, 46, ['Pre-hospital: diagnose pneumothorax clinically (1.3.1); a negative eFAST does not exclude it (1.3.3).',
+                                'Open pneumothorax: simple occlusive dressing, and watch for tension (1.3.7)'], 'b1', 'f-s')
+    return svg(466, b)
+
+
+# ================================================================ t10 primer
+
+def d17_procurement_flush():
+    """Lung procurement: antegrade and retrograde flush and tracheal stapling (TSRA Primer, procurement)."""
+    import textwrap
+    b = T(12, 22, 'Lung procurement: flush both ways, then staple the inflated trachea', 'f-h', 'start')
+    cx = 200
+    # lungs
+    b += _d17_d17_lungs(cx, 110, 250, gap=44, w=124)
+    b += T(cx - 128, 244, 'R lung', 'f-s') + T(cx + 128, 244, 'L lung', 'f-s')
+    # trachea and main bronchi
+    b += (f'<polygon points="{cx - 14},150 {cx - 74},176 {cx - 70},188 {cx},166 {cx + 70},188 {cx + 74},176 {cx + 14},150" '
+          f'class="f-b0"/>')
+    b += f'<rect x="{cx - 14}" y="40" width="28" height="122" rx="8" class="f-b0"/>'
+    for yy in range(84, 160, 14):
+        b += line(cx - 12, yy, cx + 12, yy, 'f-grid')
+    b += line(cx - 24, 62, cx + 24, 62, 'f-cut') + line(cx - 24, 70, cx + 24, 70, 'f-cut')
+    b += T(cx + 30, 58, ['Inflate to 12 to 15 cmH2O,', 'double staple, divide'], 'f-s', 'start')
+    # pulmonary artery: trunk, bifurcation, branches
+    b += _d17_d17_path(f'M{cx} 262 L{cx} 214 C{cx - 30} 200 {cx - 70} 198 {cx - 110} 206 M{cx} 214 C{cx + 30} 200 {cx + 70} 198 {cx + 110} 206', 'f-vessel')
+    b += f'<rect x="{cx - 5}" y="222" width="10" height="56" rx="4" class="f-warn"/>'
+    b += T(cx + 16, 258, 'PA cannula', 'f-s', 'start')
+    b += arrow(cx - 40, 190, cx - 96, 190) + arrow(cx + 40, 190, cx + 96, 190)
+    b += T(cx, 184, 'antegrade', 'f-s') if False else ''
+    # left atrial cuff with four pulmonary veins
+    b += f'<rect x="{cx - 34}" y="290" width="68" height="30" rx="8" class="f-b1"/>'
+    b += T(cx, 310, 'LA cuff', 'f-s')
+    for s_ in (-1, 1):
+        b += line(cx + s_ * 34, 296, cx + s_ * 100, 274, 'f-l') + line(cx + s_ * 34, 314, cx + s_ * 100, 336, 'f-l')
+        b += arrow(cx + s_ * 40, 286, cx + s_ * 94, 268, dash=True) + arrow(cx + s_ * 40, 324, cx + s_ * 94, 342, dash=True)
+    b += T(cx, 384, ['Solid arrows: antegrade flush through the PA cannula.', 'Dashed: retrograde, about 250 mL down each pulmonary vein'], 'f-s')
+    # sequence
+    rx = 440
+    seq = ['Bronchoscopy; sternotomy; open both pleurae, recruit at 30 cmH2O',
+           'Isolate cavae, aorta and trachea',
+           'Heparin 400 units/kg; pulmonary artery cannula',
+           'Prostaglandin E1 500 micrograms; vent the left heart',
+           'Clamp; antegrade flush about 3 L (50 to 70 mL/kg) with ice slush',
+           'Heart out: retrograde flush down each pulmonary vein',
+           'Trachea inflated, double stapled, divided',
+           'Each lung in cold fluid, air out, triple-bagged on ice']
+    y = 40
+    for i, s_ in enumerate(seq):
+        lines = textwrap.wrap(s_, 38)
+        b += _d17_d17_num(rx + 10, y + 6, i + 1, 'warn' if i in (4, 5) else 'b1')
+        b += T(rx + 30, y + 11, lines, 'f-s', 'start')
+        y += 14 + 17 * len(lines)
+    b += box(10, 424, 700, 62, ['Donor: under 55 years; under 20 pack-years; PaO2:FiO2 over 400 on 100% oxygen, PEEP 5 to 8; ventilate at',
+                                '6 to 8 mL/kg; CVP under 10 mmHg. Pitfalls: injury to the right inferior pulmonary vein or right pulmonary',
+                                'artery; a cannula slipping into one branch, so one lung is poorly flushed'], 'b1', 'f-s')
+    return svg(496, b)
+
+
+def d17_oesophagus_landmarks():
+    """Upper endoscopy and EUS: landmarks, where perforation happens, and EUS reach (TSRA Primer)."""
+    b = T(12, 22, 'Upper endoscopy: landmarks and the three narrow points', 'f-h', 'start')
+    ox = 196
+    # incisor marker and ruler
+    b += line(24, 50, 24, 360, 'f-l')
+    b += T(30, 50, 'From the incisors', 'f-s', 'start')
+    # oesophagus tube
+    b += f'<rect x="{ox - 16}" y="60" width="32" height="210" rx="10" class="f-b0"/>'
+    # cricopharyngeus narrowing
+    b += f'<rect x="{ox - 22}" y="76" width="44" height="12" rx="5" class="f-warn"/>'
+    b += _d17_d17_num(ox + 40, 82, 1, 'warn')
+    b += T(ox + 58, 87, 'Cricopharyngeus', 'f-s', 'start')
+    # squamocolumnar junction
+    b += line(ox - 22, 240, ox + 22, 240, 'f-cut')
+    b += line(24, 240, ox - 22, 240, 'f-grid')
+    b += T(30, 232, 'SCJ, 35 to 40 cm', 'f-s', 'start')
+    # GOJ = top of gastric folds
+    b += line(ox - 22, 262, ox + 22, 262, 'f-l')
+    b += T(ox + 30, 252, ['GOJ: top of the', 'gastric folds'], 'f-s', 'start')
+    # small hiatus hernia pouch between GOJ and crural pinch
+    b += f'<ellipse cx="{ox}" cy="282" rx="26" ry="18" class="f-b1"/>'
+    # crural pinch
+    b += line(ox - 60, 300, ox - 26, 300, 'f-l') + line(ox + 26, 300, ox + 60, 300, 'f-l')
+    b += T(ox - 64, 296, 'Crural pinch', 'f-s', 'end')
+    b += T(ox + 64, 288, ['Gap GOJ to pinch', '= hiatus hernia size'], 'f-s', 'start')
+    # lower sphincter narrowing
+    b += f'<rect x="{ox - 22}" y="300" width="44" height="10" rx="4" class="f-warn"/>'
+    b += _d17_d17_num(ox - 40, 322, 2, 'warn')
+    b += T(ox - 54, 326, 'Lower sphincter', 'f-s', 'end')
+    # stomach and pylorus
+    b += (f'<path d="M{ox - 16} 310 C{ox - 60} 330 {ox - 40} 400 {ox + 30} 404 C{ox + 90} 404 {ox + 120} 380 {ox + 130} 350 '
+          f'C{ox + 100} 360 {ox + 70} 350 {ox + 16} 310 Z" class="f-b0"/>')
+    b += f'<rect x="{ox + 126}" y="338" width="14" height="22" rx="4" class="f-warn"/>'
+    b += _d17_d17_num(ox + 160, 334, 3, 'warn')
+    b += T(ox + 150, 372, 'Pylorus', 'f-s', 'start')
+    b += T(ox + 20, 386, 'Stomach', 'f-s')
+    b += box(10, 418, 300, 46, ['Never pass the scope blind with a pouch', 'or a fresh anastomosis'], 'warn', 'f-s')
+    # right column: EUS
+    rx = 400
+    b += f'<rect x="{rx}" y="40" width="310" height="424" rx="10" class="f-track"/>'
+    b += T(rx + 14, 62, 'Endoscopic ultrasound', 'f-h', 'start')
+    # five layers
+    for i in range(5):
+        cls = 'f-b0' if i % 2 == 0 else 'f-b1'
+        b += f'<rect x="{rx + 14}" y="{76 + i * 12}" width="120" height="12" class="{cls}"/>'
+    b += T(rx + 146, 86, ['Five alternating bright', 'and dark layers: mucosa,', 'submucosa, muscle'], 'f-s', 'start')
+    b += T(rx + 14, 160, 'Reach', 'f-h', 'start')
+    b += T(rx + 14, 178, ['Stations 2, 4, 7, 8 and 9; coeliac nodes;', 'left adrenal; left lobe of the liver'], 'f-s', 'start')
+    b += box(rx + 14, 214, 282, 36, 'Stations 8 and 9 only by this route', 'b1', 'f-s')
+    b += T(rx + 14, 278, 'Malignant node', 'f-h', 'start')
+    b += T(rx + 14, 296, 'Over 1 cm, round, dark, sharply outlined', 'f-s', 'start')
+    b += T(rx + 14, 328, 'Accuracy', 'f-h', 'start')
+    b += T(rx + 14, 346, 'T stage about 80 to 90%; N stage about 85%', 'f-s', 'start')
+    b += T(rx + 14, 378, 'Limits', 'f-h', 'start')
+    b += T(rx + 14, 396, ['Operator dependent; a tight tumour may not', 'pass, and dilating it to pass risks', 'perforation'], 'f-s', 'start')
+    return svg(474, b)
+
+
+def d17_bronchoscopy_ebus():
+    """Bronchoscopic landmarks and the EBUS sampling order given in the TSRA Primer chapter."""
+    b = T(12, 22, "Bronchoscopy landmarks and EBUS order: front view, patient's right on the left", 'f-h', 'start')
+    cx = 230
+    # trachea
+    b += '<polygon points="' + ' '.join(f'{x},{y}' for x, y in [
+        (cx - 22, 40), (cx - 22, 170), (cx - 70, 214), (cx - 70, 330), (cx - 50, 330), (cx - 50, 228),
+        (cx - 6, 190), (cx, 186), (cx + 6, 190), (cx + 92, 262), (cx + 92, 340), (cx + 112, 340), (cx + 112, 254), (cx + 22, 170), (cx + 22, 40)]) + '" class="f-b0"/>'
+    for yy in range(54, 166, 16):
+        b += line(cx - 20, yy, cx + 20, yy, 'f-grid')
+    # right upper lobe orifice high on lateral wall
+    b += _d17_d17_path(f'M{cx - 46} 192 L{cx - 120} 168', 'f-l')
+    b += _d17_d17_path(f'M{cx - 46} 202 L{cx - 120} 178', 'f-l')
+    b += T(cx - 124, 158, ['RUL: high on the', 'lateral wall'], 'f-s', 'end')
+    # bronchus intermedius label
+    b += T(cx - 42, 262, ['Bronchus', 'intermedius'], 'f-s', 'start')
+    # middle lobe anteromedially, superior segment posteriorly beyond
+    b += _d17_d17_path(f'M{cx - 50} 300 L{cx - 20} 330', 'f-l')
+    b += T(cx - 14, 346, 'Middle lobe (anteromedial)', 'f-s', 'start')
+    b += f'<circle cx="{cx - 70}" cy="306" r="5" class="f-b1"/>'
+    b += T(cx - 80, 310, ['RLL superior segment', '(posterior, just beyond)'], 'f-s', 'end')
+    # left side: longer, oblique; upper lobe with lingula, lower lobe
+    b += _d17_d17_path(f'M{cx + 112} 282 L{cx + 150} 264', 'f-l')
+    b += T(cx + 154, 260, ['LUL with', 'lingula'], 'f-s', 'start')
+    b += T(cx + 102, 374, ['LLL: superior segment', 'first, basals beyond'], 'f-s')
+    b += T(cx + 66, 214, ['Left main: longer,', 'more oblique'], 'f-s', 'start')
+    # EBUS stations with order numbers
+    st = [(cx - 100, 262, '11R', 1), (cx - 98, 222, '10R', 2), (cx, 214, '7', 3), (cx - 44, 132, '4R', 4),
+          (cx - 44, 72, '2R', 5), (cx + 140, 316, '11L', 6), (cx + 60, 256, '10L', 7), (cx + 44, 140, '4L', 8), (cx + 44, 80, '2L', 9)]
+    for x, y, lab, n in st:
+        cls = 'b1' if n <= 5 else 'ok'
+        w = 16 + 7 * len(lab)
+        b += f'<rect x="{x - w / 2}" y="{y - 10}" width="{w}" height="20" rx="10" class="f-{cls}"/>'
+        b += f'<text x="{x}" y="{y + 4.5}" text-anchor="middle" class="f-t f-n">{lab}</text>'
+        b += _d17_d17_num(x + w / 2 + 8, y - 10, n, 'warn', r=8)
+    # right column
+    rx = 470
+    b += f'<rect x="{rx}" y="40" width="240" height="64" rx="9" class="f-b1"/>'
+    b += T(rx + 12, 60, 'EBUS order as given', 'f-h', 'start')
+    b += T(rx + 12, 78, ['11R, 10R, 7, 4R, 2R, then 11L,', '10L, 4L, 2L'], 'f-s', 'start')
+    b += box(rx, 114, 240, 46, ['Fresh needle when changing sides;', 'about 10 passes a station'], 'ok', 'f-s')
+    b += box(rx, 170, 240, 64, ['Lavage: 30 to 50 mL saline wedged', 'at subsegmental level, preferably', 'lingula or middle lobe'], 'b0', 'f-s')
+    b += box(rx, 244, 240, 84, ['Rigid: lift the epiglottis with the', 'bevel, rotate through the cords, turn', 'the head to the side examined; FiO2', '40% or less with laser or diathermy'], 'b0', 'f-s')
+    b += box(rx, 338, 240, 64, ['Rigid when: foreign body, obstructing', 'tumour, massive haemoptysis, stent,', 'stricture dilatation'], 'warn', 'f-s')
+    return svg(412, b)
+
+
+# ================================================================ t8 cases
+
+def _d17_d17_yzone(cx, d, ty=40, jy=170):
+    """Offset outline of a Y-shaped central airway (trachea plus both main bronchi) at distance d."""
+    pts = [(cx - d, ty), (cx - d, jy - 0.52 * d), (cx - 80 - 0.573 * d, jy + 56 - 0.819 * d),
+           (cx - 80 + 0.573 * d, jy + 56 + 0.819 * d), (cx, jy + 1.23 * d),
+           (cx + 84 - 0.594 * d, jy + 62 + 0.805 * d), (cx + 84 + 0.594 * d, jy + 62 - 0.805 * d),
+           (cx + d, jy - 0.506 * d), (cx + d, ty)]
+    return ' '.join(f'{x:.1f},{y:.1f}' for x, y in pts)
+
+
+def d17_sabr_zones():
+    """SABR fractionation by tumour position, as taught by the oncologist (t8 case 9)."""
+    b = T(12, 22, 'SABR: where the tumour sits sets the fractions (as taught)', 'f-h', 'start')
+    cx = 214
+    b += _d17_d17_lungs(cx, 44, 320, gap=36, w=150)
+    # descending aorta and heart
+    b += (f'<path d="M{cx + 4} 214 C{cx + 4} 150 {cx + 62} 146 {cx + 62} 200 L{cx + 62} 384" '
+          f'class="f-vessel" style="stroke-width:14"/>')
+    b += f'<ellipse cx="{cx + 4}" cy="316" rx="58" ry="46" class="f-b0"/>'
+    b += T(cx + 4, 322, 'Heart', 'f-s')
+    # zones
+    b += f'<polygon points="{_d17_d17_yzone(cx, 36)}" class="f-b1"/>'
+    b += f'<polygon points="{_d17_d17_yzone(cx, 18)}" class="f-warn"/>'
+    b += f'<polygon points="{_d17_d17_yzone(cx, 6)}" class="f-b0"/>'
+    b += T(cx + 40, 72, 'within 1 cm', 'f-s', 'start') + line(cx + 12, 68, cx + 38, 68, 'f-l')
+    b += T(cx + 40, 104, '1 to 2 cm', 'f-s', 'start') + line(cx + 28, 100, cx + 38, 100, 'f-l')
+    # tumours
+    tum = [(cx - 110, 120, 'A', 'ok'), (cx - 172, 250, 'B', 'b1'), (cx - 64, 168, 'C', 'b1'),
+           (cx + 92, 300, 'D', 'b1'), (cx - 68, 300, 'E', 'warn'), (cx + 52, 190, 'F', 'warn')]
+    for x, y, lab, cls in tum:
+        b += f'<circle cx="{x}" cy="{y}" r="10" class="f-{cls}"/>'
+        b += f'<text x="{x}" y="{y + 4.5}" text-anchor="middle" class="f-t f-n">{lab}</text>'
+    # legend
+    rx = 440
+    leg = [('A', 'ok', 'Well clear of chest wall and airways', '54 Gy in 3 fractions'),
+           ('B', 'b1', 'Peripheral, against the chest wall', '55 Gy in 5 fractions (rib fracture)'),
+           ('C', 'b1', '1 to 2 cm from the bronchial tree', '8 fractions'),
+           ('D', 'b1', 'Near the aorta', '8 fractions'),
+           ('E', 'warn', 'Sitting against the heart', 'Not suitable'),
+           ('F', 'warn', 'Within 1 cm of the bronchial tree', 'Not treated: SABR causes necrosis')]
+    y = 46
+    for lab, cls, h, s_ in leg:
+        b += f'<circle cx="{rx + 11}" cy="{y + 6}" r="11" class="f-{cls}"/>'
+        b += f'<text x="{rx + 11}" y="{y + 10.5}" text-anchor="middle" class="f-t f-n">{lab}</text>'
+        b += T(rx + 30, y + 10, h, 'f-h', 'start') + T(rx + 30, y + 27, s_, 'f-s', 'start')
+        y += 50
+    b += box(10, 400, 700, 62, ['Gray is the dose; the fraction is the visit; 3, 5 or 8 fractions are standard. Planning: a 4D CT takes about ten',
+                                'phases of the breathing cycle, built into a motion envelope plus a margin; immobilisation device; cone-beam',
+                                'CT before each fraction. Ablates the tumour, does not treat the lymphatics. Size limit in guidance 5 cm'], 'b1', 'f-s')
+    return svg(472, b)
+
+
+def d17_ct_biopsy_paths():
+    """CT-guided lung biopsy: pneumothorax risk follows the aerated lung crossed (t8 case 4)."""
+    b = T(12, 22, 'CT-guided biopsy: the aerated lung crossed sets the pneumothorax risk', 'f-h', 'start')
+    # axial chest: ellipse body, two lungs, mediastinum, spine
+    b += '<ellipse cx="250" cy="220" rx="236" ry="160" class="f-b0"/>'
+    b += '<ellipse cx="250" cy="220" rx="214" ry="140" class="f-track"/>'
+    b += '<path d="M240 100 C150 84 70 130 62 220 C60 300 130 350 214 340 C230 300 232 160 240 100 Z" class="f-b1"/>'
+    b += '<path d="M260 100 C350 84 430 130 438 220 C440 300 370 350 286 340 C270 300 268 160 260 100 Z" class="f-b1"/>'
+    b += '<ellipse cx="250" cy="200" rx="26" ry="60" class="f-b0"/>'
+    b += T(250, 205, 'Med.', 'f-s')
+    b += '<circle cx="250" cy="340" r="20" class="f-b0"/>'
+    b += T(250, 345, 'Spine', 'f-s')
+    b += T(130, 230, 'Aerated lung', 'f-s')
+    # lesion 1: abutting the pleura, short path
+    b += '<circle cx="410" cy="170" r="24" class="f-warn"/>'
+    b += line(470, 120, 424, 158, 'f-l')
+    b += '<line x1="470" y1="120" x2="500" y2="96" class="f-l"/>'
+    b += _d17_d17_num(512, 88, 1, 'ok')
+    # lesion 2: deep, long path through lung
+    b += '<circle cx="190" cy="190" r="12" class="f-warn"/>'
+    b += line(28, 150, 178, 186, 'f-l')
+    b += _d17_d17_num(20, 140, 2, 'warn')
+    b += T(250, 410, 'Axial schematic, not to scale', 'f-s')
+    rx = 500
+    b += box(rx, 120, 210, 96, ['1  Little lung in the path,', 'or a larger tumour: the', 'lesion tamponades the', 'tract'], 'ok', 'f-s')
+    b += box(rx, 226, 210, 80, ['2  Long path through', 'aerated lung: the risk', 'rises with depth'], 'warn', 'f-s')
+    b += box(rx, 316, 210, 80, ['Pneumothorax about 1 in 4;', 'about 1 in 20 need', 'intervention. Seal the', 'tract on withdrawal'], 'b1', 'f-s')
+    return svg(420, b)
+
+
+def d17_tlco_manoeuvre():
+    """Single-breath transfer factor: the manoeuvre on a volume-time trace (t8 case 8)."""
+    b = T(12, 22, 'How transfer factor is measured: one breath, held for 10 seconds', 'f-h', 'start')
+    x0, y0 = 60, 320
+    b += line(x0, 50, x0, y0, 'f-l') + line(x0, y0, 700, y0, 'f-l')
+    b += T(x0 - 8, 60, 'Volume', 'f-s', 'end') if False else T(x0 + 6, 48, 'Lung volume', 'f-s', 'start')
+    b += T(690, y0 + 18, 'Time', 'f-s', 'end')
+    # trace: tidal, full exhale, rapid inhale, hold, exhale
+    d = (f'M{x0} 220 C{x0 + 15} 200 {x0 + 25} 200 {x0 + 40} 220 C{x0 + 55} 240 {x0 + 65} 240 {x0 + 80} 220 '
+         f'C{x0 + 95} 200 {x0 + 105} 200 {x0 + 120} 220 L{x0 + 170} 290 L{x0 + 200} 90 L{x0 + 360} 90 '
+         f'L{x0 + 400} 200 L{x0 + 440} 280')
+    b += f'<path d="{d}" class="f-l"/>'
+    # shading: test gas inhaled, breath hold, discard, sample
+    b += f'<rect x="{x0 + 200}" y="70" width="160" height="14" rx="4" class="f-b1"/>'
+    b += T(x0 + 280, 66, 'Hold 10 s', 'f-h')
+    b += f'<rect x="{x0 + 362}" y="96" width="22" height="70" rx="4" class="f-track"/>'
+    b += f'<rect x="{x0 + 362}" y="96" width="22" height="70" rx="4" class="f-dash"/>'
+    b += f'<rect x="{x0 + 386}" y="170" width="24" height="56" rx="4" class="f-ok"/>'
+    b += _d17_d17_num(x0 + 145, 310, 1)
+    b += _d17_d17_num(x0 + 176, 180, 2)
+    b += _d17_d17_num(x0 + 280, 110, 3)
+    b += _d17_d17_num(x0 + 352, 140, 4)
+    b += _d17_d17_num(x0 + 424, 196, 5, 'ok')
+    b += T(x0 + 460, 60, ['1  Patient exhales', '2  Rapid inhalation of oxygen,', '    helium and a trace of CO',
+                          '3  Breath hold for 10 seconds', '4  First exhalate (dead space)', '    discarded',
+                          '5  Alveolar sample analysed'], 'f-s', 'start')
+    b += box(10, 340, 345, 64, ['CO is taken up far more avidly than', 'oxygen: its fall measures transfer across', 'the alveolar membrane'], 'b0', 'f-s')
+    b += box(365, 340, 345, 64, ['Helium dilution gives the alveolar volume;', 'it underestimates total lung capacity with', 'gas trapping or obesity'], 'b0', 'f-s')
+    b += box(10, 414, 700, 44, ['KCO matters when the chest wall is abnormal (scoliosis; obesity splinting the chest wall). Predicted',
+                                'postoperative TLCO: over 60% low risk, 40 to 59% intermediate, 30 to 40% high risk'], 'b1', 'f-s')
+    return svg(468, b)
+
+
+# ================================================================ t4 systemic therapy
+
+def d17_periop_timeline():
+    """Perioperative regimens as swimlanes around the operation (not to scale), from the trial tables in t4."""
+    b = T(12, 22, 'Where each regimen sits around the operation (not to scale)', 'f-h', 'start')
+    sx = 320  # surgery column centre
+    b += f'<rect x="{sx - 18}" y="40" width="36" height="406" rx="8" class="f-track"/>'
+    b += T(sx, 56, 'Surgery', 'f-h')
+    b += T(215, 56, 'Before', 'f-h') + T(520, 56, 'After', 'f-h')
+    rows = [
+        ('CheckMate 816', 'IB to IIIA', 'Nivo + chemo x3', 'b0', 'Nothing mandated; surgery within 6 weeks', 'track'),
+        ('KEYNOTE-671', 'II to IIIB (N2)', 'Pembro + cisplatin x4', 'b0', 'Pembrolizumab, up to 13 cycles', 'b1'),
+        ('AEGEAN', 'II to IIIB (N2)', 'Durva + chemo x4', 'b0', 'Durvalumab, 12 cycles', 'b1'),
+        ('CheckMate 77T', 'IIA to IIIB', 'Nivo + chemo x4', 'b0', 'Nivolumab, 1 year', 'b1'),
+        ('IMpower010', 'Resected IB to IIIA', None, None, 'Chemo, then atezolizumab 1 year', 'b1'),
+        ('PEARLS', 'Resected IB to IIIA', None, None, 'Pembrolizumab, 1 year', 'b1'),
+        ('ADAURA (EGFR)', 'Resected IB to IIIA', None, None, '+/- chemo, then osimertinib 3 years', 'ok'),
+        ('ALINA (ALK)', 'Resected IB to IIIA', None, None, 'Alectinib 2 years (vs chemo)', 'ok'),
+    ]
+    y = 68
+    for name, pop, pre, pcls, post, qcls in rows:
+        b += T(12, y + 18, name, 'f-h', 'start')
+        b += T(12, y + 35, pop, 'f-s', 'start')
+        if pre:
+            b += box(140, y + 4, 144, 34, pre, pcls, 'f-s')
+            b += arrow(284, y + 21, sx - 20, y + 21)
+        else:
+            b += T(212, y + 25, 'surgery first', 'f-s')
+        if qcls == 'track':
+            b += f'<rect x="{sx + 26}" y="{y + 4}" width="300" height="34" rx="9" class="f-dash"/>'
+            b += T(sx + 176, y + 26, post, 'f-s')
+        else:
+            wd = {'Pembrolizumab, up to 13 cycles': 260, 'Durvalumab, 12 cycles': 240, 'Nivolumab, 1 year': 240,
+                  'Chemo, then atezolizumab 1 year': 240, 'Pembrolizumab, 1 year': 240,
+                  '+/- chemo, then osimertinib 3 years': 364, 'Alectinib 2 years (vs chemo)': 300}[post]
+            b += box(sx + 26, y + 4, wd, 34, post, qcls, 'f-s')
+        y += 47
+    b += T(12, y + 16, ['Neoadjuvant chemo-immunotherapy is for EGFR and ALK wild-type disease;',
+                        'ADAURA (osimertinib) and ALINA (alectinib) are for the mutant tumours.'], 'f-s', 'start')
+    return svg(y + 46, b)
+
+
+def d17_osimertinib_stages():
+    """Osimertinib trials by setting, from the EGFR section of t4."""
+    b = T(12, 22, 'Osimertinib at every stage of EGFR-mutant NSCLC', 'f-h', 'start')
+    cols = [
+        ('Before resection', 'NeoADAURA, 2025', ['Resectable II to IIIB', 'Osimertinib +/- chemo', 'vs chemo alone'],
+         ['MPR about 26% and 25%', 'vs 2%', 'pCR 4%, 9% vs 0%', 'EFS immature'], 'b1'),
+        ('After resection', 'ADAURA, 2020 and 2023', ['Resected IB to IIIA', '3 years vs placebo', '+/- adjuvant chemo'],
+         ['DFS HR 0.17 (II to IIIA),', '0.23 with longer follow-up', '5-yr OS 85% vs 73%', '(II to IIIA, HR 0.49)'], 'ok'),
+        ('After CRT, stage III', 'LAURA, 2024', ['Unresectable stage III', 'no progression;', 'until progression'],
+         ['Median PFS 39.1 vs', '5.6 months (HR 0.16)'], 'b0'),
+        ('Metastatic, first line', 'FLAURA2, 2023 and 2025', ['Osimertinib + platinum', 'and pemetrexed vs', 'osimertinib alone'],
+         ['Median OS 47.5 vs', '37.6 months (HR 0.77)', 'FLAURA: PFS 18.9 vs', '10.2 months'], 'b0'),
+    ]
+    w = 166
+    for i, (h, trial, des, res, cls) in enumerate(cols):
+        x = 10 + i * (w + 12)
+        b += f'<rect x="{x}" y="40" width="{w}" height="270" rx="10" class="f-{cls}"/>'
+        b += T(x + w / 2, 62, h, 'f-h')
+        b += T(x + w / 2, 82, trial, 'f-s')
+        b += line(x + 10, 94, x + w - 10, 94, 'f-grid')
+        b += T(x + w / 2, 116, des, 'f-s')
+        b += line(x + 10, 176, x + w - 10, 176, 'f-grid')
+        b += T(x + w / 2, 200, res, 'f-s')
+    b += box(10, 322, 700, 62, ['Test before treating: a resectable EGFR-mutant tumour does not go down the neoadjuvant chemo-immunotherapy',
+                                'pathway; options are surgery then osimertinib (with adjuvant chemotherapy where indicated; NICE TA761),',
+                                'or neoadjuvant osimertinib where available. Osimertinib 80 mg daily; also penetrates the brain'], 'warn', 'f-s')
+    return svg(394, b)
+
+
+# ================================================================ t7 perioperative
+
+def d17_olv_shunt():
+    """One-lung ventilation in the lateral position: the shunt, hypoxic vasoconstriction and the desaturation drill."""
+    b = T(12, 22, 'One-lung ventilation: where the shunt comes from', 'f-h', 'start')
+    # table
+    b += f'<rect x="20" y="330" width="380" height="12" rx="4" class="f-track"/>'
+    b += T(210, 362, 'Lateral position, operative side up', 'f-s')
+    # dependent ventilated lung
+    b += '<ellipse cx="210" cy="270" rx="150" ry="50" class="f-ok"/>'
+    b += T(210, 266, 'Dependent lung: ventilated', 'f-h')
+    b += T(210, 284, 'gets PEEP', 'f-s')
+    # non-dependent collapsed lung
+    b += '<path d="M90 140 C120 104 300 100 330 140 C320 170 120 178 90 140 Z" class="f-warn"/>'
+    b += T(210, 146, 'Operative lung: collapsed', 'f-h')
+    b += '<path d="M70 150 C40 90 380 80 350 150" class="f-dash"/>'
+    b += T(360, 96, 'inflated outline', 'f-s', 'end')
+    # pulmonary artery from right heart
+    b += f'<circle cx="430" cy="210" r="22" class="f-b0"/>'
+    b += T(430, 215, 'PA', 'f-s')
+    b += arrow(412, 196, 320, 160) + arrow(412, 224, 340, 254)
+    b += T(368, 170, 'shunt', 'f-s', 'start')
+    b += _d17_d17_path('M300 180 C330 200 330 220 300 236', 'f-l')
+    b += f'<line x1="300" y1="236" x2="296" y2="238" class="f-l" marker-end="url(#ah)"/>'
+    b += T(290, 196, ['Hypoxic vasoconstriction diverts', 'about 40 to 50% of that flow'], 'f-s', 'end')
+    # drill
+    rx = 470
+    b += T(rx, 48, 'Desaturation drill (Atlas)', 'f-h', 'start')
+    drill = [('1', 'FiO2 1.0'), ('2', 'Bronchoscope: check the tube or', 'blocker; suction secretions'),
+             ('3', 'PEEP to the ventilated lung'), ('4', 'CPAP about 5 cmH2O to the', 'operative lung'),
+             ('5', 'Tell the surgeon: clamping the', 'operated lung\'s pulmonary artery', 'removes the shunt')]
+    y = 66
+    for item in drill:
+        n, lines = item[0], list(item[1:])
+        b += _d17_d17_num(rx + 11, y + 10, n, 'warn' if n == '1' else 'b1')
+        b += T(rx + 30, y + 15, lines, 'f-s', 'start')
+        y += 14 + 17 * len(lines)
+    b += box(rx - 4, y + 6, 244, 82, ['Isoflurane, sevoflurane, desflurane:', 'weak inhibitors of the reflex; at', '1 MAC or less no real oxygenation', 'difference from TIVA'], 'b1', 'f-s')
+    return svg(max(y + 98, 380), b)
+
+
+# ================================================================ t1 nodules
+
+def d17_cyst_wall():
+    """Cyst against cavity, and wall thickness against malignancy (t1, cyst or cavity)."""
+    b = T(12, 22, 'Cyst or cavity: the wall decides', 'f-h', 'start')
+    # cyst
+    b += '<circle cx="110" cy="110" r="52" class="f-b1"/>'
+    b += '<circle cx="110" cy="110" r="49" class="f-lumen"/>'
+    b += T(110, 186, 'Cyst', 'f-h')
+    b += T(110, 204, ['Thin wall under 2 mm, smooth;', 'surrounding lung normal'], 'f-s')
+    # cavity in a nodule
+    b += '<path d="M300 60 C350 54 380 90 376 120 C372 160 340 168 310 164 C270 160 250 132 256 104 C260 80 280 62 300 60 Z" class="f-b1"/>'
+    b += '<path d="M302 86 C330 84 346 100 342 120 C338 140 320 144 304 140 C288 136 280 120 284 106 C288 94 294 88 302 86 Z" class="f-lumen"/>'
+    b += T(316, 186, 'Cavity', 'f-h')
+    b += T(316, 204, ['Gas in a nodule, mass or consolidation;', 'wall usually over 4 mm, often irregular'], 'f-s')
+    # cancer in a cyst
+    b += '<circle cx="560" cy="110" r="52" class="f-b1"/>'
+    b += '<circle cx="560" cy="110" r="49" class="f-lumen"/>'
+    b += '<path d="M600 92 C590 100 590 120 602 130 C612 120 612 102 600 92 Z" class="f-warn"/>'
+    b += T(560, 186, 'Cancer in a cystic airspace', 'f-h')
+    b += T(560, 204, ['New wall thickening, mural nodule,', 'surrounding ground-glass; often PET-negative'], 'f-s')
+    # scale
+    x0, x1, vmax = 30, 690, 20
+    sx = lambda v: x0 + (x1 - x0) * v / vmax
+    y = 250
+    b += T(12, y, 'Wall thickness and malignancy (mm)', 'f-h', 'start')
+    bands = [(0, 4, 'ok', ['4 mm or less', 'about 95% benign']), (4, 15, 'b1', ['5 to 15 mm', 'indeterminate']),
+             (15, 20, 'warn', ['Over 15 mm', 'about 95% malignant'])]
+    for lo, hi, cls, lab in bands:
+        b += f'<rect x="{sx(lo)}" y="{y + 12}" width="{sx(hi) - sx(lo)}" height="56" rx="6" class="f-{cls}"/>'
+        b += T((sx(lo) + sx(hi)) / 2, y + 36, lab, 'f-s')
+    for v in (0, 4, 15):
+        b += T(sx(v), y + 86, str(v), 'f-n')
+    b += box(10, y + 100, 700, 44, ['An irregular or nodular inner wall matters more than thickness. A thick-walled cavity in a smoker is',
+                                    'squamous carcinoma until proven otherwise; send samples for TB and fungi before resection'], 'b1', 'f-s')
+    return svg(y + 154, b)
+
+
+def d17_separate_nodules():
+    """Separate tumour nodules: same lobe, other ipsilateral lobe, contralateral (t1, multiple lung lesions)."""
+    b = T(12, 22, 'Separate tumour nodule of the same histology: where it sits sets the category', 'f-h', 'start')
+    cx = 210
+    b += T(cx - 100, 48, "patient's right", 'f-s')
+    b += _d17_d17_lungs(cx, 60, 290, gap=30, w=140)
+    # right lung: oblique fissure from upper lateral to the medial base; horizontal fissure to the medial border
+    b += _d17_d17_path(f'M{cx - 160} 150 C{cx - 130} 210 {cx - 80} 290 {cx - 52} 326', 'f-l')
+    b += _d17_d17_path(f'M{cx - 121} 212 C{cx - 90} 210 {cx - 60} 212 {cx - 30} 214', 'f-l')
+    # left lung oblique fissure
+    b += _d17_d17_path(f'M{cx + 160} 150 C{cx + 130} 210 {cx + 80} 290 {cx + 52} 326', 'f-l')
+    b += T(cx - 104, 122, 'RUL', 'f-s') + T(cx - 66, 262, 'RML', 'f-s') + T(cx - 148, 318, 'RLL', 'f-s')
+    b += T(cx + 84, 150, 'LUL', 'f-s') + T(cx + 150, 318, 'LLL', 'f-s')
+    # primary
+    b += f'<circle cx="{cx - 104}" cy="172" r="16" class="f-b1"/>'
+    b += T(cx - 104, 177, 'P', 'f-n')
+    # separate nodules
+    for x, y, lab, cls in [(cx - 60, 150, 'T3', 'b1'), (cx - 140, 270, 'T4', 'warn'), (cx + 100, 236, 'M1a', 'warn')]:
+        r = 16 if len(lab) < 3 else 19
+        b += f'<circle cx="{x}" cy="{y}" r="{r}" class="f-{cls}"/>'
+        b += f'<text x="{x}" y="{y + 4}" text-anchor="middle" class="f-t f-s f-n">{lab}</text>'
+    b += T(cx, 372, 'P: primary. T3: same lobe. T4: another ipsilateral lobe.', 'f-s')
+    b += T(cx, 389, 'M1a: the other lung.', 'f-s')
+    # right column: other patterns
+    rx = 420
+    pats = [('b0', 'Second primary', ['Two solid lesions, may look different;', 'separate TNM for each']),
+            ('b0', 'Multifocal ground-glass or lepidic', ['Several GGO or part-solid nodules: highest', 'T with the number or (m); one N and M']),
+            ('b0', 'Pneumonic-type adenocarcinoma', ['Consolidation or patchy GGO: one lobe T3,', 'other ipsilateral lobe T4, contralateral M1a']),
+            ('warn', 'The usual error', ['Calling a second primary metastatic and', 'denying surgery; stage the mediastinum', 'invasively before calling two primaries'])]
+    y = 46
+    for cls, h, s_ in pats:
+        hh = 30 + 17 * len(s_)
+        b += f'<rect x="{rx}" y="{y}" width="290" height="{hh}" rx="9" class="f-{cls}"/>'
+        b += T(rx + 12, y + 20, h, 'f-h', 'start') + T(rx + 12, y + 38, s_, 'f-s', 'start')
+        y += hh + 10
+    return svg(max(y + 10, 404), b)
+
+
+# ---- figs_D18.py
+"""Drawing pass D18 (second pass, 25 November 2026): mitral grading, echo/CT planning, pacing leads,
+lung function, oesophagus, congenital lung, sympathectomy, wound healing.
+Every label and number comes from the corpus3 note text named in each docstring."""
+
+
+_d18_ST = 'fill="none" style="stroke-width:3.5px;stroke-linecap:round"'
+
+
+def _d18_num(x, y, n, cls='b1'):
+    return (f'<circle cx="{x}" cy="{y}" r="11" class="f-{cls}"/>'
+            f'<text x="{x}" y="{y + 4.5}" text-anchor="middle" class="f-t f-n">{n}</text>')
+
+
+def _d18_head(x, y, w, h, title, lines, hcls='b1', cls='b0', tcls='f-s'):
+    """Card with a coloured header strip."""
+    out = f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="10" class="f-{cls}"/>'
+    out += f'<rect x="{x}" y="{y}" width="{w}" height="30" rx="10" class="f-{hcls}"/>'
+    out += T(x + w / 2, y + 20, title, 'f-h')
+    out += T(x + w / 2, y + 50, lines, tcls)
+    return out
+
+
+# ---------------------------------------------------------------- c1 mitral
+
+def d18_pisa_steps():
+    """Convergence (PISA) method: c9 'Ultrasound and Doppler physics'; thresholds from c1 'Thresholds: Mitral regurgitation'."""
+    b = T(12, 22, 'Quantifying mitral regurgitation by flow convergence (PISA)', 'f-h', 'start')
+    # left: orifice, shell, jet
+    cx, oy = 170, 150
+    b += T(30, 62, 'Atrium', 'f-s', 'start') + T(30, 196, ['Ventricle', '(upstream)'], 'f-s', 'start')
+    b += f'<path d="M{cx} {oy} L{cx - 20} 64 M{cx} {oy} L{cx + 20} 64" class="f-cut" style="stroke-width:3px"/>'
+    b += T(cx + 30, 80, 'Jet', 'f-s', 'start')
+    for r, cls in [(78, 'f-dash'), (56, 'f-l'), (34, 'f-dash')]:
+        b += f'<path d="M{cx - r} {oy} A{r} {r} 0 0 0 {cx + r} {oy}" class="{cls}" fill="none"/>'
+    b += f'<path d="M30 {oy} L{cx - 7} {oy}" class="f-l" {_d18_ST}/><path d="M{cx + 7} {oy} L310 {oy}" class="f-l" {_d18_ST}/>'
+    b += T(42, oy - 10, 'Leaflet', 'f-s', 'start') + T(298, oy - 10, 'Leaflet', 'f-s', 'end')
+    b += f'<line x1="{cx}" y1="{oy}" x2="{cx + 40}" y2="{oy + 39}" class="f-l" marker-end="url(#ah)"/>'
+    b += T(cx + 36, oy + 30, 'r', 'f-h', 'start')
+    b += T(cx, oy + 104, ['First colour change = shell of known velocity', '(colour baseline lowered to 30 to 40 cm/s)'], 'f-s')
+    # right: steps
+    x = 340
+    steps = [('1', 'Flow rate = 2 × 3.14 × r² × aliasing velocity'),
+             ('2', 'Orifice area (EROA) = flow rate ÷ peak jet velocity'),
+             ('3', 'Regurgitant volume = EROA × jet velocity integral')]
+    for i, (n, s) in enumerate(steps):
+        y = 44 + i * 52
+        b += f'<rect x="{x}" y="{y}" width="370" height="42" rx="9" class="f-b0"/>'
+        b += _d18_num(x + 22, y + 21, n) + T(x + 42, y + 26, s, 'f-s', 'start')
+        if i < 2:
+            b += arrow(x + 185, y + 42, x + 185, y + 52)
+    b += box(x, 206, 370, 60, ['The radius is squared, and the method assumes a round', 'orifice and a hemispherical shell: it under-reads slit-like',
+                                'secondary MR and wall-constrained jets'], 'warn', 'f-s')
+    # bottom tiles: severe thresholds
+    b += T(12, 302, 'Severe mitral regurgitation', 'f-h', 'start')
+    spec = [('EROA', '40 mm² or more', '(secondary MR: 30)'), ('Regurgitant volume', '60 mL or more', '(secondary MR: 45)'),
+            ('Regurgitant fraction', '50% or more', ''), ('Vena contracta', '7 mm or more', 'biplane over 8 mm')]
+    for i, (a, v, s) in enumerate(spec):
+        xx = 10 + i * 177
+        b += f'<rect x="{xx}" y="312" width="168" height="78" rx="10" class="f-b1"/>'
+        b += T(xx + 84, 334, a, 'f-s') + T(xx + 84, 358, v, 'f-h') + T(xx + 84, 378, s, 'f-s')
+    b += T(12, 410, 'Secondary MR with low flow or an elliptical orifice: EROA 30 mm² or regurgitant volume 45 mL may already be severe.', 'f-s', 'start')
+    return svg(420, b)
+
+
+def d18_ms_grading():
+    """c1 'Thresholds: Mitral stenosis'."""
+    b = T(12, 22, 'Mitral stenosis: how severe, and balloon or surgery', 'f-h', 'start')
+    # area scale
+    x0, x1 = 120, 690
+    def px(v):  # area 2.0 at left, 0.4 at right
+        return x0 + (2.0 - v) / 1.6 * (x1 - x0)
+    b += T(110, 66, 'Valve area', 'f-s', 'end')
+    b += f'<rect x="{x0}" y="48" width="{px(1.5) - x0}" height="26" rx="5" class="f-track"/>'
+    b += f'<rect x="{px(1.5)}" y="48" width="{px(1.0) - px(1.5)}" height="26" rx="5" class="f-b1"/>'
+    b += f'<rect x="{px(1.0)}" y="48" width="{x1 - px(1.0)}" height="26" rx="5" class="f-warn"/>'
+    b += T((x0 + px(1.5)) / 2, 66, 'Over 1.5 cm²', 'f-s') + T((px(1.5) + px(1.0)) / 2, 66, 'Severe: 1.5 or less', 'f-h')
+    b += T((px(1.0) + x1) / 2, 66, 'Very severe: 1.0 or less', 'f-h')
+    b += T(110, 96, 'Half-time', 'f-s', 'end')
+    b += T((px(1.5) + px(1.0)) / 2, 96, '150 ms or more', 'f-s') + T((px(1.0) + x1) / 2, 96, '220 ms or more', 'f-s')
+    b += T(120, 120, ['Supporting: mean gradient over 10 mmHg at 60 to 80 bpm (rate and flow dependent) ·', 'resting SPAP over 50 mmHg · exercise mean gradient over 15 mmHg. Planimetry preferred for area.'], 'f-s', 'start')
+    # decision
+    b += box(200, 158, 320, 40, 'Symptomatic, area 1.5 cm² or less', 'b1', 'f-h')
+    b += arrow(290, 198, 170, 226) + arrow(430, 198, 550, 226)
+    b += box(10, 228, 330, 54, ['Favourable anatomy:', 'percutaneous mitral commissurotomy (I)'], 'ok', 'f-s')
+    b += box(380, 228, 330, 54, ['Unsuitable for commissurotomy:', 'mitral surgery (I)'], 'b0', 'f-s')
+    b += _d18_head(380, 294, 330, 126, 'What favours surgery',
+               ['Wilkins score over 8, or Cormier group 3', 'Left atrial thrombus despite anticoagulation',
+                'More than mild mitral regurgitation', 'Severe or bicommissural calcification,', 'or no commissural fusion'], 'warn')
+    b += box(10, 294, 330, 126, ['Asymptomatic, area 1.5 or less: commissurotomy', 'if anatomy favourable (IIa) with new AF, prior', 'embolism, dense spontaneous contrast, SPAP', 'over 50, planned pregnancy or major', 'non-cardiac surgery'], 'b0', 'f-s')
+    b += T(708, 438, 'Also favours surgery: concomitant severe aortic or tricuspid disease, or CABG', 'f-s', 'end')
+    return svg(450, b)
+
+
+def _d18_mv_panel(cx, kind):
+    """Long-axis mitral cartoon: annulus at y=90, leaflets hanging into the ventricle."""
+    out = line(cx - 150, 90, cx - 70, 90) + line(cx + 70, 90, cx + 150, 90)
+    out += T(cx - 150, 76, 'Atrium', 'f-s', 'start') + T(cx - 150, 210, 'Ventricle', 'f-s', 'start')
+    if kind == 'rheum':
+        out += f'<path d="M{cx - 70} 90 Q{cx - 40} 120 {cx - 12} 176" class="f-l" {_d18_ST}/>'
+        out += f'<path d="M{cx + 70} 90 Q{cx + 40} 120 {cx + 12} 176" class="f-l" {_d18_ST}/>'
+        out += f'<rect x="{cx - 20}" y="166" width="40" height="16" rx="7" class="f-warn"/>'
+        out += arrow(cx + 90, 196, cx + 24, 176) + T(cx + 94, 204, 'Tips fused', 'f-s', 'start')
+    else:
+        out += f'<rect x="{cx - 92}" y="80" width="46" height="22" rx="9" class="f-warn"/>'
+        out += f'<rect x="{cx + 46}" y="80" width="46" height="22" rx="9" class="f-warn"/>'
+        out += f'<path d="M{cx - 46} 96 L{cx - 30} 128 Q{cx - 36} 158 {cx - 48} 176" class="f-l" {_d18_ST}/>'
+        out += f'<path d="M{cx + 46} 96 L{cx + 30} 128 Q{cx + 36} 158 {cx + 48} 176" class="f-l" {_d18_ST}/>'
+        out += arrow(cx + 120, 64, cx + 80, 82) + T(cx + 120, 58, 'Calcium', 'f-s', 'middle')
+        out += arrow(cx + 92, 196, cx + 52, 176) + T(cx + 96, 204, 'Tips free', 'f-s', 'start')
+    return out
+
+
+def d18_mac_vs_rheumatic():
+    """c1 'Mitral annular calcification: regurgitation or stenosis?'."""
+    b = T(180, 22, 'Rheumatic stenosis', 'f-h') + T(540, 22, 'Calcific (annular) stenosis', 'f-h')
+    b += line(360, 10, 360, 330, 'f-dash')
+    b += _d18_mv_panel(180, 'rheum') + _d18_mv_panel(540, 'calc')
+    b += box(20, 222, 320, 80, ['Commissural fusion and tip restriction:', 'a funnel, most stenotic at the tips', 'Balloon commissurotomy can work'], 'b1', 'f-s')
+    b += box(380, 222, 320, 80, ['Annulus cannot dilate; leaflets restricted', 'from the base. Obstruction near the annulus,', 'tubular. No commissural fusion, so balloon', 'valvotomy does not help'], 'warn', 'f-s')
+    b += T(12, 330, 'Annular calcification causes regurgitation more often than stenosis: population studies 11.9% and 9.5% significant', 'f-s', 'start')
+    b += T(12, 348, 'regurgitation against 2.2% and 6.6% stenosis. About a third progress within 18 to 36 months.', 'f-s', 'start')
+    b += box(10, 360, 700, 44, ['Assessment trap: pressure half-time unreliable with a stiff ventricle. Use the mean gradient at a', 'stated heart rate, and planimetry on 3D echo or CT'], 'b0', 'f-s')
+    return svg(414, b)
+
+
+def d18_rerepair_mix():
+    """c1 'Mitral valve re-repair: mechanisms of repair failure and techniques' (Cleveland Clinic results)."""
+    items = [('Fibrosis or scar', 27, 'b1'), ('Disease progression', 22, 'b1'), ('Chordal pseudo-elongation', 19, 'warn'),
+             ('Suture dehiscence', 8, 'warn'), ('Annuloplasty dehiscence', 6, 'warn'), ('Endocarditis', 6, 'b1'),
+             ('Mitral mass', 6, 'track'), ('Systolic anterior motion', 3, 'warn'), ('Haemolysis', 3, 'warn')]
+    h, b = bars(items, '%', 40, 'Why 36 repairs for degenerative prolapse failed (Cleveland Clinic, 5 years)', 230)
+    b += f'<rect x="200" y="{h + 2}" width="22" height="16" rx="4" class="f-warn"/>' + T(230, h + 15, 'Procedure-related: usually early', 'f-s', 'start')
+    b += f'<rect x="480" y="{h + 2}" width="22" height="16" rx="4" class="f-b1"/>' + T(510, h + 15, 'Valve-related: usually late', 'f-s', 'start')
+    b += f'<rect x="12" y="{h + 2}" width="22" height="16" rx="4" class="f-track"/>' + T(42, h + 15, 'Not classified', 'f-s', 'start')
+    b += T(12, h + 44, '9 failed within 1 year of the index repair, 27 after it. Re-repair by sternotomy in all; 2 late re-repair failures, both replaced.', 'f-s', 'start')
+    return svg(h + 56, b)
+
+
+# ---------------------------------------------------------------- c9 echo and CT
+
+def d18_tavi_ct_root():
+    """c9 'Thresholds: CT measurements for procedural planning'."""
+    b = T(12, 22, 'Gated CT before TAVI or root surgery: the measurements that change the plan', 'f-h', 'start')
+    # root long axis, LVOT at bottom, aorta at top
+    b += ('<path d="M200 330 L200 262 C200 250 150 236 150 190 C150 150 186 136 196 120 L196 50 '
+          'M330 330 L330 262 C330 250 380 236 380 190 C380 150 344 136 334 120 L334 50" class="f-l" fill="none" style="stroke-width:3px"/>')
+    b += line(186, 262, 344, 262, 'f-cut')  # annulus
+    b += line(184, 120, 346, 120, 'f-dash')  # STJ
+    b += '<circle cx="158" cy="200" r="7" class="f-b1"/>'
+    b += f'<line x1="120" y1="262" x2="120" y2="200" class="f-l" marker-start="url(#ah)" marker-end="url(#ah)"/>'
+    b += line(116, 200, 152, 200, 'f-grid')
+    b += T(112, 222, ['Coronary', 'height'], 'f-s', 'end')
+    b += f'<line x1="150" y1="168" x2="380" y2="168" class="f-l" marker-start="url(#ah)" marker-end="url(#ah)"/>'
+    b += T(265, 160, 'Sinus width', 'f-s')
+    b += T(265, 90, 'Ascending aorta', 'f-s') + T(265, 300, 'LVOT', 'f-s') + T(265, 116, 'Sinotubular junction', 'f-s')
+    b += '<path d="M206 300 C214 290 222 296 230 288" class="f-cut" style="stroke-width:5px"/>'
+    # callouts right
+    x = 410
+    spec = [(44, 'Ascending aorta 45 mm or more with a valve', 'indication: surgery with replacement', 'b0'),
+            (100, 'Coronary height under 10 mm (some use 12)', 'obstruction risk; worse if sinus under 30 mm', 'warn'),
+            (156, 'Valve-in-valve: virtual valve to coronary', 'distance under 4 mm: redo or leaflet modification', 'warn'),
+            (212, 'Annulus in systole (30 to 40% R-R, double-', 'oblique). Small: area 430 mm² or less', 'b1'),
+            (268, 'LVOT calcium, moderate or severe, esp. below', 'the non-coronary cusp: rupture, paravalvular leak', 'warn')]
+    for y, l1, l2, c in spec:
+        b += box(x, y, 300, 46, [l1, l2], c, 'f-s')
+    b += line(346, 67, 408, 67, 'f-grid') + line(160, 200, 408, 123, 'f-grid')
+    b += line(344, 262, 408, 235, 'f-grid') + line(232, 292, 408, 291, 'f-grid')
+    b += box(10, 344, 345, 62, ['TAVI ranges: balloon-expandable annulus area', 'about 273 to 683 mm²; self-expanding perimeter-', 'derived diameter about 18 to 30 mm'], 'b0', 'f-s')
+    b += box(365, 344, 345, 62, ['Access: iliofemoral minimal lumen 5.0 to 5.5 mm', 'or more for 14 Fr sheaths; below this,', 'alternative access or surgery'], 'b0', 'f-s')
+    return svg(416, b)
+
+
+# ---------------------------------------------------------------- c18 devices
+
+def d18_lead_positions():
+    """c18 'Lead position, complications and extraction'; tricuspid points from the ESC 2021 section of the same tab."""
+    b = T(12, 22, 'Where the leads go (arrangement schematic, frontal view)', 'f-h', 'start')
+    # chambers
+    b += '<path d="M330 120 L300 60 L254 60 L262 136 Z" class="f-b0"/>' + T(306, 74, 'Outflow tract', 'f-s', 'start')
+    b += '<path d="M400 130 C440 170 440 280 330 336 C350 260 346 180 330 130 Z" class="f-track"/>' + T(400, 236, 'LV', 'f-s')
+    b += '<path d="M196 160 L262 132 L330 128 C346 180 350 260 330 336 C270 330 214 286 196 226 Z" class="f-b0"/>'
+    b += T(252, 260, ['Right', 'ventricle'], 'f-s')
+    b += line(330, 128, 330, 336, 'f-grid') + T(340, 310, 'Septum', 'f-s', 'start')
+    b += '<ellipse cx="128" cy="180" rx="66" ry="58" class="f-b0"/>' + T(118, 200, ['Right', 'atrium'], 'f-s')
+    b += '<ellipse cx="86" cy="112" rx="28" ry="18" class="f-b0"/>' + T(40, 82, 'Appendage', 'f-s', 'start')
+    # coronary sinus along the back of the AV groove
+    b += '<path d="M176 214 C230 230 340 140 420 150" class="f-duct" style="stroke-width:3px"/>'
+    b += T(420, 136, 'Coronary sinus', 'f-s', 'end')
+    # leads
+    st = 'class="f-l" fill="none" style="stroke-width:2.5px'
+    b += f'<path d="M150 34 C150 80 120 100 92 110" {st}"/><circle cx="90" cy="111" r="5" class="f-ah"/>'
+    b += f'<path d="M156 34 C156 120 176 180 230 200 C280 216 316 240 324 262" {st}"/><circle cx="324" cy="262" r="5" class="f-ah"/>'
+    b += f'<path d="M162 34 C162 110 168 190 180 214 C232 228 340 146 412 152" {st};stroke-dasharray:6 3"/><circle cx="412" cy="152" r="5" class="f-ah"/>'
+    b += '<circle cx="318" cy="322" r="5" class="f-ah"/>' + T(300, 352, 'or inferior apex', 'f-s')
+    b += T(142, 46, 'Transvenous leads', 'f-s', 'end')
+    # do-not marks: free wall and outflow tract
+    for x, y in [(290, 92), (214, 262)]:
+        b += f'<path d="M{x - 8} {y - 8} L{x + 8} {y + 8} M{x + 8} {y - 8} L{x - 8} {y + 8}" class="f-cut" style="stroke-width:3px"/>'
+    b += T(196, 292, 'Free wall', 'f-s', 'end')
+    b += T(12, 376, ['Atrial lead: appendage. Right ventricular lead: septum or inferior apex,', 'not the free wall or outflow tract (crosses). Left ventricular lead:',
+                     'through the coronary sinus (dashed) or epicardially.'], 'f-s', 'start')
+    # complications right
+    x = 452
+    b += _d18_head(x, 40, 258, 104, 'Early: under 2% overall', ['Pneumothorax, haemothorax,', 'perforation with tamponade, tricuspid', 'injury, air embolism, venous thrombosis'], 'warn')
+    b += _d18_head(x, 152, 258, 88, 'Infection: up to 3%', ['Remove the whole system;', 'temporary pacing until clear'], 'warn')
+    b += _d18_head(x, 248, 258, 88, 'Late', ['Fracture or insulation failure (threshold', 'rises), delayed perforation, erosion'], 'b1')
+    b += box(10, 434, 345, 62, ['Extraction: major complications up to 15.3%,', 'mortality 1.1% at 6 months; cardiac surgeon', 'and bypass on standby'], 'b0', 'f-s')
+    b += box(365, 434, 345, 62, ['Tricuspid surgery: epicardial ventricular lead;', 'never a transvalvular lead across a', 'mechanical tricuspid valve'], 'b0', 'f-s')
+    return svg(506, b)
+
+
+# ---------------------------------------------------------------- t2 fitness
+
+def d18_kco_patterns():
+    """t2 'KCO'."""
+    b = box(170, 10, 380, 44, ['TLCO = KCO × VA', 'total transfer = uptake per litre × alveolar volume'], 'b1', 'f-s')
+    b += arrow(250, 54, 120, 82) + arrow(360, 54, 360, 82) + arrow(470, 54, 600, 82)
+    spec = [('TLCO low, KCO low', ['Emphysema', 'Pulmonary vascular disease', 'Anaemia'], '', 'warn'),
+            ('TLCO low, VA low,', ['Interstitial lung disease', '', ''], 'KCO low or normal', 'b1'),
+            ('TLCO low, KCO high', ['Extrapulmonary restriction', 'or previous resection:', 'remaining lung normal'], 'VA low', 'ok')]
+    for i, (h, ls, sub, c) in enumerate(spec):
+        x = 10 + i * 236
+        b += f'<rect x="{x}" y="84" width="226" height="130" rx="10" class="f-b0"/>'
+        b += f'<rect x="{x}" y="84" width="226" height="46" rx="10" class="f-{c}"/>'
+        b += T(x + 113, 103, h, 'f-h' if len(h) < 24 else 'f-s')
+        if sub:
+            b += T(x + 113, 121, sub, 'f-s')
+        b += T(x + 113, 154, [l for l in ls if l], 'f-s')
+    b += box(10, 226, 700, 40, 'A normal KCO with a low VA is not reassuring: it should be high for that volume', 'warn', 'f-s')
+    b += box(10, 276, 700, 44, ['For predicted postoperative values and the 60% and 40% tiers use TLCO corrected for haemoglobin,', 'not KCO. Repeat after induction treatment'], 'b0', 'f-s')
+    return svg(330, b)
+
+
+# ---------------------------------------------------------------- t18 oesophagus
+
+def d18_diverticula():
+    """t18 'Oesophageal diverticula (TSRA ch. 38)'; Killian's triangle borders also in 'Oesophageal anatomy and physiology'."""
+    b = T(12, 22, 'Oesophageal diverticula: where they arise and what to do (arrangement schematic)', 'f-h', 'start')
+    tx = 150
+    b += f'<rect x="{tx - 20}" y="40" width="40" height="370" rx="14" class="f-b0"/>'
+    b += f'<path d="M{tx - 60} 410 C{tx - 60} 450 {tx + 70} 456 {tx + 70} 420 L{tx + 20} 400 L{tx - 20} 400 Z" class="f-b0"/>'
+    b += T(tx + 4, 444, 'Stomach', 'f-s')
+    b += line(tx - 70, 392, tx + 70, 392, 'f-grid') + T(tx - 74, 396, 'Hiatus', 'f-s', 'end')
+    # cricopharyngeus band
+    b += f'<rect x="{tx - 24}" y="90" width="48" height="12" rx="4" class="f-b1"/>'
+    b += T(tx - 30, 100, 'Cricopharyngeus', 'f-s', 'end')
+    b += f'<path d="M{tx - 24} 82 L{tx + 24} 62" class="f-l"/>' + T(tx - 30, 70, 'Inferior constrictor', 'f-s', 'end')
+    # Zenker posterior just above cricopharyngeus (posterior to the right in this lateral view)
+    b += f'<path d="M{tx + 20} 72 C{tx + 50} 70 {tx + 64} 92 {tx + 60} 120 C{tx + 56} 140 {tx + 36} 140 {tx + 30} 120 L{tx + 20} 88" class="f-warn"/>'
+    b += T(tx + 66, 60, "Zenker's", 'f-h', 'start')
+    # Killian-Jamieson below CP
+    b += f'<ellipse cx="{tx - 30}" cy="122" rx="14" ry="10" class="f-warn"/>' + T(tx - 50, 126, 'Killian-Jamieson', 'f-s', 'end')
+    # mid-thoracic traction with node
+    b += f'<path d="M{tx + 20} 220 L{tx + 40} 226 L{tx + 20} 236" class="f-b1"/>'
+    b += f'<circle cx="{tx + 58}" cy="226" r="12" class="f-b1"/>' + T(tx + 58, 252, 'Node', 'f-s')
+    b += T(tx - 30, 230, 'Mid-thoracic', 'f-s', 'end')
+    # epiphrenic
+    b += f'<path d="M{tx + 20} 340 C{tx + 60} 330 {tx + 70} 380 {tx + 20} 378" class="f-warn"/>'
+    b += T(tx - 30, 364, 'Epiphrenic', 'f-s', 'end')
+    b += T(tx, 470, 'Lateral view; posterior to the right', 'f-s')
+    # treatment cards
+    x = 300
+    b += _d18_head(x, 40, 410, 112, "Zenker's: pulsion, false, Killian's triangle",
+               ['Hypertonic cricopharyngeus; all considered for surgery.', 'Principle: adequate cricopharyngeal myotomy, at least',
+                '3 cm distal; then diverticulectomy or pexy (open, left neck)', 'or endoscopic stapling of the common wall if over 3 cm'], 'warn')
+    b += _d18_head(x, 160, 410, 96, 'Mid-thoracic: traction, true',
+               ['TB, histoplasmosis, lymphadenitis. Observe if mild;', 'if symptomatic, right thoracoscopy or thoracotomy,',
+                'excise, layered closure, myotomy on the opposite wall'], 'b1')
+    b += _d18_head(x, 264, 410, 112, 'Epiphrenic: pulsion, false',
+               ['Motility disorder (achalasia, DES): manometry. Observe if', 'mild. Under 5 cm from hiatus laparoscopic, over 5 cm left',
+                'chest; diverticulectomy plus long myotomy; anti-reflux', 'procedure if the myotomy crosses the LES'], 'warn')
+    b += box(x, 386, 410, 46, ['Killian-Jamieson: lateral, just below cricopharyngeus;', 'open neck, excise or pexy, distal myotomy, protect RLN'], 'b0', 'f-s')
+    return svg(482, b)
+
+
+def d18_oes_stent():
+    """t18 'Oesophageal stenting (TSRA ch. 37)'."""
+    b = T(12, 22, 'Oesophageal stent: sizing and the three danger zones', 'f-h', 'start')
+    tx = 170
+    b += f'<rect x="{tx - 22}" y="44" width="44" height="320" rx="14" class="f-b0"/>'
+    b += f'<path d="M{tx - 22} 364 C{tx - 60} 380 {tx - 50} 420 {tx + 10} 420 C{tx + 70} 420 {tx + 80} 380 {tx + 22} 364 Z" class="f-b0"/>'
+    b += T(tx + 10, 404, 'Stomach', 'f-s')
+    b += f'<rect x="{tx - 26}" y="54" width="52" height="12" rx="4" class="f-b1"/>' + T(tx - 34, 64, 'UES', 'f-s', 'end')
+    # tumour
+    b += f'<path d="M{tx - 22} 180 C{tx - 6} 190 {tx - 6} 230 {tx - 22} 244 Z M{tx + 22} 184 C{tx + 4} 196 {tx + 6} 228 {tx + 22} 240 Z" class="f-warn"/>'
+    b += T(tx - 30, 216, 'Tumour', 'f-s', 'end')
+    # stent
+    b += f'<rect x="{tx - 14}" y="140" width="28" height="144" rx="6" class="f-stent"/>'
+    for y in (140, 284):
+        b += f'<line x1="{tx + 34}" y1="{y}" x2="{tx + 60}" y2="{y}" class="f-grid"/>'
+    b += f'<line x1="{tx + 50}" y1="140" x2="{tx + 50}" y2="180" class="f-l" marker-start="url(#ah)" marker-end="url(#ah)"/>'
+    b += f'<line x1="{tx + 50}" y1="244" x2="{tx + 50}" y2="284" class="f-l" marker-start="url(#ah)" marker-end="url(#ah)"/>'
+    b += T(tx + 58, 164, '2 to 4 cm', 'f-s', 'start') + T(tx + 58, 268, '2 to 4 cm', 'f-s', 'start')
+    b += T(tx, 440, 'Dilate to at least 6 mm first', 'f-s')
+    # danger zones
+    x = 330
+    b += _d18_head(x, 44, 380, 78, 'Proximal: about 15 cm from incisors', ['The stent must not cross the upper', 'oesophageal sphincter'], 'warn')
+    b += _d18_head(x, 130, 380, 78, 'Mid-oesophagus', ['Tracheal compression: be ready to intubate', 'and remove the stent if stridor develops'], 'warn')
+    b += _d18_head(x, 216, 380, 78, 'Across the GOJ', ['Limit the gastric length: contact with the', 'opposite wall causes obstruction or ulcer'], 'warn')
+    b += arrow(x - 4, 72, tx + 30, 60) + arrow(x - 4, 160, tx + 30, 200) + arrow(x - 4, 250, tx + 30, 352)
+    b += box(x, 304, 380, 62, ['Covered stents: less ingrowth, removable, suit perforation,', 'fistula and benign stricture, but migrate more.',
+                               'Perforation: contained, early, no sepsis; leave 4 to 6 weeks'], 'b0', 'f-s')
+    b += box(x, 376, 380, 62, ['Outcomes: over 90% tolerate at least liquids; reintervention', 'up to 50% (ingrowth 11.3%, migration 6.8%);',
+                               'periprocedural death 0.5 to 2%'], 'b1', 'f-s')
+    return svg(450, b)
+
+
+# ---------------------------------------------------------------- t19 congenital lung and sympathectomy
+
+def _d18_eatef(cx, top_fist, bot_fist, atresia):
+    """Trachea on the left, oesophagus on the right."""
+    tx, ox = cx - 26, cx + 22
+    out = f'<rect x="{tx - 10}" y="50" width="20" height="120" rx="8" class="f-lumen"/>'
+    out += f'<path d="M{tx - 4} 170 L{tx - 22} 196 M{tx + 4} 170 L{tx + 22} 196" class="f-l" style="stroke-width:7px;stroke-linecap:round"/>'
+    if atresia:
+        out += f'<rect x="{ox - 11}" y="50" width="22" height="58" rx="10" class="f-b1"/>'
+        out += f'<rect x="{ox - 11}" y="{140}" width="22" height="80" rx="10" class="f-b1"/>'
+    else:
+        out += f'<rect x="{ox - 11}" y="50" width="22" height="170" rx="10" class="f-b1"/>'
+    out += f'<ellipse cx="{ox + 6}" cy="228" rx="22" ry="12" class="f-b1"/>'
+    if top_fist:
+        out += f'<path d="M{tx + 10} {top_fist} L{ox - 11} {top_fist - 14}" class="f-cut" style="stroke-width:4px"/>'
+    if bot_fist:
+        out += f'<path d="M{tx + 10} {bot_fist} L{ox - 11} {bot_fist - 10}" class="f-cut" style="stroke-width:4px"/>'
+    return out
+
+
+def d18_ea_tef():
+    """t19 'Congenital lung disease (TSRA ch. 16)' Gross types; repair points from t18 'Congenital diseases of the oesophagus (TSRA ch. 33)'."""
+    b = T(12, 22, 'Oesophageal atresia and tracheo-oesophageal fistula: Gross types', 'f-h', 'start')
+    spec = [('A', 'No fistula', '8%', None, None, True), ('B', 'Proximal fistula', '1%', 100, None, True),
+            ('C', 'Distal fistula', '85%', None, 160, True), ('D', 'Both fistulas', '2%', 100, 160, True),
+            ('E', 'H-type, no atresia', '4%', None, 120, False)]
+    for i, (g, d, f, tf, bf, at) in enumerate(spec):
+        x = 10 + i * 142
+        cls = 'f-warn' if g == 'C' else 'f-b0'
+        b += f'<rect x="{x}" y="34" width="134" height="270" rx="10" class="{cls}"/>'
+        b += _d18_eatef(x + 67, tf, bf, at)
+        b += T(x + 67, 266, 'Type ' + g, 'f-h') + T(x + 67, 282, d, 'f-s') + T(x + 67, 298, f, 'f-h')
+    b += T(14, 324, 'Each panel: trachea left, oesophagus right, fistula as a red bar. Arrangement schematic.', 'f-s', 'start')
+    b += box(10, 336, 345, 98, ['Diagnosis: catheter will not pass (do under', 'fluoroscopy). Gas in the bowel means a distal', 'fistula. About half have other anomalies', '(VACTERL, CHARGE): echo for a right arch'], 'b0', 'f-s')
+    b += box(365, 336, 345, 98, ['Repair: right thoracotomy, 4th space, extra-', 'pleural; ligate the fistula flush with the trachea;', 'single-layer tension-free anastomosis. Long gap', '(over 3 cm): gastrostomy, stage, elongate'], 'b1', 'f-s')
+    return svg(444, b)
+
+
+def d18_sequestration():
+    """t19 'Congenital lung disease (TSRA ch. 16)': bronchopulmonary sequestration."""
+    b = T(180, 22, 'Intralobar (75%)', 'f-h') + T(540, 22, 'Extralobar (25%)', 'f-h')
+    b += line(360, 10, 360, 330, 'f-dash')
+    for cx, intra in [(180, True), (540, False)]:
+        # aorta descending on the left side of panel
+        ax = cx + 100
+        b += f'<path d="M{ax} 40 L{ax} 300" class="f-vessel" style="stroke-width:18"/>'
+        b += T(ax, 318, 'Aorta', 'f-s')
+        b += '<path d="M%d 300 L%d 300" class="f-l"/>' % (cx - 140, cx + 140)
+        b += T(cx - 136, 316, 'Diaphragm', 'f-s', 'start')
+        # lower lobe outline
+        b += f'<path d="M{cx - 130} 290 C{cx - 140} 200 {cx - 110} 80 {cx - 40} 60 C{cx + 20} 70 {cx + 70} 120 {cx + 80} 290 Z" class="f-b0"/>'
+        b += T(cx - 70, 110, 'Left lower lobe', 'f-s')
+        if intra:
+            b += f'<ellipse cx="{cx + 30}" cy="236" rx="42" ry="34" class="f-warn"/>'
+            b += T(cx + 30, 240, 'Sequestration', 'f-s')
+            b += f'<path d="M{ax - 8} 220 C{ax - 30} 220 {cx + 80} 236 {cx + 72} 236" class="f-cut" style="stroke-width:4px"/>'
+            b += f'<path d="M{cx - 12} 236 C{cx - 50} 240 {cx - 80} 200 {cx - 100} 190" class="f-duct" style="stroke-width:3px"/>'
+            b += T(cx - 100, 180, 'To pulmonary veins', 'f-s')
+            b += T(cx - 60, 274, 'Shares visceral pleura', 'f-s')
+        else:
+            b += f'<ellipse cx="{cx + 40}" cy="270" rx="34" ry="20" class="f-warn"/>'
+            b += f'<ellipse cx="{cx + 40}" cy="270" rx="40" ry="26" class="f-dash" fill="none"/>'
+            b += f'<path d="M{ax - 8} 266 C{ax - 20} 266 {cx + 84} 268 {cx + 76} 270" class="f-cut" style="stroke-width:4px"/>'
+            b += T(cx - 50, 244, ['Own pleura,', 'separate'], 'f-s')
+            b += T(cx - 10, 190, ['Veins usually systemic', '(only 20% pulmonary)'], 'f-s')
+        b += T(ax + 14, 200 if intra else 252, 'Systemic', 'f-s', 'start') + T(ax + 14, 216 if intra else 268, 'artery', 'f-s', 'start')
+    b += box(10, 336, 345, 96, ['Medial, posterior left lower lobe. Infection in up', 'to 91% in childhood; 10% connect to the', 'oesophagus; other anomalies uncommon.', 'Resection generally recommended'], 'b0', 'f-s')
+    b += box(365, 336, 345, 96, ['Up to 15% within or below the diaphragm (left', 'suprarenal commonest). Other anomalies in 40%', '(CDH, cardiac, cystic lung, chest wall).', 'Resect if symptomatic'], 'b0', 'f-s')
+    b += box(10, 442, 700, 40, 'Systemic artery usually directly off the aorta, from below the diaphragm in 20%: find and control it early', 'warn', 'f-s')
+    return svg(492, b)
+
+
+def d18_cpam_stocker():
+    """t19 'Congenital lung disease (TSRA ch. 16)': CPAM Stocker types."""
+    b = T(12, 22, 'Congenital pulmonary airway malformation: Stocker types by cyst size', 'f-h', 'start')
+    spec = [('0', '1 to 3%', ['Small solid lungs;', 'incompatible', 'with life'], 'warn', []),
+            ('I', '60 to 70%', ['Large cysts over', '2 cm in one lobe;', 'commonest'], 'b1', [(0, 0, 30), (-24, 30, 16)]),
+            ('II', '15 to 20%', ['Multiple cysts', 'under 2 cm'], 'b1', [(-20, -16, 12), (12, -18, 13), (-14, 14, 11), (18, 14, 12), (0, 0, 8)]),
+            ('III', '5 to 10%', ['Microcysts under', '0.5 cm; large,', 'grossly solid'], 'b1', 'micro'),
+            ('IV', '10 to 15%', ['Large cysts;', 'strongly linked', 'to malignancy'], 'warn', [(0, -4, 30), (26, 26, 14)])]
+    for i, (n, f, ls, c, cy) in enumerate(spec):
+        x = 10 + i * 142
+        cx, yy = x + 67, 104
+        b += f'<rect x="{x}" y="34" width="134" height="214" rx="10" class="f-{c}"/>'
+        b += T(cx, 56, 'Type ' + n, 'f-h')
+        b += f'<ellipse cx="{cx}" cy="{yy}" rx="48" ry="40" class="f-b0"/>'
+        if cy == 'micro':
+            for dx in range(-30, 31, 12):
+                for dy in range(-24, 25, 12):
+                    if dx * dx / 1600 + dy * dy / 900 < 1:
+                        b += f'<circle cx="{cx + dx}" cy="{yy + dy}" r="3" class="f-lumen"/>'
+        else:
+            for dx, dy, r in cy:
+                b += f'<circle cx="{cx + dx}" cy="{yy + dy}" r="{r}" class="f-lumen"/>'
+        b += T(cx, 166, f, 'f-h') + T(cx, 190, ls, 'f-s')
+    b += box(10, 258, 700, 62, ['Symptomatic: urgent resection. Asymptomatic: elective resection at about 3 to 12 months, usually lobectomy.',
+                                'Infection rate rises after 7 months; malignant transformation 2 to 4%. Large fetal lesions: polyhydramnios, hydrops'], 'b0', 'f-s')
+    return svg(330, b)
+
+
+def d18_sympathectomy():
+    """t19 'Thoracic sympathectomy (TSRA ch. 44)'."""
+    b = T(12, 22, 'Endoscopic thoracic sympathectomy: levels on the chain (arrangement schematic)', 'f-h', 'start')
+    b += T(12, 42, 'Upper posterior chest wall, seen thoracoscopically; ganglia over the rib necks', 'f-s', 'start')
+    cx = 200
+    ribs = [(1, 80), (2, 140), (3, 200), (4, 260), (5, 320)]
+    for n, y in ribs:
+        b += f'<path d="M40 {y + 10} C120 {y - 8} 240 {y - 8} 330 {y + 14}" class="f-l" style="stroke-width:12px;stroke-linecap:round;opacity:.35" fill="none"/>'
+        b += T(36, y + 4, f'R{n}', 'f-h', 'end')
+    b += f'<path d="M{cx} 60 L{cx} 360" class="f-nerve"/>'
+    b += f'<path d="M{cx + 22} 190 L{cx + 22} 340" class="f-nerve" style="stroke-dasharray:5 4"/>'
+    b += T(cx + 30, 356, 'Nerve of Kuntz', 'f-s', 'start')
+    b += f'<ellipse cx="{cx}" cy="72" rx="11" ry="16" class="f-warn"/>'
+    b += T(cx + 18, 62, 'Stellate ganglion: keep away (Horner)', 'f-s', 'start')
+    for n, y in ribs[1:]:
+        b += f'<circle cx="{cx}" cy="{y - 4}" r="6" class="f-b1"/>'
+        b += line(cx - 14, y - 16, cx + 34, y - 16, 'f-cut')
+    # targets
+    x = 410
+    spec = [(124, 'R2: facial blushing', 'warn'), (184, 'R3: palmar, craniofacial', 'ok'),
+            (244, 'R4 + R5: axillary; palmar + axillary;', 'b1')]
+    for y, t, c in spec:
+        b += box(x, y - 18, 300, 34 if c != 'b1' else 52, t if c != 'b1' else [t, 'palmar + axillary + plantar'], c, 'f-s')
+        b += line(cx + 36, y - 16 if c != 'b1' else y - 16, x, y - 1, 'f-grid')
+    b += line(cx + 36, 304, x, 262, 'f-grid')
+    b += T(x, 316, '"Rx" = chain divided over the top of rib x', 'f-s', 'start')
+    b += box(10, 376, 345, 80, ['Divide the whole chain at the level,', 'including the nerve of Kuntz, and confirm', 'separation. Isolated palmar (largest group): R3'], 'b0', 'f-s')
+    b += box(365, 376, 345, 80, ['Compensatory sweating is commonest: worse with', 'multilevel division, axillary disease, BMI over', '28, age 25 or more; over 40% if at or above R2'], 'warn', 'f-s')
+    return svg(466, b)
+
+
+# ---------------------------------------------------------------- t17 wound healing
+
+def d18_wound_healing():
+    """t17 'Wound healing: phases and factors'."""
+    b = T(12, 22, 'Wound healing: three overlapping phases (time axis not to scale)', 'f-h', 'start')
+    xs = [(130, 'Injury'), (220, '24 h'), (300, 'Day 3'), (380, 'Day 10'), (460, 'Day 21'), (580, '3 months'), (690, '1 year')]
+    b += line(130, 60, 690, 60)
+    for x, lab in xs:
+        b += line(x, 54, x, 66) + T(x, 46, lab, 'f-s')
+    def band(x1, x2, y, lab, cls, fade=None):
+        o = f'<rect x="{x1}" y="{y}" width="{x2 - x1}" height="34" rx="8" class="f-{cls}"/>'
+        if fade:
+            o += f'<rect x="{x1 - fade}" y="{y}" width="{fade}" height="34" rx="8" class="f-track"/>'
+        return o + T((x1 + x2) / 2, y + 22, lab, 'f-h')
+    b += T(120, 98, 'Haemostasis and', 'f-s', 'end') + T(120, 114, 'inflammation', 'f-s', 'end')
+    b += band(130, 330, 84, 'Platelets, fibrin; neutrophils', 'warn')
+    b += T(120, 150, 'Proliferation', 'f-s', 'end')
+    b += band(300, 520, 134, 'Fibroblasts, new vessels', 'b1', fade=0)
+    b += T(120, 200, 'Remodelling', 'f-s', 'end')
+    b += band(460, 690, 184, 'Type III to type I collagen', 'ok')
+    b += T(12, 246, 'Detail', 'f-h', 'start')
+    b += box(10, 256, 226, 120, ['Vasoconstriction 5 to 10 min,', 'then vasodilatation. Neutrophils', 'within 24 h, stay 2 to 5 days.', 'Macrophages from about day 3', 'start the next phase'], 'b0', 'f-s')
+    b += box(247, 256, 226, 120, ['Starts day 3 to 10. TGF-beta,', 'VEGF, PDGF, bFGF. Hypoxia drives', 'angiogenesis. Granulation tissue:', 'type III collagen. Edges', 'epithelialise'], 'b0', 'f-s')
+    b += box(484, 256, 226, 120, ['From about day 21, up to 1 year.', 'Hydroxylation needs oxygen and', 'vitamin C. Myofibroblasts contract.', 'Scar about 80% of skin strength', 'at 3 months, never as organised'], 'b0', 'f-s')
+    b += box(10, 388, 700, 44, ['Impair healing: infection, hypoxia (smoking, radiation), steroids and chemotherapy, bevacizumab, diabetes,', 'poor nutrition (protein, vitamins C and A, zinc), glucose over 12 mmol/L. Chronic wound: not healed in 4 weeks'], 'warn', 'f-s')
+    return svg(442, b)
+
+
+# ---------------------------------------------------------------- t13 diaphragm
+
+def d18_diaphragm_paralysis():
+    """t13 'Paralysis, eventration and plication'."""
+    b = T(12, 22, 'Diaphragm paralysis: confirm, wait, then plicate or pace', 'f-h', 'start')
+    b += _d18_head(10, 36, 226, 134, 'Confirm', ['Sniff test: paradoxical', 'upward movement', 'Supine VC falls over 10%', 'Phrenic EMG: most specific,', 'detects bilateral disease'], 'b1')
+    b += arrow(236, 96, 246, 96)
+    b += _d18_head(247, 36, 226, 134, 'Wait', ['Half of unilateral cases are', 'asymptomatic. Observe 1 to 2', 'years for recovery if', 'symptoms allow. Bilateral:', 'orthopnoea, mistaken for HF'], 'b0')
+    b += arrow(473, 96, 483, 96)
+    b += _d18_head(484, 36, 226, 134, 'Symptomatic, unilateral', ['Thoracoscopic plication of', 'the central tendon, pledgeted', 'non-absorbable sutures.', 'Eventration: same'], 'ok')
+    b += box(10, 184, 345, 80, ['Plication raises resting lung volume and', 'compliance; also helps ventilator weaning in', 'bilateral disease'], 'b0', 'f-s')
+    b += box(365, 184, 345, 80, ['Pacing: needs intact phrenic nerves and working', 'muscle (test by cervical stimulation). For central', 'hypoventilation and high cervical cord injury'], 'b1', 'f-s')
+    return svg(274, b)
 
 
 # ---- figs_K3.py

@@ -105,6 +105,7 @@ def md_to_sections(slug, text):
         toks[k] = fig_html(m.group(1).strip(), m.group(2).strip())
         return '\n' + k + '\n'
     text = re.sub(r'^!fig\s+(\w+)\s*\|\s*(.+)$', fig, text, flags=re.M)
+    text = re.sub(r'^(\d+\. .*)\n(- )', r'\1\n\n\2', text, flags=re.M)
     html = markdown.markdown(text, extensions=['tables', 'sane_lists'])
     for k, v in toks.items():
         html = html.replace(f'<p>{k}</p>', v)
@@ -157,6 +158,15 @@ def load_pages():
     return pages
 
 
+def block_html(r):
+    if 'fig' in r:
+        return fig_html(r['fig'], r['caption'])
+    h = markdown.markdown(r['md'], extensions=['tables', 'sane_lists'])
+    h = h.replace('<table>', '<div class="tw"><table>').replace('</table>', '</table></div>')
+    h = re.sub(r'<p>(Sources?: )', r'<p class="src">\1', h)
+    return '<div class="addtab">' + h + '</div>'
+
+
 def place_figures(pages):
     """Insert drawings listed in placements/*.json after the first block whose text contains the anchor."""
     import json, glob
@@ -170,7 +180,7 @@ def place_figures(pages):
     missed = []
     for slug, rs in by.items():
         if slug not in pages:
-            missed += [r['fig'] for r in rs]
+            missed += [r.get('fig', 'table') for r in rs]
             continue
         soup = BeautifulSoup(pages[slug], 'html.parser')
         for r in rs:
@@ -181,20 +191,22 @@ def place_figures(pages):
                     hit = el
                     break
             if hit is None:
-                missed.append(r['fig'])
+                missed.append(r.get('fig', 'table: ' + r['anchor'][:30]))
                 continue
             blk = hit
             if blk.name in ('li',):
                 blk = blk.find_parent(['ul', 'ol']) or blk
             if blk.name in ('td', 'th'):
                 blk = blk.find_parent('table') or blk
+                if blk.parent is not None and 'tw' in (blk.parent.get('class') or []):
+                    blk = blk.parent
             if blk.name == 'h2':
                 blk = blk.find_parent('summary') or blk
                 sec = blk.find_next_sibling('div')
                 if sec is not None:
-                    sec.insert(0, BeautifulSoup(fig_html(r['fig'], r['caption']), 'html.parser'))
+                    sec.insert(0, BeautifulSoup(block_html(r), 'html.parser'))
                     continue
-            blk.insert_after(BeautifulSoup(fig_html(r['fig'], r['caption']), 'html.parser'))
+            blk.insert_after(BeautifulSoup(block_html(r), 'html.parser'))
         pages[slug] = str(soup)
     if missed:
         print('placement anchors not found:', ', '.join(missed))

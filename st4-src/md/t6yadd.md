@@ -120,7 +120,7 @@ Read the 2025 full text (Annals of Oncology, open access) and add its surgical r
 
 ## Guideline register update: mesothelioma documents and the ESMO 2025 NSCLC guideline
 
-Added 21 November 2026. This updates two lines of the guideline table above: the ERS/ESTS/EACTS/ESTRO 2020 mesothelioma statement, marked "from memory", and the ESMO 2025 early NSCLC status note. Sources are cited in full where they are written up (Thoracic 11, mesothelioma sections added 21 November 2026).
+Added 21 November 2026. This updates two lines of the guideline table above: the ERS/ESTS/EACTS/ESTRO 2020 mesothelioma statement, marked "from memory" (checked 25 November 2026 against the full text), and the ESMO 2025 early NSCLC status note. Sources are cited in full where they are written up (Thoracic 11, mesothelioma sections added 21 November 2026).
 
 ### Mesothelioma: what is current
 | Document | Status on 21 November 2026 | Where in the notes |
@@ -130,7 +130,7 @@ Added 21 November 2026. This updates two lines of the guideline table above: the
 | NICE TA818 nivolumab plus ipilimumab (August 2022) | Recommended, ECOG 0 to 1, any histology, up to 2 years | Thoracic 11 |
 | NICE TA1125 pembrolizumab plus chemotherapy | Terminated appraisal; no recommendation | Thoracic 11 |
 | MARS 2 (Lancet Respir Med 2024) | Postdates both guidelines; supports BTS against the ESMO statement on selected resection | Thoracic 11 |
-| ERS/ESTS/EACTS/ESTRO 2020 statement | Not re-read today; its line above remains "from memory" | |
+| ERS/ESTS/EACTS/ESTRO 2020 statement | Not re-read on 21 November; its line above was checked on 25 November 2026 against the full text (Opitz et al., Eur J Cardiothorac Surg 2020;58:1-24) | |
 
 ### ESMO 2025 early and locally advanced NSCLC (Zer et al., Ann Oncol 2025;36(11):1245-1262)
 A second attempt on 21 November 2026 found no openable full text: no PMC or Europe PMC record surfaced, the Annals of Oncology and DOI links were refused, the SKKU repository has only the abstract, and the esmo.org eUpdate page (September 2021) does not link the 2025 document. The status note above stands: its recommendations, levels and grades are not in these notes. (Corrected 24 November 2026 from the full text: the PDF has since been read in full; see "ESMO 2025 early and locally advanced NSCLC, read in full" in this tab.)

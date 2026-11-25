@@ -1,0 +1,112 @@
+[
+ {
+  "fig": "d13_circuit_monitors",
+  "slug": "c14",
+  "anchor": "Agreed safety features: pressure controllers, air detectors, low-level alarms",
+  "caption": "The bypass circuit with each component and the monitors and safety measures the 2024 EACTS/EACTAIC/EBCP bypass guideline recommends, with class and level. Arrangement schematic drawn for these notes from sections 4 to 6 and 9.13 of the guideline as summarised in this tab, and TSRA ch. 49"
+ },
+ {
+  "fig": "d13_miecc",
+  "slug": "c14",
+  "anchor": "MiECC: small prime, tip-to-tip coating, closed system, centrifugal arterial pump (mandatory)",
+  "caption": "Conventional CPB against MiECC: circuit elements, prime and the AF result, with the recommendations. Arrangement schematic drawn for these notes from section 9.1 of the 2024 bypass guideline and the 2024 patient blood management guideline (this tab)"
+ },
+ {
+  "fig": "d13_ultrafiltration",
+  "slug": "c14",
+  "anchor": "MUF, or CUF combined with MUF, in high-risk or anaemic patients",
+  "caption": "Conventional (CUF), zero-balance (ZBUF) and modified (MUF) ultrafiltration: where the filter sits, when it runs and what the evidence shows. Arrangement schematic drawn for these notes from section 7.4 of the 2024 bypass guideline (this tab)"
+ },
+ {
+  "fig": "d13_cardioplegia_solutions",
+  "slug": "c14",
+  "anchor": "Single shot (crystalloid intracellular or del Nido) acceptable in low-risk short-clamp cases",
+  "caption": "Cardioplegia solutions placed by blood:crystalloid ratio, how each is given, and how to choose. Schematic drawn for these notes from section 7.5.1 of the 2024 bypass guideline (this tab)"
+ },
+ {
+  "fig": "d13_heparin_protamine",
+  "slug": "c14",
+  "anchor": "Anti-PF4 antibodies may disappear over time; if negative, heparin can be used alone.",
+  "caption": "Heparin, ACT and protamine around bypass, with the heparin resistance and HIT branches. Drawn for these notes from section 9.3 of the 2024 bypass guideline and the 2024 patient blood management guideline, as summarised in this tab"
+ },
+ {
+  "fig": "d13_cpb_hct_ladder",
+  "slug": "c14",
+  "anchor": "Usually no role for platelets or cryoprecipitate during CPB.",
+  "caption": "Red cell transfusion on bypass by haematocrit band, with the oxygen delivery criteria. Drawn for these notes from section 9.9 of the 2024 bypass guideline (this tab); bands not to scale"
+ },
+ {
+  "fig": "d13_arch_temps",
+  "slug": "c14",
+  "anchor": "Isolated deep hypothermic arrest: safe duration should not exceed 30–40 min.",
+  "caption": "Hypothermia categories for circulatory arrest, the safe durations quoted for deep arrest alone and for unilateral or bilateral antegrade cerebral perfusion, and the perfusion targets. Chart drawn for these notes from section 10 of the 2024 bypass guideline (this tab)"
+ },
+ {
+  "fig": "d13_coming_off",
+  "slug": "c14",
+  "anchor": "Check four things: bleeding (suture lines and cannulation sites dry)",
+  "caption": "Coming off bypass: preparation, the four checks, the wean and decannulation, then the escalation steps for difficult weaning. Drawn for these notes from this section (TSRA ch. 49), the TSRA bypass fundamentals (Cardiac 12) and section 11 of the 2024 bypass guideline"
+ },
+ {
+  "fig": "d13_air_embolism",
+  "slug": "c14",
+  "anchor": "Massive air embolism: the sequence above, in order.",
+  "caption": "Massive arterial air embolism on bypass: the management sequence in order. Drawn for these notes from the Troubleshooting table in this tab (TSRA ch. 49) and section 12 of the 2024 bypass guideline"
+ },
+ {
+  "fig": "d13_going_on",
+  "slug": "c12",
+  "anchor": "Arterial then venous cannula; purse-strings for vent and cardioplegia",
+  "caption": "Going on bypass in order, the numbers to quote and the pitfalls. Drawn for these notes from this section (TSRA Review, bypass fundamentals)"
+ },
+ {
+  "fig": "d13_stopping_times",
+  "slug": "c10",
+  "anchor": "Stop the P2Y12 inhibitor before elective surgery and continue ASA",
+  "caption": "Last dose of each antithrombotic before elective cardiac surgery, on a log time scale. Chart drawn for these notes from the 2024 EACTS/EACTAIC/EBCP patient blood management guideline and the 2024 EACTS perioperative medication guideline, as summarised in this tab"
+ },
+ {
+  "fig": "d13_doac_renal",
+  "slug": "c10",
+  "anchor": "Normal PT suggests minimal anti-FXa effect; normal calibrated aPTT suggests minimal dabigatran.",
+  "caption": "Stopping DOACs by creatinine clearance, and the anti-Xa level ladder before surgery. Drawn for these notes from Table 5 and the text of the 2024 EACTS perioperative medication guideline (this section)"
+ },
+ {
+  "fig": "d13_antibiotic_timeline",
+  "slug": "c10",
+  "anchor": "Always give before incision; higher serum levels at start of CPB",
+  "caption": "Antibiotic prophylaxis for open-heart surgery on a timeline, with the choice of drug. Drawn for these notes from part 6 of the 2024 EACTS perioperative medication guideline (this section); not to scale"
+ },
+ {
+  "fig": "d13_anaemia_pathway",
+  "slug": "c10",
+  "anchor": "Even mild anaemia is linked to more transfusion, AKI, mortality, ICU and hospital stay",
+  "caption": "Preoperative anaemia pathway and thrombocytopenia bands. Drawn for these notes from part 2 of the 2024 patient blood management guideline (this section)"
+ },
+ {
+  "fig": "d13_bleeding_steps",
+  "slug": "c13",
+  "anchor": "Warm to 37 C; control blood pressure, agitation and shivering",
+  "caption": "Bleeding after cardiac surgery: first steps in order, when to re-open, and the postoperative triggers. Drawn for these notes from this section (TSRA Review) and the 2024 patient blood management guideline (Cardiac 10)"
+ },
+ {
+  "md": "### Centrifugal and roller pumps at a glance\n\n| | Centrifugal | Roller |\n|---|---|---|\n| How it works | Non-occlusive; preload-dependent, afterload-sensitive | Occlusion set for each case |\n| Flow reading | Always use with a flow probe | Under-occlusion gives false flow readings |\n| Hazards | No tubing wear | Over-occlusion: spallation, tubing rupture, haemolysis |\n| Blood handling | Believed better (conflicting evidence); limited arterial air embolism in a paediatric ex vivo model | More free Hb and less haptoglobin (review of 33 RCTs, heterogeneous) |\n| Static charge | Avoids triboelectric charge | PVC in the pump segment generates triboelectric charge; use silicone there (IIa C) |\n| Typical use | Long procedures; mandatory in MiECC | Suction, venting and cardioplegia; used if pulsatile flow is wanted |\n| Recommendation | Centrifugal pump for expected longer CPB (IIa C); centrifugal arterial pumps for haemocompatibility and safety (IIa C) | None specific |\n\nSource: summarised from the 2024 EACTS/EACTAIC/EBCP bypass guideline, sections 4.1, 5.5, 5.8 and 9.1, as given in this tab.",
+  "slug": "c14",
+  "anchor": "Review of 33 RCTs: more free Hb and less haptoglobin with roller pumps"
+ },
+ {
+  "md": "### Brain protection strategies for arch surgery at a glance\n\n| Strategy | How | Targets | Safe duration and evidence |\n|---|---|---|---|\n| Unilateral ACP | Via the axillary, innominate or a common carotid artery | Flow 10–15 mL/kg/min; right radial 40–80 mmHg | 30–50 min |\n| Bilateral ACP | Add a balloon-tipped catheter in the contralateral carotid, usually with a left subclavian occlusion balloon | As for unilateral | 86 to more than 164 min; possibly better with an incomplete circle of Willis |\n| RCP | Oxygenated blood up the SVC cannula after arrest | Jugular venous pressure 20 mmHg; flow 100–500 mL/min | Only 3–5% returns via the arch vessels; may flush debris. Against DHCA alone: stroke OR 0.66, operative mortality OR 0.57 |\n| ACP against DHCA alone | | | Stroke OR 0.62, operative mortality OR 0.63 |\n| DHCA alone | Deep hypothermia (14.1–20°C) | | 30–40 min; DHCA in 6% of acute and 2% of elective European cases |\n\nSource: summarised from the 2024 EACTS/EACTAIC/EBCP bypass guideline, sections 10.1 and 10.2, as given in this tab.",
+  "slug": "c14",
+  "anchor": "ACP vs RCP: no difference in mortality or major neurological complications"
+ },
+ {
+  "md": "### Returning the residual circuit blood: options compared\n\n| Option | What goes back | Evidence quoted |\n|---|---|---|\n| Unprocessed return | Whole circuit blood, in a bag or chased through the arterial cannula with Ringer's acetate | Ringer's chase against bag (RCT): better platelet function, less haemolysis, better haemostasis; same blood loss |\n| Cell salvage | Red cells only; plasma discarded | Higher Hb, but more thrombin generation and fibrinolysis, lower platelets, longer clot formation; avoids discard, so less transfusion. Small trial (51): better Hb gain and free Hb washout |\n| Ultrafiltration | Removes water-soluble components only | Against unprocessed (RCT, 200): no difference; other RCTs: lower early morbidity and transfusion, less drainage, higher Hb |\n| Recommendation | Return the residual volume to minimise allogeneic transfusion (I C); processed return should be considered (IIa B) | |\n\nSource: summarised from the 2024 EACTS/EACTAIC/EBCP bypass guideline, section 11.5, as given in this tab.",
+  "slug": "c14",
+  "anchor": "Washing with balanced bicarbonate-buffered solution gives better osmolality and electrolytes than saline"
+ },
+ {
+  "md": "### Mechanical valve anticoagulation at a glance\n\n| Point | Figure or rule |\n|---|---|\n| Drug | Lifelong VKA (I A); DOACs contraindicated (III A): RE-ALIGN and PROACT Xa stopped early |\n| Start | VKA with therapeutic UFH or LMWH bridging 12–48 h after implantation or when bleeding is minimal, usually within 24 h in ICU |\n| Stop bridging | When the INR is in range on 2 consecutive tests |\n| Thromboembolic risk | Peaks at about 1 month, stays raised for 6 months |\n| Higher INR (target 3, range 2.5–3.5) | Severe hypercoagulable states, LVEF under 35%, mitral and tricuspid prostheses |\n| Good control | Time in therapeutic range 70% or more; self-monitoring in trained patients (I A) |\n| Add aspirin 75–100 mg | Symptomatic atherosclerosis (IIa B) or embolism despite adequate INR (IIa C, or raise the INR target) |\n| Definite DAPT need | Triple therapy with clopidogrel for up to 1 month, then drop one; no ticagrelor or prasugrel |\n\nSource: summarised from the 2024 EACTS perioperative medication guideline, part 4, as given in this section.",
+  "slug": "c10",
+  "anchor": "Adding ASA 75 to 100 mg reduces thromboembolism but increases major bleeding"
+ }
+]

@@ -1,0 +1,106 @@
+[
+ {
+  "fig": "d14_ie_esc_criteria",
+  "slug": "c8",
+  "anchor": "Does not meet definite or possible at admission, with or without a firm alternative diagnosis",
+  "caption": "The 2023 ESC modified diagnostic criteria: major and minor criteria and the combinations for definite, possible and rejected endocarditis. Drawn for these notes from Table 10 of the ESC 2023 endocarditis guideline (Delgado et al., Eur Heart J 2023) as summarised in this section"
+ },
+ {
+  "fig": "d14_ie_imaging_paths",
+  "slug": "c8",
+  "anchor": "Diagnostic algorithms (Figures 5 to 7)",
+  "caption": "Imaging after the baseline work-up for native valve, prosthetic valve and device endocarditis, with classes of recommendation. Drawn for these notes from the summary of Figures 5 to 7 and Recommendation Tables 5 and 6 of the ESC 2023 endocarditis guideline (Delgado et al., Eur Heart J 2023) in this tab; not a copy of the guideline figures"
+ },
+ {
+  "fig": "d14_ie_micro_path",
+  "slug": "c8",
+  "anchor": "Suspected IE → blood cultures. Positive: MALDI-TOF identification",
+  "caption": "Microbiological work-up: blood cultures, culture-negative pathway and handling of operative specimens. Drawn for these notes from section 5.3 and the Figure 4 summary of the ESC 2023 endocarditis guideline (Delgado et al., Eur Heart J 2023) as given in this tab"
+ },
+ {
+  "fig": "d14_ie_abx_weeks",
+  "slug": "c8",
+  "anchor": "Duration: PVE ≥6 weeks; NVE 2–6 weeks.",
+  "caption": "Antibiotic duration by organism for native and prosthetic valve endocarditis, with the weeks of gentamicin where it is part of the regimen. Chart drawn for these notes from Recommendation Tables 7 to 9 and the HACEK and Gram-negative text of the ESC 2023 endocarditis guideline (Delgado et al., Eur Heart J 2023) in this tab"
+ },
+ {
+  "fig": "d14_ie_oral_switch",
+  "slug": "c8",
+  "anchor": "Stability criteria (Figure 9, based on POET)",
+  "caption": "The two phases of treatment, the earliest switch point and the POET-based stability criteria for oral or outpatient therapy. Drawn for these notes from sections 7.1 and 7.13 and Recommendation Table 11 of the ESC 2023 endocarditis guideline (Delgado et al., Eur Heart J 2023); timeline not to scale beyond the stated days"
+ },
+ {
+  "fig": "d14_ie_root_extension",
+  "slug": "c8",
+  "anchor": "Aortic IE extends most often into the",
+  "caption": "Where aortic root infection spreads at the base of the heart: abscess in the intervalvular fibrosa, pseudoaneurysm, fistula, the conduction axis and posterior mitral abscess. Arrangement schematic drawn for these notes from sections 8.3 and 9.5 of the ESC 2023 endocarditis guideline (Delgado et al., Eur Heart J 2023), the 3D TOE section (Baltodano-Arellano 2024) and the TSRA section in this tab; not to scale"
+ },
+ {
+  "fig": "d14_ie_cied_path",
+  "slug": "c8",
+  "anchor": "Suspected CIED-IE: blood cultures, TTE and TOE (or ICE), FDG-PET/CT",
+  "caption": "Device (CIED) endocarditis: work-up, who needs extraction, antibiotic duration after extraction and timing of reimplantation. Drawn for these notes from section 12.4, the Figure 13 summary and Recommendation Table 20 of the ESC 2023 endocarditis guideline (Delgado et al., Eur Heart J 2023) in this section"
+ },
+ {
+  "fig": "d14_ie_relapse",
+  "slug": "c8",
+  "anchor": "Figure 12 algorithm: store isolates. New episode with the same species",
+  "caption": "Relapse or reinfection after endocarditis, and what each means for treatment. Drawn for these notes from section 11.1 and the Figure 12 summary of the ESC 2023 endocarditis guideline (Delgado et al., Eur Heart J 2023) in this section"
+ },
+ {
+  "fig": "d14_av_lflg",
+  "slug": "c4",
+  "anchor": "CCT calcium score and DSE are complementary; if one is inconclusive use the other",
+  "caption": "Discordant grading (valve area 1.0 cm² or less, mean gradient under 40 mmHg): flow, LVEF, dobutamine stress echo and CT calcium score. Drawn for these notes from section 8 and Recommendation Table 4 of the ESC/EACTS 2025 valvular heart disease guideline (Praz, Borger et al.) as summarised in this tab"
+ },
+ {
+  "fig": "d14_av_calcium",
+  "slug": "c4",
+  "anchor": "CT calcium score, women (Agatston units)",
+  "caption": "CT aortic valve calcium score bands for severe aortic stenosis in men and women. Chart drawn for these notes from the ESC/EACTS 2025 valvular heart disease guideline (Praz, Borger et al.) (section 8) as given in this tab; the 'Thresholds' table above words the top band 'highly likely'"
+ },
+ {
+  "fig": "d14_av_as_pathway",
+  "slug": "c4",
+  "anchor": "Heart Team then chooses: <70 years and low surgical risk → SAVR (I)",
+  "caption": "Severe aortic stenosis: indications for intervention and the choice of SAVR or TAVI. Drawn for these notes from the Figure 7 summary and Recommendation Tables 4 and 5 of the ESC/EACTS 2025 valvular heart disease guideline (Praz, Borger et al.) in this tab; not a copy of the guideline figure"
+ },
+ {
+  "fig": "d14_av_tavi_savr",
+  "slug": "c4",
+  "anchor": "LV thrombus and infective endocarditis are relative contraindications to TAVI.",
+  "caption": "Heart Team factors favouring SAVR or TAVI, and lifetime management considerations. Drawn for these notes from the Figure 9 summary and text of the ESC/EACTS 2025 valvular heart disease guideline (Praz, Borger et al.) in this section"
+ },
+ {
+  "fig": "d14_av_ar_pathway",
+  "slug": "c4",
+  "anchor": "Concomitant root/ascending replacement if maximal diameter ≥45 mm and risk low.",
+  "caption": "Severe aortic regurgitation: when to operate, which operation, and what changed from 2021. Drawn for these notes from the Figure 5 summary and Recommendation Table 3 of the ESC/EACTS 2025 valvular heart disease guideline (Praz, Borger et al.) in this section"
+ },
+ {
+  "fig": "d14_av_pvd_grades",
+  "slug": "c4",
+  "anchor": "Keep haemodynamic deterioration separate from proven structural degeneration",
+  "caption": "Two grades of haemodynamic deterioration of a prosthetic valve, by mean gradient, effective orifice area and Doppler velocity index. Drawn for these notes from the handbook table in this section (society-integrated handbook, as taught)"
+ },
+ {
+  "md": "### Complications of endocarditis at a glance\n\n| Complication | How often | What to do |\n|---|---|---|\n| Symptomatic cerebrovascular event | Up to 35% (silent lesions up to 80%) | Cerebral MRI (CT if MRI not possible) when suspected; thrombolysis not recommended (III C); thrombectomy may be considered (IIb C); continue anticoagulation with a pre-existing indication |\n| Infective (mycotic) aneurysm | 9% (angiography series) to 32% of left-sided IE (CTA series) | CT or MR angiography (I B); DSA is the gold standard; treat large, growing or ruptured aneurysms (I C); endovascular treatment allows cardiac surgery the same day, clipping often needs a 2-week delay |\n| Splenic infarct or abscess | Infarcts about 20%; up to 5% progress to abscess | Antibiotics; splenectomy for a large abscess, usually before valve surgery; vaccinate afterwards |\n| Pericarditis | 19% of aortic IE (usually with ring abscess); 12% of mitral IE | Look for extension from a root aneurysm or ring abscess |\n| Conduction disturbance | 11.5% at diagnosis (third-degree 2.8%) | New AV block from abscess: urgent surgery; epicardial pacing at operation with a predictor of persistence (IIa C); 12.8% needed a pacemaker after surgery |\n| Spondylodiscitis | 2 to 10% of IE (osteoarticular infection 6 to 8%) | MRI or PET/CT (I C); more than 6 weeks of antibiotics for S. aureus, Candida, severe destruction or abscess (IIa C); does not contraindicate urgent cardiac surgery |\n| Acute renal failure | Almost 18% (EURO-ENDO); dialysis 6%, with about 40% mortality | Avoid nephrotoxins, monitor drug levels and creatinine, minimise contrast; should not delay cardiac surgery |\n\nSource: summarised from ESC 2023 section 9 (Recommendation Tables 13 to 15) as given in this section.",
+  "slug": "c8",
+  "anchor": "Avoid nephrotoxins where possible; monitor aminoglycoside and vancomycin levels and creatinine"
+ },
+ {
+  "md": "### Prosthetic, TAVI and TPVI endocarditis compared\n\n| | Surgical prosthetic valve | After TAVI | After TPVI |\n|---|---|---|---|\n| Incidence | 0.3 to 1.2% per patient-year (1 to 6% of recipients) | 0.3 to 1.9 per 100 patient-years; highest in the first year | 1.6 to 4.0 per 100 patient-years |\n| Main organisms | Peri-operative: S. aureus, S. epidermidis, nosocomial organisms; late: as native valve IE | Enterococci and S. aureus, then streptococci and CoNS | S. aureus and oral streptococci |\n| Imaging | Echo and blood cultures each about 60% sensitive; a new periprosthetic leak is a major criterion; FDG-PET/CT adds sensitivity | No vegetation on TOE in 38 to 60%; PET/CT or CTA changed the diagnosis in 33% | ICE and FDG-PET/CT if TTE/TOE negative; new moderate or severe prosthetic stenosis in one-third to one-half |\n| Mortality | In-hospital 20 to 40% | In-hospital or 30-day 16 to 36%; 41 to 59% at 1 year | IE-related 0 to 11% |\n| Surgery | Early PVE (within 6 months): new valve and complete debridement (I C); uncomplicated non-staphylococcal late PVE can be managed conservatively | Done in about 20%; may be recommended with abscess or fistula if risk is not prohibitive | Surgical valve replacement in 26 to 56% |\n| Healed IE with valve dysfunction | — | Valve-in-valve at least 1 to 3 months after the episode, after a negative TOE | Valve-in-valve at least 1 to 3 months after antibiotics; urgent balloon dilatation for severe stenosis |\n\nSource: summarised from ESC 2023 sections 12.1 and 12.3 as given in this section.",
+  "slug": "c8",
+  "anchor": "lower than after TAVI (younger, fewer co-morbidities)"
+ },
+ {
+  "md": "### Which aortic stenosis number to trust\n\n| Measure | Strength | Pitfall |\n|---|---|---|\n| Peak velocity | Strongest single predictor of outcome; most reproducible | Flow dependent: under-calls with a low stroke volume (poor LV, small cavity, AF, significant MR), over-calls in high flow (AR, anaemia, sepsis); beam misalignment only underestimates |\n| Mean gradient | ESC/EACTS 2025: the most reliable parameter | Under 40 mmHg with an area of 1 cm² or less: low-flow or normal-flow low-gradient AS, which needs confirmation |\n| Valve area (continuity) | Less flow dependent | Most error-prone: squares the LVOT diameter and assumes a circular outflow tract; an area under 1.0 cm² alone over-calls severe AS |\n| Dimensionless index | Avoids the LVOT diameter error; under 0.25 makes severe AS highly likely | — |\n| CT calcium score | Confirms true severe AS in low flow | Interpret with caution in bicuspid valves, amyloidosis and fibrotic stenosis |\n\nSource: summarised from \"Which number matters most\" in this section and ESC/EACTS 2025 section 8 (Aortic stenosis part 1, this tab).",
+  "slug": "c4",
+  "anchor": "Once stenosis is severe, symptoms and LV function decide timing more than either number."
+ },
+ {
+  "md": "### Severe aortic stenosis: what changed from 2021 to 2025\n\n| Recommendation | ESC/EACTS 2021 | ESC/EACTS 2025 |\n|---|---|---|\n| TAVI | 75 years or over, or STS-PROM/EuroSCORE II over 8% | 70 years or over with a tricuspid valve and suitable anatomy (I A) |\n| SAVR | Under 75 years and surgical risk under 4% | Under 70 years and low surgical risk (I B) |\n| Non-transfemoral TAVI | IIb C | IIa B |\n| Low-flow, low-gradient AS, reduced LVEF | Flow reserve required | Flow reserve no longer required (I B) |\n| Low-flow, low-gradient AS, preserved LVEF | IIa C | IIa B |\n| Asymptomatic severe AS, LV function | LVEF under 55%: IIa | LVEF under 50%: I B; LVEF under 55% moved into the IIa list |\n\nSource: summarised from the 2025 ESC/EACTS guideline's changes from 2021 (Table 4) as given in this section.",
+  "slug": "c4",
+  "anchor": "Changes from 2021 (Table 4): TAVI age threshold"
+ }
+]

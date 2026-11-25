@@ -1,0 +1,112 @@
+[
+ {
+  "fig": "d18_pisa_steps",
+  "slug": "c1",
+  "anchor": "Secondary MR, low flow or elliptical orifice",
+  "caption": "Flow convergence (PISA) in three steps, its assumptions, and the echo thresholds for severe mitral regurgitation. Schematic drawn for these notes from the convergence-method text in Cardiac 9 (Ultrasound and Doppler physics) and the thresholds table in this section; hemisphere drawn on the upstream side as an arrangement schematic."
+ },
+ {
+  "fig": "d18_ms_grading",
+  "slug": "c1",
+  "anchor": "Findings that favour surgery over balloon commissurotomy",
+  "caption": "Mitral stenosis severity by valve area and half-time, the supporting measures, and the choice between percutaneous commissurotomy and surgery with the anatomical features that favour surgery. Drawn for these notes from the thresholds and intervention tables in this section (2025 ESC/EACTS as quoted)."
+ },
+ {
+  "fig": "d18_mac_vs_rheumatic",
+  "slug": "c1",
+  "anchor": "Viva line: annular calcification is a marker more than a lesion",
+  "caption": "Rheumatic against calcific (annular) mitral stenosis: where the obstruction lies, why balloon valvotomy fails in calcific disease, the population frequencies and the assessment trap. Arrangement schematic drawn for these notes from the table in this section (Churchill et al., JACC 2022; Museedi and Le Jemtel 2024)."
+ },
+ {
+  "fig": "d18_rerepair_mix",
+  "slug": "c1",
+  "anchor": "36 re-repairs after index repair for degenerative prolapse",
+  "caption": "Mechanisms of failure in 36 mitral re-repairs at the Cleveland Clinic, coloured by procedure-related (early) or valve-related (late) failure. Chart drawn for these notes from the results and mechanism tables in this section (Moore et al., Oper Tech Thorac Cardiovasc Surg 2020)."
+ },
+ {
+  "fig": "d18_tavi_ct_root",
+  "slug": "c9",
+  "anchor": "Circumferential calcification of the ascending aorta",
+  "caption": "The gated CT measurements around the aortic root and access that change the plan for TAVI or surgery: annulus, coronary height, sinus width, valve-in-valve coronary distance, LVOT calcium, ascending aorta and iliofemoral size. Arrangement schematic drawn for these notes from the threshold tables in this section."
+ },
+ {
+  "fig": "d18_lead_positions",
+  "slug": "c18",
+  "anchor": "Right ventricular lead at the septum or inferior apex, not the free wall or outflow tract",
+  "caption": "Where pacing leads go (atrial appendage, right ventricular septum or inferior apex, coronary sinus or epicardial left ventricular lead), with early, infective and late complications and the extraction and tricuspid surgery points. Arrangement schematic drawn for these notes from this section and the ESC 2021 pacing section in this tab (TSRA ch. 85)."
+ },
+ {
+  "fig": "d18_kco_patterns",
+  "slug": "t2",
+  "anchor": "A normal KCO with a low VA is not reassuring",
+  "caption": "TLCO = KCO × VA and the three patterns of low gas transfer, with the rule to use haemoglobin-corrected TLCO for predicted postoperative values. Drawn for these notes from the text of this section."
+ },
+ {
+  "fig": "d18_diverticula",
+  "slug": "t18",
+  "anchor": "add anti-reflux procedure if myotomy crosses the LES",
+  "caption": "Zenker, Killian-Jamieson, mid-thoracic and epiphrenic diverticula: where each arises, pulsion or traction, and the operation for each. Arrangement schematic drawn for these notes from this section and the oesophageal anatomy section in this tab (TSRA chs 30 and 38)."
+ },
+ {
+  "fig": "d18_oes_stent",
+  "slug": "t18",
+  "anchor": "Measure accurately; stent should extend",
+  "caption": "Oesophageal stent sizing (2 to 4 cm beyond the lesion, dilate to 6 mm first), the three danger zones (upper sphincter, mid-oesophagus, gastro-oesophageal junction), covered stents and outcomes. Schematic drawn for these notes from this section (TSRA ch. 37)."
+ },
+ {
+  "fig": "d18_ea_tef",
+  "slug": "t19",
+  "anchor": "EA with proximal and distal fistulas",
+  "caption": "Gross types A to E of oesophageal atresia and tracheo-oesophageal fistula with their frequencies, diagnosis and repair. Arrangement schematic drawn for these notes from the Gross table in this section (TSRA ch. 16) and the repair points in Thoracic 18 (TSRA ch. 33)."
+ },
+ {
+  "fig": "d18_sequestration",
+  "slug": "t19",
+  "anchor": "Identify and control the systemic artery early",
+  "caption": "Intralobar against extralobar bronchopulmonary sequestration: pleura, site, systemic arterial supply, venous drainage, associations and management. Arrangement schematic drawn for these notes from the comparison table in this section (TSRA ch. 16)."
+ },
+ {
+  "fig": "d18_cpam_stocker",
+  "slug": "t19",
+  "anchor": "Infection rate rises after 7 months; malignant transformation risk 2 to 4%",
+  "caption": "Stocker types 0 to IV of congenital pulmonary airway malformation by cyst size and frequency, with timing of resection. Schematic drawn for these notes from the Stocker table and management text in this section (TSRA ch. 16)."
+ },
+ {
+  "fig": "d18_sympathectomy",
+  "slug": "t19",
+  "anchor": "Isolated palmar (largest group): R3, keeping away from the stellate ganglion",
+  "caption": "Endoscopic thoracic sympathectomy target levels on the chain (R2 to R5) by region, the nerve of Kuntz, the stellate ganglion and compensatory sweating. Arrangement schematic drawn for these notes from the target-level table and technique text in this section (TSRA ch. 44)."
+ },
+ {
+  "fig": "d18_wound_healing",
+  "slug": "t17",
+  "anchor": "Scar reaches about 80% of normal skin strength at 3 months",
+  "caption": "The three overlapping phases of wound healing on a time line, the cells and events in each, and the factors that impair healing. Drawn for these notes from the phases and factors tables in this section (StatPearls, Wound Healing)."
+ },
+ {
+  "fig": "d18_diaphragm_paralysis",
+  "slug": "t13",
+  "anchor": "Observe 1 to 2 years for recovery if symptoms allow.",
+  "caption": "Diaphragm paralysis: the three confirmatory tests, the wait for recovery, plication for symptomatic unilateral paralysis or eventration, and the conditions for phrenic pacing. Drawn for these notes from the text and table in this section."
+ },
+ {
+  "md": "### Pulmonary metastasectomy at a glance\n\n| Item | Point |\n|---|---|\n| Selection | Primary controlled; usually no extrathoracic metastases; adequate surgical candidate; complete resection anticipated |\n| Strong prognostic factors (IRLM) | Disease-free interval, number of metastases, histology of the primary |\n| Imaging | CT is the gold standard (CT and HRCT 100% sensitive for nodules of 10 mm or more); PET has low sensitivity under 10 mm and mainly excludes extrathoracic disease |\n| Small nodules | A few nodules of several millimetres are usually watched; as they approach 1 cm, most are referred if isolated and the primary is controlled |\n| Approach | Usually VATS or robotic. Open palpation finds more lesions in some series but has not improved survival. Bilateral disease: one operation or staged, by sternotomy or clamshell |\n| Extent | Usually non-anatomical wedge; lobectomy for central lesions; pneumonectomy rarely |\n| Nodes | Assess before and during surgery; involvement means poorer survival |\n| Unfit or refusing surgery | SABR (small lesions; difficult with many) or radiofrequency ablation (small, away from the mediastinum); isolated lung perfusion is investigational |\n| Outcome (IRLM) | 5-year survival 36% after complete resection against 13% after incomplete resection |\n\nSource: summarised from \"Pulmonary metastasectomy (TSRA ch. 15)\" in this tab.",
+  "slug": "t9",
+  "anchor": "More than one metastasis does not consistently predict worse survival"
+ },
+ {
+  "md": "### Surgery for mycobacterial disease at a glance\n\n| | Tuberculosis | Non-tuberculous mycobacteria |\n|---|---|---|\n| Resistance terms | Multidrug resistant: isoniazid and rifampicin. Extensively resistant: those two, a fluoroquinolone and an injectable agent | Not stated |\n| When to operate | Localised resistant disease with adequate reserve and: sputum positive after 6 months of treatment; extensively resistant disease unlikely to be cured by drugs; or a complication (bronchopleural fistula, life-threatening haemoptysis) | Failure to convert at 6 months, macrolide resistance, or localised cavitary disease |\n| Before the operation | Operate after culture conversion where possible | Raise albumin above 3 g/dL |\n| At operation | Lobectomy gives better results than pneumonectomy | Dense adhesions and an extrapleural dissection; cover the stump |\n| After | Complete the drug course | Fistula rates are high |\n\nSource: summarised from \"Tuberculosis and other mycobacteria\" in this tab.",
+  "slug": "t17",
+  "anchor": "Raise albumin above 3 g/dL first"
+ },
+ {
+  "md": "### Oesophagus: numbers at a glance\n\n| Measure | Value |\n|---|---|\n| Length | About 25 cm (men), 23 cm (women): cervical about 5 cm, thoracic about 20 cm, abdominal about 3 cm |\n| Upper sphincter | 1 to 2 cm high-pressure zone; the narrowest point and commonest site of iatrogenic perforation; about 15 cm from the incisors |\n| Lower sphincter | About 40 cm from the incisors; 2 to 3 cm long; resting pressure 14 to 34 mmHg; relaxes for about 5 seconds as the bolus enters the stomach |\n| Narrowings | Upper sphincter; aorta and left main bronchus (average diameter 16 mm); hiatus |\n| Muscle | Striated upper third, mixed middle third, smooth distal third |\n| Vagi | Reform as left (anterior) and right (posterior) about 3 cm above the diaphragm |\n| Primary peristalsis | 3 to 6 cm/s; lasts 10 to 15 s |\n| Upper sphincter after a swallow | Pressure rises to twice resting, then settles |\n\nSource: summarised from \"Oesophageal anatomy and physiology (TSRA ch. 30)\" in this tab; the 15 cm distance from \"Oesophageal stenting (TSRA ch. 37)\".",
+  "slug": "t18",
+  "anchor": "a single primary contraction lasts 8 to 10 s"
+ },
+ {
+  "md": "### Airway obstruction work-up at a glance\n\n| Step | What it gives |\n|---|---|\n| History | Exertional dyspnoea progressing to rest, noisy breathing, wheeze or stridor; often mislabelled adult-onset asthma. Changed voice or stridor: glottic or subglottic disease. Hoarseness with a tumour: nerve or nodal involvement |\n| CT with coronal and sagittal reconstructions | Where the lesion starts and ends and how much subglottic space remains; inspiratory and expiratory scans show malacia |\n| Flexible bronchoscopy | Diameter, extent, distance from the cords, mucosal inflammation |\n| Rigid bronchoscopy at the same sitting | Dilates or cores out and secures the distal airway; be ready for an emergency tracheostomy, because the scope can occlude a critical stenosis |\n| Flow-volume loop | Shows fixed obstruction but adds little |\n| Buying time | Steroids, nebulised adrenaline and heliox; benign obstruction is rarely a true emergency |\n\nSource: summarised from \"Stridor and airway obstruction: assessment\" in this tab.",
+  "slug": "t12",
+  "anchor": "Benign obstruction is rarely a true emergency."
+ }
+]

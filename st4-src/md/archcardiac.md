@@ -93,7 +93,7 @@ Repair severe TR at left-sided surgery, and lesser TR when the annulus is dilate
 - The CTSN trial shows annuloplasty prevents TR progression but has not yet shown a clinical benefit; the price is a fivefold pacemaker rate. Most surgeons now repair moderate TR and are more selective for annular dilatation alone.
 - The pacemaker excess is a technical message: use an incomplete ring, keep sutures out of the septal segment near the anteroseptal commissure.
 - Transcatheter tricuspid therapy improves symptoms without yet reducing death or admission; it is for patients at high surgical risk.
-- Isolated tricuspid surgery has carried a mortality near 8–10% because of late referral. TRI-SCORE (from memory) weights age 70 or more, NYHA III–IV, right heart failure signs, high-dose diuretic, renal and liver dysfunction, LVEF under 60% and RV dysfunction; 6 or more is high risk.
+- Isolated tricuspid surgery has carried a mortality near 8–10% because of late referral. TRI-SCORE (from memory) weights age 70 or more, NYHA III–IV, right heart failure signs, high-dose diuretic, renal and liver dysfunction, LVEF under 60% and RV dysfunction; 6 or more is high risk. (checked 25 November 2026: TRI-SCORE items and the high-risk band of 6 or more confirmed against Dreyfus et al., Eur Heart J 2022, as set out in the TRI-SCORE calculator in Cardiac 2: furosemide 125 mg a day or more, eGFR under 30 and raised bilirubin are the diuretic, renal and liver items. The 8–10% mortality was not found; TSRA ch. 65 gives 10 to 25% for reoperation for isolated TR after left-sided surgery, and the 2025 ESC/EACTS section of Cardiac 2 gives up to 18% in some series)
 
 ### Technique points for the wet lab
 
@@ -125,7 +125,7 @@ STS and ESC classes were confirmed today; the ACC/AHA column is from a secondary
 | Trial | Design | Result |
 | --- | --- | --- |
 | LAAOS III, NEJM 2021 | 4,811 patients with AF and CHA₂DS₂-VASc 2 or more having cardiac surgery, 105 centres; appendage occlusion or not, both continuing anticoagulation | Ischaemic stroke or systemic embolism 4.8% against 7.0% (HR 0.67, 0.53–0.85) over a mean of 3.8 years; benefit mainly after 30 days; no excess bleeding, heart failure or death |
-| CTSN surgical ablation, NEJM 2015 | Ablation or not at mitral surgery, persistent AF | Freedom from AF at one year 63% against 29%; permanent pacemaker 21% against 8% (from memory) (corrected 24 November 2026: the FRCS Atlas draft gives 21.5 against 8.1 per 100 patient-years, not percentages, unchecked against the trial paper; "more pacemakers" is the confirmed point, STS 2023; see Cardiac 7) |
+| CTSN surgical ablation, NEJM 2015 | Ablation or not at mitral surgery, persistent AF | Freedom from AF at one year 63% against 29%; permanent pacemaker 21% against 8% (from memory) (corrected 24 November 2026: the FRCS Atlas draft gives 21.5 against 8.1 per 100 patient-years, not percentages, unchecked against the trial paper; "more pacemakers" is the confirmed point, STS 2023; see Cardiac 7) (corrected 25 November 2026 against the ACC trial summary of Gillinov et al., N Engl J Med 2015: 260 patients; freedom from AF at 12 months 63% against 29%; permanent pacemaker 21.5 against 8.1 per 100 patient-years, not percentages) |
 
 ### Practice points
 
@@ -162,7 +162,7 @@ AATS 2016 differs mainly on timing: once an indication is established, operate w
 | Trial | Design | Result |
 | --- | --- | --- |
 | EASE, NEJM 2012 | 76 patients with left-sided native valve endocarditis, severe valve disease and large vegetations; surgery within 48 hours or conventional care | In-hospital death or embolism at 6 weeks 3% against 23%; no embolic events after early surgery against eight with conventional care; composite at 6 months 3% against 28% |
-| POET, NEJM 2019 | Stable left-sided endocarditis after initial intravenous treatment; switch to oral or continue intravenous | Oral step-down non-inferior for death, unplanned surgery, embolism or relapse (figures from memory) |
+| POET, NEJM 2019 | Stable left-sided endocarditis after initial intravenous treatment; switch to oral or continue intravenous | Oral step-down non-inferior for death, unplanned surgery, embolism or relapse (figures from memory) (checked 25 November 2026 against the AHA 2026 endocarditis statement as summarised in Cardiac 8: 400 patients; the 6-month composite was less common with oral treatment and met non-inferiority; see the POET row in Cardiac 8) |
 
 ### Diagnosis (2023 Duke-ISCVID)
 
@@ -200,7 +200,7 @@ TAVI matches surgery to five years in low-risk patients aged around 73, and earl
 | EARLY TAVR, NEJM 2024 | 901 asymptomatic patients with severe high-gradient stenosis; early TAVI against surveillance | Death, stroke or unplanned cardiovascular hospitalisation 26.8% against 45.3% at a median of 3.8 years |
 | EVOLVED, JAMA 2024 | 224 asymptomatic patients with myocardial fibrosis on MRI; early valve replacement against conservative care | Death or unplanned stenosis-related admission 18% against 23% (HR 0.79, not significant) |
 | AVATAR, 2022 with extended follow-up | 157 asymptomatic patients; early surgery against conservative care | Fewer events with early surgery |
-| RECOVERY, NEJM 2020 | Very severe asymptomatic stenosis; early surgery against conservative care | Lower cardiovascular mortality with early surgery (from memory) |
+| RECOVERY, NEJM 2020 | Very severe asymptomatic stenosis; early surgery against conservative care | Lower cardiovascular mortality with early surgery (from memory) (checked 25 November 2026 against the ACC report of Kang et al., N Engl J Med 2020: 145 patients; operative or cardiovascular death 1 patient with early surgery against 11 of 72 with conservative care; all-cause death 5 against 15. Ten-year results are in Cardiac 4, Aortic valve trials 2025 to 2026, from the AHA 2025 meeting report only) |
 
 ### Reading the evidence
 
@@ -228,10 +228,10 @@ CABG remains the survival operation for left main and three-vessel disease, part
 | Trial | Design | Result |
 | --- | --- | --- |
 | FAME 3 five-year, Lancet 2025 | 1,500 patients with three-vessel disease, no left main; FFR-guided PCI with current stents against CABG | Death, stroke or MI 16% against 14% (HR 1.16, 0.89–1.52); MI higher with PCI (HR 1.57); repeat revascularisation 16% against 8%. PCI had missed non-inferiority at one year |
-| REVIVED-BCIS2, NEJM 2022 | PCI against medical therapy in ischaemic LV dysfunction | No benefit from PCI (from memory) |
-| STICH ten-year, NEJM 2016 | CABG against medical therapy, LVEF 35% or less | Lower mortality with CABG (from memory) |
-| ISCHEMIA, NEJM 2020 | Invasive against conservative strategy in stable disease with ischaemia | No difference in the primary outcome; mostly PCI, left main excluded (from memory) |
-| ART ten-year, NEJM 2019 | Bilateral against single internal thoracic artery | No difference by intention to treat; heavy crossover and radial use in the single arm (from memory) |
+| REVIVED-BCIS2, NEJM 2022 | PCI against medical therapy in ischaemic LV dysfunction | No benefit from PCI (from memory) (checked 25 November 2026 against the 2024 ESC chronic coronary syndromes guideline, Cardiac 5, revascularisation part 1: 700 patients, LVEF 35% or less; death or heart failure admission not reduced at 3.4 years, HR 0.99) |
+| STICH ten-year, NEJM 2016 | CABG against medical therapy, LVEF 35% or less | Lower mortality with CABG (from memory) (checked 25 November 2026 against the same ESC 2024 section: 1,212 patients; at a median of 9.8 years all-cause death 58.9% against 66.1%, HR 0.84; not significant at 4 years) |
+| ISCHEMIA, NEJM 2020 | Invasive against conservative strategy in stable disease with ischaemia | No difference in the primary outcome; mostly PCI, left main excluded (from memory) (checked 25 November 2026: primary result and left main exclusion against the ESC 2024 section in Cardiac 5 and TSRA ch. 50; "mostly PCI" (74% of revascularisations, 26% CABG) from a secondary trial summary, WikiJournalClub, not the paper) |
+| ART ten-year, NEJM 2019 | Bilateral against single internal thoracic artery | No difference by intention to treat; heavy crossover and radial use in the single arm (from memory) (checked 25 November 2026 against the abstract of Taggart et al., N Engl J Med 2019: 3,102 patients; death at 10 years 20.3% against 21.2%, HR 0.96; 13.9% of the bilateral group received a single graft and 21.8% of the single group also had a radial graft) |
 | RADIAL pooled analysis, JAMA 2020 | Radial artery against saphenous vein | Fewer cardiac events with the radial (from memory) (corrected 25 November 2026: confirmed against the RADIAL pooled analysis: death, MI or repeat revascularisation HR 0.73 at 10 years; see Cardiac 5, Radial artery harvest: landmarks, operative steps, and the RAPCO, RADIAL and ROMA trials) |
 | ROMA | Multiple against single arterial grafting | Enrolment complete; results awaited when last checked |
 
@@ -270,7 +270,7 @@ Acute type A dissection is an immediate operation; complicated type B dissection
 - Uncomplicated: blood pressure and heart rate control, with imaging surveillance.
 - High-risk features that favour early endovascular repair: aortic diameter over 40 mm, false lumen over 22 mm, entry tear over 10 mm on the lesser curve, refractory pain or hypertension, bloody effusion.
 - Timing of elective endovascular repair: the subacute phase (after 2 weeks, before 3 months) balances remodelling against retrograde dissection.
-- INSTEAD-XL: endovascular repair of uncomplicated type B dissection improved aorta-specific survival at five years (from memory).
+- INSTEAD-XL: endovascular repair of uncomplicated type B dissection improved aorta-specific survival at five years (from memory). (checked 25 November 2026 against the EACTS/STS 2024 and ACC/AHA 2022 guideline sections in Cardiac 6: TEVAR plus medical therapy improved 5-year aorta-specific survival and delayed progression; the diameter over 40 mm, false lumen over 22 mm and entry tear of 10 mm or more in the high-risk list above also match EACTS/STS 2024 there; the other high-risk features were not checked)
 
 ## TOE and CT for cardiac surgery
 
@@ -324,7 +324,7 @@ The annulus is measured in systole on a gated scan, as area and perimeter; the o
 - A delayed phase separates appendage thrombus from slow flow.
 - Request the redo-sternotomy scan with contrast if grafts are present, so their course is seen.
 
-Sources and status: the [ASE and SCA comprehensive TOE guideline](https://www.asecho.org/guideline/comprehensive-tee/) and the existence and scope of the [SCCT 2019 consensus on CT before TAVI](https://radiologybusiness.com/node/127881) were confirmed on 17 November 2026. The checklists and every number in this section are from memory.
+Sources and status: the [ASE and SCA comprehensive TOE guideline](https://www.asecho.org/guideline/comprehensive-tee/) and the existence and scope of the [SCCT 2019 consensus on CT before TAVI](https://radiologybusiness.com/node/127881) were confirmed on 17 November 2026. The checklists and every number in this section are from memory. (checked 25 November 2026: the 28 views and the contraindications against the ASE/SCA 2013 PDF, which lists stricture, tumour and perforation as absolute and previous GI surgery and varices as relative contraindications, and confirms that the distal ascending aorta and arch are poorly seen; the systolic anterior motion predictors against the mitral repair technique table in Cardiac 1 (Varghese, Popa 2013, Clin Res Cardiol 2021; aorto-mitral angle under 120°); effective height 9 mm and coaptation length 4 to 5 mm above the annulus against the EACTS 2026 aortic valve repair consensus in Cardiac 4; calcium scores 2,000 and 1,200 against the 2025 ESC/EACTS guideline in Cardiac 4; femoral lumen 5.0–5.5 mm against TSRA ch. 58 and the ESCR 2019 TAVI imaging consensus, which also confirms systolic annular measurement; epiaortic scanning against the 2024 EACTS CPB guideline, IIa. Not confirmed: the 4–5 mm atheroma threshold and the 30–40% R-R phase)
 
 ## What is confirmed, and sources
 
@@ -338,4 +338,4 @@ Confirmed on 17 November 2026 from abstracts, trial summaries and guideline summ
 - Aortic valve: [PARTNER 3 five-year](https://spb-cts.freelock.com/print/jans/transcatheter-aortic-valve-replacement-low-risk-patients-five-years); [Evolut Low Risk five-year](https://www.ctsnet.org/jans/5-year-outcomes-after-transcatheter-or-surgical-aortic-valve-replacement-low-risk-patients); [DEDICATE](https://www.acc.org/Latest-in-Cardiology/Clinical-Trials/2024/04/05/13/56/dedicate-dzhk6); [EARLY TAVR and EVOLVED](https://www.acc.org/Latest-in-Cardiology/Articles/2024/10/24/19/43/mon-1122am-combined-tavr-tct-2024).
 - Coronary: [FAME 3 five-year](https://www.pcronline.com/News/Congress-coverages/ACC/2025/FFR-guided-PCI-vs-CABG-5-year-results-of-the-FAME-3-trial).
 
-From memory and not checked: COAPT, MITRA-FR and CTSN moderate ischaemic MR figures; (COAPT and CTSN moderate ischaemic MR rows checked 25 November 2026; see the table) the CTSN ablation trial; POET; TRI-SCORE; RECOVERY; REVIVED, STICH, ISCHEMIA, ART and the radial analysis; INSTEAD-XL; the type A operative principles and type B high-risk features; all technique points. The ESC 2024 coronary recommendations were seen only in summary, and no SCTS clinical guideline was found for these topics.
+From memory and not checked: COAPT, MITRA-FR and CTSN moderate ischaemic MR figures; (COAPT and CTSN moderate ischaemic MR rows checked 25 November 2026; see the table) the CTSN ablation trial; POET; TRI-SCORE; RECOVERY; REVIVED, STICH, ISCHEMIA, ART and the radial analysis; INSTEAD-XL; (all of these rows, and most TOE and CT numbers, checked or corrected 25 November 2026; see the notes in each row)  the type A operative principles and type B high-risk features; all technique points. The ESC 2024 coronary recommendations were seen only in summary, and no SCTS clinical guideline was found for these topics.

@@ -1,1 +1,122 @@
-[{"fig": "d11_lv_aneurysm_repairs", "slug": "c18", "anchor": "Know the coronary anatomy before the ventriculotomy", "caption": "Left ventricular aneurysm: plication, linear closure, patch closure and endoventricular patch. Arrangement schematic drawn for these notes from the technique table in this section (TSRA ch. 69)."}]
+[
+ {
+  "fig": "d11_lv_aneurysm_repairs",
+  "slug": "c18",
+  "anchor": "Know the coronary anatomy before the ventriculotomy",
+  "caption": "Left ventricular aneurysm: plication, linear closure, patch closure and endoventricular patch. Arrangement schematic drawn for these notes from the technique table in this section (TSRA ch. 69)."
+ },
+ {
+  "fig": "d11_measure_levels",
+  "slug": "c6",
+  "anchor": "Anatomy and upper normal values (Figure 5)",
+  "caption": "Upper normal diameters at the root, STJ, ascending aorta and beyond (men / women), with the echo, CT/CMR and outer-to-outer edge conventions. Drawn for these notes from the values and measurement table in this section (ESC 2024 PAAD, section 5.4; EACTS/STS convention from the Aorta numbers tab); edge panels are an arrangement schematic."
+ },
+ {
+  "fig": "d11_asc_ladder",
+  "slug": "c6",
+  "anchor": "Figure 24 algorithm: root or ascending dilatation with tricuspid or bicuspid valve",
+  "caption": "Diameter ladder for root or ascending dilatation with a normal valve: surveillance and surgery by band and phenotype. Drawn for these notes from the Figure 24 table in this section (ESC 2024)."
+ },
+ {
+  "fig": "d11_tem",
+  "slug": "c6",
+  "anchor": "(European update of Stanford; recommended by EACTS): Type (A, B, non-A non-B)",
+  "caption": "TEM classification: entry sites E1 to E3 and malperfusion beds M1 to M3 on the aorta, with the SVS/STS 2020 entry-zone types. Arrangement schematic drawn for these notes from this section (ESC 2024) and the EACTS/STS 2024 classification section of this tab."
+ },
+ {
+  "fig": "d11_add_rs",
+  "slug": "c6",
+  "anchor": "Diagnostic work-up: ADD-RS algorithm (Figure 30)",
+  "caption": "ADD-RS pathway for suspected acute aortic syndrome: one point per column, high risk straight to gated CT, low risk via X-ray, POCUS and D-dimer. Drawn for these notes from the text and Recommendation Table 44 in this section (ESC 2024)."
+ },
+ {
+  "fig": "d11_aas_mortality",
+  "slug": "c6",
+  "anchor": "In-hospital mortality by complication (Figure 32)",
+  "caption": "In-hospital mortality by presenting complication, medical against surgical type A, and by malperfusion bed. Chart drawn for these notes from the numbers in this section (ESC 2024, including IRAD figures as quoted)."
+ },
+ {
+  "fig": "d11_tbad_algorithm",
+  "slug": "c6",
+  "anchor": "Treatment algorithm (Figure 33)",
+  "caption": "Acute type B dissection: complicated, uncomplicated with high-risk features, and uncomplicated without. Drawn for these notes from the Figure 33 table and Recommendation Table 49 in this section (ESC 2024); 30-day mortality figures from EACTS/STS 2024 as given in the Aorta numbers tab."
+ },
+ {
+  "fig": "d11_imh",
+  "slug": "c6",
+  "anchor": "Table 16: high-risk features of IMH (types A and B)",
+  "caption": "Intramural haematoma: management by type, high-risk features, in-hospital mortality and natural history. Drawn for these notes from the IMH text, Table 16 and Recommendation Table 51 in this section (ESC 2024)."
+ },
+ {
+  "fig": "d11_pau",
+  "slug": "c6",
+  "anchor": "Figure 35: type B PAU management",
+  "caption": "Penetrating ulcer through the internal elastic lamina, the Figure 35 decisions for acute and chronic type B PAU, and endovascular against open aortic mortality. Wall drawing is an arrangement schematic; drawn for these notes from this section (ESC 2024)."
+ },
+ {
+  "fig": "d11_dunning",
+  "slug": "c6",
+  "anchor": "type 1 = limited to the sinuses of Valsalva; type 2 = ascending aorta beyond the sinuses",
+  "caption": "Dunning classes of iatrogenic type A dissection by extent from the annulus, with management. Arrangement schematic drawn for these notes from the iatrogenic injury text in this section (ESC 2024)."
+ },
+ {
+  "fig": "d11_followup",
+  "slug": "c6",
+  "anchor": "Recommendation Table 54: follow-up after AAS",
+  "caption": "Imaging timelines after TEVAR, medical type B or IMH, medical PAU and open surgery for acute aortic syndrome. Drawn for these notes from Recommendation Table 54 and the follow-up text in this section (ESC 2024); time axis stretched over the first year."
+ },
+ {
+  "fig": "d11_endoleaks",
+  "slug": "c6",
+  "anchor": "Primary leaks exist at the procedure; secondary appear in follow-up.",
+  "caption": "Endoleak types I to V and their management. Arrangement schematic drawn for these notes from the endoleak definitions and Recommendation Table 29 in this section (EACTS/STS 2024)."
+ },
+ {
+  "fig": "d11_pregnancy",
+  "slug": "c6",
+  "anchor": "Recommendation Table 33: pregnancy and post partum",
+  "caption": "Delivery and pre-pregnancy repair by root or ascending diameter, and timing of repair for dissection in pregnancy. Drawn for these notes from Recommendation Table 33 and the text in this section (EACTS/STS 2024), with ACC/AHA 2022 delivery and the 2025 valve guideline bicuspid threshold from this tab."
+ },
+ {
+  "fig": "d11_timing_bands",
+  "slug": "k2",
+  "anchor": "Untreated acute type A: mortality is 1–2% per hour early on",
+  "caption": "Dissection phases under ESC 2024 and SVS/STS 2020, EACTS/STS 2024, IRAD and the traditional scheme, on one stretched time axis. Drawn for these notes from the timing table in this section (Cardiac 6)."
+ },
+ {
+  "fig": "d11_tevar_sizing",
+  "slug": "k2",
+  "anchor": "The sources disagree on landing zone length.",
+  "caption": "TEVAR sealing zones, landing-zone diameter and oversizing by disease, with the retrograde type A risk. Arrangement schematic drawn for these notes from the sizing rows in this section and the TEVAR principles in Cardiac 6 (EACTS/STS 2024 part 3; TSRA)."
+ },
+ {
+  "fig": "d11_htad_ladder",
+  "slug": "k2",
+  "anchor": "ACC/AHA Marfan high-risk features add diffuse root and ascending dilatation",
+  "caption": "Replacement thresholds for Marfan, Loeys-Dietz and non-syndromic HTAD genes, with the lower threshold when high-risk features are present. Chart drawn for these notes from the heritable disease table in this section (Cardiac 6; EACTS/STS 2024, ESC 2024, ACC/AHA 2022)."
+ },
+ {
+  "md": "### Dissection classifications at a glance\n\n| System | Based on | Categories | Use and limits |\n|---|---|---|---|\n| Stanford | Extent: is the ascending aorta involved? | A involves the ascending aorta (DeBakey I and II); B does not (DeBakey IIIa and IIIb), whatever the entry site | Binary; cannot separate subgroups with different outcomes |\n| DeBakey | Extent | I ascending and beyond (60%); II ascending only (10 to 15%); IIIa descending thoracic, IIIb below the diaphragm (III 25 to 30%) | DeBakey II patients will probably be left without structural aortic wall disease after surgery |\n| Non-A non-B | Extent | Arch involved, ascending spared: dissection confined to the arch, or retrograde from the descending aorta into the arch | 30-day mortality about 14% medically treated, 4.4% after successful surgery; surgery or endovascular therapy favoured within 14 days |\n| SVS/STS 2020 | Entry tear zone, with proximal (P) and distal (D) extent by zones 0 to 12 | A_D: entry in zone 0. B_PD: entry in zone 1 or beyond. I_D: entry unidentified, involving zone 0 | Guides decisions on sealing the entry tear |\n| TEM | Type, Entry, Malperfusion | Type A, B or non-A non-B; E0 to E3 (none seen, ascending, arch, descending); M0 to M3 (none, coronary, supra-aortic, spinal, visceral or iliac), each (−) or (+) clinical | More prognostic information; recommended by EACTS/STS for any acute aortic syndrome (IIa, C) |\n| Penn (type A) | Ischaemia at presentation | Aa none (about 5% mortality); Ab branch malperfusion; Ac circulatory collapse; Abc both | Odds of death against Aa: 2.4, 3.4 and 13.1 |\n\nSource: summarised from this section (ESC 2024 sections 9.3.1 to 9.3.1.1.3) and the EACTS/STS 2024 classification and risk score section of this tab.",
+  "slug": "c6",
+  "anchor": "dissection confined to the arch, or retrograde from the descending aorta into the arch",
+  "inserted_in_doc": true
+ },
+ {
+  "md": "### Cerebral protection options at a glance\n\n| Strategy | How | Limits and timing | What the notes say about evidence |\n|---|---|---|---|\n| Deep hypothermic arrest alone | Arrest at 18 to 22 °C, no cerebral perfusion | Safe up to about 30 min (EACTS/STS); 18 °C gives 30 to 40 min (TSRA). Lengthens bypass; coagulopathy, inflammation, organ dysfunction | Has given way to RCP or ACP. STS (6387 type A): ACP or RCP gave lower death and stroke than arrest without cerebral perfusion |\n| Retrograde cerebral perfusion | Perfuse up the superior vena cava during arrest | Hemiarch with arrest about 30 min: results similar to antegrade (EACTS/STS) | RCT in elective arch: no difference from ACP in stroke, MRI or neurocognition. TSRA: adds nothing to deep arrest alone |\n| Unilateral antegrade (ACP) | Right axillary or subclavian inflow, clamp the innominate | Arrest under 40 min: unilateral or bilateral both reasonable | Meta-analysis of 4 strategies: unilateral perfusion in moderate hypothermia best for in-hospital mortality and stroke (only 40% total arch) |\n| Bilateral antegrade | Add left carotid perfusion | Arrest over 40 min: bilateral from the start; NIRS can guide the switch | No proven advantage over unilateral (AATS 2021); bilateral may be better with arrest over 30 to 50 min (ACC/AHA 2022) |\n| Trilateral antegrade | Also perfuse the left subclavian (cannulation or intubation) | Incomplete circle of Willis on preoperative CTA | EACTS/STS 2024 IIa, C |\n| Temperature with ACP | Lower-body arrest at high-moderate hypothermia (core 24.1 to 28 °C) | Hemiarch: with cerebral perfusion (I, C). Complex arch: with selective ACP (IIa, B) | With ACP, moderate hypothermia appears as safe as deep; Manoly meta-analysis: lower mortality and stroke than deep |\n| Monitoring | Bilateral NIRS with an algorithm for desaturation | All arch repair | EACTS/STS 2024 I, C |\n\nSource: summarised from the EACTS/STS 2024 organ protection section (part 2), the ACC/AHA 2022 and AATS 2021 type A sections and the TSRA textbook account in this tab.",
+  "slug": "c6",
+  "anchor": "With ACP, moderate hypothermia appears as safe as deep.",
+  "inserted_in_doc": true
+ },
+ {
+  "md": "### IMH and PAU side by side\n\n| Feature | Intramural haematoma | Penetrating atherosclerotic ulcer |\n|---|---|---|\n| Share of AAS | 5 to 25% | 2 to 7% |\n| Lesion | Haemorrhage from the vasa vasorum within the media, with or without intimal disruption | Plaque ulcer through the internal elastic lamina into the media; often with IMH |\n| Usual site | DTA 60 to 70%, ascending about 30%, arch about 10% | Mid and lower DTA; ascending rarely, but there (especially with IMH) rupture risk 33 to 75% |\n| Typical patient | Older than classic dissection; similar risk factors and symptoms | Older male smoker over 65 with hypertension, CAD, COPD, renal impairment, AAA |\n| Imaging | Crescentic or circular wall thickening, no flap, no enhancement after contrast; TTE sensitivity under 40% | CT technique of choice; often multiple, 5 to 25 mm wide, 4 to 30 mm deep |\n| High-risk features | Diameter over 45 to 50 mm (A) or 47 to 50 mm (B); thickness over 10 mm (A) or 13 mm (B); ulcer-like projection; effusion; malperfusion; uncontrolled pain or BP | Width 13 to 20 mm or more; depth 10 mm or more; growth over 5 mm a year; saccular aneurysm; increasing pleural effusion |\n| Type A | Urgent surgery (I, C); wait and see in selected high-risk patients without high-risk features (IIb, C) | Surgery (I, C); same wait-and-see exception (IIb, C) |\n| Uncomplicated type B | Medical therapy, repeat CT or CMR (I, C); TEVAR if high-risk imaging features (IIa, C) | Medical therapy, repeat imaging (I, C); endovascular if high-risk imaging features (IIa, C) |\n| Complicated type B | TEVAR (I, C); surgery if anatomy unfavourable (IIb, C) | TEVAR (I, C); surgery by anatomy and comorbidity (IIb, C) |\n| Follow-up if medical | 1, 3, 6 and 12 months, then yearly (as type B dissection) | 1 month, then every 6 months; longer after 2 stable years |\n| Outcome | In-hospital mortality type A 26.6%, type B 4.4% | Early aortic mortality 7.2% endovascular against 15.9% open |\n\nSource: summarised from this section (ESC 2024 sections 9.3.2 to 9.3.3, Table 16, Recommendation Tables 51, 52 and 54).",
+  "slug": "c6",
+  "anchor": "Isolated, asymptomatic, small PAU without high-risk features: conservative management",
+  "inserted_in_doc": true
+ },
+ {
+  "md": "### Chronic type B dissection: open repair against TEVAR\n\n| | Open repair | TEVAR |\n|---|---|---|\n| Where it fits | First line in low-risk patients and in HTAD; STS/AATS: consider open repair unless comorbidity is prohibitive or anatomy unsuitable for TEVAR | Preferred for eligible chronic TBAD; suitable for high-risk patients unfit for open repair |\n| Early mortality | 6 to 11% (up to 20% in low-volume centres: centralise) | Under 5% |\n| Spinal cord ischaemia | 3 to 11% | Under 3% (stroke also under 3%) |\n| Meta-analysis | More durable | Lower early mortality, stroke, SCI and respiratory complications; more re-interventions; long-term survival similar |\n| Limits | Technically harder than degenerative aneurysm because of the flap | False-lumen thrombosis usually only above the coeliac trunk: lifelong distal surveillance. Left subclavian cover often needed, with revascularisation. TEVAR alone discouraged with abdominal enlargement, poor distal landing or large re-entry tears |\n| When to treat (both) | Descending diameter 60 mm or more at reasonable surgical risk (I, B); 55 mm or more at low procedural risk (IIa, C); emergency for malperfusion, rupture or progression (I, C) | |\n\nSource: summarised from this section (ESC 2024 section 9.3.1.4.5 and Recommendation Table 50).",
+  "slug": "c6",
+  "anchor": "Distal sealing is difficult (dissection into iliacs",
+  "inserted_in_doc": true
+ }
+]

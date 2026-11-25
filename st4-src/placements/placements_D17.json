@@ -1,0 +1,117 @@
+[
+ {
+  "fig": "d17_resus_thoracotomy",
+  "slug": "t15",
+  "anchor": "ligate both internal mammary arteries once perfusion returns",
+  "caption": "Resuscitative left anterior thoracotomy: the cardiac box and incision on the chest, the pericardiotomy medial to the phrenic nerve and the aortic clamp below the left hilum, with the steps in order and the indications as listed in this section. Schematic drawn for these notes from TSRA ch. 114 and this section; arrangement schematic, not to scale."
+ },
+ {
+  "fig": "d17_lung_injury_ladder",
+  "slug": "t15",
+  "anchor": "Penetrating hilar wounds; arrhythmia, arrest, seizures",
+  "caption": "Bleeding lung: suture, stapled wedge or tractotomy by depth of injury, and the hilar control sequence (finger compression, hilar clamp, hilar twist, then definitive control). Schematic drawn for these notes from this table and TSRA ch. 115; arrangement schematic."
+ },
+ {
+  "fig": "d17_airway_injury",
+  "slug": "t15",
+  "anchor": "cover with a vascularised flap, bronchoscopy at one week",
+  "caption": "Tracheobronchial injury: where blunt tears lie (above the thoracic inlet or within 2 cm of the carina), the tube passed beyond the injury, and which approach for which level, with the repair principles. Schematic drawn for these notes from this section (TSRA ch. 115) and the FRCS Atlas additions in this tab; arrangement schematic."
+ },
+ {
+  "fig": "d17_ng39_decompression",
+  "slug": "t15",
+  "anchor": "NICE's only thoracic aortic recommendation is the stent graft (1.5.43)",
+  "caption": "NICE NG39 chest trauma: when to decompress a suspected tension pneumothorax and how, and which first imaging for whom, with recommendation numbers. Flow chart drawn for these notes from the NG39 tables in this section."
+ },
+ {
+  "fig": "d17_procurement_flush",
+  "slug": "t10",
+  "anchor": "cannula slipping into one branch, so one lung is poorly flushed",
+  "caption": "Lung procurement: antegrade flush through the pulmonary artery cannula, retrograde flush down each pulmonary vein after the heart is out, and the inflated trachea stapled, with the eight steps in order. Schematic drawn for these notes from this section (TSRA Primer, procurement); arrangement schematic, not to scale."
+ },
+ {
+  "fig": "d17_oesophagus_landmarks",
+  "slug": "t10",
+  "anchor": "a tight tumour may not be passable, and dilating it to pass risks perforation",
+  "caption": "Upper endoscopy: the squamocolumnar junction at 35 to 40 cm, the gastro-oesophageal junction and crural pinch (the gap is the hiatus hernia), the three perforation sites, and what endoscopic ultrasound reaches. Schematic drawn for these notes from this section (TSRA Primer); arrangement schematic, not to scale."
+ },
+ {
+  "fig": "d17_bronchoscopy_ebus",
+  "slug": "t10",
+  "anchor": "Flexible: hypoxia, pneumothorax. Rigid: teeth, larynx, perforation",
+  "caption": "Bronchoscopic landmarks on each side and the EBUS sampling order as given in this chapter (11R, 10R, 7, 4R, 2R, then the left side with a fresh needle), with lavage and rigid technique. Schematic drawn for these notes from this section (TSRA Primer, bronchoscopy); arrangement schematic."
+ },
+ {
+  "fig": "d17_sabr_zones",
+  "slug": "t8",
+  "anchor": "Other organs at risk: heart, descending aorta, great vessels",
+  "caption": "SABR fractionation by tumour position as taught: 54 Gy in 3 fractions when well clear, 55 Gy in 5 against the chest wall, 8 fractions 1 to 2 cm from the bronchial tree or near the aorta, nothing within 1 cm of the bronchial tree or against the heart. Schematic drawn for these notes from this case; arrangement schematic, zones not to scale."
+ },
+ {
+  "fig": "d17_ct_biopsy_paths",
+  "slug": "t8",
+  "anchor": "The tract can be sealed on withdrawal.",
+  "caption": "CT-guided lung biopsy: a short path to a pleural-based lesion against a long path through aerated lung, with the pneumothorax and intervention rates as taught. Schematic drawn for these notes from this case; arrangement schematic, not to scale."
+ },
+ {
+  "fig": "d17_tlco_manoeuvre",
+  "slug": "t8",
+  "anchor": "helium dilution gives the alveolar volume",
+  "caption": "Single-breath transfer factor on a volume-time trace: exhale, rapid inhalation of oxygen, helium and trace carbon monoxide, 10-second hold, dead space discarded and alveolar sample analysed. Schematic drawn for these notes from this case; trace shape schematic."
+ },
+ {
+  "fig": "d17_periop_timeline",
+  "slug": "t4",
+  "anchor": "Adds a year of adjuvant immunotherapy.",
+  "caption": "Where each perioperative regimen sits around the operation: CheckMate 816, KEYNOTE-671, AEGEAN and CheckMate 77T before (and after) surgery; IMpower010, PEARLS, ADAURA and ALINA after it. Drawn for these notes from the trial tables in this tab; not to scale."
+ },
+ {
+  "fig": "d17_osimertinib_stages",
+  "slug": "t4",
+  "anchor": "Progression-free survival 10.1 against 4.4 months",
+  "caption": "Osimertinib by setting: NeoADAURA before resection, ADAURA after it, LAURA after chemoradiotherapy and FLAURA2 and FLAURA in metastatic disease, with the headline results; NeoADAURA and FLAURA figures checked 25 November 2026 against trial reports. Drawn for these notes from the trials table in this section."
+ },
+ {
+  "fig": "d17_olv_shunt",
+  "slug": "t7",
+  "anchor": "CPAP about 5 cmH2O to the operative lung",
+  "caption": "One-lung ventilation in the lateral position: blood flow through the collapsed operative lung is the shunt, partly diverted by hypoxic vasoconstriction, with the desaturation drill in order. Schematic drawn for these notes from this section (FRCS Atlas draft and ERAS/ESTS 2019); arrangement schematic."
+ },
+ {
+  "fig": "d17_cyst_wall",
+  "slug": "t1",
+  "anchor": "An irregular or nodular inner wall matters more than thickness.",
+  "caption": "Cyst against cavity and cancer in a cystic airspace, with wall thickness bands (4 mm or less about 95% benign, 5 to 15 mm indeterminate, over 15 mm about 95% malignant). Schematic drawn for these notes from this section."
+ },
+ {
+  "fig": "d17_separate_nodules",
+  "slug": "t1",
+  "anchor": "Dominant solid tumour with solid satellites of the same histology",
+  "caption": "Separate tumour nodule of the same histology: same lobe T3, another ipsilateral lobe T4, the other lung M1a, beside the other multiple-lesion patterns. Schematic drawn for these notes from this table; lobes arrangement schematic."
+ },
+ {
+  "md": "### Cardiac repairs at a glance\n\n| Injury | Repair |\n|---|---|\n| Small laceration | Pledgeted 4-0 polypropylene (horizontal mattress, purse-string or running; pledgets of PTFE, felt or autologous pericardium); a stapler works on the low-pressure right heart |\n| Wound beside a coronary | Mattress suture passed under the vessel, so it is neither encircled nor kinked |\n| Small coronary branch | Tie it |\n| Major coronary injury | Close the wound and bypass with vein; no definitive repair without bypass if distal myocardium is threatened |\n| Large wound | Pressure or a side-biting clamp until bypass is running |\n| Pericardial tear | Close or patch to prevent herniation |\n| Impaled object | Leave it until the chest is open |\n| Retained foreign body | Remove at the index operation (embolisation, infection, erosion) |\n\nSource: summarised from \"Cardiac injury\" (TSRA ch. 114) and the AAST and FRCS Atlas additions in this tab.",
+  "slug": "t15",
+  "anchor": "Pericardial tears are closed or patched to prevent herniation"
+ },
+ {
+  "md": "### Airway and oesophageal injury side by side\n\n| | Tracheobronchial | Oesophageal |\n|---|---|---|\n| Where and with what | Blunt tears above the thoracic inlet or within 2 cm of the carina | Over 80% of thoracic cases have another chest injury |\n| First step | Secure the airway bronchoscopically into the distal trachea or opposite bronchus | Contrast swallow followed at once by contrast CT |\n| Clue or test | Lung that will not re-expand, large continuous leak or stridor: injury until bronchoscopy shows otherwise | Endoscopy: negative predictive value 100%, positive only 33% |\n| Access | Cervical: neck incision, intubate a divided trachea directly. Lower: right thoracotomy or clamshell, divide the azygos, intubate across the field | Found late or through the wrong incision: wide drainage, then delayed repair or exclusion with a cervical oesophagostomy |\n| Repair | Debride, keep the lateral blood supply, interrupted absorbable sutures without tension, vascularised flap | Two layers over a debrided edge, flap cover |\n| Afterwards | Bronchoscopy at one week | Stents not advised in trauma |\n\nSource: summarised from \"Airway and oesophagus\" (TSRA ch. 115) and \"Haemothorax and pneumothorax in trauma\" in this tab.",
+  "slug": "t15",
+  "anchor": "Stents are not advised in trauma."
+ },
+ {
+  "md": "### SABR against surgery: the evidence as presented\n\n| Study | Result as presented | Caution |\n|---|---|---|\n| MISSILE (Louie) | 40% still had viable cancer after SABR | SABR does not treat the lymphatics |\n| STARS and ROSEL pooled (Lancet Oncology) | Three-year survival 95% with SABR, 79% with surgery | First author is Chang, not Roth |\n| BMJ, SABR against sublobar resection in the elderly | Surgery better | |\n| JCO emulated trial (England) | Three-year mortality 30.3% after SABR, 21.6% after surgery; gap about 4% in the over-80s | The over-80s figure is not confirmed; reports say only that the gap narrowed |\n| Revised STARS (Chang) | Single-arm SABR compared with VATS lobectomy | Single-arm design |\n| Faculty conclusion | First-line for T1–2 N0 M0 is reasonable; for patients fit for either, surgery has the better survival data | NICE and the UK Consortium limit SABR to T1a–T2b, 5 cm or less |\n\nSource: summarised from Case 9 and \"Where my notes differ from published sources\" in this tab.",
+  "slug": "t8",
+  "anchor": "Faculty conclusion: SABR is a good treatment and can be used first-line"
+ },
+ {
+  "md": "### Nodule features: which way they point\n\n| Feature | Points to benign | Points to malignant |\n|---|---|---|\n| Calcification | Most reliable benign sign, especially uniform; popcorn in hamartoma | Eccentric calcification is less reliable: a cancer can engulf a calcified focus |\n| Border | Hamartoma: smooth, lobulated, fat plus soft tissue | Irregular, spiculated or lobulated |\n| Growth | Stable for more than 2 years; very rapid growth over days or weeks suggests infection | Growth is the hallmark; mean doubling time of solid cancers 149 days |\n| Location | Multiple central nodules along the bronchovascular bundle: sarcoidosis, hypersensitivity pneumonitis | Primary cancers favour the upper lobes, metastases the lower |\n| Number | Multiple: infection or scarring | Multiple: metastases, uniform in shape but varied in size |\n| Air bronchogram | Airspace filling, more often benign | Seen in adenocarcinoma in situ |\n| Ground glass | Non-specific (for example oedema) | May be in situ or minimally invasive adenocarcinoma; needs over 2 years of surveillance |\n| PET | Infection or inflammation gives false positives | False negatives under 8 to 10 mm, in situ or minimally invasive and mucinous adenocarcinoma, carcinoid |\n\nSource: summarised from \"Work-up of the solitary pulmonary nodule\" (TSRA ch. 7) in this tab.",
+  "slug": "t1",
+  "anchor": "Investigate if growing, more than 3 cm, or a solid component develops."
+ },
+ {
+  "md": "### Ventilatory support in contusion and flail chest: the evidence at a glance\n\n| Intervention | Study | Finding |\n|---|---|---|\n| PEEP | McGee and Trinkle 1972 (animal); Sladen (n = 9, own controls) | Smaller experimental contusions; PEEP 10 or 15 cmH2O improved PO2 in all, dead space unchanged |\n| Mode | Pinella: IMV (n = 144) against historical continuous mandatory ventilation | No difference in ventilator duration, PEEP, FiO2 or outcome; no mode proven superior |\n| CPAP (animal) | Pigs | 10 to 15 cm CPAP beat IMV alone for alveolar closure, shunt and compliance, more so in PC-FC |\n| Mask CPAP | Tanaka (n = 59 FC, Class II, historical controls) | Atelectasis 47% against 95%, pneumonia 27% against 70% (p < 0.01); fewer ventilated |\n| CPAP with PCA against intubation | Gunduz RCT (25 per arm) | Survival and nosocomial infection \"significantly lower in the CPAP group\" (wording as printed) |\n| HFOV | Funk (n = 17, retrospective) | Started at peak airway pressure over 30 cm and FiO2 over 60%; better PaO2/FiO2; no comparison with aggressive conventional ventilation |\n| Independent lung ventilation | Hurst (n = 8, unilateral PC, no controls) | PaO2 72 to 153 mmHg, shunt 28% to 12.6%; 7 of 8 survived |\n\nSource: summarised from \"Ventilation: how\" in the EAST 2012 pulmonary contusion and flail chest section of this tab (Simon et al., J Trauma Acute Care Surg 2012).",
+  "slug": "t15",
+  "anchor": "cardiac output unchanged; 7 of 8 survived"
+ }
+]
