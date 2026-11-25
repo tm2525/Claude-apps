@@ -130,3 +130,92 @@ Added 21 November 2026 from TSRA Review 3rd ed., ch. 49 (re-read in full); Wahba
 
 ### Viva order for the bleeding patient after bypass
 Surgical cause first. Then warm (normothermia, IIa B), correct pH (IIa B) and calcium, check for residual heparin, then treat by viscoelastic and laboratory results (fibrinogen under 1.5 g/L, platelets), as set out in Cardiac 17.
+
+## Cardiac cycle, Wiggers diagram and pressure-volume loops
+
+Added 25 November 2026 from: TSRA Review of Cardiothoracic Surgery 3rd ed., ch. 46 (Miter S, Singh R, Cardiac physiology) and ch. 47 (Jamal AZ, Sarkeshik AA, Kiaii B, Cardiac hemodynamics), re-read in full on disk (ch. 46 reproduces a cycle figure from Opie but gives no text on the loop); Klabunde RE. CV Physiology: Cardiac cycle (hd002) and Atrial contraction, phase 1 (hd002a), both revised 4 November 2023; Ventricular pressure-volume relationship (cf024), revised 4 November 2023; Interdependent effects of preload, afterload and inotropy on ventricular pressure-volume loops (cf026), revised 23 January 2023, cvphysiology.com (online pages read through an extraction tool); StatPearls. Physiology, Cardiac Cycle (statpearls.com, updated 3 October 2022; NCBI Bookshelf NBK459327 was blocked; the page summary was read); Aly A, Dusgupta S [spelling as shown on the page]. The cardiac cycle. Core Concepts of Pediatrics, 2nd ed., University of Texas Medical Branch, July 2017 (online page, for phase durations); Bastos MB, Burkhoff D, Maly J, et al. Invasive left ventricle pressure-volume analysis: overview and practical clinical implications. Eur Heart J 2019;41(12):1286–1297, doi:10.1093/eurheartj/ehz552 (online full text on PubMed Central, read through an extraction tool). The tab already has the myocyte, Frank-Starling, Laplace and normal values from ch. 46 and 47; this section adds the cycle, the loop and how the loop changes.
+
+### The phases of the cycle
+
+The cycle has seven phases (Klabunde): one at the end of diastole, three in systole and three in early and mid diastole. The UTMB chapter groups the two filling phases together and gives each phase's rough share of a cycle.
+
+| Phase | Starts with | Valves | What happens | Share of cycle (UTMB) |
+|---|---|---|---|---|
+| 1 Atrial systole | P wave | AV valves open, semilunar valves shut | Atrial contraction adds about 10% of LV filling at rest, up to 40% at fast rates when diastole is short (the "atrial kick"). Makes the a wave. An S4 may be heard, more likely with a stiff ventricle (hypertrophy, older age) | about 14% |
+| 2 Isovolumetric contraction | QRS; mitral closure (S1, with tricuspid closure) | All shut | Pressure rises, volume does not change | about 6% |
+| 3 Rapid ejection | Aortic valve opens when LV pressure exceeds aortic diastolic pressure | Semilunar valves open | Most of the stroke volume leaves; arterial pressure peaks | about 13% |
+| 4 Reduced ejection | T wave (repolarisation) | Semilunar valves open | Ejection slows; some flow goes on by momentum | about 15% |
+| 5 Isovolumetric relaxation | Aortic (and pulmonary) closure, S2 | All shut | Pressure falls with no change in volume until it drops below atrial pressure | about 8% |
+| 6 and 7 Rapid, then reduced filling | Mitral opening | AV valves open | Early filling is helped by suction from ventricular untwisting | about 44% |
+
+TSRA ch. 47 gives the venous waves that sit on the atrial trace: a (atrial contraction), c (tricuspid closure and bulging), x descent (atrial relaxation and the valve pulled down in systole), v (passive venous filling against a shut valve), y descent (valve opens, atrium empties). The tab's venous waveform table already lists the abnormal patterns.
+
+!fig f61_wiggers | Original Wiggers diagram for one left heart cycle: phase band 1 to 6, valve events, aortic, LV and LA pressures, LV volume, ECG and heart sounds. Values illustrative. Drawn for these notes from Klabunde (CV Physiology), StatPearls and the UTMB phase shares.
+
+### Numbers to quote
+
+| Measure | Value | Source |
+|---|---|---|
+| LV pressure | 120/15 mmHg (StatPearls); 120/5 (TSRA Table 47-2) | Both |
+| LV end-diastolic pressure | 8 to 12 mmHg (RV 3 to 6) | Klabunde |
+| Aorta | 120/80 mmHg | StatPearls; TSRA |
+| RV, PA | 25/5; 25/10 mmHg | StatPearls; TSRA gives RV 25/3 |
+| RA mean | 4 to 5 mmHg | StatPearls |
+| LV end-diastolic volume | about 120 ml (the preload) | Klabunde |
+| Ejection fraction | more than 60% in a healthy ventricle | StatPearls |
+| Rate ceiling | output falls once filling is cut, about 150 to 180 a minute in adults | TSRA ch. 46 |
+
+### The pressure-volume loop
+
+Pressure on the vertical axis, volume across. The loop runs anticlockwise (Klabunde):
+- A, end-diastole: mitral valve shuts at the end-diastolic volume (EDV).
+- A to B, isovolumetric contraction: vertical rise.
+- B, aortic valve opens; B to C, ejection.
+- C, aortic valve shuts at the end-systolic point (ESV, end-systolic pressure Pes); C to D, isovolumetric relaxation: vertical fall.
+- D, mitral valve opens; D to A, filling along the end-diastolic pressure-volume relationship.
+
+Width = stroke volume (EDV minus ESV). The area inside = **stroke work** (Klabunde); at the bedside stroke work is roughly stroke volume times mean arterial pressure (Bastos).
+
+!fig f61_pv_loop | Original drawing of a normal LV pressure-volume loop with corners A to D, ESPVR (slope Ees, intercept V0), EDPVR, the arterial elastance line and stroke work. Drawn for these notes from Klabunde (CV Physiology) and Bastos et al. 2019.
+
+### The boundary lines and elastance
+
+| Term | Meaning (Bastos unless stated) |
+|---|---|
+| ESPVR | End-systolic pressure-volume relationship: Pes = Ees x (Ves minus V0). Nearly linear over the physiological range. The maximum pressure the ventricle can make at any volume; the loop cannot cross it (Klabunde) |
+| Ees | End-systolic elastance, the ESPVR slope (peak chamber elastance): a relatively load-independent index of contractility. Rises with dobutamine, milrinone, levosimendan and sympathetic drive; falls with beta-blockers, calcium-channel blockers, dyssynchrony, ischaemia and infarction |
+| V0 | Volume intercept of the ESPVR. V100 (volume at 100 mmHg) rises when contractility falls |
+| EDPVR | End-diastolic pressure-volume relationship: curved. Its slope is chamber stiffness, the reciprocal of compliance. Steeper with hypertrophy, fibrosis, ischaemia, oedema; flatter in dilated ventricles (Klabunde). V30 is the volume at 30 mmHg; it is smaller in restrictive and hypertrophic cardiomyopathy |
+| Ea | Effective arterial elastance = Pes ÷ stroke volume: the slope of the line from EDV on the volume axis to the end-systolic point. Proportional to total peripheral resistance x heart rate. A load measure, not a ventricular one |
+| Ea/Ees | Ventricular-arterial coupling. About 0.6 in normal humans, where metabolic efficiency is near optimal. Over 1.2 in HFrEF (mismatch, worse with exercise). In HFpEF both rise together, so the ratio stays about the same |
+| Pressure-volume area | Stroke work plus potential energy (energy left in the myofilaments at end-systole). PVA x heart rate = total mechanical power |
+| Relaxation | Tau normally about 20 to 30 ms; 70 to 100 ms when relaxation is impaired, which limits filling at fast rates. dP/dt max is strongly load-dependent |
+
+How loops are measured (Bastos): a 4 to 7 F conductance catheter with 12 electrodes and a pressure sensor, tip at the LV apex (across the aortic valve, or transseptal across the mitral). Volume is calibrated against imaging (echo, CT or MRI) or with hypertonic saline for parallel conductance plus thermodilution stroke volume. Brief IVC occlusion lowers preload and generates a family of loops; linear regression through their corners gives the ESPVR and EDPVR (Klabunde notes the ESPVR steepens if occlusion lasts long enough for baroreflexes to act).
+
+### How the loop changes
+
+| Change | Loop (Klabunde) |
+|---|---|
+| More preload | EDV up; stroke volume up by Frank-Starling. The higher output raises arterial pressure and so afterload, so ESV rises a little and offsets part of the gain |
+| More afterload | ESV up, stroke volume down. The extra residual volume raises EDV and partly restores stroke volume. In a normal heart aortic pressure changes have little effect on stroke volume; in heart failure, with EDV already maximal, a rise can cut stroke volume a lot. Lowering afterload does the reverse: the reason for arterial dilators in heart failure |
+| More contractility | ESPVR steeper and shifted left; ESV down, stroke volume and EF up; EDV falls slightly |
+| Exercise | Venous return raises EDV modestly; sympathetic inotropy dominates and lowers ESV |
+
+| Lesion | Loop (Bastos) |
+|---|---|
+| Aortic stenosis | Afterload and Ea rise steeply, so Ea/Ees rises; tall domed loop. EDV near normal, ESV often up, stroke volume down. After TAVI, peak pressure and EDV fall and stroke volume and EF can rise |
+| Aortic regurgitation | Low aortic diastolic pressure shortens isovolumetric contraction and lets ejection start early; isovolumetric relaxation disappears (the ventricle fills from the aorta). Chronic: loops shift right and the ESPVR flattens |
+| Mitral stenosis | LV preload falls and pulmonary venous pressure rises; the ESPVR and tau are preserved |
+| Mitral regurgitation | Isovolumetric contraction shortens or vanishes because blood leaves into the atrium before the aortic valve opens. Chronic: loops shift right, the ESPVR flattens and total stroke volume rises |
+| Restriction, HFpEF | Steep EDPVR (small V30); early diastolic suction is blunted when filling pressures are high; incomplete relaxation at fast rates limits exercise |
+| HFrEF | ESPVR, EDPVR and loops shift right with remodelling; Ea/Ees over 1.2 |
+
+!fig f61_pv_changes | Original schematic of eight loops against a dashed baseline: preload, afterload, contractility, restriction, aortic stenosis, aortic regurgitation, mitral stenosis and mitral regurgitation. Drawn for these notes from Klabunde (CV Physiology) and Bastos et al. 2019.
+
+### Viva points
+
+- "Draw me a PV loop": axes first, then the four corners with the valve events, then ESPVR and EDPVR, then point out that stroke work is the area and stroke volume the width.
+- Why Ees and not EF for contractility: EF depends on afterload and preload; Ees, from a family of loops, is relatively load-independent.
+- Mitral regurgitation and aortic regurgitation both lose an isovolumetric phase (MR loses contraction, AR loses relaxation); stenoses keep both.
+- The phrase "time-varying elastance" and a numeric normal Ees were not in the sources read this session.

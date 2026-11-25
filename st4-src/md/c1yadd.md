@@ -90,3 +90,72 @@ Added 24 November 2026 from Lorusso R, Salazar L, Nersesian G, Milojevic M, Schm
 | Preoperative RV indices suggesting prolonged support will be needed | A pre-emptive temporary RVAD should be considered to prevent post-cardiotomy RV failure | RV-specific device preferred over VA-ECLS |
 
 RV failure thresholds the consensus uses (Table 1): TAPSE under 14 mm, RV free-wall strain worse than −20%, CVP 20 mmHg or more, RV fractional area change 30% or less, CVP/PCWP 0.8 or more, PAPi under 1.85. A right-sided microaxial pump is contraindicated by a mechanical tricuspid or pulmonary valve, severe tricuspid stenosis, severe pulmonary stenosis or regurgitation, and thrombus in the cava, right atrium or RV.
+
+## Isolated mitral valve replacement: operative steps, chordal preservation, hazards and outcomes
+
+Added 25 November 2026 from: (1) García-Villarreal OA. How I do it: mitral valve replacement in functional mitral regurgitation. Cir Card Mex 2021;6(2):54-7 (online PDF, medigraphic.com, read through a summarising tool). (2) Nappi F, Salsano A, Abdou I et al. Translocated anterior mitral leaflet sparing is a viable treatment option for both degenerative and functional mitral valve disease. J Thorac Dis 2025;17:707-23, doi:10.21037/jtd-24-1555 (online full text, read through a summarising tool). (3) Gaudiani V. How to replace a severely calcified mitral valve. CTSNet video, February 2025, doi:10.25373/ctsnet.28420811, and Gaudiani V, Castro L, Egrie G. A mitral valve replacement with a patch to the posterior calcified annulus demonstrated on a pig heart. CTSNet, February 2025, doi:10.25373/ctsnet.28382333 (page summaries only; videos not watched). (4) Gammie JS, Chikwe J, Badhwar V et al. Isolated mitral valve surgery: the Society of Thoracic Surgeons Adult Cardiac Surgery Database analysis. Ann Thorac Surg 2018;106:716-27, doi:10.1016/j.athoracsur.2018.03.086 (online PDF read through a summarising tool). (5) TSRA Review 3rd ed., ch. 59 (ischaemic MR), ch. 60 (degenerative MR) and ch. 62 (reoperative mitral surgery), re-read from the text on disk. No MMCTS replacement tutorial was found within this round's search allowance, and no NACSA figure for isolated mitral replacement mortality was found. Incision comparisons (left atriotomy, transseptal, superior septal), the minimally invasive steps, annular calcification and the CTSN ischaemic MR trial are already in this tab and are not repeated.
+
+### Step list
+
+| Step | What to do | Source |
+|---|---|---|
+| Decide | Replace only when repair is not appropriate; the Class III rule for limited posterior prolapse is earlier in this tab | ACC/AHA 2020 in TSRA ch. 60 |
+| Access and bypass | Sternotomy or right mini-thoracotomy; bypass, cross-clamp and cardioplegia (Gaudiani gave antegrade and retrograde in a heavily calcified case) | García-Villarreal; Gaudiani |
+| Atrium | Left atriotomy through the interatrial (Sondergaard) groove, or transseptal through the right atrium (TSRA ch. 62; uses for a small atrium or redo are earlier in this tab). García-Villarreal uses the superior septal route for small or medium atria. Gaudiani slings and lifts the aorta for a high ("rooftop") atriotomy | García-Villarreal; Gaudiani; TSRA ch. 62 |
+| Inspect | Confirm the lesion and that repair is not feasible; mark both commissures with 3-0 polypropylene stay sutures | García-Villarreal |
+| Anterior leaflet | Either excise it, or keep its chordae by one of the methods below. Keeping it also lets you pull the annulus down to place sutures | Nappi; Gaudiani |
+| Posterior leaflet | Leave it and its chordae in place; fold a redundant leaflet onto the annulus with the valve sutures | Nappi; TSRA ch. 59 |
+| Calcium | Debride only what is needed to seat sutures; heavy calcium needs a planned strategy (see the annular calcification section) | TSRA ch. 59; Gaudiani |
+| Sutures | Interrupted 2-0 braided polyester or polypropylene with Teflon pledgets, passed from the ventricular side to the atrium, through the leaflet tissue and out 1 to 2 mm outside the annulus. This puts pledgets on the ventricular side. Nappi uses 24 to 28 sutures in all | García-Villarreal; Nappi |
+| Room for the valve | Split the retained anterior tissue band in the midline before tying | García-Villarreal |
+| Size and seat | Avoid an oversized prosthesis; pass every suture through the sewing ring, lower ("parachute") the valve, tie in quadrants (6, then 12, 3 and 9 o'clock) | TSRA ch. 59; Gaudiani; García-Villarreal |
+| Orientation | García-Villarreal places the valve in its "customary orientation". Specific rules for bileaflet or bioprosthetic orientation were not found in a primary source this round; the Commando section (Cardiac 8) marks the trigone sutures so bioprosthetic struts stay out of the outflow tract | |
+| After | Avoid lifting the heart once the prosthesis is in (risk of atrioventricular rupture); check the outflow tract, lateral wall motion and rhythm on TOE (earlier in this tab) | TSRA ch. 59 |
+| De-airing | No MVR-specific primary source read this round; CO2 field evidence is in Cardiac 14 | |
+
+!fig f63_mvr_chordal | Chordal-sparing mitral replacement in the surgeon's view: D-shaped piece removed from the anterior leaflet leaving a rim on its primary chordae, posterior leaflet kept, pledgeted sutures from ventricle to atrium, and the structures at risk at the clock positions given in TSRA ch. 59. Drawn for these notes from García-Villarreal 2021 and TSRA ch. 59.
+
+### Chordal preservation: why and how
+
+Why (TSRA ch. 59): replacement with removal of the subvalvular apparatus in low ejection fraction carried very high mortality, because ventricular function depends on continuity between annulus and papillary muscles. Consensus now favours total valve-sparing replacement. One randomised trial of partial against complete sparing found ventricular volume and function better preserved with complete sparing. Keeping the posterior leaflet also helps prevent atrioventricular rupture.
+
+| Method | Technique | Notes |
+|---|---|---|
+| Partial (posterior only) | Excise the anterior leaflet and its chordae; keep the posterior leaflet and chordae | Nappi reserves it for rheumatic valves and for degenerative valves with heavy anterior annular calcium. Fear of outflow obstruction is a common reason surgeons stop at partial sparing |
+| D-shaped remnant (García-Villarreal) | Transverse incision in the anterior leaflet about 1 cm from the annulus, from below one trigone to the other; second incision along the free edge leaving 8 to 10 mm. Remove the D-shaped piece. The rim keeps the primary chordae; excise the secondary chordae as near the papillary heads as possible. Pledgeted sutures go through the rim, then the posterior leaflet, then the annulus | Aim: hold both subvalvular parts away from the outflow tract. No outcome data given |
+| Complete detachment and translocation (Nappi) | Detach the anterior leaflet from commissure to commissure; trim an ellipse of excess, leaving a 5 to 10 mm rim on first-order chordae; translocate the leaflet and reattach it to the posterior leaflet and annulus with the valve sutures (12 to 14 sutures for the anterior leaflet) | Said to avoid undersizing and outflow obstruction (none in 161 patients). The free edge is kept whole in endocarditis with an intact anterior leaflet and in Carpentier types I and IIIb |
+| Khonsari | Divide the anterior leaflet into two or four segments | Nappi keeps it for very redundant leaflets; it was the method in the randomised trial (Yun) cited by Nappi |
+
+Nappi 2025 (161 patients, retrospective, many redo operations): 30-day mortality 8.7% (10 of the 14 deaths after previous operations); indexed end-diastolic volume fell from 86 to 72 ml/m²; survival 85.5% at 1 year and 66.5% at 5 years. Not a benchmark for first-time isolated replacement.
+
+### Hazards and how to avoid them
+
+Structures at risk, with TSRA ch. 59 clock positions in the surgeon's view: circumflex artery at 6 to 8 o'clock (A1/P1); coronary sinus at 4 to 6 o'clock (P2/P3); atrioventricular node, conduction bundle and membranous septum. Deep sutures cause circumflex and conduction injury (TSRA ch. 62).
+
+Atrioventricular disruption (TSRA ch. 59 and 60), the most morbid complication:
+
+| Type | Site | Usual cause |
+|---|---|---|
+| 1 (commonest) | Atrioventricular groove | Annular injury: excessive decalcification, oversized prosthesis, deep sutures into myocardium, cardiac massage |
+| 2 | Posterior left ventricular wall at the base of the papillary muscle | Excessive resection of the posterior leaflet and posteromedial papillary muscle, with local haemorrhage |
+| 3 | Between the papillary muscle base and the groove | |
+
+Prevention: do not over-decalcify, do not lift the heart after the prosthesis is in, do the distal coronary anastomoses first when grafting at the same operation, and preserve the posterior leaflet. Treatment: back on bypass, arrest, explant the prosthesis, repair the defect from inside with a pericardial patch, then implant a smaller or lower-profile valve. TSRA ch. 60 notes it is rare after repair and commoner with a calcified annulus in older patients. (The existing table earlier in this tab, from David 2020, describes two types; TSRA's three-type scheme adds the intermediate type 3.)
+
+### Outcomes
+
+| Measure | Replacement | Repair | Source |
+|---|---|---|---|
+| Operative mortality, isolated primary mitral surgery | 3.7% | 1.1% | STS ACSD, 87,214 operations at 1,125 centres, July 2011 to September 2016 (Gammie 2018) |
+| Degenerative leaflet prolapse only | 3.1% | 0.8% | Same |
+| Prolonged ventilation | 14.3% | | Same |
+| Permanent pacemaker | 9.8% | | Same |
+| Reoperation for bleeding or tamponade | 4.1% | | Same |
+| Renal failure (new dialysis) | 3.4% (2.2%) | | Same |
+| Permanent stroke | 1.7% | | Same |
+| New AF | 25.1% | | Same |
+| 30-day readmission | 14.3% | | Same |
+
+Replacements were 34.4% of isolated mitral operations; the bioprosthetic share of replacements rose from 65.4% to 75.8% over the period. Mortality for degenerative prolapse was 1.60% at lower-volume centres against 0.61% at higher-volume centres. UK national (NACSA) mortality for isolated mitral replacement was not found in this round; the NACSA activity figures already in Cardiac 10 give 1,759 isolated mitral operations in the latest report.
+
+Viva line: "I would keep the posterior leaflet and its chordae in every case and preserve the anterior chordae where the outflow tract allows, using pledgeted sutures from the ventricular side, a prosthesis that is not oversized, minimal decalcification, and no lifting of the heart afterwards. Expected operative mortality is about 3 to 4% in the STS database, against about 1% for repair."

@@ -22,7 +22,7 @@ Eleven society documents were opened and compared with the notes: nine statement
 
 ## Could not be checked
 
-- 2024 EACTS perioperative medication guideline: full text not reachable. The drug-stopping table (ticagrelor 3 days, clopidogrel 5, prasugrel 7) matches the 2017 EACTS guideline; the SGLT2 inhibitor and DOAC intervals are unverified.
+- 2024 EACTS perioperative medication guideline: full text not reachable. The drug-stopping table (ticagrelor 3 days, clopidogrel 5, prasugrel 7) matches the 2017 EACTS guideline; the SGLT2 inhibitor and DOAC intervals are unverified. (Corrected 25 November 2026: the full text has since been read, on 20 November; see Cardiac 10, EACTS 2024 perioperative medication guideline, parts 1 to 7. It gives ticagrelor at least 3 days, clopidogrel 5 and prasugrel 7 (part 2); DOACs stopped 48 to 96 hours before by drug and renal function, without routine bridging (part 3); and SGLT2 inhibitors stopped at least 72 hours before (Cardiac 10, Perioperative medication: the 2024 guideline).)
 - 2024 ERAS/STS perioperative care statement: only the abstract opened. The ERACS bundle, glucose and temperature targets are unverified.
 - No SCTS clinical guideline was found for these topics. SCTS aligns its courses to the ISCP curriculum, so the curriculum was used as the SCTS benchmark.
 - Still from standard references only: nodule pathway (BTS), TNM 9 stage groups, fitness thresholds, thymoma, trauma triggers, mitral and tricuspid technique notes, most of the congenital tab, and the echo grading tables in the main tab.

@@ -242,3 +242,56 @@ Added 24 November 2026 from Zer A, Ahn M-J, Barlesi F, et al., on behalf of the 
 | Selective FDG-PET when serial CT suggests recurrence after SBRT or CRT | III, B |
 
 Complications to watch for after surgery (with or without neoadjuvant chemo-immunotherapy) are respiratory failure, pneumonia, pneumothorax and cardiac events, mostly in the first 30 days. After CRT they are infection, oesophagitis, pneumonitis, cytopenias, cardiac toxicity and hepatotoxicity. Immunotherapy and targeted drugs can cause late effects well into the surveillance period. Supplementary Section 5 (surveillance detail) was not read.
+
+## Cancer waiting times in England: the three standards since October 2023, current performance, and the lung pathway
+
+Added 25 November 2026 from: (1) NHS England and Department of Health and Social Care. Changes to cancer waiting times standards from 1 October 2023 (letter PRN00654ii), https://www.england.nhs.uk/long-read/changes-to-cancer-waiting-times-standards-from-1-october-2023/, read online through a summarising tool; (2) NHS England. Cancer Waiting Times Statistical Release, October 2025, provider based, provisional (PDF, published December 2025), read through a summarising tool, for definitions and national performance; (3) Cancer Research UK. Breaking down NHS England's changes in standards for cancer care. Cancer News, 17 August 2023, read online; (4) NHS England. Best practice timed diagnostic pathways: 28-day best practice timed pathway for suspected lung cancer (PRN1346; no date on the page, data to June 2023), read online; (5) NHS England Lung Cancer Clinical Expert Group. National Optimal Lung Cancer Pathway: referral to treatment, version 3.0 (2020), PDF read through a summarising tool (the extraction paraphrased the milestones; check exact wording in the original). Later monthly figures (after October 2025) and the interim 62-day level for March 2026 were not in the sources read and are not given. Lung-specific waits from the NLCA State of the Nation 2026 report are in Cardiac 10.
+
+### What changed on 1 October 2023
+
+Ten standards were consolidated into three. The two-week wait (seen by a specialist within 14 days of urgent referral) was retired and replaced by the Faster Diagnosis Standard. Three separate 62-day standards (urgent GP referral, screening, consultant upgrade) were merged into one, which brings more patients into the headline measure. The dataset is unchanged: trusts still record the "first seen" date.
+
+### The three standards
+
+| Standard | Clock starts | Clock stops | Operational standard |
+|---|---|---|---|
+| 28-day Faster Diagnosis Standard (FDS) | Urgent referral: urgent suspected cancer, breast symptoms (cancer not suspected), or an abnormal screening result | Patient told they have cancer, or that cancer is definitively excluded | 75%, rising to 80% in 2025/26 |
+| 31-day decision to treat | Decision to treat (or earliest clinically appropriate date) | Start of first or subsequent treatment; applies to all people with cancer, including recurrence | 96% |
+| 62-day referral to treatment | Urgent suspected cancer referral, breast symptomatic referral, urgent screening referral, or consultant upgrade | Start of first definitive treatment | 85% (national interim aim 70% by March 2024) |
+
+The FDS was formally performance-managed from October 2021 activity, before the consolidation (NHS England lung timed pathway page).
+
+### Performance
+
+| England | FDS | 31-day | 62-day |
+|---|---|---|---|
+| October 2025 (provisional) | 76.1% | 92.5% | 68.8% |
+| 12 months to October 2025 | 76.4% | 91.4% | 68.9% |
+| 12 months to October 2024 | 75.1% | 90.8% | 66.9% |
+| Patients in October 2025 | 299,531 | 61,873 | 30,644 |
+
+The 62-day standard of 85% has not been met nationally since 2015 (Cancer Research UK, 2023: 59.2% in June 2023). The FDS is now around its 75% level, but below the 80% planned for 2025/26.
+
+### Lung cancer: the timed pathways
+
+!fig f62_cwt_timeline | The three cancer waiting time standards since October 2023, with the National Optimal Lung Cancer Pathway milestones and October 2025 national performance. Drawn for these notes from NHS England's October 2023 letter, the October 2025 statistical release, NOLCP v3.0 (2020) and the NLCA State of the Nation 2026 report (in Cardiac 10).
+
+National Optimal Lung Cancer Pathway (first published August 2017; version 3.0, 2020, which added diagnostic standards of care and treatment pathways; surgical pathway written with the SCTS):
+
+| Day | Milestone (NOLCP v3.0; day 6 clinic from the 28-day timed pathway) |
+|---|---|
+| -3 to 0 | Chest X-ray reported within 24 hours; abnormal film goes straight to CT (same day or within 72 hours); direct CT also for a normal film with persisting symptoms |
+| 3 | Triage by radiologist or chest physician; clinic within 3 working days; direct-to-biopsy pathway where curative treatment is unlikely |
+| 6 | Fast-track lung cancer clinic with a lung cancer nurse specialist |
+| 14 | All diagnostic and staging tests for the curative pathway complete; PET-CT within 5 days of request; histological subtype within 3 working days; molecular markers within 10 working days |
+| 21 (18 for small-cell) | MDT discussion with staging, performance status and pathology |
+| 28 | Diagnosis given (matches the FDS) |
+| 49 | Maximum pathway length to first treatment; a target, not a legal limit. The national standard remains 62 days |
+
+Treatment timings in NOLCP: surgeon at more than 95% of MDTs, surgical clinic on the day of the MDT where possible; adjuvant therapy ideally within 8 weeks and no later than 16 weeks of surgery. Small-cell: first treatment within 7 days of the MDT decision. NSCLC systemic therapy within 14 days. Radical radiotherapy or SABR preferably within 14 days; chemoradiotherapy within 21 days. Prehabilitation (smoking cessation, activity, nutrition) starts at first assessment.
+
+Diagnostic standards of care (NOLCP v3.0): peripheral lesion with normal nodes, percutaneous biopsy preferred (for nodules 8 mm or more, or 300 mm³ or more, with Brock risk 10% or more); mediastinal or hilar nodes, PET-CT then EBUS with or without EUS, pre-booked; contiguous or invasive mediastinal disease, PET-CT then bronchoscopy, EBUS with or without EUS, or supraclavicular node biopsy, with contrast MRI of the brain; distant disease, the least invasive biopsy that gives enough tissue for biomarkers.
+
+How far short the service is: the NLCA 2026 report (Cardiac 10) gives a median referral-to-surgery interval of 81 days for stage 1 to 2 NSCLC in England, with about 88% waiting longer than the 49-day NOLCP target.
+
+**Viva line**: since October 2023 there are three standards: 28 days to be told (FDS, 75% rising to 80%), 31 days from decision to treatment (96%), and 62 days from urgent referral or upgrade to first treatment (85%, missed nationally since 2015, 68.8% in October 2025). The lung pathway aims for treatment by day 49, but the median wait for surgery is about 81 days.

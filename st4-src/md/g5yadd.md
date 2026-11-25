@@ -74,3 +74,93 @@ Mortality rose with ACC level in Erek's single-surgeon series of 167 operations 
 - The scores exist partly so that a unit taking harder cases is credited for it (Jacobs 2012). The original Aristotle definition of performance (complexity combined with survival) is in Lacour-Gayet 2004, which was not opened. Sata proposed: performance = Aristotle score × (1 − observed morbidity score / 5).
 - Against observed complications, ABC and ACC discriminated well in Sata's series (c-statistic 0.92 and 0.94) and the Aristotle morbidity estimate correlated with observed morbidity (r = 0.75 for operations done at least five times). Sata suggested the arterial switch is over-scored and the bidirectional cavopulmonary shunt under-scored.
 - The planned successor combines STAT mortality, a STAT morbidity score and technical difficulty (Jacobs 2012). In head-to-head testing STAT discriminates mortality better than ABC (section above).
+
+## Echocardiography in congenital heart disease: transthoracic views, intraoperative TOE and residual lesions
+
+Added 25 November 2026 from: TSRA Review of Cardiothoracic Surgery 3rd ed., ch. 88 (Overbey DM, Turek JW, Congenital cardiac physiology and evaluation), re-read in full on disk; Lai WW, Geva T, Shirali GS, et al. Guidelines and standards for performance of a pediatric echocardiogram: a report from the Task Force of the Pediatric Council of the American Society of Echocardiography. J Am Soc Echocardiogr 2006;19(12):1413–1430, doi:10.1016/j.echo.2006.09.001 (ASE open PDF, read through an extraction tool); Lopez L, Saurers DL, Barker PCA, et al. Guidelines for performing a comprehensive pediatric transthoracic echocardiogram: recommendations from the American Society of Echocardiography. J Am Soc Echocardiogr 2024;37(2):119–170, doi:10.1016/j.echo.2023.11.015 (ASE open PDF, first two thirds read through an extraction tool); Puchalski MD, Lui GK, Miller-Hance WC, et al. Guidelines for performing a comprehensive transesophageal echocardiographic examination in children and all patients with congenital heart disease: recommendations from the American Society of Echocardiography. J Am Soc Echocardiogr 2019;32(2):173 onwards (end page not shown in the extraction; text runs to at least p. 211), doi:10.1016/j.echo.2018.08.016 (ASE open PDF, whole document read through an extraction tool in three passes); ASE 2010 paediatric quantification recommendations (ASE open PDF; citation details not shown in the extraction; first 100,000 characters read). **The 2024 ASE paediatric TTE guideline replaces Lai 2006 and the 2010 quantification document**; both are given because the brief asked for Lai 2006 and the views are largely the same. The tab already covers segmental nomenclature (Congenital 8) and catheter Qp:Qs (above); this section adds the echo examination.
+
+### Why echo, and its limits (TSRA ch. 88)
+
+- Echo is the mainstay: transthoracic, transoesophageal and fetal. In most cases it gives enough to plan care. Adjuncts: bubble study for shunts, 3D for structure and function.
+- Limits: small field of view, needs windows, operator-dependent, may need sedation.
+- MRI adds extracardiac anatomy, pulmonary veins and flow (phase-contrast: forward flow in the PA = Qp, in the aorta = Qs). CT: fast, high spatial resolution, radiation and contrast. Catheterisation is now mainly for pulmonary vascular resistance and when non-invasive data are inadequate.
+
+### The segmental approach on echo
+
+Lai 2006 and Lopez 2024 both require the examination to describe each segment in sequence, but neither prints a step list for acquisition; Lopez 2024 does not insist on a fixed order of views. Lopez's report order (Table 18) is the sequence to recite: **situs, segmental anatomy, systemic and pulmonary veins, atria and atrial septum, AV valves, ventricles and ventricular septum, outflow tracts, great arteries (including coronaries), duct, pericardium, pleura and diaphragm.** Many laboratories start subcostally to establish situs (Lai).
+
+### Transthoracic windows and what each shows
+
+| Window and view | Shows (Lai 2006; Lopez 2024) |
+|---|---|
+| Subcostal coronal (situs) | Abdominal situs (liver, stomach; spleen if situs is abnormal), IVC and descending aorta side by side, hepatic veins to IVC to RA |
+| Subcostal sagittal | IVC and abdominal aorta with Doppler: a damped upstroke or slow return to baseline in diastole suggests arch obstruction |
+| Subcostal long axis (coronal sweep) | IVC to RV outflow; atrial septum at low Nyquist; coronary sinus; left coronary ostium |
+| Subcostal short axis (sagittal, bicaval) | SVC and IVC, right upper pulmonary vein, ventricles base to apex, RVOT with Doppler |
+| Subcostal oblique views | Right anterior oblique: RV inflow and outflow together. Left anterior oblique: atrial septum and the AV valves en face |
+| Apical four-chamber | Both AV valves, ventricular septum, coronary sinus to RVOT sweep, one right pulmonary vein, RV-focused view, TAPSE |
+| Apical five and three-chamber | LVOT, aortic valve, ascending aorta; Doppler of the LVOT |
+| Apical two-chamber | LA, LV, mitral valve; global and regional function |
+| Parasternal long axis | Sweep from tricuspid to pulmonary valve: RA, TV, coronary sinus; LA, LV, MV, AV, root (annulus, sinuses, sinotubular junction); RVOT, PV and main PA |
+| Parasternal short axis | Aortic valve morphology, coronary origins (with colour), RV infundibulum, PV and branch PAs, mitral valve, LV at papillary level (M-mode) |
+| High left parasternal (ductal) | Main PA, left PA, duct, distal arch and descending aorta |
+| Suprasternal long axis | Arch and branches, isthmus, proximal descending aorta with pulsed and continuous wave |
+| Suprasternal short axis | Arch sidedness, left innominate vein to SVC, the "crab" view of the four pulmonary veins entering the LA, left PA |
+| Right parasternal | SVC and IVC, atrial septum, superior sinus venosus defect, right upper pulmonary vein to LA, right PA |
+
+Specific targets:
+- **Atrial septum:** best from subcostal and right parasternal windows (Lai). Agitated saline: contrast in the LA within 3 to 6 cycles of RA opacification suggests an interatrial shunt; after more than 6 cycles, an intrapulmonary shunt. Contrast injected into a left-sided SVC that appears in the coronary sinus then both atria suggests an unroofed coronary sinus (Lopez).
+- **Ventricular septum:** colour sweeps subcostal, apical and parasternal; pulsed and continuous wave coaxial with the jet to judge direction and restriction; look for multiple defects and relate each to the AV and semilunar valves (Lopez). Lopez lists RV systolic pressure from the tricuspid jet or the VSD gradient, and PA pressure from the duct gradient.
+- **Coronary origins:** parasternal short axis with 2D and colour at a low Nyquist limit; still frames alone are not enough. Retrograde flow suggests anomalous origin from the PA or ostial atresia (Lopez).
+- **Arch:** suprasternal views with the neck extended; measure proximal and distal transverse arch and isthmus; suspicion signs are a long gap between left carotid and left subclavian, a posterior shelf, colour turbulence, a double envelope on continuous wave, and a damped abdominal aortic trace (Lopez).
+- **Z scores:** body size predicts structure size; ±2 is the usual normal limit; use one model for serial studies; normal values do not apply to obese children (Lopez).
+
+Pitfalls: in children outflow diameters are small and elliptical, so continuity-based volumes are not used routinely; Doppler gradients can exceed catheter peak-to-peak gradients by 20% to 40% because of pressure recovery (ASE 2010). An uncomplicated full study takes 45 to 60 minutes; sedation needs a written policy (Lai).
+
+### Qp:Qs by echo
+
+- The ASE documents read state the continuity principle (stroke volume = cross-sectional area x velocity-time integral, the same at each point in a closed system) and warn that outflow diameters in children vary too much for routine volume calculation. **A specific echo Qp:Qs formula was not found in the parts read**; by that principle it would be pulmonary stroke volume over systemic stroke volume, with the diameter error squared.
+- In theatre, Puchalski recommends Qp:Qs "by echo or blood oxygen saturation" for a 3 to 4 mm residual VSD. The saturation method and worked examples are in "Shunts and Qp:Qs" above. MRI phase-contrast flow is the non-invasive reference (TSRA ch. 88).
+
+### Transoesophageal echo in children and congenital disease (Puchalski 2019)
+
+Not the sole or primary diagnostic test in children: every child having cardiac surgery should have a preoperative TTE.
+
+| Indication group | Examples |
+|---|---|
+| Diagnostic | Non-diagnostic TTE; PFO with stroke; embolic source; baffles after Fontan, Senning or Mustard; acute aortic pathology; vegetation or abscess; thrombus before cardioversion or ablation |
+| Intraoperative | Immediate pre-bypass definition of anatomy and function; post-bypass results and function; monitoring ventricular volume and function; intracardiac and intravascular air and adequacy of de-airing |
+| Interventional guidance | Septal occluders, septostomy, stents, percutaneous valves, ablation, minimally invasive surgery, catheter assist devices |
+
+Contraindications: absolute include unrepaired tracheo-oesophageal fistula, perforated viscus, active upper GI bleeding, an uncontrolled airway, severe respiratory depression. Relative include previous oesophageal or gastric surgery, varices or diverticulum, oesophagitis (stricture is also listed, in an unclear column), **vascular ring or arch anomaly**, severe coagulopathy, cervical spine problems; after gastrostomy or fundoplication only oesophageal windows are used.
+
+Complications: 1% to 3% in children. Dysphagia after TOE in 18% of children having open-heart surgery (risk: age under 3, preoperative intubation, longer intubation, left-sided obstructive surgery); endoscopic findings in 64% without long-term feeding problems. Insertion is harder at 4 kg or less. Rare: oesophageal perforation, gastric laceration at sternotomy, subglottic stenosis.
+
+Probe by weight: micro-multiplane over 2.5 kg and mini-multiplane over 3.0 to 3.5 kg (both used safely below these); adult 2D probe over 25 kg; adult 3D matrix over 30 kg.
+
+The guideline describes **28 views** (15 mid-oesophageal, 5 transgastric, 3 deep transgastric, and upper oesophageal arch, PA and descending aortic views); the examination is structure-based, not view-based, with 2D, colour and spectral Doppler from more than one view. Views a surgeon should know: ME four-chamber (septa, AV valves, coronary sinus), ME long axis (LVOT, RVOT), ME aortic valve short axis (cusps, coronary ostia), ME RV inflow-outflow (TV, RVOT, PV, outlet septum), ME bicaval (SVC, IVC, atrial septum, sinus venosus defects), ME right and left pulmonary veins, transgastric mid-papillary short axis (LV size and function, muscular septum), deep transgastric five-chamber (MV, LVOT, aortic valve) and RVOT views, upper oesophageal arch short axis (PA, duct).
+
+Practice: complete the pre-bypass study **before skin incision** to avoid diathermy artefact; insert the probe before draping. In theatre a second person trained in TOE or congenital anaesthesia should be present so that monitoring is not neglected. Training: at least 50 supervised examinations and 25 supervised probe insertions.
+
+### Residual lesions after bypass: when to go back (Puchalski 2019)
+
+| Lesion | Threshold or advice |
+|---|---|
+| Residual VSD | 2 mm or less usually closes; 3 mm or less usually not significant; 3 to 4 mm: measure Qp:Qs (echo or saturations); **4 mm or more, or Qp:Qs over 1.5, usually warrants another attempt**. Check more than one view; weigh AR, outflow obstruction and haemodynamics |
+| Mitral stenosis (mean gradient) | Under 5 insignificant; 5 to 8 possibly significant; over 8 significant. Over 5 mmHg suggested as the cut-off for further repair or replacement |
+| Mitral regurgitation (jet width) | Under 2 mm insignificant; 2 to 4 possibly; over 4 mm significant. Consider returning to bypass for more than mild MR |
+| LVOT or aortic valve | Peak gradient over 40 mmHg may need reintervention. Low output just after bypass can make obstruction look smaller |
+| Aortic regurgitation | Jet over 4 mm: risk of significant AR later |
+| Pulmonary regurgitation | Jet 50% to 65% of the RVOT = severe |
+| Tricuspid regurgitation | Re-image at several times (loading, contractility and AV synchrony change); Nyquist 50 to 60 cm/s to compare with pre-bypass; may be underestimated with low preload; a high velocity may mean residual VSD or RVOT obstruction |
+| Tetralogy | Look for residual RVOT obstruction; TR velocity gives RV pressure. **Dynamic** obstruction from a hypercontractile RV is not revised |
+| AVSD | TOE before repair in essentially all; residual AV valve regurgitation or outflow obstruction may prompt return (the Congenital 9 single-patch section adds: significant residual regurgitation means back on bypass) |
+| Arterial switch | Both outflows, regional wall motion (coronary transfer), coronary flow in diastole at low Nyquist, neo-aortic and neo-pulmonary valves, residual shunts |
+| Glenn, Fontan | Narrowing or turbulence at the cavopulmonary anastomosis; thrombus; fenestration; residual right-to-left shunt; positive pressure may impede flow |
+| TAPVC | Turbulence at the confluence anastomosis suggests stenosis or torsion; quantify with spectral Doppler and discuss return. Loss of phasic pulmonary venous flow suggests stenosis |
+
+Decisions also weigh anaesthetic depth, haemodynamics, vasoactive drugs and the risk of more bypass. The paediatric ICU section (Congenital 13) gives the saturation and pressure clues to a residual lesion once the child is on the unit.
+
+!fig f61_residual_vsd | Original decision chart for a residual VSD on post-bypass TOE, with the guideline thresholds for other lesions after repair. Drawn for these notes from Puchalski et al., ASE 2019.
+
+Percentages of patients who return to bypass after intraoperative TOE were not given in the guideline text read.

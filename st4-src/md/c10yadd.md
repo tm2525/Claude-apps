@@ -33,7 +33,7 @@ Discrimination and calibration are separate: the original EuroSCORE over-predict
 !fig f19_vlad | Variable life-adjusted display (VLAD) for 120 invented operations: the line rises by the predicted risk with each survivor and falls by (1 − predicted risk) with each death; a cluster of deaths between cases 81 and 103 turns a positive run negative. Worked for these notes.
 
 - **VLAD**: plot the running total of (predicted risk − outcome), where outcome = 1 for death, 0 for survival. The y-axis is net lives saved against the model. A survivor at 3% predicted risk adds 0.03; a death at 3% subtracts 0.97. A rising line means better than predicted; a sustained fall is a signal to review.
-- **CUSUM**: a cumulative sum that signals when it crosses a preset boundary. The **observed-minus-expected** CUSUM is the VLAD inverted. Formal risk-adjusted CUSUM methods were not read in a primary source in this session.
+- **CUSUM**: a cumulative sum that signals when it crosses a preset boundary. The **observed-minus-expected** CUSUM is the VLAD inverted. Formal risk-adjusted CUSUM methods were not read in a primary source in this session. (Corrected 25 November 2026: now covered in the FRCS syllabus map tab, "Risk-adjusted CUSUM for monitoring surgical outcomes", added 21 November from Steiner et al., Biostatistics 2000.)
 - Both give **real-time** monitoring between the annual national reports. Funnel plots compare units over a fixed period.
 
 ### Case study: St George's, London (Independent Oversight Panel, 2020)

@@ -126,7 +126,7 @@ Overall, Bera 2020 concluded there is not enough high-quality evidence that any 
 
 ## DCD hearts, normothermic regional perfusion and ex situ perfusion: what was confirmed
 
-Added 21 November 2026 from AoMRC Code of Practice 2025 (above), section 5; Singh SSA et al., Heart Fail Rev 2019;24:805-820 (above), read from the PMC full text; TransMedics, International EXPAND Heart Trial protocol OCS-CAR-012014 rev 1.4 (ClinicalTrials.gov NCT02323321) and Heart EXPAND Continued Access Protocol v3.0, 22 September 2020 (NCT03835754), read in full from ClinicalTrials.gov; NHSBT POL228/13 Heart Transplantation: Organ Allocation (May 2022), read in full; TSRA Review 3rd ed., ch. 73 and 74, re-read in full. The DCD heart randomised trial, PROCEED II paper, UK DCD series and NRP outcome data could not be read in this session, so outcome numbers are left out.
+Added 21 November 2026 from AoMRC Code of Practice 2025 (above), section 5; Singh SSA et al., Heart Fail Rev 2019;24:805-820 (above), read from the PMC full text; TransMedics, International EXPAND Heart Trial protocol OCS-CAR-012014 rev 1.4 (ClinicalTrials.gov NCT02323321) and Heart EXPAND Continued Access Protocol v3.0, 22 September 2020 (NCT03835754), read in full from ClinicalTrials.gov; NHSBT POL228/13 Heart Transplantation: Organ Allocation (May 2022), read in full; TSRA Review 3rd ed., ch. 73 and 74, re-read in full. The DCD heart randomised trial, PROCEED II paper, UK DCD series and NRP outcome data could not be read in this session, so outcome numbers are left out. (Corrected 25 November 2026: the DCD heart trial (Schroder 2023, read from a full-text copy) and PROCEED II (abstract and the NICE IP 1289 overview) are now written up in this tab, "DCD heart transplantation trial (Schroder 2023) and PROCEED II: the numbers". A UK DCD series and NRP outcome data are still not covered.)
 
 ### Physiology and ischaemic time in DCD
 - After withdrawal of treatment the heart sees hypoxaemia and hypercarbia; pulmonary vasoconstriction loads the right ventricle. Then comes the mandatory 5-minute stand-off before death is confirmed (AoMRC).
@@ -290,7 +290,7 @@ Minimise risk factors; escalate inotropes and phosphodiesterase inhibitors; then
 
 ## Immunosuppression after heart transplantation (TSRA ch. 74)
 
-Added 21 November 2026 from TSRA Review of Cardiothoracic Surgery 3rd ed., ch. 74 (Alex M. Wisniewski and Leora T. Yarboro), re-read in full, including Table 74-1 (its layout is broken in the extracted text; agents and effects below follow the column order). The 2022 ISHLT recipient guideline and the ISHLT biopsy grading papers could not be read in this session.
+Added 21 November 2026 from TSRA Review of Cardiothoracic Surgery 3rd ed., ch. 74 (Alex M. Wisniewski and Leora T. Yarboro), re-read in full, including Table 74-1 (its layout is broken in the extracted text; agents and effects below follow the column order). The 2022 ISHLT recipient guideline and the ISHLT biopsy grading papers could not be read in this session. (Corrected 25 November 2026: the ISHLT 2022 recipient guideline has since been read from the ISHLT PDF, Task Forces 1 to 3, on 24 November; its induction and maintenance immunosuppression recommendations with classes and levels are in this tab, "ISHLT 2022 heart transplant recipient guideline, part 3". The original ISHLT biopsy grading papers were still not read.)
 
 ### Phases
 Induction, maintenance and rejection treatment.
@@ -322,7 +322,7 @@ This is the first joint guideline (not a consensus) on temporary MCS (tMCS) in a
 ### Epidemiology
 - Acute coronary syndrome used to cause over 80% of cardiogenic shock. It now causes about 30 to 45%. The rest is myocarditis, arrhythmia, valve disease, decompensated heart failure, other cardiomyopathies, tamponade, post-cardiotomy shock and massive pulmonary embolism.
 - Cardiogenic shock complicates 5 to 10% of acute infarcts (section 11.3).
-- The SCAI shock classification is endorsed as a standard language: mortality rises step by step with each stage. The guideline does not set out the stages, and the SCAI papers were not read for these notes. Do not learn stage definitions from here.
+- The SCAI shock classification is endorsed as a standard language: mortality rises step by step with each stage. The guideline does not set out the stages, and the SCAI papers were not read for these notes. Do not learn stage definitions from here. (Corrected 25 November 2026: the stages are now covered in this tab, "SCAI cardiogenic shock stages A to E: 2019 classification and 2022 update" (added 21 November from the 2019 abstract and summaries of the 2022 update; the SCAI full texts were still not accessible), and in Cardiac 17, "Decompensated heart failure and cardiogenic shock: ESC 2026, part 1", from Table 13 of the ESC 2026 heart failure guideline.)
 
 | Recommendation (Tables 1 and 2) | Class | Level |
 |---|---|---|
@@ -624,7 +624,7 @@ Cardiac arrest rows (Recommendation Table 8): primary PCI after resuscitated arr
 
 ## SCAI cardiogenic shock stages A to E: 2019 classification and 2022 update
 
-Added 21 November 2026 from (1) Baran DA, Grines CL, Bailey S, et al. SCAI clinical expert consensus statement on the classification of cardiogenic shock. Catheter Cardiovasc Interv 2019;94(1):29-37 (endorsed by ACC, AHA, SCCM and STS). Full text not accessible: read from the abstract (Henry Ford Health repository) and the ACC "Ten points to remember" summary. (2) Naidu SS, Baran DA, Jentzer JC, et al. SCAI SHOCK stage classification expert consensus update: a review and incorporation of validation studies. J Soc Cardiovasc Angiogr Interv 2022;1(1):100008, published at the same time in J Am Coll Cardiol (endorsed by ACC, ACEP, AHA, ESC Association for Acute CardioVascular Care, SCCM, ISHLT and STS). Full text not accessible (PubMed Central and the journal blocked the fetch). The stage criteria below come from the Guideline Central summary of this document; the changes from 2019 come from the SCAI document page, the AHA press release and the accompanying editorial (Nathan S, O'Neill WW. The changing landscape of cardiogenic shock. JSCAI 2022;1(1):100012, read in full on PubMed Central). (3) Jentzer JC, van Diepen S, Barsness GW, et al. Cardiogenic shock classification to predict mortality in the cardiac intensive care unit. J Am Coll Cardiol 2019 (29 October); abstract only.
+Added 21 November 2026 from (1) Baran DA, Grines CL, Bailey S, et al. SCAI clinical expert consensus statement on the classification of cardiogenic shock. Catheter Cardiovasc Interv 2019;94(1):29-37 (endorsed by ACC, AHA, SCCM and STS). Full text not accessible: read from the abstract (Henry Ford Health repository) and the ACC "Ten points to remember" summary. (2) Naidu SS, Baran DA, Jentzer JC, et al. SCAI SHOCK stage classification expert consensus update: a review and incorporation of validation studies. J Soc Cardiovasc Angiogr Interv 2022;1(1):100008, published at the same time in J Am Coll Cardiol (endorsed by ACC, ACEP, AHA, ESC Association for Acute CardioVascular Care, SCCM, ISHLT and STS). Full text not accessible (PubMed Central and the journal blocked the fetch). The stage criteria below come from the Guideline Central summary of this document; the changes from 2019 come from the SCAI document page, the AHA press release and the accompanying editorial (Nathan S, O'Neill WW. The changing landscape of cardiogenic shock. JSCAI 2022;1(1):100012, read in full on PubMed Central). (3) Jentzer JC, van Diepen S, Barsness GW, et al. Cardiogenic shock classification to predict mortality in the cardiac intensive care unit. J Am Coll Cardiol 2019 (29 October); abstract only. (25 November 2026: the 2019 and 2022 full texts were sought again and still could not be opened; the publisher, PubMed Central and repository copies refused access, so the markers stand. A further SCAI SHOCK update was published in JSCAI in 2026; the SCAI Shock Resource Center page says only that it emphasises hypoperfusion over hypotension alone and serial reassessment of the trajectory. It was not read.)
 
 The 2025 tMCS guideline earlier in this tab endorses SCAI as the common language but does not define the stages. ECLS-SHOCK (above) enrolled SCAI stages C to E.
 
@@ -666,7 +666,7 @@ Jentzer and colleagues staged 10,004 Mayo Clinic cardiac ICU admissions (2007 to
 
 ## Endomyocardial biopsy after heart transplantation: technique, complications and rejection grading
 
-Added 21 November 2026 from: StatPearls, Endomyocardial Biopsy (NCBI Bookshelf; PMID 32491529), read from the StatPearls site through a text-extraction tool (indications, contraindications, access, preparation, complications); Strecker T, Rösch J, Weyand M, Agaimy A. Endomyocardial biopsy for monitoring heart transplant patients: 11-years-experience at a German heart center. Int J Clin Exp Pathol 2012;6(1):55-65 (PMC3515982), read from the PMC full text through the same tool; Bruneval P, Angelini A, Miller D, et al. The XIIIth Banff Conference on Allograft Pathology: the Banff 2015 Heart Meeting Report. Am J Transplant 2017;17(1):42-53, doi:10.1111/ajt.14112, read from the eScholarship full text (it restates the ISHLT 2013 pAMR grades); PathologyOutlines.com, Heart transplant: general (R. Amita, last updated 2023) for the 2004 and 1990 cellular grades; TSRA Review 3rd ed., ch. 74 (grades and treatment) and ch. 65 (tricuspid injury), re-read. The original ISHLT papers (Stewart et al. 2005 cellular revision; Berry et al. 2013 pAMR working formulation) and the ISHLT 2022 recipient guideline could not be opened, so the class and level of surveillance recommendations are not given. This confirms the "R" grades and the 2R treatment line, which were flagged earlier in this tab as coming only from the FRCS Atlas draft.
+Added 21 November 2026 from: StatPearls, Endomyocardial Biopsy (NCBI Bookshelf; PMID 32491529), read from the StatPearls site through a text-extraction tool (indications, contraindications, access, preparation, complications); Strecker T, Rösch J, Weyand M, Agaimy A. Endomyocardial biopsy for monitoring heart transplant patients: 11-years-experience at a German heart center. Int J Clin Exp Pathol 2012;6(1):55-65 (PMC3515982), read from the PMC full text through the same tool; Bruneval P, Angelini A, Miller D, et al. The XIIIth Banff Conference on Allograft Pathology: the Banff 2015 Heart Meeting Report. Am J Transplant 2017;17(1):42-53, doi:10.1111/ajt.14112, read from the eScholarship full text (it restates the ISHLT 2013 pAMR grades); PathologyOutlines.com, Heart transplant: general (R. Amita, last updated 2023) for the 2004 and 1990 cellular grades; TSRA Review 3rd ed., ch. 74 (grades and treatment) and ch. 65 (tricuspid injury), re-read. The original ISHLT papers (Stewart et al. 2005 cellular revision; Berry et al. 2013 pAMR working formulation) and the ISHLT 2022 recipient guideline could not be opened, so the class and level of surveillance recommendations are not given. (Corrected 25 November 2026: the ISHLT 2022 recipient guideline has since been read; its biopsy surveillance recommendations with classes and levels are in "ISHLT 2022 heart transplant recipient guideline, part 2". The original Stewart 2005 and Berry 2013 grading papers were still not read.) This confirms the "R" grades and the 2R treatment line, which were flagged earlier in this tab as coming only from the FRCS Atlas draft.
 
 !fig f23_biopsy_route | Transvenous right ventricular endomyocardial biopsy: jugular and femoral routes, sampling site on the septum, and the complication rate in one large series. Drawn for these notes from StatPearls (Endomyocardial Biopsy) and Strecker et al. 2012
 
@@ -746,7 +746,7 @@ Developed at consensus meetings from 2009 to 2012 and restated in the Banff 2015
 
 ## Sensitisation, HLA antibodies, crossmatching and induction in heart transplantation
 
-Added 21 November 2026 from: Kobashigawa J, Colvin M, Potena L, et al. The management of antibodies in heart transplantation: an ISHLT consensus document. J Heart Lung Transplant 2018;37(5):537-547, **abstract only; full text not accessible**; American College of Cardiology, Management of the Highly Sensitized Patient Awaiting Heart Transplant (Expert Analysis, 22 December 2014; authors not shown on the page), read in full through a text-extraction tool (it describes one US centre's practice); Bruneval et al., Banff 2015 heart report (above), Table 2 for DSA monitoring; Khush KK, Cherikh WS, Chambers DC, et al. ISHLT Registry: thirty-sixth adult heart transplantation report, 2019. J Heart Lung Transplant 2019;38(10):1056-1066, doi:10.1016/j.healun.2019.08.004, read from the PMC full text. The ISHLT 2022 guideline for the care of heart transplant recipients (Velleca A, et al. J Heart Lung Transplant 2023;42(5):e1-e141) could not be opened, so its classes and levels for crossmatching, desensitisation and induction are not given. NHSBT's own antibody terms were not checked.
+Added 21 November 2026 from: Kobashigawa J, Colvin M, Potena L, et al. The management of antibodies in heart transplantation: an ISHLT consensus document. J Heart Lung Transplant 2018;37(5):537-547, **abstract only; full text not accessible**; American College of Cardiology, Management of the Highly Sensitized Patient Awaiting Heart Transplant (Expert Analysis, 22 December 2014; authors not shown on the page), read in full through a text-extraction tool (it describes one US centre's practice); Bruneval et al., Banff 2015 heart report (above), Table 2 for DSA monitoring; Khush KK, Cherikh WS, Chambers DC, et al. ISHLT Registry: thirty-sixth adult heart transplantation report, 2019. J Heart Lung Transplant 2019;38(10):1056-1066, doi:10.1016/j.healun.2019.08.004, read from the PMC full text. The ISHLT 2022 guideline for the care of heart transplant recipients (Velleca A, et al. J Heart Lung Transplant 2023;42(5):e1-e141) could not be opened, so its classes and levels for crossmatching, desensitisation and induction are not given. (Corrected 25 November 2026: since read from the ISHLT PDF on 24 November; crossmatching and desensitisation are in "ISHLT 2022 heart transplant recipient guideline, part 2" and induction, with classes and levels, in part 3.) NHSBT's own antibody terms were not checked.
 
 ### Sensitisation
 - A sensitised patient has **pre-formed anti-HLA antibodies**. Causes: **pregnancy, transfusion, ventricular assist devices, previous transplant** (ACC). The number of sensitised candidates is rising, probably because of mechanical circulatory support (Kobashigawa 2018).
@@ -2244,3 +2244,191 @@ Added 24 November 2026 from the same document (Lorusso R, et al. Eur J Cardiotho
 No randomised trial in surgical patients; little long-term, quality-of-life or cost data; no standard algorithm for device choice, timing or weaning; no organised referral network; high cost limits use in low- and middle-income countries. Complications are the "Achilles' heel" and should be treated as targets for better design and protocols, not as inevitable.
 
 Viva line: "The consensus is ungraded expert agreement: IABP gives under 1 L/min; a full-support microaxial pump up to 5.5 L/min with true unloading; VA-ECLS gives the most support but loads the LV, so add unloading; and talk about futility and a do-not-initiate option before you start."
+
+## Post-cardiotomy ECLS: the 2020 EACTS/ELSO/STS/AATS consensus, part 1 (indications, contraindications, configuration, cannulation and venting)
+
+Added 25 November 2026 from Lorusso R, Whitman G, Milojevic M, Raffa G, McMullan DM, Boeken U, et al. 2020 EACTS/ELSO/STS/AATS expert consensus on post-cardiotomy extracorporeal life support in adult patients. Eur J Cardiothorac Surg 2021;59(1):12–53; doi:10.1093/ejcts/ezaa283 (also Ann Thorac Surg 2021;111:327–369, J Thorac Cardiovasc Surg 2021;161:1287–1331 and ASAIO J 2021;67:e1–e43). Read from the online full text (academic.oup.com), sections 1 to 21 and every recommendation table; the class and level of the main section 5 recommendations were checked a second time. Tables 1 and 2 (the class and level scales) are images and were not read.
+
+### Where this sits
+This is the consensus the course has cited at second hand until now. It is a consensus document with classes and levels, mostly level C. The 2025 EACTS/STS/AATS guideline on temporary MCS (earlier in this tab) now sits above it and covers all devices; where the two differ, the differences are set out in part 2. The 2020 document is still the most detailed source on post-cardiotomy ECLS (PC-ECLS) technique, ICU care and outcomes.
+
+### Terms and numbers
+- **Post-cardiotomy (PC) cardiac failure**: inability to separate from cardiopulmonary bypass, or persistent cardiogenic shock despite maximal drug support (section 5.1).
+- It follows **under 4%** of adult cardiac operations (section 5.1). PC-ECLS is used in **0.3 to 3.6%** (section 4.2).
+- Survival to discharge: **25 to 42%** in large single-centre series; **34%** in a large meta-analysis (section 5.4). Without ECLS these patients are expected to die.
+- ECLS is used in 10 to 15% of patients after heart transplant or LVAD.
+- Nomenclature (Table 3): ECLS is the umbrella term (cardiac and/or respiratory support, excluding surgical bypass). VA support drains venous blood and returns it to the arterial side. VV supports the lungs only. Oxy-RVAD is a right atrium (or dual-lumen) to pulmonary artery circuit with an oxygenator. V-VA is a hybrid for combined heart and lung failure. ECPR is rapid VA-ECLS during CPR without sustained return of circulation.
+
+### Indications and timing (section 5)
+| Recommendation | Class | Level |
+|---|---|---|
+| Start PC support **before end-organ injury or anaerobic metabolism (lactate under 4 mmol/L)**, if recovery is likely and bleeding is not uncontrollable | I | B |
+| Low likelihood of myocardial recovery: PC-ECLS in patients eligible for long-term MCS or transplant | I | C |
+| Patient on an IABP and optimal drugs who fails to wean from bypass or has marginal haemodynamics: **early** ECLS | I | B |
+| Weigh comorbidity, advanced age, raised lactate and renal injury (all predict death) before starting | IIa | B |
+| Very poor condition or structural lesion before surgery: preoperative ECLS as a bridge to surgery | IIb | C |
+| Choose ECLS type and mode from haemodynamics and patient characteristics | IIa | C |
+
+The document gives no inotrope-number threshold. It notes that the number of high-dose inotropes needed to come off bypass (Samuels) underlies the case for early support.
+
+### Contraindications (section 5.3)
+- **Absolute: uncontrollable bleeding only.**
+- Relative: end-stage lung, liver or kidney disease; severe peripheral vascular disease; known cerebrovascular disease; advanced age or chronic organ failure where recovery is unlikely and the patient is not a candidate for long-term MCS or transplant; aortic regurgitation over grade 2 (even mild regurgitation can distend the LV on VA-ECLS, so plan a vent).
+
+### Prognosis (section 5.4)
+Age and pre-ECLS lactate were consistent predictors in meta-analysis; lactate clearance in the first hours may matter more than the first value. Other markers: high left atrial pressure, low mixed venous saturation, signs of hypoperfusion despite an IABP. Scores: SAVE (ELSO VA-ECLS, not built for PC shock) did best on validation; REMEMBER comes from one centre and isolated CABG only; APACHE excludes PC patients; IABP-SHOCK was built for infarct-related shock.
+
+### Circuit and flow (section 6)
+| Recommendation | Class | Level |
+|---|---|---|
+| Centrifugal pumps for adult PC-ECLS | I | C |
+| Integrated, portable pump-oxygenator circuits, especially for transport | IIb | C |
+
+Start VA flow at **4.5 to 5 L/min or more**, guided by metabolic need, then reduce as the oxygen debt is repaid. Watch blood pressure, urine output, lactate and mixed venous saturation. Sweep gas clears CO2 in proportion to its flow.
+
+!fig f64_pcecls_config | Central against peripheral post-cardiotomy VA-ECLS: cannula positions, trade-offs and the consensus recommendation (drawn for these notes from the 2020 EACTS/ELSO/STS/AATS consensus, sections 7 and 9)
+
+### Configuration (sections 7 and 9)
+Central cannulation (right atrium to ascending aorta) uses a larger atrial cannula, unloads better and avoids north-south (Harlequin) hypoxaemia, but the chest is usually left open. Peripheral cannulation lets the sternum close. In a meta-analysis of 17 studies (1,691 patients) mortality did not differ, but peripheral access had less bleeding, transfusion and haemofiltration. Across 23 studies (2,652 patients), 79.0% had peripheral arterial cannulation. Axillary access (about 12%) had more vascular complications and bleeding; a subclavian side-graft caused arm hyperperfusion in 25%.
+
+| Recommendation | Class | Level |
+|---|---|---|
+| Peripheral cannulation in PC shock and in VA-ECLS for LV or biventricular failure | IIa | B |
+| Femoral arterial cannulation: **distal perfusion cannula** to reduce limb ischaemia (at least 15.7% absolute reduction across 22 studies) | IIa | B |
+| Limb ischaemia despite antegrade perfusion: contralateral femoral, axillary or central access | IIa | C |
+| Retrograde limb perfusion through the posterior tibial artery | IIb | C |
+| Small cannula or a graft in small or diseased arteries | IIb | C |
+| Open ("pseudo-percutaneous") rather than percutaneous peripheral cannulation | IIb | C |
+| Ultrasound guidance for percutaneous access | IIa | C |
+| Axillary or subclavian return instead of femoral, especially for long runs and mobilisation | IIb | C |
+| Oxy-RVAD after pulmonary embolectomy with RV failure | I | C |
+| Oxy-RVAD for isolated RV failure with respiratory compromise, refractory RV failure after cardiotomy, or pulmonary endarterectomy with RV failure | IIb | C |
+| Hybrid configurations (V-VA, VV-A) for differential hypoxaemia, poor drainage or LV stasis | IIb | C |
+
+### IABP and microaxial pumps with ECLS (section 8)
+| Recommendation | Class | Level |
+|---|---|---|
+| IABP during weaning from bypass for intermediate ventricular dysfunction, before ECLS | IIb | C |
+| IABP for acute heart failure soon after weaning, before ECLS | IIb | C |
+| IABP with ECLS when the aortic valve opens poorly or not at all at the chosen flow | IIb | C |
+| **IABP as the primary treatment** when weaning from bypass is impossible or severe LV or biventricular failure follows weaning | **III** | C |
+| Transvalvular microaxial pump (Impella 5.0), alone or with ECLS, for severe isolated LV dysfunction | IIb | C |
+| Microaxial pump for poor or absent aortic valve opening on ECLS | IIb | C |
+| Short-term VAD as primary treatment for isolated RV failure | IIb | C |
+
+### Left heart distension and venting (section 9.2.3)
+Arterial pulsatility **under 15 mmHg** means risk of LV stasis and distension. Start with non-invasive steps: lower ECLS flow, vasodilate, moderate inotropes, adjust ventilation.
+
+| Recommendation | Class | Level |
+|---|---|---|
+| LV distension, stasis, closed aortic valve or pulmonary oedema: conservative measures including IABP first | I | B |
+| If these fail: catheter-based or other device unloading | I | B |
+| Septostomy | IIb | C |
+| Direct LV apical cannulation (drainage, or conversion to an LVAD-like circuit) | IIb | C |
+| Surgical or percutaneous pulmonary artery cannulation for indirect unloading | IIb | C |
+
+Venting sites reported: left atrium 31%, IABP 27%, Impella 27%, LV apex 11%, pulmonary artery 4%.
+
+Viva line: "Under 4% of cardiac operations end in post-cardiotomy shock. The consensus says start ECLS before the lactate passes 4 and before the organs fail, in a patient who can recover or has a destination. The only absolute contraindication is bleeding you cannot control. An IABP alone is class III when you cannot come off bypass."
+
+## Post-cardiotomy ECLS: the 2020 EACTS/ELSO/STS/AATS consensus, part 2 (theatre, anticoagulation, ICU care, weaning, outcomes, ECPR and special cases)
+
+Added 25 November 2026 from the same document (Lorusso R, et al. Eur J Cardiothorac Surg 2021;59(1):12–53; doi:10.1093/ejcts/ezaa283). Read from the online full text, sections 10 to 21 and their recommendation tables.
+
+### In theatre (section 10)
+| Recommendation | Class | Level |
+|---|---|---|
+| Consider closing the sternum to reduce bleeding and infection | IIa | C |
+| Inotropes used sparingly, only enough to prevent LV stasis | IIa | C |
+| Vasoconstrictors where oxygen delivery is adequate but systemic resistance is low | IIb | C |
+| 24-hour perioperative antibiotic prophylaxis | I | B |
+| Central ECLS with an open chest: prolonged prophylaxis until sternal closure | IIb | C |
+| TOE in theatre for cannula position and LV unloading | I | C |
+| Peripheral ECLS started in theatre: NIRS for brain and limb | IIa | C |
+| Protamine reversal of heparin after bypass | IIb | C |
+| Run ECLS **without heparin** until bleeding is minimal | IIb | C |
+| Point-of-care-guided procoagulant treatment for non-surgical massive bleeding | IIa | C |
+| Off-label rFVIIa for refractory, life-threatening non-surgical bleeding | IIb | C |
+
+Re-exploration for bleeding: 2 to 5% after elective surgery, **11 to 62% on PC-ECLS** (lower with peripheral cannulation). Massive bleeding: red cells, plasma and platelets at 6:6:1. Heparin is usually stopped or partly reversed after cannulation and restarted at 24 to 48 hours; series support withholding it for up to 3 days if bleeding continues.
+
+### Anticoagulation after surgery (section 11)
+| Recommendation | Class | Level |
+|---|---|---|
+| Unfractionated heparin is the anticoagulant of choice | I | C |
+| Suspected heparin-induced thrombocytopenia: switch to a direct thrombin inhibitor | I | B |
+| Withhold anticoagulation until bleeding is acceptable | I | C |
+| Monitor with **ACT 160 to 220 s and aPTT 50 to 80 s** | I | C |
+| Thromboelastography-driven algorithm | IIa | C |
+
+Restart when drain output is acceptable (the example given is under 100 mL/h), usually 24 to 48 hours after bypass; no bolus. HIT is diagnosed in 1 to 3% of patients exposed to heparin after surgery. Bivalirudin half-life about 25 minutes (about 20% renal); argatroban about twice that, cleared by the liver.
+
+### ICU care (section 12)
+| Recommendation | Class | Level |
+|---|---|---|
+| Native plus pump output perfuses all organs (arteriovenous O2 difference under 5 mL) | I | C |
+| Crystalloid rather than colloid for initial resuscitation | I | C |
+| Keep afterload low, targeting MAP and avoiding ventricular distension | I | C |
+| Right heart failure: pH 7.45 to 7.50 by sweep gas | IIa | B |
+| Pulmonary artery catheter | IIb | C |
+| Lung-protective ventilation | I | B |
+| Early tracheostomy in peripheral VA-ECLS | IIb | B |
+| **No** routine prophylactic antibiotics for peripheral ECLS | III | B |
+| Daily chlorhexidine washes | I | A |
+| Dose antibiotics by serum levels | I | B |
+| Dialysis through the circuit rather than a new central line; ultrafiltration rather than diuretics for fluid removal | IIa | C |
+| Comatose patient: CT if transportable; EEG and SSEP | I | C |
+| Cerebral NIRS | IIa | C |
+
+Targets in the text: MAP **60 to 70 mmHg** is usually adequate; combined native plus pump cardiac index over 2.5 (printed as "l/min"); urine over 0.5 mL/kg/h. Ventilation: plateau under 30 cmH2O, PEEP 10 to 15, tidal volume under 6 mL/kg, rate 10, FiO2 under 40%.
+
+Complications in the text: limb ischaemia needing amputation up to 17%; infection 9 to 65% (against 3 to 4% after routine cardiac surgery), about a third of deaths; renal replacement in 35 to 74% (3-month survival 53% without RRT against 17% with it); neurological injury about 15%, with 75 to 90% mortality.
+
+### Weaning, transition and futility (section 13)
+Weaning is considered when the heart can recover and organs have recovered: minimal inotropes, low flow, pulsatile arterial trace, MAP over 60 mmHg, adequate biventricular function on echo for at least 24 hours, lactate and liver injury resolved, lungs not severely impaired. The document gives no flow-step or echo cut-offs.
+
+| Recommendation | Class | Level |
+|---|---|---|
+| Confirm the cause of failure is compatible with recovery; optimise and confirm organ recovery first | I | C |
+| TTE or TOE during weaning trials; use recovery algorithms | I | C |
+| Decannulate under systemic anticoagulation by a standard protocol | IIa | C |
+| Check limb perfusion after decannulation | I | C |
+| Set goals of care early, including futility; involve ethics and palliative care when needed | I | C |
+| Failure to wean: consider transition to other MCS | I | C |
+| Transition to VAD once stable (mortality high with liver dysfunction, inflammation, female sex, obesity) | IIb | C |
+| Transplant or VAD for eligible patients | IIa | C |
+| Persistent lung failure: change to VV-ECLS | IIa | C |
+| Shared decision-making with the family; immediate palliative care consult for every PC-ECLS patient | I | C |
+
+Transition to LVAD ideally within a week. Futility: 3 to 5 days without useful cardiac function in a patient who is not a VAD or transplant candidate.
+
+### Outcomes (section 13.3)
+Weaning succeeds in 31 to 76% and survival to discharge is 16 to 52% across series (about 40 to 60% weaned and 20 to 40% discharged in the summary). Typical run: 5 to 7 days. Death is predicted by lactate over 4 mmol/L and an unclosed sternum. Hospital survival at 70 or over: 24.4%. In the first year after discharge mortality is about nine times that of matched controls; from year 2 survival is similar.
+
+### Post-cardiotomy ECPR and special cases (sections 18 and 19)
+| Recommendation | Class | Level |
+|---|---|---|
+| PC-ECPR when CPR is adequate and arrest-to-ECLS time is **under 60 minutes** | IIa | C |
+| Cardiac surgical centres have a readily available ECPR team | IIa | C |
+| Preoperative ECLS for post-infarct VSD with RV or biventricular failure after IABP and drugs fail | IIb | C |
+| Preoperative ECLS for very poor perfusion, acidosis or arrest, as a bridge to surgery | IIb | C |
+| Planned ("prophylactic") ECLS in severe pre-existing ventricular dysfunction | IIb | C |
+| VV-ECLS for severe refractory post-cardiotomy lung injury | IIb | C |
+| ECLS is the preferred support for severe primary graft dysfunction after heart transplant | IIa | B |
+| ECLS as an oxygenated RVAD for refractory RV failure after LVAD | IIb | C |
+
+ECPR selection table: favourable if no-flow 5 minutes or less and low-flow 60 minutes or less; unfavourable if no-flow 10 minutes or more, age over 75, frailty, pH under 6.8 or lactate over 20 mmol/L. ECPR survival to discharge in ELSO over 11 years: 29%. After transplant, primary graft dysfunction (3 to 30%) causes 40 to 50% of early deaths; survival to discharge with ECLS 50 to 81%.
+
+### Team (sections 15 to 17)
+Didactics, water drills and multispecialty simulation (all I B); transfer to, or early contact with, an experienced ECLS centre if the implanting unit has no programme (IIa C); full-time intensivists (I B); monthly quality meetings (I C).
+
+### What the 2025 tMCS guideline changed
+| Point | 2020 consensus | 2025 guideline (earlier in this tab) |
+|---|---|---|
+| Scope | ECLS only | All temporary devices; full-support microaxial pump preferred for LV-only low output where feasible |
+| Distal perfusion cannula | IIa B | I (Tables 10 and 19) |
+| Mean arterial pressure | 60 to 70 mmHg usually adequate (text) | 80 mmHg or more, I B (accepted manuscript; see the note there on the kPa figure) |
+| Anticoagulation | Withhold until bleeding is acceptable (I C); ACT 160 to 220 s, aPTT 50 to 80 s | Anticoagulate once support starts (I B), reduce or stop by bleeding severity (I B); institutional protocol |
+| Weaning | Qualitative criteria, no numbers | MAP 65 mmHg or more on VIS under 10 (IIb C) |
+
+Both agree on early support before organ failure, an Interdisciplinary or Shock Team, and active LV unloading on VA-ECLS.

@@ -40,7 +40,7 @@ Added 21 November 2026 from: TSRA Review 3rd ed., ch. 117, Weisberg A, Lynch I, 
 | Neuromuscular block | ACURASYS: survival benefit with 48 hours of cisatracurium started within 48 hours. ROSE (2019) did not reproduce it |
 | Steroids | DEXA-ARDS (2020, randomised): 10 days of dexamethasone in moderate to severe ARDS gave more ventilator-free days and lower 60-day mortality. After pneumonectomy, steroids are debated because of possible harm to stump healing (TSRA ch. 13) |
 | Fluids | Restriction and early diuretics (TSRA ch. 13, for post-pneumonectomy oedema) |
-| ECMO | (Not found in a primary source in this round. The Atlas drafts list veno-venous ECMO for refractory post-pneumonectomy oedema; not checked.) |
+| ECMO | (Not found in a primary source in this round. The Atlas drafts list veno-venous ECMO for refractory post-pneumonectomy oedema; not checked.) (Updated 25 November 2026: two small series of veno-venous ECMO after thoracic surgery are now in "Complication rates after lung resection" below.) |
 
 ### Weaning, extubation and NIV (TSRA ch. 117, citing ATS/ACCP 2017 and ERS/ATS 2017)
 - Assess readiness daily with a protocol. Spontaneous breathing trials **with** inspiratory pressure augmentation (pressure support 5 to 8 cmH2O) rather than without.
@@ -129,7 +129,7 @@ Other points of agreement: suture the parenchyma after anatomical resection (81%
 | Bronchial kinking | Mainly after left upper lobectomy: the lower lobe and diaphragm rise and angle the left main bronchus. Kinking with over 80% narrowing: intractable cough and breathlessness in 76% against 21%. Re-explore by VATS if severe or if torsion cannot be excluded (reposition, bronchopexy, repair the ligament); stents in a few. The authors now preserve the inferior pulmonary ligament |
 | Bronchovascular fistula | About 2% after sleeve resection; can follow simple lobectomy, mostly upper lobectomy. Mean 4 weeks (80% within 8). A sentinel bleed may come first. Mortality near 100%; only about 10% reach surgery (proximal control, completion pneumonectomy). Prevent by wrapping the bronchial anastomosis with pleura, pericardial fat or intercostal muscle to separate it from the artery |
 | Anastomotic stenosis after sleeve | 2 to 6%. Watch if mild; dilate, laser or stent if severe (up to 50% need repeat procedures); re-resection or completion pneumonectomy if refractory. All anastomotic complications together exceed 20% after sleeve lobectomy |
-| Recurrent laryngeal nerve | Left upper lobectomy with mediastinal node dissection carries a higher risk; assess any voice change or swallowing difficulty after surgery (TSRA ch. 12). (Rates not found in a primary source in this round) |
+| Recurrent laryngeal nerve | Left upper lobectomy with mediastinal node dissection carries a higher risk; assess any voice change or swallowing difficulty after surgery (TSRA ch. 12). (Rates not found in a primary source in this round) (Updated 25 November 2026: 14.4% after left upper lobectomy with node dissection, station 4L the risk factor (Hanaoka 2022); see "Complication rates after lung resection" below.) |
 
 ## Chylothorax after lung resection
 
@@ -144,7 +144,7 @@ Added 21 November 2026 from Jeon YJ, Cho JH, Hyun D et al. Management of chyle l
 | Operation | Duct ligation considered if output stays above 1,000 ml a day despite these measures |
 | Thoracic duct embolisation | Lymphangiography through the inguinal nodes with lipiodol, then coils or glue in the duct. Success 83% after lung surgery (56% after oesophagectomy); intervention came at a median of 4.5 days with embolisation against 9 days for ligation; hospital stay fell from 16.3 to 12.6 days once embolisation was available |
 
-(Haemorrhage needing re-exploration after lung resection: no primary source was read in this round, so no rates are given.)
+(Haemorrhage needing re-exploration after lung resection: no primary source was read in this round, so no rates are given.) (Updated 25 November 2026: re-exploration for bleeding 1.2% of resections nationally in Sweden; see "Complication rates after lung resection" below.)
 
 ## Surgical site infection prevention: NICE NG125
 
@@ -664,3 +664,159 @@ Question: is blood pleurodesis effective in stopping a persistent air leak? More
 - Optimal volume 100 mL in two studies.
 
 Bottom line: better than conservative management for post-operative persistent leak; for a pneumothorax with a persistent leak, consider it when surgery is unsuitable, talc has failed or cannot be used (including ARDS), and quick resolution is needed. This sits alongside the BTS 2023 and ERS/ESTS recommendation of a blood patch in secondary pneumothorax (1–2 mL/kg) already in Thoracic 11.
+
+## Bronchodilator pharmacology: beta-2 agonists, antimuscarinics, methylxanthines and inhaled corticosteroids
+
+Added 25 November 2026 from: (1) StatPearls, "Beta2-Agonists" (editor T Bajaj; last updated 7 November 2025) and "Beta2-Receptor Agonists and Antagonists" (editor M H Shahin; last updated 13 December 2025), read on statpearls.com through a summarising tool; (2) StatPearls, "Muscarinic Antagonists" (editor J W Gatling; last updated 8 May 2023) and "Tiotropium" (editor T Bajaj; last updated 15 February 2022), read the same way; (3) Global Initiative for Chronic Obstructive Lung Disease, GOLD 2025 Pocket Guide (v1.1, 21 November 2024) and "Key changes GOLD 2026" (10 November 2025), PDFs read through a summarising tool; the pocket guide's text layer gave the key-point lists but not its drug table, ABE algorithm figures or eosinophil thresholds, so those are not given; (4) TSRA Review ch. 2 (reversibility testing) and ch. 17 (steroids and bronchodilators around LVRS). NICE NG115 inhaled and oral therapy is in the section above ("Inhaled and oral therapy in COPD: NICE NG115") and is not repeated. Methylxanthine and inhaled corticosteroid mechanisms were not in any source read this round and are not given.
+
+### Mechanisms
+
+!fig f62_airway_receptors | Beta-2 agonists relax airway smooth muscle through Gs, adenylyl cyclase and cAMP; antimuscarinics block acetylcholine at M3. Drawn for these notes from the StatPearls beta-2 agonist, muscarinic antagonist and tiotropium chapters.
+
+| Class | Mechanism |
+|---|---|
+| Beta-2 agonist | Binds the beta-2 receptor (a Gs-coupled receptor); Gs activates adenylyl cyclase, cAMP rises and activates protein kinase A, intracellular calcium (or calcium sensitivity) falls, myosin light chain phosphorylation falls and the muscle relaxes. Proposed extra effects: less ICAM-1 and GM-CSF release, mast cell stabilisation |
+| Antimuscarinic | Competitively blocks acetylcholine at muscarinic receptors. M3 on airway smooth muscle is the target: blocking it bronchodilates and reduces secretions. M2 is in the heart; M1, M4 and M5 in the central nervous system |
+| Tiotropium (LAMA) | Quaternary ammonium compound, poorly absorbed. Binds M1, M2 and M3 with similar affinity but its effect is prolonged at M1 and M3 and it dissociates quickly from M2, so its action is long and mainly on the airway receptors. Also reduces mucus secretion and ciliary beat frequency |
+
+### The drugs
+
+| Group | Examples | Onset and duration (where the source gave them) |
+|---|---|---|
+| SABA | Salbutamol (albuterol), terbutaline, levalbuterol | Salbutamol: onset under 5 minutes, lasts 3 to 6 hours |
+| LABA | Salmeterol, formoterol, arformoterol | Salmeterol: onset up to 15 minutes, lasts at least 12 hours |
+| Ultra-LABA (once daily) | Indacaterol, olodaterol, vilanterol | Indacaterol: onset about 5 minutes, up to 24 hours |
+| SAMA | Ipratropium (17 µg per puff, two puffs up to four times daily; nebulised 0.02%) | (not given) |
+| LAMA | Tiotropium (one 18 µg capsule once daily by dry powder inhaler, or two puffs of 2.5 µg once daily by soft mist for COPD); others not described in the sources read | Not for acute bronchospasm |
+
+Formoterol may be used for acute asthma together with an ICS, the basis of ICS-formoterol single maintenance and reliever therapy (SMART) in moderate to severe asthma.
+
+### Adverse effects and cautions
+
+| Class | Adverse effects | Cautions and contraindications |
+|---|---|---|
+| Beta-2 agonist | Tremor (more with oral), tachycardia, palpitations, arrhythmias, ischaemia; hypokalaemia (potassium shift into cells), hypomagnesaemia, hyperglycaemia (glycogenolysis), lactic acidosis; muscle cramps; rarely paradoxical bronchospasm | Arrhythmia, significant heart disease, low potassium; risk higher with theophylline, hypoxaemia or hypercapnia. LABA alone in asthma is contraindicated (more severe exacerbations and asthma deaths; always with ICS). Check potassium and glucose with prolonged use |
+| Tolerance | Prolonged stimulation desensitises the receptor and blunts bronchodilation; whether LABAs cause more than SABAs is unsettled | |
+| Antimuscarinic | Dry mouth, sore throat, constipation, ileus, urinary retention, tachycardia, mydriasis, confusion | Narrow-angle glaucoma, prostatic hyperplasia or bladder-neck obstruction, paralytic ileus, myasthenia gravis. Tiotropium powder capsules contain milk protein. A cardiovascular safety signal (myocardial infarction, stroke, cardiovascular death) is noted in the tiotropium chapter |
+| Methylxanthine | GOLD 2025: not recommended for exacerbations because of side effects. NICE NG115: only after short- and long-acting bronchodilators or when inhalers cannot be used; monitor levels; reduce the dose with interacting antibiotics | Theophylline raises the arrhythmia risk of beta-2 agonists |
+| Inhaled corticosteroid | Pneumonia: in NG115, stepping up from LAMA plus LABA to triple therapy brought more pneumonia (section above) | GOLD 2025: add ICS to dual bronchodilators only with frequent exacerbations and raised blood eosinophils |
+
+Beta-blockers: non-selective beta-blockers are generally contraindicated in asthma and COPD; cardioselective agents are not absolutely contraindicated and are decided case by case (StatPearls).
+
+### GOLD 2025 to 2026: what changed for the drugs
+
+- Exacerbations: SABA, with or without a SAMA, first; start long-acting bronchodilator maintenance as soon as possible after an exacerbation. Systemic steroids no more than 5 days; antibiotics, when indicated, 5 days. Methylxanthines not recommended (GOLD 2025).
+- GOLD 2025 added ensifentrine and dupilumab to the follow-up algorithm (Figure 3.9).
+- GOLD 2026: even one moderate exacerbation before maintenance therapy should prompt consideration of escalation, aiming for no exacerbations; the treatment figures now separate initial treatment (treatment-naive) from follow-up; a new figure summarises biologics; vaccination advice updated for RSV and influenza.
+
+### Perioperative use
+
+- Testing reversibility: a positive bronchodilator response is a rise in FEV1 or FVC of 12% and 200 mL (TSRA ch. 2).
+- Before lung volume reduction: optimise medical therapy and wean systemic steroids, because steroids at the time of surgery raise operative risk; after surgery, inhaled bronchodilators and avoidance of steroids (TSRA ch. 17).
+- NICE NG115 (above): optimise treatment, including pulmonary rehabilitation, if time allows; lung function should not be the only criterion for surgery.
+- Intraoperative refractory bronchospasm: glycopyrrolate 3.2 µg/kg or atropine 6 to 10 µg/kg are listed (StatPearls muscarinic antagonists).
+- After surgery, watch for the metabolic effects of frequent nebulised salbutamol (hypokalaemia, hyperglycaemia, lactic acidosis, tachycardia and arrhythmia) and for urinary retention with antimuscarinics, which is relevant after epidural or paravertebral analgesia. These are the drug-class effects listed above applied to the thoracic patient; no perioperative trial was read.
+
+**Viva line**: beta-2 agonists work through Gs, cAMP and protein kinase A; antimuscarinics block M3. Tiotropium lasts because it leaves M3 slowly and M2 quickly. Salbutamol lowers potassium and raises glucose and lactate; ipratropium and tiotropium cause retention and can precipitate angle-closure glaucoma.
+
+## Complication rates after lung resection: national audits, registries and published series
+
+Added 25 November 2026 from: (1) National Lung Cancer Audit (NATCAN, RCS England). State of the Nation Report 2026 (February 2026; patients diagnosed January to December 2024 in England and Wales), https://www.natcan.org.uk/reports/nlca-state-of-the-nation-report-2026, read from the report web page (surgery section and Figure 4 caption, checked twice); the PDF was not opened. (2) SCTS. Third National Thoracic Surgery Activity and Outcomes Report 2018 (the "blue book", January 2019), https://scts.org/_userfiles/pages/files/thoracicbluebook2018final.pdf, read from the online PDF through a summarising tool (Table 2.01 and the Thoracic Database chapter, Tables 7.05 and 7.13). (3) ESTS Database Silver Book 2020 (data July 2007 to December 2019), https://www.ests.org/_userfiles/pages/files/Silver_Book2020_Part1_2_Short_300920OK.pdf, read from the online PDF through a summarising tool. (4) Tong BC, Bonnell LN, Habib RH et al. The Society of Thoracic Surgeons 2024 risk models for lung cancer resection. Ann Thorac Surg 2025;119:777-85, doi:10.1016/j.athoracsur.2024.07.047 (abstract only). (5) National Quality Forum measure worksheet 1790, STS risk-adjusted morbidity and mortality for lung resection (2017-18 cycle), read from the online page (definition and performance data). (6) Brown LM, Thibault DP, Kosinski AS et al. Readmission after lobectomy for lung cancer: not all complications contribute equally. Ann Surg 2021;274:e70-9, doi:10.1097/SLA.0000000000003561 (open-access PDF; Table 1 read, rows checked twice). (7) Dimberg A, Dalén M, Sartipy U. Bleeding and long-term survival after lung resections: nationwide observational cohort study. J Thorac Dis 2024;16:4409-16, doi:10.21037/jtd-24-502 (online full text). (8) Incidence, aetiology and outcomes of major postoperative haemorrhage after pulmonary lobectomy. Eur J Cardiothorac Surg, doi:10.1093/ejcts/ezz266 (abstract only; authors not shown on the page read). (9) Hanaoka J, Yoden M, Okamoto K et al. Mediastinal lymph node evaluation, especially at station 4L, in left upper lobe lung cancer. J Thorac Dis 2022;14:3321-34, doi:10.21037/jtd-22-537 (online full text). (10) Feeney EV, Chan EG, Hyzny EJ et al. The use of extracorporeal support to rescue patients with acute respiratory distress syndrome following thoracic surgery. ASAIO J 2022;68:1508-12 (abstract only). (11) CTSNet abstract "Extracorporeal membrane oxygenation for acute respiratory distress syndrome after pneumonectomy" (abstract only; citation details not shown on the page). (12) TSRA Review 3rd ed., ch. 12 and 13 (re-read in full from the text on disk). Read through a web extraction tool unless stated. Bronchopleural fistula management, air leak grading, post-pneumonectomy oedema and the ATS lung injury figures are already in this tab and are not repeated.
+
+### Mortality: the figures to quote
+
+| Measure | Figure | Source and period |
+|---|---|---|
+| 90-day survival after lung cancer surgery, England and Wales | 98.4% (so about 1.6% die within 90 days); risk-adjusted by thoracic unit in Figure 4 | NLCA 2026, people diagnosed in 2024. The report gives no 30-day figure, no figure by operation and no surgical outliers |
+| Curative-intent surgery for NSCLC, England | 7,878 people in 2024 (21.8%, up from 19.6% in 2023); 36.3% of those with performance status 0 to 1; Cancer Alliance range 15 to 37% | NLCA 2026 |
+| Wait to surgery, stage 1 to 2 | Median 81 days from referral in England; only 12% within the 49-day target | NLCA 2026 |
+| STS operative mortality (in hospital at any time, or within 30 days anywhere) | 1.1%, with major morbidity 7.3% and morbidity or mortality 7.6%; 140,927 resections for cancer at 337 centres, 2015 to 2022, non-elective cases included | STS 2024 models (abstract) |
+| STS trend | Operative mortality 2.2% (2002 to 2008) fell to 1.4% (2012 to 2014); morbidity or mortality 9.5% in 27,844 elective resections 2012 to 2014 | NQF worksheet 1790 |
+| ESTS 30-day mortality, all resections | 3.6% (2007 to 2013), 1.6% (2014 to 2019), 2.3% overall; 81,904 patients with data | ESTS Silver Book 2020 |
+| In-hospital mortality after resection, UK | Under 2% in the latest years reported; median stay 5 days; 75% had no complication | SCTS blue book 2018 |
+
+The definitions differ: the NLCA counts deaths to 90 days, the STS "operative mortality" counts in-hospital deaths at any time plus deaths within 30 days anywhere, and the SCTS and ESTS tables give in-hospital deaths. Quote the source with the number.
+
+### Mortality by operation
+
+| Operation | SCTS in-hospital deaths, 2010 to 2015 (primary lung cancer) | ESTS in-hospital mortality, 2007 to 2019 |
+|---|---|---|
+| Pneumonectomy | Open 107 of 2,034 (5.3%); VATS 1 of 34 | 5.5% (n=7,353) |
+| Bilobectomy | Counted with lobectomy | 3.4% (n=3,516) |
+| Lobectomy | Open 356 of 16,984 (2.1%); VATS 57 of 5,838 (1.0%) | 1.4% (n=61,782) |
+| Sleeve lobectomy | Open 22 of 731 (3.0%) | Not given |
+| Segmentectomy | Counted with sublobar | 1.1% (n=5,417) |
+| Wedge or sublobar | Sublobar open 30 of 3,076 (1.0%); VATS 6 of 2,366 (0.3%) | Wedge 1.0% (n=7,474) |
+
+The SCTS percentages are worked here from the deaths and totals in its Table 2.01 (the table reports survival). Open against VATS figures are unadjusted and reflect case selection. The later SCTS Thoracic Database (2014 to 2017, all diagnoses) gave survival to discharge of 94.5% after pneumonectomy, 98.5% after lobectomy and 99.7% after sublobar resection. TSRA ch. 13 gives 30-day mortality of 2 to 12% for pneumonectomy, higher on the right.
+
+!fig f63_resection_mortality | In-hospital mortality by operation for primary lung cancer, ESTS database 2007 to 2019 (Silver Book 2020), unadjusted. Drawn for these notes from the Silver Book table.
+
+### What the STS counts as major morbidity
+
+Reintubation; tracheostomy; initial ventilation beyond 48 hours; ARDS; pneumonia; pulmonary embolus; bronchopleural fistula; unexpected return to theatre; myocardial infarction. The measure once listed "bleeding requiring reoperation"; the current version replaced it with any unexpected return to theatre (NQF 1790).
+
+### Individual complications
+
+| Complication | Rate | Source and notes |
+|---|---|---|
+| Prolonged air leak | Over 5 days: lobectomy 9.3% (the lobectomy-only table gives 9.9%, 7,111 of 71,571), bilobectomy 12.1%, segmentectomy 6.6%, wedge 3.7%, pneumonectomy 0.4% | ESTS 2007 to 2019 |
+| | 11.1% after elective lobectomy | STS, Brown 2021 |
+| | 10.5% of 2,352 lung cancer resections (the commonest adverse event); 13.0% after lobectomy or bilobectomy | SCTS database (10.5%: lung cancer resections 2014 to 2016; 13.0%: all entries 2014 to 2017). The report defines it as beyond day 5 in one place and beyond day 7 in another |
+| Atrial arrhythmia needing treatment | 10.6% after lobectomy | STS, Brown 2021 |
+| Pneumonia | 3.3% after lobectomy; atelectasis needing bronchoscopy another 3.3% | STS, Brown 2021 |
+| | "Infection prolonging stay": 7.4% after lobectomy, 9.4% after pneumonectomy, 3.0% after sublobar resection | SCTS database 2014 to 2017 (all infections, not pneumonia alone) |
+| Cardiopulmonary morbidity (composite) | Lobectomy 13.8%, bilobectomy 21.6%, pneumonectomy 21.4%, segmentectomy 8.7%, wedge 4.1% | ESTS 2007 to 2019 |
+| Return to theatre (any cause) | 3.0% after lobectomy | STS, Brown 2021 |
+| | 2.3% of 2,355 lung cancer resections | SCTS database 2014 to 2016 |
+| Re-exploration for bleeding | 1.2% of 15,617 resections (lobectomy 1.4%); transfusion 3.8% (lobectomy 4.4%) | Swedish national registry 2013 to 2021 (Dimberg 2024); see below |
+| Transfusion | 3.4% after lobectomy | STS, Brown 2021 |
+| Bronchopleural fistula | 0.3% after lobectomy | STS, Brown 2021 |
+| | 1.9% after pneumonectomy (167 of 8,699) | ESTS 2007 to 2019 |
+| Empyema | 0.5% after lobectomy | STS, Brown 2021 |
+| Pulmonary embolus | 0.4% after lobectomy | STS, Brown 2021 |
+| Unplanned ICU readmission | 4.0% after lobectomy or bilobectomy, 6.2% after complex lobectomy, 4.6% after pneumonectomy | SCTS database 2014 to 2017 |
+| 30-day readmission | 8.2% after lobectomy | STS, Brown 2021 |
+| Recurrent laryngeal nerve palsy | 14.4% after left upper lobectomy with node dissection in one series | Hanaoka 2022; see below |
+| Post-pneumonectomy oedema (lung injury) | 2 to 5%, mortality 60 to 90% | TSRA ch. 13, already in this tab |
+
+Brown 2021 studied 39,734 elective lobectomies for lung cancer in the STS database (2012 to 2017) and excluded patients who died in hospital; it reports counts by readmission status, and the overall rates above are worked from those counts. Pneumonia (12.1% against 2.5%), empyema and pulmonary embolus were much commoner in those readmitted.
+
+!fig f63_lobectomy_complications | Complications after 39,734 elective lobectomies for lung cancer, STS database 2012 to 2017 (Brown 2021). Overall rates worked from the paper's counts; in-hospital deaths excluded. Drawn for these notes.
+
+### Bleeding and re-exploration
+
+| Point | Detail |
+|---|---|
+| National rate | Swedish registry 2013 to 2021, 15,617 resections for any diagnosis: re-exploration 192 (1.2%), transfusion 585 (3.8%), either 646 (4.1%). Bleeding (re-exploration or transfusion) by approach: VATS or robotic 2.2%, anterolateral or mini-thoracotomy 5.6%, posterolateral thoracotomy 12.8%; by operation: pneumonectomy 15.6%, lobectomy or bilobectomy 5.0%, segmentectomy 3.1%, wedge 2.6% |
+| Literature quoted by the Swedish authors | Re-exploration 0.9 to 2.6% after lung resection; transfusion 2.4 to 15%; early mortality after re-exploration 8 to 17%; 3.3% re-exploration in a database of 9,485 lobectomies before 2013 |
+| Cost of bleeding | 90-day mortality 9.4% with bleeding against 1.0% without; in matched patients OR 3.69 at 30 days and 3.66 at 90 days; long-term mortality HR 1.47 (95% CI 1.29 to 1.69), most of the gap opening early |
+| Single-centre lobectomy series (EJCTS) | 1,960 lobectomies, 2009 to 2018: major haemorrhage 2.1%; reoperation 1.4% at a median of 17 hours; 0.8% managed with transfusion and observation; no source found at 44% of re-explorations; no 30-day deaths. Associated with male sex, preoperative anaemia, previous sternotomy, operation for infection and adhesiolysis |
+| Unadjusted associations (Swedish) | Performance status 2 to 4, heart disease, chronic kidney disease, previous thoracic surgery, induction chemotherapy, advanced cancer and open surgery were commoner in the bleeding group |
+
+Viva line: about 1 in 100 lobectomies return for bleeding, and in almost half no single bleeding point is found; bleeding goes with a several-fold rise in early death and a lasting fall in survival.
+
+### Recurrent laryngeal nerve injury
+
+| Point | Detail |
+|---|---|
+| Who | Left upper lobectomy with mediastinal node dissection carries the higher risk (TSRA ch. 12); in Hanaoka's series the station that mattered was 4L |
+| Rate | Hanaoka 2022, 139 left upper lobe cancers: palsy in 20 (14.4%); 70% recovered spontaneously at a mean of 5.7 months; 4 had aspiration pneumonia; no deaths. The authors cite a range from negligible to 40% in high-risk procedures |
+| Risk | Station 4L dissection was the independent risk factor (multivariable OR 7.34, 95% CI 1.26 to 42.8). Energy devices were linked only on univariable analysis |
+| Prevention (authors' method) | Find the ligamentum arteriosum first; identify the vagus above and below the origin of the recurrent nerve before dissecting 4L; no electrocautery or vessel sealer within about 3 mm of the nerve; tape the pulmonary artery |
+| After surgery | Assess any voice change or swallowing difficulty (TSRA ch. 12); aspiration pneumonia is the danger |
+
+National databases read here (STS, ESTS, SCTS) do not report recurrent laryngeal nerve palsy as a separate item.
+
+### ECMO for respiratory failure after lung resection
+
+| Series | Findings |
+|---|---|
+| Feeney 2022 (Pittsburgh, ASAIO J; abstract) | 40 runs of veno-venous ECMO after general thoracic surgery, 2011 to 2019 (lung operations 45%, oesophageal 40%). Started a mean 5.45 days after surgery; elective cannulation 70%, emergency 30%. Median support 9.4 days (12 hours to 33 days). 30-day survival 62.5%; 52.5% discharged; 81% of those discharged alive 90 days later. Major bleeding in 7 |
+| Post-pneumonectomy ARDS (CTSNet abstract) | 8 patients with predicted mortality about 80%: 7 weaned, hospital survival 50% |
+
+No guideline on ECMO for this indication was found in this round. These small series show veno-venous ECMO can rescue selected patients; major bleeding occurred in 7 of 40 in the Pittsburgh series.
+
+### Viva summary
+
+Quote the UK first: 90-day survival 98.4% after lung cancer surgery (NLCA 2026). Then by operation: lobectomy about 1 to 2% in-hospital mortality, pneumonectomy about 5 to 6%. Common problems after lobectomy: air leak over 5 days and AF about 10% each, pneumonia about 3%, return to theatre 2 to 3%, bleeding re-exploration about 1%. Fistula is about 0.3% after lobectomy and about 2% after pneumonectomy. Left recurrent nerve palsy after station 4L dissection can reach 1 in 7.

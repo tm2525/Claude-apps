@@ -1,6 +1,6 @@
 ## Perioperative myocardial infarction after cardiac surgery: definitions (Fourth and Fifth Universal Definitions, SCAI, ARC-2, EACTS 2024)
 
-Added 21 November 2026 from: (1) Gaudino M, Flather M, Capodanno D, Milojevic M, Bhatt DL, et al. European Association for Cardio-Thoracic Surgery (EACTS) expert consensus statement on perioperative myocardial infarction after cardiac surgery. Eur J Cardiothorac Surg 2024;65(2):ezad415. doi:10.1093/ejcts/ezad415. Read from the online full-text PDF, including Tables 2 to 5 and the Figure 2 caption (the text inside the Figure 2 boxes could not be extracted); numbers checked twice. (2) Thygesen K, Alpert JS, Jaffe AS, et al. Fourth Universal Definition of Myocardial Infarction (2018). Circulation 2018;138:e618–e651. doi:10.1161/CIR.0000000000000617. Read from the full-text PDF, the sections on myocardial injury, procedural injury and type 4a and 5 MI. (3) Mills NL, Newby LK, Zaman S, et al. Fifth Universal Definition of Myocardial Infarction (2026). Eur Heart J 2026, doi:10.1093/eurheartj/ehag101 (also JACC, doi:10.1016/j.jacc.2026.07.025, and Circulation, doi:10.1161/CIR.0000000000001477). **The document itself could not be opened.** What is below comes from the ESC news and guideline pages (30 August 2026), TCTMD (11 September 2026) and a review: Heybati K, Ramakrishna H. Beyond types 1–5: the Fifth Universal Definition of Myocardial Infarction. EMJ Cardiol 2026;14(1):22–26. Check the troponin figures against the document before quoting them.
+Added 21 November 2026 from: (1) Gaudino M, Flather M, Capodanno D, Milojevic M, Bhatt DL, et al. European Association for Cardio-Thoracic Surgery (EACTS) expert consensus statement on perioperative myocardial infarction after cardiac surgery. Eur J Cardiothorac Surg 2024;65(2):ezad415. doi:10.1093/ejcts/ezad415. Read from the online full-text PDF, including Tables 2 to 5 and the Figure 2 caption (the text inside the Figure 2 boxes could not be extracted); numbers checked twice. (2) Thygesen K, Alpert JS, Jaffe AS, et al. Fourth Universal Definition of Myocardial Infarction (2018). Circulation 2018;138:e618–e651. doi:10.1161/CIR.0000000000000617. Read from the full-text PDF, the sections on myocardial injury, procedural injury and type 4a and 5 MI. (3) Mills NL, Newby LK, Zaman S, et al. Fifth Universal Definition of Myocardial Infarction (2026). Eur Heart J 2026, doi:10.1093/eurheartj/ehag101 (also JACC, doi:10.1016/j.jacc.2026.07.025, and Circulation, doi:10.1161/CIR.0000000000001477). **The document itself could not be opened.** (Updated 25 November 2026: the procedure-related MI parts of the full text have now been read; the procedure-related MI, evidence, troponin and graft-failure rows below are confirmed, and the detail is in the section added at the end of this tab. The other rows are still from secondary sources.) What is below comes from the ESC news and guideline pages (30 August 2026), TCTMD (11 September 2026) and a review: Heybati K, Ramakrishna H. Beyond types 1–5: the Fifth Universal Definition of Myocardial Infarction. EMJ Cardiol 2026;14(1):22–26. Check the troponin figures against the document before quoting them.
 
 ### Why this matters
 Perioperative MI (PMI) is FRCS critical condition 9. Every definition counts troponin or CK-MB as a multiple of the upper reference limit (URL, the 99th centile), measured within a time window, usually with a supporting sign of ischaemia. Troponin rises after **every** cardiac operation, so the threshold decides how common PMI looks. In the CORONARY trial (over 4,700 CABG patients), more than 46% had troponin above 10 × URL, and PMI incidence ranged from 0.6% to 19% depending on the definition used (EACTS 2024).
@@ -24,7 +24,7 @@ This replaces the Fourth Universal Definition (2018), which defined CABG-related
 | Classification | Numbered types dropped. Three clinical profiles: **primary** (old type 1), **secondary** (old type 2), **procedure-related** (old types 4 and 5). Type 3 (death before testing) is no longer a separate type; such deaths are placed in one of the three |
 | Procedure-related MI | A coronary complication of a percutaneous or surgical cardiac procedure, causing acute myocardial injury, **within 30 days**. PCI and cardiac surgery now use the **same** criteria |
 | Evidence needed | Angiographic evidence of a coronary complication and/or imaging evidence of a new regional wall motion abnormality or absence of viable myocardium. **Both** are required if the complication happens during the procedure or the procedure is done during an acute MI |
-| Troponin | No longer diagnostic by itself. The review's Table 1 lists over 5 × URL at 6 hours after PCI and **over 35 × URL at 24 hours after surgery** as thresholds that should prompt investigation, not confirm MI (not checked in the primary document) |
+| Troponin | No longer diagnostic by itself. The review's Table 1 lists over 5 × URL at 6 hours after PCI and **over 35 × URL at 24 hours after surgery** as thresholds that should prompt investigation, not confirm MI (checked 25 November 2026 against the European Heart Journal full text, Box 5: troponin still rising and over 5 × URL at 6 h after intervention or over 35 × URL at 24 h after surgery makes procedure-related MI "likely" and prompts imaging; the document calls these thresholds arbitrary) |
 | Graft failure after 30 days | Classed as **primary** MI, not procedure-related (as are restenosis and stent thrombosis) |
 | Myocardial injury | Rise and/or fall of troponin with at least one value above the **sex-specific** 99th centile URL; sex-specific limits are now required, to stop missing MI in women |
 | Other | Codes aligned with ICD-11; new sections on MI after sudden death, silent MI and accelerated troponin pathways; in MINOCA the "I" now means injury |
@@ -782,3 +782,290 @@ Added 24 November 2026 from Lorusso R, Salazar L, Nersesian G, Milojevic M, Schm
 These are consistent with the graded 2025 EACTS/STS/AATS weaning recommendations in Cardiac 15 (which also give MAP 65 mmHg or more on VIS under 10, and PAPi over 0.9).
 
 Viva line: "Anticoagulate only when the bleeding has stopped: ACT 140 to 160 or aPTT 40 to 50 on VA-ECLS, then aPTT 50 to 70 or anti-Xa 0.3 to 0.6 while weaning. Wean when the EF is 25 to 30% and the VTI is 12 cm without new regurgitation."
+
+## Pulmonary artery catheter: insertion, waveforms, complications and evidence
+
+Added 25 November 2026 from: TSRA Review of Cardiothoracic Surgery 3rd ed., ch. 47 (Cardiac hemodynamics) and ch. 116 (Low cardiac output), PA catheter passages re-read on disk; StatPearls article on pulmonary artery catheterisation (statpearls.com point-of-care 28004; authors and date not shown; text read up to a registration wall, NCBI Bookshelf copy blocked); J Clin Monit Comput 2021, doi:10.1007/s10877-021-00662-8 (Springer full text, sections 1 to 3 on placement and waveforms, read through an extraction tool; title and authors were not shown in the extraction); Harvey S, Harrison DA, Singer M, et al. Assessment of the clinical effectiveness of pulmonary artery catheters in management of patients in intensive care (PAC-Man): a randomised controlled trial. Lancet 2005;366(9484):472–477, doi:10.1016/S0140-6736(05)67061-4 (abstract from the LSHTM repository; complication breakdown and exclusions from the Bottom Line summary); Nakamura Y, Saku K, Homma S, et al. Pulmonary artery rupture by pulmonary artery catheter in cardiac surgery: a case report and review of literature. Front Cardiovasc Med 2025;12:1567723, doi:10.3389/fcvm.2025.1567723 (online full text); LITFL, Pulmonary artery catheter (online page, secondary, used only where stated); Køber L, Adamo M, et al. 2026 ESC Guidelines for the management of heart failure. Eur Heart J 2026;47:5346–5457, doi:10.1093/eurheartj/ehag100 (Tobin's uploaded PDF text, searched for every catheter and invasive-monitoring passage this session). BJA Education was not reached (search returned no BJA Education article). The tab already covers thermodilution, Fick, SvO2 and central line technique; this section adds the catheter itself.
+
+### Indications and contraindications (StatPearls)
+
+| Indications | Contraindications |
+|---|---|
+| Pulmonary hypertension assessment | Absolute: infected insertion site; right ventricular assist device; no consent |
+| Shock of unclear cause (cardiogenic against septic, using SvO2 and pressures); volume status in severe shock | Relative: **left bundle branch block** (the catheter can cause right bundle branch block and so complete heart block): have external or transvenous pacing ready |
+| Tamponade or constriction | |
+| Right-sided valve disease, congenital disease and shunts before surgery | |
+
+In cardiac surgery the catheter also gives continuous output, SvO2, PA pressure and PVR for low output after surgery (TSRA ch. 116), and the ISHLT and EACTS lines already in Cardiac 15 and Cardiac 10 cover its use around MCS and bypass. Children: no Swan-Ganz catheters in paediatric cardiac surgery (Congenital 13).
+
+### The catheter (StatPearls; J Clin Monit Comput)
+
+- Balloon-tipped, flow-directed, usually 110 cm long with marks every 10 cm, 4 to 8 F.
+- Ports: proximal (RA/CVP) about 30 cm from the tip; a second RA infusion port about 31 cm; distal PA port at the tip (PA pressure, mixed venous sample); thermistor about 4 cm from the tip; balloon port (air, **1.5 ml**).
+
+### Insertion step by step
+
+1. Consent, full sterile barrier, ultrasound-guided sheath. **Right internal jugular is preferred**: the straightest route to the RV. Subclavian has fewer infections but more serious bleeding and is hard to image; femoral is possible (J Clin Monit Comput). LITFL gives the order right IJ, left subclavian, right subclavian, left IJ.
+2. Test the balloon; flush all lumens; zero to atmosphere and level the transducer at the phlebostatic axis, about 5 cm below the sternal angle supine. Too high reads low; too low reads high.
+3. Advance to 20 cm (past the sheath) before inflating. **Balloon up going forward, down coming back.**
+4. Watch the trace change (table below). Fluoroscopy or TOE helps; StatPearls notes placement is commonly under fluoroscopy, or at the bedside with ultrasound.
+5. Wedge, deflate, and confirm the PA trace returns. If it does not, pull back about 2 cm.
+6. Chest film for tip position and pneumothorax; the tip should not sit beyond the West zone 3 level on the film (LITFL).
+
+| Position | Distance from right IJ or subclavian | Trace | Normal (mmHg) |
+|---|---|---|---|
+| Right atrium | about 20 cm | Low, a and v waves | 0 to 10 |
+| Right ventricle | 30 to 35 cm | Tall square systolic wave; diastolic near zero | systolic 15 to 28; end-diastolic near 0 |
+| Pulmonary artery | 40 to 45 cm | **Diastolic pressure steps up; systolic unchanged**; dicrotic notch | 14 to 28 / 5 to 16, mean 10 to 22 |
+| Wedge (PAWP) | about 50 cm | Damped a and v waves, below mean PA | 5 to 12 |
+
+Add about 5 cm from the left internal jugular; tall patients or a dilated RV may need more than 50 cm. RV to PA systolic gradient is normally 0 to 3 mmHg. TSRA ch. 47 gives the same troubleshooting rule: passing from RV to PA, only the diastolic pressure changes.
+
+!fig f61_pac_waveforms | Original drawing of the trace as a pulmonary artery catheter is floated from right atrium to wedge, with normal pressures, depths from the right internal jugular and the insertion safety rules. Drawn for these notes from J Clin Monit Comput 2021 (doi 10.1007/s10877-021-00662-8), TSRA ch. 47 and LITFL.
+
+Troubleshooting (J Clin Monit Comput):
+- No RV trace by 40 to 45 cm, or no PA trace by 50 to 55 cm: deflate, pull back to 20 cm, try again.
+- Tricuspid: anticlockwise rotation with the balloon up; head-down helps.
+- Pulmonary valve: head-up 15 to 20 degrees and rotation to the right.
+
+### Reading the wedge
+
+- Read the CVP at the base of the c wave after the R wave (or the a wave base if no c wave); RV end-diastolic pressure just before the R wave.
+- Read the wedge at end-expiration, ideally the mean of three readings. It is always below mean PA pressure.
+- It reflects left atrial pressure only in **West zone 3**, where pulmonary arterial and venous pressures both exceed alveolar pressure. Absent a and v waves, big respiratory swings, or PA diastolic above the wedge suggest zone 1 or 2.
+- Arrhythmias change the waves: cannon a waves in AV dissociation (which can appear in the wedge trace too); no a waves in atrial fibrillation. Right bundle branch block delays the PA upstroke behind the arterial upstroke and is one cause of a wedge that underestimates LVEDP.
+- Inflate for no more than four breaths and let the balloon deflate passively (LITFL). LITFL also suggests not wedging routinely (PA diastolic usually estimates it) and removing the catheter after 72 hours.
+- TSRA ch. 47: after bypass, myocardial oedema changes compliance, so the wedge is a less accurate guide to volume early on. A wedged catheter gives a falsely high SvO2.
+- RV outflow obstruction (gradient 25 mmHg or more) occurs in up to 4% of cardiac surgical patients and goes with instability: look for a systolic gradient between the RV and PA traces.
+
+### Complications
+
+| Complication | Detail |
+|---|---|
+| Access | Haematoma, arterial puncture, pneumothorax or haemothorax (mainly subclavian), air embolism, lost guidewire. PAC-Man: 46 of 486 insertions had a complication, none fatal: haematoma 17, arterial puncture 16, arrhythmia needing treatment within 1 hour 16 (one cardiac arrest), pneumothorax 2, haemothorax 1, guidewire retrieval 2 |
+| Arrhythmia | Atrial or ventricular ectopy and runs from contact with the heart; right bundle branch block (LITFL gives 6%), dangerous with existing LBBB |
+| Knotting, looping | Avoided by watching the trace and not advancing far beyond expected depths |
+| Valve injury, wall perforation | Rare (StatPearls) |
+| Pulmonary infarction | Prolonged inflation or distal migration |
+| **Pulmonary artery rupture** | See below |
+| Late | Thrombosis, catheter infection, endocarditis, inability to remove (LITFL) |
+
+### Pulmonary artery rupture
+
+- Incidence of catheter-related PA injury 0.1% to 0.8%, mortality 45% to 60% (Nakamura 2025); StatPearls quotes 30% to 70%. The catheter is still used in more than a third of cardiac operations.
+- Risk factors: age over 60, female sex, pulmonary hypertension, anticoagulation, long-term steroids, hypothermia (stiffens the catheter), over-insertion.
+- Mechanisms: overinflation, eccentric inflation, peripheral wedging, rapid distal migration with the tip hitting the wall. Do not re-inflate after the catheter has migrated distally (J Clin Monit Comput).
+- Presentation: haemoptysis or blood in the endotracheal tube in 86% of 21 reviewed cases; in cardiac surgery typically after bypass, often at protamine, with desaturation. False aneurysms were right-sided in 90%.
+
+Management, as described in Nakamura's case and review:
+1. Ventilation first. Minor bleeding: frequent suction.
+2. Major bleeding: isolate the bleeding lung and protect the other with a double-lumen tube or bronchial blocker. Use bronchoscopy to find the side; clamping the bleeding side's lumen can tamponade it.
+3. PEEP (10 cmH2O in the case) and recruitment for the good lung.
+4. Reduce pulmonary flow; in theatre, going back on bypass helps localise and control.
+5. Partial reversal: a small protamine dose to an ACT of 150 to 200 s, with platelets and plasma.
+6. Definitive: coil embolisation was the commonest (48%), plugs in some, surgery (resection) in one case.
+7. Watch for rebleeding (45%, from 48 hours to 14 days) and image for false aneurysm.
+
+Lateral positioning, deliberate balloon tamponade and general heparin reversal policy were not described in the sources read.
+
+Prevention: pull the catheter back 3 to 5 cm before bypass; keep the tip in the proximal PA, ideally checked on TOE; no slack in the catheter; limit inflation.
+
+### Evidence
+
+| Trial or guideline | Finding |
+|---|---|
+| PAC-Man (Harvey 2005) | 1,041 adults in 65 UK ICUs whom clinicians thought should have a catheter, randomised to catheter (519) or not (522); management not protocolised. Hospital mortality 68% (346 of 506) against 66% (333 of 507), p = 0.39; adjusted hazard ratio 1.09 (95% CI 0.94 to 1.27). No difference in ICU or hospital stay or organ-free days. "No clear evidence of benefit or harm." Criticisms (Bottom Line): no protocol, quality of interpretation unknown, late complications not counted, not powered for subgroups. Excluded preoperative optimisation and organ donors; 6% elective surgery |
+| ESC 2026 heart failure | Section 7 (decompensated HF and cardiogenic shock) has no recommendation for or against a pulmonary artery catheter; the shock section relies on clinical signs and lactate over 2 mmol/L, and Shock Team decisions. Right heart catheterisation is **I C** in advanced HF as part of evaluation for transplant or durable MCS; **IIa C** when constriction or congenital heart disease is suspected (with left heart catheter for constriction against restriction); **IIb C** in selected suspected HFpEF or structural disease when non-invasive tests are not enough (possibly with exercise). Wireless remote PA pressure monitoring is a separate, ambulatory recommendation |
+| Elsewhere in the notes | SCAI shock consensus: a PA catheter is recommended for diagnosis and management (Cardiac 15). EACTS/EACTAIC/EBCP 2024 bypass guideline: PA catheter in selected cases, IIa (Cardiac 10). ISHLT: right heart catheter before listing and before LVAD (Cardiac 15) |
+
+Viva line: the catheter is safe but has not been shown to improve outcome when used without a protocol (PAC-Man); its value is diagnostic, in right heart failure, pulmonary hypertension, shock of unclear cause and mechanical support. Know the rupture drill.
+
+## Renal physiology for the surgical and critical-care patient: blood flow, autoregulation, GFR and the kidney on bypass
+
+Added 25 November 2026 from: (1) StatPearls, "Physiology, Renal Blood Flow and Filtration" (NCBI Bookshelf NBK482248; editor J S Sehdev; last updated 24 July 2023), read from the statpearls.com page through a summarising tool (the NCBI copy was blocked); (2) Evans RG, Lankadeva YR, Cochrane AD, Marino B, Iguchi N, Zhu MZL, Hood SG, Smith JA, Bellomo R, Gardiner BS, Lee CJ, Smith DW, May CN. Renal haemodynamics and oxygenation during and after cardiac surgery and cardiopulmonary bypass. Acta Physiol (year and volume not shown on the manuscript read); doi:10.1111/apha.12995, read in full from the author-accepted manuscript in the University of Melbourne repository (main text, figure legends and references; the figures themselves were not viewable); (3) TSRA Review of Cardiothoracic Surgery, ch. 118, re-read for the AKI and hepatic paragraphs. The AKI definitions, KDIGO bundle, PrevAKI and RRT timing trials are already in this tab and are not repeated. Segment-by-segment tubular transport (proximal tubule, loop, distal nephron) was not in the sources read this round and is not given.
+
+### Numbers to quote
+
+| Quantity | Value | Source |
+|---|---|---|
+| Renal blood flow | About 20% of cardiac output, roughly 1 L/min (Evans: about a quarter of output) | StatPearls; Evans |
+| Renal plasma flow | Measured by PAH clearance: RPF = U(PAH) x V / P(PAH) | StatPearls |
+| Renal blood flow from plasma flow | RBF = RPF / (1 - haematocrit) | StatPearls |
+| Filtration fraction | GFR / RPF, about 20% | StatPearls |
+| Autoregulatory range | Mean arterial pressure 80 to 180 mmHg | StatPearls |
+| Renal oxygen use | Mostly driven by sodium reabsorption; the basal (non-transport) part is only about 15% of the total | Evans |
+
+Why flow is high: the renal vessels are arranged in parallel, which lowers total resistance (StatPearls).
+
+### Filtration
+
+- GFR is the volume filtered from glomerular capillaries into Bowman's space per unit time. It follows Starling forces: (capillary hydrostatic minus Bowman's space hydrostatic pressure) minus (capillary oncotic minus Bowman's space oncotic pressure), multiplied by the filtration coefficient. StatPearls gives no normal values in mmHg.
+- The barrier has three layers: fenestrated endothelium, basement membrane (type IV collagen, heparan sulphate) and podocyte foot processes. It selects by size and by charge; the negative charge helps hold back albumin.
+- A change in filtration fraction changes the protein concentration in the peritubular capillaries and so changes proximal tubular reabsorption (the link between glomerulus and tubule).
+
+### Autoregulation
+
+!fig f62_glomerulus | The afferent and efferent arterioles and their controls, with a schematic autoregulation curve. Drawn for these notes from StatPearls "Physiology, Renal Blood Flow and Filtration" (2023) and Evans et al., Acta Physiol (haemodilution); the curve is a schematic, not measured data.
+
+| Mechanism | How it works |
+|---|---|
+| Myogenic | Stretch of the afferent arteriole makes it constrict, so a rise in pressure does not pass on to the glomerulus |
+| Tubuloglomerular feedback | The macula densa senses tubular flow and sodium. More delivery: ATP release, afferent constriction, less renin. Less delivery: afferent dilatation and more renin |
+| Beyond the range | Below about 80 or above about 180 mmHg, flow follows pressure |
+
+### The two arterioles, and the drugs that act on them
+
+| Change | GFR | Renal plasma flow | Filtration fraction |
+|---|---|---|---|
+| Afferent constriction | Falls | Falls | No change |
+| Efferent constriction (angiotensin II) | Rises | (not stated) | Rises |
+| Raised plasma protein (myeloma) | (not stated) | (not stated) | Falls |
+| Low plasma protein (nephrotic syndrome) | (not stated) | (not stated) | Rises |
+| Ureteric obstruction (stone) | Falls | (not stated) | Falls |
+| Dehydration | Falls | (not stated) | Rises |
+
+All rows from StatPearls; "not stated" means the source did not give it.
+
+- Angiotensin II constricts the efferent arteriole and keeps filtration up when renal blood flow is low. ACE inhibitors and ARBs remove this support, which is why they lower GFR in a low-flow state; this underlies the advice in this tab to hold them for 48 hours in the KDIGO bundle.
+- Prostaglandins dilate the afferent arteriole. NSAIDs remove this and can lower GFR, especially in kidney disease.
+- Sympathetic activity reduces renal blood flow.
+- Drug handling: the active metabolite of vecuronium can prolong block in renal failure; some anaesthetics (methoxyflurane) reduce GFR (StatPearls).
+
+### The medulla: why it is the first to suffer
+
+- The medulla is supplied by vasa recta from the efferent arterioles of juxtamedullary nephrons (StatPearls). Its flow is low and its capillaries sparse, and oxygen diffuses directly from arteries to veins (shunting) in both cortex and medulla (Evans).
+- The medullary thick ascending limbs reabsorb much of the filtered sodium, so their oxygen demand is high, yet they sit at the edge of the vascular bundles. Human AKI tubular damage is commonest in the outer medulla (Evans).
+- Proposed spiral: hypoxic thick ascending limbs reabsorb less sodium; more sodium reaches the macula densa; tubuloglomerular feedback lowers filtration and medullary oxygen delivery further (Evans; the exact link is unproven).
+
+### What bypass does to the kidney (Evans)
+
+| Factor | Finding |
+|---|---|
+| Haemodilution | Blunts autoregulation and lowers oxygen content, so oxygen delivery falls at any flow. In one human study renal blood flow was kept but renal oxygen delivery still fell about 20% |
+| Pump flow | In another human study renal blood flow fell about 40% at low pump flow, with no detectable autoregulation. Low pump flow is consistently linked to AKI |
+| Mean pressure | Clinical links between MAP and AKI have not been reproduced consistently. In animals, raising pump flow improved renal perfusion more than raising pressure with a vasopressor |
+| Rewarming | Models predict the worst medullary hypoxia during rewarming (PO2 under 5 mmHg near the thick ascending limbs); rewarming and hyperthermic perfusion are linked to AKI clinically. Medullary PO2 of 1 to 5 mmHg has been measured in pigs on bypass |
+| Pulsatility | Animal results inconsistent: some benefit, some none |
+| Noradrenaline | In conscious sheep, cortical and medullary PO2 fell sharply with little change in total renal blood flow |
+| Vasopressin | Lowered renal blood flow, but tissue PO2 was relatively well kept (sheep) |
+| Haemoglobin (rats) | Cortical and medullary hypoxia was brief at haemoglobin 10 g/dL and sustained at 6.5 g/dL |
+| After bypass | Patients with AKI had much lower renal blood flow and oxygen delivery with unchanged oxygen use; pigs still had medullary hypoxia at 24 hours |
+
+Other proposed contributors: haemolysis, inflammation, oxidative stress, sympathetic and renin-angiotensin activation, and loss of pulsatility, all promoting renal vasoconstriction.
+
+Interventions (as summarised by Evans): off-pump surgery lowers early AKI but a multicentre trial showed no kidney benefit at one year; mild or moderate hypothermia did not reduce AKI; remote ischaemic preconditioning helped in one trial but not in two meta-analyses. After surgery, in one group's human studies, vasopressin increased renal oxygen extraction, dopamine and noradrenaline reduced it, and levosimendan had no detectable effect.
+
+### Bedside link (TSRA ch. 118)
+
+Early oliguria is usually low volume (responds to fluid) or low output (responds to inotropes); persistent oliguria or anuria suggests acute tubular necrosis. AKI occurs in up to 30% after cardiac surgery, mostly in those with pre-existing renal dysfunction; other risks are age, female sex, hypertension, diabetes, heart failure, peripheral vascular disease, long bypass and high-dose vasopressors.
+
+**Viva line**: the kidney autoregulates flow between about 80 and 180 mmHg, but the medulla lives close to hypoxia even when total flow is normal. On bypass, haemodilution and low pump flow cut oxygen delivery, rewarming raises demand, and noradrenaline can drop medullary PO2 without changing total flow; so a normal MAP does not guarantee a well-oxygenated kidney.
+
+## Hepatic and splanchnic physiology in low-output states: blood supply, synthetic function, drug handling and the gut
+
+Added 25 November 2026 from: (1) Katawala T. Liver physiology. Update in Anaesthesia (WFSA), pp. 66 to 68 (volume and year not shown on the PDF), read from the WFSA PDF through a summarising tool; (2) Cutler J, Hendrickse A. Hepatic blood supply and regulation of hepatic blood flow. OpenAnesthesia (last updated 2 August 2023), read online; it cites Harper D, Chandler B, Splanchnic circulation, BJA Educ 2016;16:66-71, which was not itself read; (3) LITFL Part One, "Hepatic blood flow", read online (a revision page, secondary); (4) Patel J, Jones CN, Amoako D. Perioperative management for hepatic resection surgery. BJA Educ 2022;22:357-63; doi:10.1016/j.bjae.2022.05.002, read from the online full text; (5) Deranged Physiology, "Splanchnic blood flow" (CICM primary exam chapter 478), read online (secondary; it cites Perko 1998, Granger and Kvietys 1981, Shepherd and Kiel 1992); (6) TSRA ch. 118 (hepatic dysfunction; splanchnic ischaemia with vasoplegia adjuncts). Hepatic extraction ratios (flow-limited versus capacity-limited drugs) and gut barrier failure with bacterial translocation were not covered by any source read this round and are left out. Non-occlusive mesenteric ischaemia after cardiac surgery is already in this tab ("Gastrointestinal complications after cardiac surgery").
+
+### Hepatic blood supply
+
+!fig f62_liver_supply | Share of hepatic blood flow and oxygen supply from the portal vein and hepatic artery. Drawn for these notes from Update in Anaesthesia (Katawala), OpenAnesthesia (Cutler and Hendrickse 2023) and LITFL; the ranges reflect differences between those sources.
+
+| | Hepatic artery | Portal vein |
+|---|---|---|
+| Share of flow | About 30% (25% to a third) | About 70% (two-thirds to 75%) |
+| Share of oxygen | About 40 to 50% | About 50 to 60% |
+| Saturation | About 98% | About 85% with the gut at rest, about 75% when it is active |
+| System | High pressure, high resistance; can autoregulate | Low pressure, valveless; cannot autoregulate |
+| Receptors | Alpha, beta and dopaminergic | Alpha only |
+
+- Total flow about 1.5 L/min, 20 to 25% of cardiac output (Katawala; Patel). The liver holds about 30 mL of blood per 100 g, and up to half of that can be mobilised in hypovolaemia; sympathetic venoconstriction can mobilise up to 250 mL (LITFL).
+- Sinusoids are a low-pressure bed (about 2 mmHg) draining to the central veins; nitric oxide from sinusoidal endothelium keeps portal pressure low (LITFL; OpenAnesthesia).
+- The splanchnic bed as a whole can hold 20 to 30% of blood volume, which constriction returns to the central circulation (OpenAnesthesia gives about 30% when dilated after a meal; Deranged Physiology about 20%).
+
+### Regulation
+
+- **Hepatic arterial buffer response**: the portal vein cannot regulate its own flow, so the hepatic artery dilates when portal flow falls, mediated by adenosine. It can buffer a fall of up to 60% in portal flow (OpenAnesthesia).
+- **Humoral**: adrenaline, angiotensin II, vasopressin and raised PCO2 reduce portal flow; glucagon and secretin increase it (LITFL). Alpha agonists, vasopressin and angiotensin II constrict the splanchnic bed (OpenAnesthesia).
+- **Venous outflow**: hepatic flow depends on venous return; positive-pressure ventilation, tamponade and haemorrhage reduce it (LITFL). IPPV and hypocapnia added to the fall in flow with halothane, and hypoventilation raised it (Katawala). The same logic applies to right heart failure, which TSRA ch. 118 lists as a cause of shock liver.
+- Low CVP during liver resection reduces bleeding but can reduce renal and hepatosplanchnic flow; the BJA Education review found no evidence that vasoconstrictor-related splanchnic hypoperfusion causes secondary hepatic ischaemia in that setting (Patel).
+
+### Synthetic and metabolic function that matters perioperatively
+
+| Function | Point |
+|---|---|
+| Coagulation | Nearly all clotting factors are made in the liver; II, VII, IX and X need vitamin K. Coagulopathy comes from poor synthesis or from cholestasis (less vitamin K absorbed) |
+| Albumin | Maintains colloid osmotic pressure; low in poor synthesis |
+| Glucose | Gluconeogenesis, glycogen storage and release; ketone production in fasting. Hypoglycaemia is a feature of acute liver failure |
+| Lactate | Cleared by the liver; lactic acidosis in liver failure |
+| Bilirubin | Haem to biliverdin to unconjugated bilirubin (albumin-bound), conjugated by glucuronidation, excreted in bile |
+| Bile | About 1 L a day; bile salts are needed to absorb vitamins A, D, E and K |
+
+From Katawala, except the clinical features of liver failure (TSRA ch. 118).
+
+### Drug metabolism
+
+- Phase I: oxidation, reduction, hydrolysis, hydration, dealkylation (largely cytochrome P450). Phase II: glucuronidation, sulphation, acetylation, glutathione conjugation (Katawala).
+- Approximate hepatic metabolism of volatile agents: halothane 25%, sevoflurane 3%, isoflurane 0.2%, desflurane 0.02% (Katawala).
+- Morphine, pethidine and fentanyl can cause sphincter of Oddi spasm (Katawala).
+- PPIs are cleared mainly by CYP2C19 (see Thoracic 18); amide local anaesthetics accumulate in liver failure or low hepatic flow (see Thoracic 17).
+- Paracetamol appears safe after all but the largest liver resections; risks for toxicity include liver disease, age, malnutrition and intraoperative liver ischaemia (Patel).
+
+### The liver after cardiac surgery (TSRA ch. 118)
+
+- Mild transient rise in liver enzymes is common, peaking on day 3. About 25% develop some hyperbilirubinaemia from haemolysis and impaired liver function after bypass; it usually settles as haemodynamics improve.
+- Ischaemic hepatitis ("shock liver") follows long bypass, right heart dysfunction or pre-existing liver disease. Acute liver failure shows lactic acidosis, coagulopathy, haemodynamic instability, hypothermia and hypoglycaemia.
+- Work-up: haemolysis screen (LDH, haptoglobin, reticulocytes), echocardiography for right heart function, right upper quadrant ultrasound with Doppler of the hepatic vessels, hepatitis serology. Treatment is supportive: optimise perfusion, avoid a second insult.
+
+### Splanchnic perfusion in low-output states
+
+| Point | Detail |
+|---|---|
+| Flow | About 10 to 20% of cardiac output at rest (about 1,600 mL/min), up to about 35% after a meal (about 3,000 mL/min) |
+| Distribution | Pancreas and small bowel get most; stomach and colon relatively little; mucosa and submucosa more than muscle |
+| Oxygen extraction | About 5 to 10% at rest; in dogs it rose to about 80% when MAP was lowered to 30 mmHg, with only about 30% change in resistance |
+| Autoregulation | Weak compared with brain or kidney; the gut defends itself by extracting more oxygen rather than holding flow |
+| Sympathetic | Alpha-1 activity sharply cuts intestinal flow, with partial escape over time |
+| Villus | Arterial blood runs up the villus and venous blood down it, so oxygen short-circuits across; the villus tip is the most vulnerable to ischaemia |
+| Collaterals | Ischaemia usually needs two of the three main arteries (coeliac, SMA, IMA) occluded or critically narrowed |
+
+All from Deranged Physiology, which cites the original physiology papers.
+
+Clinical link: TSRA ch. 118 cautions that the adjuncts for profound vasoplegia (methylene blue, angiotensin II, hydroxocobalamin) can cause peripheral and splanchnic ischaemia. The NOMI data in this tab put numbers on it (noradrenaline above 0.1 µg/kg/min, vasopressin, high vasoactive-inotropic score and a lactate that will not clear).
+
+**Viva line**: in low output the splanchnic bed is given up early. Sympathetic and drug-induced vasoconstriction move blood out of the gut and liver to the core; the gut compensates by extracting oxygen until that is exhausted, the villus tip fails first, and the portal vein cannot autoregulate, so the liver relies on its arterial buffer.
+
+## Procedure-related MI after cardiac surgery: the Fifth Universal Definition (2026) read in full
+
+Added 25 November 2026 from Mills NL, Newby LK, Zaman S, et al., on behalf of the ESC/ACC/AHA/WHF Task Force. Fifth Universal Definition of Myocardial Infarction (2026). Eur Heart J 2026; doi:10.1093/eurheartj/ehag101 (also J Am Coll Cardiol 2026;88(11):1314–1368, Circulation and Global Heart; endorsed by EACTS and STS). Read from the online full text (academic.oup.com) through a text-extraction tool: executive summary, section 4 (what is new), Table 1, section 7.1 and section 7.2.3 with Box 5 and the captions of Figures 6 and 7. The figure contents were not read. This confirms the summary of the Fifth Definition earlier in this tab, which was written from news reports and a review.
+
+### Definition
+Procedure-related MI is MI caused by a **coronary complication of a cardiac procedure within 30 days**. The 30 days are called arbitrary but match most outcome studies. "Procedure" covers angiography with or without PCI, structural interventions, catheter ablation, and open or minimally invasive surgery including CABG and valve replacement. The **same criteria apply to percutaneous and surgical procedures**, so that rates can be compared. An unrelated MI within 30 days is primary or secondary MI. An acute coronary event linked to an earlier procedure after 30 days (late graft failure, restenosis) is **primary** MI, because it usually reflects new disease.
+
+!fig f64_procmi_tiers | Procedure-related MI in the Fifth Universal Definition (2026): considered, likely and confirmed tiers, with the troponin thresholds after PCI and after surgery (drawn for these notes from the European Heart Journal full text, section 7.2.3 and Box 5)
+
+### Box 5: three steps
+| Step | What is needed |
+|---|---|
+| Considered | Suspected coronary complication within 30 days, plus acute myocardial injury on troponin, plus one or more of: ischaemic symptoms, new or presumed new ischaemic ECG change, new pathological Q waves, unexplained sudden deterioration under sedation |
+| Likely (immediately after the procedure) | Troponin above the pre-procedure value and still rising: **over 5 × URL at 6 h after an intervention; over 35 × URL at 24 h after surgery** |
+| Confirmed | One or more of: angiographic evidence of a complication (after surgery: **graft failure or coronary impingement**; after valve intervention: embolism or ostial occlusion; after PCI: side-branch occlusion, dissection, no-reflow, stent thrombosis); or imaging showing a new regional wall motion abnormality or loss of viable myocardium in an ischaemic pattern in that territory. **Both** are needed if the complication arose during the procedure or the procedure was done for an acute MI |
+
+### Troponin after surgery
+- Some myocardial injury is "ubiquitous" after any procedure, and its size depends on the length and complexity of the operation, so no single threshold separates injury from infarction. Imaging decides.
+- The 5 × and 35 × URL thresholds are **arbitrary**: they tell you when to image, not when to diagnose. Values below them make a new abnormality less likely, but sensitivity and negative predictive value are unknown. Different cut-offs may be needed for troponin I against T, by sex, and for complex operations such as combined valve and coronary surgery.
+- A pre-procedure troponin is useful when available. After surgery, a rise between 6 and 24 h is more likely to go with new loss of viable myocardium on CMR.
+- For scale (section 7.1): after cardiac surgery 97.5% of patients exceed 10 × URL, and about 218 × URL was the level linked to death in a large prospective study (these match the VISION Cardiac Surgery figures in the EACTS 2024 section above).
+
+### ECG and symptoms after surgery
+- ST and T changes after surgery are common for other reasons (pericarditis, pneumopericardium, electrolytes), and **Q waves can be transient early after CABG**. ECG changes call for investigation but do not make the diagnosis on their own. This is a change from the Fourth Definition, where new Q waves were a supporting criterion for type 5 MI.
+- Sedation and anaesthesia mask symptoms: sudden pulmonary oedema, unexpected hypotension, tachycardia or ventricular arrhythmia may be the only signs.
+
+### What changed for the surgeon
+| Point | Fourth Definition (2018), type 5 | Fifth Definition (2026), procedure-related |
+|---|---|---|
+| Window | 48 h | 30 days |
+| Troponin | Over 10 × URL is a diagnostic criterion | Over 35 × URL at 24 h only prompts imaging |
+| Supporting evidence | One of: new Q waves, new graft or native occlusion, new loss of viable myocardium or wall motion abnormality | Angiographic complication and/or new wall motion abnormality or loss of viability in the territory; both if it happened in theatre |
+| Q waves alone with rising troponin | Could count | Not sufficient |
+| PCI and surgery | Different thresholds (type 4a over 5 ×, type 5 over 10 ×) | Same criteria |
+
+Viva line: "Since 2026 there is no type 5 MI. A troponin over 35 times the upper limit at 24 hours after surgery makes it likely and sends you to echo or angiography; you confirm it with a graft problem or a new wall motion abnormality in that territory, within 30 days. Late graft failure is a primary MI."

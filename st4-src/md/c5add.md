@@ -1,6 +1,6 @@
 ## Coronary surgery: indications, conduits, complications and the mechanical complications of infarction
 
-Added 19 November 2026 from the TSRA Review 3rd ed., ch. 50 (Halub, Aziz) and ch. 51 (Luc, Abel). The indications below are the 2011 ACCF/AHA classes the chapter quotes. I have not read ESC/EACTS 2018 or ACC/AHA/SCAI 2021 as full text, so set these against the ESC 2024 revascularisation tables earlier in this tab before quoting a class.
+Added 19 November 2026 from the TSRA Review 3rd ed., ch. 50 (Halub, Aziz) and ch. 51 (Luc, Abel). The indications below are the 2011 ACCF/AHA classes the chapter quotes. I have not read ESC/EACTS 2018 or ACC/AHA/SCAI 2021 as full text, so set these against the ESC 2024 revascularisation tables earlier in this tab before quoting a class. (25 November 2026: the ESC/EACTS 2018 tables have now been read from an author manuscript; see the 2018 guideline section added at the end of this tab.)
 
 ### What counts as significant, and three kinds of dysfunction
 

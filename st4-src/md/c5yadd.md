@@ -565,7 +565,7 @@ Viva use: age guides the second arterial conduit (BITA for the young, radial for
 
 ### ESC/EACTS 2026 consensus on free-wall rupture, pseudoaneurysm and papillary muscle rupture
 
-Published in Eur J Cardiothorac Surg 2026;68(5):ezag157 (Lorusso and 34 co-authors from ESC associations and EACTS). From the summary only: these complications now occur in under 1% of infarcts because of prompt reperfusion but remain lethal; transcatheter options now exist for high-risk patients; the document stresses the risk of recurrence, the unresolved role of concomitant revascularisation, the place of mechanical circulatory support, and Heart Team management including palliative care. The individual recommendations could not be read here; they should be added when the full text is opened.
+Published in Eur J Cardiothorac Surg 2026;68(5):ezag157 (Lorusso and 34 co-authors from ESC associations and EACTS). From the summary only: these complications now occur in under 1% of infarcts because of prompt reperfusion but remain lethal; transcatheter options now exist for high-risk patients; the document stresses the risk of recurrence, the unresolved role of concomitant revascularisation, the place of mechanical circulatory support, and Heart Team management including palliative care. The individual recommendations could not be read here; they should be added when the full text is opened. (25 November 2026: the full text has now been read; see the section on the ESC/EACTS 2026 clinical consensus statement added at the end of this tab. It has no classes or levels.)
 
 ## ESC 2026 heart failure guideline (full text): coronary disease and revascularisation in heart failure
 
@@ -635,3 +635,147 @@ How to support the heart during CABG with a poor ventricle (section 12):
 - With severe comorbidity or limited life expectancy, weigh tMCS critically and consider palliative care.
 
 These fit the ESC 2023 and EACTS/STS/AATS 2025 recommendations already in this tab and Cardiac 15, which grade tMCS as a bridge for mechanical complications. The consensus adds the device lists, and notes the evidence remains observational.
+
+## ESC/EACTS 2018 myocardial revascularisation guideline: CABG against PCI by anatomy, CABG technique, and what ESC 2024 has replaced
+
+Added 25 November 2026 from Neumann FJ, Sousa-Uva M, Ahlsson A, Alfonso F, Banning AP, Benedetto U, et al. 2018 ESC/EACTS Guidelines on myocardial revascularization. Eur Heart J 2019;40(2):87–165; doi:10.1093/eurheartj/ehy394 (co-published in Eur J Cardiothorac Surg 2019;55:4–90). How it was read: the recommendation tables in the journal's online HTML are images and could not be read, so the tables below come from an **author manuscript** of the guideline held in the UCL Discovery repository (file name "Mastercopy 4.7 ... 020418", read through a text-extraction tool: section 5 anatomy and indication tables, sections 6 to 9 and section 15). The manuscript may differ in detail from the printed version; the section 15 table was read twice. The journal HTML was read for the table of contents and sections 16 to 21.
+
+### Status
+The 2024 ESC chronic coronary syndromes guideline (earlier in this tab) "partly replaces" this document: its indication and CABG-against-PCI tables now govern, and the 2018 equivalents are listed beside them in the 2024 sections. The 2024 ESC/EACTS conduit consensus and the 2025 ESC/EACTS antithrombotic consensus (both earlier in this tab) cover conduit handling and drugs. The CABG technique table (section 15, below) has no 2024 replacement in these notes, so it is still the latest graded ESC/EACTS set on surgical technique.
+
+### Indications for revascularisation in stable angina or silent ischaemia (2018)
+| Extent of disease | Purpose | Class | Level |
+|---|---|---|---|
+| Left main stenosis over 50% | Prognosis | I | A |
+| Proximal LAD stenosis over 50% | Prognosis | I | A |
+| Two- or three-vessel disease over 50% with LVEF 35% or less | Prognosis | I | A |
+| Large ischaemic area (over 10% of LV) on functional testing, or abnormal FFR | Prognosis | I | B |
+| Single remaining patent coronary artery with stenosis over 50% | Prognosis | I | C |
+| Significant stenosis with limiting angina despite optimised medical therapy | Symptoms | I | A |
+
+A stenosis counted if it was over 90%, or had documented ischaemia or an abnormal pressure-wire result.
+
+### CABG or PCI by anatomy, no diabetes (2018, section 5.3)
+Patients suitable for both and at low predicted surgical risk.
+
+| Disease | CABG | PCI |
+|---|---|---|
+| One-vessel, no proximal LAD | IIb C | I C |
+| One-vessel, proximal LAD | I A | I A |
+| Two-vessel, no proximal LAD | IIb C | I C |
+| Two-vessel, proximal LAD | I B | I C |
+| Left main, SYNTAX 0 to 22 | I A | I A |
+| Left main, SYNTAX 23 to 32 | I A | IIa A |
+| Left main, SYNTAX 33 or more | I A | **III B** |
+| Three-vessel, SYNTAX 0 to 22 | I A | I A |
+| Three-vessel, SYNTAX over 22 | I A | **III A** |
+
+Footnote: in the high-SYNTAX rows PCI should be considered if the Heart Team is concerned about surgical risk, or the patient declines CABG after counselling that included a cardiac surgeon. The manuscript's "Favours PCI" list starts with severe comorbidity not captured by scores and advanced age, frailty or short life expectancy (the "Favours CABG" list could not be extracted).
+
+Diabetes (section 9): CABG recommended over PCI in stable multivessel disease at acceptable surgical risk (I A); PCI may be considered as an alternative in multivessel disease with SYNTAX 22 or less (IIb B). The 2024 section earlier in this tab gives the printed 2018 classes for three-vessel disease with diabetes as PCI IIb A (SYNTAX 0 to 22) and III A (over 22); in the manuscript read here these rows are not in the anatomy table.
+
+Check before quoting: the 2024 "what changed" list earlier in this tab gives the 2018 class for 1- or 2-vessel disease with proximal LAD as "CABG or PCI I A". In this manuscript that holds for one-vessel disease, but two-vessel disease with proximal LAD reads CABG I B and PCI I C.
+
+### Acute coronary syndromes, shock and heart failure (2018)
+| Recommendation | Class | Level |
+|---|---|---|
+| NSTE-ACS: choose culprit PCI, multivessel PCI or CABG by clinical state, comorbidity and disease (SYNTAX) | I | B |
+| STEMI: CABG for ongoing ischaemia with a large area at risk when PCI of the infarct artery is not possible | IIa | C |
+| Cardiogenic shock: emergency CABG if the anatomy is not suitable for PCI | I | B |
+| Mechanical complications of ACS with haemodynamic instability: emergency surgical or catheter repair, decided by the Heart Team | I | C |
+| LVEF 35% or less with suitable anatomy: revascularisation | I | B |
+| LVEF 35% or less, multivessel disease, acceptable surgical risk: CABG first | I | B |
+| CABG with LV aneurysmectomy in NYHA III or IV with a large aneurysm, large thrombus or an arrhythmogenic aneurysm | IIa | C |
+| Surgical ventricular restoration with CABG in selected patients in experienced centres | IIb | B |
+
+The two 2018 PCI lines in heart failure (PCI as an alternative in 1- or 2-vessel disease, IIa C; in 3-vessel disease, IIa C) were replaced in 2024 (see the 2024 part 1 section above).
+
+### Procedural aspects of CABG (section 15)
+| Recommendation | Class | Level |
+|---|---|---|
+| Minimise aortic manipulation | I | B |
+| CT of the ascending aorta over age 70 and/or with extensive generalised atherosclerosis | IIa | C |
+| Complete myocardial revascularisation | IIa | B |
+| Routine intraoperative graft flow measurement | IIa | B |
+| Epiaortic ultrasound before aortic manipulation | IIa | C |
+| Internal mammary artery to the LAD system | I | B |
+| An additional arterial graft in appropriate patients | IIa | B |
+| **Radial artery rather than vein for high-grade stenosis** | I | B |
+| Bilateral mammary grafting if sternal wound infection risk is not high | IIa | B |
+| Skeletonised mammary harvest when sternal wound infection risk is high | I | B |
+| Endoscopic vein harvest by experienced surgeons, to reduce wound complications | IIa | A |
+| No-touch vein harvest when an open technique is used | IIa | B |
+| Off-pump CABG, preferably with no-touch aortic technique, by experienced operators, in significant ascending aortic atheroma | I | B |
+| Off-pump CABG for subgroups of high-risk patients, by experienced teams | IIa | B |
+| Minimally invasive CABG through limited access for isolated LAD disease or as part of hybrid revascularisation, where expertise exists | IIa | B |
+| Hybrid revascularisation in specific subsets in experienced centres | IIb | B |
+
+Points from the section 15 text:
+- Complete revascularisation means grafting every vessel 1.5 mm or more across with a 50% or greater stenosis in at least one view.
+- Radial artery patency falls sharply when the native stenosis is under 70%: use it for stenoses over 70%, ideally over 90%.
+- Bilateral mammary grafting: better long-term survival in non-randomised data only. In ART (5-year interim) there was no difference in death or death, MI and stroke; bilateral grafting added 1.0 to 1.5% absolute need for sternal wound reconstruction, less with skeletonised harvest. Higher risk in obese and diabetic patients.
+- Transit-time flow measurement finds 2 to 4% of grafts needing revision.
+- No-touch vein patency is quoted at over 80% at 16 years.
+- Two large international trials found no difference between off-pump and on-pump CABG at 30 days or 1 year in experienced hands.
+- A 200-patient randomised trial found no difference between hybrid revascularisation and CABG at 1 or 5 years.
+- Volume (section 18): the guideline suggests a centre should do at least 200 CABG a year, and trainees should do at least 200 CABG under supervision before operating independently.
+
+Viva line: "In the 2018 guideline the only class I conduit recommendations are a mammary to the LAD (I B), the radial artery over vein for a high-grade stenosis (I B) and skeletonising the mammary when sternal risk is high (I B). A second arterial graft, bilateral mammaries, graft flow measurement and endoscopic vein harvest are all IIa."
+
+## Free-wall rupture, pseudoaneurysm and papillary muscle rupture: the ESC/EACTS 2026 clinical consensus statement (full text)
+
+Added 25 November 2026 from Lorusso R, et al. Clinical consensus statement on ventricular free-wall rupture, ventricular pseudoaneurysm, and papillary muscle rupture complicating acute myocardial infarction. Eur Heart J 2026; doi:10.1093/eurheartj/ehag164, co-published in Eur J Cardiothorac Surg 2026;68(5):ezag157 (the two versions are identical apart from style). Read in full from the copy in the UCLouvain institutional repository (DIAL), through a text-extraction tool: all sections, Tables 2, 4, 5 and 6 (the layout of Table 6 was partly garbled, so its device-by-complication mapping is approximate). The pseudoaneurysm timing statements were checked a second time. This replaces the "from the summary only" note in the 2025 to 2026 evidence section above.
+
+### How it was made
+A literature search (PubMed, Embase, Cochrane, 1950 to 31 May 2024) of case reports, series, registries and reviews, then repeated rounds of review until all co-authors agreed. **There are no classes or levels of evidence**: the advice is written as "should", "may" and "is advised". Septal rupture is not covered here (see the septal rupture section in this tab).
+
+### At a glance
+| | Free-wall rupture | Pseudoaneurysm | Papillary muscle rupture |
+|---|---|---|---|
+| Incidence (reperfusion era) | 0.01 to 0.5% of infarcts | 0.1 to 0.3% (Table 4 says 0.5%) | 0.01 to 0.05% |
+| When | Most within 24 to 48 h; mean 2 to 3 days | At index admission, or found late (up to half incidentally) | About 80% within 5 to 7 days |
+| Typical infarct | LAD or circumflex, first infarct, late presentation, large infarct | Inferior or lateral; posterior 43%, lateral 28%, apical 24% | Inferior or lateral; posteromedial muscle in 77% |
+| First test | Emergency TTE (TOE if unclear) | TTE; CMR or CT if stable | TTE, then TOE |
+| In-hospital mortality, surgery | 30 to 35% (CAUTION operative 36.4%) | 0 to 30% (23% in the text, 20% in Table 4) | 20 to 40% |
+| Without surgery | About 90% (text: over 90%) | 48 to 64% | Up to 80% |
+
+These incidences are lower, and the free-wall timing earlier, than the TSRA figures in the first table of this tab (free wall 0.5 to 1.5% within 14 days; papillary muscle about 0.25%), which reflect older series.
+
+!fig f64_mc_mortality | In-hospital mortality with and without repair for free-wall rupture, papillary muscle rupture and pseudoaneurysm (drawn for these notes from the ESC/EACTS 2026 clinical consensus statement, Tables 2, 4 and 5 and text)
+
+### Free-wall rupture
+- **Types by timing** (morphological): I within 24 h; II after 24 h (slow erosion); III after 7 days (perforation of a thinned wall). **Blow-out** (full-thickness defect, LV open to the pericardium; usually arrest or shock, often beyond treatment) against **oozing** (small tear or seepage from an intramyocardial haematoma; may present later with pain, intermittent bleeding or heart failure).
+- Risk: late presentation (Q waves) and large infarct (CK-MB peak over 150 IU/L) carry almost tenfold risk; LAD or circumflex infarct; no previous infarct (no collaterals). Older age, female sex and hypertension predict outcome.
+- Warning signs (low specificity): persistent pain, intractable vomiting, restlessness, persistent ST elevation or T-wave changes up to 72 h.
+- Bridge: arterial line, central line, repeated bedside echo, strict blood pressure control. **Pericardiocentesis** under echo may be considered if unstable, but may dislodge the sealing clot and worsen bleeding. **VA-ECLS** for stabilisation or arrest, but it should not delay surgery. **Microaxial pumps should be considered contraindicated** before repair (they may worsen the rupture).
+- Timing: the hyperacute form is usually fatal; in the subacute form the window is minutes to a few hours, so diagnosis means emergency surgical review.
+- Repair: relieve tamponade, close or cover the tear, stop bleeding, keep LV geometry. Sutured options: infarctectomy (now kept for large blow-outs or with a septal rupture), linear closure on Teflon strips, patch cover. Sutureless options: collagen sponge patches and glue, especially for oozing tears. A review found similar hospital mortality: sutured repair bled more, sutureless re-ruptured more. Concomitant grafting is debated.
+- **Re-rupture in 7 to 17%**, within hours to days, peaking at waking and extubation with hypertensive surges. Hence strict blood pressure control, IABP kept for **48 to 72 h**, and IABP or microaxial pump until just after extubation or for 24 to 48 h.
+- Hospital survivors (CAUTION): 79.6% alive at 5 years, 68.8% at 10.
+
+!fig f64_vpsa_vs_aneurysm | True left ventricular aneurysm against post-infarct pseudoaneurysm: wall, neck-to-fundus ratio, site and rupture risk (drawn for these notes from the ESC/EACTS 2026 clinical consensus statement)
+
+### Pseudoaneurysm
+- A contained rupture: a sac of epicardial clot and pericardium with no myocardium or endocardium, joined to the LV by a narrow neck. Echo **neck-to-fundus ratio under 0.5** (true aneurysm 0.9 to 1). CMR shows the abrupt "cut-off sign" at the neck and pericardial enhancement. Ventriculography is no longer advised.
+- Conversion to free rupture about 30 to 45%; rupture risk up to 50% over 2 years even without symptoms; stroke from sac thrombus up to 32.5% at 4 years.
+- Timing: **acute (within 2 weeks)**: urgent or emergency surgery if operable; in a stable, low-risk patient surgery may be delayed to 7 to 14 days to let scar form. **Subacute** (found within 2 to 3 months), symptomatic or 3 cm or more: repair "within the following 48 h". Chronic, small (under 3 cm), asymptomatic, not enlarging: conservative care is possible, though the document also says surgery should be indicated in every patient because rupture is fatal. **Lifelong anticoagulation** is advised for all.
+- Repair: peripheral bypass first if there is tamponade or high rupture risk; open the sac, remove thrombus gently, close the neck with a felt-supported suture or a patch around the inner orifice (neck 0.1 to 9 cm, median 2 cm). Transcatheter coil or occluder closure for the inoperable.
+- Recurrence about 5%; follow with ECG-gated CT, TOE or CMR even if TTE is clear.
+
+### Papillary muscle rupture
+- Blood supply: anterolateral muscle has a dual supply (diagonals and obtuse marginals); posteromedial usually a single supply (right coronary or circumflex), hence 77% posteromedial.
+- Complete rupture flails both leaflets and causes shock and pulmonary oedema; partial (one head) is commoner and less dramatic. The murmur may be soft or absent once LA and LV pressures equalise. TTE: flail leaflet or mobile mass on the chords, eccentric severe MR, cut-off sign on CW Doppler; TOE (transgastric view) shows the erratic head.
+- Bridge: IABP first-line; microaxial pump in theatre or early after; VA-ECLS if IABP is not enough. Noradrenaline and dobutamine; inotropes only as a short bridge (preoperative inotropes linked with worse survival).
+- **Complete rupture needs immediate surgery.** Watchful waiting gives no benefit and more lung and organ complications. In shock, a shorter time to surgery went with better survival; stable patients in one series were operated at a median of 9 days.
+- Mitral replacement in 70 to 90% (about 80% in Table 5), chordal-sparing advised; operative mortality 20 to 30%. Repair in 10 to 20% (papillary reimplantation, neochords anchored to unscarred muscle, edge-to-edge), always with an annuloplasty ring; recurrence after repair 10 to 15%. Concomitant CABG: consider if there is significant disease; a meta-analysis found no survival difference.
+- TEER for the inoperable: in the largest series (23 patients) acute success 87%; in-hospital mortality about 30%.
+- Surgical survivors: 5-year survival 72 to 75%, 10-year 56 to 65%.
+
+### Across all three
+- Shock Team review promptly; Heart Team when time allows.
+- Coronary angiography should generally be done unless instability demands immediate surgery. Revascularising the infarct artery is the most contested point.
+- Antiplatelet and anticoagulant management follows current guidelines; emergency surgery allows no washout.
+- Palliative care: futility may be judged with age over 80, arrest with uncertain brain injury, severe comorbidity, **SCAI stage E**, previous chronic heart failure, or the need for combined procedures.
+- Gaps: predictors, timing, concomitant CABG, sutured against sutureless repair, repair against replacement, transcatheter against surgery, and the role of tMCS.
+
+Viva line: "Free-wall rupture: echo, straight to theatre, no Impella, sutureless patch for an ooze, and keep the blood pressure down at extubation because 7 to 17% re-rupture. Pseudoaneurysm: narrow neck, ratio under 0.5, always repair. Papillary muscle: posteromedial, complete rupture goes to theatre now, chordal-sparing replacement in most."

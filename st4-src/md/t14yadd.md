@@ -626,3 +626,67 @@ The EJCTS guideline page lists an "EACTS Expert Consensus Document on Lung Volum
 ### Lung transplantation: nothing new confirmed
 
 No randomised lung transplant trial reported between mid-2025 and November 2026 could be confirmed with the searches available. The randomised trial of 10 °C against 4 °C static donor lung storage (NCT05898776) had no posted results. The earlier non-randomised 10 °C study (Ali et al., NEJM Evidence 2023; 70 patients at Toronto, Vienna and Madrid) was found only as a press release.
+
+## COPD epidemiology and public health: UK and global burden, risk factors, case-finding, smoking and screening
+
+Added 25 November 2026 from: (1) Global Initiative for Chronic Obstructive Lung Disease. GOLD 2025 Pocket Guide (v1.1, 21 November 2024), key-point lists read through a summarising tool, and "Key changes GOLD 2026" (10 November 2025); the full GOLD report chapter 1 was not opened, so global prevalence figures are taken second-hand from GPnotebook (COPD prevalence page, citing GOLD 2025), as marked; (2) Asthma + Lung UK. Delayed diagnosis and unequal care: the reality for people with COPD in the UK in 2022 (November 2022), PDF read through a summarising tool (first 100,000 of 114,000 characters); (3) Taskforce for Lung Health news item (3 August 2023) on the Imperial College London prevalence study, doi:10.2147/COPD.S411739 (the paper itself was not opened; authors not shown on the page); (4) NICE NG115, Context chapter, read online; (5) GPnotebook, COPD prevalence page (secondary; cites Snell N et al., Thorax 2016;71:A20 for admissions). Smoking cessation in secondary care (NICE NG209) is in the FRCS syllabus map tab, and the NHS Lung Cancer Screening Programme (Targeted Lung Health Check) design and results are in Thoracic 1, with the UK-wide status in Thoracic 6; they are not repeated.
+
+### Definition (GOLD 2025)
+
+A heterogeneous lung condition with chronic respiratory symptoms due to abnormalities of the airways (bronchitis, bronchiolitis) and/or alveoli (emphysema), causing persistent, often progressive, airflow obstruction.
+
+### Global burden
+
+| Measure | Figure | Source |
+|---|---|---|
+| Rank | Among the top three causes of death worldwide | GOLD 2025 |
+| Where deaths happen | About 90% in low- and middle-income countries | GOLD 2025 |
+| Deaths | More than 3 million in 2012, about 6% of all deaths; about 3 million a year | GOLD 2025; GPnotebook citing GOLD 2025 |
+| Projection | Over 4.5 million deaths a year from COPD and related conditions by 2030 | GPnotebook citing GOLD 2025 |
+| Prevalence | About 384 million people in 2010 (11.7%) | GPnotebook (no source given there) |
+| Trend | Burden expected to rise with continued exposure and an ageing population | GOLD 2025 |
+
+GOLD 2026 updated the chapter 1 burden figures; the new numbers were not in the parts read.
+
+### UK burden
+
+| Measure | Figure | Source |
+|---|---|---|
+| Diagnosed | About 1.4 million: about 2% of the population and 4.5% of those over 40 (NICE NG115 context, using older British Lung Foundation data: 1.2 million) | Asthma + Lung UK 2022 |
+| England, aged 40 and over | 4.9% in 2019 (about 1.4 million), 27% higher than the QOF register estimate of 3.9% | Imperial / Taskforce 2023 |
+| Regional range (England) | 3.9% in London to 7.2% in the North East | Imperial / Taskforce 2023 |
+| Undiagnosed | Up to a further 1.9% (about 500,000) in England; nationally, half to two-thirds may be undiagnosed, up to 2 million people | Imperial / Taskforce 2023; Asthma + Lung UK 2022 |
+| New diagnoses | About 115,000 a year, mostly in the over-50s | NICE NG115 |
+| Deaths | About 30,000 a year in the UK (29,776 in 2012, 5.3% of all deaths); 12th highest recorded COPD death toll in the world | Asthma + Lung UK 2022; GPnotebook; NICE NG115 |
+| Admissions | Over 140,000 a year and over 1 million bed days; second commonest cause of emergency admission; 97% of COPD admissions are emergencies | Snell 2016, via GPnotebook |
+| Deprivation | More than 2.5 times as common in the poorest 10% of households as in the richest 10% | Asthma + Lung UK 2022 |
+| Second commonest lung disease | After asthma | Asthma + Lung UK 2022 |
+
+### Risk factors (GOLD 2025)
+
+- Tobacco smoking; inhaled particles and gases from household and outdoor air pollution.
+- Abnormal lung development and accelerated lung ageing.
+- Genetics: SERPINA1 mutations causing alpha-1 antitrypsin deficiency are the most relevant (though rare); other variants have small effects.
+- In the UK, a history of smoking is the commonest factor at diagnosis, and deprivation tracks prevalence and exacerbations: 40.8% of the most deprived had five or more exacerbations in a year against 26% of the least deprived (Asthma + Lung UK 2022).
+
+### Diagnosis and care gaps in the UK
+
+- Late diagnosis: one in eight waited more than 10 years from first symptoms, nearly one in four 5 years or more; 23% were first misdiagnosed, often as a chest infection (Asthma + Lung UK survey, 2022).
+- Spirometry: only 50.6% of those diagnosed in the past two years recalled spirometry at diagnosis; in the England data almost 30% had no FEV1 recorded in 2019.
+- Pulmonary rehabilitation: by 2019, 13.8% of people with COPD in England had been referred and 4.3% had completed a course (Imperial / Taskforce).
+- Five fundamentals of COPD care received by 17.6% in 2022 (24.5% in 2021).
+- Asthma + Lung UK asks that Targeted Lung Health Checks do not overlook non-cancer lung conditions; it also calls for case-finding in smokers and high-risk occupations and a pre-diagnosis breathlessness pathway.
+- GOLD 2026 adds a case-finding algorithm and a figure on causes of underdiagnosis to chapter 2.
+
+### Smoking cessation (GOLD 2025)
+
+- Everyone who smokes should be strongly encouraged and supported to stop.
+- Nicotine replacement and pharmacotherapy reliably increase long-term abstinence; legislative smoking bans and counselling by health professionals improve quit rates.
+- GOLD states there is not yet evidence that e-cigarettes are effective and safe as a quitting aid. NICE NG209 (FRCS syllabus map tab) takes a more permissive line: likely far less harmful than smoking, with the aim of stopping tobacco completely.
+
+### Screening
+
+- GOLD 2025: annual low-dose CT is recommended for people with COPD due to smoking, following general-population recommendations; it is not recommended for COPD not due to smoking, because benefit over harm is unproven.
+- UK: the Targeted Lung Health Check became the national lung cancer screening programme in June 2023 (ages 55 to 74, current or former smokers, risk-assessed, two-yearly low-dose CT, smoking cessation offered); full design and results in Thoracic 1. The UK risk models used for selection include personal history of lung disease (Thoracic 1).
+
+**Viva line**: COPD is one of the top three causes of death worldwide. In the UK about 1.4 million are diagnosed, perhaps as many again undiagnosed, about 30,000 die a year, and it is two and a half times as common in the poorest tenth. Smoking is the main cause, but air pollution, early-life lung development and alpha-1 antitrypsin deficiency matter. Lung cancer screening is recommended for COPD due to smoking, and Asthma + Lung UK wants the health checks used to find COPD as well.

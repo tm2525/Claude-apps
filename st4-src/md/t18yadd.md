@@ -198,3 +198,67 @@ A Markov model built from SANO and published data, with a base case of a fit 60-
 - Viva answer: active surveillance is an option for a patient with a clinical complete response after CROSS who understands that the risk of distant spread is higher. Oesophagectomy remains the standard for fit patients who want the best long-term survival. Surveillance suits patients at high surgical risk or those who put a high value on avoiding oesophagectomy.
 - Caveats: the 5-year analyses are secondary and partly post hoc. The surveillance arm had more PET-CT scans, which may have found more metastases. The non-inferiority margin was not stated in the report.
 - Next: SANO-3 (nivolumab during surveillance, results expected December 2026) and TNT-OES-2 (FLOT plus CROSS, to increase the number eligible for surveillance).
+
+## Acid suppression: H2 receptor antagonists and proton pump inhibitors, NICE CG184, and stress ulcer prophylaxis (SUP-ICU and REVISE)
+
+Added 25 November 2026 from: (1) StatPearls, "Proton Pump Inhibitors (PPI)" (editor J O Clarke; last updated 1 May 2023) and "Omeprazole" (editor W Gossman; last updated 7 February 2023), read on statpearls.com through a summarising tool; (2) StatPearls continuing-education page on H2 receptor blockers (statpearls.com activity 22473; title, authors and date were not shown on the page read), read the same way; (3) National Institute for Health and Care Excellence. Gastro-oesophageal reflux disease and dyspepsia in adults: investigation and management. Clinical guideline CG184 (publication and update dates not shown on the page read), https://www.nice.org.uk/guidance/cg184, recommendations chapter read online through a summarising tool; Appendix A (PPI dose tables) was not on the page and is not given; (4) Krag M, et al., for the SUP-ICU investigators. Pantoprazole in patients at risk for gastrointestinal bleeding in the ICU. N Engl J Med 2018; doi:10.1056/NEJMoa1714919, read through The Bottom Line summary (secondary; the paper itself was not opened; no relative risks or confidence intervals were given there); (5) Cook D, et al., for the REVISE investigators. Stress ulcer prophylaxis during invasive mechanical ventilation. N Engl J Med 2024; doi:10.1056/NEJMoa2404245, read through The Bottom Line summary (secondary); (6) TSRA ch. 34. EACTS 2024 (PPI preferred to an H2 blocker for stress ulcer prophylaxis after cardiac surgery, class I, level B) is in Cardiac 10 and Cardiac 17. Only the first authors were shown on the pages read.
+
+### How the parietal cell makes acid, and where each drug acts
+
+| Step | Detail |
+|---|---|
+| Stimulus | After a meal, gastrin makes enterochromaffin-like cells release histamine |
+| H2 receptor | Histamine binds the H2 receptor on the parietal cell, activates adenylate cyclase and raises cAMP; protein kinase A moves H+/K+ ATPase pumps to the membrane |
+| Final step | The H+/K+ ATPase (proton pump) secretes acid |
+| H2 antagonist | Reversible, competitive block of the H2 receptor; reduces both basal and stimulated secretion |
+| PPI | Blocks the proton pump itself, the final common step, so it is the most potent acid suppressant |
+
+### The two classes compared
+
+| | H2 receptor antagonist | Proton pump inhibitor |
+|---|---|---|
+| Examples | Famotidine, cimetidine, nizatidine. Ranitidine was withdrawn in the US and suspended in Europe because of carcinogen contamination during manufacture | Omeprazole, esomeprazole, lansoprazole, pantoprazole, rabeprazole |
+| Pharmacology | Competitive, reversible | Prodrug, activated by acid in the parietal cell canaliculi; omeprazole binds covalently and irreversibly. Plasma half-life 0.5 to 1 hour, but effect lasts about 72 hours, returning to baseline in 3 to 5 days as new pumps are made; full effect takes several days |
+| Timing | Relief within about 60 minutes, lasting 4 to 10 hours; good for on-demand use | Take before food (pumps are activated by meals): morning, and before the evening meal if twice daily |
+| Tolerance | Tachyphylaxis within 7 to 14 days of regular use limits maintenance use | Rebound acid hypersecretion after stopping long-term use (gastrin-driven ECL cell growth) |
+| Metabolism | Famotidine and nizatidine: reduce the dose if creatinine clearance is under 50 mL/min; cimetidine under 30 mL/min. Cimetidine is a potent CYP450 inhibitor (theophylline, warfarin, SSRIs) | Hepatic CYP450, mainly CYP2C19; genetic variation in CYP2C19 changes response. Delays clearance of phenytoin, warfarin and diazepam; reduces ketoconazole absorption, increases digoxin absorption. Caution in severe liver disease |
+| Adverse effects | Headache, drowsiness, bowel upset. Delirium, confusion and hallucinations, mainly in renal or hepatic impairment or older patients (cimetidine most often). Rarely QT prolongation in unadjusted renal impairment; bradycardia and hypotension with rapid IV injection. Cimetidine: gynaecomastia, impotence | Hypomagnesaemia (rare; tetany, seizures, arrhythmia); C. difficile and other enteric infection, possibly pneumonia; B12 and iron deficiency with long use; conflicting fracture data; fundic gland polyps (not malignant). Links to dementia, kidney and heart disease are unconfirmed |
+
+TSRA ch. 34: PPIs are more potent than H2 blockers; use the lowest dose that controls symptoms. Stop PPIs and H2 blockers 7 days (antacids 48 to 72 hours) before pH testing.
+
+### NICE CG184: the recommendations that matter to an oesophageal surgeon
+
+| No. | Recommendation |
+|---|---|
+| 1.6.2 | GORD: full-dose PPI for 4 or 8 weeks |
+| 1.6.3, 1.6.4 | If symptoms recur, lowest dose that controls them; discuss self-managed, as-needed use |
+| 1.6.5 | H2 receptor antagonist if a PPI gives an inadequate response |
+| 1.6.6 | After dilatation of an oesophageal stricture: long-term full-dose PPI |
+| 1.6.7 to 1.6.9 | Severe oesophagitis: full-dose PPI for 8 weeks; if not healed, higher dose or a different PPI; consider long-term full-dose maintenance |
+| 1.6.10 | If maintenance fails: review, consider switching PPI, seek specialist advice |
+| 1.6.11 | Do not routinely offer endoscopy to look for Barrett's oesophagus; consider it in GORD after discussing risk factors |
+| 1.10.1 | Consider laparoscopic fundoplication for proven acid reflux when symptoms respond to acid suppression but the person does not want, or cannot tolerate, long-term treatment |
+| 1.11.1 | Consider specialist referral for unexplained or non-responsive symptoms, or suspected GORD in someone considering surgery |
+| 1.12.1 | Consider Barrett's surveillance, weighing dysplasia, preference and risk factors (male sex, age, segment length); harms may outweigh benefit in stable non-dysplastic disease |
+| 1.4.2 | Two-week PPI washout before testing for H. pylori |
+| 1.5.1, 1.2.5 | Annual review of long-term PPI; step down to lowest dose, as needed, then antacid or alginate |
+
+Viva link: CG184 1.10.1 is the NICE selection rule for fundoplication: proven acid reflux whose symptoms are controlled by acid suppression. The surgical detail is in "Surgical treatment of gastro-oesophageal reflux disease and Barrett's oesophagus (TSRA ch. 34)" above.
+
+### Stress ulcer prophylaxis in the ICU: the two trials
+
+!fig f62_sup_trials | SUP-ICU (2018) and REVISE (2024): pantoprazole 40 mg IV daily versus placebo, clinically important GI bleeding and 90-day mortality. Drawn for these notes from The Bottom Line summaries of both trials.
+
+| | SUP-ICU (Krag, NEJM 2018) | REVISE (Cook, NEJM 2024) |
+|---|---|---|
+| Design | 33 ICUs, 6 European countries; placebo-controlled, blinded; 3,298 patients | 68 hospitals, 8 countries (including England); placebo-controlled, blinded; 4,821 analysed |
+| Who | Adults, acute ICU admission, with at least one bleeding risk: shock, RRT, ventilation over 24 hours, coagulopathy, anticoagulation, chronic liver disease | Adults on invasive ventilation expected to stay ventilated beyond the next day; excluded if ventilated 72 hours or more, already bleeding or at high bleeding risk, or on dual antiplatelets or antiplatelet plus therapeutic anticoagulation |
+| Drug | Pantoprazole 40 mg IV once daily vs placebo, until ICU discharge (maximum 90 days) | Pantoprazole 40 mg IV once daily vs placebo; median 5 days |
+| Primary outcome | 90-day mortality: 31.1% vs 30.4% (no difference) | Efficacy: clinically important upper GI bleeding at 90 days 1.0% vs 3.5%, HR 0.30 (0.19 to 0.47), p<0.001; absolute difference 2.5%; NNT 40. Safety: 90-day mortality 29.1% vs 30.9%, HR 0.94 (0.85 to 1.04) |
+| Clinically important GI bleeding | 2.5% vs 4.2% | (primary outcome) |
+| Infection | Pneumonia or C. difficile together: 16.8% vs 16.9% | Ventilator-associated pneumonia 23.2% vs 23.8%; C. difficile 1.2% vs 0.7% (not significant) |
+| Other | Composite adverse events 21.9% vs 22.6% | New RRT 6.1% vs 6.0%; ventilation, ICU and hospital stay unchanged |
+
+How to read them together: both show pantoprazole reduces clinically important bleeding (by about 40% in SUP-ICU and 70% in REVISE); neither shows a mortality effect or a clear rise in pneumonia or C. difficile. REVISE was in ventilated patients, and its NNT of 40 is the figure to quote. Cardiac surgical practice follows EACTS 2024: PPI in preference to an H2 blocker (I B, in Cardiac 10).
+
+**Viva line**: H2 blockers block the histamine stimulus to the parietal cell and lose effect within two weeks of regular use; PPIs block the final pump irreversibly and need active pumps, so give them before food. In ventilated patients, prophylactic pantoprazole cuts important upper GI bleeding (REVISE, NNT 40) without changing mortality.

@@ -75,3 +75,100 @@ Added 21 November 2026 from: Resuscitation Council UK, Paediatric Life Support (
 - **CRACK the chest (Shah 2024, one US cardiac ICU):** 75% of nurses had never seen a resternotomy. After a simulation programme (seven nursing role cards, a labelled sternotomy cart, a video, weekly huddles for 3 months), times fell for setting up the resternotomy cart (503 to 379 s), internal paddles in the room (530 to 339 s), defibrillator in the room (257 to 96 s) and blood at the bedside (534 to 343 s). Time to the first adrenaline did not change (164 to 129 s, p=0.13). Most gains held at 6 months. This was simulation only, with no patient outcomes.
 
 !fig f31_paeds_arrest | Arrest in the cardiac ICU after paediatric heart surgery: shock or adrenaline by rhythm, look for surgical causes, then treat shunt obstruction, reopen, or go early to ECPR. Drawn for these notes from RCUK 2025 Paediatric Life Support, AHA 2025 PALS and Shah 2024; the 5-minute resternotomy time is from adult guidance.
+
+## Paediatric reference ranges: vital signs, blood pressure centiles, blood volume, haemoglobin and biochemistry
+
+Added 25 November 2026 from: The Royal Children's Hospital Melbourne. Clinical Practice Guidelines: Acceptable ranges for physiological variables (last updated July 2023; online page read in full); Resuscitation Council UK. Paediatric advanced life support guidelines (Skellett S, Maconochie I, et al.; published May 2021, updated June 2024; RCUK print PDF read through an extraction tool). **The RCUK 2025 paediatric guideline text itself was not reached**; its changes are taken from Fotheringham D, Currie V. Resus Council guidance 2025: paediatric life support. Don't Forget the Bubbles, 10 December 2025, doi:10.31440/DFTB.67379 (online summary); Lau W. Neonatal and pediatric transfusion. Clinical Guide to Transfusion, ch. 13. Canadian Blood Services, 2017, updated 7 February 2024 (online chapter, tables read); Manchester University NHS Foundation Trust, Biochemistry reference ranges with source, BC-CL-G-50 revision 5 (August 2024 PDF; paediatric ranges from Pathology Harmony, CALIPER, the National Paediatric AKI Group and in-house data); North Bristol NHS Trust Blood Sciences, Age-related reference ranges: biochemistry, BS/CB/DCB/GEN/7 version 3 (PDF; undated). APLS, GOSH and RCPCH tables were not reached. The tab already has the Nelson vital-sign table from TSRA ch. 119 and the RCUK 2025 resuscitation section; this adds ranges to compare with it.
+
+### Heart rate, respiratory rate and systolic pressure (RCH Melbourne, July 2023)
+
+"Acceptable" ranges for a well child, drawn from centile studies (Bonafide 2013, Sepanski 2018, Haque 2007 and others).
+
+| Age | Weight (kg) | Heart rate | Respiratory rate | Systolic BP (mmHg) |
+|---|---|---|---|---|
+| Term | 3.5 | 120 to 170 | 25 to 60 | 60 to 95 |
+| 3 months | 6 | 115 to 170 | 25 to 60 | 60 to 105 |
+| 6 months | 8 | 110 to 170 | 20 to 55 | 75 to 105 |
+| 1 year | 10 | 105 to 150 | 20 to 45 | 70 to 105 |
+| 2 years | 12 | 95 to 150 | 20 to 40 | 70 to 105 |
+| 4 years | 15 | 80 to 150 | 17 to 30 | 75 to 110 |
+| 6 years | 20 | 75 to 140 | 16 to 30 | 80 to 115 |
+| 8 years | 25 | 70 to 130 | 16 to 30 | 80 to 115 |
+| 10 years | 30 | 60 to 130 | 15 to 25 | 85 to 120 |
+| 12 years | 40 | 65 to 120 | 15 to 25 | 90 to 120 |
+| 14 years | 50 | 60 to 115 | 14 to 25 | 90 to 125 |
+| 16 years | 60 | 60 to 115 | 14 to 25 | 90 to 130 |
+| 17 and over | 65 | 60 to 115 | 14 to 25 | 90 to 135 |
+
+These run wider than the Nelson table above (for example 1 to 3 years: Nelson 70 to 110, RCH 95 to 150 at 2 years), because they are acceptable ranges for hospital children, not resting norms. Say which table you are quoting.
+
+### Blood pressure centiles and resuscitation numbers (RCUK PALS 2021, updated 2024)
+
+| mmHg | 1 month | 1 year | 5 years | 10 years |
+|---|---|---|---|---|
+| Systolic, 50th centile | 75 | 95 | 100 | 110 |
+| Systolic, 5th centile | 50 | 70 | 75 | 80 |
+| Mean, 50th centile | 55 | 70 | 75 | 75 |
+| Mean, 5th centile | 40 | 50 | 55 | 55 |
+
+- After return of circulation: keep mean pressure above the 5th centile, aiming between the 5th and 50th.
+- Haemorrhagic shock: permissive hypotension (mean at the 5th centile) may be considered, not with brain injury.
+- Bradycardia needing action: under 60 a minute with poor perfusion despite good ventilation.
+- Ventilation rates in CPR with an airway: infant 25, 1 to 8 years 20, 8 to 12 years 15, over 12 years 10 to 12 a minute.
+- Weight: measured, then length tape, then drug chart, then (age + 4) x 2 up to 10 years; ideal body weight if obese.
+- Fluid: 10 ml/kg crystalloid boluses, up to 40 to 60 ml/kg in the first hour if responding; haemorrhage, no more than 20 ml/kg crystalloid. Adrenaline 10 micrograms/kg; defibrillation 4 J/kg.
+- RCUK 2025 changes, as summarised by DFTB: bolus cap raised from 250 to 500 ml in adolescents (14 and over), balanced crystalloid suggested; refractory VF/VT shocks escalating to a maximum of 8 J/kg; noradrenaline first-line vasopressor, adrenaline first-line inotrope, milrinone first-line inodilator; no more than 5 minutes trying for IV access before intraosseous. The 2025 values table itself was not read.
+
+### Blood volume and haemoglobin (Canadian Blood Services, ch. 13)
+
+| | Value |
+|---|---|
+| Blood volume, term neonate | about 85 ml/kg |
+| Blood volume, preterm | about 100 ml/kg |
+| Blood volume, infant and older child | not stated in the sources read this session (not found in a primary source) |
+| Massive transfusion | replacing more than one blood volume in 24 hours |
+
+| Age | Haemoglobin, g/L: mean (lower limit) |
+|---|---|
+| Day 1 | about 184 |
+| Term, 2 weeks | 165 (125) |
+| Term, 1 month | 140 (100) |
+| Term, 2 months | 115 (90) |
+| Term, 3 months | 115 (95) |
+| 6 months to 2 years | 120 (105) |
+| 2 to 6 years | 125 (115) |
+| 6 to 12 years | 135 (115) |
+| 12 to 18, female | 140 (120) |
+| 12 to 18, male | 145 (130) |
+| Adult, male | 155 (135) |
+
+- Physiological nadir: Hb falls to about 115 g/L over the first three months; lower and earlier in preterm infants (means 88 to 94 g/L at 2 months). Adult values by about 12 years.
+- Red cells: 10 to 20 ml/kg; 15 ml/kg raises Hb by about 20 g/L. Platelets 5 to 10 ml/kg (raises a term infant's count by 50 to 100 x 10⁹/L). Plasma 10 to 15 ml/kg (about 20% rise in factor levels).
+- Thresholds relevant to cardiac surgery in this Canadian guide: neonates with congenital heart disease or respiratory distress, Hb under 120 g/L; children on ECMO, Hb under 130 g/L and platelets above 100 x 10⁹/L. These are not UK (BSH) thresholds, which were not read this session.
+
+### Biochemistry (Manchester, August 2024; Bristol where stated)
+
+| Analyte | Age-related range |
+|---|---|
+| Sodium (mmol/L) | 0 to 1 week 131 to 144; 1 to 4 weeks 132 to 142; then 133 to 146 |
+| Potassium (mmol/L) | 0 to 4 weeks 3.4 to 6.0; 4 weeks to 17 years 3.5 to 5.0; adult 3.5 to 5.3 (Bristol: 4 weeks to 1 year 3.5 to 5.7) |
+| Bicarbonate (mmol/L) | 0 to 16 years 19 to 28; adult 22 to 29 |
+| Urea (mmol/L) | 0 to 1 month 2 to 5; 1 to 12 months 2.5 to 6; 1 to 12 years 2.5 to 6.5; 12 to 18 years 3 to 7.5 |
+| Creatinine (µmol/L) | 0 to 14 days 27 to 81; 14 days to 1 year 14 to 34; 1 to 3 years 15 to 31; 3 to 5 years 23 to 37; 5 to 7 years 25 to 42; 7 to 9 years 30 to 48; 9 to 11 years 28 to 57; 12 years 36 to 67; adult male 59 to 104, female 45 to 84 |
+| Fasting glucose (mmol/L) | 0 to 6 days 2 to 6.1; 8 days to 17 years 3 to 6.5 |
+| Total calcium (mmol/L) | under 1 year 2.16 to 2.74; 1 to 18 years 2.31 to 2.64; adult 2.2 to 2.6 |
+| Phosphate (mmol/L) | under 1 month 1.4 to 2.8; 1 month to 1 year 1.2 to 2.2; 1 to 3 years 1.1 to 2.0; 3 to 12 years 1.0 to 1.8 |
+| Albumin (g/L) | 0 to 28 days 25 to 35; to 6 months 28 to 40; 6 months to 17 years 30 to 45 |
+| Magnesium (mmol/L) | 0.7 to 1.0 (adult range, no paediatric split) |
+| Lactate (mmol/L) | 0.6 to 2.5, all ages |
+| Troponin T (ng/L) | 0 to 14, all ages (no paediatric range) |
+| Creatine kinase (IU/L) | 0 to 90 days 1 to 475; 3 to 12 months 1 to 250 |
+| Ammonia (µmol/L) | first month up to 100; then up to 40 |
+
+Ionised calcium and blood gas reference ranges were not in either laboratory document. Units and methods differ between laboratories: quote your own laboratory's range in practice and name the source in the exam.
+
+### What to remember for the viva
+
+- A neonate's blood volume is about 85 ml/kg: a 3.5 kg baby has about 300 ml, so 30 ml is 10% of the circulation (arithmetic from the Canadian value).
+- Creatinine is higher in the first two weeks (27 to 81) than in the rest of infancy (14 to 34); potassium up to 6.0 is within range in the first month.
+- A fall in Hb to about 115 g/L at 2 to 3 months is physiological; the Canadian guide still transfuses neonates with congenital heart disease below 120 g/L.

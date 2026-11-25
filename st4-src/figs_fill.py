@@ -5672,6 +5672,629 @@ def f57_rec_levels():
     return svg(h + 20, b)
 
 
+# ---- figs_F61.py
+
+
+
+def _f61_smooth(pts):
+    """Catmull-Rom spline through pts, returned as an SVG path string."""
+    d = f'M{pts[0][0]:.1f} {pts[0][1]:.1f}'
+    for i in range(len(pts) - 1):
+        p0 = pts[i - 1] if i > 0 else pts[i]
+        p1, p2 = pts[i], pts[i + 1]
+        p3 = pts[i + 2] if i + 2 < len(pts) else p2
+        c1 = (p1[0] + (p2[0] - p0[0]) / 6, p1[1] + (p2[1] - p0[1]) / 6)
+        c2 = (p2[0] - (p3[0] - p1[0]) / 6, p2[1] - (p3[1] - p1[1]) / 6)
+        d += f' C{c1[0]:.1f} {c1[1]:.1f} {c2[0]:.1f} {c2[1]:.1f} {p2[0]:.1f} {p2[1]:.1f}'
+    return d
+
+
+def _f61_poly(pts):
+    return 'M' + ' L'.join(f'{x:.1f} {y:.1f}' for x, y in pts)
+
+
+# ---------------------------------------------------------------- Wiggers diagram
+
+def f61_wiggers():
+    x0, x1 = 120, 700
+    X = lambda t: x0 + (x1 - x0) * t
+    P = lambda p: 262 - p * 1.42           # pressure panel: 0 mmHg at y 262
+    V = lambda v: 400 - (v - 40) * 1.2      # volume panel: 40 ml at y 400
+    b = T(12, 18, 'Left heart events in one cycle (illustrative values)', 'f-h', 'start')
+    # phase band
+    bounds = [0, .14, .20, .33, .48, .56, 1.0]
+    nums = ['1', '2', '3', '4', '5', '6']
+    for i in range(6):
+        cls = 'b1' if i in (1, 4) else 'b0'
+        b += f'<rect x="{X(bounds[i]):.1f}" y="28" width="{X(bounds[i + 1]) - X(bounds[i]):.1f}" height="24" class="f-{cls}"/>'
+        b += T((X(bounds[i]) + X(bounds[i + 1])) / 2, 45, nums[i], 'f-n')
+    b += T(X(.78), 68, 'diastole', 'f-s') + T(X(.34), 68, 'systole (2 to 4)', 'f-s')
+    # valve event lines
+    events = [(.14, 'MV shuts'), (.20, 'AV opens'), (.48, 'AV shuts'), (.56, 'MV opens')]
+    for t, lab in events:
+        b += line(X(t), 72, X(t), 520, 'f-dash')
+    b += T(X(.14) - 4, 86, 'MV shuts', 'f-s', 'end') + T(X(.20) + 4, 86, 'AV opens', 'f-s', 'start')
+    b += T(X(.48) - 4, 86, 'AV shuts', 'f-s', 'end') + T(X(.56) + 4, 86, 'MV opens', 'f-s', 'start')
+    # pressure axis
+    b += line(x0, 92, x0, 262) + line(x0, 262, x1, 262, 'f-grid')
+    for p in (0, 40, 80, 120):
+        b += line(x0 - 4, P(p), x0, P(p)) + T(x0 - 8, P(p) + 4, str(p), 'f-s', 'end')
+    b += T(14, 150, ['Pressure', '(mmHg)'], 'f-s', 'start')
+    aorta = [(0, 86), (.10, 82), (.20, 79), (.25, 108), (.30, 120), (.38, 114), (.46, 102), (.48, 98),
+             (.495, 94), (.515, 100), (.60, 95), (.80, 89), (1.0, 86)]
+    lv = [(0, 4), (.08, 6), (.13, 11), (.14, 12), (.17, 45), (.20, 80), (.25, 112), (.29, 123), (.35, 117),
+          (.44, 104), (.48, 92), (.52, 40), (.555, 9), (.60, 3), (.70, 4), (.90, 5), (1.0, 5)]
+    la = [(0, 6), (.06, 9), (.12, 12), (.15, 8), (.175, 9.5), (.25, 5), (.33, 4), (.45, 10), (.55, 13),
+          (.62, 6), (.75, 6), (.95, 7), (1.0, 6)]
+    b += f'<path d="{_f61_smooth([(X(t), P(p)) for t, p in aorta])}" class="f-l"/>'
+    b += f'<path d="{_f61_smooth([(X(t), P(p)) for t, p in lv])}" class="f-cut"/>'
+    b += f'<path d="{_f61_smooth([(X(t), P(p)) for t, p in la])}" class="f-stent"/>'
+    b += T(X(.66), P(100), 'Aorta', '', 'start') + T(X(.36), P(92), 'LV', 'f-h', 'start')
+    b += T(X(.84), P(20), 'LA (a, c, v waves)', 'f-s', 'middle')
+    b += T(X(.11), P(24), 'a', 'f-s') + T(X(.55), P(25), 'v', 'f-s')
+    # volume panel
+    b += line(x0, 286, x0, 400) + line(x0, 400, x1, 400, 'f-grid')
+    for v in (40, 80, 120):
+        b += line(x0 - 4, V(v), x0, V(v)) + T(x0 - 8, V(v) + 4, str(v), 'f-s', 'end')
+    b += T(14, 336, ['LV volume', '(ml)'], 'f-s', 'start')
+    vol = [(0, 108), (.07, 111), (.14, 120), (.20, 120), (.27, 90), (.33, 70), (.42, 52), (.48, 46), (.56, 46),
+           (.63, 85), (.70, 100), (.85, 106), (1.0, 108)]
+    b += f'<path d="{_f61_smooth([(X(t), V(v)) for t, v in vol])}" class="f-l"/>'
+    b += T(X(.215), V(121), 'EDV about 120', 'f-s', 'start')
+    b += T(X(.52), V(46) + 16, 'ESV', 'f-s')
+    b += T(X(.30) + 6, V(80), 'stroke volume', 'f-s', 'start')
+    # ECG
+    ye = 450
+    b += T(14, ye + 4, 'ECG', 'f-s', 'start')
+    ecg = [(0, 0), (.015, -6), (.045, -6), (.06, 0), (.115, 0), (.125, 4), (.135, -34), (.145, 10), (.155, 0),
+           (.36, 0), (.39, -10), (.43, -10), (.46, 0), (1.0, 0)]
+    b += f'<path d="{_f61_smooth([(X(t), ye + y) for t, y in ecg])}" class="f-l"/>'
+    b += T(X(.035), ye - 12, 'P', 'f-s') + T(X(.135), ye - 40, 'QRS', 'f-s') + T(X(.41), ye - 16, 'T', 'f-s')
+    # heart sounds
+    ys = 492
+    b += T(14, ys + 4, 'Sounds', 'f-s', 'start') + line(x0, ys, x1, ys, 'f-grid')
+    for t, w, lab, h in [(.155, .03, 'S1', 12), (.49, .022, 'S2', 10), (.11, .015, 'S4', 5)]:
+        b += f'<rect x="{X(t - w / 2):.1f}" y="{ys - h}" width="{X(w) - x0:.1f}" height="{2 * h}" class="f-b1"/>'
+        b += T(X(t), ys + h + 14, lab, 'f-s')
+    b += T(X(.58), ys - 6, 'S4: more likely with a stiff ventricle', 'f-s', 'start')
+    # key
+    key = ['1 Atrial systole (about 10% of filling at rest, up to 40% at fast rates)',
+           '2 Isovolumetric contraction   3 Rapid ejection   4 Reduced ejection',
+           '5 Isovolumetric relaxation   6 Rapid then slow passive filling']
+    b += T(12, 548, key, 'f-s', 'start')
+    return svg(604, b)
+
+
+# ---------------------------------------------------------------- PV loop
+
+def f61_pv_loop():
+    ox, oy = 90, 380
+    sx, sy = 2.5, 2.2   # px per ml, px per mmHg
+    X = lambda v: ox + v * sx
+    Y = lambda p: oy - p * sy
+    b = T(12, 18, 'Left ventricular pressure-volume loop', 'f-h', 'start')
+    b += line(ox, Y(150), ox, oy) + line(ox, oy, X(200), oy)
+    for p in (0, 50, 100, 150):
+        b += line(ox - 4, Y(p), ox, Y(p)) + T(ox - 8, Y(p) + 4, str(p), 'f-s', 'end')
+    for v in (0, 50, 100, 150, 200):
+        b += line(X(v), oy, X(v), oy + 4) + T(X(v), oy + 18, str(v), 'f-s')
+    b += T(X(100), oy + 38, 'LV volume (ml)', 'f-s') + T(16, Y(75), ['LV', 'pressure', '(mmHg)'], 'f-s', 'start')
+    EDV, ESV = 120, 50
+    loop = [(X(ESV), Y(100))]
+    ej = [(X(120), Y(80)), (X(110), Y(108)), (X(95), Y(119)), (X(78), Y(121)), (X(62), Y(112)), (X(ESV), Y(100))]
+    fill = [(X(ESV), Y(4)), (X(60), Y(2.5)), (X(80), Y(3.5)), (X(100), Y(6)), (X(EDV), Y(10))]
+    d = (_f61_smooth(fill) + f' L{X(EDV):.1f} {Y(80):.1f} ' + _f61_smooth(ej)[_f61_smooth(ej).index('C'):]
+         + f' L{X(ESV):.1f} {Y(4):.1f} Z')
+    b += f'<path d="{d}" class="f-b1"/>'
+    # ESPVR: V0 = 10 ml, through (ESV, 100)
+    V0 = 10
+    ees = 100 / (ESV - V0)
+    b += line(X(V0), Y(0), X(V0 + 150 / ees), Y(150), 'f-cut')
+    b += T(X(V0 + 150 / ees) + 6, Y(146), 'ESPVR', 'f-h', 'start')
+    b += T(X(V0 + 150 / ees) + 6, Y(146) + 16, 'slope = Ees (contractility)', 'f-s', 'start')
+    b += T(X(V0) + 2, Y(0) + 32, 'V0', 'f-s')
+    b += line(X(V0), Y(0), X(V0), Y(0) + 20, 'f-grid')
+    # EDPVR
+    ed = [(X(v), Y(2 + 8 * ((v - 40) / 80) ** 2.6)) for v in range(40, 191, 10)]
+    ed = [(x, y) for x, y in ed if y > Y(38)]
+    b += f'<path d="{_f61_smooth(ed)}" class="f-dash"/>'
+    b += T(ed[-1][0] - 4, ed[-1][1] - 22, 'EDPVR', 'f-h', 'end')
+    b += T(ed[-1][0] - 4, ed[-1][1] - 6, 'steep = stiff', 'f-s', 'end')
+    # Ea line from (EDV,0) to end-systolic point
+    b += line(X(EDV), Y(0), X(ESV), Y(100), 'f-stent')
+    b += T(X(97), Y(28), 'Ea = Pes / SV', 'f-s', 'end')
+    # corner labels
+    b += f'<circle cx="{X(EDV)}" cy="{Y(10)}" r="4" class="f-ah"/>' + T(X(EDV) + 8, Y(10) + 16, 'A  MV shuts (end-diastole)', 'f-s', 'start')
+    b += f'<circle cx="{X(EDV)}" cy="{Y(80)}" r="4" class="f-ah"/>' + T(X(EDV) + 8, Y(80) + 4, 'B  AV opens', 'f-s', 'start')
+    b += f'<circle cx="{X(ESV)}" cy="{Y(100)}" r="4" class="f-ah"/>' + T(X(ESV) - 8, Y(100) - 8, 'C  AV shuts (end-systole)', 'f-s', 'end')
+    b += f'<circle cx="{X(ESV)}" cy="{Y(4)}" r="4" class="f-ah"/>' + T(X(ESV) - 8, Y(4) - 8, 'D  MV opens', 'f-s', 'end')
+    b += T(X(72), Y(62), 'Stroke work', 'f-h') + T(X(72), Y(62) + 16, '= area inside', 'f-s')
+    b += T(X(85), Y(106), 'ejection', 'f-s')
+    b += T(X(85), Y(0) - 10, 'filling', 'f-s')
+    b += line(X(ESV), oy + 50, X(EDV), oy + 50) + T(X(85), oy + 66, 'SV = EDV - ESV', 'f-s')
+    b += line(X(ESV), oy + 45, X(ESV), oy + 55) + line(X(EDV), oy + 45, X(EDV), oy + 55)
+    # side notes
+    nx = 556
+    notes = [('A to B', 'isovolumetric contraction'), ('B to C', 'ejection'), ('C to D', 'isovolumetric relaxation'),
+             ('D to A', 'filling along the EDPVR')]
+    yy = 60
+    for a, c in notes:
+        b += T(nx, yy, a, 'f-h', 'start') + T(nx, yy + 16, c, 'f-s', 'start')
+        yy += 42
+    b += T(nx, yy + 6, ['Normal coupling', 'Ea/Ees about 0.6;', 'over 1.2 in HFrEF'], 'f-s', 'start')
+    b += T(nx, yy + 70, ['The loop cannot cross', 'the ESPVR'], 'f-s', 'start')
+    return svg(470, b)
+
+
+def _f61_mini(ox, oy, title, base, new, espvr=None, espvr_new=None, edpvr_steep=False, note=''):
+    """Small PV panel. base/new are lists of (v, p) points drawn as closed smooth paths."""
+    sx, sy = 0.62, 0.56
+    X = lambda v: ox + v * sx
+    Y = lambda p: oy - p * sy
+    b = line(ox, oy, ox, Y(210)) + line(ox, oy, X(250), oy)
+    b += T(ox, Y(210) - 8, title, 'f-h', 'start')
+    if note:
+        b += T(ox + 4, oy + 16, note, 'f-s', 'start')
+    if espvr:
+        v0, ees = espvr
+        b += line(X(v0), Y(0), X(v0 + 190 / ees), Y(190), 'f-grid')
+    if espvr_new:
+        v0, ees = espvr_new
+        b += line(X(v0), Y(0), X(v0 + 190 / ees), Y(190), 'f-cut')
+    if base:
+        b += f'<path d="{_f61_poly([(X(v), Y(p)) for v, p in base])} Z" class="f-dash"/>'
+    b += f'<path d="{_f61_poly([(X(v), Y(p)) for v, p in new])} Z" class="f-l" style="stroke-width:2"/>'
+    return b
+
+
+def _f61_loop(edv, esv, ped, popen, peak, pes, pmo=4, n=8):
+    """Points of a simple loop: filling, isovolumetric contraction, domed ejection, relaxation."""
+    pts = []
+    for i in range(n + 1):           # filling
+        f = i / n
+        pts.append((esv + (edv - esv) * f, pmo + (ped - pmo) * f ** 2.2))
+    pts.append((edv, popen))
+    for i in range(1, n):            # ejection dome
+        f = i / n
+        v = edv - (edv - esv) * f
+        p = popen + (pes - popen) * f + (peak - (popen + pes) / 2) * 4 * f * (1 - f) * 0.9
+        pts.append((v, p))
+    pts.append((esv, pes))
+    return pts
+
+
+def f61_pv_changes():
+    base = _f61_loop(120, 50, 10, 80, 120, 100)
+    b = T(12, 18, 'How the loop moves: baseline dashed, change solid, red line = ESPVR', 'f-h', 'start')
+    cols = [20, 200, 380, 560]
+    r1, r2 = 175, 375
+    b += _f61_mini(cols[0], r1, 'More preload', base, _f61_loop(150, 55, 16, 84, 126, 104), (10, 2.5), None, False,
+               'EDV and SV up')
+    b += _f61_mini(cols[1], r1, 'More afterload', base, _f61_loop(128, 75, 11, 112, 150, 138), (10, 2.5), None, False,
+               'ESV up, SV down')
+    b += _f61_mini(cols[2], r1, 'More contractility', base, _f61_loop(115, 30, 9, 80, 132, 108), (10, 2.5), (5, 4.3), False,
+               'Steeper ESPVR; ESV down')
+    rest = [(40, 6), (55, 8), (70, 13), (85, 22), (95, 30), (95, 82), (85, 108), (70, 116), (55, 106), (40, 96)]
+    b += _f61_mini(cols[3], r1, 'Restriction', base, rest, None, None, True, 'Steep EDPVR; high EDP')
+    # AS: domed, tall
+    as_ = _f61_loop(122, 70, 16, 90, 200, 160)
+    b += _f61_mini(cols[0], r2, 'Aortic stenosis', base, as_, None, None, False, 'Tall domed loop; Ea high')
+    # AR chronic: right shift, no isovolumetric phases
+    ar = [(105, 92), (118, 40), (135, 10), (170, 9), (205, 12), (225, 16), (218, 60), (195, 110), (160, 138),
+          (125, 128), (108, 108)]
+    b += _f61_mini(cols[1], r2, 'Aortic regurgitation', base, ar, None, None, False, 'Wide, right; no IVR')
+    ms = _f61_loop(85, 38, 6, 78, 116, 98)
+    b += _f61_mini(cols[2], r2, 'Mitral stenosis', base, ms, None, None, False, 'Small EDV; ESPVR kept')
+    mr = [(80, 4), (120, 6), (165, 10), (195, 16), (175, 55), (150, 92), (120, 112), (95, 108), (80, 98)]
+    b += _f61_mini(cols[3], r2, 'Mitral regurgitation', base, mr, None, None, False, 'Right shift, no IVC')
+    b += T(12, 418, ['Axes: volume 0 to 250 ml (across), pressure 0 to 200 mmHg (up). Shapes are schematic, drawn from',
+                     'Klabunde (CV Physiology) for load changes and Bastos et al. 2019 for valve lesions and restriction.'],
+           'f-s', 'start')
+    return svg(450, b)
+
+
+# ---------------------------------------------------------------- PA catheter
+
+def f61_pac_waveforms():
+    b = T(12, 18, 'Floating a pulmonary artery catheter: what the screen shows', 'f-h', 'start')
+    ox, oy = 70, 250
+    sy = 5.0   # px per mmHg
+    Y = lambda p: oy - p * sy
+    b += line(ox, Y(32), ox, oy) + line(ox, oy, 705, oy, 'f-grid')
+    for p in (0, 10, 20, 30):
+        b += line(ox - 4, Y(p), ox, Y(p)) + T(ox - 8, Y(p) + 4, str(p), 'f-s', 'end')
+    b += T(14, Y(16), 'mmHg', 'f-s', 'start')
+    segs = [(80, 230, 'Right atrium', '0 to 10', 'about 20 cm'),
+            (230, 380, 'Right ventricle', '15-28 / 0-5', '30 to 35 cm'),
+            (380, 540, 'Pulmonary artery', '14-28 / 5-16', '40 to 45 cm'),
+            (540, 700, 'Wedge (PAWP)', '5 to 12', 'about 50 cm')]
+    for x1, x2, name, val, depth in segs:
+        b += line(x2, 60, x2, oy, 'f-dash') if x2 < 700 else ''
+        b += T((x1 + x2) / 2, 44, name, 'f-h') + T((x1 + x2) / 2, 62, val + ' mmHg', 'f-s')
+    pts = []
+    # RA: a c v waves, 3 beats
+    for k in range(3):
+        x = 84 + k * 48
+        pts += [(x, 4), (x + 8, 8), (x + 14, 5), (x + 18, 6), (x + 24, 3), (x + 34, 7), (x + 40, 4)]
+    # RV: 3 beats, square-ish
+    for k in range(3):
+        x = 232 + k * 49
+        pts += [(x, 2), (x + 4, 4), (x + 9, 24), (x + 18, 25), (x + 24, 18), (x + 28, 3), (x + 40, 4), (x + 47, 6)]
+    # PA: 3 beats, diastolic step-up, dicrotic notch
+    for k in range(3):
+        x = 382 + k * 52
+        pts += [(x, 11), (x + 8, 24), (x + 16, 25), (x + 22, 17), (x + 25, 15), (x + 28, 16), (x + 40, 13), (x + 50, 11)]
+    # wedge: damped a and v
+    for k in range(4):
+        x = 545 + k * 38
+        pts += [(x, 8), (x + 8, 11), (x + 16, 8), (x + 26, 12), (x + 34, 8)]
+    b += f'<path d="{_f61_smooth([(x, Y(p)) for x, p in pts])}" class="f-cut"/>'
+    b += T(305, Y(28) - 2, 'diastolic rises, systolic unchanged', 'f-s') if False else ''
+    b += arrow(372, Y(4) - 2, 392, Y(11) + 4)
+    b += T(384, oy + 18, 'step-up in diastolic only', 'f-s')
+    b += T(110, Y(10) - 6, 'a', 'f-s') + T(140, Y(9) - 6, 'v', 'f-s')
+    # bottom panel: steps and safety
+    steps = [('Before', ['US-guided sheath, right IJ', 'preferred; test balloon 1.5 ml;', 'zero and level (phlebostatic)']),
+             ('Advance', ['Inflate only past 20 cm;', 'balloon up going forward,', 'down coming back']),
+             ('Wedge', ['Inflate for no more than', '4 breaths; PA trace must', 'return on deflation']),
+             ('If no change', ['No RV by 40-45 cm or no PA', 'by 50-55 cm: deflate, pull', 'back to 20 cm, try again'])]
+    for i, (h, s) in enumerate(steps):
+        x = 12 + i * 176
+        b += box(x, 290, 166, 84, '', 'b0')
+        b += T(x + 83, 308, h, 'f-h') + T(x + 83, 326, s, 'f-s')
+    b += box(12, 384, 696, 48, ['Add about 5 cm from the left IJ. A true wedge needs West zone 3: no a and v waves, big',
+                                'respiratory swings, or PA diastolic above the wedge suggest zone 1 or 2.'], 'warn')
+    return svg(442, b)
+
+
+# ---------------------------------------------------------------- residual VSD and post-bypass TOE
+
+def f61_residual_vsd():
+    b = T(12, 18, 'Post-bypass TOE in congenital surgery: when to go back (ASE 2019)', 'f-h', 'start')
+    b += box(12, 34, 240, 44, 'Residual VSD on TOE', 'b1', 'f-h')
+    rows = [('2 mm or less', 'usually closes on its own', 'ok'),
+            ('3 mm or less', 'usually not significant', 'ok'),
+            ('3 to 4 mm', 'measure Qp:Qs (echo or sats)', 'warn'),
+            ('4 mm or more, or Qp:Qs over 1.5', 'usually one more attempt', 'b1')]
+    y = 96
+    for size, act, c in rows:
+        b += box(12, y, 240, 46, [size, act], c)
+        y += 54
+    b += arrow(132, 78, 132, 94)
+    b += T(132, y + 10, ['Check in more than one view;', 'weigh AR, outflow obstruction'], 'f-s')
+    # thresholds panel
+    x = 276
+    b += T(x, 46, 'Other lesions after repair', 'f-h', 'start')
+    th = [('Mitral stenosis', ['Mean gradient over 5 mmHg:', 'consider more repair or replacement']),
+          ('Mitral regurgitation', ['Jet over 4 mm significant;', 'more than mild: consider return']),
+          ('LVOT', ['Peak gradient over 40 mmHg', 'may need reintervention']),
+          ('Aortic regurgitation', ['Jet over 4 mm: risk of', 'significant AR later']),
+          ('Pulmonary regurgitation', ['Jet 50 to 65% of RVOT', 'width = severe']),
+          ('Tricuspid regurgitation', ['Re-check over time; high velocity', 'may mean VSD or RVOT obstruction'])]
+    y = 60
+    for name, rule in th:
+        b += f'<rect x="{x}" y="{y}" width="432" height="44" rx="8" class="f-b0"/>'
+        b += T(x + 10, y + 27, name, 'f-h', 'start')
+        b += T(x + 190, y + 18, rule, 'f-s', 'start')
+        y += 50
+    b += box(x, y + 6, 432, 44, ['Low output straight after bypass can hide obstruction;', 'dynamic RVOT obstruction is not revised'], 'warn')
+    return svg(max(y + 60, 380), b)
+
+
+# ---- figs_F62.py
+
+
+
+def f62_glomerulus():
+    b = T(12, 22, 'Who sets GFR: the two arterioles, and the autoregulatory plateau', 'f-h', 'start')
+    # left panel: glomerulus and arterioles
+    b += '<path d="M20 150 L130 150" class="f-vessel"/>'
+    b += '<path d="M250 150 L360 150" class="f-vessel"/>'
+    b += '<circle cx="190" cy="150" r="58" class="f-b0"/>'
+    b += '<path d="M150 150 C160 115 220 115 228 150 C220 185 160 185 150 150" class="f-vessel"/>'
+    b += T(190, 200, 'Glomerulus', 'f-s')
+    b += T(70, 140, 'Afferent', 'f-h')
+    b += T(305, 140, 'Efferent', 'f-h')
+    b += box(10, 222, 175, 92, ['Prostaglandins dilate', '(NSAIDs remove this)', 'Myogenic and TGF', 'constrict'], 'b1', 'f-s')
+    b += arrow(70, 220, 70, 158)
+    b += box(200, 222, 175, 92, ['Angiotensin II constricts:', 'holds GFR when flow', 'falls (ACE inhibitors', 'and ARBs remove this)'], 'b1', 'f-s')
+    b += arrow(305, 220, 305, 158)
+    b += box(110, 46, 160, 40, ['Macula densa senses', 'tubular NaCl (TGF)'], 'warn', 'f-s')
+    b += arrow(190, 86, 190, 92)
+    # right panel: schematic autoregulation curve
+    x0, y0, xw, yh = 440, 290, 250, 190
+    b += line(x0, y0, x0 + xw, y0) + line(x0, y0, x0, y0 - yh)
+    b += T(x0 + xw / 2, y0 + 34, 'Mean arterial pressure (mmHg)', 'f-s')
+    b += T(x0 - 10, y0 - yh / 2 - 8, 'Renal', 'f-s', 'end') + T(x0 - 10, y0 - yh / 2 + 9, 'blood', 'f-s', 'end') + T(x0 - 10, y0 - yh / 2 + 26, 'flow', 'f-s', 'end')
+
+    def px(m):
+        return x0 + xw * m / 220
+
+    for m in (80, 180):
+        b += line(px(m), y0, px(m), y0 - yh, 'f-grid')
+        b += T(px(m), y0 + 16, str(m), 'f-n')
+    b += f'<path d="M{px(10)} {y0 - 20} L{px(80)} {y0 - 120} L{px(180)} {y0 - 128} L{px(215)} {y0 - 180}" class="f-l" fill="none"/>'
+    b += f'<path d="M{px(10)} {y0 - 20} L{px(215)} {y0 - 175}" class="f-dash" fill="none"/>'
+    b += T(px(115), y0 - 150, 'Intact: flat plateau', 'f-s')
+    b += T(px(150), y0 - 66, ['Haemodilution on bypass', 'blunts it (dashed)'], 'f-s')
+    b += T(x0 + xw / 2, 62, 'Schematic, not measured data', 'f-s')
+    return svg(334, b)
+
+
+def f62_liver_supply():
+    h, b = bars([('Portal vein: share of flow', 70, 'ok'),
+                 ('Hepatic artery: share of flow', 30, 'b1'),
+                 ('Portal vein: share of oxygen', (50, 60), 'ok'),
+                 ('Hepatic artery: share of oxygen', (40, 50), 'b1')],
+                '%', 100, 'The portal vein brings most of the flow; the artery brings half the oxygen')
+    b += T(12, h + 8, ['Total about 1.5 L/min, 20 to 25% of cardiac output. The portal vein cannot regulate its own flow;',
+                       'the hepatic arterial buffer response (adenosine) dilates the artery when portal flow falls,',
+                       'buffering a fall of up to 60%.'], 'f-s', 'start')
+    return svg(h + 56, b)
+
+
+def f62_sup_trials():
+    h1, b1 = bars([('SUP-ICU pantoprazole (n=3,298)', 2.5, 'ok'), ('SUP-ICU placebo', 4.2, 'warn'),
+                   ('REVISE pantoprazole (n=4,821)', 1.0, 'ok'), ('REVISE placebo', 3.5, 'warn')],
+                  '%', 5, 'Pantoprazole cut clinically important GI bleeding in both trials', lab_w=270)
+    h2, b2 = bars([('SUP-ICU pantoprazole', 31.1, 'b1'), ('SUP-ICU placebo', 30.4, 'b1'),
+                   ('REVISE pantoprazole', 29.1, 'b1'), ('REVISE placebo', 30.9, 'b1')],
+                  '%', 40, 'but 90-day mortality did not change', lab_w=270)
+    b = b1 + f'<g transform="translate(0 {h1})">' + b2 + '</g>'
+    return svg(h1 + h2, b)
+
+
+def f62_cwt_timeline():
+    b = T(12, 22, 'Cancer waiting times in England since October 2023, with the lung pathway', 'f-h', 'start')
+    x0, x1 = 40, 690
+
+    def px(d):
+        return x0 + (x1 - x0) * d / 62
+
+    y = 120
+    b += line(x0, y, x1, y)
+    for d in (0, 14, 28, 49, 62):
+        b += line(px(d), y - 6, px(d), y + 6)
+        b += T(px(d), y + 22, f'day {d}', 'f-n')
+    b += T(px(0), y - 14, 'Urgent referral', 'f-s', 'start')
+    # standards
+    b += box(px(28) - 95, 44, 190, 54, ['28-day FDS: told cancer', 'or excluded. Target 75%'], 'b0', 'f-s')
+    b += arrow(px(28), 98, px(28), y - 4)
+    b += box(px(62) - 150, 44, 168, 54, ['62-day: first treatment.', 'Standard 85%'], 'b0', 'f-s')
+    b += arrow(px(62) - 30, 98, px(62), y - 4)
+    # 31 day standard: its own clock
+    b += box(330, 150, 380, 44, ['31-day: decision to treat to first or subsequent', 'treatment (any route, recurrence included). 96%'], 'b0', 'f-s')
+    # lung pathway
+    b += T(12, 228, 'National Optimal Lung Cancer Pathway (v3.0, 2020) and the 28-day timed lung pathway', 'f-h', 'start')
+    yl = 270
+    b += line(x0, yl, x1, yl, 'f-dash')
+    marks = [(3, ['CT within', '72 h; triage']), (14, ['Curative', 'tests done']), (21, ['MDT']),
+             (28, ['Diagnosis', 'given']), (49, ['Treatment', 'starts'])]
+    for d, lab in marks:
+        b += f'<circle cx="{px(d)}" cy="{yl}" r="6" class="f-b0"/>'
+        b += T(px(d), yl + 24, lab, 'f-s')
+    b += T(px(62), yl - 12, '62-day standard', 'f-s', 'end')
+    b += box(10, 330, 700, 46, ['England, October 2025 (provisional): FDS 76.1%, 31-day 92.5%, 62-day 68.8%',
+                               'NLCA 2026: median referral to surgery 81 days for stage 1 to 2 NSCLC; about 88% over 49 days'], 'warn', 'f-s')
+    return svg(388, b)
+
+
+def f62_airway_receptors():
+    b = T(12, 22, 'Airway smooth muscle: where the two bronchodilator classes act', 'f-h', 'start')
+    b += '<rect x="150" y="40" width="420" height="200" rx="40" class="f-track"/>'
+    b += T(360, 60, 'Airway smooth muscle cell', 'f-s')
+    # beta 2 side
+    b += box(10, 70, 130, 40, 'Beta-2 agonist', 'ok', 'f-h')
+    b += arrow(140, 90, 166, 90)
+    b += box(168, 72, 92, 36, 'Beta-2 (Gs)', 'b0', 'f-s')
+    b += arrow(214, 108, 214, 124)
+    b += box(168, 126, 92, 36, ['Adenylyl', 'cyclase'], 'b0', 'f-s')
+    b += arrow(214, 162, 214, 178)
+    b += box(168, 180, 92, 44, ['cAMP, PKA:', 'less Ca2+'], 'b0', 'f-s')
+    b += arrow(262, 202, 316, 202)
+    b += box(318, 180, 84, 44, 'Relaxes', 'ok', 'f-h')
+    # muscarinic side
+    b += box(580, 70, 130, 40, ['Vagus:', 'acetylcholine'], 'b1', 'f-s')
+    b += arrow(580, 90, 554, 90)
+    b += box(460, 72, 92, 36, 'M3', 'b0', 'f-h')
+    b += arrow(506, 108, 506, 178)
+    b += box(452, 180, 108, 44, ['Contracts;', 'mucus secretion'], 'warn', 'f-s')
+    b += box(580, 130, 130, 50, ['SAMA or LAMA', 'blocks M3'], 'ok', 'f-s')
+    b += arrow(580, 145, 554, 104)
+    # side effects
+    b += box(10, 256, 345, 92, ['Beta-2 agonist side effects: tremor,', 'tachycardia and arrhythmia, hypokalaemia,',
+                                'hyperglycaemia, lactic acidosis; tolerance', 'with prolonged use'], 'b1', 'f-s')
+    b += box(365, 256, 345, 92, ['Antimuscarinic side effects: dry mouth,', 'urinary retention, narrow-angle glaucoma,',
+                                 'constipation. Tiotropium leaves M2 quickly', 'but stays on M1 and M3'], 'b1', 'f-s')
+    return svg(358, b)
+
+
+# ---- figs_F63.py
+
+
+
+def f63_resection_mortality():
+    """In-hospital mortality by operation, ESTS database Silver Book 2020 (2007-2019)."""
+    h, b = bars([('Pneumonectomy (n=7,353)', 5.5, 'warn'),
+                 ('Bilobectomy (n=3,516)', 3.4, 'warn'),
+                 ('Lobectomy (n=61,782)', 1.4, 'b0'),
+                 ('Segmentectomy (n=5,417)', 1.1, 'ok'),
+                 ('Wedge (n=7,474)', 1.0, 'ok')],
+                '%', 7, 'Pneumonectomy carries about four times the in-hospital mortality of lobectomy',
+                lab_w=230)
+    b += T(12, h + 8, 'ESTS database, primary lung cancer resections 2007 to 2019, unadjusted. Bars start at zero.', 'f-s', 'start')
+    return svg(h + 20, b)
+
+
+def f63_lobectomy_complications():
+    """Complications after elective lobectomy, STS GTSD 2012-2017 (Brown 2021), overall rates derived from counts."""
+    h, b = bars([('Air leak over 5 days', 11.1, 'warn'),
+                 ('Atrial arrhythmia treated', 10.6, 'warn'),
+                 ('Red cell transfusion', 3.4, 'b0'),
+                 ('Pneumonia', 3.3, 'b0'),
+                 ('Atelectasis needing bronchoscopy', 3.3, 'b0'),
+                 ('Unexpected reoperation', 3.0, 'b0'),
+                 ('Empyema', 0.5, 'ok'),
+                 ('Pulmonary embolus', 0.4, 'ok'),
+                 ('Bronchopleural fistula', 0.3, 'ok')],
+                '%', 14, 'After lobectomy, air leak and AF each affect about 1 in 10; fistula about 1 in 350',
+                lab_w=270)
+    b += T(12, h + 8, '39,734 elective lobectomies, STS database; in-hospital deaths excluded; rates worked from the paper’s counts.', 'f-s', 'start')
+    return svg(h + 20, b)
+
+
+def f63_das_plans():
+    """Unanticipated difficult intubation: DAS 2025 plans A to D, with eFONA (local NHS Lanarkshire version for the numbers)."""
+    b = ''
+    b += box(10, 8, 700, 40, ['Before induction: plan, preoxygenate (consider high-flow nasal oxygen), find the cricothyroid membrane'], 'b1')
+    b += arrow(360, 48, 360, 64)
+    b += box(10, 66, 520, 52, ['Plan A  Tracheal intubation: videolaryngoscope first line,', 'full neuromuscular block, bougie or stylet; max 3 attempts + 1 expert'], 'b0')
+    b += box(560, 66, 150, 52, ['Success:', 'confirm with', 'waveform capnography'], 'ok', 'f-s')
+    b += arrow(530, 92, 558, 92)
+    b += arrow(270, 118, 270, 136) + T(282, 132, 'fails: declare failed intubation', 'f-s', 'start')
+    b += box(10, 138, 520, 52, ['Plan B  Second-generation supraglottic airway,', 'max 3 attempts'], 'b0')
+    b += box(560, 138, 150, 52, ['Oxygenating: keep it', 'if easy and low', 'aspiration risk, or wake'], 'ok', 'f-s')
+    b += arrow(530, 164, 558, 164)
+    b += arrow(270, 190, 270, 208) + T(282, 204, 'fails', 'f-s', 'start')
+    b += box(10, 210, 520, 52, ['Plan C  Facemask ventilation, two-person technique'], 'b0')
+    b += box(560, 210, 150, 52, ['Ventilating:', 'wake (sugammadex', 'for rocuronium)'], 'ok', 'f-s')
+    b += arrow(530, 236, 558, 236)
+    b += arrow(270, 262, 270, 280) + T(282, 276, 'fails: declare CICO (cannot intubate, cannot oxygenate)', 'f-s', 'start')
+    b += box(10, 282, 700, 70, ['Plan D  Emergency front-of-neck airway: scalpel (size 10 blade), bougie, 6.0 cuffed tube',
+                                'Vertical midline incision (standard in DAS 2025), finger dissection to the membrane,',
+                                'scalpel through it, bougie into trachea, tube over bougie; confirm with capnography'], 'warn')
+    b += T(360, 370, 'Numbers from a UK local adaptation of DAS 2025 (NHS Lanarkshire, 2026); check against the full DAS text.', 'f-s')
+    return svg(380, b)
+
+
+def f63_mvr_chordal():
+    """Chordal-sparing mitral replacement, surgeon's view through the left atrium: D-shaped anterior remnant, posterior leaflet kept, structures at risk at TSRA clock positions."""
+    import math
+    b = ''
+    cx, cy, rx, ry = 300, 190, 170, 120
+    b += f'<ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{ry}" class="f-b1"/>'
+    b += '<path d="M145 172 Q300 28 455 172 Q300 204 145 172Z" class="f-b0"/>'
+    b += '<path d="M140 212 Q300 332 460 212 Q300 272 140 212Z" class="f-ok"/>'
+    b += '<path d="M162 142 Q300 40 438 142" class="f-cut"/>'
+    b += '<path d="M178 170 Q300 110 422 170" class="f-cut"/>'
+    b += T(cx, 122, 'D-shaped piece excised', 'f-s')
+    b += line(200, 176, 118, 196, 'f-dash') + T(10, 206, ['Rim 8 to 10 mm', 'on primary', 'chordae'], 'f-s', 'start')
+    b += T(cx, 287, 'posterior leaflet kept', 'f-s')
+    for k in range(22):
+        a = 2 * math.pi * k / 22
+        x = cx + (rx - 2) * math.cos(a)
+        y = cy + (ry - 2) * math.sin(a)
+        b += f'<rect x="{x-6:.0f}" y="{y-3:.0f}" width="12" height="6" rx="2" class="f-warn"/>'
+    b += T(cx, 56, '12 o\u2019clock: aortic valve beyond the aortomitral curtain', 'f-s')
+    b += line(215, 294, 120, 344, 'f-dash') + T(10, 360, ['Circumflex artery:', '6 to 8 o\u2019clock (A1/P1)'], 'f-s', 'start')
+    b += line(385, 294, 470, 344, 'f-dash') + T(440, 360, ['Coronary sinus:', '4 to 6 o\u2019clock (P2/P3)'], 'f-s', 'start')
+    b += line(466, 160, 500, 128, 'f-dash') + T(504, 110, ['AV node, His bundle,', 'membranous septum:', 'posteromedial side'], 'f-s', 'start')
+    b += f'<rect x="504" y="196" width="12" height="6" rx="2" class="f-warn"/>'
+    b += T(524, 203, ['Pledgeted 2-0 suture,', 'ventricle to atrium', '(pledget below)'], 'f-s', 'start')
+    b += line(504, 262, 532, 262, 'f-cut') + T(540, 266, 'Incision lines', 'f-s', 'start')
+    b += T(cx, 398, "Surgeon's view through the left atrium; anterior leaflet at the top.", 'f-s')
+    return svg(408, b)
+
+
+# ---- figs_F64.py
+
+
+
+def f64_pcecls_config():
+    """Central against peripheral post-cardiotomy VA-ECLS, from the 2020 EACTS/ELSO/STS/AATS consensus."""
+    b = ''
+    for i, (title, x0) in enumerate([('Central (through the sternotomy)', 10), ('Peripheral (femoral)', 370)]):
+        b += box(x0, 8, 340, 34, title, 'b1', 'f-h')
+        cx = x0 + 100
+        b += f'<ellipse cx="{cx}" cy="128" rx="46" ry="40" class="f-b0"/>'
+        b += T(cx, 133, 'Heart', 'f-s')
+        b += f'<path d="M{cx + 10} 90 C{cx + 12} 64 {cx + 60} 58 {cx + 72} 80 L{cx + 72} 250" class="f-vessel"/>'
+        b += T(cx + 84, 205, 'Aorta', 'f-s', 'start')
+        b += f'<path d="M{cx - 40} 150 L{cx - 40} 250" class="f-vessel"/>'
+        b += T(cx - 52, 205, 'IVC', 'f-s', 'end')
+        lx = x0 + 226
+        if i == 0:
+            b += f'<path d="M{cx + 44} 66 C{cx + 70} 34 {x0 + 200} 36 {x0 + 218} 58" class="f-stent"/>'
+            b += T(lx, 56, ['Aortic return', '(ascending aorta)'], 'f-s', 'start')
+            b += f'<path d="M{cx + 30} 150 C{cx + 70} 170 {x0 + 190} 166 {x0 + 218} 150" class="f-stent"/>'
+            b += T(lx, 146, ['Right atrial', 'drain'], 'f-s', 'start')
+            pro = ['For: larger atrial cannula gives better drainage', 'and unloading; no north-south hypoxaemia']
+            con = ['Against: chest often left open;', 'more bleeding and transfusion']
+        else:
+            b += f'<path d="M{cx - 40} 250 L{cx - 40} 160" class="f-stent"/>'
+            b += f'<path d="M{cx + 72} 250 L{cx + 72} 214" class="f-stent"/>'
+            b += f'<path d="M{cx + 72} 250 L{cx + 72} 274" class="f-dash"/>'
+            b += T(cx - 40, 272, 'Femoral vein drain', 'f-s')
+            b += line(cx + 76, 232, lx - 6, 226, 'f-dash')
+            b += T(lx, 222, ['Femoral artery', 'return (retrograde)'], 'f-s', 'start')
+            b += line(cx + 76, 268, lx - 6, 268, 'f-dash')
+            b += T(lx, 264, ['+ distal perfusion', 'cannula to the leg'], 'f-s', 'start')
+            pro = ['For: sternum can be closed; less bleeding,', 'transfusion and haemofiltration']
+            con = ['Against: limb ischaemia, north-south', 'hypoxaemia, LV distension (afterload)']
+        b += box(x0, 292, 340, 50, pro, 'ok', 'f-s')
+        b += box(x0, 350, 340, 50, con, 'warn', 'f-s')
+    b += box(10, 412, 700, 58, ['Consensus: peripheral cannulation should be considered (IIa B); distal perfusion cannula with',
+                                'femoral arterial return (IIa B). Meta-analysis of 17 studies (1,691 patients): no mortality difference'], 'b0')
+    return svg(480, b)
+
+
+def f64_procmi_tiers():
+    """Procedure-related MI in the Fifth Universal Definition (2026), Box 5."""
+    b = ''
+    b += box(10, 8, 700, 40, 'Within 30 days of a cardiac procedure (PCI, CABG, valve surgery, structural intervention, ablation)', 'b1', 'f-h')
+    b += arrow(360, 48, 360, 66)
+    b += box(10, 68, 700, 74, ['CONSIDERED: suspected coronary complication + acute myocardial injury on troponin',
+                               '+ one or more of: ischaemic symptoms, new ischaemic ECG change, new Q waves,',
+                               'or unexplained sudden deterioration under sedation'], 'b0')
+    b += arrow(360, 142, 360, 160)
+    b += box(10, 162, 700, 74, ['LIKELY (just after the procedure): troponin above the pre-procedure value and still rising',
+                                'PCI: over 5 x URL at 6 h  ·  cardiac surgery: over 35 x URL at 24 h',
+                                'Thresholds called arbitrary; they prompt imaging, they do not diagnose'], 'warn')
+    b += arrow(360, 236, 360, 254)
+    b += box(10, 256, 700, 92, ['CONFIRMED: one or more of',
+                                'Angiography: graft failure or coronary impingement (surgery); ostial occlusion or embolism (valves)',
+                                'Imaging: new regional wall motion abnormality or loss of viable myocardium in that territory',
+                                'BOTH needed if the complication arose during the procedure or it was done for acute MI'], 'ok')
+    b += T(360, 368, 'Graft failure after 30 days counts as primary MI, not procedure-related', 'f-s')
+    return svg(380, b)
+
+
+def f64_vpsa_vs_aneurysm():
+    """True LV aneurysm against post-infarct pseudoaneurysm, from the ESC/EACTS 2026 consensus."""
+    b = ''
+    # true aneurysm: wide neck, wall continuous (myocardium thinned but present)
+    b += box(10, 8, 340, 34, 'True aneurysm', 'b1', 'f-h')
+    b += '<path d="M60 230 C40 160 80 80 160 80 C200 80 230 100 250 130 C300 120 330 170 300 220 C280 250 240 250 220 236 C170 270 90 270 60 230 Z" class="f-b0"/>'
+    b += '<path d="M248 132 C300 122 330 170 300 220 C282 248 240 248 222 236" class="f-l" style="stroke-width:5"/>'
+    b += line(246, 132, 222, 236, 'f-dash')
+    b += T(140, 175, 'LV cavity', 'f-s')
+    b += T(286, 274, 'Neck : fundus 0.9 to 1', 'f-n')
+    b += T(180, 300, ['Wall layers intact (thinned scar)', 'Mostly after anterior infarction', 'Rarely ruptures'], 'f-s')
+    # pseudoaneurysm: narrow neck, sac without myocardium
+    b += box(370, 8, 340, 34, 'Pseudoaneurysm (contained rupture)', 'warn', 'f-h')
+    b += '<path d="M420 230 C400 160 440 80 520 80 C580 80 610 120 612 170 C614 210 590 250 560 256 C500 270 440 260 420 230 Z" class="f-b0"/>'
+    b += '<path d="M612 166 L632 166 C640 126 708 126 708 175 C708 224 640 224 632 186 L612 186" class="f-warn" style="stroke-width:3"/>'
+    b += line(616, 160, 616, 192, 'f-cut')
+    b += T(510, 175, 'LV cavity', 'f-s')
+    b += T(672, 180, 'Sac', 'f-s')
+    b += T(600, 274, 'Neck : fundus under 0.5', 'f-n')
+    b += T(540, 300, ['Wall = pericardium + thrombus, no myocardium', 'Posterior 43%, lateral 28%, apical 24%', 'Rupture risk about 30 to 45%: repair'], 'f-s')
+    return svg(356, b)
+
+
+def f64_mc_mortality():
+    """In-hospital mortality with and without repair, ESC/EACTS 2026 consensus (Tables 2, 4, 5 and text)."""
+    h, b = bars([('Free-wall rupture: surgery', (30, 35), 'ok'),
+                 ('Free-wall rupture: conservative', 90, 'warn'),
+                 ('Papillary muscle rupture: surgery', (20, 40), 'ok'),
+                 ('Papillary muscle rupture: conservative', 80, 'warn'),
+                 ('Pseudoaneurysm: surgery', (0, 30), 'ok'),
+                 ('Pseudoaneurysm: conservative', (48, 64), 'warn')],
+                '%', 100, 'Without repair most die: in-hospital mortality, ESC/EACTS 2026', lab_w=300)
+    b += T(12, h + 8, 'Conservative figures: free wall about 90% (over 90% in the text); papillary muscle up to 80%; pseudoaneurysm 48 to 64%.', 'f-s', 'start')
+    return svg(h + 20, b)
+
+
 # ---- figs_D1.py
 """Drawing pass D1: coronary anatomy, grafting, cannulation, cardioplegia and venting (23 November 2026)."""
 

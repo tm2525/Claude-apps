@@ -336,3 +336,67 @@ Added 24 November 2026 from: Ozaniak A, Galova D, Benesova I, Lischke R, Ozaniak
 
 ### Viva summary
 Refer chest wall sarcoma to a sarcoma centre before the first cut: an unplanned or non-radical first excision leads to re-resection with more complications and longer stay. At redo surgery aim again for R0 (taking the biopsy track and skin, as in the sternal section above), expect infection around implants (removal of infected material and biological or absorbable mesh with well-vascularised muscle are in the sections above), and consider staging very large anterior resections. (Evidence here is a 38-patient series and a single case report.)
+
+## After diaphragm resection: reconstruction detail, ventilation, drains, paradox, complications and follow-up
+
+Added 25 November 2026 from: TSRA Review of Cardiothoracic Surgery 3rd ed., ch. 29 (Leiva-Juarez MM, Ginsburg ME, Diseases of the diaphragm), re-read in full on disk; Collaud S, de Perrot M. Technical pitfalls and solutions in extrapleural pneumonectomy. Ann Cardiothorac Surg 2012;1(4):537–543, doi:10.3978/j.issn.2225-319X.2012.11.11 (online full text, read through an extraction tool); Solli P, Brandolini J, Pardolesi A, et al. Diaphragmatic and pericardial reconstruction after surgery for malignant pleural mesothelioma. J Thorac Dis 2018;10(Suppl 2):S298–S303, doi:10.21037/jtd.2018.01.44 (online full text on PubMed Central); Sano A, Azuma Y, Sakai T, et al. Diaphragm reconstruction by GORE DUALMESH in patients undergoing resection for thoracic malignancies. J Cardiothorac Surg 2021;16:65, doi:10.1186/s13019-021-01449-3 (online full text); Al Rameni D, Worrell SG. Reconstructive techniques for diaphragm resection. Thorac Surg Clin 2024;34(2):127–131, doi:10.1016/j.thorsurg.2024.01.001 (abstract only; its outcomes section is behind a paywall). Builds on "Diaphragm tumours, resection and replacement" (Solli 2017, Hamada 2025, Stylianidi 2025) and "Opening the diaphragm" (Coselli, Chiesa, Gambardella) above, without repeating them. **No open source read this session gives a dedicated postoperative protocol after diaphragm resection**; most published postoperative data come from extrapleural pneumonectomy (EPP), where a whole hemidiaphragm is replaced.
+
+### Reconstruction detail that affects recovery
+
+| Point | Detail and source |
+|---|---|
+| Primary closure | Small defects only, without tension: pledgeted non-absorbable horizontal mattress sutures (TSRA ch. 29) |
+| Patch material | PTFE or autologous tissue (latissimus dorsi, rectus abdominis, external oblique) (TSRA ch. 29). Expanded PTFE (2 mm) shows fibroblast ingrowth by 4 months and full host integration by 7 months (Solli 2018) |
+| Dual-surface PTFE | 2 mm DualMesh, smooth side to the chest (resists lung adhesion), rough side to the abdomen; interrupted non-absorbable 1-0 to 2 sutures; after total resection fixed to about the 6th rib anteriorly and 9th rib posteriorly. 7 patients, follow-up 11 days to 37 months: no displacement, seroma or reconstruction-related complication (Sano 2021) |
+| Fixation after EPP | Two 1 mm Gore-Tex sheets stapled together; stitches placed above the diaphragm rim (the rim does not hold) into the intercostal spaces, pericardium and vertebral periosteum or disc; one posterior stitch at about T8 to T9; access through a second thoracotomy in the 8th space through the same skin incision (Collaud) |
+| Tension | Placed under tension in the anatomical position when 50 to 60 Gy adjuvant hemithoracic radiotherapy was planned; no longer under tension once the group moved to short-course preoperative radiotherapy (Collaud). Solli 2018: make a "dynamic" repair, do not over-correct the native position, make every anchor secure |
+| Left side | Most dehiscences are at the **left posteromedial costophrenic recess** (Solli 2018); keep a crural rim (TSRA ch. 29; Solli 2017 above) |
+| Right side | Protect the IVC and hepatic veins during resection and reconstruction (Solli 2018); notch the mesh at the cava (Solli 2017 above) |
+| Pericardium (when resected with it) | Always reconstruct a left pericardial defect after EPP or P/D; three-dimensional, tension-free, fenestrated, sutured only to pericardial edges; risks are tamponade with a tight or unfenestrated patch, constriction (reported with Marlex mesh) and late cardiac herniation (around 6 months) (Solli 2018; Collaud also fenestrates and keeps it loose) |
+
+### Ventilation and early care
+
+- Aim for early extubation. In Collaud's report the patient was extubated in the recovery room after a chest film confirmed the mesh position; the next film was on day 1.
+- Coughing, positive pressure and intra-abdominal pressure load the repair once neuromuscular block wears off (Solli 2017, above); the tension seen at operation under paralysis underestimates what the repair will bear.
+- Respiratory failure after division of the diaphragm is reduced by peripheral (circumferential) incisions and by avoiding diaphragm division where possible: in extent I aortic repair, tracheostomy 4.0% against 13.1% with thoracophrenolaparotomy (Gambardella, in "Opening the diaphragm" above).
+- If the phrenic nerve was taken, sitting FVC can fall by about 30%, and myasthenia can worsen after thymectomy (Hamada, above).
+- Venous thromboembolism: prophylaxis in hospital and for at least 4 to 6 weeks after discharge after EPP (Collaud).
+
+### Chest drains
+
+- No source read this session sets a drain protocol (number, suction, timing) specific to diaphragm resection; follow the protocol for the lung operation done with it.
+- Watch the volume and character: in Collaud's case of chylothorax after EPP, output was 80 to 100 ml/h and over a litre a day once diet started at 24 hours. Chylothorax occurs in 2% to 8% after EPP. Management is in Thoracic 17.
+- Pleural effusion and pneumothorax are commoner after full-thickness diaphragm resection than after peeling disease off the surface (Stylianidi, above).
+
+### Paradox
+
+- A denervated hemidiaphragm moves paradoxically: upward on inspiration, shown on a fluoroscopic or ultrasound sniff test (TSRA ch. 29). Diaphragm paralysis gives a more than 10% fall in vital capacity from upright to supine.
+- After resection this happens when native muscle is left but the phrenic nerve, or its branches on the underside, has been cut: hence peripheral incisions and protection of the phrenic branches (TSRA ch. 29; "Opening the diaphragm" above).
+- Management (TSRA ch. 29; Hamada): allow time for recovery if the nerve was only injured (1 to 2 years in TSRA; Whiteley, above, advises against intervening within 18 months); plication for symptoms (pledgeted non-absorbable sutures, by VATS); immediate phrenic reconstruction if the nerve was resected, before the distal nerve atrophies (about a year).
+- Whether a taut prosthetic replacement prevents paradox was not addressed in the sources read; Solli 2017 advises placing the patch lower and tauter than the native dome.
+
+### Complications
+
+| Complication | Rate, presentation and management |
+|---|---|
+| **Patch dehiscence and herniation** | 2% to 8% in large EPP series (Collaud); up to 7% (Solli 2018); 5% to 7.6% for left patches (Solli 2017, above). Usually technical. Can appear on the first postoperative film as a convex opacity low in the chest with few symptoms; then hypotension, hypoxaemia, abdominal pain or a weak cough. Partial dehiscence can strangulate liver, stomach or small bowel; a large one impairs secretion clearance. Collaud's right-sided case had AST 1,981 and ALT 1,726 U/L from a strangulated liver. Any unexplained low opacity: CT or re-exploration if suspicion is high. **Reoperate early**: reduce the viscera and re-fix the patch; that patient started radiotherapy at 5 weeks |
+| Atrial fibrillation | "By far the most common" complication after EPP (Collaud; no rate given) |
+| Bronchopleural fistula, empyema | Usually right-sided after EPP (Collaud) |
+| Mesh infection | A risk with non-absorbable mesh (Solli 2018); use autologous tissue in an infected or irradiated field (Solli 2017, above) |
+| Late erosion or bleeding | Possible with synthetic materials (Sano 2021) |
+| Caval or hepatic vein narrowing | Right-sided patch too tight around the IVC (Solli 2018) |
+| Pericardial patch problems | Tamponade, constriction, cardiac herniation (Solli 2018) |
+| Phrenic loss | Paradox and restriction, as above |
+| Mortality | Under 5% for EPP in experienced centres (Collaud). Not reported separately for diaphragm resection |
+
+### Follow-up
+
+- Chest film before extubation and on day 1 to check the patch position (Collaud).
+- CT shows patch position and shape: Sano imaged at 1 month and 1 year, with 3D reconstruction, finding the mesh in place.
+- Thereafter follow-up is driven by the tumour (for sarcoma, see the UK 2024 guideline sections above). Any late dyspnoea, abdominal pain or new basal opacity should raise herniation.
+- Sniff test and supine and upright spirometry if the phrenic nerve was injured or taken.
+- No study read this session reports long-term lung function after diaphragm replacement.
+
+### Viva summary
+
+Small defect: close without tension. Larger: PTFE (dual-surface), fixed above the rim to ribs, pericardium and spine, lower and tauter than the dome on the left, notched at the cava on the right; autologous flap if infected. Early extubation; film before extubation and on day 1. The complication to name first is patch dehiscence with herniation (2% to 8%, left posteromedial, may strangulate liver or stomach): reoperate early.
