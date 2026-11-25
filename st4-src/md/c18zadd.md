@@ -66,7 +66,7 @@ Added 20 November 2026 from Vrints C, Andreotti F, Koskinas KC, Rossello X, et a
 Added 20 November 2026 after comparing the FRCS Atlas HTML builds (Master Updater 31, chapter 26 section 3 and chapter 28 sections 2 and 3) with this tab. Only points not already in the ST4 course are listed; each says whether it was checked against a primary source.
 
 ### Hypertrophic obstructive cardiomyopathy and septal myectomy
-The adult tabs had no HOCM teaching beyond the echo points in Cardiac 9. The Atlas cites the 2023 ESC cardiomyopathy guideline, which is not among the sources and was not read.
+The adult tabs had no HOCM teaching beyond the echo points in Cardiac 9. The Atlas cites the 2023 ESC cardiomyopathy guideline, which is not among the sources and was not read (corrected 25 November 2026: the 2023 ESC cardiomyopathy guideline and the 2024 AHA/ACC HCM guideline have since been read; see Hypertrophic obstructive cardiomyopathy, parts 1 to 5, added 21 November 2026).
 
 | Point | Source and status |
 |---|---|

@@ -232,7 +232,7 @@ CABG remains the survival operation for left main and three-vessel disease, part
 | STICH ten-year, NEJM 2016 | CABG against medical therapy, LVEF 35% or less | Lower mortality with CABG (from memory) |
 | ISCHEMIA, NEJM 2020 | Invasive against conservative strategy in stable disease with ischaemia | No difference in the primary outcome; mostly PCI, left main excluded (from memory) |
 | ART ten-year, NEJM 2019 | Bilateral against single internal thoracic artery | No difference by intention to treat; heavy crossover and radial use in the single arm (from memory) |
-| RADIAL pooled analysis, JAMA 2020 | Radial artery against saphenous vein | Fewer cardiac events with the radial (from memory) |
+| RADIAL pooled analysis, JAMA 2020 | Radial artery against saphenous vein | Fewer cardiac events with the radial (from memory) (corrected 25 November 2026: confirmed against the RADIAL pooled analysis: death, MI or repeat revascularisation HR 0.73 at 10 years; see Cardiac 5, Radial artery harvest: landmarks, operative steps, and the RAPCO, RADIAL and ROMA trials) |
 | ROMA | Multiple against single arterial grafting | Enrolment complete; results awaited when last checked |
 
 ### Practice points

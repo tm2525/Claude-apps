@@ -65,7 +65,7 @@ Guidelines and trials for the congenital day, with the lesions and operations in
 ## Root enlargement and the Ross: evidence notes
 
 - Ross in adults under 50: fifteen-year survival of 93% matching the general population, with the trade of more reoperation for less stroke and bleeding. The benefit is reported from expert centres and does not transfer to occasional operators.
-- Favourable Ross candidate: young adult, aortic stenosis more than regurgitation, annulus under about 27 mm, no connective tissue disease. Support the autograft at the annulus and sinotubular junction to limit dilatation (selection and technique from memory).
+- Favourable Ross candidate: young adult, aortic stenosis more than regurgitation, annulus under about 27 mm, no connective tissue disease. Support the autograft at the annulus and sinotubular junction to limit dilatation (selection and technique from memory) (corrected 25 November 2026: confirmed by the EACTS 2026 Ross consensus: stenosis or stenosis-dominant disease with a non-dilated annulus under 27 mm is the ideal substrate, avoid in Marfan, Loeys-Dietz and Ehlers-Danlos syndromes, consider under 60 and strongly under 50, and support the annulus and sinotubular junction; see Cardiac 4, Ross procedure in adults: EACTS expert consensus, added 21 November 2026).
 - Root enlargement at aortic valve replacement has not added operative mortality in large contemporary series and reduces prosthesis-patient mismatch; the Y-incision gives the largest gain. From memory and the reference list of the chapter in progress, not searched today.
 - Choose the enlargement by need: Nicks or Manougian for one size, Y-incision for three or more, Konno for subvalvar tunnel obstruction.
 

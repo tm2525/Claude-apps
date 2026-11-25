@@ -22,7 +22,7 @@ OUT = os.path.join(ROOT, 'st4')
 sys.path.insert(0, HERE)
 import figs  # noqa: E402
 
-BUILD_DATE = '24 November 2026'
+BUILD_DATE = '25 November 2026'
 
 # slug, title, kind   (kind: topic | course | digest | ref | new)
 SECTIONS = [
